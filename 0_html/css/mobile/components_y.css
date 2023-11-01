@@ -3,7 +3,7 @@
 /* 어디든 */
 .no-gap {gap: 0;}
 .bk-txt-gray {color: var(--color-sub)}
-.bk-txt-red {color:var(--color-warning);}
+.bk-txt-red {color: var(--color-warning);}
 .cp-wide-type {margin: 0 -20px; width: calc(100% + 40px);}
 .bk-align-num {text-align: right !important;}
 [class*=lineclamp] {text-overflow: ellipsis ; display: -webkit-box; -webkit-box-orient: vertical; white-space: normal; overflow: hidden;}
@@ -14,6 +14,8 @@
 .iTextarea::placeholder {color: var(--color-default)}
 .bk-messages {line-height: 1.6;}
 .cp-total-price .price {font-weight: 500; line-height: 1.22222;}
+.bk-tbl-toolbar .total {margin-bottom: 4px; display: inline-block;}
+.bk-txt-final {font-size: 1.6rem !important; font-weight: 700; line-height: 1.375;}
 
 /* 간격 */
 .cp-info-block:not(:first-child) {margin-top: 40px}
@@ -21,7 +23,7 @@
 .cp-info-block .bk-input-list {margin-top: 24px}
 .cp-info-block .bk-tbl-ul,
 .cp-info-block .bk-textarea {margin-top: 8px;}
-.cp-info-block .bk-tbl {margin-top: 12px;}
+.cp-info-block .bk-tbl:not(:first-child) {margin-top: 24px;}
 
 /* 간격 상쇄 */
 .cp-info-block .bk-tbl .tbl {margin-bottom: 0;}
@@ -88,7 +90,7 @@
 /* 목록 */
 .cp-list-wrap {border-top: 1px solid var(--color-brand);}
 .cp-list-wrap .bk-list-unit {border-bottom: 1px solid var(--color-gray);}
-.cp-list-wrap .bk-list-detail {display: -ms-grid; display: grid; -ms-grid-columns: 55% 1fr; grid-template-columns: 55% 1fr; line-height: 1.57143; padding: 12px 12px 24px;}
+.cp-list-wrap .bk-list-detail {display: -ms-grid; display: grid; -ms-grid-columns: 56% 1fr; grid-template-columns: 56% 1fr; line-height: 1.57143; padding: 12px 12px 24px;}
 .cp-list-wrap .bk-list-detail .bk-list-tit,
 .cp-list-wrap .bk-list-detail .bk-list-option {-ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / span 2;}
 .cp-list-wrap .bk-list-detail span {color: var(--color-sub);}
@@ -97,6 +99,9 @@
 .cp-list-wrap .bk-list-condition {background-color: var(--color-background); padding: 14px 12px 15px; line-height: 1.57143; color: var(--color-sub); position: relative;}
 .cp-list-wrap .bk-list-condition .bk-btn-intbl {position: absolute; top: 12px; right: 12px;}
 .cp-list-wrap + .bk-btn {margin-top: 24px;}
+.cp-list-type2 .bk-list-detail {display: flex; flex-direction: column; padding: 12px 0 20px;}
+.cp-list-type2 .bk-list-detail .bk-list-tit {margin: 8px 0}
+.cp-list-type2 .bk-list-condition {display: flex; justify-content: space-between;}
 
 /* 출고지 리스트 */
 .cp-list-wrap.bk-list-type2 .bk-list-unit {padding: 12px 54px 12px 4px; position: relative;}
