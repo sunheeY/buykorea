@@ -36,7 +36,7 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>주문 관리</span>
+                  <span>인보이스 관리</span>
                 </h1>
             </div>
             <div class="my-util">
@@ -122,8 +122,8 @@
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
-            
-            <a href="#" onclick="dialogOpen('#dialog-full-pop-3')">주문서 상세</a>
+
+            <a href="#" onclick="dialogOpen('#dialog-full-pop')">인보이스  작성</a>
 
           </div>
         </div>
@@ -268,13 +268,12 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
-    <!-- [s] 주문서 상세 -->
-    <div class="bk-dialog dialog-full2" id="dialog-full-pop-3">
+    <div class="bk-dialog dialog-full2" id="dialog-full-pop">
       <div class="dialog-inner">
         <div class="dialog-header">
           <div class="header-left">
             <div class="bk-title">
-              <h1 class="title">주문서 상세</h1>
+              <h1 class="title">인보이스  작성</h1>
             </div>
           </div>
           <div class="header-right">
@@ -285,39 +284,26 @@
         </div>
         <div class="dialog-container">
           <div class="dialog-contents">
+            <!-- [S] Form-->
             <section class="cp-info-block">
-              <div class="bk-title">
-                <h2 class="bk-title-lv2">Order Sheet</h2>
-              </div>
               <div class="bk-tbl">
                 <table class="tbl tbl-default">
-                  <caption>주문서 상세</caption>
+                  <caption>주문번호</caption>
                   <colgroup>
-                    <col style="width: 25vw">
-                    <col>
+                  <col style="width:25vw">
+                  <col>
                   </colgroup>
-                    <tbody><tr>
+                  <tbody>
+                    <tr>
                       <th scope="col">주문번호</th>
                       <td>I0000000</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">인콰이어리번호</th>
-                      <td>I0000000</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">발송일</th>
-                      <td>2023.01.01 10:05</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">열람일</th>
-                      <td>2023.01.01 10:05</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
-            
-            <section class="cp-info-block">
+
+            <section class="cp-info-block">  
               <div class="bk-accordion accordion-type-line"><!--// [D]기본:single, 다중:multi -->
                 <ul class="list-accordion">
                   <li class="acc-item">
@@ -438,7 +424,6 @@
               <div class="bk-title">
                 <strong class="title">상품정보</strong>
               </div>
-  
               <div class="bk-tbl">
                 <table class="tbl tbl-default">
                   <caption>상품정보</caption>
@@ -463,15 +448,157 @@
                       <th scope="col">상품금액<br>(USD)</th>
                       <td class="bk-align-num">300</td>
                     </tr>
-                    <tr>
-                      <th scope="col">견적금액<br>(USD)</th>
-                      <td class="bk-align-num">270</td>
-                    </tr>
                   </tbody>
                 </table>
+              </div> 
+              <div class="bk-input-list">
+                <dl>
+                  <dt class="is-required">견적금액(USD)</dt>
+                  <dd>
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" value="8,000" class="iText bk-align-num" title="견적금액(USD)">
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt class="is-required">배송비(USD)</dt>
+                  <dd>
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" value="" class="iText bk-align-num" title="배송비(USD)">
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt class="is-required">기타비(USD)</dt>
+                  <dd>
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" value="" class="iText bk-align-num" title="기타비(USD)">
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>기타비 내용</dt>
+                  <dd>
+                    <div class="bk-textarea wide"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
+                      <div class="bk-control">
+                        <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                        <div class="control-field">
+                          <textarea name="" rows="5" cols="50" placeholder="기타비 내용을 간단하게 입력하세요." class="iTextarea" title="label텍스트값"></textarea><!--// [D]focus,disabled,required,readonly -->
+                          <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        </div>
+                        
+                        <div class="bk-valid">에러 메시지</div>
+                        <!--// [D]성공:success,에러:error -->
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="cp-total-price">
+                <span class="text">총 견적금액(USD)</span><strong class="price">1920.240</strong>
               </div>
             </section>
             
+            <section class="cp-info-block">
+              <div class="bk-title">
+                <strong class="title">결제정보</strong>
+              </div>
+              <ul class="bk-tbl-ul bk-tbl-ul-type2">
+                <li>
+                  기타방식으로 선택할 경우, 바이어와 오프라인으로 소통하여 배송방식을 진행해야 합니다. <br>
+                  결제가 완료된 경우에도, 송장등록을 하실 수 없습니다.
+                </li>
+              </ul>
+              <div class="bk-input-list">
+                <dl>
+                  <dt>결제방식</dt>
+                  <dd>
+                    <div class="bk-radio-group">
+                      <div class="bk-radio">
+                        <input type="radio" name="radio" class="iRadio" id="radio-01" checked="">
+                        <label for="radio-01" class="on"><span class="text">KOPS</span></label>
+                      </div>
+                      <div class="bk-radio">
+                        <input type="radio" name="radio" class="iRadio" id="radio-02">
+                        <label for="radio-02"><span class="text">기타방식</span></label>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>결제유효기간</dt>
+                  <dd>
+                    <div class="bk-select">
+                      <div class="bk-control">
+                        <select class="" id="" title="결제유효기간">
+                          <option value="1">2 weeks</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="bk-messages"><i class="bk-icon bk-icon-input-messages">정보</i>2023.12.31(견적 유효기간 종료일)</div>
+                  </dd>
+                </dl>
+              </div>
+            </section>
+
+            <section class="cp-info-block">
+              <div class="bk-title">
+                <strong class="title">배송정보</strong>
+              </div>
+              <ul class="bk-tbl-ul bk-tbl-ul-type2">
+                <li>
+                  기타방식으로 선택할 경우, 바이어와 오프라인으로 소통하여 배송방식을 진행해야 합니다.<br>
+                  결제가 완료된 경우에도, 송장등록을 하실 수 없습니다.
+                </li>
+              </ul>
+              <div class="bk-input-list">
+                <dl>
+                  <dt>배송방식</dt>
+                  <dd>
+                    <div class="bk-select">
+                      <div class="bk-control">
+                        <select class="" id="" title="배송방식">
+                          <option value="1">EMS</option>
+                        </select>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt class="is-required">배송예정기간</dt>
+                  <dd>
+                    <div class="bk-textfield bk-with-txt">
+                      <span>결제일로부터</span>
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" value="" class="iText" title="배송예정기간 시작일">
+                        </div>
+                      </div>
+                      <span>~</span>
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" value="" class="iText" title="배송예정기간 시작일">
+                        </div>
+                      </div>
+                      <span>days</span>
+                    </div>
+                  </dd>
+                  <dt>운임종류</dt>
+                  <dd>
+                    <div class="bk-select">
+                      <div class="bk-control">
+                        <select class="" id="" title="운임종류">
+                          <option value="1">선택</option>
+                        </select>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </section>
+
             <section class="cp-info-block">
               <div class="bk-title">
                 <strong class="title">바이어정보(배송지 정보)</strong>
@@ -525,16 +652,22 @@
               <div class="bk-title">
                 <strong class="title">기타정보</strong>
               </div>
-              <div class="bk-textarea wide"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
+              <ul class="bk-tbl-ul bk-tbl-ul-type2">
+                <li>
+                  인보이스에 관련된 추가 내용(거래조건, 배송조건 등)이 있을 경우 작성하세요.
+                </li>
+              </ul>
+              <div class="bk-textarea wide bk-has-byte"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
                 <div class="bk-control">
                   <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
                   <div class="control-field">
-                    <textarea name="" rows="7" cols="50" placeholder="Sample" class="iTextarea" title="label텍스트값" readonly>
-  1. 항공 또는 선박으로 배송이 가능합니다.
-  2. 냉장되어 있는 상품도 있으며, 냉장된 상품은 가격이 더 비쌉니다.
-  3. 파란꽃게 마리당 최소무게는 1KG입니다.
-                    </textarea><!--// [D]focus,disabled,required,readonly -->
+                    <textarea name="" rows="4" cols="50" placeholder="Sample" class="iTextarea" title="label텍스트값"></textarea><!--// [D]focus,disabled,required,readonly -->
                     <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                    <div class="bk-byte">
+                      <div class="byte-group">
+                        (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                      </div>
+                    </div>
                   </div>
                   
                   <div class="bk-valid">에러 메시지</div>
@@ -543,24 +676,20 @@
               </div>
             </section>
 
-            <div class="cp-infobox-gray">
-              <strong><img src="../../../images/mobile/logo_dark_2.svg" alt="buy KOREA"></strong>
-              <p>buyKOREA는 우리나라 기업들이 해외바이어를 대상으로 상품을 홍보하고 온라인으로 연결될 수 있도록 하는 수출지원 플랫폼입니다.</p>
-            </div>
           </div>
+        
+          <!-- //[D] Form-->
 
           <div class="dialog-footer">
-            <div class="footer-center"> 
-              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">목록</button>
-              <button type="button" class="bk-btn btn-primary btn-outline btn-half">메세지</button>
-              <button type="button" class="bk-btn btn-primary btn-full">인보이스 작성</button>
+            <div class="footer-center">
+              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">취소</button>
+              <button type="button" class="bk-btn btn-primary btn-half"  onclick="dialogOpen('#dialog-modal');">인보이스 발송</button>
             </div>
           </div>
         </div>
-        
       </div>
     </div>
-    <!-- //[e] 주문서 상세 -->
+    <!-- //[e] 견적서 등록/수정-->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
