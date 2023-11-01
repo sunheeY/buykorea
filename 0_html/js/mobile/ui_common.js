@@ -446,7 +446,7 @@ $('[role="addressCloseBtn"]').on('click', function(e){
 var productNumber = 0;
 $('[role="productionPlus"]').on('click', function(e){
   var dhtml = '<div class="cp-company-img-list" id="productionNum_'+productNumber+'">';
-  dhtml += '<button type="button" class="bk-btn btn-brand btn-text bk-list-delete" onClick="cpListDelete(this);">';
+  dhtml += '<button type="button" class="bk-btn btn-brand btn-text bk-list-delete" onclick="dialogOpen(#dialog-modal-delete-list)" >';
   dhtml += '<span class="deco-icon extra-icon"><i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i></span></button>';
 
   dhtml += '<ul class="sub_list">';

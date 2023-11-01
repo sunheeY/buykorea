@@ -289,14 +289,14 @@
             </div>
             <!-- [S] Form-->
             <div class="bk-myinfo-check">
-              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full">
+              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full" onclick="dialogOpen('#alert-check')">
                 <span class="text">간편인증</span>
                 <span class="text-sub">네이버, 삼성패스, 신한인증서, KB인증, 
                   토스, 통신사PASS, 페이코 등
                   간편인증서비스를 제공합니다.</span>
                 <span class="text-sub has-dot">법인 명의는 인증불가</span>
               </button>
-              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full">
+              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full" onclick="dialogOpen('#dialog-find-id')"><!--회원이 아닌경우 모달연결은 하지 않음-->
                 <span class="text">휴대전화 본인인증</span>
                 <span class="text-sub">본인 명의의 휴대전화 정보를
                   정확히 입력하여 주시기 바랍니다.</span>
@@ -310,6 +310,25 @@
       </div>
     </div>
     <!-- //[e] find id 실명인증-->
+
+    <!-- [s] 일치 alert-->
+    <div class="bk-dialog dim alert" id="alert-check">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>입력한 정보와 일치하는 회원이 없습니다. 다시 확인해 주세요.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 일치 alert-->
 
 
     <!-- [s] find id-->

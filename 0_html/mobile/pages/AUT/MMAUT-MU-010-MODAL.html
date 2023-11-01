@@ -122,8 +122,9 @@
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
-            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-find-pw-check')">비밀번호 찾기 실명인증</button>
-            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-reset-password')">reset password</button>
+            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-del')">삭제/탈퇴회원</button>           
+            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-palse')">휴면회원</button>          
+            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-myinfo')">비번5회초과</button>           
           </div>
         </div>
         <!-- [S]Top버튼 -->
@@ -267,165 +268,62 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
-    <!-- [s] find id 실명인증-->
-    <div class="bk-dialog dialog-full" id="dialog-find-pw-check">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">buyKOREA 실명인증</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="bk-guide-txt">
-              <span class="text">본인인증 방식을 통하여 실명인증 후 아이디 확인이 가능합니다.</span>
-            </div>
-            <!-- [S] Form-->
-            <div class="bk-myinfo-check">
-              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full">
-                <span class="text">간편인증</span>
-                <span class="text-sub">네이버, 삼성패스, 신한인증서, KB인증, 
-                  토스, 통신사PASS, 페이코 등
-                  간편인증서비스를 제공합니다.</span>
-                <span class="text-sub has-dot">법인 명의는 인증불가</span>
-              </button>
-              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full">
-                <span class="text">휴대전화 본인인증</span>
-                <span class="text-sub">본인 명의의 휴대전화 정보를
-                  정확히 입력하여 주시기 바랍니다.</span>
-                <span class="text-sub has-dot">법인 명의는 인증불가</span>
-              </button>
-            </div>                   
-            
-            <!-- //[D] Form-->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- //[e] find id 실명인증-->
-
-
-    <!-- [s] reset password-->
-    <div class="bk-dialog has-btmBtn dialog-full" id="dialog-reset-password">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">buyKOREA 비밀번호 재설정</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="bk-guide-txt-white">
-              변경하고자 하는 비밀번호를 입력해 주세요.
-            </div>
-            <!-- [S] Form--> 
-            <div class="bk-input-list">
-              <dl>
-                <dt>비밀번호</dt>
-                <dd>
-                  <div class="bk-textfield bk-full">
-                    <div class="bk-control">
-                      <div class="control-field">
-                        <input type="password" name="change_password" value="" placeholder="새로운 비밀번호를 입력해 주세요." class="iText" id="change_password" required="">
-                      </div>
-                      <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
-                      <div class="bk-messages bk-flex-c bk-flex-row-gap-basic bk-tMg-basic">
-                        <div class="bk-row-div no-gap">
-                          <i class="bk-icon bk-icon-input-messages">정보</i>8자리 이상, 특수문자/영문자/숫자 세 가지 조합 또
-                          는 10자리 이상 또는 두 가지 조합을 사용해주세요.
-                        </div>
-                      </div>
-                    </div>                    
-                  </div>
-                  <!--[S] password strength-->
-                  <div class="bk-password-strength">
-                    <!--하 : gage-1 / 중 : gage-2 / 상 : gaeg-3 -->
-                    <span class="bk-password-text">비밀번호 안전도 : 하</span>
-                    <div class="bk-password-gage">
-                      <span class="gage-1"></span>
-                    </div>
-                  </div>
-                  <!--//[D] password strength-->             
-                </dd>
-              </dl>
-            </div>
-            <div class="bk-input-list">
-              <dl>
-                <dt>비밀번호 확인</dt>
-                <dd>
-                  <div class="bk-textfield bk-full">
-                    <div class="bk-control">
-                      <div class="control-field">
-                        <input type="password" name="change_password_re" value="" placeholder="새로운 비밀번호를 입력해 주세요." class="iText" id="change_password_re" required="">
-                      </div>                      
-                    </div>
-                  </div>
-                </dd>
-              </dl>
-            </div>
-            <!-- //[D] Form-->
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-sticky btn-primary btn-full" onclick="dialogOpen('#alert-password-check')">확인</button><!--동일 비밀번호 체크 alert-password-check-double-->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- //[e] reset password-->
-
-    <!-- [s] 비밀번호 alert-->
-    <div class="bk-dialog dim alert" id="alert-password-check">
+    <!-- [s] 삭제/탈퇴회원-->
+    <div class="bk-dialog dim alert" id="alert-del">
       <div class="dialog-inner">
         <div class="dialog-container">
           <div class="dialog-contents">
             <div class="message">
-              <p>사용 불가한 비밀번호 입니다. 다른 비밀번호를 입력해 주세요.</p>
+              <p>로그인 정보가 올바르지 않습니다. 입력한 정보를 다시 확인해 주시기 바랍니다.</p>
             </div>
           </div>
         </div>
         <div class="dialog-footer">
           <div class="footer-center">
-            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- //[e] 비밀번호 alert-->
-
-    <!-- [s] 동일비밀번호 alert-->
-    <div class="bk-dialog dim alert" id="alert-password-check-double">
+    <!-- //[e] 삭제/탈퇴회원-->
+    <!-- [s] 휴면회원-->
+    <div class="bk-dialog dim alert" id="alert-palse">
       <div class="dialog-inner">
         <div class="dialog-container">
           <div class="dialog-contents">
             <div class="message">
-              <p>현재 사용중인 비밀번호와 동일한 비밀번호로 재설정은 불가합니다. 다른 비밀번호를 입력해 주세요.</p>
+              <p>휴면 해제되었습니다. buyKOREA의 모든 서비스를 정상적으로 이용할 수 있습니다. 확인 버튼을 클릭하시면 메인으로 이동합니다.</p>
             </div>
           </div>
         </div>
         <div class="dialog-footer">
           <div class="footer-center">
-            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- //[e] 동일비밀번호 alert-->
+    <!-- //[e] 휴면회원-->
+    <!-- [s] 비번5회초과-->
+    <div class="bk-dialog dim alert" id="alert-myinfo">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>비밀번호를 5회 이상 틀리셨습니다. 비밀번호 재설정을 이용해 주세요.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 비번5회초과-->
+
+    <!-- //[e] Sign up Account-->
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>

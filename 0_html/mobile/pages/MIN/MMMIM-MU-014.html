@@ -148,7 +148,7 @@
                         <input type="text" name="join-password" value="" placeholder="비밀번호를 입력해 주세요" class="iText" id="join-password" title="비밀번호" required="">
                       </div>
                       <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
-                      <div class="bk-messages bk-flex-c bk-flex-row-gap-basic">
+                      <div class="bk-messages bk-flex-c bk-flex-row-gap-basic bk-tMg-basic">
                         <div class="bk-row-div no-gap">
                           <i class="bk-icon bk-icon-input-messages">정보</i>8자리 이상, 특수문자/영문자/숫자 세 가지 
                           조합 또는 10자리 이상 또는 두 가지 조합을 사용해주세요.
@@ -538,7 +538,7 @@
                       <!--[S] 소속기업해지-->
                       <!--구분선-->
                       <div class="bk-divider">구분선</div>
-                      <button type="button" class="bk-btn btn-brand btn-outline btn-small btn-full">
+                      <button type="button" class="bk-btn btn-brand btn-outline btn-small btn-full" onclick="dialogOpen('#dialog-company-out')">
                         <span class="text">소속 기업 해지</span>
                       </button> 
                       <!--//[D] 소속기업해지-->
@@ -611,7 +611,7 @@
               <button type="button" class="bk-btn btn-primary btn-large btn-half">
                 <span class="text">저장</span>
               </button>
-              <button type="button" class="bk-btn bk-btn-icon btn-text" onclick="dialogOpen('#dialog-delete-account')"><!--팝업연결안함-->
+              <button type="button" class="bk-btn bk-btn-icon btn-text" onclick="dialogOpen('#alert-delete-account')"><!--기업미소속 : #dialog-delete-account, 1인기업마스터 : #alert-delete-account-master-->
                 <span class="text">회원탈퇴</span>
                 <span class="deco-icon append-icon">
                   <i class="bk-icon bk-icon-detail bk-icon-detail-black">detail</i>
@@ -763,7 +763,123 @@
     </div>
     <!--// [E]ui-wrap -->
 
-    <!-- [S]팝업 -->    
+    <!-- [S]팝업 -->   
+
+    <!-- [s] 소속기업 해지-->
+    <div class="bk-dialog dim dialog-modal" id="dialog-company-out">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">소속 기업 해지</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            해당 기업의 소속을 해지하시겠습니까?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">Cencel</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert-company-out-denied')">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bk-dialog dim alert" id="alert-company-out-denied">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>담당하고 있는 상품이 있는 경우, 해지가 불가합니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[d] 소속기업 해지-->
+
+    <!-- [s] Delete My Account-->
+    <!-- 기업소속 회원/담당상품 여부 확인-->
+    <div class="bk-dialog dim alert" id="alert-delete-account">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>담당한 상품이 있는 경우 탈퇴가 불가합니다. 마스터에게 상품 이관을 요청해 주세요.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1인 기업 마스터 회원인 경우-->
+    <div class="bk-dialog dim alert" id="alert-delete-account-master">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>배송 중인 상품이 있는 경우 탈퇴가 불가합니다. 상품 배송이 완료된 후 탈퇴를 진행해 주세요.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- [s] 기업미소속 회원인 경우-->
+    <div class="bk-dialog dim dialog-modal" id="dialog-delete-account">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">회원탈퇴</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            탈퇴하시겠습니까?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">Cencel</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 기업미소속 회원인 경우-->
+
+    <!-- //[e] Delete My Account-->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
