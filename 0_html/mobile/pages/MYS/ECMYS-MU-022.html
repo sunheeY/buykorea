@@ -36,7 +36,7 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>주문 관리</span>
+                  <span>인보이스 관리</span>
                 </h1>
             </div>
             <div class="my-util">
@@ -122,8 +122,8 @@
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
-            
-            <a href="#" onclick="dialogOpen('#dialog-full-pop-3')">주문서 상세</a>
+
+            <a href="#" onclick="dialogOpen('#dialog-full-pop')">인보이스 상세</a>
 
           </div>
         </div>
@@ -268,13 +268,12 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
-    <!-- [s] 주문서 상세 -->
-    <div class="bk-dialog dialog-full2" id="dialog-full-pop-3">
+    <div class="bk-dialog dialog-full2" id="dialog-full-pop">
       <div class="dialog-inner">
         <div class="dialog-header">
           <div class="header-left">
             <div class="bk-title">
-              <h1 class="title">주문서 상세</h1>
+              <h1 class="title">인보이스 상세</h1>
             </div>
           </div>
           <div class="header-right">
@@ -287,7 +286,7 @@
           <div class="dialog-contents">
             <section class="cp-info-block">
               <div class="bk-title">
-                <h2 class="bk-title-lv2">Order Sheet</h2>
+                <h2 class="bk-title-lv2">Invoice</h2>
               </div>
               <div class="bk-tbl">
                 <table class="tbl tbl-default">
@@ -297,12 +296,12 @@
                     <col>
                   </colgroup>
                     <tbody><tr>
-                      <th scope="col">주문번호</th>
-                      <td>I0000000</td>
+                      <th scope="col">인보이스번호</th>
+                      <td>inv051023-000001</td>
                     </tr>
                     <tr>
                       <th scope="col">인콰이어리번호</th>
-                      <td>I0000000</td>
+                      <td>inv051023-000001</td>
                     </tr>
                     <tr>
                       <th scope="col">발송일</th>
@@ -467,6 +466,72 @@
                       <th scope="col">견적금액<br>(USD)</th>
                       <td class="bk-align-num">270</td>
                     </tr>
+                    <tr>
+                      <th scope="col">배송비(USD)</th>
+                      <td class="bk-align-num">1,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">기타비(USD)</th>
+                      <td class="bk-align-num">1,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">기타비<br>상세내용</th>
+                      <td>각종 수수료 비용 및 환율변동에 따른 비용 추가</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">총 견적금액<br>(USD)</th>
+                      <td class="bk-align-num">11,270</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="cp-info-block">
+              <div class="bk-title">
+                <strong class="title">결제정보</strong>
+              </div>
+              <div class="bk-tbl">
+                <table class="tbl tbl-default">
+                  <caption>결제정보</caption>
+                  <colgroup>
+                    <col style="width: 25vw">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="col">결제방식</th>
+                      <td>KOPS</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">결제 유효기간</th>
+                      <td>2023.01.01 10:05:55</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="cp-info-block">
+              <div class="bk-title">
+                <strong class="title">배송정보</strong>
+              </div>
+              <div class="bk-tbl">
+                <table class="tbl tbl-default">
+                  <caption>배송정보</caption>
+                  <colgroup>
+                    <col style="width: 25vw">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="col">배송방식 및 운임종류</th>
+                      <td>EMS(FOB)</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">배송예정기간</th>
+                      <td>결제일로부터 45 ~ 60 Days</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -530,9 +595,9 @@
                   <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
                   <div class="control-field">
                     <textarea name="" rows="7" cols="50" placeholder="Sample" class="iTextarea" title="label텍스트값" readonly>
-  1. 항공 또는 선박으로 배송이 가능합니다.
-  2. 냉장되어 있는 상품도 있으며, 냉장된 상품은 가격이 더 비쌉니다.
-  3. 파란꽃게 마리당 최소무게는 1KG입니다.
+1. 항공 또는 선박으로 배송이 가능합니다.
+2. 냉장되어 있는 상품도 있으며, 냉장된 상품은 가격이 더 비쌉니다.
+3. 파란꽃게 마리당 최소무게는 1KG입니다.
                     </textarea><!--// [D]focus,disabled,required,readonly -->
                     <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
                   </div>
@@ -553,14 +618,12 @@
             <div class="footer-center"> 
               <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">목록</button>
               <button type="button" class="bk-btn btn-primary btn-outline btn-half">메세지</button>
-              <button type="button" class="bk-btn btn-primary btn-full">인보이스 작성</button>
             </div>
           </div>
         </div>
         
       </div>
     </div>
-    <!-- //[e] 주문서 상세 -->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

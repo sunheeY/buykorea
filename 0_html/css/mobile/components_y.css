@@ -5,23 +5,28 @@
 .bk-txt-gray {color: var(--color-sub)}
 .bk-txt-red {color:var(--color-warning);}
 .cp-wide-type {margin: 0 -20px; width: calc(100% + 40px);}
-.bk-align-r {text-align: right;}
-.bk-lineclamp-1 {-webkit-line-clamp: 1; text-overflow: ellipsis ; display: -webkit-box; -webkit-box-orient: vertical; white-space: normal; overflow: hidden;}
-.bk-lineclamp-2 {-webkit-line-clamp: 2; text-overflow: ellipsis ; display: -webkit-box; -webkit-box-orient: vertical; white-space: normal; overflow: hidden;}
+.bk-align-num {text-align: right !important;}
+[class*=lineclamp] {text-overflow: ellipsis ; display: -webkit-box; -webkit-box-orient: vertical; white-space: normal; overflow: hidden;}
 [class*=lineclamp] a {display: block;}
+.bk-lineclamp-1 {-webkit-line-clamp: 1;}
+.bk-lineclamp-2 {-webkit-line-clamp: 2;}
+.iText::placeholder,
+.iTextarea::placeholder {color: var(--color-default)}
+.bk-messages {line-height: 1.6;}
+.cp-total-price .price {font-weight: 500; line-height: 1.22222;}
 
 /* 간격 */
-.cp-info-block .bk-title + .bk-tbl-ul,
-.cp-info-block .bk-tbl-ul + .bk-textarea {margin-top: 8px !important;}
-.cp-info-block .bk-title + .bk-input-list,
-.cp-info-block [class^=bk-]:not(.bk-title) + [class^=bk-],
-.cp-info-block [class^=bk-] + .cp-total-price {margin-top: 24px}
-.bk-input-list + .bk-title,
-.bk-accordion + .bk-title,
 .cp-info-block:not(:first-child) {margin-top: 40px}
+.cp-info-block .cp-total-price,
+.cp-info-block .bk-input-list {margin-top: 24px}
+.cp-info-block .bk-tbl-ul,
+.cp-info-block .bk-textarea {margin-top: 8px;}
+.cp-info-block .bk-tbl {margin-top: 12px;}
+
+/* 간격 상쇄 */
 .cp-info-block .bk-tbl .tbl {margin-bottom: 0;}
-.cp-info-block [class^=bk-] + .bk-tbl {margin-top: 12px;}
- 
+.cp-info-block dd > .bk-textarea {margin-top: 0;}
+.cp-info-block dd > .bk-input-list {margin-top: -8px; padding-top: 12px;}
 
 /* 이너테이블 버튼 추가 */
 .bk-btn-intbl {height: 28px; padding: 3px 8px; font-size: 1.4rem; line-height: 1.57143; border-color: var(--color-gray); background-color: var(--color-white)}
@@ -35,14 +40,16 @@
 .bk-tbl-list .bk-btn-intbl {margin-top: 12px;}
 .bk-delivery-addlist {display: flex; flex-direction: column; align-items: flex-end; border: 0;}
 .bk-delivery-addlist .bk-btn-intbl:first-child {margin-top: 0;}
-/*.bk-delivery-addlist + .bk-btn-icon {margin-top: 12px; height:24px}*/ /*더보기 공통클래스 추가로 삭제 : 김신애 2023-10-31*/
 .bk-tbl-list.bk-delivery-addlist .bk-list {padding: 24px 24px 24px 12px; width: 100%; box-sizing: border-box; margin-top: 12px;}
 .bk-tbl-list.bk-delivery-addlist .bk-list:first-of-type {border-top: 1px solid var(--color-brand);}
 
 /* 리스트 라벨형 */
-.bk-input-list dt {margin-top: 24px; line-height: 1.44444;}
+.bk-input-list dt {margin: 24px 0 0; line-height: 1.44444;}
 .bk-input-list dt:first-child {margin-top: 0;}
+.bk-input-list dd {margin-top: 8px;}
 .bk-input-list dd .bk-input-list dt {font-size: 1.6rem; line-height: 1.625;}
+.bk-input-list dd .bk-messages {margin-top: 0}
+.bk-with-txt {align-items: center; gap: 8px; font-size: 1.6rem; line-height: 1.5;}
 
 /* 리스트 입력필드 + 버튼 */
 .bk-with-btn {display: flex; flex-direction: row; gap: 8px;}
@@ -87,7 +94,7 @@
 .cp-list-wrap .bk-list-detail span {color: var(--color-sub);}
 .cp-list-wrap .bk-list-detail span em {white-space: nowrap;}
 .cp-list-wrap .bk-list-detail .bk-list-tit {font-size: 1.6rem; text-decoration: underline; margin: 16px 0 8px;}
-.cp-list-wrap .bk-list-condition {background-color: var(--color-background); padding: 12px 14px; line-height: 1.57143; color: var(--color-sub); position: relative;}
+.cp-list-wrap .bk-list-condition {background-color: var(--color-background); padding: 14px 12px 15px; line-height: 1.57143; color: var(--color-sub); position: relative;}
 .cp-list-wrap .bk-list-condition .bk-btn-intbl {position: absolute; top: 12px; right: 12px;}
 .cp-list-wrap + .bk-btn {margin-top: 24px;}
 
@@ -96,7 +103,6 @@
 .cp-list-wrap.bk-list-type2 .bk-list-unit strong {display: block; font-size: 1.6rem; font-weight: 500; line-height: 1.5; margin-bottom: 8px;}
 .cp-list-wrap.bk-list-type2 .bk-list-unit p {color: var(--color-sub); line-height: 1.71429;}
 .cp-list-wrap.bk-list-type2 .bk-list-unit button.btn-text {font-size: 1.6rem; line-height: 1.5; position: absolute; right: 0; top: 0; padding: 12px 4px;}
-
 
 /* 풀팝업 */
 /*.bk-dialog.dialog-full2 {height: auto;}*/

@@ -36,6 +36,7 @@
 
 .bk-textfield.ui-member-text .iText{border-radius: 0; border-color:var(--color-gray); height:var(--size-member); line-height:var(--size-member);}/*로그인 인풋 지정*/
 
+.iTextarea::placeholder {color: #999}
 
 .bk-control {display: inline-flex; flex-direction: column; flex-basis: 0; flex-grow: 1;}
 .bk-control .control-field {position: relative;}
