@@ -153,4 +153,11 @@
 .cp-infobox-gray strong {display: block; margin-bottom: 10px;}
 .cp-infobox-gray p {line-height: 1.57143;}
 
+/* 송장등록 */
+.bk-guide-area {display: flex; align-items: center; justify-content: space-between; color: var(--color-sub); line-height: 1.42857;}
+.cp-invoicenum-wrap {margin-top: 8px;}
+.cp-invoicenum-wrap .bk-input-list {position: relative; border: 1px solid var(--color-gray); border-radius: var(--radius-default); margin: 0; padding: 28px 20px 32px;}
+.cp-invoicenum-wrap .bk-input-list + .bk-input-list {margin-top: 12px}
+.cp-invoicenum-wrap .bk-input-list .bk-btn {padding: 0; height: fit-content; position: absolute; top: 12px; right: 12px;}
+.cp-invoicenum-wrap .bk-input-list .bk-btn {display: none;}
 
