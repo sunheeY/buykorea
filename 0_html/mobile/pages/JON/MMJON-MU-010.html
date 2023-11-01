@@ -140,7 +140,7 @@
               </div>
             <!-- //[D] guide-->
             <!-- [S] 약관동의 form-->
-            <div class="bk-accordion accordion-type-line accordion-type-has-check bk-bMg-large">
+            <div class="bk-accordion accordion-type-line accordion-type-has-check bk-bMg-large checkbox-wrap">
               <ul class="list-accordion">
                 <li class="acc-item all-agree">
                   <div class="acc-header">
@@ -158,12 +158,12 @@
                   <div class="acc-header">
                     <div class="acc-inner">
                       <div class="left-area">
-                        <div class="bk-checkbox">
-                          <input type="checkbox" name="checkbox-agree-01" class="iCheckbox" id="checkbox-agree-01">
+                        <div class="bk-checkbox checkbox-item">
+                          <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-01">
                           <label for="checkbox-agree-01"><span class="text">[필수] 이용약관 - 2023. 05. 15 적용지침<em class="is-required">필수</em></span></label>
                         </div>
                       </div>
-                      <div class="right-area">
+                      <div class="right-area checkbox-item">
                         <button type="button" class="bk-icon-only link">
                           <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
                         </button>
@@ -184,8 +184,8 @@
                   <div class="acc-header">
                     <div class="acc-inner">
                       <div class="left-area">
-                        <div class="bk-checkbox">
-                          <input type="checkbox" name="checkbox-agree-02" class="iCheckbox" id="checkbox-agree-02">
+                        <div class="bk-checkbox checkbox-item">
+                          <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-02">
                           <label for="checkbox-agree-02"><span class="text">[필수] 개인정보 수집이용 동의<em class="is-required">필수</em></span></label>
                         </div>
                       </div>
@@ -210,8 +210,8 @@
                   <div class="acc-header">
                     <div class="acc-inner">
                       <div class="left-area">
-                        <div class="bk-checkbox">
-                          <input type="checkbox" name="checkbox-agree-03" class="iCheckbox" id="checkbox-agree-03">
+                        <div class="bk-checkbox checkbox-item">
+                          <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-03">
                           <label for="checkbox-agree-03"><span class="text">[선택] 개인정보 마케팅 활용 동의 확인 </span></label>
                         </div>
                       </div>
@@ -236,9 +236,9 @@
                   <div class="acc-header">
                     <div class="acc-inner">
                       <div class="left-area">
-                        <div class="bk-checkbox">
-                          <input type="checkbox" name="checkbox-agree-03" class="iCheckbox" id="checkbox-agree-03">
-                          <label for="checkbox-agree-03"><span class="text">[선택] 개인정보 수집·이용 동의 확인</span></label>
+                        <div class="bk-checkbox checkbox-item">
+                          <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-04">
+                          <label for="checkbox-agree-04"><span class="text">[선택] 개인정보 수집·이용 동의 확인</span></label>
                         </div>
                       </div>
                       <div class="right-area">
@@ -263,7 +263,7 @@
             <!-- //[D] 약관동의 form-->
 
             <!--[S] 다음버튼-->
-            <button type="button" class="bk-btn btn-primary btn-large btn-full">
+            <button type="button" class="bk-btn btn-primary btn-large btn-full"  onclick="dialogOpen('#alert-registration')">
               <span class="text">다음</span>
             </button>
             <!--//[D] 다음버튼-->
@@ -410,7 +410,24 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->    
-   
+   <!-- [s] 완료 alert-->
+   <div class="bk-dialog dim alert" id="alert-registration">
+    <div class="dialog-inner">
+      <div class="dialog-container">
+        <div class="dialog-contents">
+          <div class="message">
+            <p>이용약관 및 개인정보 수집에 대한 동의는 필수입니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <div class="footer-center">
+          <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //[e] 완료 alert-->
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>

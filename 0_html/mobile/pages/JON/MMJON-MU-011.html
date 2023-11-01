@@ -148,7 +148,7 @@
                   <span class="bk-small-text">법인 명의는 인증불가</span>
                 </dd>              
                 <dd class="has-btn">
-                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full" onclick="dialogOpen('#alert-check')">
                     <span class="text">간편인증</span>
                   </button>
                 </dd>
@@ -162,7 +162,7 @@
                   <span class="bk-small-text">법인 명의는 인증불가</span>
                 </dd>
                 <dd class="has-btn">
-                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full" onclick="dialogOpen('#alert-check')">
                     <span class="text">휴대전화 본인인증</span>
                   </button>
                   <div class="bk-messages bk-flex-c bk-flex-row-gap-no">
@@ -321,6 +321,25 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+
+    <!-- [s] 일치 alert-->
+    <div class="bk-dialog dim alert" id="alert-check">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>입력한 정보와 일치하는 회원이 없습니다. 다시 확인해 주세요.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 일치 alert-->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

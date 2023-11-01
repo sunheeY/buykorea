@@ -338,6 +338,40 @@ function updateRadioCheckbox() {
   });
 }
 
+//checkbox
+var $checkHead = $("#checkbox-agree-all");
+var $checkBody = $(".checkbox-item input[type='checkbox']");
+var $checkBdCnt = $(".checkbox-item");
+var $checkCount = $(".checkbox-wrap");
+
+var $checkHeadCnt = $checkCount.find("input[type='checkbox']").length;
+
+/* 전체선택 */
+$checkHead.click(function(){
+    var $bodyPutCk = $checkHead.is(":checked");
+
+    if ( $bodyPutCk == true ) {
+        $checkBody.attr("checked", true);
+        $checkBody.prop("checked", true);
+    }else {
+        $checkBody.attr("checked", false);
+        $checkBody.prop("checked", false);
+    }    
+});
+
+/* 전체선택 length 카운트 */
+$checkBody.click(function(){
+  var $checkBodyCnt = $checkBdCnt.find("[name='checkbox-agree-child']:checked").length ;
+  if ($checkHeadCnt == ($checkBodyCnt + 1)) {
+    $checkHead.attr("checked", true);
+    $checkHead.prop("checked", true);
+  } else {
+    $checkHead.attr("checked", false);
+    $checkHead.prop("checked", false);
+  }
+
+});
+
 // 레이어 팝업
 var dialogOpen = function(e) {
 	$(e).addClass('is-active');
