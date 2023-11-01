@@ -222,11 +222,11 @@
                 <div class="bk-tbl-toolbar"><span class="total">Total <strong class="num">1,000</strong></span></div>
                 <ul class="bk-review-list">
                   <li>
-                    <div class="top-area">
+                    <a href="#" class="top-area" target="_blank">
                       <div class="thumb"><img src="../../../images/tmp/tmp-goods-01.jpg"></div>
                       <p>Product name Product name Produ
                         ct name Product name...</p> 
-                    </div>
+                    </a>
                     <div class="bottom-area">
                       <span class="date">2023.08.08</span>
                       <div class="bk-btn-inner">
@@ -237,11 +237,56 @@
                     </div>
                   </li>
                   <li>
-                    <div class="top-area">
+                    <a href="#" class="top-area" target="_blank">
                       <div class="thumb"><img src="../../../images/tmp/tmp-goods-01.jpg"></div>
                       <p>Product name Product name Produ
                         ct name Product name...</p> 
+                    </a>
+                    <div class="bottom-area">
+                      <span class="date">2023.08.08</span>
+                      <div class="bk-btn-inner">
+                        <button type="button" class="bk-btn btn-default btn-outline btn-revie btn-xsmall btn-text-xsmall"  onclick="dialogOpen('#dialog-review-write')">
+                          <span class="text">Write</span>
+                        </button>
+                      </div>
                     </div>
+                  </li>
+                  <li>
+                    <a href="#" class="top-area" target="_blank">
+                      <div class="thumb"><img src="../../../images/tmp/tmp-goods-01.jpg"></div>
+                      <p>Product name Product name Produ
+                        ct name Product name...</p> 
+                    </a>
+                    <div class="bottom-area">
+                      <span class="date">2023.08.08</span>
+                      <div class="bk-btn-inner">
+                        <button type="button" class="bk-btn btn-default btn-outline btn-revie btn-xsmall btn-text-xsmall"  onclick="dialogOpen('#dialog-review-write')">
+                          <span class="text">Write</span>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="top-area" target="_blank">
+                      <div class="thumb"><img src="../../../images/tmp/tmp-goods-01.jpg"></div>
+                      <p>Product name Product name Produ
+                        ct name Product name...</p> 
+                    </a>
+                    <div class="bottom-area">
+                      <span class="date">2023.08.08</span>
+                      <div class="bk-btn-inner">
+                        <button type="button" class="bk-btn btn-default btn-outline btn-revie btn-xsmall btn-text-xsmall"  onclick="dialogOpen('#dialog-review-write')">
+                          <span class="text">Write</span>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="top-area" target="_blank">
+                      <div class="thumb"><img src="../../../images/tmp/tmp-goods-01.jpg"></div>
+                      <p>Product name Product name Produ
+                        ct name Product name...</p> 
+                    </a>
                     <div class="bottom-area">
                       <span class="date">2023.08.08</span>
                       <div class="bk-btn-inner">
@@ -391,7 +436,7 @@
                         <button type="button" class="bk-btn btn-default btn-outline btn-primary btn-xsmall btn-text-xsmall" onclick="dialogOpen('#dialog-review-edit')">
                           <span class="text">Edit</span>
                         </button>
-                        <button type="button" class="bk-btn btn-default btn-outline btn-review btn-xsmall btn-text-xsmall">
+                        <button type="button" class="bk-btn btn-default btn-outline btn-review btn-xsmall btn-text-xsmall" onclick="dialogOpen('#dialog-modal')">
                           <span class="text">Delete</span>
                         </button>
                       </div>
@@ -420,7 +465,7 @@
                         <button type="button" class="bk-btn btn-default btn-outline btn-primary btn-xsmall btn-text-xsmall" onclick="dialogOpen('#dialog-review-edit')">
                           <span class="text">Edit</span>
                         </button>
-                        <button type="button" class="bk-btn btn-default btn-outline btn-review btn-xsmall btn-text-xsmall">
+                        <button type="button" class="bk-btn btn-default btn-outline btn-review btn-xsmall btn-text-xsmall" onclick="dialogOpen('#dialog-modal')">
                           <span class="text">Delete</span>
                         </button>
                       </div>
@@ -580,6 +625,55 @@
     <!--// [E]ui-wrap -->
     
     <!-- [S]팝업 -->
+
+    <!-- [S]dialog-modal -->
+    <div class="bk-dialog dim dialog-modal" id="dialog-modal"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">리뷰 삭제</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            선택하신 리뷰를 삭제 처리하겠습니까?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert')">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[E]dialog-modal -->
+
+    <!-- [S]dialog-modal-ok -->
+    <div class="bk-dialog dim alert" id="alert"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>삭제 처리 되었습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[D]dialog-modal-ok -->
 
     <!-- [S]dialog-modal-write -->
     <div class="bk-dialog dim dialog-modal dialog-modal-review" id="dialog-review-write"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
