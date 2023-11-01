@@ -391,6 +391,7 @@
 .bk-bMg-zero{margin-bottom:0px !important;}
 .bk-bMg-xlarge{margin-bottom:80px !important;}
 
+.bk-tMg-basic{margin-top:8px !important;}
 .bk-tMg-small{margin-top:12px !important;}
 .bk-tMg-middle{margin-top:24px !important;}
 
@@ -922,7 +923,7 @@ body.overflow{overflow-y:hidden;}
 .bk-dialog.dialog-full3 .dialog-inner {width: 100vw; height:100vh; max-height:100vh; overflow-x:hidden; /*overflow-y:hidden*/}
 .bk-dialog.dialog-modal .dialog-inner {width: calc(100vw - 56px); height:auto; max-height:calc(100vh - 56px)  }
 
-.bk-dialog .dialog-header {display: flex; justify-content: space-between; align-items: flex-start; min-height:28px; padding: 12px 20px 24px 20px;}
+.bk-dialog .dialog-header {display: flex; justify-content: space-between; align-items: flex-start; min-height:24px; padding: 18px 20px 24px 20px;}
 .bk-dialog.dialog-modal .dialog-header {height:28px; min-height:unset ;padding:32px 24px 20px 24px}
 .bk-dialog.sige .dialog-header {height:28px; min-height:unset ;padding:32px 24px 20px 24px}
 
