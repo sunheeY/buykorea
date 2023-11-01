@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA for Buyers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../../css/mobile/common.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+    <!-- [S]바로가기 -->
+    <div id="skip">
+      <a href="#contents"><span>본문내용 바로가기</span></a>
+      <a href="#gnb"><span>주메뉴 바로가기</span></a>
+      <a href="#lnb"><span>서브메뉴 바로가기</span></a>
+      <a href="#header"><span>해더 바로가기</span></a>
+      <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!--// [E]바로가기 -->
+    <!-- [S]ui-wrap -->
+    <div class="ui-wrap">
+      <!-- [S]header -->
+      <header id="header" class="ui-header">
+        <div class="header-area">
+          <div class="ui-inner ui-pager"><!-- //[D] 헤더가 없는 경우, ui-pager class 추가처리 -->
+            <div class="ui-left">
+                <h1 class="page-move">
+                  <button type="button" class="bk-icon-only">
+                    <i class="bk-icon bk-icon-gnb-prev">이전</i>
+                  </button>
+                  <span>기업정보 수정</span>
+                </h1>
+            </div>
+            <div class="my-util">
+              <button type="button" class="bk-icon-only icon-search">
+                <i class="bk-icon bk-icon-searchBlack">검색</i>
+              </button>
+              <div class="cp-search search-top" style="display: none">
+                <div class="search-area">
+                  <div class="bk-select select-search">
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                    <div class="bk-control">
+                      <select class="" id="" title="검색 메뉴 선택">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option data-display="Select">ALL</option>
+                        <option value="1">Product Name</option>
+                        <option value="2">Company Name</option>
+                        <option value="3">Keyword</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bk-textfield wide textfield-search">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="I'm looking for..."
+                          class="iText"
+                          id=""
+                          required
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <button
+                            type="button"
+                            class="bk-icon-only icon-search"
+                          >
+                            <i class="bk-icon bk-icon-searchPrimary">검색</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="bk-icon-only icon-gnb-menu">
+                <i class="bk-icon bk-icon-gnb-menu">메뉴</i>
+              </button>
+              <nav id="gnb" class="ui-gnb">
+                <div class="ui-inner">
+                  <div class="all-menu">
+                    <button
+                      type="button"
+                      class="bk-btn-icon btn-text bk-btn-allCategories"
+                    >
+                      <i class="bk-icon bk-icon-allCategories">마이페이지</i>
+                      <span class="txt">Categories</span>
+                    </button>
+                  </div>
+                  <div class="gnb-menu">
+                    <ul class="list-menu">
+                      <li><a href="#none">Products</a></li>
+                      <li><a href="#none">Companies</a></li>
+                      <li><a href="#none">Shows</a></li>
+                      <li><a href="#none">Global Offices</a></li>
+                      <li><a href="#none">Inquiries</a></li>
+                      <li><a href="#none">Global Partnership</a></li>
+                      <li><a href="#none">Help</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--// [E]header -->
+      <!-- [S]container -->
+      <main id="container" class="ui-container ui-member"><!--// [D]회원 class추가 -->
+        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
+        <!--// [D]기업사진에만 추가 이미지, 레이어, 위아래 이동 액션을 연결함 -->
+        <!--// [D]생산라인에만 추가 레이어 연결함 -->
+        <div class="ui-content-wrap ui-inner">
+          <div class="ui-contents" id="contents">
+            <div class="bk-guide-txt">
+              <span class="text">해외 바이어를 위해 정보는 <strong>영어로 입력</strong>해 주시고, 바이어의 신뢰도 향상을 위해 기업 정보를 성심껏 입력해 주세요.</span>
+            </div>
+            <!-- [S] Form-->
+            <h1 class="title font-heading-2 bk-bMg24">기업정보 / Company Overview </h1>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">사업자등록번호</dt>
+                <dd>
+                  <div class="bk-textfield">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-number" value="6161212345" placeholder="" class="iText" id="company-number" readonly required="">
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">기업명</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-name" value="" placeholder="㈜ABC기업" class="iText" id="company-name" required="">
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">기업명(영문)</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-name-eng" value="" placeholder="ABC Company" class="iText" id="company-name-eng" required="">
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">CEO</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-ceo" value="" placeholder="홍길동" class="iText" id="company-ceo" required="">
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">CEO(영문)</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-ceo-eng" value="" placeholder="Hong Gil Dong" class="iText" id="company-ceo-eng" required="">
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">주소</dt>
+                <dd>
+                  <div class="bk-row-div bk-grid-25 bk-full">
+                    <div class="bk-textfield bk-full">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" name="join-countrycode1" value="05533" placeholder="" class="iText" id="join-countrycode1" title="Country Code" required="" readonly>
+                        </div>                      
+                      </div>
+                    </div>                              
+
+                    <div class="bk-textfield bk-full">
+                      <div class="bk-control">
+                        <div class="control-field input-full">
+                          <input type="text" name="join-address1" value="서울 서초구 사임당로 32" placeholder="" class="iText" id="join-address1" title="Phone number" required="" readonly>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="join-address2" value="" placeholder="상세주소를 입력해 주세요." class="iText" id="join-address2" title="상세주소를 입력해 주세요." required="">
+                      </div>                      
+                    </div>
+                  </div>
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                    <span class="text">주소검색</span>
+                  </button>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">영문주소</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-default-tel" value="" placeholder="검색한 주소의 영문주소" class="iText" id="company-default-tel" required="" readonly>
+                      </div>
+                    </div>                    
+                  </div>          
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-default-tel" value="" placeholder="" class="iText" id="company-default-tel" required="">
+                      </div>
+                    </div>                    
+                  </div>          
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">사업자등록증</dt>
+                <dd>
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                    <label for="license-file">파일첨부</label> 
+                  </button>
+                  <div class="cp-file">
+                    <div class="file-list">
+                      <!--input type="text" class="upload-license-name text" value="" placeholder=""-->
+                      <div class="upload-license-name text"></div>
+                      <input type="file" id="license-file">
+                      <button type="button" class="bk-btn bk-btn-icon" onClick="license_file_del();">
+                        <span class="deco-icon">
+                          <i class="bk-icon bk-icon-trash">삭제</i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="bk-messages bk-flex-c bk-flex-row-gap-basic">
+                    <div class="bk-row-div no-gap">
+                      <i class="bk-icon bk-icon-input-messages">정보</i><p>파일크기 <strong>1MB</strong> 이하 / jpg,pdf 파일만 등록가능 합니다.</p>
+                    </div>
+                    <div class="bk-row-div no-gap">
+                      <i class="bk-icon bk-icon-input-messages">정보</i>
+                      <div class="bk-tul-ul">
+                        아래와 같은 경우 기업의 활동 또는 민/형사상 책임이 있을 수 있으니 유의하여 주시기 바랍니다.
+                        <ul class="bk-tbl-ul-sub">
+                          <li>첨부한 기업인증 서류가 위/변조 또는 임의로 수정된 문서를 등록한 경우</li>
+                          <li>첨부한 기업인증 서류에 개인정보가 입력(수기작성) 되어 있는 경우</li>
+                          <li>이용약관에 의거하여 불법관련 신고가 접수되는 경우</li>
+                        </ul>
+                      </div>                      
+                    </div>
+                    <div class="bk-row-div no-gap">
+                      <i class="bk-icon bk-icon-input-messages">정보</i><p>사업자등록번호가 변경된 경우, buyKOREA 관리자 승인이 필요합니다.</p>
+                    </div>
+                    <div class="bk-row-div no-gap">
+                      <i class="bk-icon bk-icon-input-messages">정보</i><p>변경신청 버튼을 클릭하여, 변경 정보를 입력하여 신청해 주세요.</p>
+                    </div>
+                  </div>
+                </dd>
+              </dl>              
+            </div>
+            
+            <div class="bk-input-list">
+              <dl>
+                <dd>
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                    <span class="text">사업자등록번호 변경신청</span>
+                  </button>
+                  <!--승인,반려,신청-->
+                  <!--[S]승인 케이스-->
+                  <div class="bk-license-result">
+                    <span class="bk-license-text">승인  2024-01-01</span>
+                  </div>
+                  <!--//[D]승인 케이스-->
+                  <!--[S]신청 케이스-->
+                  <div class="bk-license-result">
+                    <span class="bk-license-text">신청 2024-01-01</span>
+                  </div>
+                  <!--//[D]승인 케이스-->
+                  <!--[S]반려 케이스-->
+                  <div class="bk-license-result">
+                    <span class="bk-license-text">반려 2024-01-01</span>
+                    <div class="bk-license-reason bk-full">
+                      사업장의 명칭을 바꾸게 되면 이는 사업자등록증 변경 사유가 됩니다.
+쇼핑몰 등을 운영하는 통신판매업자가 사이버몰의 명칭을 변경하거나, 인터넷 도메인 주소를 바꾸는 경우에도 마찬가지이죠.
+                    </div>
+                  </div>
+                  <!--//[D]반려 케이스-->
+                </dd>
+              </dl>
+            </div>            
+            <!-- //[D] Form-->
+
+            <!--[S] 정보아코디언-->
+            <div class="bk-accordion accordion-type-line accodion-company-modify">
+              <ul class="list-accordion">
+                <li class="acc-item">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">견적정보 / Quote Information (선택)</div>
+                      <div class="right-area">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner">
+
+                      <!--[S]로고첨부-->                      
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>회사 로고</dt>
+                          <dd>
+                            <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full btn-find-image">
+                              <label for="logo_file">이미지 찾기</label> 
+                            </button>
+
+                            <div class="cp-file">
+                              <div class="file-logo-list">
+                                <img id="logo_img_file" class="img-preview">
+                                <!--input type="text" class="upload-logo-name text" value="" placeholder=""-->
+                                <span class="upload-logo-name text"></span>
+                                <input type="file" name="file" id="logo_file" value="" />
+                                <button type="button" class="bk-btn bk-btn-icon" onclick="logoFileDelete();">
+                                  <span class="deco-icon">
+                                    <i class="bk-icon bk-icon-trash">삭제</i>
+                                  </span>
+                                </button>                          
+
+                              </div>
+                            </div>                            
+                          </dd>
+                        </dl>
+                      </div>
+                      <!--//[D]로고첨부-->
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>회사 홈페이지 (Homepage)</dt>
+                          <dd>
+                            <div class="bk-textfield large">
+                              <div class="bk-control">
+                                  <input type="text" name="company-website" value="" placeholder="placeholder" class="iText" title="회사 홈페이지">
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>대표전화번호</dt>
+                          <dd>
+                            <div class="bk-textfield large">
+                              <div class="bk-control">
+                                  <input type="text" name="company-number" value="" placeholder="placeholder" class="iText" title="대표전화번호">
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>Fax</dt>
+                          <dd>
+                            <div class="bk-textfield large">
+                              <div class="bk-control">
+                                  <input type="text" name="company-fax" value="" placeholder="placeholder" class="iText" title="Fax">
+                              </div>
+                            </div>
+
+                            <div class="bk-messages bk-flex-c bk-flex-row-gap-no">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>임시저장 후 페이지 맨 하단의 저장 버튼을 클릭해야 반영됩니다.
+                              </div>
+                            </div>
+
+                            <button type="button" class="bk-btn btn-primary btn-middle btn-full">
+                              <span class="text">임시저장</span>
+                            </button>
+
+                          </dd>
+                        </dl>
+                      </div>
+
+                    </div>
+                  </div>
+                </li>
+                <li class="acc-item">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">기업정보 / Company Overview (선택)</div>
+                      <div class="right-area">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner">
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>업종 (Business type)</dt>
+                          <dd>
+                            
+                            <fieldset>
+                              <legend>radio</legend>
+                              <div class="bk-radio-group wide">
+                                <div class="bk-radio">
+                                  <input type="radio" name="radio-05" class="iRadio" id="radio-05-01">
+                                  <label for="radio-05-01"><span class="text">Manufacturer (제조)</span></label>
+                                </div>
+                                <div class="bk-radio">
+                                  <input type="radio" name="radio-05" class="iRadio" id="radio-05-02">
+                                  <label for="radio-05-02"><span class="text">Distributor (유통)</span></label>
+                                </div>
+                                <div class="bk-radio">
+                                  <input type="radio" name="radio-05" class="iRadio" id="radio-05-03">
+                                  <label for="radio-05-03"><span class="text">Manufacturer&Distributor (제조&유통)</span></label>
+                                </div>
+                              </div>
+                            </fieldset>
+
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>국가/지역 (Country / Region)</dt>
+                          <dd>
+
+                            <div class="bk-select default">
+                              <div class="bk-control">
+                                <select class="" id="select_country" title="국가선택">
+                                  <option value="Choose">국가를 선택해 주세요.</option>
+                                  <option value="option2">choice1</option>
+                                  <option value="option3">choice2</option>
+                                  <option value="option4">choice3</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="bk-select default">
+                              <div class="bk-control">
+                                <select class="" id="select_area" title="지역선택">
+                                  <option value="Choose">지역을 선택해 주세요.</option>
+                                  <option value="option2">choice1</option>
+                                  <option value="option3">choice2</option>
+                                  <option value="option4">choice3</option>
+                                </select>
+                              </div>
+                            </div>
+
+                          </dd>
+                        </dl>
+                      </div>
+                    
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>주요 상품 (Main Products)</dt>
+                          <dd>
+                            <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                              <span class="text">카테고리 검색</span>
+                            </button>   
+                            <ul class="bk-tbl-ul">
+                              <li>
+                                <span class="text">Apparel & Textiles > Apparel Fabric</span>
+                                <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large">
+                                  <span class="deco-icon extra-icon append-icon">
+                                    <i class="bk-icon bk-icon-trash">delete</i>
+                                  </span>
+                                </button>
+                              </li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div> 
+                      
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>창립연도 (Year established)</dt>
+                          <dd>
+                            <div class="bk-textfield">
+                              <div class="bk-control">
+                                  <input type="text" name="company-year" value="" placeholder="기업 창립 연도를 숫자만 입력해 주세요." class="iText" title="창립연도 (Year established)">
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>총 직원 수 (Total employees)</dt>
+                          <dd>
+
+                            <div class="bk-select default">
+                              <div class="bk-control">
+                                <select class="is-focus" id="select_employees" title="총 직원 수 (Total employees)">
+                                  <option value="option1">1~10</option>
+                                  <option value="option2">11~50</option>
+                                  <option value="option3">51~100</option>
+                                  <option value="option4">101~200</option>
+                                  <option value="option5">201~500</option>
+                                  <option value="option6">501~1,000</option>
+                                  <option value="option7">1,001~</option>
+                                </select>
+                              </div>
+                            </div>
+
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>연간 총 수입 (Total Annual Revenue)</dt>
+                          <dd>
+
+                            <div class="bk-select default">
+                              <div class="bk-control">
+                                <select class="is-focus" id="select_annual" title="연간 총 수입 (Total Annual Revenue)">
+                                  <option value="option1">~1,000</option>
+                                  <option value="option2">1,001~5,000</option>
+                                  <option value="option3">5,001~10,000</option>
+                                  <option value="option4">10,001~100,000</option>
+                                  <option value="option5">100,001~</option>
+                                </select>
+                              </div>
+                            </div>
+
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>주요 수출국 (Main Markets)</dt>
+                          <dd>
+                            <div class="bk-messages bk-flex-c bk-tMg-zero">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>최대 3개국까지 등록 가능합니다.
+                              </div>
+                            </div>
+                            <div class="bk-select default">
+                              <div class="bk-control">
+                                <select class="" id="select_country1" title="국가를 선택해 주세요.">
+                                  <option value="option1">국가를 선택해 주세요.</option>
+                                  <option value="option2">국가를 선택해 주세요.</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="bk-select default">
+                              <div class="bk-control">
+                                <select class="" id="select_country2" title="국가를 선택해 주세요.">
+                                  <option value="option1">국가를 선택해 주세요.</option>
+                                  <option value="option2">국가를 선택해 주세요.</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="bk-select default">
+                              <div class="bk-control">
+                                <select class="" id="select_country3" title="국가를 선택해 주세요.">
+                                  <option value="option1">국가를 선택해 주세요.</option>
+                                  <option value="option2">국가를 선택해 주세요.</option>
+                                </select>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <!--[S]기업사진 구성 변경 2023-10-27-->
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>기업사진</dt>
+                          <dd>
+                            <ul class="sub_list">
+                              <li>
+                                <div class="bk-text">
+                                  기업 대표 이미지 : 권장 사이즈 280px(가로) X 200px(세로)
+                                </div>
+                                <button type="button" class="bk-btn btn-primary btn-outline btn-full bk-bMg-tiny btn-find-image">
+                                  <span class="text">이미지 찾기</span>
+                                </button>
+
+                                <div class="cp-company-img-list-group bk-bMg-middle2">
+                                  <!--초기엔 항상 기본 설정-->
+                                  <div id="bk-list-id">
+                                    <div class="cp-company-img-list bk-flex-row-gap-basic" id="c-intro-img-01">
+                                      <button
+                                        type="button"
+                                        class="bk-btn btn-brand btn-text bk-list-delete"
+                                        onClick="cpListDelete(this);"
+                                      >
+                                        <span class="deco-icon extra-icon">
+                                          <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                        </span>
+                                      </button>
+
+                                      <div class="bk-photofield">
+                                        <img id="photo_img_file" class="img-preview">
+                                        
+                                        <div class="bk-photoInfo-group">
+                                          <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                            <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                          </button>                                                                 
+                                          <span class="upload-img-name text"></span>
+                                          <input type="file" name="file" id="productfile_upload" value="" />
+                                        </div>
+
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--div class="bk-messages bk-flex-c bk-tMg-zero">
+                                  <div class="bk-row-div no-gap">
+                                    <i class="bk-icon bk-icon-input-messages">정보</i>공장 생산라인 등 기업 관련 사진을 최대 10장까지 등록 가능합니다.
+                                  </div>
+                                </div-->
+
+                                <div class="bk-text">
+                                  기업 배너 이미지 : 권장 사이즈 1920px(가로) X 300px(세로)
+                                </div>
+                                <button type="button" class="bk-btn btn-primary btn-outline btn-full bk-bMg-tiny btn-find-image">
+                                  <span class="text">이미지 찾기</span>
+                                </button>
+
+                                <div class="cp-company-img-list-group bk-bMg-middle2">
+                                  <div id="bk-list-id">
+                                    <!--초기엔 항상 기본 설정-->
+                                    <div class="cp-company-img-list bk-flex-row-gap-basic" id="c-banner-img-01">
+                                      <button
+                                        type="button"
+                                        class="bk-btn btn-brand btn-text bk-list-delete"
+                                        onClick="cpListDelete(this);"
+                                      >
+                                        <span class="deco-icon extra-icon">
+                                          <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                        </span>
+                                      </button>
+
+                                      <div class="bk-photofield">
+                                        <img id="photo_img_file" class="img-preview">
+                                        
+                                        <div class="bk-photoInfo-group">
+                                          <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                            <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                          </button>                                                                 
+                                          <span class="upload-img-name text"></span>
+                                          <input type="file" name="file" id="productfile_upload" value="" />
+                                        </div>
+
+                                      </div>    
+                                    </div>   
+                                  </div>                               
+                                </div>
+                              </li>
+                              <li>
+                                <div class="bk-text">
+                                  기업 사진
+                                </div>
+                                <button type="button" class="bk-btn btn-primary btn-outline btn-full" role="photoListPlus">
+                                  <span class="text">이미지 찾기</span>
+                                </button>
+
+                                <div class="cp-company-img-list-group">
+                                  <!--[S] dafult 1개출력 -->
+                                  <div id="bk-list-id">
+                                    <div class="cp-company-img-list bk-flex-row-gap-basic" id="productNum_0">
+                                      <button type="button" class="bk-btn btn-brand btn-text bk-list-delete" onClick="photoListdelete(this);"><span class="deco-icon extra-icon"><i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i></span></button>
+                                      <div class="bk-photofield">
+                                          <img id="photo_img_file_0" class="img-preview">
+                                          <div class="bk-photoInfo-group">
+                                            <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall"><label for="productfile_upload_0" class="text">이미지 찾기</label></button>
+                                            <span class="upload-img-name_0 text"></span><input type="file" name="file" id="productfile_upload_0" value="" onChange="list_plus_img(event,'0')" />
+                                          </div>
+                                      </div>
+                                      <div class="bk-textfield input-full">
+                                          <div class="bk-control"><input type="text" name="company-image-01" value="" placeholder="이미지 설명을 영문 30자 이내로 입력." class="iText" title="이미지 설명"></div>
+                                      </div>
+                                      
+                                      <div class="bk-list-move-group" style="display:none"> <!--초기설정을 위한 inline-->
+                                        <button type="button" class="bk-btn btn-brand btn-text bk-list-move-up">
+                                          <span class="deco-icon extra-icon">
+                                            <i class="bk-icon bk-icon-image-list-up">위로</i>
+                                          </span>
+                                        </button>
+                                        <button type="button" class="bk-btn btn-brand btn-text bk-list-move-down">
+                                          <span class="deco-icon extra-icon">
+                                            <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                                          </span>
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <!-- //[E] dafult 1개출력 -->
+                                </div>
+                              </li>
+                            </ul>
+
+                          </dd>
+                        </dl>
+                      </div>
+                      <!--[E]기업사진 구성 변경 2023-10-27-->
+                      
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>기업전경영상</dt>
+                          <dd>
+                            <div class="bk-messages bk-flex-c bk-tMg-zero">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>회사전경 등을 담은 영상을 유튜브 URL로 최대 3개까지 등록가능합니다.
+                              </div>
+                            </div>
+                            <ul class="sub_list">
+                              <li>
+                                <div class="bk-text">URL 1</div>
+                                <div class="bk-textfield input-full">
+                                  <div class="bk-control">
+                                      <input type="text" name="company-movie01" value="" placeholder="URL 입력 후 검증을 꼭 진행해 주세요." class="iText" title="URL1">
+                                  </div>
+                                </div>
+                                <button type="button" class="bk-btn btn-primary btn-outline btn-full btn-chk-url">
+                                  <span class="text">URL 검증</span>
+                                </button>
+                              </li>
+                              <li>
+                                <div class="bk-text">URL 2</div>
+                                <div class="bk-textfield input-full">
+                                  <div class="bk-control">
+                                      <input type="text" name="company-movie02" value="" placeholder="URL 입력 후 검증을 꼭 진행해 주세요." class="iText" title="URL2">
+                                  </div>
+                                </div>
+                                <button type="button" class="bk-btn btn-primary btn-outline btn-full btn-chk-url">
+                                  <span class="text">URL 검증</span>
+                                </button>
+                              </li>
+                              <li>
+                                <div class="bk-text">URL 3</div>
+                                <div class="bk-textfield input-full">
+                                  <div class="bk-control">
+                                      <input type="text" name="company-movie03" value="" placeholder="URL 입력 후 검증을 꼭 진행해 주세요." class="iText" title="URL3">
+                                  </div>
+                                </div>
+                                <button type="button" class="bk-btn btn-primary btn-outline btn-full btn-chk-url">
+                                  <span class="text">URL 검증</span>
+                                </button>
+                              </li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-messages bk-flex-c bk-bMg-basic">
+                        <div class="bk-row-div no-gap">
+                          <i class="bk-icon bk-icon-input-messages">정보</i>임시저장 후 페이지 맨 하단의 저장 버튼을 클릭해야 반영됩니다.
+                        </div>
+                      </div>
+
+                       <button type="button" class="bk-btn btn-primary btn-middle btn-full">
+                        <span class="text">임시저장</span>
+                      </button>
+
+                    </div>
+                  </div>
+                </li>
+                <li class="acc-item ">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">생산정보 / Production Capacity (선택)</div>
+                      <div class="right-area">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner">
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>공장정보 (Factory Information)</dt>
+                          <dd>
+                            <ul class="sub_list">
+                              <li>
+                                <div class="bk-text">공장규모</div>
+                                <div class="bk-textfield input-full">
+                                  <div class="bk-control">
+                                      <input type="text" name="company-info-01" value="" placeholder="" class="iText" title="공장규모">
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="bk-text">공장 국가/지역</div>
+                                <div class="bk-textfield input-full">
+                                  <div class="bk-control">
+                                      <input type="text" name="company-info-02" value="" placeholder="" class="iText" title="공장 국가/지역">
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="bk-text">계약제조</div>
+                                <div class="bk-textfield input-full">
+                                  <div class="bk-control">
+                                      <input type="text" name="company-info-03" value="" placeholder="" class="iText" title="생산라인수">
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="bk-text">연간출력</div>
+                                <div class="bk-textfield input-full">
+                                  <div class="bk-control">
+                                      <input type="text" name="company-info-04" value="" placeholder="" class="iText" title="연간출력">
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                           
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>연간생산능력<br>(annual production capacity)</dt>
+                          <dd class="bk-flex-row-gap-no">
+                            <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg-basic">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>제품별 연간생산량을 최대 30개까지 등록 가능합니다.</div>
+                            </div>
+                            <button type="button" class="bk-btn btn-primary btn-outline btn-full bk-bMg-small" role="productionPlus">
+                              <span class="text">추가</span>
+                            </button>
+
+                            <div class="cp-company-img-list-group">
+                              <div class="cp-company-img-list">
+                                <button
+                                  type="button"
+                                  class="bk-btn btn-brand btn-text bk-list-delete"
+                                  onClick="cpListDelete(this);"
+                                >
+                                  <span class="deco-icon extra-icon">
+                                    <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                  </span>
+                                </button>
+                                <ul class="sub_list">
+                                  <li>
+                                    <div class="bk-text">제품이름</div>
+                                    <div class="bk-textfield input-full">
+                                      <div class="bk-control">
+                                          <input type="text" name="company-capacity-01" value="" placeholder="" class="iText" title="제품이름">
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="bk-text">생산라인 용량</div>
+                                    <div class="bk-textfield input-full">
+                                      <div class="bk-control">
+                                          <input type="text" name="company-capacity-02" value="" placeholder="" class="iText" title="생산라인 용량">
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="bk-text">실제 생산수량(전년도)</div>
+                                    <div class="bk-textfield input-full">
+                                      <div class="bk-control">
+                                          <input type="text" name="company-capacity-03" value="" placeholder="" class="iText" title="실제 생산수량(전년도)">
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="cp-company-img-list">
+                                <button
+                                  type="button"
+                                  class="bk-btn btn-brand btn-text bk-list-delete"
+                                  onClick="cpListDelete(this);"
+                                >
+                                  <span class="deco-icon extra-icon">
+                                    <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                  </span>
+                                </button>
+                                <ul class="sub_list">
+                                  <li>
+                                    <div class="bk-text">제품이름</div>
+                                    <div class="bk-textfield input-full">
+                                      <div class="bk-control">
+                                          <input type="text" name="company-capacity-11" value="" placeholder="" class="iText" title="제품이름">
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="bk-text">생산라인 용량</div>
+                                    <div class="bk-textfield input-full">
+                                      <div class="bk-control">
+                                          <input type="text" name="company-capacity-12" value="" placeholder="" class="iText" title="생산라인 용량">
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="bk-text">실제 생산수량(전년도)</div>
+                                    <div class="bk-textfield input-full">
+                                      <div class="bk-control">
+                                          <input type="text" name="company-capacity-13" value="" placeholder="" class="iText" title="실제 생산수량(전년도)">
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>생산라인 (production line)</dt>
+                          <dd class="bk-flex-row-gap-no">
+                            <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg-basic">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>제품별 연간생산량을 최대 30개까지 등록 가능합니다.</div>
+                            </div>
+                            <button type="button" class="bk-btn btn-primary btn-outline btn-full bk-bMg-small" role="productionPlus">
+                              <span class="text">추가</span>
+                            </button>
+                            <div class="cp-company-img-list-group">                              
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-messages bk-flex-c bk-bMg-basic bk-tMg-small">
+                        <div class="bk-row-div no-gap">
+                          <i class="bk-icon bk-icon-input-messages">정보</i>임시저장 후 페이지 맨 하단의 저장 버튼을 클릭해야 반영됩니다.
+                        </div>
+                      </div>
+
+                       <button type="button" class="bk-btn btn-primary btn-middle btn-full">
+                        <span class="text">임시저장</span>
+                      </button>
+
+                    </div>
+                  </div>
+                </li>
+                <li class="acc-item">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">품질관리 / Quality Control (선택)</div>
+                      <div class="right-area">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner">
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>품질관리 절차<br>(Quality control procedure)</dt>
+                          <dd class="bk-flex-row-gap-no">
+                            <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg-basic">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>최대 5장까지 등록 가능합니다.</div>
+                            </div>
+                            <button type="button" class="bk-btn btn-primary btn-outline btn-full bk-bMg-small">
+                              <span class="text">추가</span>
+                            </button>
+
+                            <div class="cp-company-img-list-group">
+                              <div id="bk-list-id">
+                                <!--첫번째 노드에서는 아래화살표만-->
+                                <div class="cp-company-img-list bk-flex-row-gap-basic">
+                                  <button
+                                    type="button"
+                                    class="bk-btn btn-brand btn-text bk-list-delete"
+                                  >
+                                    <span class="deco-icon extra-icon">
+                                      <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                    </span>
+                                  </button>
+
+                                  <div class="bk-photofield">
+                                    <img id="photo_img_file" class="img-preview">
+                                    
+                                    <div class="bk-photoInfo-group">
+                                      <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                        <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                      </button>                                                                 
+                                      <span class="upload-img-name text"></span>
+                                      <input type="file" name="file" id="productfile_upload" value="" />
+                                    </div>
+
+                                  </div>
+
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="quality-title-01" value="" placeholder="이미지 제목을 입력하세요." class="iText" title="이미지 제목">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textarea">
+                                    <div class="bk-control">
+                                      <div class="control-field">
+                                        <textarea name="" rows="4" cols="50" placeholder="이미지 설명을 영문 1,000자 이내로 입력하세요." class="iTextarea" id="quality-textarea-01"></textarea>
+                                      </div>
+                                      <div class="bk-byte">
+                                        <div class="byte-group">
+                                          (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="bk-list-move-group">
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-up"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-up">위로</i>
+                                      </span>
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-down"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="bk-list-id">
+                                <!--두번째 ~ 마지막 이전 노드에서는 위,아래화살표-->
+                                <div class="cp-company-img-list bk-flex-row-gap-basic">
+                                  <button
+                                    type="button"
+                                    class="bk-btn btn-brand btn-text bk-list-delete"
+                                  >
+                                    <span class="deco-icon extra-icon">
+                                      <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                    </span>
+                                  </button>
+
+                                  <div class="bk-photofield">
+                                    <img id="photo_img_file" class="img-preview">
+                                    
+                                    <div class="bk-photoInfo-group">
+                                      <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                        <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                      </button>                                                                 
+                                      <span class="upload-img-name text"></span>
+                                      <input type="file" name="file" id="productfile_upload" value="" />
+                                    </div>
+
+                                  </div>
+
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="quality-title-01" value="" placeholder="이미지 제목을 입력하세요." class="iText" title="이미지 제목">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textarea">
+                                    <div class="bk-control">
+                                      <div class="control-field">
+                                        <textarea name="" rows="4" cols="50" placeholder="이미지 설명을 영문 1,000자 이내로 입력하세요." class="iTextarea" id="quality-textarea-01"></textarea>
+                                      </div>
+                                      <div class="bk-byte">
+                                        <div class="byte-group">
+                                          (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="bk-list-move-group">
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-up"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-up">위로</i>
+                                      </span>
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-down"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>      
+                              </div>                        
+
+                              <div id="bk-list-id">
+                                <!--마지막 노드에서는 첫번째화살표만-->
+                                <div class="cp-company-img-list bk-flex-row-gap-basic">
+                                  <button
+                                    type="button"
+                                    class="bk-btn btn-brand btn-text bk-list-delete"
+                                  >
+                                    <span class="deco-icon extra-icon">
+                                      <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                    </span>
+                                  </button>
+
+                                  <div class="bk-photofield">
+                                    <img id="photo_img_file" class="img-preview">
+                                    
+                                    <div class="bk-photoInfo-group">
+                                      <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                        <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                      </button>                                                                 
+                                      <span class="upload-img-name text"></span>
+                                      <input type="file" name="file" id="productfile_upload" value="" />
+                                    </div>
+
+                                  </div>
+
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="quality-title-01" value="" placeholder="이미지 제목을 입력하세요." class="iText" title="이미지 제목">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textarea">
+                                    <div class="bk-control">
+                                      <div class="control-field">
+                                        <textarea name="" rows="4" cols="50" placeholder="이미지 설명을 영문 1,000자 이내로 입력하세요." class="iTextarea" id="quality-textarea-01"></textarea>
+                                      </div>
+                                      <div class="bk-byte">
+                                        <div class="byte-group">
+                                          (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="bk-list-move-group">
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-up"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-up">위로</i>
+                                      </span>
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-down"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-messages bk-flex-c bk-tMg-middle bk-bMg-basic">
+                        <div class="bk-row-div no-gap">
+                          <i class="bk-icon bk-icon-input-messages">정보</i>임시저장 후 페이지 맨 하단의 저장 버튼을 클릭해야 반영됩니다.
+                        </div>
+                      </div>
+
+                       <button type="button" class="bk-btn btn-primary btn-middle btn-full">
+                        <span class="text">임시저장</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="acc-item">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">연구개발능력 / R&D Capacity (선택)</div>
+                      <div class="right-area">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner">
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>상표 (Trademarks)</dt>
+                          <dd class="bk-flex-row-gap-no">
+                            <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg-basic">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>최대 30장까지 등록 가능합니다.</div>
+                            </div>
+                            <button type="button" class="bk-btn btn-primary btn-outline btn-full bk-bMg-small">
+                              <span class="text">추가</span>
+                            </button>
+
+                            <div class="cp-company-img-list-group">
+                              <div id="bk-list-id">
+                                <div class="cp-company-img-list bk-flex-row-gap-basic">
+                                  <button
+                                    type="button"
+                                    class="bk-btn btn-brand btn-text bk-list-delete"
+                                  >
+                                    <span class="deco-icon extra-icon">
+                                      <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                    </span>
+                                  </button>
+
+                                  <div class="bk-photofield">
+                                    <img id="photo_img_file" class="img-preview">
+                                    
+                                    <div class="bk-photoInfo-group">
+                                      <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                        <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                      </button>                                                                 
+                                      <span class="upload-img-name text"></span>
+                                      <input type="file" name="file" id="productfile_upload" value="" />
+                                    </div>
+
+                                  </div>
+
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="trademarks-title-01" value="" placeholder="상표명을 입력하세요." class="iText" title="상표명">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="trademarks-title-02" value="" placeholder="상표번호를 입력하세요." class="iText" title="상표번호">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="trademarks-title-03" value="" placeholder="인증기간을 입력하세요." class="iText" title="인증기간">
+                                    </div>
+                                  </div>
+                                  <div class="bk-list-move-group">
+                                    <button
+                                    type="button"
+                                    class="bk-btn btn-brand btn-text bk-list-move-up"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-up">위로</i>
+                                      </span>
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-down"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="bk-list-id">
+                                <div class="cp-company-img-list bk-flex-row-gap-basic">
+                                  <button
+                                    type="button"
+                                    class="bk-btn btn-brand btn-text bk-list-delete"
+                                  >
+                                    <span class="deco-icon extra-icon">
+                                      <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                    </span>
+                                  </button>
+
+                                  <div class="bk-photofield">
+                                    <img id="photo_img_file" class="img-preview">
+                                    
+                                    <div class="bk-photoInfo-group">
+                                      <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                        <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                      </button>                                                                 
+                                      <span class="upload-img-name text"></span>
+                                      <input type="file" name="file" id="productfile_upload" value="" />
+                                    </div>
+
+                                  </div>
+
+
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="trademarks-title-11" value="" placeholder="상표명을 입력하세요." class="iText" title="상표명">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="trademarks-title-12" value="" placeholder="상표번호를 입력하세요." class="iText" title="상표번호">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="trademarks-title-13" value="" placeholder="인증기간을 입력하세요." class="iText" title="인증기간">
+                                    </div>
+                                  </div>
+                                  <div class="bk-list-move-group">
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-up"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-up">위로</i>
+                                      </span>
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-down"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>특허 (Patents)</dt>
+                          <dd class="bk-flex-row-gap-no">
+                            <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg-basic">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>최대 30장까지 등록 가능합니다.</div>
+                            </div>
+                            <button type="button" class="bk-btn btn-primary btn-outline btn-full bk-bMg-small">
+                              <span class="text">추가</span>
+                            </button>
+
+                            <div class="cp-company-img-list-group">
+                              <div id="bk-list-id">
+                                <div class="cp-company-img-list bk-flex-row-gap-basic">
+                                  <button
+                                    type="button"
+                                    class="bk-btn btn-brand btn-text bk-list-delete"
+                                  >
+                                    <span class="deco-icon extra-icon">
+                                      <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                    </span>
+                                  </button>
+
+                                  <div class="bk-photofield">
+                                    <img id="photo_img_file" class="img-preview">
+                                    
+                                    <div class="bk-photoInfo-group">
+                                      <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                        <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                      </button>                                                                 
+                                      <span class="upload-img-name text"></span>
+                                      <input type="file" name="file" id="productfile_upload" value="" />
+                                    </div>
+
+                                  </div>
+
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="patents-title-01" value="" placeholder="상표명을 입력하세요." class="iText" title="상표명">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="patents-title-02" value="" placeholder="상표번호를 입력하세요." class="iText" title="상표번호">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="patents-title-03" value="" placeholder="인증기간을 입력하세요." class="iText" title="인증기간">
+                                    </div>
+                                  </div>
+                                  <div class="bk-list-move-group">
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-up"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-up">위로</i>
+                                      </span>
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-down"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="bk-list-id">
+                                <div class="cp-company-img-list bk-flex-row-gap-basic">
+                                  <button
+                                    type="button"
+                                    class="bk-btn btn-brand btn-text bk-list-delete"
+                                  >
+                                    <span class="deco-icon extra-icon">
+                                      <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                    </span>
+                                  </button>
+
+                                  <div class="bk-photofield">
+                                    <img id="photo_img_file" class="img-preview">
+                                    
+                                    <div class="bk-photoInfo-group">
+                                      <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                        <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                      </button>                                                                 
+                                      <span class="upload-img-name text"></span>
+                                      <input type="file" name="file" id="productfile_upload" value="" />
+                                    </div>
+
+                                  </div>
+
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="patents-title-11" value="" placeholder="상표명을 입력하세요." class="iText" title="상표명">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="patents-title-12" value="" placeholder="상표번호를 입력하세요." class="iText" title="상표번호">
+                                    </div>
+                                  </div>
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="patents-title-13" value="" placeholder="인증기간을 입력하세요." class="iText" title="인증기간">
+                                    </div>
+                                  </div>
+                                  <div class="bk-list-move-group">
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-up"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-up">위로</i>
+                                      </span>
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="bk-btn btn-brand btn-text bk-list-move-down"
+                                    >
+                                      <span class="deco-icon extra-icon">
+                                        <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dd class="bk-flex-row-gap-no">
+                            <ul class="sub_list">
+                              <li>
+                                <div class="bk-text">연구개발 (Research & Development)</div>
+                                <div class="bk-textfield input-full">
+                                  <div class="bk-control">
+                                      <input type="text" name="research-01" value="" placeholder="상품연구&개발하는 직원수를 입력해주세요." class="iText" title="상품연구&개발하는 직원수를 입력">
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-messages bk-flex-c bk-bMg-basic">
+                        <div class="bk-row-div no-gap">
+                          <i class="bk-icon bk-icon-input-messages">정보</i>임시저장 후 페이지 맨 하단의 저장 버튼을 클릭해야 반영됩니다.
+                        </div>
+                      </div>
+
+                       <button type="button" class="bk-btn btn-primary btn-middle btn-full">
+                        <span class="text">임시저장</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="acc-item">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">거래능력 / Trading ability (선택)</div>
+                      <div class="right-area">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner">
+
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt>무역박람회 (Trade show)</dt>
+                          <dd class="bk-flex-row-gap-no">
+                            <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg-basic">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>참여한 박람회를 최대 30개까지 등록 가능합니다.</div>
+                            </div>
+                            <button type="button" class="bk-btn btn-primary btn-outline btn-full bk-bMg-small">
+                              <span class="text">추가</span>
+                            </button>
+                            <div class="cp-company-img-list bk-flex-row-gap-basic">
+                              <button
+                                type="button"
+                                class="bk-btn btn-brand btn-text bk-list-delete"
+                                onClick="cpListDelete(this);"
+                              >
+                                <span class="deco-icon extra-icon">
+                                  <i class="bk-icon bk-icon-image-list-delete">리스트 삭제</i>
+                                </span>
+                              </button>
+
+                              <ul class="sub_list bk-bMg-zero">
+                                <li>
+                                  <div class="bk-text">박람회명</div>
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="trade-info-01" value="" placeholder="영문으로 작성해 주세요." class="iText" title="박람회명">
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="bk-text">참여연월</div>
+                                  <div class="bk-textfield input-full">
+                                    <div class="bk-control">
+                                        <input type="text" name="trade-info-02" value="" placeholder="입력예시) 2020.01" class="iText" title="참여연월">
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="bk-text">참여사진</div>
+                                  <div class="bk-messages bk-flex-c bk-tMg-zero">
+                                    <div class="bk-row-div no-gap">
+                                      <i class="bk-icon bk-icon-input-messages">정보</i>참여사진을 최대 10개까지 등록 가능합니다.</div>
+                                  </div>
+                                  <button type="button" class="bk-btn btn-primary btn-outline btn-full bk-bMg-tiny">
+                                    <span class="text">추가</span>
+                                  </button>
+
+                                  <div class="cp-company-img-list-group">
+
+                                    <div id="bk-list-id">
+                                      <div class="cp-company-img-list inner-list"><!--그룹 안에 그룹-->
+                                        <button
+                                          type="button"
+                                          class="bk-btn btn-brand btn-text bk-list-delete"
+                                        >
+                                          <span class="deco-icon extra-icon">
+                                            <i class="bk-icon bk-icon-image-list-delete">서브 리스트 삭제</i>
+                                          </span>
+                                        </button>
+
+                                        <div class="bk-photofield">
+                                          <img id="photo_img_file" class="img-preview">
+                                          
+                                          <div class="bk-photoInfo-group">
+                                            <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                              <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                            </button>                                                                 
+                                            <span class="upload-img-name text"></span>
+                                            <input type="file" name="file" id="productfile_upload" value="" />
+                                          </div>
+        
+                                        </div>
+
+                                        <div class="bk-textfield input-full">
+                                          <div class="bk-control">
+                                              <input type="text" name="join-img-01" value="" placeholder="이미지 설명을 영문 30자 이내로 입력." class="iText" title="이미지 설명">
+                                          </div>
+                                        </div>
+                                        <div class="bk-list-move-group">
+                                          <button
+                                            type="button"
+                                            class="bk-btn btn-brand btn-text bk-list-move-up"
+                                          >
+                                            <span class="deco-icon extra-icon">
+                                              <i class="bk-icon bk-icon-image-list-up">위로</i>
+                                            </span>
+                                          </button>
+                                          <button
+                                            type="button"
+                                            class="bk-btn btn-brand btn-text bk-list-move-down"
+                                          >
+                                            <span class="deco-icon extra-icon">
+                                              <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                                            </span>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="bk-list-id">
+                                      <div class="cp-company-img-list inner-list"><!--그룹 안에 그룹-->
+                                        <button
+                                          type="button"
+                                          class="bk-btn btn-brand btn-text bk-list-delete"
+                                        >
+                                          <span class="deco-icon extra-icon">
+                                            <i class="bk-icon bk-icon-image-list-delete">서브 리스트 삭제</i>
+                                          </span>
+                                        </button>
+
+                                        <div class="bk-photofield">
+                                          <img id="photo_img_file" class="img-preview">
+                                          
+                                          <div class="bk-photoInfo-group">
+                                            <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                                              <label for="productfile_upload" class="text">이미지 찾기</label> 
+                                            </button>                                                                 
+                                            <span class="upload-img-name text"></span>
+                                            <input type="file" name="file" id="productfile_upload" value="" />
+                                          </div>
+        
+                                        </div>
+
+                                        <div class="bk-textfield input-full">
+                                          <div class="bk-control">
+                                              <input type="text" name="join-img-01" value="" placeholder="이미지 설명을 영문 30자 이내로 입력." class="iText" title="이미지 설명">
+                                          </div>
+                                        </div>
+                                        <div class="bk-list-move-group">
+                                          <button
+                                            type="button"
+                                            class="bk-btn btn-brand btn-text bk-list-move-up"
+                                          >
+                                            <span class="deco-icon extra-icon">
+                                              <i class="bk-icon bk-icon-image-list-up">위로</i>
+                                            </span>
+                                          </button>
+                                          <button
+                                            type="button"
+                                            class="bk-btn btn-brand btn-text bk-list-move-down"
+                                          >
+                                            <span class="deco-icon extra-icon">
+                                              <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                                            </span>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </li>
+                              </ul>                              
+                            </div>                            
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="bk-messages bk-flex-c bk-tMg-middle bk-bMg-basic">
+                        <div class="bk-row-div no-gap">
+                          <i class="bk-icon bk-icon-input-messages">정보</i>임시저장 후 페이지 맨 하단의 저장 버튼을 클릭해야 반영됩니다.
+                        </div>
+                      </div>
+
+                       <button type="button" class="bk-btn btn-primary btn-middle btn-full">
+                        <span class="text">임시저장</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--//[D] 정보아코디언-->
+
+            <!-- [S] button -->
+            <div class="bk-btn-group">
+              <button type="button" class="bk-btn btn-brand btn-outline btn-sticky btn-half">
+                <span class="text">취소</span>
+              </button>
+              <button type="button" class="bk-btn btn-primary btn-sticky btn-half">
+                <span class="text">저장</span>
+              </button>
+            </div>
+            <!-- //[D] button -->
+          </div>
+        </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">Top</div>
+        <!--// [E]Top버튼 -->
+      </main>
+      <!--// [E]container -->
+      <!-- [S]footer -->
+      <footer id="footer" class="ui-footer">
+        <div class="ui-inner">
+          <div class="corp-area">
+            <div class="site-group">
+              <h2 class="logo">
+                <img
+                  src="../../../images/mobile/logo-kotra-dark.svg"
+                  alt="Kotra Trade-Investment Promtion Agency"
+                />
+              </h2>
+              <ul class="list-corp">
+                <li><a href="#none">About Terms</a></li>
+                <li><a href="#none">Terms of Use</a></li>
+                <li><a href="#none">Special Terms</a></li>
+                <li><a href="#none">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="corp-group">
+              <address class="address">
+                13, Heolleung-ro, Seocho-gu, Seoul, Korea<br>(Postal Code: 06792)<br>
+                F. +82-2-3460-7951 / E. buykorea@kotra.or.kr
+              </address>
+              <p class="copyright">
+                Copyright ⓒ 2023 KOTRA & buyKOREA All rights reserved.
+              </p>
+            </div>
+          </div>
+          <div class="inquiry_area">
+            <dl class="inquiry-area">
+              <dt>Inquiry on buy KOREA</dt>
+              <dd>
+                <ul class="list-inquiry">
+                  <li><a href="#none" target="_blank">Business Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Product Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Open Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Non Member Inquiry</a></li>                  
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="aside_area">
+            <dl class="sns-area">
+              <dt class="ir-su">SNS</dt>
+              <dd>
+                <ul class="list-sns">
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-linkedIn">linkedIn</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-facebook">facebook</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-twitter">twitter</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                    </a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <div class="family-area">
+              <div class="family-group">
+                <button
+                  type="button"
+                  class="bk-btn bk-btn-icon"
+                  component="dropdownMenu"
+                >
+                  <span class="text">Family Site</span>
+                  <span class="deco-icon append-icon">
+                    <i class="bk-icon bk-icon-plus-gray">+</i>
+                  </span>
+                </button>
+                <div class="cp-layer layer-dropdown layer-family">
+                  <!--// [D]dim처리시 class="dim", 검정색 dim처리시 class="dim-dark",  흰색 dim처리시 class="dim-light" -->
+                  <div class="layer-inner">
+                    <ul class="list-family">
+                      <li>
+                        <a
+                          href="https://www.kotra.or.kr/english/index.do"
+                          target="_blank"
+                          >KOTRA</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.investkorea.org/ik-en/index.do"
+                          target="_blank"
+                          >Invest Korea</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://www.buykorea.or.kr" target="_blank"
+                          >buyKOREA for Seller</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://contactkorea.kotra.or.kr/en/index.do"
+                          target="_blank"
+                          >Recruiting Center</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://kodits.kotra.or.kr" target="_blank"
+                          >KODITS</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://ombudsman.kotra.or.kr/ob-en/index.do"
+                          target="_blank"
+                          >OMBUDSMAN</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--// [E]footer -->
+    </div>
+    <!--// [E]ui-wrap -->
+
+    <!-- [S]팝업 -->
+    <!--// [E]팝업 -->
+    <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/mobile/ui_common.js"></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </body>
+</html>

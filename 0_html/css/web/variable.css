@@ -1,0 +1,98 @@
+:root {
+  --color-white: #fff;
+  --color-light-gray: #eee;
+  --color-light-gray-hover: var(--color-default);
+  --color-primary: #0175e4;
+  --color-primary-hover: #126ec2;
+  --color-brand: #000;
+  --color-brand-hover: #000;
+  --color-secondary: #126ec2;
+  --color-secondary-hover: #126ec2;
+  --color-default: #999;
+  --color-default-hover: #000;
+  --color-warning: #fd6243;
+  --color-error: #b00020;
+  --color-input-disabled: #f0f0f0;
+  --color-line: #bbb;
+  --color-gray: #ddd;
+  --color-delivery: #320d9c;
+  --color-delivery2: #0d949c;
+  --color-delivery3: #770d9c;
+
+  --d-none: none;
+  --d-inline-block: inline-block;
+  --d-block: block;
+  --d-inline-flex: inline-flex;
+  --d-flex: flex;
+
+  --flex-row: row;
+  --flex-row-reverse: row-reverse;
+  --flex-column: column;
+  --flex-column-reverse: column-reverse;
+  --flex-wrap: wrap;
+  --flex-nowrap: nowrap;
+  --flex-content-start: flex-start;
+  --flex-content-end: flex-end;
+  --flex-content-center: center;
+  --flex-content-between: space-between;
+  --flex-content-around: space-around;
+  --flex-content-stretch: stretch;
+
+  --radius-default: 4px;
+
+  --size-xsmall: 20px;
+  --size-small: 32px;
+  --size-default: 40px;
+  --size-lagre: 48px;
+  --size-xlagre: 60px;
+  --wide-full: 100%;
+
+  --font-size-xsmall: 12px;
+  --font-size-small: 14px;
+  --font-size-default: 16px;
+  --font-size-body: 18px;
+  --font-size-title3: 20px;
+  --font-size-title2: 32px;
+  --font-size-title1: 40px;
+
+  --text-underline: underline;
+}
+
+/* [공통] class */
+/* ir */
+.ir-pm {
+  display: var(--d-block);
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir-wa {
+  display: var(--d-block);
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir-su {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+.hidden {
+  display: var(--d-none);
+}
+.text-underline {
+  text-decoration: var(--text-underline);
+}
+.text-link,
+.text-link:hover {
+  text-decoration: var(--text-underline);
+}
+.data-warning {
+  color: var(--color-warning);
+}

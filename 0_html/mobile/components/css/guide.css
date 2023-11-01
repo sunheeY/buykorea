@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.ui-header {
+  border-bottom: 1px solid #ddd;
+}
+.ui-header .logo {
+  display: flex;
+  align-items: flex-end;
+}
+.ui-header .logo .guide-title {
+  margin-left: 10px;
+  font-size: 28px;
+  line-height: 30px;
+}
+/* container-코딩가이드 */
+.section-guide {
+}
+.g-h1-title,
+.g-h2-title,
+.chapter-component > dt {
+  color: #000;
+  font-weight: 500;
+}
+.g-h1-title {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #000;
+  font-size: 2rem;
+}
+.g-h2-title {
+  padding: 8px;
+  background-color: #f6f6f6;
+  font-size: 1.6rem;
+}
+.chapter ~ .chapter {
+  padding-top: 24px;
+}
+.chapter-component,
+.g-desc-box {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+.chapter-component > dt {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+.chapter-component > dt:not(:first-child) {
+  margin-top: 24px;
+}
+.g-desc-box {
+  margin-bottom: -1px;
+}

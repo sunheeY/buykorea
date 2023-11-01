@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA for Buyers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../../css/mobile/common.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+    <!-- [S]바로가기 -->
+    <div id="skip">
+      <a href="#contents"><span>본문내용 바로가기</span></a>
+      <a href="#gnb"><span>주메뉴 바로가기</span></a>
+      <a href="#lnb"><span>서브메뉴 바로가기</span></a>
+      <a href="#header"><span>해더 바로가기</span></a>
+      <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!--// [E]바로가기 -->
+    <!-- [S]ui-wrap -->
+    <div class="ui-wrap">
+      <!-- [S]header -->
+      <header id="header" class="ui-header">
+        <div class="header-area">
+          <div class="ui-inner ui-pager"><!-- //[D] 헤더가 없는 경우, ui-pager class 추가처리 -->
+            <div class="ui-left">
+                <h1 class="page-move">
+                  <button type="button" class="bk-icon-only">
+                    <i class="bk-icon bk-icon-gnb-prev">이전</i>
+                  </button>
+                  <span>Buyer Sign in</span>
+                </h1>
+            </div>
+            <div class="my-util">
+              <button type="button" class="bk-icon-only icon-search">
+                <i class="bk-icon bk-icon-searchBlack">검색</i>
+              </button>
+              <div class="cp-search search-top" style="display: none">
+                <div class="search-area">
+                  <div class="bk-select select-search">
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                    <div class="bk-control">
+                      <select class="" id="" title="검색 메뉴 선택">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option data-display="Select">ALL</option>
+                        <option value="1">Product Name</option>
+                        <option value="2">Company Name</option>
+                        <option value="3">Keyword</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bk-textfield wide textfield-search">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="I'm looking for..."
+                          class="iText"
+                          id=""
+                          required
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <button
+                            type="button"
+                            class="bk-icon-only icon-search"
+                          >
+                            <i class="bk-icon bk-icon-searchPrimary">검색</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="bk-icon-only icon-gnb-menu">
+                <i class="bk-icon bk-icon-gnb-menu">메뉴</i>
+              </button>
+              <nav id="gnb" class="ui-gnb">
+                <div class="ui-inner">
+                  <div class="all-menu">
+                    <button
+                      type="button"
+                      class="bk-btn-icon btn-text bk-btn-allCategories"
+                    >
+                      <i class="bk-icon bk-icon-allCategories">마이페이지</i>
+                      <span class="txt">Categories</span>
+                    </button>
+                  </div>
+                  <div class="gnb-menu">
+                    <ul class="list-menu">
+                      <li><a href="#none">Products</a></li>
+                      <li><a href="#none">Companies</a></li>
+                      <li><a href="#none">Shows</a></li>
+                      <li><a href="#none">Global Offices</a></li>
+                      <li><a href="#none">Inquiries</a></li>
+                      <li><a href="#none">Global Partnership</a></li>
+                      <li><a href="#none">Help</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--// [E]header -->
+      <!-- [S]container -->
+      <main id="container" class="ui-container ui-member"><!--// [D]회원 class추가 -->
+        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
+        <div class="ui-content-wrap ui-inner">
+          <div class="ui-contents" id="contents">
+            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-search-company')">소속기업 검색 - 휴폐업</button>
+          </div>
+        </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">Top</div>
+        <!--// [E]Top버튼 -->
+      </main>
+      <!--// [E]container -->
+      <!-- [S]footer -->
+      <footer id="footer" class="ui-footer">
+        <div class="ui-inner">
+          <div class="corp-area">
+            <div class="site-group">
+              <h2 class="logo">
+                <img
+                  src="../../../images/mobile/logo-kotra-dark.svg"
+                  alt="Kotra Trade-Investment Promtion Agency"
+                />
+              </h2>
+              <ul class="list-corp">
+                <li><a href="#none">About Terms</a></li>
+                <li><a href="#none">Terms of Use</a></li>
+                <li><a href="#none">Special Terms</a></li>
+                <li><a href="#none">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="corp-group">
+              <address class="address">
+                13, Heolleung-ro, Seocho-gu, Seoul, Korea<br>(Postal Code: 06792)<br>
+                F. +82-2-3460-7951 / E. buykorea@kotra.or.kr
+              </address>
+              <p class="copyright">
+                Copyright ⓒ 2023 KOTRA & buyKOREA All rights reserved.
+              </p>
+            </div>
+          </div>
+          <div class="inquiry_area">
+            <dl class="inquiry-area">
+              <dt>Inquiry on buy KOREA</dt>
+              <dd>
+                <ul class="list-inquiry">
+                  <li><a href="#none" target="_blank">Business Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Product Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Open Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Non Member Inquiry</a></li>                  
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="aside_area">
+            <dl class="sns-area">
+              <dt class="ir-su">SNS</dt>
+              <dd>
+                <ul class="list-sns">
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-linkedIn">linkedIn</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-facebook">facebook</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-twitter">twitter</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                    </a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <div class="family-area">
+              <div class="family-group">
+                <button
+                  type="button"
+                  class="bk-btn bk-btn-icon"
+                  component="dropdownMenu"
+                >
+                  <span class="text">Family Site</span>
+                  <span class="deco-icon append-icon">
+                    <i class="bk-icon bk-icon-plus-gray">+</i>
+                  </span>
+                </button>
+                <div class="cp-layer layer-dropdown layer-family">
+                  <!--// [D]dim처리시 class="dim", 검정색 dim처리시 class="dim-dark",  흰색 dim처리시 class="dim-light" -->
+                  <div class="layer-inner">
+                    <ul class="list-family">
+                      <li>
+                        <a
+                          href="https://www.kotra.or.kr/english/index.do"
+                          target="_blank"
+                          >KOTRA</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.investkorea.org/ik-en/index.do"
+                          target="_blank"
+                          >Invest Korea</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://www.buykorea.or.kr" target="_blank"
+                          >buyKOREA for Seller</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://contactkorea.kotra.or.kr/en/index.do"
+                          target="_blank"
+                          >Recruiting Center</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://kodits.kotra.or.kr" target="_blank"
+                          >KODITS</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://ombudsman.kotra.or.kr/ob-en/index.do"
+                          target="_blank"
+                          >OMBUDSMAN</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--// [E]footer -->
+    </div>
+    <!--// [E]ui-wrap -->
+
+    <!-- [S]팝업 -->
+    <!-- [s] Search Company-->
+    <div class="bk-dialog dialog-full has-btmBtn" id="dialog-search-company">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">소속기업 검색</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="bk-guide-txt bk-bMg-basic">
+              <span class="text">사업자등록번호를 입력하시면 주소(한글/영문), 전화 번호, Fax 정보 자동 입력됩니다.</span>
+              <span class="text">조회가 되지 않는 사업자는 기업 등록 및 마스터 인증을 함께 진행해 주세요.</span>
+            </div>
+
+            <!-- [S]컴퍼넌트:검색 -->
+            <div class="cp-search search-wideType">
+              <form>
+                <div class="search-inner">
+                  <div class="search-row">
+                    <div class="search-group">
+                      <div class="bk-select">
+                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                        <div class="bk-control">
+                          <select class="" id="" title="기업명">
+                            <option value="1">기업명</option>
+                            <option value="2">사업자등록번호</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="bk-textfield wide textfield-search">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input
+                              type="text"
+                              name=""
+                              value=""
+                              placeholder=""
+                              class="iText"
+                              id="소속기업 선택 입력"
+                              required
+                            />
+                            <div class="control-icon append-icon">
+                              <button
+                                type="button"
+                                class="bk-icon-only icon-search"
+                              >
+                                <i class="bk-icon bk-icon-searchPrimary"
+                                  >검색</i
+                                >
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--// [E]컴퍼넌트:검색 -->
+
+            <!-- [S] 검색결과 노출 : 회사가 없는 경우 : 휴·폐업-->
+            <div class="bk-company-result">
+              <div class="bk-empty-text">
+                <i class="bk-icon bk-icon-empty">empty</i>  
+                <div class="bk-text-field">
+                  <h2 class="title">휴·폐업 기업으로 확인되어<br>등록이 불가한 기업입니다</h2>
+                  <span class="text">사업자등록번호를 다시 확인해 주세요.</span>
+                </div>
+              </div>
+            </div>
+            <!-- //[D] 검색결과 노출 : 회사가 없는 경우 : 휴·폐업-->
+            
+
+            
+            
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-sticky btn-primary btn-full">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] Search Company-->
+    <!--// [E]팝업 -->
+    <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/mobile/ui_common.js"></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </body>
+</html>

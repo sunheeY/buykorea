@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA for Buyers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../../css/mobile/common.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+    <!-- [S]바로가기 -->
+    <div id="skip">
+      <a href="#contents"><span>본문내용 바로가기</span></a>
+      <a href="#gnb"><span>주메뉴 바로가기</span></a>
+      <a href="#lnb"><span>서브메뉴 바로가기</span></a>
+      <a href="#header"><span>해더 바로가기</span></a>
+      <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!--// [E]바로가기 -->
+    <!-- [S]ui-wrap -->
+    <div class="ui-wrap">
+      <!-- [S]header -->
+      <header id="header" class="ui-header">
+        <div class="header-area">
+          <div class="ui-inner ui-pager"><!-- //[D] 헤더가 없는 경우, ui-pager class 추가처리 -->
+            <div class="ui-left">
+                <h1 class="page-move">
+                  <button type="button" class="bk-icon-only">
+                    <i class="bk-icon bk-icon-gnb-prev">이전</i>
+                  </button>
+                  <span>Buyer Sign in</span>
+                </h1>
+            </div>
+            <div class="my-util">
+              <button type="button" class="bk-icon-only icon-search">
+                <i class="bk-icon bk-icon-searchBlack">검색</i>
+              </button>
+              <div class="cp-search search-top" style="display: none">
+                <div class="search-area">
+                  <div class="bk-select select-search">
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                    <div class="bk-control">
+                      <select class="" id="" title="검색 메뉴 선택">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option data-display="Select">ALL</option>
+                        <option value="1">Product Name</option>
+                        <option value="2">Company Name</option>
+                        <option value="3">Keyword</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bk-textfield wide textfield-search">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="I'm looking for..."
+                          class="iText"
+                          id=""
+                          required
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <button
+                            type="button"
+                            class="bk-icon-only icon-search"
+                          >
+                            <i class="bk-icon bk-icon-searchPrimary">검색</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="bk-icon-only icon-gnb-menu">
+                <i class="bk-icon bk-icon-gnb-menu">메뉴</i>
+              </button>
+              <nav id="gnb" class="ui-gnb">
+                <div class="ui-inner">
+                  <div class="all-menu">
+                    <button
+                      type="button"
+                      class="bk-btn-icon btn-text bk-btn-allCategories"
+                    >
+                      <i class="bk-icon bk-icon-allCategories">마이페이지</i>
+                      <span class="txt">Categories</span>
+                    </button>
+                  </div>
+                  <div class="gnb-menu">
+                    <ul class="list-menu">
+                      <li><a href="#none">Products</a></li>
+                      <li><a href="#none">Companies</a></li>
+                      <li><a href="#none">Shows</a></li>
+                      <li><a href="#none">Global Offices</a></li>
+                      <li><a href="#none">Inquiries</a></li>
+                      <li><a href="#none">Global Partnership</a></li>
+                      <li><a href="#none">Help</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--// [E]header -->
+      <!-- [S]container -->
+      <main id="container" class="ui-container ui-member"><!--// [D]회원 class추가 -->
+        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
+        <div class="ui-content-wrap ui-inner">
+          <div class="ui-contents" id="contents">
+            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-company-submit')">기업 등록</button>
+          </div>
+        </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">Top</div>
+        <!--// [E]Top버튼 -->
+      </main>
+      <!--// [E]container -->
+      <!-- [S]footer -->
+      <footer id="footer" class="ui-footer">
+        <div class="ui-inner">
+          <div class="corp-area">
+            <div class="site-group">
+              <h2 class="logo">
+                <img
+                  src="../../../images/mobile/logo-kotra-dark.svg"
+                  alt="Kotra Trade-Investment Promtion Agency"
+                />
+              </h2>
+              <ul class="list-corp">
+                <li><a href="#none">About Terms</a></li>
+                <li><a href="#none">Terms of Use</a></li>
+                <li><a href="#none">Special Terms</a></li>
+                <li><a href="#none">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="corp-group">
+              <address class="address">
+                13, Heolleung-ro, Seocho-gu, Seoul, Korea<br>(Postal Code: 06792)<br>
+                F. +82-2-3460-7951 / E. buykorea@kotra.or.kr
+              </address>
+              <p class="copyright">
+                Copyright ⓒ 2023 KOTRA & buyKOREA All rights reserved.
+              </p>
+            </div>
+          </div>
+          <div class="inquiry_area">
+            <dl class="inquiry-area">
+              <dt>Inquiry on buy KOREA</dt>
+              <dd>
+                <ul class="list-inquiry">
+                  <li><a href="#none" target="_blank">Business Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Product Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Open Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Non Member Inquiry</a></li>                  
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="aside_area">
+            <dl class="sns-area">
+              <dt class="ir-su">SNS</dt>
+              <dd>
+                <ul class="list-sns">
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-linkedIn">linkedIn</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-facebook">facebook</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-twitter">twitter</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                    </a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <div class="family-area">
+              <div class="family-group">
+                <button
+                  type="button"
+                  class="bk-btn bk-btn-icon"
+                  component="dropdownMenu"
+                >
+                  <span class="text">Family Site</span>
+                  <span class="deco-icon append-icon">
+                    <i class="bk-icon bk-icon-plus-gray">+</i>
+                  </span>
+                </button>
+                <div class="cp-layer layer-dropdown layer-family">
+                  <!--// [D]dim처리시 class="dim", 검정색 dim처리시 class="dim-dark",  흰색 dim처리시 class="dim-light" -->
+                  <div class="layer-inner">
+                    <ul class="list-family">
+                      <li>
+                        <a
+                          href="https://www.kotra.or.kr/english/index.do"
+                          target="_blank"
+                          >KOTRA</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.investkorea.org/ik-en/index.do"
+                          target="_blank"
+                          >Invest Korea</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://www.buykorea.or.kr" target="_blank"
+                          >buyKOREA for Seller</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://contactkorea.kotra.or.kr/en/index.do"
+                          target="_blank"
+                          >Recruiting Center</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://kodits.kotra.or.kr" target="_blank"
+                          >KODITS</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://ombudsman.kotra.or.kr/ob-en/index.do"
+                          target="_blank"
+                          >OMBUDSMAN</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--// [E]footer -->
+    </div>
+    <!--// [E]ui-wrap -->
+
+    <!-- [S]팝업 -->
+    <!-- [s] company-new-submit-->
+    <div class="bk-dialog dialog-full has-btmBtn" id="dialog-company-submit">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">기업 등록</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="bk-guide-txt">
+              <span class="text">신규기업을 등록해 주신 회원은 마스터 회원으로 가입됩니다.</span>
+              <span class="text">마스터 회원은 기업 세부정보 수정 및 소속기업 직원 관리가 가능합니다.</span>
+            </div>
+            <!-- [S] Form-->
+            <h1 class="title font-heading-2 bk-bMg24">기업정보</h1>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">사업자등록번호</dt>
+                <dd>
+                  <div class="bk-textfield">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-number" value="" placeholder="사업자등록번호를 입력해 주세요." class="iText" id="company-number" required="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                    <span class="text">중복체크</span>
+                  </button>
+
+                  <div class="bk-messages bk-flex-c noTmg">
+                    <div class="bk-row-div no-gap">
+                      <i class="bk-icon bk-icon-input-messages">정보</i>기업등록을 위해 사업자등록번호 중복 체크를 진행해 주세요.
+                    </div>
+                  </div>
+
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">기업명</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-name" value="" placeholder="" class="iText" id="company-name" required="">
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">기업명(영문)</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-name-eng" value="" placeholder="" class="iText" id="company-name-eng" required="">
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">CEO</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-ceo" value="" placeholder="" class="iText" id="company-ceo" required="">
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">CEO(영문)</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-ceo-eng" value="" placeholder="" class="iText" id="company-ceo-eng" required="">
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">사업자등록증</dt>
+                <dd>
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                    <label for="license-file">파일찾기</label> 
+                  </button>
+                  <div class="cp-file">
+                    <div class="file-list">
+                      <!--input type="text" class="upload-license-name text" value="" placeholder=""-->
+                      <div class="upload-license-name text"></div>
+                      <input type="file" id="license-file">
+                      <button type="button" class="bk-btn bk-btn-icon" onClick="license_file_del();">
+                        <span class="deco-icon">
+                          <i class="bk-icon bk-icon-trash">삭제</i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="bk-messages bk-flex-c bk-flex-row-gap-basic">
+                    <div class="bk-row-div no-gap">
+                      <i class="bk-icon bk-icon-input-messages">정보</i><p>파일크기 <strong>1MB</strong> 이하 / jpg,pdf 파일만 등록가능 합니다.</p>
+                    </div>
+                    <div class="bk-row-div no-gap">
+                      <i class="bk-icon bk-icon-input-messages">정보</i>
+                      <div class="bk-tul-ul">
+                        아래와 같은 경우 기업의 활동 또는 민/형사상 책임이 있을 수 있으니 유의하여 주시기 바랍니다.
+                        <ul class="bk-tbl-ul-sub">
+                          <li>첨부한 기업인증 서류가 위/변조 또는 임의로 수정된 문서를 등록한 경우</li>
+                          <li>첨부한 기업인증 서류에 개인정보가 입력(수기작성) 되어 있는 경우</li>
+                          <li>이용약관에 의거하여 불법관련 신고가 접수되는 경우</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">주소</dt>
+                <dd>
+                  <div class="bk-row-div bk-grid-25 bk-full">
+                    <div class="bk-textfield bk-full">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" name="join-countrycode1" value="" placeholder="우편번호" class="iText" id="join-countrycode1" title="Country Code" readonly>
+                        </div>                      
+                      </div>
+                    </div>                              
+
+                    <div class="bk-textfield bk-full">
+                      <div class="bk-control">
+                        <div class="control-field input-full">
+                          <input type="text" name="join-address1" value="" placeholder="주소" class="iText" id="join-address1" title="Phone number" readonly>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="join-address2" value="" placeholder="상세주소를 입력해 주세요." class="iText" id="join-address2" title="상세주소를 입력해 주세요." required="">
+                      </div>                      
+                    </div>
+                  </div>
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                    <span class="text">주소검색</span>
+                  </button>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">영문주소</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-default-tel" value="" placeholder="검색한 주소의 영문주소" class="iText" id="company-default-tel" required="" readonly>
+                      </div>
+                    </div>                    
+                  </div>          
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-default-tel" value="" placeholder="" class="iText" id="company-default-tel" required="">
+                      </div>
+                    </div>                    
+                  </div>          
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list bk-bMg-large">
+              <dl>
+                <dt>대표전화번호</dt>
+                <dd>
+                  <div class="bk-textfield bk-full">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-default-tel" value="" placeholder="" class="iText" id="company-default-tel">
+                      </div>
+                    </div>                    
+                  </div>  
+                </dd>
+              </dl>
+            </div>
+
+            <h1 class="title font-heading-2 bk-bMg24">마스터정보 (필수)</h1>
+            <div class="bk-input-list bk-bMg-large">
+              <dl>
+                <dt class="is-required">Email</dt>
+                <dd>
+                  <div class="bk-row-div bk-email-row bk-full">
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" name="resetpw_m" value="" placeholder="Email" class="iText" id="resetpw_m" required="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <span class="bk-text">@</span>
+                  </div>
+
+                  <div class="bk-row-div bk-grid-half bk-full">
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" name="resetpw_m_name" value="gmail.com" placeholder="" class="iText" id="resetpw_m_name" required="" readonly>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bk-select default">
+                      <div class="bk-control">
+                        <select class="" id="" title="mail address">
+                          <option value="Choose">Choose</option>
+                          <option value="option2">naver.com</option>
+                          <option value="option3">hanmail.net</option>
+                          <option value="option4">daum.net</option>
+                          <option value="option5">gmail.com</option>
+                          <option value="option6">nate.com</option>
+                          <option value="option7">직접입력</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                    <span class="text">인증번호 전송</span>
+                  </button>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="is-required">Email 인증</dt>
+                <dd>
+                  <div class="bk-textfield">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" name="company-email-license" value="" placeholder="Email" class="iText" id="company-email-license" required="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full bk-bMg-middle2">
+                    <span class="text">인증번호 확인</span>
+                  </button>
+
+                  <div class="bk-messages bk-flex-c noTmg">
+                    <div class="bk-row-div no-gap">
+                      <i class="bk-icon bk-icon-input-messages">정보</i>마스터 회원은 기업 세부정보 수정 및 소속기업 직원 관리가 가능합니다.
+                    </div>
+                  </div>
+
+                </dd>
+              </dl>
+            </div>
+            <!-- //[D] Form-->
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-sticky btn-primary btn-full">등록</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] company-new-submit-->
+    <!--// [E]팝업 -->
+    <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/mobile/ui_common.js"></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+/* All Device */
+html {
+  font-size: 62.5%;
+}
+body {
+  position: relative;
+  word-wrap: break-word;
+  white-space: normal;
+  word-break: break-all;
+  font-size: 1.4rem;
+  color: #111;
+  font-family: "맑은 고딕", "돋움", Arial, tahoma, sans-serif;
+  line-height: 1.5;
+  letter-spacing: -0.05rem;
+}
+/* 여백 초기화 */
+body,
+div,
+ul,
+li,
+dl,
+dd,
+dt,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+fieldset,
+legend,
+p,
+select,
+table,
+th,
+td,
+tr,
+textarea,
+button,
+form,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+img,
+video,
+audio,
+object,
+embed,
+iframe {
+  max-width: 100%;
+  height: auto;
+} /* 반응형 */
+img,
+fieldset,
+iframe {
+  border: 0 none;
+}
+img {
+  vertical-align: top;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+em,
+address {
+  font-style: normal;
+  color: inherit;
+}
+button,
+.button,
+label {
+  cursor: pointer;
+}
+button.disabled {
+  cursor: default;
+}
+button[disabled="disabled"] {
+  cursor: default !important;
+}
+textarea {
+  resize: none;
+}
+hr,
+legend {
+  display: none;
+}
+legend {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -5000px;
+  overflow: hidden;
+}
+:root legend {
+  margin-top: -1px;
+  font-size: 0;
+  line-height: 0;
+}
+table {
+  border-collapse: collapse;
+}
+
+/* common */
+a {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+a:hover {
+  color: #4c4c4c;
+  text-decoration: underline;
+}
+.alingC {
+  text-align: center;
+}
+.point {
+  color: #258dec;
+}
+
+/* layout */
+#wrap {
+  position: relative;
+  margin: 0 auto;
+}
+#header {
+  position: relative;
+}
+#header .logo {
+  margin: 20px;
+}
+nav dd > a {
+  padding: 3px;
+}
+nav dd > a:hover {
+  background-color: #258dec;
+  color: #fff !important;
+  text-decoration: none;
+  line-height: 1.25em;
+}
+nav dd.active > a {
+  color: #258dec;
+  font-weight: 700;
+}
+#header .gnb-menu {
+  position: relative;
+  padding: 20px 10px 15px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#header .gnb-menu dl,
+.sub-menu dl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#header .gnb-menu dl > dt,
+.sub-menu dl > dt {
+  position: relative;
+  font-weight: 700;
+}
+#header .gnb-menu dl > dt::after {
+  padding-right: 10px;
+  content: " : ";
+}
+#header .gnb-menu dl > dd + dd {
+  margin-left: 16px;
+}
+#header .gnb-menu dl > dd > a {
+  display: block;
+}
+#container {
+  position: relative;
+  padding: 40px 24px;
+}
+#container:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+/* container-코딩가이드 */
+.g-h1-title,
+.g-h2-title {
+  color: #000;
+  font-weight: 500;
+}
+.g-h1-title {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #000;
+  font-size: 2rem;
+}
+.g-h2-title {
+  padding: 8px;
+  background-color: #f6f6f6;
+  font-size: 1.6rem;
+}
+.chapter ~ .chapter {
+  padding-top: 24px;
+}
+.chapter-component {
+  padding: 24px;
+  border: 1px solid #ddd;
+}
+
+/* container-현황판 */
+.sub-menu {
+  position: relative;
+  padding: 0 0 15px;
+}
+.sub-menu dl > dt {
+  padding: 3px;
+  font-weight: bold;
+}
+.sub-menu dl > dd > a {
+  display: block;
+}
+.sub-menu dl > dd > a:after {
+  content: "↓";
+}
+.tbl-wrap {
+  position: relative;
+}
+.tbl-path {
+  width: 100%;
+  margin-bottom: 40px;
+  border-top: 2px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.tbl-path caption {
+  position: relative;
+  padding: 5px 150px 10px 0;
+  text-align: left;
+}
+.tbl-path caption .tit {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+.tbl-path caption .desc {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.tbl-path th,
+.tbl-path td {
+  border: 1px solid #ebebeb;
+  vertical-align: middle;
+}
+.tbl-path thead th {
+  padding: 10px 0;
+  background-color: #f9f9f9;
+}
+.tbl-path thead th span {
+  display: block;
+}
+.tbl-path td {
+  padding: 7px;
+}

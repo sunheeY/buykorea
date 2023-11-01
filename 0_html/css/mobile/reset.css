@@ -1,0 +1,338 @@
+/* font */
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-weight: 100; 
+  font-display: swap; 
+  src: url('../../fonts/NotoSansKR-Light.woff2') format('woff2'),
+  url('../../fonts/NotoSansKR-Light.woff') format('woff'), 
+  url('../../fonts/NotoSansKR-Light.otf') format('truetype'); 
+  unicode-range: 'U+AC00-D7A3'; 
+} 
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-weight: 400; 
+  font-display: swap; 
+  src: url('../../fonts/NotoSansKR-Regular.woff2'),
+  format('woff2') url('../../fonts/NotoSansKR-Regular.woff') format('woff'),
+  url('../../fonts/NotoSansKR-Regular.otf') format('truetype'); 
+  unicode-range: 'U+AC00-D7A3'; 
+} 
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-weight: 500; 
+  font-display: swap; 
+  src: url('../../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+  url('../../fonts/NotoSansKR-Medium.woff') format('woff'),
+  url('../../fonts/NotoSansKR-Medium.otf') format('truetype'); 
+  unicode-range: 'U+AC00-D7A3'; 
+} 
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-weight: 700; 
+  font-display: swap; 
+  src: url('../../fonts/NotoSansKR-Bold.woff2') format('woff2'),
+  url('../../fonts/NotoSansKR-Bold.woff') format('woff'),
+  url('../../fonts/NotoSansKR-Bold.otf') format('truetype'); 
+  unicode-range: 'U+AC00-D7A3'; 
+} 
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-weight: 900; 
+  font-display: swap; 
+  src: url('../../fonts/NotoSansKR-Black.woff2') format('woff2'),
+  url('../../fonts/NotoSansKR-Black.woff') format('woff'),
+  url('../../fonts/NotoSansKR-Black.otf') format('truetype'); 
+  unicode-range: 'U+AC00-D7A3'; 
+} 
+  
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../fonts/Roboto-Light.eot");
+  src: url("../../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Roboto-Light.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Roboto-Regular.eot");
+  src: url("../../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Roboto-Regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/Roboto-Medium.eot");
+  src: url("../../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Roboto-Medium.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/Roboto-Bold.eot");
+  src: url("../../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Roboto-Bold.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../fonts/Roboto-Black.eot");
+  src: url("../../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Roboto-Black.woff") format("woff");
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-touch-callout:none; user-select:none; -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+body {
+  position: relative;
+  min-width: 320px; /*[최소 너비 수정][수정일:20231025 */
+  word-wrap: break-word;
+  /*white-space: normal;*/
+  word-break: break-all;
+  font-size: 1.4rem;
+  color: #000;
+  font-family: "Roboto", "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;
+  line-height: 1.5;
+  height:100%; 
+  font-weight: 400;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust:none;
+}
+*:focus {outline: 0 !important;}
+
+/* 여백 초기화 */
+body,
+div,
+ul,
+li,
+dl,
+dd,
+dt,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+fieldset,
+legend,
+p,
+select,
+table,
+th,
+td,
+tr,
+textarea,
+button,
+form,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+img,
+video,
+audio,
+object,
+embed,
+iframe {
+  max-width: 100%;
+  height: auto;
+} /* 반응형 */
+img,
+fieldset,
+iframe {
+  border: 0 none;
+}
+img {
+  vertical-align: top;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+em,
+address {
+  font-style: normal;
+  color: inherit;
+}
+hr,
+legend,
+caption {
+  display: none;
+  position: static;
+  left: -9999px;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+fieldset {
+  border: 0;
+}
+textarea {
+  resize: vertical;
+}
+input[type="text"],
+input[type="password"],
+textarea,
+.iText,
+select {
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+select,
+textarea,
+input[type="text"],
+input[type*="date"],
+input[type="number"],
+[type="password"],
+input[type="submit"],
+input[type="search"],
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"] {
+  -webkit-appearance: none;
+  font-family: inherit;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+select {
+  -webkit-appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+select { 
+  width:100%; height:40px; 
+  padding:0 44px 0 12px; 
+  font-size: var(--font-size-default); color:var(--color-brand);
+  border:1px solid var(--color-input-disabled); 
+  border-radius:var(--radius-default); 
+  background:var(--color-white) url("../../images/mobile/icon-select-arrow.svg") no-repeat calc(100% - 12px) 50%; background-size:20px 20px;
+  -webkit-appearance:none; appearance:none;
+} 
+
+select:disabled{
+  background-color:#F0F0F0;
+}
+
+select.is-focus,
+select:focus{
+  color:var(--color-default-hover)
+}
+
+input::placeholder,
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input:-ms-input-placeholder,
+textarea::placeholder {
+  font-size: 1.6rem;
+  color: #999;
+  font-weight: 400;
+}
+abbr[data-original-title],
+abbr[title] {
+  text-decoration: none;
+}
+p,
+li,
+dl,
+dt,
+dd {
+  word-wrap: break-word;
+  white-space: normal;
+  word-break: keep-all; /* 단어기준:keep-all , 글자기준:break-all */
+}
+u,
+.underline {
+  text-decoration: underline !important;
+}
+table th {
+  font-weight: normal;
+}
+table td {
+  word-wrap: break-word;
+}
+/* a 링크 초기화 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+button[disabled],
+a[disabled] {
+  cursor: default !important;
+}
+/* 제목 태그 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 62.5%;
+  font-weight: normal;
+}
+
+
+/** IOS 노치 대응 **/
+/* Default */
+:root {
+  --safeTop: 0px;
+  --safeBottom: 0px;
+  --safeLeft: 0px;
+  --safeRight: 0px;
+}
+/* iOS 11.0 버전 */
+@supports (--safeTop: constant(safe-area-inset-top)) {
+  :root {
+      --safeTop: constant(safe-area-inset-top);
+      --safeBottom: constant(safe-area-inset-bottom);
+      --safeLeft: constant(safe-area-inset-left);
+      --safeRight: constant(safe-area-inset-right);
+  }
+}
+/* iOS 11.2 이상 */
+@supports (--safeTop: env(safe-area-inset-top)) {
+  :root {
+      --safeTop: env(safe-area-inset-top);
+      --safeBottom: env(safe-area-inset-bottom);
+      --safeLeft: env(safe-area-inset-left);
+      --safeRight: env(safe-area-inset-right);
+  }
+}

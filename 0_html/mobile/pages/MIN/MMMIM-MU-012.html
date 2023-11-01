@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA for Buyers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../../css/mobile/common.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+    <!-- [S]바로가기 -->
+    <div id="skip">
+      <a href="#contents"><span>본문내용 바로가기</span></a>
+      <a href="#gnb"><span>주메뉴 바로가기</span></a>
+      <a href="#lnb"><span>서브메뉴 바로가기</span></a>
+      <a href="#header"><span>해더 바로가기</span></a>
+      <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!--// [E]바로가기 -->
+    <!-- [S]ui-wrap -->
+    <div class="ui-wrap">
+      <!-- [S]header -->
+      <header id="header" class="ui-header">
+        <div class="header-area">
+          <div class="ui-inner ui-pager"><!-- //[D] 헤더가 없는 경우, ui-pager class 추가처리 -->
+            <div class="ui-left">
+                <h1 class="page-move">
+                  <button type="button" class="bk-icon-only">
+                    <i class="bk-icon bk-icon-gnb-prev">이전</i>
+                  </button>
+                  <span>buyKOREA 회원확인서</span>
+                </h1>
+            </div>
+            <div class="my-util">
+              <button type="button" class="bk-icon-only icon-search">
+                <i class="bk-icon bk-icon-searchBlack">검색</i>
+              </button>
+              <div class="cp-search search-top" style="display: none">
+                <div class="search-area">
+                  <div class="bk-select select-search">
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                    <div class="bk-control">
+                      <select class="" id="" title="검색 메뉴 선택">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option data-display="Select">ALL</option>
+                        <option value="1">Product Name</option>
+                        <option value="2">Company Name</option>
+                        <option value="3">Keyword</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bk-textfield wide textfield-search">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="I'm looking for..."
+                          class="iText"
+                          id=""
+                          required
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <button
+                            type="button"
+                            class="bk-icon-only icon-search"
+                          >
+                            <i class="bk-icon bk-icon-searchPrimary">검색</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="bk-icon-only icon-gnb-menu">
+                <i class="bk-icon bk-icon-gnb-menu">메뉴</i>
+              </button>
+              <nav id="gnb" class="ui-gnb">
+                <div class="ui-inner">
+                  <div class="all-menu">
+                    <button
+                      type="button"
+                      class="bk-btn-icon btn-text bk-btn-allCategories"
+                    >
+                      <i class="bk-icon bk-icon-allCategories">마이페이지</i>
+                      <span class="txt">Categories</span>
+                    </button>
+                  </div>
+                  <div class="gnb-menu">
+                    <ul class="list-menu">
+                      <li><a href="#none">Products</a></li>
+                      <li><a href="#none">Companies</a></li>
+                      <li><a href="#none">Shows</a></li>
+                      <li><a href="#none">Global Offices</a></li>
+                      <li><a href="#none">Inquiries</a></li>
+                      <li><a href="#none">Global Partnership</a></li>
+                      <li><a href="#none">Help</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--// [E]header -->
+      <!-- [S]container -->
+      <main id="container" class="ui-container ui-member-license"><!--// [D]회원 class추가 -->
+        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
+        <div class="ui-content-wrap ui-inner">
+          <div class="ui-contents" id="contents">
+            
+            <!--[S] 회원확인서-->
+            <div class="bk-member-license">
+              <table class="bk-license-tbl">
+                <caption>회원확인서 - 발급일자, 확인서유효기간 명시</caption>
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="bykorea-logo">
+                        <span><img src="../../../images/mobile/logo_dark.svg"></span>
+                      </div>
+                      <div class="license-title">
+                        <p class="title">회원확인서</p>
+                        <span class="text">buyKOREA 회원 일괄계약적용 전용</span>
+                      </div>
+                      <div class="license-date">
+                        <p>발급일자 : <span>2023.10.06</span></p>
+                        <p>확인서유효기간 : <span>2023.10.06</span></p>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="3">KOTRA와 서울우정청 간에 체결된 업무협약에 따라<br>
+                      아래 기업이 buyKOREA 회원임을 확인 드리오니<br>
+                      아래 기업에 대해 EMS 할인혜택(기본 5% + α (매년 변동))을 제공해 주시기 바랍니다.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <dl>
+                <dt>1. 일괄계약요금제 승인번호 : <span>10015-C00228</span></dt>
+              </dl>
+
+              <dl>
+                <dt>2. buyKOREA 회원정보</dt>
+                <dd>
+                  <div class="bk-tbl">
+                    <table class="tbl tbl-default">
+                      <caption>buyKOREA 회원정보 - 코트라 ID, 업체명, CEO, 사업자번호, 주소, 연락처를 나타냄</caption>
+                      <colgroup>
+                      <col style="width:30%">
+                      <col style="width:70%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="col">코트라 ID</th>
+                          <td >#{로그인한 아이디}</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">업체명</th>
+                          <td>#{기업명}</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">CEO</th>
+                          <td>#{CEO}</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">사업자번호</th>                          
+                          <td>#{사업자등록번호}</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">주소</th>                          
+                          <td>#{기업 주소}</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">연락처</th>                          
+                          <td>#{기업 대표전화번호}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </dd>
+              </dl>
+
+              <dl class="add_border">
+                <dt>3. EMS 할인</dt>
+                <dd>
+                  <div class="bk-tbl">
+                    <table class="tbl tbl-sale">
+                      <caption>EMS 할인정보 - 기본할인(5%), 추가할인(3%,3%,2%) 나타냄</caption>
+                      <colgroup>
+                      <col style="width:22%">
+                      <col style="width:20%">
+                      <col style="width:58%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">구분</th>
+                          <th scope="col">할인율</th>
+                          <th scope="col">허용대상</th>
+                        </tr>
+                      </thead>
+                      <tbody>                        
+                        <tr>
+                          <th scope="col">기본할인</th>
+                          <th scope="col" class="text-align-center">5%</th>
+                          <td>buyKOREA 회원</td>
+                        </tr>
+                        <tr>
+                          <th scope="col" rowspan="3">추가할인</th>
+                          <th scope="col" class="text-align-center">3%</th>
+                          <td>e-Shipping 접수 (buyKOREA 회원으로, 
+                            buyKOREA에서 접수하거나 인터넷 우체국 
+                            접수 시 동일 적용)</td>
+                        </tr>
+                        <tr>                        
+                          <th scope="col" class="text-align-center">3%</th>
+                          <td>전자상거래 물품 발송 (한국온라인쇼핑협회 회원
+                            사로 등록하여 인증서를 우체국 창구에 제출한경우 
+                            www.kolsa.or.kr)</td>
+                        </tr>
+                        <tr>                        
+                          <th scope="col" class="text-align-center">2%</th>
+                          <td>수출우편물 정보입력 (온라인 EMS 배송 접수 시 
+                            수출우편물 정보 또는 수출신고번호 입력)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="bk-member-license-cs">
+                    <p>DX가속화팀</p>
+                    <span>[문의처] DX가속화팀(T. 1600-7119, E. buykorea@kotra.or.kr)</span>
+                    <span>우체국 콜센터 http://www.epost.go.kr (T. 1588-1300)</span>
+                  </div>
+                </dd>
+              </dl>              
+            </div>
+            <!--//[D] 회원확인서-->
+            
+          </div>
+        </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">Top</div>
+        <!--// [E]Top버튼 -->
+      </main>
+      <!--// [E]container -->
+      <!-- [S]footer -->
+      <footer id="footer" class="ui-footer">
+        <div class="ui-inner">
+          <div class="corp-area">
+            <div class="site-group">
+              <h2 class="logo">
+                <img
+                  src="../../../images/mobile/logo-kotra-dark.svg"
+                  alt="Kotra Trade-Investment Promtion Agency"
+                />
+              </h2>
+              <ul class="list-corp">
+                <li><a href="#none">About Terms</a></li>
+                <li><a href="#none">Terms of Use</a></li>
+                <li><a href="#none">Special Terms</a></li>
+                <li><a href="#none">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="corp-group">
+              <address class="address">
+                13, Heolleung-ro, Seocho-gu, Seoul, Korea<br>(Postal Code: 06792)<br>
+                F. +82-2-3460-7951 / E. buykorea@kotra.or.kr
+              </address>
+              <p class="copyright">
+                Copyright ⓒ 2023 KOTRA & buyKOREA All rights reserved.
+              </p>
+            </div>
+          </div>
+          <div class="inquiry_area">
+            <dl class="inquiry-area">
+              <dt>Inquiry on buy KOREA</dt>
+              <dd>
+                <ul class="list-inquiry">
+                  <li><a href="#none" target="_blank">Business Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Product Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Open Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Non Member Inquiry</a></li>                  
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="aside_area">
+            <dl class="sns-area">
+              <dt class="ir-su">SNS</dt>
+              <dd>
+                <ul class="list-sns">
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-linkedIn">linkedIn</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-facebook">facebook</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-twitter">twitter</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                    </a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <div class="family-area">
+              <div class="family-group">
+                <button
+                  type="button"
+                  class="bk-btn bk-btn-icon"
+                  component="dropdownMenu"
+                >
+                  <span class="text">Family Site</span>
+                  <span class="deco-icon append-icon">
+                    <i class="bk-icon bk-icon-plus-gray">+</i>
+                  </span>
+                </button>
+                <div class="cp-layer layer-dropdown layer-family">
+                  <!--// [D]dim처리시 class="dim", 검정색 dim처리시 class="dim-dark",  흰색 dim처리시 class="dim-light" -->
+                  <div class="layer-inner">
+                    <ul class="list-family">
+                      <li>
+                        <a
+                          href="https://www.kotra.or.kr/english/index.do"
+                          target="_blank"
+                          >KOTRA</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.investkorea.org/ik-en/index.do"
+                          target="_blank"
+                          >Invest Korea</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://www.buykorea.or.kr" target="_blank"
+                          >buyKOREA for Seller</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://contactkorea.kotra.or.kr/en/index.do"
+                          target="_blank"
+                          >Recruiting Center</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://kodits.kotra.or.kr" target="_blank"
+                          >KODITS</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://ombudsman.kotra.or.kr/ob-en/index.do"
+                          target="_blank"
+                          >OMBUDSMAN</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--// [E]footer -->
+    </div>
+    <!--// [E]ui-wrap -->
+
+    <!-- [S]팝업 -->
+    <!-- [s] search-interest-->
+    <div class="bk-dialog has-btmBtn dialog-full" id="dialog-search-interest">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">관심산업 선택(최대 5개)</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <!-- [S] Form-->
+            <div class="bk-input-list full-choose position-top"><!--체크박스 위치 수정위한 클래스 position-top 추가-->
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-01">
+                <label for="checkbox-interest-01"><span class="text">Health & Sports(건강&스포츠)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-02">
+                <label for="checkbox-interest-02"><span class="text">Finance & Business(금융&비즈니스서비스)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-03">
+                <label for="checkbox-interest-03"><span class="text">Animal & Pet(동물&애완용품)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-04">
+                <label for="checkbox-interest-04"><span class="text">Transportation & Logistics(물류&운송)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-05">
+                <label for="checkbox-interest-05"><span class="text">Lifestyle & Furniture(생활용품&가구)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-06">
+                <label for="checkbox-interest-06"><span class="text">Medical & Pharmaceuticals(의료&제약)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-07">
+                <label for="checkbox-interest-07"><span class="text">IT & SW(정보통신기술(IT)&S/W)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-08">
+                <label for="checkbox-interest-08"><span class="text">Aviation & Space(항공&우주)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-09">
+                <label for="checkbox-interest-09"><span class="text">Building & Construction(건축&기자재)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-10">
+                <label for="checkbox-interest-10"><span class="text">Industrial Machinery & Parts(기계&장비)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-11">
+                <label for="checkbox-interest-11"><span class="text">Leisure & Travel(레저&관광)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-12">
+                <label for="checkbox-interest-12"><span class="text">Bio & Biotechnology(바이오)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-13">
+                <label for="checkbox-interest-13"><span class="text">Food & Beverage(식품&음료)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-14">
+                <label for="checkbox-interest-14"><span class="text">Automobile(자동차)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-15">
+                <label for="checkbox-interest-15"><span class="text">Shipping & Plants(조선&플랜트)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-16">
+                <label for="checkbox-interest-16"><span class="text">Chemicals & Nano(화학&나노)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-17">
+                <label for="checkbox-interest-17"><span class="text">National General Exhibition (국가종합전시회)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-18">
+                <label for="checkbox-interest-18"><span class="text">Other(기타)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-19">
+                <label for="checkbox-interest-19"><span class="text">Stationery& Gifts(문구&선물)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-20">
+                <label for="checkbox-interest-20"><span class="text">Defense industry(방위산업)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-21">
+                <label for="checkbox-interest-21"><span class="text">Glass & Optics(유리&광학)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-22">
+                <label for="checkbox-interest-22"><span class="text">Electrical, Electronics&Semiconductor (전기전자&반도체)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-23">
+                <label for="checkbox-interest-23"><span class="text">Jewelry(주얼리)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-24">
+                <label for="checkbox-interest-24"><span class="text">Environment & Waste(환경&폐기물)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-25">
+                <label for="checkbox-interest-25"><span class="text">Metals & Minerals(금속&광물)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-26">
+                <label for="checkbox-interest-26"><span class="text">Agriculture, Fishery & Forestry (농수산&임업)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-27">
+                <label for="checkbox-interest-27"><span class="text">Culture& Media(문화콘텐츠&미디어)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-28">
+                <label for="checkbox-interest-28"><span class="text">Beauty & Cosmetics(뷰티&미용용품)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-29">
+                <label for="checkbox-interest-29"><span class="text">Infants,Children&Education& Pregnant Women(유아.아동&교육&임산부)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-30">
+                <label for="checkbox-interest-30"><span class="text">Power & Energy Sources(전력&에너지)</span></label>
+              </div>
+
+              <div class="bk-checkbox">
+                <input type="checkbox" name="checkbox-interest" class="iCheckbox" id="checkbox-interest-31">
+                <label for="checkbox-interest-31"><span class="text">Fashion & Textiles(패션&섬유)</span></label>
+              </div>
+            </div>
+            <!-- //[D] Form-->
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-sticky btn-primary btn-full">선택완료</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] search-interest-->
+
+    <!--// [E]팝업 -->
+    <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/mobile/ui_common.js"></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA for Buyers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../css/mobile/common.css" />
+    <link rel="stylesheet" href="./css/guide.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+    <div class="ui-wrap ui-default">
+      <header class="ui-header">
+        <div class="header-area">
+          <div class="ui-inner">
+            <h1 class="logo logo-buykorea">
+              <img src="../../images/web/logo_dark.png" alt="buykorea" />
+              <strong class="guide-title">컴퍼넌트 가이드</strong>
+            </h1>
+          </div>
+        </div>
+      </header>
+
+      <style>
+        .section-guide .chapter dt {line-height: 3; font-size: 1.2rem; font-weight: 500; background-color: #efefef; margin: 0 -20px; padding: 0 20px}
+        .section-guide .chapter dd {padding: 15px 0 40px;}
+      </style>
+
+
+      <main class="ui-container ui-componet">
+        <div class="ui-inner">
+          <section class="section-guide">
+            <div class="chapter">
+              <dl>
+
+                
+
+                <dt>2. button > button > INNER TABLE</dt>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-intbl">
+                   <span class="text">주소추가</span>
+                  </button>
+                </dd>
+
+                <dt>13. 리스트 > default > 라벨형</dt>
+                <dd>
+                  <div class="bk-textfield bk-with-btn">
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input type="text" value="" placeholder="" class="iText" title="부서명">
+                      </div>
+                    </div>
+
+                    <div class="bk-control">
+                      <div class="control-field input-full">
+                        <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full"> 
+                          <span class="text">중복체크</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+
+                <dt>thumb 이미지와 텍스트</dt>
+                <dd>
+                  <figure class="bk-fig-thumb">
+                    <div class="bk-thumb-56"><img src="../../images/tmp/tmp-goods-01.jpg"></div>
+                    <figcaption>Image Description Image Description Image Description</figcaption>
+                  </figure>
+                  <figure class="bk-fig-thumb">
+                    <div class="bk-thumb-48"><img src="../../images/tmp/tmp-goods-01.jpg"></div>
+                    <figcaption>Image Description Image Description Image Description</figcaption>
+                  </figure>
+                </dd>
+
+                <dt>아코디언 - 테이블 (각각 노출)</dt>
+                <dd>
+                  <div class="bk-accordion bk-accodion-tbl"><!--// [D]기본:single, 다중:multi -->
+                    <ul class="list-accordion">
+                      <li class="acc-item is-active">
+                        <div class="acc-header">
+                          <div class="acc-inner">
+                            <div class="left-area bk-title"><strong class="title">배송정보</strong></div>
+                            <div class="right-area">
+                              <button type="button" class="bk-icon-only link">
+                                <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acc-container" style="display: block;">
+                          <div class="acc-inner">
+                            <div class="bk-tbl">
+                              <table class="tbl tbl-default">
+                                <caption>등록상품 - 배송정보</caption>
+                                <colgroup>
+                                <col style="width:25vw">
+                                <col>
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                    <th scope="col">선적예정지역</th>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="col">배송소요 
+                                      예상시간</th>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+      
+                  <div class="bk-accordion bk-accodion-tbl"><!--// [D]기본:single, 다중:multi -->
+                    <ul class="list-accordion">
+                      <li class="acc-item is-active">
+                        <div class="acc-header">
+                          <div class="acc-inner">
+                            <div class="left-area bk-title"><strong class="title">부가정보</strong></div>
+                            <div class="right-area">
+                              <button type="button" class="bk-icon-only link">
+                                <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acc-container" style="display: block;">
+                          <div class="acc-inner">
+                            <div class="bk-tbl">
+                              <table class="tbl tbl-default">
+                                <caption>등록상품 - 부가정보</caption>
+                                <colgroup>
+                                <col style="width:25vw">
+                                <col>
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                    <th scope="col">국제인증</th>
+                                    <td>BSTI <a href="#" class="bk-txt-gray">File_name.pdf</a></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="col">FTA</th>
+                                    <td>Afghanistan <a href="#" class="bk-txt-gray">File_name.pdf</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </dd>
+                <div style="display:none">
+                <dt>풀팝업 하단 버튼 두개</dt>
+                <dd style="background: rgba(0,0,0,.7); position: relative; height: 280px; margin: 0 -20px; padding: 0;">
+                  <style>
+                    .bk-dialog {width: 90%; position: absolute; inset: 5% 5% 0; /*transform: scale(.7)*/}
+                    .bk-dialog.dialog-full .dialog-inner {width: 100%;}
+                    .bk-dialog.dialog-full .dialog-footer {right: 0;}
+                    .bk-dialog.dialog-full .dialog-footer .btn-half {width: 100%;}
+
+                    .bk-dialog.dialog-full .dialog-inner {height: 100%;transform: translate(0,0); left: unset; top: unset;}
+
+                    .bk-dialog {height: fit-content; }
+                    .has-btmBtn.bk-dialog.dialog-full .dialog-inner {height: 250px; transform: translate(0,0); left: unset; top: unset;}
+                  </style>
+                  <div class="bk-dialog has-btmBtn dialog-full is-active" id="dialog-full-pop">
+                    <div class="dialog-inner">
+                      <div class="dialog-header">
+                        <div class="header-left">
+                          <div class="bk-title">
+                            <h1 class="title">견적서 작성</h1>
+                          </div>
+                        </div>
+                        <div class="header-right">
+                          <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+                            <i class="bk-icon bk-icon-dialog-close">닫기</i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="dialog-container">
+                        <div class="dialog-contents">
+                          <!-- [S] Form-->
+                          
+                          스크롤이 생기는 바디<br>
+                          스크롤이 생기는 바디<br>
+                          스크롤이 생기는 바디<br>
+                          스크롤이 생기는 바디<br>
+                          스크롤이 생기는 바디<br>
+                          스크롤이 생기는 바디<br>
+
+                          
+                          <!-- //[D] Form-->
+                        </div>
+                      </div>
+                      <div class="dialog-footer">
+                        <div class="footer-center">
+                          <button type="button" class="bk-btn btn-light-gray btn-half" role="dialogCloseBtn">취소</button>
+                          <button type="button" class="bk-btn btn-primary btn-half">저장</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </dd>
+                <dd style="background: rgba(0,0,0,.7); position: relative; height: 400px; margin: 0 -20px; padding: 0;">
+                  <div class="bk-dialog dialog-full is-active" id="dialog-full-pop2">
+                    <div class="dialog-inner">
+                      <div class="dialog-header">
+                        <div class="header-left">
+                          <div class="bk-title">
+                            <h1 class="title">견적서 작성</h1>
+                          </div>
+                        </div>
+                        <div class="header-right">
+                          <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+                            <i class="bk-icon bk-icon-dialog-close">닫기</i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="dialog-container">
+                        <div class="dialog-contents">
+                          <!-- [S] Form-->
+                          
+                          길어지는 바디<br>
+                          길어지는 바디<br>
+                          길어지는 바디<br>
+                          길어지는 바디<br>
+                          길어지는 바디<br>
+                          길어지는 바디<br>
+
+                          
+                          <!-- //[D] Form-->
+                        </div>
+                      </div>
+                      <div class="dialog-footer">
+                        <div class="footer-center">
+                          <button type="button" class="bk-btn btn-light-gray btn-half" role="dialogCloseBtn">취소</button>
+                          <button type="button" class="bk-btn btn-primary btn-half">저장</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+                
+                <dd>
+                  <div style="display: none" class="bk-dialog dim dialog-modal is-active" id="dialog-modal"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
+                    <div class="dialog-inner">
+                      <div class="dialog-header">
+                        <div class="header-left">
+                          <div class="bk-title">
+                            <h1 class="title">타이틀</h1>
+                          </div>
+                        </div>
+                        <div class="header-right">
+                          <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+                            <i class="bk-icon bk-icon-dialog-close">닫기</i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="dialog-container">
+                        <div class="dialog-contents">
+                          내용 들어감<br>
+                        </div>
+                      </div>
+                      <div class="dialog-footer">
+                        <div class="footer-center">
+                          <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+                          <button type="button" class="bk-btn btn-primary btn-modal btn-half">확인</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+
+                <dd style="position: relative">
+                  <div class="bk-dialog dim alert is-active" id="alert"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
+                    <div class="dialog-inner">
+                      <div class="dialog-container">
+                        <div class="dialog-contents">
+                          <div class="message">
+                            <p>Popup Message</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dialog-footer">
+                        <div class="footer-center">
+                          <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+                </div>
+
+              </dl>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+                
+    <!--// [공통]팝업 -->
+    <script src="../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../js/common/lib/flatpickr/flatpickr.min.js"></script><!--// 달력 -->
+    <script src="../../js/common/lib/l10n/ko.js"></script><!--// 언어 설정 -->
+    <!-- 툴팁 설정 -->
+    <script src="../../js/common/lib/popper/popper.min.js"></script>
+    <script src="../../js/common/lib/tippy/tippy-bundle.js"></script>
+    <!--// 툴팁 설정 -->
+    <script src="../../js/common/lib/swiper/swiper-bundle.min.js"></script><!--// 스와이퍼 -->
+    <script src="../../js/mobile/ui_common.js"></script>
+    <script>
+      const datepicker = document.getElementById('datepicker');
+      const datepicker2 = document.getElementById('datepicker2');
+      const startDateInput = document.getElementById('startDate');
+      const endDateInput = document.getElementById('endDate');
+
+      
+      function handleDateChange(selectedDates, dateStr, instance) {
+        console.log('선택된 날짜:', dateStr);
+      }
+    
+      flatpickr(datepicker, {
+        dateFormat: 'Y-m-d H:i', // 날짜 및 시간 형식 설정 (예: 2023-09-12 15:30)
+        enableTime: true,        // 시간 선택 활성화
+        time_24hr: true,         // 24시간 형식 사용
+        minDate: 'today',        // 오늘 이전 날짜 선택 비활성화
+        maxDate: '2023-12-31',   // 특정 날짜까지 선택 가능
+        defaultDate: 'today',    // 초기 날짜 설정 (현재 날짜와 시간)
+        disable: ['2023-09-15', '2023-09-20'], // 특정 날짜 비활성화
+        locale: 'ko',            // 한국어로 지역화
+        onOpen: function(selectedDates, dateStr, instance) {
+          // 위젯이 열릴 때 실행할 코드
+        },
+        onClose: function(selectedDates, dateStr, instance) {
+          // 위젯이 닫힐 때 실행할 코드
+        },
+        onChange: function(selectedDates, dateStr, instance) {
+          // 날짜가 변경될 때 실행할 코드
+        },
+        disableMobile: true,      // 모바일 기기에서 위젯 비활성화
+        altInput: true,           // 추가 입력란 활성화
+        altFormat: 'F j, Y H:i', // 추가 입력란의 날짜 및 시간 형식
+      });
+    
+      flatpickr(datepicker2, {
+        dateFormat: 'Y-m-d', // 날짜 형식 설정 (예: 2023-09-12)
+        enableTime: false,   // 시간 선택 비활성화
+        minDate: 'today',    // 오늘 이전 날짜 선택 비활성화
+        defaultDate: new Date() // 초기 날짜 설정 (현재 날짜로 설정)
+    
+      });
+      
+      flatpickr(startDateInput, {
+        dateFormat: 'Y-m-d',
+        enableTime: false,
+        minDate: 'today',
+        defaultDate: 'today',
+        locale: 'ko',
+        onChange: handleDateChange, // 날짜 선택 이벤트 핸들러 등록
+      });
+    
+      flatpickr(endDateInput, {
+        dateFormat: 'Y-m-d',
+        enableTime: false,
+        minDate: 'today',
+        defaultDate: 'today',
+        locale: 'ko',
+        onChange: handleDateChange, // 날짜 선택 이벤트 핸들러 등록
+      });
+      
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',//vertical
+        //loop: true,
+        spaceBetween: 10,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+        return direction;
+      }
+      
+      tippy('[component="tooltip"]', {
+        backdrop:false,
+        arrow: false,
+				placement: 'right', // top, right, bottom, left
+				delay: null, //ms
+				//distance: 15, //px or string
+				maxWidth: 350, //px or string
+			
+				// leave these as they are
+				followCursor: false,
+				allowHTML: true,
+        theme: 'bk-tooltip',
+				ignoreAttributes: true,
+        content(reference) {
+          const title = reference.getAttribute('title');
+          reference.removeAttribute('title');
+          return title;
+        },
+        trigger: 'click',// 기본값:"mouseenter focus", 사용가능 값:"mouseenter", "focus", "focusin", "click", "manual"
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
+	<title>buy korea 고도화 가이드</title>
+	<link type="text/css" rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div id="wrap">
+	<header id="header">
+		<h1 class="logo"><a href="guide.html"><img src="img/logo.png" alt="롯데렌터카"></a></h1>
+		<nav class="gnb-menu">
+			<dl>
+			<dt>가이드 메뉴</dt>
+			<dd class="active"><a href="guide.html">기본 가이드</a></dd>
+			<dd><a href="path.html">현황판</a></dd>
+			<dd><a href="../components/components.html" target="_blank">컴퍼넌트</a></dd>
+			</dl>
+		</nav>
+	</header>
+	<hr>
+
+	<section id="container">
+		<div class="chapter">
+			<h1 class="g-h1-title">퍼블리싱 정의</h1>
+			<div class="chapter-component">
+				<ol>
+				<li>인코딩 : UTF-8</li>
+				<li>dtd : html5</li>
+				<li>크로스 브라우징 범위 : ie11이상</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="chapter">
+			<h1 class="g-h1-title">css 구분</h1>
+			<h2 class="g-h2-title">전체 공통 css</h2>
+			<div class="chapter-component">
+				<ol>
+				<li>reset.css : 공통 css reset</li>
+				<li>variable.css : 공통 css variable</li>
+				<li>common.css : 공통 레이아웃,공통 class</li>
+				<li>components.css : 사이트에서 사용하고 있는 element,component 작성
+					<ol>
+						<li>
+							1. element 모듈 작성 규칙
+							<div>
+								bk-클래스명
+							</div>
+						</li>
+						<li>
+							2. component 작성 규칙
+							<div>
+								cp-컴퍼넌트명
+							</div>
+						</li>
+					</ol>
+				</ol>
+			</div>
+		</div>
+
+		<div class="chapter">
+			<h1 class="g-h1-title">주의사항</h1>
+			<div class="chapter-component">
+				<ol>
+				<li>&lt;label for=""&gt;와 input, select의 id값을 맞춰주세요.(퍼블리싱 할때 임의로 입력)
+					<span class="ex">ex) &lt;input type="radio" id="kmh_1" /&gt;&lt;label for="kmh_1"&gt;초등학교&lt;/label&gt;</span>
+				</li>
+				<li>
+					스크립트 작성시
+					<ol>
+					<li>
+						<span class="ex">
+						&lt;script type="text/javascript"&gt; <br>
+							//code<br>
+						&lt;/script&gt;
+						</span>
+					</li>
+					<li>
+						&lt;a href="javascript:FUNCTION"&gt;&lt;/a&gt;  (X)
+						<span class="ex">&lt;a href="#" onclick="FUNCTION(); return false;"&gt;&lt;/a&gt; (O)</span>
+					</li>
+					<li>
+						&lt;a href="#" onclick="window.open('URL'); return false;"&gt;&lt;/a&gt; (X)
+						<span class="ex">&lt;a href="URL" onclick="window.open(this.href); return false;"&gt;&lt;/a&gt; (O)</span>
+					</li>
+					</ol>
+				</li>
+				<li>
+					특수문자의 표기
+					<span class="ex">
+					& = &amp;amp;<br />
+					&copy = &amp;copy;<br />
+					<  = &amplt;<br />
+					> = &ampgt;
+					</span>
+				</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+</div>
+</body>
+</html>
