@@ -269,390 +269,79 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
-    <!-- [s] buyer login-->
-    <div class="bk-dialog dialog-full" id="dialog-buyer-login">
+    <!-- [s] 삭제/탈퇴회원-->
+    <div class="bk-dialog dim alert" id="alert-del">
       <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">Buyer Sign in</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
         <div class="dialog-container">
           <div class="dialog-contents">
-            <!-- [S] input -->
-            <div class="bk-textfield ui-member-text ui-id-area bk-full">
-              <div class="bk-control">
-                <div class="control-field">
-                  <input
-                    type="text"
-                    name=""
-                    value=""
-                    placeholder="Email"
-                    class="iText"
-                    id=""
-                    title="Email"
-                    required
-                  />
-                </div>                
-              </div>              
+            <div class="message">
+              <p>The login information you have entered is incorrect. Please check your email and password and try again.</p>
             </div>
-            <div class="bk-textfield ui-member-text ui-password-area bk-full">
-              <div class="bk-control">
-                <div class="control-field">
-                  <input
-                    type="password"
-                    name=""
-                    value=""
-                    placeholder="Password"
-                    class="iText"
-                    id=""
-                    title="Password"
-                    required
-                  />
-                </div>          
-              </div>              
-            </div>
-
-            
-            <!-- //[D] input -->
-            <!-- [S] button -->
-            <div class="bk-forgot-btn">
-              <span class="font-middle">Forgot Your password ?</span>
-              <button
-                type="button"
-                class="bk-btn btn-brand btn-text btn-underline btn-large"
-                onclick="dialogOpen('#dialog-reset-password')"
-              >
-                <span class="text">Reset Password</span>
-              </button>
-            </div>
-            <button type="button" class="bk-btn btn-primary btn-sticky btn-full">
-              <span class="text">Sign in</span>
-            </button>
-            <button 
-              type="button" 
-              class="bk-btn btn-primary btn-outline btn-sticky btn-full"
-              onclick="dialogOpen('#dialog-sign-up-account')"
-            >
-              <span class="text">Buyer Registration</span>
-            </button>
-            <!-- //[D] button -->
-
-            <!-- [S] SNS login-->
-            <div class="bk-sns-login">
-              <div class="bk-sns-title">
-                <span>If you are a buyer,</span>
-                <span>Sign in with your SNS accounts</span>
-              </div>
-              <div class="bk-sns-list">
-                <a href="#" title="google" class="google">
-                  <i class="bk-icon">Google</i>
-                  <span>Google</span>
-                </a>
-                <a href="#" title="Facebook" class="facebook">
-                  <i class="bk-icon">Facebook</i>
-                  <span>Facebook</span>
-                </a>
-                <a href="#" title="Linkedin" class="linkedin">
-                  <i class="bk-icon">Linkedin</i>
-                  <span>Linkedin</span>
-                </a>
-                <a href="#" title="Apple" class="apple">
-                  <i class="bk-icon">Apple</i>
-                  <span>Facebook</span>
-                </a>
-              </div>
-            </div>
-            <!--//[D] SNS login-->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- //[e] buyer login-->
-
-    <!-- [s] reset password-->
-    <div class="bk-dialog has-btmBtn dialog-full" id="dialog-reset-password">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">Reset password for buyKOREA</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="bk-guide-txt">
-              <span class="text">회원가입 시 등록한 Email을 입력해 주세요.</span>
-            </div>
-            <!-- [S] Form-->
-            <div class="bk-input-list">
-              <dl>
-                <dt>Email</dt>
-                <dd>
-                  <div class="bk-row-div bk-email-row bk-full">
-                    <div class="bk-textfield">
-                      <div class="bk-control">
-                        <div class="control-field">
-                          <input type="text" name="resetpw_m" value="" placeholder="Email" class="iText" id="resetpw_m" required="">
-                        </div>
-                      </div>
-                    </div>
-
-                    <span class="bk-text">@</span>
-                  </div>
-
-                  <div class="bk-row-div bk-grid-half bk-full">
-                    <div class="bk-textfield">
-                      <div class="bk-control">
-                        <div class="control-field">
-                          <input type="text" name="resetpw_m_name" value="gmail.com" placeholder="" class="iText" id="resetpw_m_name" required="" readonly>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="bk-select default">
-                      <div class="bk-control">
-                        <select class="" id="" title="mail address">
-                          <option value="Choose">Choose</option>
-                          <option value="option2">option2</option>
-                          <option value="option4">option4</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
-                    <span class="text">Send Verification Code</span>
-                  </button>
-
-                </dd>
-              </dl>
-            </div>
-            <div class="bk-input-list">
-              <dl>
-                <dt>인증번호</dt>
-                <dd>
-                  <div class="bk-textfield bk-full">
-                    <div class="bk-control">
-                      <div class="control-field">
-                        <input type="text" name="inpup_code" value="" placeholder="Verification Code" class="iText" id="inpup_code" required="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
-                    <span class="text">Confirm Verification Code</span>
-                  </button>
-
-                </dd>
-              </dl>
-            </div>
-            <div class="bk-input-list">
-              <dl>
-                <dt>Password</dt>
-                <dd>
-                  <div class="bk-textfield bk-full">
-                    <div class="bk-control">
-                      <div class="control-field">
-                        <input type="text" name="" value="" placeholder="Enter new Password" class="iText" id="" required="">
-                      </div>
-                      <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
-                      <div class="bk-messages bk-flex-c bk-flex-row-gap-basic">
-                        <div class="bk-row-div no-gap">
-                          <i class="bk-icon bk-icon-input-messages">정보</i>Your password must be at least 8 characters
-                          and contain letters, numbers, and special
-                          characters.
-                        </div>
-                        <div class="bk-row-div no-gap">
-                          <i class="bk-icon bk-icon-input-messages">정보</i>If your password is longer than 10 characters,
-                          it must contain a combination of 2 of the 3
-                          requirements.
-                        </div>
-                      </div>
-                    </div>                    
-                  </div>
-                  <!--[S] password strength-->
-                  <div class="bk-password-strength">
-                    <!--하 : gage-1 / 중 : gage-2 / 상 : gaeg-3 -->
-                    <span class="bk-password-text">하</span>
-                    <div class="bk-password-gage">
-                      <span class="gage-1"></span>
-                    </div>
-                  </div>
-                  <!--//[D] password strength-->             
-                </dd>
-              </dl>
-            </div>
-            <div class="bk-input-list">
-              <dl>
-                <dt>Re-password</dt>
-                <dd>
-                  <div class="bk-textfield bk-full">
-                    <div class="bk-control">
-                      <div class="control-field">
-                        <input type="text" name="" value="" placeholder="Enter new Password" class="iText" id="" required="">
-                      </div>                      
-                    </div>
-                  </div>
-                </dd>
-              </dl>
-            </div>
-            <!-- //[D] Form-->
           </div>
         </div>
         <div class="dialog-footer">
           <div class="footer-center">
-            <button type="button" class="bk-btn btn-sticky btn-primary btn-full">Submit</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- //[e] reset password-->
-
-    <!-- [s] Sign up Account-->
-    <div class="bk-dialog has-btmBtn dialog-full" id="dialog-sign-up-account">
+    <!-- //[e] 삭제/탈퇴회원-->
+    <!-- [s] 휴면회원-->
+    <div class="bk-dialog dim alert" id="alert-palse">
       <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">Sign up Account for buyKOREA</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
         <div class="dialog-container">
           <div class="dialog-contents">
-            <div class="bk-select bk-full bk-bMg24">
-              <div class="bk-control">
-                <select class="" id="selectbox-01-03" title="Choose" required>
-                  <option value="1">Choose *</option>
-                  <option value="2">option2</option>
-                  <option value="4">option4</option>
-                </select>
-              </div>
+            <div class="message">
+              <p>Your account has been reactivated. You can now access buyKOREA services. Click Confirm to go to the main page.</p>
             </div>
-            <!-- [S] Form-->
-            <div class="bk-accordion accordion-type-line accordion-type-has-check">
-                <ul class="list-accordion">
-                  <li class="acc-item all-agree">
-                    <div class="acc-header">
-                      <div class="acc-inner">
-                        <div class="left-area">
-                          <div class="bk-checkbox">
-                            <input type="checkbox" name="checkbox-agree-all" class="iCheckbox" id="checkbox-agree-all">
-                            <label for="checkbox-agree-all"><span class="text">Agree to All Terms</span></label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="acc-item">
-                    <div class="acc-header">
-                      <div class="acc-inner">
-                        <div class="left-area">
-                          <div class="bk-checkbox">
-                            <input type="checkbox" name="checkbox-agree-01" class="iCheckbox" id="checkbox-agree-01">
-                            <label for="checkbox-agree-01"><span class="text">[Required] Terms of Use</span></label>
-                          </div>
-                        </div>
-                        <div class="right-area">
-                          <button type="button" class="bk-icon-only link">
-                            <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="acc-container">
-                      <div class="acc-inner">
-                        <dl>
-                          <dt>Privacy Notice</dt>
-                          <dd>We collects personal information to provide online marketplaces that allow e-commerce including offer, negotiation, contract, paym-
-                            ent between members through the buyKO-REA.​ For more information on how we pro-cess your personal information, please see our Privacy Policy.​</dd>
-                        </dl>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="acc-item">
-                    <div class="acc-header">
-                      <div class="acc-inner">
-                        <div class="left-area">
-                          <div class="bk-checkbox">
-                            <input type="checkbox" name="checkbox-agree-02" class="iCheckbox" id="checkbox-agree-02">
-                            <label for="checkbox-agree-02"><span class="text">[Optional] Consent to Collection and Use of Personal Information</span></label>
-                          </div>
-                        </div>
-                        <div class="right-area">
-                          <button type="button" class="bk-icon-only link">
-                            <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="acc-container">
-                      <div class="acc-inner">
-                        <dl>
-                          <dt>Privacy Notice</dt>
-                          <dd>We collects personal information to provide online marketplaces that allow e-commerce including offer, negotiation, contract, paym-
-                            ent between members through the buyKO-REA.​ For more information on how we pro-cess your personal information, please see our Privacy Policy.​</dd>
-                        </dl>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="acc-item">
-                    <div class="acc-header">
-                      <div class="acc-inner">
-                        <div class="left-area">
-                          <div class="bk-checkbox">
-                            <input type="checkbox" name="checkbox-agree-03" class="iCheckbox" id="checkbox-agree-03">
-                            <label for="checkbox-agree-03"><span class="text">[Optional] 국가별 약관이 있는 경우 </span></label>
-                          </div>
-                        </div>
-                        <div class="right-area">
-                          <button type="button" class="bk-icon-only link">
-                            <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="acc-container">
-                      <div class="acc-inner">
-                        <dl>
-                          <dt>Privacy Notice</dt>
-                          <dd>We collects personal information to provide online marketplaces that allow e-commerce including offer, negotiation, contract, paym-
-                            ent between members through the buyKO-REA.​ For more information on how we pro-cess your personal information, please see our Privacy Policy.​</dd>
-                        </dl>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            <!-- //[D] Form-->
           </div>
         </div>
         <div class="dialog-footer">
           <div class="footer-center">
-            <button type="button" class="bk-btn btn-sticky btn-primary btn-full">Registration</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
           </div>
         </div>
       </div>
     </div>
+    <!-- //[e] 휴면회원-->
+    <!-- [s] 리드회원-->
+    <div class="bk-dialog dim alert" id="alert-lead">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>To communicate with sellers, please go to My Page and enter additional information.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 리드회원-->
+    <!-- [s] 비번5회초과-->
+    <div class="bk-dialog dim alert" id="alert-myinfo">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>You have entered an incorrect password more than 5 times. Please reset your password.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 비번5회초과-->
+
     <!-- //[e] Sign up Account-->
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
