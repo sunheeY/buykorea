@@ -33,7 +33,8 @@
 .cp-info-block dd > .bk-input-list {margin-top: -8px; padding-top: 12px;}
 
 /* 이너테이블 버튼 추가 */
-.bk-btn-intbl {height: 28px; padding: 3px 8px; font-size: 1.4rem; line-height: 1.57143; border-color: var(--color-gray); background-color: var(--color-white)}
+[class*=bk-btn-intbl] {height: 28px; padding: 3px 8px; font-size: 1.4rem; line-height: 1.57143; border-color: var(--color-gray); background-color: var(--color-white)}
+.bk-btn-intbl-p {border-color: var(--color-primary); background-color: var(--color-primary); color: var(--color-white)}
 
 /* 배송지등록 */
 .bk-tbl-list .bk-list-name .bk-list-title {font-size: 1.6rem;}
@@ -183,4 +184,36 @@
 .cp-invoicenum-wrap .bk-input-list + .bk-input-list {margin-top: 12px}
 .cp-invoicenum-wrap .bk-input-list .bk-btn {padding: 0; height: fit-content; position: absolute; top: 12px; right: 12px;}
 .cp-invoicenum-wrap .bk-input-list .bk-btn {display: none;}
+
+/* 메세지 */
+.ui-message .ui-container {padding: 0;}
+.ui-message .ui-inner {position: relative; flex: 1 1 auto;}
+.ui-message .ui-footer {display: none;}
+.cp-mms-wrap {display: flex; flex-direction: column; height: 100%; width: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+.cp-mms-top {background-color: #f8f8f8; border: 1px solid var(--color-gray); border-width: 1px 0; padding: 12px 20px; display: flex; justify-content: space-between;}
+.cp-mms-top .cp-mms-sender strong {display: block; font-size: 1.6rem; font-weight: 500; line-height: 1.5;}
+.cp-mms-top .cp-mms-sender span {display: block; font-size: 1.4rem; line-height: 1.71429; color: var(--color-sub)}
+.cp-mms-top .bk-mms-btns {display: inline-flex; align-items: center; gap: 8px;}
+.cp-mms-top .bk-mms-btns button {display: block;}
+.cp-mms-body {flex: 1 1 auto; overflow-y: auto; padding: 20px}
+.cp-mms-bot {background-color: var(--color-white); border: 1px solid var(--color-line); border-width: 1px 0; padding: 12px 20px;}
+.cp-mms-bot .bk-textfield {width: 100%;}
+.cp-mms-bot .bk-textfield .iText {padding-right: 46px;}
+
+.bk-icon.bk-icon-send {width: 22px; height: 22px; background-image: url(../../images/mobile/icon-send.svg); filter: brightness(0) saturate(100%) opacity(.5);}
+.is-focus .bk-icon.bk-icon-send {filter: none;}
+
+.bk-mms-box {margin-top: 12px; padding-right: 5%;}
+.bk-mms-box .bk-userid {font-size: 1.6rem; color: var(--color-brand); font-weight: 500; line-height: 1.5;}
+.bk-mms-box::after {display: block; content: ''; clear: both;}
+.bk-mms-box .bk-ballon {background: #f6f6f6; border-radius: 8px; padding: 12px; position: relative; margin-top: 26px; word-break: keep-all;}
+.bk-mms-box .bk-ballon::before {content: ''; display: block; position: absolute; top: -14px; left: 10px; width: 0; height: 0; border-bottom: 14px solid transparent; border-top: 14px solid transparent; border-left: 14px solid #f6f6f6; border-right: 14px solid transparent;}
+.bk-mms-box .bk-time {float: right; margin-top: 4px; color: var(--color-default);}
+.bk-mms-box.bk-mine {text-align: right; padding: 0 0 0 5%}
+.bk-mms-box.bk-mine .bk-ballon {background: #DFF4FF; text-align: left;}
+.bk-mms-box.bk-mine .bk-time {float: left;}
+.bk-mms-box.bk-mine .bk-ballon::before {border-right: 14px solid #DFF4FF; border-left: 14px solid transparent; right: 10px; left: unset; text-align: left;}
+
+.bk-mms-dateline {text-align: center; margin: 36px 0; color: var(--color-default); font-size: 1.6rem; line-height: 1.5;}
+
 
