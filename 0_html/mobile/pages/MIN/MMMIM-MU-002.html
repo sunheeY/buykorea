@@ -251,14 +251,15 @@
 
                       <div class="bk-input-list">
                         <dl>
-                          <dt class="is-required">City/Country</dt>
+                          <!--문구/title 변경 2023-11-02-->
+                          <dt class="is-required">Country/City</dt>
                           <dd class="bk-flex-row-gap-no">
                             <div class="bk-row-div bk-grid-half bk-full">
 
                               <div class="bk-select default">
                                 <div class="bk-control">
                                   <select class="" id="" title="country">
-                                    <option value="Choose">KOTRA Office</option>
+                                    <option value="Choose">Choose</option>
                                     <option value="option1">option2</option>
                                     <option value="option2">option4</option>
                                   </select>
@@ -268,7 +269,7 @@
                               <div class="bk-select default">
                                 <div class="bk-control">
                                   <select class="" id="" title="city">
-                                    <option value="Choose">KOTRA Office</option>
+                                    <option value="Choose">Choose One Plase</option>
                                     <option value="option1">option2</option>
                                     <option value="option2">option4</option>
                                   </select>
@@ -277,8 +278,8 @@
                             </div>
                             <div class="bk-messages bk-flex-c bk-tMg-basic">
                               <div class="bk-row-div no-gap">
-                                <i class="bk-icon bk-icon-input-messages">정보</i>Please select your city and country
-where your business is located.
+                                <i class="bk-icon bk-icon-input-messages">정보</i>Please select your country and city where your business is located.
+
                               </div>
                             </div>          
                           </dd>
@@ -289,15 +290,24 @@ where your business is located.
                         <dl>
                           <dt class="is-required">Interest</dt>
                           <dd>
-                            <div class="bk-select default">
-                              <div class="bk-control">
-                                <select class="" id="" title="interest">
-                                  <option value="option1">Manufacturer</option>
-                                  <option value="option2">Distributor</option>
-                                  <option value="option3">Manufacturer&Distributor</option>
-                                </select>
+                            <!--라디오버튼으로 변경 2023-11-02-->
+                            <fieldset>
+                              <legend>radio</legend>
+                              <div class="bk-radio-group wide">
+                                <div class="bk-radio">
+                                  <input type="radio" name="radio-05" class="iRadio" id="radio-05-01">
+                                  <label for="radio-05-01"><span class="text">Manufacturer</span></label>
+                                </div>
+                                <div class="bk-radio">
+                                  <input type="radio" name="radio-05" class="iRadio" id="radio-05-02">
+                                  <label for="radio-05-02"><span class="text">Distributor</span></label>
+                                </div>
+                                <div class="bk-radio">
+                                  <input type="radio" name="radio-05" class="iRadio" id="radio-05-03">
+                                  <label for="radio-05-03"><span class="text">Manufacturer&Distributor</span></label>
+                                </div>
                               </div>
-                            </div>
+                            </fieldset>
                           </dd>
                         </dl>
                       </div>
