@@ -25,7 +25,7 @@
 .bk-textfield.is-disabled .iText,
 .bk-textarea.is-disabled .iTextarea {background-color: #f0f0f0; border-color: #ddd; color: #bbb;} /* disabled */
 .bk-textfield.is-readonly .iText,
-.bk-textarea.is-readonly .iTextarea {background-color: #F8F8F8;; border-color: rgba(187,187,187,73.33%);} /* readonly */
+.bk-textarea.is-readonly .iTextarea {background-color: #F8F8F8;; border-color: rgba(187,187,187,73.33%); color:var(--color-brand)} /* readonly */
 
 .bk-textfield.ui-member-text{width:100%;}
 .bk-textfield.ui-member-text.ui-id-area {position:relative; z-index:2}
@@ -864,7 +864,7 @@ span.flatpickr-weekday {cursor: default; font-size: 90%; background: transparent
 .cp-search.search-top .bk-control .control-field .control-icon,
 .cp-search.search-top .bk-control .control-field .control-btns {transform: translateY(-50%) translateX(0);}
 /* [컴퍼넌트]검색 */
-.cp-search.search-topType {margin-bottom: 24px; padding: 24px 20px; background-color: #f6f6f6; border-radius: 0; box-sizing: border-box;}
+.cp-search.search-topType {margin-bottom: 24px; padding: 24px 20px; background-color: #f6f6f6; border-radius: 0; box-sizing: border-box; margin-top:-24px}
 .cp-search.search-topType .search-inner .search-row {display: flex; flex-direction: column; align-items: flex-start; justify-content: stretch; flex-wrap:wrap; row-gap:12px;}
 .cp-search.search-topType .search-inner .search-row > div ~ * {/*margin-left: 20px;*/}
 .cp-search.search-topType .dash {width:26px; text-align:center;}
