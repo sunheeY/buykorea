@@ -146,7 +146,7 @@
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full" onclick="dialogOpen('#alert-id-check')">
                     <span class="text">간편인증</span>
                   </button>
                 </dd>
@@ -159,10 +159,10 @@
                   <div class="bk-textfield bk-full">
                     <div class="bk-control">
                       <div class="control-field">
-                        <input type="text" name="join-password" value="" placeholder="비밀번호를 입력해 주세요" class="iText" id="join-password" title="비밀번호" required="">
+                        <input type="password" name="join-password" value="" placeholder="비밀번호를 입력해 주세요" class="iText" id="join-password" title="비밀번호" required="">
                       </div>
                       <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
-                      <div class="bk-messages bk-flex-c bk-flex-row-gap-basic">
+                      <div class="bk-messages bk-flex-c bk-flex-row-gap-basic bk-tMg-basic">
                         <div class="bk-row-div no-gap">
                           <i class="bk-icon bk-icon-input-messages">정보</i>8자리 이상, 특수문자/영문자/숫자 세 가지 
                           조합 또는 10자리 이상 또는 두 가지 조합을 사용해주세요.
@@ -189,7 +189,7 @@
                   <div class="bk-textfield bk-full">
                     <div class="bk-control">
                       <div class="control-field">
-                        <input type="text" name="join-password-re" value="" placeholder="비밀번호를 입력해 주세요" class="iText" id="join-password-re" title="비밀번호 재입력" required="">
+                        <input type="password" name="join-password-re" value="" placeholder="비밀번호를 입력해 주세요" class="iText" id="join-password-re" title="비밀번호 재입력" required="">
                       </div>
                     </div>                    
                   </div>
@@ -479,7 +479,7 @@
                   </div>
                   <div class="acc-container">
                     <div class="acc-inner">
-                      <div class="bk-messages bk-flex-c bk-bMg24">
+                      <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg24">
                         <div class="bk-row-div no-gap">
                           <i class="bk-icon bk-icon-input-messages">정보</i>소속 회원으로 변경은 마스터의 승인 이후 
                           전환되며, 기업 및 상품관련 활동은 승인 이후 가능합니다
@@ -559,7 +559,7 @@
                   </div>
                   <div class="acc-container">
                     <div class="acc-inner">
-                      <div class="bk-messages bk-flex-c bk-bMg12">
+                      <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg12">
                         <div class="bk-row-div no-gap">
                           <i class="bk-icon bk-icon-input-messages">정보</i>관심산업은 최대 5개 선택 가능
                         </div>
@@ -1167,6 +1167,26 @@
       </div>
     </div>
     <!-- //[e] search-interest-->
+
+    <!-- [s] 아이디체크 alert-->
+    <div class="bk-dialog dim alert" id="alert-id-check">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>사용 가능한 아이디 입니다.</p><!--사용가능 case-->
+              <!--p>사용 불가한 아이디입니다. 다른 아이디를 입력해 주세요.</p--><!--사용불가능 case-->
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 완료 alert-->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

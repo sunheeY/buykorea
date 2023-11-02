@@ -170,7 +170,7 @@
                 <span class="text">Reset Password</span>
               </button>
             </div>
-            <button type="button" class="bk-btn btn-primary btn-sticky btn-full">
+            <button type="button" class="bk-btn btn-primary btn-sticky btn-full" onclick="dialogOpen('#alert-check')">
               <span class="text">Sign in</span>
             </button>
             <button 
@@ -351,6 +351,26 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+
+    <!-- [s] Sign in-->
+    <div class="bk-dialog dim alert" id="alert-check">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>The login information you have entered is incorrect. Please check your email and password and try again.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] Sign in-->
+
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>

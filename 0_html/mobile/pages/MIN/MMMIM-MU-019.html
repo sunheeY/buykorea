@@ -131,6 +131,7 @@
             <div class="bk-tbl-toolbar">
               <div class="toolbar-left"><span class="total">전체 <strong class="num">50</strong>건</span></div>
               <div class="toolbar-right">
+                <!--// [D]50개이상 첨부시 경고 modal : #alert-include -->
                 <button
                   type="button"
                   class="bk-btn btn-default btn-outline btn-xnormal"
@@ -144,7 +145,7 @@
                 <button
                   type="button"
                   class="bk-btn btn-brand btn-text btn-large action-list-delete"
-                  role="addressCloseBtn"
+                  onclick="dialogOpen('#dialog-modal-delete-list')"
                 >
                   <span class="deco-icon extra-icon">
                     <i class="bk-icon bk-icon-list-delete">delete</i>
@@ -168,7 +169,7 @@
                 <button
                   type="button"
                   class="bk-btn btn-brand btn-text btn-large action-list-delete"
-                  role="addressCloseBtn"
+                  onclick="dialogOpen('#dialog-modal-delete-list')"
                 >
                   <span class="deco-icon extra-icon">
                     <i class="bk-icon bk-icon-list-delete">delete</i>
@@ -192,7 +193,7 @@
                 <button
                   type="button"
                   class="bk-btn btn-brand btn-text btn-large action-list-delete"
-                  role="addressCloseBtn"
+                  onclick="dialogOpen('#dialog-modal-delete-list')"
                 >
                   <span class="deco-icon extra-icon">
                     <i class="bk-icon bk-icon-list-delete">delete</i>
@@ -216,7 +217,7 @@
                 <button
                   type="button"
                   class="bk-btn btn-brand btn-text btn-large action-list-delete"
-                  role="addressCloseBtn"
+                  onclick="dialogOpen('#dialog-modal-delete-list')"
                 >
                   <span class="deco-icon extra-icon">
                     <i class="bk-icon bk-icon-list-delete">delete</i>
@@ -598,6 +599,55 @@
       </div>
     </div>
     <!-- //[e] delivery-manage-->
+
+     <!-- [s] 주소추가 카운트-->
+     <div class="bk-dialog dim alert" id="alert-include">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>배송지는  최대 50개까지 등록이 가능합니다. 등록된 배송지 삭제 후 새로 등록해 주세요.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 주소추가 카운트 -->
+
+    <!-- [s] 리스트 삭제 안내-->
+    <div class="bk-dialog dim dialog-modal" id="dialog-modal-delete-list">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">배송지 삭제</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            배송지를 삭제하시겠습니까?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" <!--role="addressCloseBtn"-->확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 리스트 삭제 안내-->
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>

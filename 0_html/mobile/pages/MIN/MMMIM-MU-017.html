@@ -263,7 +263,7 @@
               <span class="text">더보기</span>
             </button>
             <div class="bk-btn-group">
-              <button type="button" class="bk-btn btn-primary btn-outline btn-large btn-half">
+              <button type="button" class="bk-btn btn-primary btn-outline btn-large btn-half" onclick="dialogOpen('#alert-select')"><!--직원 선택후 클릭 시 #dialog-modal-select-->
                 <span class="text">마스터 변경</span>
               </button>
               <button type="button" class="bk-btn btn-primary btn-large btn-half">
@@ -415,6 +415,57 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+
+    <!-- [s] 변경직원-->
+    <div class="bk-dialog dim alert" id="alert-select">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>소속 기업의 마스터로 변경할 직원을 선택해 주세요.</p><!--직원 선택 없을 시, -->
+              <!--p>마스터는 승인 상태 직원만 가능합니다. 다시 확인해 주세요.</p--><!--신청/해지 직원 선택 시, -->
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 변경직원-->
+
+    <!-- [s] 직원 선택후 클릭-->
+    <div class="bk-dialog dim dialog-modal" id="dialog-modal-select">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">마스터 권한 이관</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            해당 직원에게 마스터 권한을 이관하시겠습니까? 이관 후 Mypage 메인으로 이동합니다.
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 90일-->
+
     <!-- [s] staff-change-->
     <div class="bk-dialog dialog-full has-btmBtn" id="dialog-staff-change">
       <div class="dialog-inner">

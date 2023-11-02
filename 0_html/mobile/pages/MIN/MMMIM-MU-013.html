@@ -160,7 +160,7 @@
             </div>
             <!-- //[D] input -->
             <!-- [S] button -->
-            <button type="button" class="bk-btn btn-primary btn-sticky btn-full">
+            <button type="button" class="bk-btn btn-primary btn-sticky btn-full" onclick="dialogOpen('#alert-check')"> <!--5회초과 alert-check-over-->
               <span class="text">로그인</span>
             </button>
             <!-- //[D] button -->
@@ -308,6 +308,45 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+
+    <!-- [s] check-->
+    <div class="bk-dialog dim alert" id="alert-check">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>로그인 정보가 올바르지 않습니다. 입력한 정보를 다시 확인해 주시기 바랍니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] check-->
+
+    <!-- [s] check 5회초과-->
+    <div class="bk-dialog dim alert" id="alert-check-over">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>비밀번호를 5회 이상 틀리셨습니다. 로그아웃 후 메인으로 이동됩니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] check 5회초과-->
+
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>

@@ -315,12 +315,12 @@
                     <div class="bk-select default">
                       <div class="bk-control">
                         <select class="" id="" title="mail address">
-                          <option value="Choose">Choose</option>
-                          <option value="option2">naver.com</option>
-                          <option value="option3">hanmail.net</option>
-                          <option value="option4">daum.net</option>
-                          <option value="option5">gmail.com</option>
-                          <option value="option6">nate.com</option>
+                          <option value="Choose" >Choose</option>
+                          <option value="option2">gmail.com</option>
+                          <option value="option3">yshoo.com</option>
+                          <option value="option4">outlook.com</option>
+                          <option value="option5">hotmail.com</option>
+                          <option value="option6">icloud.com</option>
                           <option value="option7">직접입력</option>
                         </select>
                       </div>
@@ -329,6 +329,10 @@
 
                   <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
                     <span class="text">Send Verification Code</span>
+                    <!--클릭 후, 텍스트 변경-->
+                    <!--
+                    <span class="text">Resend Verification Code</span>
+                    -->
                   </button>
 
                 </dd>
@@ -360,10 +364,10 @@
                   <div class="bk-textfield bk-full">
                     <div class="bk-control">
                       <div class="control-field">
-                        <input type="text" name="" value="" placeholder="Enter new Password" class="iText" id="" required="">
+                        <input type="password" name="" value="" maxlength="20" placeholder="Enter new Password" class="iText" id="" required="">
                       </div>
                       <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
-                      <div class="bk-messages bk-flex-c bk-flex-row-gap-basic">
+                      <div class="bk-messages bk-flex-c bk-flex-row-gap-basic bk-tMg-basic">
                         <div class="bk-row-div no-gap">
                           <i class="bk-icon bk-icon-input-messages">정보</i>Your password must be at least 8 characters
                           and contain letters, numbers, and special
@@ -396,7 +400,7 @@
                   <div class="bk-textfield bk-full">
                     <div class="bk-control">
                       <div class="control-field">
-                        <input type="text" name="" value="" placeholder="Enter new Password" class="iText" id="" required="">
+                        <input type="password" name="" value="" maxlength="20" placeholder="Re-enter new Password" class="iText" id="" required="">
                       </div>                      
                     </div>
                   </div>
@@ -408,12 +412,35 @@
         </div>
         <div class="dialog-footer">
           <div class="footer-center">
-            <button type="button" class="bk-btn btn-sticky btn-primary btn-full">Submit</button>
+            <button type="button" class="bk-btn btn-sticky btn-primary btn-full" onclick="dialogOpen('#alert-submit')">Submit</button>
           </div>
         </div>
       </div>
     </div>
     <!-- //[e] reset password-->
+
+
+    <!-- [s] reset password submit-->
+    <div class="bk-dialog dim alert" id="alert-submit">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>Your new password has been set. Please log in again. </p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] reset password submit-->
+
+
+
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>

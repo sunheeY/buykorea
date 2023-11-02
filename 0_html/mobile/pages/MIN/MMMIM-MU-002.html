@@ -192,7 +192,7 @@
                                   <input type="password" name="join-password" value="" placeholder="Enter new Password" class="iText" id="join-password" title="password" required="">
                                 </div>
                                 <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
-                                <div class="bk-messages bk-flex-c bk-flex-row-gap-basic">
+                                <div class="bk-messages bk-flex-c bk-flex-row-gap-basic bk-tMg-basic">
                                   <div class="bk-row-div no-gap">
                                     <i class="bk-icon bk-icon-input-messages">정보</i>Your password must be at least 8
                                     characters and contain letters, numbers,
@@ -258,9 +258,9 @@
                               <div class="bk-select default">
                                 <div class="bk-control">
                                   <select class="" id="" title="country">
-                                    <option value="Choose">Choose</option>
-                                    <option value="option2">option2</option>
-                                    <option value="option4">option4</option>
+                                    <option value="Choose">KOTRA Office</option>
+                                    <option value="option1">option2</option>
+                                    <option value="option2">option4</option>
                                   </select>
                                 </div>
                               </div>
@@ -268,14 +268,14 @@
                               <div class="bk-select default">
                                 <div class="bk-control">
                                   <select class="" id="" title="city">
-                                    <option value="Choose">Choose</option>
-                                    <option value="option2">option2</option>
-                                    <option value="option4">option4</option>
+                                    <option value="Choose">KOTRA Office</option>
+                                    <option value="option1">option2</option>
+                                    <option value="option2">option4</option>
                                   </select>
                                 </div>
                               </div>
                             </div>
-                            <div class="bk-messages bk-flex-c">
+                            <div class="bk-messages bk-flex-c bk-tMg-basic">
                               <div class="bk-row-div no-gap">
                                 <i class="bk-icon bk-icon-input-messages">정보</i>Please select your city and country
 where your business is located.
@@ -292,9 +292,9 @@ where your business is located.
                             <div class="bk-select default">
                               <div class="bk-control">
                                 <select class="" id="" title="interest">
-                                  <option value="Choose">Choose</option>
-                                  <option value="option2">option2</option>
-                                  <option value="option4">option4</option>
+                                  <option value="option1">Manufacturer</option>
+                                  <option value="option2">Distributor</option>
+                                  <option value="option3">Manufacturer&Distributor</option>
                                 </select>
                               </div>
                             </div>
@@ -318,7 +318,7 @@ where your business is located.
                             <ul class="bk-tbl-ul">
                               <li>
                                 <span class="text">Apparel & Textiles > Apparel Fabric</span>
-                                <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large">
+                                <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
                                   <span class="deco-icon extra-icon append-icon">
                                     <i class="bk-icon bk-icon-trash">delete</i>
                                   </span>
@@ -432,7 +432,7 @@ where your business is located.
                                 </div>
                               </div>
                             </div>
-                            <div class="bk-messages bk-flex-c">
+                            <div class="bk-messages bk-flex-c bk-tMg-basic">
                               <div class="bk-row-div no-gap">
                                 <i class="bk-icon bk-icon-input-messages">정보</i>Country Code - Area code - phone number
                                 (ex : +82-1012345678)
@@ -449,9 +449,12 @@ where your business is located.
                             <div class="bk-select default">
                               <div class="bk-control">
                                 <select class="" id="" title="interest">
-                                  <option value="Choose">Choose</option>
-                                  <option value="option2">option2</option>
-                                  <option value="option4">option4</option>
+                                  <option value="option1">Staff</option>
+                                  <option value="option2">Assistant Manager</option>
+                                  <option value="option4">Manager</option>
+                                  <option value="option4">Deputy General Manager</option>
+                                  <option value="option4">General Manager</option>
+                                  <option value="option4">CEO</option>
                                 </select>
                               </div>
                             </div>
@@ -480,7 +483,7 @@ where your business is located.
                                 </div>
                               </div>
                             </div>
-                            <div class="bk-messages bk-flex-c">
+                            <div class="bk-messages bk-flex-c bk-tMg-basic">
                               <div class="bk-row-div no-gap">
                                 <i class="bk-icon bk-icon-input-messages">정보</i>Country Code - Area code - tel number
                                 (ex : +82-22222566)
@@ -511,7 +514,7 @@ where your business is located.
                                 </div>
                               </div>
                             </div>
-                            <div class="bk-messages bk-flex-c">
+                            <div class="bk-messages bk-flex-c bk-tMg-basic">
                               <div class="bk-row-div no-gap">
                                 <i class="bk-icon bk-icon-input-messages">정보</i>Country Code - Area code - fax number
                                 (ex : +82-21112567)
@@ -587,7 +590,13 @@ where your business is located.
                             <div class="bk-select default">
                               <div class="bk-control">
                                 <select class="" id="" title="Employees">
-                                  <option value="Choose">1~10</option>
+                                  <option value="option1">1~10</option>
+                                  <option value="option2">11~50</option>
+                                  <option value="option3">51~100</option>
+                                  <option value="option4">101~200</option>
+                                  <option value="option5">201~500</option>
+                                  <option value="option6">501~1,000</option>
+                                  <option value="option7">1,000~</option>
                                 </select>
                               </div>
                             </div>
@@ -602,7 +611,11 @@ where your business is located.
                             <div class="bk-select default">
                               <div class="bk-control">
                                 <select class="" id="" title="Annual Sales">
-                                  <option value="Choose">~1000</option>
+                                  <option value="option1">~1,000</option>
+                                  <option value="option2">1,001~5,000</option>
+                                  <option value="option3">5,001~10,000</option>
+                                  <option value="option4">10,001~100,000</option>
+                                  <option value="option5">100,001~</option>
                                 </select>
                               </div>
                             </div>
@@ -676,13 +689,13 @@ where your business is located.
             
             <!-- [S] button -->
             <div class="bk-btn-group">
-              <button type="button" class="bk-btn btn-brand btn-outline btn-large btn-half">
+              <button type="button" class="bk-btn btn-brand btn-outline btn-large btn-half" onclick="dialogOpen('#dialog-modify-cancel')">
                 <span class="text">Cancel</span>
               </button>
-              <button type="button" class="bk-btn btn-primary btn-large btn-half">
+              <button type="button" class="bk-btn btn-primary btn-large btn-half" onclick="dialogOpen('#dialog-modify-confirm')">
                 <span class="text">Modify</span>
               </button>
-              <button type="button" class="bk-btn bk-btn-icon btn-text" onclick="dialogOpen('#dialog-delete-account')">
+              <button type="button" class="bk-btn bk-btn-icon btn-text" onclick="dialogOpen('#alert-delete-account')">
                 <span class="text">Delete My Account</span>
                 <span class="deco-icon append-icon">
                   <i class="bk-icon bk-icon-detail bk-icon-detail-black">detail</i>
@@ -1022,12 +1035,31 @@ where your business is located.
     <!-- //[e] search-interest-->
 
     <!-- [s] Delete My Account-->
-    <div class="bk-dialog has-btmBtn dialog-full" id="dialog-delete-account">
+    <div class="bk-dialog dim alert" id="alert-delete-account">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>탈퇴가 완료되었습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] Delete My Account-->
+    
+    <!-- [s] 삭제버튼-->
+    <div class="bk-dialog dim dialog-modal" id="dialog-trash">
       <div class="dialog-inner">
         <div class="dialog-header">
           <div class="header-left">
             <div class="bk-title">
-              <h1 class="title">Delete my account for buyKOREA</h1>
+              <h1 class="title">Delete Category</h1>
             </div>
           </div>
           <div class="header-right">
@@ -1038,64 +1070,98 @@ where your business is located.
         </div>
         <div class="dialog-container">
           <div class="dialog-contents">
-            <div class="bk-guide-txt">
-              <span class="text">Before deleting your buyKOREA account, ensure 
-              that all your data would be removed permanently, 
-              and it is not revocable.
-              </span>
-            </div>
-            <!-- [S] Form-->
-            <div class="bk-input-list">
-              <dl>
-                <dd>
-                  <div class="bk-textfield">
-                    <div class="bk-control">
-                      <div class="control-field">
-                        <input
-                          type="text"
-                          name=""
-                          value="abd@gmail.com"
-                          placeholder=""
-                          class="iText"
-                          id="delete-id"
-                          title="account-mail"
-                          disabled
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="bk-textfield bk-full">
-                    <div class="bk-control">
-                      <div class="control-field">
-                        <input type="text" name="delete_password" value="" placeholder="Enter Password" class="iText" id="delete_password" required="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="bk-select wide">
-                    <div class="bk-control">
-                      <select class="" id="" title="Choose One Please">
-                        <option value="1">Choose One Please</option>
-                        <option value="2">option2</option>
-                      </select>
-                    </div>
-                  </div>
-
-                </dd>
-              </dl>
-            </div>
-            <!-- //[D] Form-->
+            Are you sure you want to delete this category?
           </div>
         </div>
         <div class="dialog-footer">
           <div class="footer-center">
-            <button type="button" class="bk-btn btn-sticky btn-primary btn-full">Confirm</button>
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">Cencel</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert-del-confirm')">Confirm</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- //[e] Delete My Account-->
+    <!-- //[e] 삭제버튼-->
+
+    <!-- [s] 삭제완료-->
+    <div class="bk-dialog dim alert" id="alert-del-confirm">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>Category deleted.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 삭제완료-->
+
+    <!-- [s] 수정취소-->
+    <div class="bk-dialog dim dialog-modal" id="dialog-modify-cancel">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">Change Information</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            Are you sure you want to cancel these changes?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">Cencel</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half">YES</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 수정취소-->
+
+    <!-- [s] 수정확인-->
+    <div class="bk-dialog dim dialog-modal" id="dialog-modify-confirm">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">Change Information</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            Do you want to save this information?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">Cencel</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 수정확인-->
+
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
