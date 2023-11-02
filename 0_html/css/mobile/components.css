@@ -865,7 +865,7 @@ span.flatpickr-weekday {cursor: default; font-size: 90%; background: transparent
 .cp-search.search-top .bk-control .control-field .control-btns {transform: translateY(-50%) translateX(0);}
 /* [컴퍼넌트]검색 */
 .cp-search.search-topType {margin-bottom: 24px; padding: 24px 20px; background-color: #f6f6f6; border-radius: 0; box-sizing: border-box; margin-top:-24px}
-.cp-search.search-topType .search-inner .search-row {display: flex; flex-direction: column; align-items: flex-start; justify-content: stretch; flex-wrap:wrap; row-gap:12px;}
+.cp-search.search-topType .search-inner .search-row {display: flex; flex-direction: column; align-items: flex-start; justify-content: stretch; flex-wrap:wrap; row-gap:8px;}
 .cp-search.search-topType .search-inner .search-row > div ~ * {/*margin-left: 20px;*/}
 .cp-search.search-topType .dash {width:26px; text-align:center;}
 /* [컴퍼넌트] 100% 검색*/
