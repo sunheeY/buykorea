@@ -115,13 +115,10 @@
 .cp-list-thumb .bk-list-detail .bk-list-tit {margin: 8px 0}
 .cp-list-thumb .bk-thumb-link .bk-list-tit {-ms-grid-column: unset; -ms-grid-column-span: unset; grid-column: unset; margin: 4px 0;}
 
-.bk-thumb-link {display: flex; flex-direction: column; row-gap : 8px;}
-.bk-thumb-link a {display: -ms-grid; display: grid; align-items: flex-start; -ms-grid-columns: 58px auto; grid-template-columns: 58px auto; gap: 12px;}
+.bk-thumb-link a {display: -ms-grid; display: grid; align-items: center; -ms-grid-columns: 58px auto; grid-template-columns: 58px auto; gap: 12px;}
 .bk-thumb-link .thumb {width: 56px; height: 56px; overflow: hidden; position: relative; border-radius: var(--radius-default); border: 1px solid var(--color-light-gray);}
 .bk-thumb-link .thumb img {width: 100%; height: 100%; object-fit: cover; object-position: center; position: absolute;}
-.bk-thumb-link.bk-checkbox input[type="checkbox"] + label {display: flex; align-items: flex-start; gap: 12px;}
-.bk-thumb-link.bk-checkbox input[type="checkbox"] + label::before,
-.bk-thumb-link.bk-checkbox .thumb {flex: 3 0 auto;}
+.bk-thumb-link.bk-checkbox input[type="checkbox"] + label {display: -ms-grid; display: grid; align-items: center; -ms-grid-columns: 24px 58px auto; grid-template-columns: 24px 58px auto; gap: 12px;}
 
 .bk-list-prdinfo li {display: inline-block;}
 .bk-list-prdinfo li::before {content: '|'; display: inline-block; margin-left: 4px; padding-right: 7px; color: var(--color-gray)}
@@ -158,6 +155,8 @@
 .bk-delivery-info {display: flex; flex-direction: column; align-items: flex-end; text-align: left;}
 .bk-delivery-info .bk-delivery-ico {display: flex; justify-content: flex-end; align-items: center; margin: -9px -12px 8px 0; padding: 3px; font-size: 1rem; line-height: 1.8; color: var(--color-sub); gap: 5px; border: 1px solid var(--color-gray); border-width: 0 0 1px 1px;}
 .bk-delivery-info p:not(.bk-delivery-ico) {width: 100%;}
+
+.tbl td .bk-thumb-link {display: flex; flex-direction: column; row-gap : 8px;}
 
 /* 타이틀 옆 버튼 : 좌우 정렬 */
 .bk-title.bk-tbl-toolbar {margin-bottom: 0;}
