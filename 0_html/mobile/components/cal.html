@@ -1,0 +1,3656 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA for Buyers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../css/mobile/common.css" />
+    <link rel="stylesheet" href="./css/guide.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+    <div class="ui-wrap ui-default">
+      <header class="ui-header">
+        <div class="header-area">
+          <div class="ui-inner">
+            <h1 class="logo logo-buykorea">
+              <img src="../../images/web/logo_dark.png" alt="buykorea" />
+              <strong class="guide-title">컴퍼넌트 가이드</strong>
+            </h1>
+          </div>
+        </div>
+      </header>
+      <main class="ui-container ui-componet">
+        <div class="ui-inner">
+          <section class="section-guide">
+            <div class="chapter">
+              <h1 class="g-h1-title">1. Typography</h1>
+              <dl class="chapter-component">
+                <dt>1 ) 공통</dt>
+                <dd>
+                  <div class="grid-wrap column bk-title title-sub-top">
+                    <div class="grid-row">
+                      <div class="title-area">
+                        <div class="group-left">
+                          <h1 class="title font-heading-1">안녕하세요, 바이코리아입니다. Noto Sans CJK KR Medium 24 / Roboto Bold 24 [Title/H1]</h1>
+                        </div>
+                        <!--div class="group-right">
+                          우측 버튼 영역
+                        </div-->
+                      </div>
+                    </div>
+                    <!--div class="grid-row">
+                      <div class="bk-explain">설명 영역</div>
+                    </div-->
+                  </div>
+                  <div class="grid-wrap column bk-title">
+                    <div class="grid-row">
+                      <div class="title-area">
+                        <div class="group-left">
+                          <h1 class="title font-heading-2">안녕하세요, 바이코리아입니다. Noto Sans CJK KR Bold 20 / Roboto Bold 20 [Title/H2]</h1>
+                        </div>
+                        <div class="group-right">
+                          우측 버튼 영역
+                        </div>
+                      </div>
+                    </div>
+                    <!--div class="grid-row">
+                      <div class="bk-explain">설명 영역</div>
+                    </div-->
+                  </div>
+                  <div class="grid-wrap column bk-title title-sub">
+                    <div class="grid-row">
+                      <div class="title-area">
+                        <div class="group-left">
+                          <h1 class="title font-heading-3">안녕하세요, 바이코리아입니다. Noto Sans CJK KR Bold 18 / Roboto Bold 18 [Title/H3](컨텐츠내 타이틀)</h1>
+                        </div>
+                        <!--div class="group-right">
+                          우측 버튼 영역
+                        </div-->
+                      </div>
+                    </div>
+                    <!--div class="grid-row">
+                      <div class="bk-explain">설명 영역</div>
+                    </div-->
+                  </div>
+                  <p class="font-body">안녕하세요, 바이코리아입니다. Noto Sans CJK KR 18 [Body]</p>
+                  <p class="font-default">안녕하세요, 바이코리아입니다. Noto Sans CJK KR 16 [Body/ Default](body기본)</p>
+                  <p class="font-small">안녕하세요, 바이코리아입니다. Noto Sans CJK KR 14 [Body/ Minimum Size]</p>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">2. Button</h1>
+              <h2 class="g-h2-title">2-1. Button ( 100% - btn-full / 50% - btn-half)</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 사이즈</dt>
+                <dd>
+                  <button type="button" class="bk-btn btn-primary btn-large">
+                    <span class="text">Large</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-primary btn-middle">
+                    <span class="text">Middle</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-default btn-outline btn-small">
+                    <span class="text">Small</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-primary btn-sticky">
+                    <span class="text">Sticky</span>
+                  </button>
+                </dd>
+                <dt>2 ) Sticky</dt>
+                <dd>
+                  <!-- Sticky -->
+                  <button type="button" class="bk-btn btn-primary btn-sticky btn-full">
+                    <span class="text">Primary Button</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-primary btn-sticky btn-full" disabled>
+                    <span class="text">Disabled Button</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-primary btn-sticky btn-no-radius btn-full">
+                    <span class="text">Primary Button-no-radius</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-primary btn-sticky btn-no-radius btn-full" disabled>
+                    <span class="text">Disabled Button-no-radius</span>
+                  </button>
+
+                  <button type="button" class="bk-btn btn-light-gray btn-sticky btn-half">
+                    <span class="text">Negative</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-primary btn-sticky btn-half">
+                    <span class="text">Positive</span>
+                  </button>
+
+                  <button type="button" class="bk-btn btn-light-gray btn-sticky btn-half" disabled>
+                    <span class="text">Negative</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-primary btn-sticky btn-half" disabled>
+                    <span class="text">Positive</span>
+                  </button>
+                  <!--// Sticky -->
+                </dd>
+                <dt>3 ) Large</dt>
+                <dd>
+                  <!-- Large -->
+                  <button type="button" class="bk-btn btn-primary btn-large btn-full">
+                    <span class="text">Button PRIMARY</span>
+                  </button>
+
+                  <button type="button" class="bk-btn btn-brand btn-outline btn-large btn-full">
+                    <span class="text">Large OUTLINE</span>
+                  </button>
+
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-large btn-full">
+                    <span class="text">PRIMARY OUTLINE</span>
+                  </button>
+
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-outline btn-large btn-full">
+                    <span class="text">Close</span>
+                    <span class="deco-icon append-icon">
+                      <i class="bk-icon bk-icon-toggle-more">more</i>
+                    </span>
+                  </button>
+
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-outline btn-large btn-full">
+                    <span class="text">Close</span>
+                    <span class="deco-icon append-icon">
+                      <i class="bk-icon bk-icon-toggle-more is-active">more</i>
+                    </span>
+                  </button>
+
+                  <button type="button" class="bk-btn bk-btn-icon btn-large btn-full">
+                    
+                    <span class="deco-icon prepend-icon">
+                      <i class="bk-icon bk-icon-plus">more</i>
+                    </span>
+                    <span class="text">더보기</span>
+                  </button>  
+                  <!--// Large -->
+                </dd>
+                <dt>4 ) MIDDLE </dt>
+                <dd>
+                  <button
+                    type="button"
+                    class="bk-btn btn-primary btn-outline btn-middle btn-half"
+                  >
+                    <span class="text">Button</span>
+                  </button>
+                  <button 
+                    type="button" 
+                    class="bk-btn btn-primary btn-middle btn-half"
+                  >
+                    <span class="text">Button</span>
+                  </button>
+
+                   <button
+                    type="button"
+                    class="bk-btn btn-outline-gray btn-outline btn-middle btn-half"
+                  >
+                    <span class="text">Button</span>
+                  </button>
+                  <button 
+                    type="button" 
+                    class="bk-btn btn-primary btn-middle btn-half"
+                    disabled
+                  >
+                    <span class="text">Button</span>
+                  </button>
+                 
+                </dd>
+                <dt>5 ) SMALL</dt>
+                <dd>
+                  <button type="button" class="bk-btn btn-default btn-outline btn-small">
+                    <span class="text">Small Button</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-default btn-outline btn-small">
+                    <span class="text">등록</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-default btn-outline btn-small" disabled>
+                    <span class="text">Small Button</span>
+                  </button>
+                  <button type="button" class="bk-btn btn-default btn-outline btn-small" disabled>
+                    <span class="text">등록</span>
+                  </button>
+                </dd>
+                <dt>6 ) INNER TABLE</dt>
+                <dd>
+                  <button
+                    type="button"
+                    class="bk-btn btn-default btn-outline btn-xsmall"
+                  >
+                    <span class="text">Table Button</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="bk-btn btn-default btn-outline bk-btn-icon btn-xsmall"
+                  >
+                    <span class="deco-icon prepend-icon">
+                      <i class="bk-icon bk-icon-message2">Message</i>
+                    </span>
+                    <span class="text">Message</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall"
+                  >
+                    <span class="text">Table Button</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="bk-btn btn-default btn-outline btn-xsmall btn-xnormal"
+                  >
+                    <span class="text">주소추가</span>
+                  </button>
+                </dd>
+                <dt>7 ) TEXT BUTTON</dt>
+                <dd>
+                  <button
+                    type="button"
+                    class="bk-btn btn-sub btn-text"
+                  >
+                    <span class="text">취소</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="bk-btn btn-sub btn-text btn-underline"
+                  >
+                    <span class="text">TEXT BUTTON</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="bk-btn btn-sub btn-text btn-underline-small"
+                  >
+                    <span class="text">TEXT BUTTON</span>
+                  </button>
+                  <button type="button" class="bk-btn bk-btn-icon btn-text">
+                    <span class="text">자세히 보기</span>
+                    <span class="deco-icon append-icon">
+                      <i class="bk-icon bk-icon-detail bk-icon-detail-black">detail</i>
+                    </span>
+                  </button>
+                  <button type="button" class="bk-btn btn-sub-small bk-btn-icon btn-text">
+                    <span class="text">자세히 보기</span>
+                    <span class="deco-icon append-icon">
+                      <i class="bk-icon bk-icon-detail bk-icon-detail-gray">detail</i>
+                    </span>
+                  </button>
+                </dd>
+                <dt>8 ) 별점 버튼</dt>
+                <dd>
+                  <fieldset class="bk-rate">
+                    <input type="radio" id="rating5" name="rating" value="5"><label for="rating5"><span class="text ir-su">5점</span></label>
+                    <input type="radio" id="rating4" name="rating" value="4"><label for="rating4"><span class="text ir-su">4점</span></label>
+                    <input type="radio" id="rating3" name="rating" value="3"><label for="rating3"><span class="text ir-su">3점</span></label>
+                    <input type="radio" id="rating2" name="rating" value="2"><label for="rating2"><span class="text ir-su">2점</span></label>
+                    <input type="radio" id="rating1" name="rating" value="1"><label for="rating1"><span class="text ir-su">1점</span></label>
+                  </fieldset>
+                </dd>
+                <dt>9 ) Extra</dt>
+                <dd>
+                  <button
+                    type="button"
+                    class="bk-btn bk-btn-icon btn-brand btn-text btn-text-xsmall"
+                  >
+                    <span class="text">more</span>
+                    <span class="deco-icon extra-icon append-icon">
+                      <i class="bk-icon bk-icon-more">more</i>
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="bk-btn bk-btn-icon btn-primary btn-text btn-text-xsmall"
+                  >
+                    <span class="text">more</span>
+                    <span class="deco-icon extra-icon append-icon">
+                      <i class="bk-icon bk-icon-more">more</i>
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="bk-btn btn-brand btn-text btn-underline btn-large"
+                  >
+                    <span class="text">국제인증</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="bk-btn btn-primary btn-text btn-underline btn-large"
+                  >
+                    <span class="text">국제인증</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="bk-btn btn-text-sub btn-text btn-underline btn-large"
+                  >
+                    <span class="text">링크</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="bk-btn btn-brand btn-text btn-underline btn-large"
+                  >
+                    <span class="text">링크</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="bk-btn bk-btn-icon btn-brand btn-text btn-text-xsmall"
+                  >
+                    <span class="text">더 보기</span>
+                    <span class="deco-icon extra-icon append-icon">
+                      <i class="bk-icon bk-icon-more-arrow">more</i>
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="bk-btn bk-btn-icon btn-primary btn-text btn-text-xsmall"
+                  >
+                    <span class="text">더 보기</span>
+                    <span class="deco-icon extra-icon append-icon">
+                      <i class="bk-icon bk-icon-more-arrow">more</i>
+                    </span>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="bk-btn bk-btn-icon btn-light-gray btn-small"
+                  >
+                    <span class="text">Family Site</span>
+                    <span class="deco-icon append-icon">
+                      <i class="bk-icon bk-icon-plus-gray">+</i>
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="bk-icon-only bk-icon-only-drop"
+                  >
+                    <i class="bk-icon bk-icon-arrow-down-white">레이어 열기/닫기</i>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="bk-btn btn-brand btn-text btn-large"
+                  >
+                    <span class="deco-icon extra-icon append-icon">
+                      <i class="bk-icon bk-icon-trash">delete</i>
+                    </span>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="bk-btn btn-brand btn-text btn-large"
+                  >
+                    <span class="deco-icon extra-icon">
+                      <i class="bk-icon bk-icon-list-delete">delete</i>
+                    </span>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="bk-btn btn-brand btn-text"
+                  >
+                    <span class="deco-icon extra-icon">
+                      <i class="bk-icon bk-icon-image-list-delete">20*20지우기</i>
+                    </span>
+                  </button>
+                  <div class="bk-list-move-group">
+                    <button
+                      type="button"
+                      class="bk-btn btn-brand btn-text"
+                    >
+                      <span class="deco-icon extra-icon">
+                        <i class="bk-icon bk-icon-image-list-up">위로</i>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="bk-btn btn-brand btn-text"
+                    >
+                      <span class="deco-icon extra-icon">
+                        <i class="bk-icon bk-icon-image-list-down">아래로</i>
+                      </span>
+                    </button>
+                  </div>
+                </dd>
+                <dt>8 ) 아이콘</dt>
+                <dd>
+                  <i class="bk-icon bk-icon-empty">empty</i>
+                  <!--
+                  
+                  <i class="bk-icon bk-icon-more">more</i>
+                  <i class="bk-icon bk-icon-plus-gray">+</i>
+                  <i class="bk-icon bk-icon-tooltip">tooltip</i>
+                  <i class="bk-icon bk-icon-mark">!</i>
+                  -->
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">3. Form</h1>
+              <h2 class="g-h2-title">3.1. Selectbox</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 사이즈(label 有)</dt>
+                <dd>
+                  <div class="bk-select xsmall">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="selectbox-01-01">xsmall</label>
+                    <div class="bk-control">
+                      <select class="" id="selectbox-01-01">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select small">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="selectbox-01-02">small</label>
+                    <div class="bk-control">
+                      <select class="" id="selectbox-01-02">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="selectbox-01-03">default</label>
+                    <div class="bk-control">
+                      <select class="" id="selectbox-01-03">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="selectbox-01-03">required</label>
+                    <div class="bk-control">
+                      <select class="" id="selectbox-01-03" required>
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="selectbox-01-03">disabled</label>
+                    <div class="bk-control">
+                      <select class="" id="selectbox-01-03" disabled>
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select large">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="selectbox-01-04">large</label>
+                    <div class="bk-control">
+                      <select class="" id="selectbox-01-04">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select xlarge">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="selectbox-01-05">xlarge</label>
+                    <div class="bk-control">
+                      <select class="" id="selectbox-01-05">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>2 ) 사이즈(label 無)</dt>
+                <dd>
+                  <div class="bk-select xsmall">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <select class="" id="" title="label텍스트값">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select small">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <select class="" id="" title="label텍스트값">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <select class="" id="" title="label텍스트값">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <select class="" id="" title="label텍스트값" required>
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <select class="" id="" title="label텍스트값" disabled>
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select large">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <select class="" id="" title="label텍스트값">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-select xlarge">
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <select class="" id="" title="label텍스트값">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>3) 타입 wide(label 有)</dt>
+                <dd>
+                  <div class="bk-select wide">
+                    <!--// [D]넓이를 100% 체울 때 class: wide -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="selectbox-02-01">label</label>
+                    <div class="bk-control">
+                      <select class="" id="selectbox-02-01">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>4) 타입 wide(label 無)</dt>
+                <dd>
+                  <div class="bk-select wide">
+                    <!--// [D]넓이를 100% 체울 때 class: wide -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <select class="" id="" title="label텍스트값">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3" disabled>option3</option>
+                        <option value="4">option4</option>
+                      </select>
+                      <div class="bk-valid success">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              <h2 class="g-h2-title">3-2. Input Text</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 사이즈(label 有)</dt>
+                <dd>
+                  <div class="bk-textfield xsmall">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="textfield-01-01">xsmall</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          id="textfield-01-01"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <!--// [D]성공:success  <i class="bk-icon k-icon-input-complete-messages">성공</i>Input completed successfully. -->
+                      <div class="bk-messages"><i class="bk-icon bk-icon-input-messages">정보</i>information text information text</div>
+                    </div>
+                  </div>
+                  <div class="bk-textfield small">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="textfield-01-02">small</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          id="textfield-01-02"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <!--// [D]성공:success  <i class="bk-icon k-icon-input-complete-messages">성공</i>Input completed successfully. -->
+                      <div class="bk-messages"><i class="bk-icon bk-icon-input-messages">정보</i>information text information text</div>
+                    </div>
+                  </div>
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="textfield-01-03-01">default</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          id="textfield-01-03-01"
+                          required
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <!--// [D]성공:success  <i class="bk-icon k-icon-input-complete-messages">성공</i>Input completed successfully. -->
+                      <div class="bk-messages"><i class="bk-icon bk-icon-input-messages">정보</i>information text information text</div>
+                    </div>
+                  </div>ddddddddddddd
+                  <div class="bk-textfield has-clear">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="textfield-01-03-04">clear button</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          id="textfield-01-03-04"
+                          required
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-btns append-btns">
+                          <button
+                            type="button"
+                            class="bk-icon-only icon-text-clear"
+                          >
+                            <i class="bk-icon bk-icon-text-clear"
+                              >텍스트 지우기</i
+                            >
+                          </button>
+                        </div>
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <!--// [D]성공:success  <i class="bk-icon k-icon-input-complete-messages">성공</i>Input completed successfully. -->
+                      <div class="bk-messages"><i class="bk-icon bk-icon-input-messages">정보</i>information text information text</div>
+                    </div>
+                  </div>
+                  <!-- required -->
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="textfield-01-03-02">required</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          id="textfield-01-03-02"
+                          required
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <!--// [D]성공:success  <i class="bk-icon k-icon-input-complete-messages">성공</i>Input completed successfully. -->
+                      <div class="bk-messages"><i class="bk-icon bk-icon-input-messages">정보</i>information text information text</div>
+                    </div>
+                  </div>
+                  <!--// required -->
+                  <!-- disabled -->
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="textfield-01-03-03">disabled</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value="disabled"
+                          placeholder="placeholder"
+                          class="iText"
+                          id="textfield-01-03-03"
+                          disabled
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid"><i class="bk-icon bk-icon-input-error-messages">에러</i>Required entry. Please check and enter</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <!--// [D]성공:success  <i class="bk-icon k-icon-input-complete-messages">성공</i>Input completed successfully. -->
+                      <div class="bk-messages"><i class="bk-icon bk-icon-input-messages">정보</i>information text information text</div>
+                    </div>
+                  </div>
+                  <!--// disabled -->
+                  <!-- readonly -->
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="textfield-01-03-05">readonly</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value="readonly"
+                          placeholder="placeholder"
+                          class="iText"
+                          id="textfield-01-03-05"
+                          readonly
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <!--// readonly -->
+                  <div class="bk-textfield large">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="textfield-01-04">large</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          id="textfield-01-04"
+                          required
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>2 ) 사이즈(label 無)</dt>
+                <dd>
+                  <div class="bk-textfield xsmall">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          title="label텍스트값"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-textfield small">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          title="label텍스트값"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          title="label텍스트값"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-textfield has-clear">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="clear button"
+                          class="iText"
+                          required
+                          title="label텍스트값"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <div class="control-btns append-btns">
+                          <button
+                            type="button"
+                            class="bk-icon-only icon-text-clear"
+                          >
+                            <i class="bk-icon bk-icon-text-clear"
+                              >텍스트 지우기</i
+                            >
+                          </button>
+                        </div>
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <!-- required -->
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="required"
+                          class="iText"
+                          required
+                          title="label텍스트값"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <!--// required -->
+                  <!-- login -->
+                  <div class="bk-textfield ui-member-text">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="Email"
+                          class="iText"
+                          required
+                          title="Email"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                      </div>
+                    </div>
+                  </div>
+                  <!--// login -->
+                  <!-- disabled -->
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value="disabled"
+                          placeholder="placeholder"
+                          class="iText"
+                          disabled
+                          title="label텍스트값"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <!--// disabled -->
+                  <!-- readonly -->
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value="readonly"
+                          placeholder="placeholder"
+                          class="iText"
+                          readonly
+                          title="label텍스트값"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <!--// readonly -->
+                  <div class="bk-textfield large">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          id="textfield-01-04"
+                          title="label텍스트값"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>3) 타입 wide(label 有)</dt>
+                <dd>
+                  <div class="bk-textfield wide">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="textfield-03-01">label</label>
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          id="textfield-03-01"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>4) 타입 wide(label 無)</dt>
+                <dd>
+                  <div class="bk-textfield wide">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <div class="control-icon prepend-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="placeholder"
+                          class="iText"
+                          title="label텍스트값"
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <div class="control-icon append-icon">
+                          <i class="bk-icon">아이콘</i>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>5) 날짜</dt>
+                <dd>
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="">날짜 및 시간 선택</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <input type="text" class="iText iDatepicker" id="datepicker" placeholder="날짜 및 시간 선택" readonly>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="">날짜 선택</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <input type="text" class="iText iDatepicker" id="datepicker2" placeholder="날짜 선택 (YYYY-MM-DD)" readonly>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="">시작 날짜</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <input type="text" class="iText iDatepicker" id="startDate" placeholder="시작 날짜" readonly>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-textfield">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="">종료 날짜</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <input type="text" class="iText iDatepicker" id="endDate" placeholder="종료 날짜" readonly>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>6) Masking</dt>
+                <dd>
+                  <div class="bk-textfield textfield-masking">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="">Masking</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <input type="text" class="iText" id="" placeholder="">
+                        <div class="control-icon append-icon">
+                          <button
+                            type="button"
+                            class="bk-icon-only icon-masking"
+                          >
+                            <i class="bk-icon bk-icon-masking-on">보임</i><!-- [D]보임:bk-icon-masking-on,안보임:bk-icon-masking-off -->
+                          </button>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+
+                   <div class="bk-textfield has-search">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                    <label for="">Search</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <input type="text" class="iText" id="" placeholder="">
+                        <div class="control-icon append-icon">
+                          <button
+                            type="button"
+                            class="bk-icon-only icon-input-search"
+                          >
+                            <i class="bk-icon bk-icon-input-search">검색</i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              <h2 class="g-h2-title">3-3. Textarea</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 기본</dt>
+                <dd>
+                  <div class="bk-textarea"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
+                    <label for="textarea-01-01">label</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <textarea
+                          name=""
+                          rows="4"
+                          cols="50"
+                          placeholder="placeholder"
+                          class="iTextarea"
+                          id="textarea-01-01"
+                        ></textarea>
+                        <div class="bk-byte">
+                          <div class="byte-group">
+                            (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-textarea"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
+                    <label for="textarea-01-01">required</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <textarea
+                          name=""
+                          rows="4"
+                          cols="50"
+                          placeholder="required"
+                          required
+                          class="iTextarea"
+                          id="textarea-01-01"
+                        ></textarea>
+                        <div class="bk-byte">
+                          <div class="byte-group">
+                            (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-textarea"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
+                    <label for="textarea-01-02">disabled</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <textarea
+                          name=""
+                          rows="4"
+                          cols="50"
+                          placeholder="disabled"
+                          class="iTextarea"
+                          id="textarea-01-02"
+                          disabled
+                        ></textarea>
+                        <div class="bk-byte">
+                          <div class="byte-group">
+                            (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-textarea"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
+                    <label for="textarea-01-02">readonly</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <textarea
+                          name=""
+                          rows="4"
+                          cols="50"
+                          placeholder="readonly"
+                          class="iTextarea"
+                          id="textarea-01-02"
+                          readonly
+                        ></textarea>
+                        <div class="bk-byte">
+                          <div class="byte-group">
+                            (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                  <div class="bk-textarea bk-has-byte"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
+                    <label for="textarea-01-01">has-byte</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <textarea
+                          name=""
+                          rows="4"
+                          cols="50"
+                          placeholder="placeholder"
+                          class="iTextarea"
+                          id="textarea-01-01"
+                        ></textarea>
+                        <div class="bk-byte">
+                          <div class="byte-group">
+                            (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                          </div>
+                        </div>
+                      </div>                      
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>2 ) 타입 wide(label 有)</dt>
+                <dd>
+                  <div class="bk-textarea wide bk-has-byte"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
+                    <label for="textarea-01-01">label</label>
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <textarea
+                          name=""
+                          rows="4"
+                          cols="50"
+                          placeholder="placeholder"
+                          class="iTextarea"
+                          id="textarea-01-01"
+                        ></textarea>
+                        <div class="bk-byte">
+                          <div class="byte-group">
+                            (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>3 ) 타입 wide(label 無)</dt>
+                <dd>
+                  <div class="bk-textarea wide bk-has-byte"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
+                    <div class="bk-control">
+                      <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                      <div class="control-field">
+                        <textarea
+                          name=""
+                          rows="4"
+                          cols="50"
+                          placeholder="placeholder"
+                          class="iTextarea"
+                          title="label텍스트값"
+                        /></textarea><!--// [D]focus,disabled,required,readonly -->
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <div class="bk-byte">
+                          <div class="byte-group">
+                            (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </div>
+                </dd>                
+              </dl>
+              <h2 class="g-h2-title">3-4. Checkbox</h2>
+              <div class="g-desc-box">
+                <ol>
+                  <li>① 체크가 없을 때</li>
+                  <li>② 체크가 있을 때</li>
+                  <li>③ 체크가 없는데 포커스가 갔을 때</li>
+                  <li>④ 체크가 있는데 포커스가 갔을 때</li>
+                  <li>⑤ 체크가 없는데 disabled(비활성화) 되었을 때</li>
+                  <li>⑥ 체크가 있는데 disabled(비활성화) 되었을 때</li>
+                </ol>
+              </div>
+              <dl class="chapter-component">
+                <dt>1 ) 기본(label 有)</dt>
+                <dd>
+                  <div class="bk-checkbox-group"><!--// [D]small,small,default(기본 사이즈),large,xlarge -->
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-01" class="iCheckbox" id="checkbox-01-01">
+                      <label for="checkbox-01-01"><span class="text">checkbox</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-01" class="iCheckbox" id="checkbox-01-04" required>
+                      <label for="checkbox-01-04"><span class="text">checkbox required</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-01" class="iCheckbox" id="checkbox-01-02" checked>
+                      <label for="checkbox-01-02"><span class="text">checkbox checked</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-01" class="iCheckbox" id="checkbox-01-03" disabled><!--// [D]disabled,required -->
+                      <label for="checkbox-01-03"><span class="text">checkbox disabled</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-01" class="iCheckbox" id="checkbox-01-05" checked disabled><!--// [D]disabled,required -->
+                      <label for="checkbox-01-05"><span class="text">checkbox checked disabled</span></label>
+                    </div>
+                    <div class="bk-valid">에러 메시지</div>
+                    <!--// [D]성공:success,에러:error -->
+                    <div class="bk-messages">기본 메시지</div>
+                  </div>
+                </dd>
+                <dt>2 ) 단독 타입</dt>
+                <dd>
+                  <div class="bk-checkbox-group"><!--// [D]small,small,default(기본 사이즈),large,xlarge -->
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-02" class="iCheckbox" id="checkbox-02-01">
+                      <label for="checkbox-02-01"><span class="ir-su text">선택</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-02" class="iCheckbox" id="checkbox-02-04" required>
+                      <label for="checkbox-02-04"><span class="ir-su text">선택</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-02" class="iCheckbox" id="checkbox-02-02" checked>
+                      <label for="checkbox-02-02"><span class="ir-su text">선택</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-02" class="iCheckbox" id="checkbox-02-03" disabled><!--// [D]disabled,required -->
+                      <label for="checkbox-02-03"><span class="ir-su text">선택</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-02" class="iCheckbox" id="checkbox-02-05" checked disabled><!--// [D]disabled,required -->
+                      <label for="checkbox-02-05"><span class="ir-su text">선택</span></label>
+                    </div>
+                    <div class="bk-valid">에러 메시지</div>
+                    <!--// [D]성공:success,에러:error -->
+                    <div class="bk-messages">기본 메시지</div>
+                  </div>
+                </dd>
+                <dt>3 ) Toggle 타입</dt>
+                <dd>
+                  <div class="bk-checkbox-group"><!--// [D]small,small,default(기본 사이즈로 class 없어도되는 기본),large,xlarge -->
+                    <div class="bk-toggle-group">
+                      <div class="bk-checkbox">
+                        <input type="checkbox" name="checkbox-03" class="iCheckbox" id="checkbox-03-01">
+                        <label for="checkbox-03-01"><span class="text">토글</span></label>
+                      </div>
+                      <div class="bk-checkbox">
+                        <input type="checkbox" name="checkbox-03" class="iCheckbox" id="checkbox-03-04" required>
+                        <label for="checkbox-03-04"><span class="text">required</span></label>
+                      </div>
+                      <div class="bk-checkbox">
+                        <input type="checkbox" name="checkbox-03" class="iCheckbox" id="checkbox-03-02" checked>
+                        <label for="checkbox-03-02"><span class="text">checked</span></label>
+                      </div>
+                      <div class="bk-checkbox">
+                        <input type="checkbox" name="checkbox-03" class="iCheckbox" id="checkbox-03-03" disabled><!--// [D]disabled,required -->
+                        <label for="checkbox-03-03"><span class="text">disabled</span></label>
+                      </div>
+                      <div class="bk-checkbox">
+                        <input type="checkbox" name="checkbox-03" class="iCheckbox" id="checkbox-03-05" checked disabled><!--// [D]disabled,required -->
+                        <label for="checkbox-03-05"><span class="text">checked disabled</span></label>
+                      </div>
+                    </div>
+                    <div class="bk-valid">에러 메시지</div>
+                    <!--// [D]성공:success,에러:error -->
+                    <div class="bk-messages">기본 메시지</div>
+                  </div>
+                </dd>
+                <dt>4 ) 타입 wide</dt>
+                <dd>
+                  <div class="bk-checkbox-group wide"><!--// [D]small,small,default(기본 사이즈),large,xlarge -->
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-04" class="iCheckbox" id="checkbox-04-01">
+                      <label for="checkbox-04-01"><span class="text">checkbox</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-04" class="iCheckbox" id="checkbox-04-04" required>
+                      <label for="checkbox-04-04"><span class="text">required</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-04" class="iCheckbox" id="checkbox-04-02" checked>
+                      <label for="checkbox-04-02"><span class="text">checked</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-04" class="iCheckbox" id="checkbox-04-03" disabled><!--// [D]disabled,required -->
+                      <label for="checkbox-04-03"><span class="text">disabled</span></label>
+                    </div>
+                    <div class="bk-checkbox">
+                      <input type="checkbox" name="checkbox-04" class="iCheckbox" id="checkbox-04-05" checked disabled><!--// [D]disabled,required -->
+                      <label for="checkbox-04-05"><span class="text">checked disabled</span></label>
+                    </div>
+                    <div class="bk-valid">에러 메시지</div>
+                    <!--// [D]성공:success,에러:error -->
+                    <div class="bk-messages">기본 메시지</div>
+                  </div>
+                </dd>
+                <dt>5 ) SWITCH</dt>
+                <dd>
+                  <div class="bk-switch"><!--// [D]small,small,default(기본 사이즈),large,xlarge -->
+                    <label for="checkbox-05-01">
+                      <input type="checkbox" name="" class="iCheckbox" role="switch" id="checkbox-05-01">
+                      <span class="text on">활성</span>
+                      <span class="text off">비활성</span>
+                    </label>
+                  </div>
+                  <div class="bk-switch"><!--// [D]small,small,default(기본 사이즈),large,xlarge -->
+                    <label for="checkbox-05-02">
+                      <input type="checkbox" name="" class="iCheckbox" role="switch" id="checkbox-05-02" checked>
+                      <span class="text on">활성</span>
+                      <span class="text off">비활성</span>
+                    </label>
+                  </div>
+                </dd>
+              </dl>
+              <h2 class="g-h2-title">3-5. Radio</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 기본</dt>
+                <dd>
+                  <div class="bk-radio-group">
+                    <div class="bk-radio">
+                      <input type="radio" name="radio-01" class="iRadio" id="radio-01-01">
+                      <label for="radio-01-01"><span class="text">radio</span></label>
+                    </div>
+                    <div class="bk-radio">
+                      <input type="radio" name="radio-01" class="iRadio" id="radio-01-04" required>
+                      <label for="radio-01-04"><span class="text">radio required</span></label>
+                    </div>
+                    <div class="bk-radio">
+                      <input type="radio" name="radio-01" class="iRadio" id="radio-01-02" checked>
+                      <label for="radio-01-02"><span class="text">radio checked</span></label>
+                    </div>
+                    <div class="bk-radio">
+                      <input type="radio" name="radio-01" class="iRadio" id="radio-01-03" disabled><!--// [D]disabled,required -->
+                      <label for="radio-01-03"><span class="text">radio disabled</span></label>
+                    </div>
+                    <div class="bk-radio">
+                      <input type="radio" name="radio-01-02" class="iRadio" id="radio-01-05" checked disabled><!--// [D]disabled,required -->
+                      <label for="radio-01-05"><span class="text">radio checked disabled</span></label>
+                    </div>
+                    <div class="bk-valid">에러 메시지</div>
+                    <!--// [D]성공:success,에러:error -->
+                    <div class="bk-messages">기본 메시지</div>
+                  </div>
+                </dd>
+                <dt>2 ) 단독 타입</dt>
+                <dd>
+                  <div class="bk-radio-group"><!--// [D]small,small,default(기본 사이즈),large,xlarge -->
+                    <div class="bk-radio">
+                      <input type="radio" name="radio-02" class="iRadio" id="radio-02-01">
+                      <label for="radio-02-01"><span class="ir-su text">선택</span></label>
+                    </div>
+                    <div class="bk-radio">
+                      <input type="radio" name="radio-02" class="iRadio" id="radio-02-04" required>
+                      <label for="radio-02-04"><span class="ir-su text">선택</span></label>
+                    </div>
+                    <div class="bk-radio">
+                      <input type="radio" name="radio-02" class="iRadio" id="radio-02-02" checked>
+                      <label for="radio-02-02"><span class="ir-su text">선택</span></label>
+                    </div>
+                    <div class="bk-radio">
+                      <input type="radio" name="radio-02" class="iRadio" id="radio-02-03" disabled><!--// [D]disabled,required -->
+                      <label for="radio-02-03"><span class="ir-su text">선택</span></label>
+                    </div>
+                    <div class="bk-radio">
+                      <input type="radio" name="radio-02-02" class="iRadio" id="radio-02-05" checked disabled><!--// [D]disabled,required -->
+                      <label for="radio-02-05"><span class="ir-su text">선택</span></label>
+                    </div>
+                    <div class="bk-valid">에러 메시지</div>
+                    <!--// [D]성공:success,에러:error -->
+                    <div class="bk-messages">기본 메시지</div>
+                  </div>
+                </dd>
+                <dt>3 ) Toggle 타입</dt>
+                <dd>
+                  <div class="bk-radio-group"><!--// [D]small,small,default(기본 사이즈로 class 없어도되는 기본),large,xlarge -->
+                    <div class="bk-toggle-group">
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-03" class="iRadio" id="radio-03-01">
+                        <label for="radio-03-01"><span class="text">Toggle radio</span></label>
+                      </div>
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-03" class="iRadio" id="radio-03-04" required>
+                        <label for="radio-03-04"><span class="text">Toggle radio required</span></label>
+                      </div>
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-03" class="iRadio" id="radio-03-02" checked>
+                        <label for="radio-03-02"><span class="text">Toggle radio checked</span></label>
+                      </div>
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-03" class="iRadio" id="radio-03-03" disabled><!--// [D]disabled,required -->
+                        <label for="radio-03-03"><span class="text">Toggle radio disabled</span></label>
+                      </div>
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-03-02" class="iRadio" id="radio-03-05" checked disabled><!--// [D]disabled,required -->
+                        <label for="radio-03-05"><span class="text">Toggle radio checked disabled</span></label>
+                      </div>
+                    </div>
+                    <div class="bk-valid">에러 메시지</div>
+                    <!--// [D]성공:success,에러:error -->
+                    <div class="bk-messages">기본 메시지</div>
+                  </div>
+                </dd>
+                <dt>4 ) 타입 wide</dt>
+                <dd>
+                  <fieldset>
+                    <legend>radio</legend>
+                    <div class="bk-radio-group wide">
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-05" class="iRadio" id="radio-05-01">
+                        <label for="radio-05-01"><span class="text">radio</span></label>
+                      </div>
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-05" class="iRadio" id="radio-05-04">
+                        <label for="radio-05-04"><span class="text">radio required</span></label>
+                      </div>
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-05" class="iRadio" id="radio-05-02" checked>
+                        <label for="radio-05-02"><span class="text">radio checked</span></label>
+                      </div>
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-01" class="iRadio" id="radio-05-03" disabled><!--// [D]disabled,required -->
+                        <label for="radio-05-03"><span class="text">radio disabled</span></label>
+                      </div>
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-05-02" class="iRadio" id="radio-05-05" checked disabled><!--// [D]disabled,required -->
+                        <label for="radio-05-05"><span class="text">radio checked disabled</span></label>
+                      </div>
+                      <div class="bk-valid">에러 메시지</div>
+                      <!--// [D]성공:success,에러:error -->
+                      <div class="bk-messages">기본 메시지</div>
+                    </div>
+                  </fieldset>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">4. 뱃지(작업전)</h1>
+              <h2 class="g-h2-title">4.1. 뱃지 기본</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 상태 기본(주문/인보이스/결제)</dt>
+                <dd>
+                  <span class="badge badge-state badge-state-preView"><span class="text">미열람</span></span>
+                  <span class="badge badge-state badge-state-view"><span class="text">열람</span></span>
+                  <span class="badge badge-state badge-state-overTime"><span class="text">기간초과</span></span>
+                  <span class="badge badge-state badge-state-payComplete"><span class="text">결제완료</span></span>
+                  <span class="badge badge-state badge-state-tempStorage"><span class="text">임시 저장</span></span>
+                </dd>
+                <dt>2 ) 배송 상태</dt>
+                <dd>
+                  <span class="badge badge-state badge-state-deliveryComplete"><span class="text">배송 완료</span></span>
+                  <span class="badge badge-state badge-state-portLeave"><span class="text">출발항 출발</span></span>
+                  <span class="badge badge-state badge-state-portArrival"><span class="text">출발항 도착</span></span>
+                  <span class="badge badge-state badge-state-arrivalPortArrival"><span class="text">도착항 도착</span></span>
+                  <span class="badge badge-state badge-state-requestTransport"><span class="text">운송 요청중</span></span>
+                  <span class="badge badge-state badge-state-localDeliveryLeave"><span class="text">현지 택배 출발</span></span>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">5. Tab</h1>
+              <h2 class="g-h2-title">5.1. Tab 기본</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 기본</dt>
+                <dd>
+                  <div class="bk-tab tab-default tab-type-normal">
+                    <div class="tab-menu-wrap">
+                      <ul class="list-menu">
+                        <li><button type="button" class="tab-item active"><span>Menu01</span></button></li>
+                        <li><button type="button" class="tab-item"><span>Menu02</span></button></li>
+                        <li><button type="button" class="tab-item"><span>Menu03</span></button></li>
+                      </ul>
+                    </div>
+                    <div class="tab-container-wrap">
+                      <div class="tab-container active">
+                        <span>Product Details</span>
+                      </div>
+                      <div class="tab-container">
+                        <span>Company Information</span>
+                      </div>
+                      <div class="tab-container">
+                        <span>Review</span>
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>2 ) 타입 line</dt>
+                <dd>
+                  <div class="bk-tab tab-large tab-type-line">
+                    <div class="tab-menu-wrap">
+                      <ul class="list-menu">
+                        <li><button type="button" class="tab-item active"><span>Product Details</span></button></li>
+                        <li><button type="button" class="tab-item"><span>Company Information</span></button></li>
+                        <li><button type="button" class="tab-item"><span>Review</span></button></li>
+                      </ul>
+                    </div>
+                    <div class="tab-container-wrap">
+                      <div class="tab-container active">
+                        Product Details
+                      </div>
+                      <div class="tab-container">
+                        Company Information
+                      </div>
+                      <div class="tab-container">
+                        Review
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+                <dt>3 ) 서브 타입</dt>
+                <dd>
+                  <div class="bk-tab tab-type-tag">
+                    <div class="tab-menu-wrap">
+                      <ul class="list-menu">
+                        <li><button type="button" class="tab-item active">#instaHOT</button></li>
+                        <li><button type="button" class="tab-item">#Korea Food</button></li>
+                        <li><button type="button" class="tab-item">#Vacation</button></li>
+                        <li><button type="button" class="tab-item">#Kingderand</button></li>
+                        <li><button type="button" class="tab-item">#Newjeans</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </dd>
+                <dt>4 ) 라인</dt>
+                <dd>
+                  <div class="bk-tab tab-type-sub-line">
+                    <div class="tab-menu-wrap">
+                      <ul class="list-menu">
+                        <li><button type="button" class="tab-item active"><span>작성 가능한 리뷰</span></button></li>
+                        <li><button type="button" class="tab-item"><span>Written review</span></button></li>
+                      </ul>
+                    </div>
+                    <div class="tab-container-wrap">
+                      <div class="tab-container active">
+                        <span>Menu01</span>
+                      </div>
+                      <div class="tab-container">
+                        <span>Menu02</span>
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">6. Accordion</h1>
+              <h2 class="g-h2-title">6.1. Accordion 기본</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 기본 </dt>
+                <dd>
+                  <div class="bk-accordion accordion-type-line"><!--// [D]기본:single, 다중:multi -->
+                    <ul class="list-accordion">
+                      <li class="acc-item is-active">
+                        <div class="acc-header">
+                          <div class="acc-inner">
+                            <div class="left-area">상태:active</div>
+                            <div class="right-area">
+                              <button type="button" class="bk-icon-only link">
+                                <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acc-container">
+                          <div class="acc-inner">
+                            설명 내용입니다.
+                          </div>
+                        </div>
+                      </li>
+                      <li class="acc-item">
+                        <div class="acc-header">
+                          <div class="acc-inner">
+                            <div class="left-area">상태:default</div>
+                            <div class="right-area">
+                              <button type="button" class="bk-icon-only link">
+                                <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acc-container">
+                          <div class="acc-inner">
+                            설명 내용입니다.
+                          </div>
+                        </div>
+                      </li>
+                      <li class="acc-item disabled">
+                        <div class="acc-header">
+                          <div class="acc-inner">
+                            <div class="left-area">상태:disabled</div>
+                            <div class="right-area">
+                              <button type="button" class="bk-icon-only link">
+                                <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acc-container">
+                          <div class="acc-inner">
+                            설명 내용입니다.
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </dd>
+
+                <dt>2 ) 리스트보기(2023.10.30수정됨) </dt>
+                <dd>
+                  <ul class="bk-review-list">
+                    <li>
+                      <div class="top-area">
+                        <div class="thumb"><img src="../../images/tmp/tmp-goods-01.jpg"></div>
+                        <p>Product name Product name Produ
+                          ct name Product name...</p> 
+                      </div>
+                      <div class="bottom-area">
+                        <span class="date">2023.08.08</span>
+                        <div class="bk-btn-inner">
+                          <button type="button" class="bk-btn btn-default btn-outline btn-revie btn-xsmall btn-text-xsmall"  onclick="dialogOpen('#dialog-modal')">
+                            <span class="text">Write</span>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="top-area">
+                        <div class="thumb"><img src="../../images/tmp/tmp-goods-01.jpg"></div>
+                        <p>Product name Product name Produ
+                          ct name Product name...</p> 
+                      </div>
+                      <div class="bottom-area">
+                        <span class="date">2023.08.08</span>
+                        <div class="bk-btn-inner">
+                          <button type="button" class="bk-btn btn-default btn-outline btn-revie btn-xsmall btn-text-xsmall"  onclick="dialogOpen('#dialog-modal')">
+                            <span class="text">Write</span>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+                    
+                    <span class="deco-icon prepend-icon">
+                      <i class="bk-icon bk-icon-plus">more</i>
+                    </span>
+                    <span class="text">More</span>
+                  </button>  
+                  
+                </dd>
+
+                <dt>2.1 ) 리스트+상세포함보기(2023.10.30수정됨) </dt>
+                <dd>
+                  <ul class="bk-review-list has-view">
+                    <li>
+                      <div class="top-area">
+                        <div class="thumb"><img src="../../images/tmp/tmp-goods-01.jpg"></div>
+                        <p>Product name Product name Produ
+                          ct name Product name...</p> 
+                      </div>
+                      <div class="view-area">
+                        <fieldset class="bk-rate">
+                          <input type="radio" id="rating15" name="rating" value="5"><label for="rating15"><span class="text ir-su">5점</span></label>
+                          <input type="radio" id="rating14" name="rating" value="4"><label for="rating14"><span class="text ir-su">4점</span></label>
+                          <input type="radio" id="rating13" name="rating" value="3"><label for="rating13"><span class="text ir-su">3점</span></label>
+                          <input type="radio" id="rating12" name="rating" value="2"><label for="rating12"><span class="text ir-su">2점</span></label>
+                          <input type="radio" id="rating11" name="rating" value="1"><label for="rating11"><span class="text ir-su">1점</span></label>
+                        </fieldset>
+                        <div class="text">
+                          New jerseys are very good quality, would buy again. The quality is good of the retro jersey but the color is not the same from the picture....
+                        </div>
+                      </div>
+                      <div class="bottom-area">
+                        <span class="date">2023.08.08</span>
+                        <div class="bk-btn-inner">
+                          <button type="button" class="bk-btn btn-default btn-outline btn-primary btn-xsmall btn-text-xsmall">
+                            <span class="text">Edit</span>
+                          </button>
+                          <button type="button" class="bk-btn btn-default btn-outline btn-review btn-xsmall btn-text-xsmall">
+                            <span class="text">Delete</span>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="top-area">
+                        <div class="thumb"><img src="../../images/tmp/tmp-goods-01.jpg"></div>
+                        <p>Product name Product name Produ
+                          ct name Product name...</p> 
+                      </div>
+                      <div class="view-area">
+                        <fieldset class="bk-rate">
+                          <input type="radio" id="rating15" name="rating" value="5"><label for="rating15"><span class="text ir-su">5점</span></label>
+                          <input type="radio" id="rating14" name="rating" value="4"><label for="rating14"><span class="text ir-su">4점</span></label>
+                          <input type="radio" id="rating13" name="rating" value="3"><label for="rating13"><span class="text ir-su">3점</span></label>
+                          <input type="radio" id="rating12" name="rating" value="2"><label for="rating12"><span class="text ir-su">2점</span></label>
+                          <input type="radio" id="rating11" name="rating" value="1"><label for="rating11"><span class="text ir-su">1점</span></label>
+                        </fieldset>
+                        <div class="text">
+                          New jerseys are very good quality, would buy again. The quality is good of the retro jersey but the color is not the same from the picture....
+                        </div>
+                      </div>
+                      <div class="bottom-area">
+                        <span class="date">2023.08.08</span>
+                        <div class="bk-btn-inner">
+                          <button type="button" class="bk-btn btn-default btn-outline btn-primary btn-xsmall btn-text-xsmall">
+                            <span class="text">Edit</span>
+                          </button>
+                          <button type="button" class="bk-btn btn-default btn-outline btn-review btn-xsmall btn-text-xsmall">
+                            <span class="text">Delete</span>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+                    <span class="deco-icon prepend-icon">
+                      <i class="bk-icon bk-icon-plus">more</i>
+                    </span>
+                    <span class="text">More</span>
+                  </button>  
+                 
+                  
+                </dd>
+
+                <dt>3 ) 인풋 포함(체크 스크립트 연결)</dt>
+                <dd>
+                  <div class="bk-accordion accordion-type-line accordion-type-has-check checkbox-wrap">
+                    <ul class="list-accordion">
+                      <li class="acc-item all-agree">
+                        <div class="acc-header">
+                          <div class="acc-inner">
+                            <div class="left-area">
+                              <div class="bk-checkbox checkbox-item">
+                                <input type="checkbox" name="checkbox-agree-all" class="iCheckbox" id="checkbox-agree-all">
+                                <label for="checkbox-agree-all"><span class="text">Agree to All Terms</span></label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="acc-item">
+                        <div class="acc-header">
+                          <div class="acc-inner">
+                            <div class="left-area">
+                              <div class="bk-checkbox checkbox-item">
+                                <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-01">
+                                <label for="checkbox-agree-01"><span class="text">[Required] Terms of Use</span></label>
+                              </div>
+                            </div>
+                            <div class="right-area">
+                              <button type="button" class="bk-icon-only link">
+                                <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acc-container">
+                          <div class="acc-inner">
+                            <dl>
+                              <dt>Privacy Notice</dt>
+                              <dd>We collects personal information to provide online marketplaces that allow e-commerce including offer, negotiation, contract, paym-
+                                ent between members through the buyKO-REA.​ For more information on how we pro-cess your personal information, please see our Privacy Policy.​</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="acc-item">
+                        <div class="acc-header">
+                          <div class="acc-inner">
+                            <div class="left-area">
+                              <div class="bk-checkbox checkbox-item">
+                                <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-02">
+                                <label for="checkbox-agree-02"><span class="text">[Optional] Consent to Collection and Use of Personal Information</span></label>
+                              </div>
+                            </div>
+                            <div class="right-area">
+                              <button type="button" class="bk-icon-only link">
+                                <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acc-container">
+                          <div class="acc-inner">
+                            <dl>
+                              <dt>Privacy Notice</dt>
+                              <dd>We collects personal information to provide online marketplaces that allow e-commerce including offer, negotiation, contract, paym-
+                                ent between members through the buyKO-REA.​ For more information on how we pro-cess your personal information, please see our Privacy Policy.​</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="acc-item">
+                        <div class="acc-header">
+                          <div class="acc-inner">
+                            <div class="left-area">
+                              <div class="bk-checkbox checkbox-item">
+                                <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-03">
+                                <label for="checkbox-agree-03"><span class="text">[Optional] 국가별 약관이 있는 경우 </span></label>
+                              </div>
+                            </div>
+                            <div class="right-area">
+                              <button type="button" class="bk-icon-only link">
+                                <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acc-container">
+                          <div class="acc-inner">
+                            <dl>
+                              <dt>Privacy Notice</dt>
+                              <dd>We collects personal information to provide online marketplaces that allow e-commerce including offer, negotiation, contract, paym-
+                                ent between members through the buyKO-REA.​ For more information on how we pro-cess your personal information, please see our Privacy Policy.​</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">7. Table(일부작업)</h1>
+              <h2 class="g-h2-title">7.1. Table 기본</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 기본(vertical)</dt>
+                <dd>
+                  <div class="bk-tbl">
+                    <table class="tbl tbl-default">
+                      <caption>해당 테이블 설명</caption>
+                      <colgroup>
+                      <col style="width:30%">
+                      <col style="width:70%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="col">제목</th>
+                          <td scope="col">작성시 입력한 견적서 제목이 노출 됩니다.</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">견적번호</th>
+                          <td scope="col">자동 생성된 견적 번호</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">td</th>
+                          <td scope="col">
+                            <ul class="bk-tbl-ul">
+                              <li>
+                                첫번 째 블릿입니다. 첫번 째 블릿입니다.
+                                <ul class="bk-tbl-ul-sub">
+                                  <li>두번째 대쉬입니다. 두번째 대쉬입니다</li>
+                                  <li>두번째 대쉬입니다. 두번째 대쉬입니다</li>
+                                </ul>
+                              </li>
+                              <li>
+                                두번 째 블릿입니다. 첫번 째 블릿입니다.
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </dd>
+                <dd>
+                  <div class="bk-tbl">
+                    <table class="tbl tbl-default">
+                      <caption>해당 테이블 설명</caption>
+                      <colgroup>
+                      <col style="width:30%">
+                      <col style="width:70%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="col">제목</th>
+                          <td scope="col">작성시 입력한 견적서 제목이 노출 됩니다.</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">견적번호</th>
+                          <td scope="col">자동 생성된 견적 번호</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">발송일</th>
+                          <td scope="col">2023.12.31  11:29:04</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">td</th>                          
+                          <td scope="col">2023.12.31  11:29:04</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </dd>
+                <dt>2 ) 기본(horizontal)</dt>
+                <dd>
+                  <div class="bk-tbl">
+                    <table class="tbl tbl-data">
+                      <caption>해당 테이블 설명</caption>
+                      <colgroup>
+                      <col style="width:30%">
+                      <col style="width:70%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">시간</th>
+                          <th scope="col">상세내용</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="align-r" scope="col">15 9월 2023
+                            14:34</td>
+                          <td scope="col">adfadfad</td>
+                        </tr>
+                      </tbody>
+                    </table>                    
+                  </div>
+                </dd>
+                
+                <dt>3 ) 테이블 컴퍼넌트(horizontal) - 테이블 툴바</dt>
+                <dd>
+                  툴바 1 (min-width:120)
+                  <section class="section-group"><!--// [D]컨텐츠들의 그룹 묶음 -->
+                    <!-- [S]테이블 상단 툴바 -->
+                    <div class="bk-tbl-toolbar">
+                      <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
+                      <div class="toolbar-right">
+                        <div class="bk-select select-align">
+                          <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                          <div class="bk-control">
+                            <select class="" title="정렬">
+                              <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                              <option value="1">전체</option>
+                              <option value="2">열람</option>
+                              <option value="3">미열람</option>
+                              <option value="4">기간초과</option>
+                              <option value="5">결제완료</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--// [E]테이블 상단 툴바 -->
+                    <!-- [S]테이블 -->
+                    <div class="bk-tbl">
+                      테이블 들어가면 됩니다. 뱃지조정하실꺼면 .badge 있음. 조정끝나면 이 텍스트 삭제할 것
+                    </div>
+                    <!--// [E]테이블 -->
+                    <br><br>
+                    <!-- [S]테이블 하단 페이징 -->
+                    <div class="bk-pagination">
+                      <div class="pagination-group">
+                        <ol class="list-page">
+                          <li>
+                            <button type="button" class="bk-btn btn-page selected">
+                              <span class="text">1</span><span class="ir-su">번째 페이지 선택됨</span><!--// [D]선택 시 "선택됨" 텍스트 추가 -->
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="bk-btn btn-page">
+                              <span class="text">2</span><span class="ir-su">번째 페이지</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="bk-btn btn-page">
+                              <span class="text">3</span><span class="ir-su">번째 페이지</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="bk-btn btn-page">
+                              <span class="text">4</span><span class="ir-su">번째 페이지</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="bk-btn btn-page">
+                              <span class="text">5</span><span class="ir-su">번째 페이지</span>
+                            </button>
+                          </li>
+                        </ol>
+                        <button type="button" class="bk-icon-only btn-page-prev">
+                          <i class="bk-icon bk-icon-page-prev">이전 페이지</i>
+                        </button>
+                        <button type="button" class="bk-icon-only btn-page-next">
+                          <i class="bk-icon bk-icon-page-next">다음 페이지</i>
+                        </button>
+                      </div>
+                    </div>
+                    <!--// [E]테이블 하단 페이징 -->
+                  </section>
+                </dd>   
+                <dd>
+                  툴바 2 (min-width:105)
+                  <section class="section-group"><!--// [D]컨텐츠들의 그룹 묶음 -->
+                    <!-- [S]테이블 상단 툴바 -->
+                    <div class="bk-tbl-toolbar bk-seller-item">
+                      <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
+                      <div class="toolbar-right">
+                        <div class="bk-select select-align">
+                          <div class="bk-control">
+                            <select class="" title="정렬">
+                              <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                              <option value="1">전체</option>
+                              <option value="2">열람</option>
+                              <option value="3">미열람</option>
+                              <option value="4">기간초과</option>
+                              <option value="5">결제완료</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--// [E]테이블 상단 툴바 -->
+                    <!-- [S]테이블 -->
+                    <div class="bk-tbl">
+                      테이블 들어가면 됩니다. 뱃지조정하실꺼면 .badge 있음. 조정끝나면 이 텍스트 삭제할 것
+                    </div>
+                    <!--// [E]테이블 -->
+                    <!-- [S]테이블 하단 페이징 -->
+                    <div class="bk-pagination">
+                      <div class="pagination-group">
+                        <ol class="list-page">
+                          <li>
+                            <button type="button" class="bk-btn btn-page selected">
+                              <span class="text">1</span><span class="ir-su">번째 페이지 선택됨</span><!--// [D]선택 시 "선택됨" 텍스트 추가 -->
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="bk-btn btn-page">
+                              <span class="text">2</span><span class="ir-su">번째 페이지</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="bk-btn btn-page">
+                              <span class="text">3</span><span class="ir-su">번째 페이지</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="bk-btn btn-page">
+                              <span class="text">4</span><span class="ir-su">번째 페이지</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="bk-btn btn-page">
+                              <span class="text">5</span><span class="ir-su">번째 페이지</span>
+                            </button>
+                          </li>
+                        </ol>
+                        <button type="button" class="bk-icon-only btn-page-prev">
+                          <i class="bk-icon bk-icon-page-prev">이전 페이지</i>
+                        </button>
+                        <button type="button" class="bk-icon-only btn-page-next">
+                          <i class="bk-icon bk-icon-page-next">다음 페이지</i>
+                        </button>
+                      </div>
+                    </div>
+                    <!--// [E]테이블 하단 페이징 -->
+                  </section>
+                </dd>   
+                <dt>4 ) 리스트형태</dt>
+                <dd>
+                  <div class="bk-tbl-list">
+                    <div class="bk-list">
+                      <div class="bk-radio">
+                        <input type="radio" name="radio-staff" class="iRadio" id="radio-staff-01">
+                        <label for="radio-staff-01"><span class="ir-su text">radio</span></label>
+                      </div>
+
+                      <div class="bk-list-name">
+                        <p><span>[신청] 홍*동</span><span>IDIDID</span></p>
+                        <p><span>abcdefg@gmail.com</span><span>물류팀</span><span>책임</span></p>
+                        <p class="date"><span>가입 : 2023.01.31 </span><span>업데이트 : 2023.12.31</span></p>
+                        <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                          <span class="text">상태변경</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+                    <span class="deco-icon prepend-icon">
+                      <i class="bk-icon bk-icon-plus">more</i>
+                    </span>
+                    <span class="text">더보기</span>
+                  </button>
+                </dd>    
+                
+                <dt>5.1) 리스트형태2</dt>
+                <dd>
+                  <div class="bk-tbl-list">
+                    <div class="bk-tbl-list">
+                      <div class="bk-list">
+                        <button
+                          type="button"
+                          class="bk-btn btn-brand btn-text btn-large action-list-delete"
+                        >
+                          <span class="deco-icon extra-icon append-icon">
+                            <i class="bk-icon bk-icon-list-delete">delete</i>
+                          </span>
+                        </button>
+                        <div class="bk-list-name list-type02">
+                          <p>배송지명 : 배송지 1,000</p>
+                          <p>담당자명 : 홍길동</p>
+                          <ul>
+                            <li>H.P : +82-212345678</li>
+                            <li>Country : South Korea</li>
+                            <li>Zip/Postal : 21234</li>
+                            <li>City/State : New York, NY</li>
+                          </ul>
+                          <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall">
+                            <span class="text">수정</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                  <!-- [S] button -->
+                  <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+                    <span class="deco-icon prepend-icon">
+                      <i class="bk-icon bk-icon-plus">more</i>
+                    </span>
+                    <span class="text">더보기</span>
+                  </button>
+                  <!-- //[D] button -->
+                </dd>    
+
+                <dt>5.2) 리스트형태3</dt>
+                <dd>
+                  <ul class="cp-list-wrap">
+                    <li class="bk-list-unit">
+                      <div class="bk-list-detail">
+                        <span>견적번호 : 0000000 </span>
+                        <span>2023.01.05 10:05:11</span>
+                        <p class="bk-list-tit bk-lineclamp-1"><a href="#" onclick="dialogOpen('#dialog-full-pop')">Product name Product name Product name Product name</a></p>
+                        <ul class="bk-list-option">
+                          <li>견적금액($) : 100.00</li>
+                          <li>바이어/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                        </ul>
+                      </div>
+                      <div class="bk-list-condition">
+                        <p class="bk-list-txt">미열람</p>
+                      </div>
+                    </li>
+                    <li class="bk-list-unit">
+                      <div class="bk-list-detail">
+                        <span>견적번호 : 0000000 </span>
+                        <span>2023.01.05 10:05:11</span>
+                        <p class="bk-list-tit bk-lineclamp-1"><a href="#" onclick="dialogOpen('#dialog-full-pop')">Product name Product name Product name Product name</a></p>
+                        <ul class="bk-list-option">
+                          <li>견적금액($) : 100.00</li>
+                          <li>바이어/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                        </ul>
+                      </div>
+                      <div class="bk-list-condition">
+                        <p class="bk-list-txt">열람(2023.01.05 10:05:11)</p>
+                      </div>
+                    </li>
+                  </ul>
+      
+                  <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+                    <span class="deco-icon prepend-icon">
+                      <i class="bk-icon bk-icon-plus">more</i>
+                    </span>
+                    <span class="text">더보기</span>
+                  </button>
+                </dd>    
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">8. Pagenation</h1>
+              <h2 class="g-h2-title">8.1. Pagenation 기본</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 기본</dt>
+                <dd>
+                  모바일엔 진행안되는것 같아 닫아둠
+                  <div class="bk-pagination" style="display:none">
+                    <div class="pagination-group">                      
+                      <ol class="list-page">
+                        <li>
+                          <button type="button" class="bk-btn btn-page selected">
+                            <span class="text">1</span><span class="ir-su">번째 페이지 선택됨</span><!--// [D]선택 시 "선택됨" 텍스트 추가 -->
+                          </button>
+                        </li>
+                        <li>
+                          <button type="button" class="bk-btn btn-page">
+                            <span class="text">2</span><span class="ir-su">번째 페이지</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button type="button" class="bk-btn btn-page">
+                            <span class="text">3</span><span class="ir-su">번째 페이지</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button type="button" class="bk-btn btn-page">
+                            <span class="text">4</span><span class="ir-su">번째 페이지</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button type="button" class="bk-btn btn-page">
+                            <span class="text">5</span><span class="ir-su">번째 페이지</span>
+                          </button>
+                        </li>
+                      </ol>
+                      <button type="button" class="bk-icon-only btn-page-prev">
+                        <i class="bk-icon bk-icon-page-prev">이전 페이지</i>
+                      </button>
+                      <button type="button" class="bk-icon-only btn-page-next" disabled>
+                        <i class="bk-icon bk-icon-page-next">다음 페이지</i>
+                      </button>
+                    </div>
+                  </div>
+                </dd>
+                <dt>2 ) INDICATOR</dt>
+                <dd>
+                  swiper 에 체크
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">9. Popup</h1>
+              <h2 class="g-h2-title">9.1. Popup 기본</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 기본</dt>
+                <dd>
+                  <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-full')">사이즈 full</button>
+                  <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-full2')">사이즈 full2 - 떨어져있는 버튼</button>
+                  <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-full3')">사이즈 full3 - 하단좌우 버튼</button>
+                  <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-modal')">사이즈 modal1 - 붙어있는 버튼</button>
+                </dd>
+                <dt>2 ) Alert</dt>
+                <dd>
+                  <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert')">Alert</button>
+                </dd>
+                <dt>3 ) Bottom Sheet</dt>
+                <dd>
+                  준비중....
+                  <button type="button" class="bk-icon-only" component="tooltip" title='<div class="tooltip-header">툴팁 타이틀</div><div class="tooltip-container"><div class="message"><p>툴팁 Message</p></div></div>'>
+                    <i class="bk-icon bk-icon-tooltip">자세한 설명</i>
+                  </button>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">10. 검색</h1>
+              <h2 class="g-h2-title">10.1. 서브 검색 상단</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 기본</dt>
+                <dd>
+                  <!-- [S]컴퍼넌트:검색 -->
+                  <div class="cp-search search-topType">
+                    <form>
+                      <div class="search-inner">
+                        <div class="grid-wrap">
+                          <div class="grid-row">
+                            <div class="grid-column"></div>
+                            <div class="grid-column"></div>
+                          </div>
+                        </div>
+                        <div class="search-row">
+                          <div class="date-group has-dates">
+                            <div class="bk-textfield">
+                              <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                              <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                              <div class="bk-control">
+                                <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                                <div class="control-field">
+                                  <input
+                                    type="text"
+                                    class="iText iDatepicker"
+                                    id="startDate"
+                                    placeholder="시작 날짜"
+                                    readonly
+                                    title="시작 날짜"
+                                  />
+                                </div>
+                                <div class="bk-valid">에러 메시지</div>
+                                <!--// [D]성공:success,에러:error -->
+                              </div>
+                            </div>
+                            <div class="dash">~</div>
+                            <div class="bk-textfield">
+                              <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                              <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                              <div class="bk-control">
+                                <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                                <div class="control-field">
+                                  <input
+                                    type="text"
+                                    class="iText iDatepicker"
+                                    id="endDate"
+                                    placeholder="종료 날짜"
+                                    readonly
+                                    title="종료 날짜"
+                                  />
+                                </div>
+                                <div class="bk-valid">에러 메시지</div>
+                                <!--// [D]성공:success,에러:error -->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="search-group">
+                            <div class="bk-select">
+                              <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                              <div class="bk-control">
+                                <select class="" id="" title="label텍스트값">
+                                  <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                                  <option value="1">전체</option>
+                                  <option value="2">option2</option>
+                                  <option value="3" disabled>option3</option>
+                                  <option value="4">option4</option>
+                                </select>
+                                <div class="bk-valid success">에러 메시지</div>
+                                <!--// [D]성공:success,에러:error -->
+                              </div>
+                            </div>
+                            <div class="bk-textfield wide textfield-search">
+                              <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                              <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                              <div class="bk-control">
+                                <div class="control-field">
+                                  <input
+                                    type="text"
+                                    name=""
+                                    value=""
+                                    placeholder=""
+                                    class="iText"
+                                    id=""
+                                    required
+                                  /><!--// [D]focus,disabled,required,readonly -->
+                                  <div class="control-btns append-btns">
+                                    <button
+                                      type="button"
+                                      class="bk-icon-only icon-text-clear"
+                                    >
+                                      <i class="bk-icon bk-icon-text-clear"
+                                        >텍스트 지우기</i
+                                      >
+                                    </button>
+                                  </div>
+                                  <div class="control-icon append-icon">
+                                    <button
+                                      type="button"
+                                      class="bk-icon-only icon-search"
+                                    >
+                                      <i class="bk-icon bk-icon-searchPrimary"
+                                        >검색</i
+                                      >
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--// [E]컴퍼넌트:검색 -->
+                </dd>
+
+                <dt>2 ) 검색 wide</dt>
+                <dd>
+                  <!-- [S]컴퍼넌트:검색 -->
+                  <div class="cp-search search-wideType">
+                    <form>
+                      <div class="search-inner">
+                        <div class="search-row">
+                          <div class="search-group">
+                            <div class="bk-select">
+                              <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                              <div class="bk-control">
+                                <select class="" id="" title="기업명">
+                                  <option value="1">기업명</option>
+                                  <option value="2">사업자등록번호</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="bk-textfield wide textfield-search">
+                              <div class="bk-control">
+                                <div class="control-field">
+                                  <input
+                                    type="text"
+                                    name=""
+                                    value=""
+                                    placeholder="검색어를 입력해주십시오."
+                                    class="iText"
+                                    id="소속기업 선택 입력"
+                                    required
+                                  />
+                                  <div class="control-btns append-btns">
+                                    <button
+                                      type="button"
+                                      class="bk-icon-only icon-text-clear"
+                                    >
+                                      <i class="bk-icon bk-icon-text-clear"
+                                        >텍스트 지우기</i
+                                      >
+                                    </button>
+                                  </div>
+                                  <div class="control-icon append-icon">
+                                    <button
+                                      type="button"
+                                      class="bk-icon-only icon-search"
+                                    >
+                                      <i class="bk-icon bk-icon-searchPrimary"
+                                        >검색</i
+                                      >
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--// [E]컴퍼넌트:검색 -->
+                </dd>
+
+                <dt>3 ) 검색 wide2</dt>
+                <dd>
+                  <!-- [S]컴퍼넌트:검색 -->
+                  <div class="cp-search search-wideWrapType">
+                    <form>
+                      <div class="search-inner">
+                        <div class="search-row">
+                          <div class="search-group">
+                            <div class="bk-select">
+                              <div class="bk-control">
+                                <select class="" id="" title="직원구분">
+                                  <option value="1">전체</option>
+                                  <option value="2">아이디</option>
+                                  <option value="3">Email</option>
+                                  <option value="4">부서명</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="bk-select">
+                              <div class="bk-control">
+                                <select class="" id="" title="전체상태">
+                                  <option value="1">전체상태</option>
+                                  <option value="2">신청</option>
+                                  <option value="3">휴직중</option>
+                                  <option value="4">재직중</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="bk-textfield wide textfield-search">
+                              <div class="bk-control">
+                                <div class="control-field">
+                                  <input
+                                    type="text"
+                                    name=""
+                                    value=""
+                                    placeholder="검색어를 입력해주십시오."
+                                    class="iText"
+                                    id="소속기업 선택 입력"
+                                    required
+                                  />
+                                  <div class="control-btns append-btns">
+                                    <button
+                                      type="button"
+                                      class="bk-icon-only icon-text-clear"
+                                    >
+                                      <i class="bk-icon bk-icon-text-clear"
+                                        >텍스트 지우기</i
+                                      >
+                                    </button>
+                                  </div>
+                                  <div class="control-icon append-icon">
+                                    <button
+                                      type="button"
+                                      class="bk-icon-only icon-search"
+                                    >
+                                      <i class="bk-icon bk-icon-searchPrimary"
+                                        >검색</i
+                                      >
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--// [E]컴퍼넌트:검색 -->
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">11. 상품(작업전)</h1>
+              <h2 class="g-h2-title">11.1. 상품 샘플</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 리스트형</dt>
+                <dd>
+                  <div class="bk-goods goods-list">
+                    <dl>
+                      <dt></dt>
+                    </dl>
+                  </div>
+                </dd>
+                <dt>1 ) 카드형</dt>
+                <dd>
+                  <div class="bk-goods goods-card">
+                    <dl class="item-goods">
+                      <dt>
+                        <div class="img-goods">
+                          <a href="#none"><img src="../../images/tmp/tmp-goods-01.jpg" alt="Rubelli Lighting Sun Cream"></a>
+                        </div>
+                        <div class="badge-area">
+                          <span class="badge badge-goods badge-new"><span class="text">new</span></span>
+                        </div>
+                        <div class="btns-goods-area">
+                          <div class="goods-group">
+                            <ul class="list-btns">
+                              <li>Favorites</li>
+                              <li><button class="btn-detail">상세보기</button></li>
+                              <li><button class="btn-favo">즐겨찾기</button></li>
+                              <li><button class="btn-conf">컨퍼런스</button></li>
+                              <li><button class="btn-share">공유하기</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </dt>
+                      <dd>
+                        <!-- 회사명 -->
+                        <div class="goods-companyName">
+                          RUBELLI CO., LTD.
+                        </div>
+                        <!--// 회사명 -->
+                        <!-- 상품명 -->
+                        <div class="goods-name">
+                          Rubelli Lighting Sun Cream
+                        </div>
+                        <!--// 상품명 -->
+                        <!-- 상품 금액 -->
+                        <div class="goods-price">
+                          <!-- 로그인 전 -->
+                          <div class="price-before">Login to See Price(s)</div>
+                          <!--// 로그인 전 -->
+                          <!-- 로그인 후 -->
+                          <div class="price">$799.6 Sets</div>
+                          <!--// 로그인 후 -->
+                        </div>
+                        <!--// 상품 금액 -->
+                        <!-- 상품 수량 -->
+                        <div class="goods-amount">
+                          <!-- 최소 수량 -->
+                          <div class="amount-minimum">Minimum Order Quantity : 1 units</div>
+                          <!--// 최소 수량 -->
+                          <!-- 수량 -->
+                          <div class="amount-num">MOQ:100ea</div>
+                          <!--// 수량 -->
+                        </div>
+                        <!--// 상품 수량 -->
+                      </dd>
+                    </dl>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">12. Swiper(작업전)</h1>
+              <h2 class="g-h2-title">12.1. Swiper 샘플</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 기본</dt>
+                <dd>
+                  <!-- Slider main container -->
+                  <div class="swiper bk-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar
+                    <div class="swiper-scrollbar"></div>
+                    // -->
+                  </div>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">13. 리스트</h1>
+              <h2 class="g-h2-title">13.1. Default</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 라벨형</dt>
+                <dd>
+                  <div class="bk-input-list">
+                    <dl>
+                      <dt>Email</dt>
+                      <dd>
+                        <div class="bk-textfield large">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <div class="control-icon prepend-icon">
+                                <i class="bk-icon">아이콘</i>
+                              </div>
+                              <input type="text" name="" value="" placeholder="placeholder" class="iText" title="label텍스트값">
+                              <div class="control-icon append-icon">
+                                <i class="bk-icon">아이콘</i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="bk-input-list">
+                    <dl>
+                      <dt class="is-required">Email_required</dt>
+                      <dd>
+                        <div class="bk-row-div bk-email-row bk-full">
+                          <div class="bk-textfield is-required">
+                            <div class="bk-control">
+                              <div class="control-field">
+                                <input type="text" name="resetpw_m" value="" placeholder="Email" class="iText" id="resetpw_m" required="">
+                              </div>
+                            </div>
+                          </div>
+      
+                          <span class="bk-text">@</span>
+                        </div>
+      
+                        <div class="bk-row-div bk-grid-half bk-full">
+                          <div class="bk-textfield is-required">
+                            <div class="bk-control">
+                              <div class="control-field">
+                                <input type="text" name="resetpw_m_name" value="gmail.com" placeholder="" class="iText" id="resetpw_m_name" required="" readonly>
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="bk-select default">
+                            <div class="bk-control">
+                              <select class="" id="" title="mail address">
+                                <option value="Choose">Choose</option>
+                                <option value="option2">naver.com</option>
+                                <option value="option3">hanmail.net</option>
+                                <option value="option4">daum.net</option>
+                                <option value="option5">gmail.com</option>
+                                <option value="option6">nate.com</option>
+                                <option value="option7">직접입력</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="bk-input-list">
+                    <dl>
+                      <dt class="is-required">전화번호</dt>
+                      <dd>
+                        <div class="bk-row-div bk-grid-tel bk-full no-gap">
+                          <div class="bk-textfield">
+                            <div class="bk-control">
+                              <div class="control-field">
+                                <input type="text" name="phone_01" value="" placeholder="" class="iText" id="phone_01" >
+                              </div>
+                            </div>
+                          </div>
+      
+                          <span class="bk-text">-</span>
+                        
+                          <div class="bk-textfield">
+                            <div class="bk-control">
+                              <div class="control-field">
+                                <input type="text" name="phone_02" value="" placeholder="" class="iText" id="phone_02" >
+                              </div>
+                            </div>
+                          </div>
+      
+                          <span class="bk-text">-</span>
+      
+                          <div class="bk-textfield">
+                            <div class="bk-control">
+                              <div class="control-field">
+                                <input type="text" name="phone_03" value="" placeholder="" class="iText" id="phone_03" >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="bk-input-list">
+                    <dl>
+                      <dt class="is-required">주소</dt>
+                      <dd>
+                        <div class="bk-row-div bk-grid-25 bk-full">
+                          <div class="bk-textfield bk-full">
+                            <div class="bk-control">
+                              <div class="control-field">
+                                <input type="text" name="join-countrycode1" value="05533" placeholder="Country Code" class="iText" id="join-countrycode1" title="Country Code" readonly>
+                              </div>                      
+                            </div>
+                          </div>                              
+
+                          <div class="bk-textfield bk-full">
+                            <div class="bk-control">
+                              <div class="control-field input-full">
+                                <input type="text" name="join-address1" value="서울 서초구 사임당로 32" placeholder="" class="iText" id="join-address1" title="Phone number" readonly>
+                              </div>                      
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="bk-textfield bk-full is-required">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input type="text" name="join-address2" value="" placeholder="상세주소를 입력해 주세요." class="iText" id="join-address2" title="상세주소를 입력해 주세요." required="">
+                            </div>                      
+                          </div>
+                        </div>
+                        <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                          <span class="text">주소검색</span>
+                        </button>
+                      </dd>
+                    </dl>
+                  </div>
+                </dd>
+
+                <dt>1.1 ) 라벨형 - 파일첨부</dt>
+                <dd>
+                  <div class="bk-input-list">
+                    <dl>
+                      <dt class="is-required">사업자등록증</dt>
+                      <dd>
+                        <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                          <label for="license-file">파일첨부</label> 
+                        </button>
+                        <div class="cp-file">
+                          <div class="file-list">
+                            <input type="text" class="upload-license-name text" value="" placeholder="">
+                            <input type="file" id="license-file">
+                            <button type="button" class="bk-btn bk-btn-icon" onClick="license_file_del();">
+                              <span class="deco-icon">
+                                <i class="bk-icon bk-icon-trash">삭제</i>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="bk-messages bk-flex-c bk-flex-row-gap-basic">
+                          <div class="bk-row-div no-gap">
+                            <i class="bk-icon bk-icon-input-messages">정보</i><p>파일크기 <strong>1MB</strong> 이하 / jpg,pdf 파일만 등록가능 합니다.</p>
+                          </div>
+                          <div class="bk-row-div no-gap">
+                            <i class="bk-icon bk-icon-input-messages">정보</i>
+                            <div class="bk-tul-ul">
+                              아래와 같은 경우 기업의 활동 또는 민/형사상 책임이 있을 수 있으니 유의하여 주시기 바랍니다.
+                              <ul class="bk-tbl-ul-sub">
+                                <li>첨부한 기업인증 서류가 위/변조 또는 임의로 수정된 문서를 등록한 경우</li>
+                                <li>첨부한 기업인증 서류에 개인정보가 입력(수기작성) 되어 있는 경우</li>
+                                <li>이용약관에 의거하여 불법관련 신고가 접수되는 경우</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                </dd>
+
+                <dt>2 ) 라벨형-안내타이틀</dt>
+                <dd>
+                  <div class="bk-input-list">
+                    <dl>
+                      <dt class="title font-heading-2">간편인증</dt>
+                      <dd>
+                        <span class="bk-text">네이버, 삼성패스, 신한인증서, KB인증, 토스, 통신사PASS, 페이코 등 간편인증서비스를 제공합니다.</span>
+                        <span class="bk-small-text">법인 명의는 인증불가</span>
+                      </dd>
+                      <dd class="has-btn">
+                        <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                          <span class="text">간편인증</span>
+                        </button>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="bk-input-list">
+                    <dl>
+                      <dt class="title font-heading-2">휴대전화 본인인증</dt>
+                      <dd>
+                        <span class="bk-text">본인 명의의 휴대전화 정보를 정확히 입력하여 주시기 바랍니다.</span>
+                        <span class="bk-small-text">법인 명의는 인증불가</span>
+                      </dd>
+                      <dd class="has-btn">
+                        <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full">
+                          <span class="text">휴대전화 본인인증</span>
+                        </button>
+                        <div class="bk-messages bk-flex-c bk-flex-row-gap-no">
+                          <div class="bk-row-div no-gap">
+                            <i class="bk-icon bk-icon-input-messages">정보</i>타인의 주민등록번호를 임의로 사용하면 “주민
+                            등록법에 의해 3년 이하의 징역 또는 3천만원 
+                            이하의 벌금이 부과될 수 있습니다.
+                            관련법률_주민등록법 제37조(벌칙)제10호<br>
+                            &lt; 개정 : 2022.1.11 &gt;
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                </dd>                
+
+                <dt>3 ) 라벨형-대 타이틀 후 리스트</dt>
+                <dd>
+                  <h1 class="title font-heading-2 bk-bMg24">기업 소속신청</h1>
+                  <div class="bk-input-list">
+                    <dl>
+                      <dt>부서명</dt>
+                      <dd>
+                        <div class="bk-textfield">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input type="text" name="apply-company-part" value="" placeholder="" class="iText" id="apply-company-part" title="부서명">
+                            </div>
+                          </div>
+                        </div>                    
+                      </dd>
+                    </dl>
+                  </div>
+                </dd>                
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">14. 가이드</h1>
+              <h2 class="g-h2-title">14.1. Default</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 상단 가이드 (100vw)</dt>
+                <dd>
+                  <div class="bk-guide-txt">
+                    <span class="text">회원가입 시 등록한 <strong>Email</strong>을 입력해 주세요.</span>
+                    <span class="text">회원가입 시 등록한 Email을 입력해 주세요.</span>
+                  </div>
+                </dd>                
+                <dt>1.1 ) 배경없는 상단 가이드텍스트</dt>
+                <dd>
+                  <div class="bk-guide-txt-white">
+                    변경하고자 하는 비밀번호를 입력해 주세요.
+                  </div>
+                </dd>                
+                <dt>2 ) 입력 난이도</dt>
+                <dd>
+                  <div class="bk-password-strength">
+                    <!--하 : gage-1 / 중 : gage-2 / 상 : gaeg-3 -->
+                    <span class="bk-password-text">Password Strength : 하</span>
+                    <div class="bk-password-gage">
+                      <span class="gage-1"></span>
+                    </div>
+                  </div>
+                </dd>
+
+                <dt>3 ) 스텝</dt>
+                <dd>                  
+                  <div class="bk-join-step">
+                    <div class="left-area">약관동의</div>
+                    <div class="right-step">
+                      <span class="on">1</span><!--활성시 on 클래스 추가-->
+                      <span>2</span>
+                      <span>3</span>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </dd>
+
+                <dt>4 ) 구분선</dt>
+                <dd>                  
+                  <div class="bk-divider">구분선</div>
+                </dd>
+
+                <dt>5 ) 블릿</dt>
+                <dd>                  
+                  <ul class="bk-tbl-ul">
+                    <li>
+                      첫번 째 블릿입니다. 첫번 째 블릿입니다.
+                      <ul class="bk-tbl-ul-sub">
+                        <li>두번째 대쉬입니다. 두번째 대쉬입니다</li>
+                        <li>두번째 대쉬입니다. 두번째 대쉬입니다</li>
+                      </ul>
+                    </li>
+                    <li>
+                      두번 째 블릿입니다. 첫번 째 블릿입니다.
+                    </li>
+                  </ul>
+                </dd>
+
+                <dt>6 ) 안내메세지의 하위</dt>
+                <dd>                  
+                  <div class="bk-messages bk-flex-c bk-flex-row-gap-basic">
+                    <div class="bk-row-div no-gap">
+                      <i class="bk-icon bk-icon-input-messages">정보</i><p>파일크기 <strong>1MB</strong> 이하 / jpg,pdf 파일만 등록가능 합니다.</p>
+                    </div>
+                    <div class="bk-row-div no-gap">
+                      <i class="bk-icon bk-icon-input-messages">정보</i>
+                      <div class="bk-tul-ul">
+                        아래와 같은 경우 기업의 활동 또는 민/형사상 책임이 있을 수 있으니 유의하여 주시기 바랍니다.
+                        <ul class="bk-tbl-ul-sub">
+                          <li>첨부한 기업인증 서류가 위/변조 또는 임의로 수정된 문서를 등록한 경우</li>
+                          <li>첨부한 기업인증 서류에 개인정보가 입력(수기작성) 되어 있는 경우</li>
+                          <li>이용약관에 의거하여 불법관련 신고가 접수되는 경우</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+
+                <dt>7 ) 총금액</dt>
+                <dd>                  
+                  <div class="cp-total-price">
+                    <span class="text">총 견적금액(USD)</span><strong class="price">1920.240</strong>
+                  </div>
+                </dd>
+                
+              </dl>
+            </div>
+
+            <div class="chapter">
+              <h1 class="g-h1-title">15. 경고</h1>
+              <h2 class="g-h2-title">15.1. Default</h2>
+              <dl class="chapter-component">
+                <dt>1 ) 버튼있음</dt>
+                <dd>
+                  <div class="bk-empty-text">
+                    <i class="bk-icon bk-icon-empty">empty</i>  
+                    <div class="bk-text-field">
+                      <h2 class="title">검색된 기업이 없습니다.</h2>
+                      <span class="text">신규기업 등록을 진행하시려면<br>아래 버튼을 클릭해 주세요.</span>
+                    </div>
+                    <button type="button" class="bk-btn btn-default btn-outline btn-small">
+                      <span class="text">기업 및 마스터 회원 등록</span>
+                    </button>
+                  </div>
+                </dd>  
+                <dt>1.1 ) 하위텍스트 없음</dt>
+                <dd>
+                  <div class="bk-empty-text">
+                    <i class="bk-icon bk-icon-empty">empty</i>  
+                    <div class="bk-text-field">
+                      <h2 class="title">아직 장바구니에<br>상품이 없습니다.</h2>
+                    </div>
+                    <button type="button" class="bk-btn btn-default btn-outline btn-small">
+                      <span class="text">상품 카테고리 바로가기</span>
+                    </button>
+                  </div>
+                </dd>       
+                <dt>2 ) 버튼없음</dt>
+                <dd>
+                  <div class="bk-empty-text">
+                    <i class="bk-icon bk-icon-empty">empty</i>  
+                    <div class="bk-text-field">
+                      <h2 class="title">휴·폐업 기업으로 확인되어<br>등록이 불가한 기업입니다</h2>
+                      <span class="text">사업자등록번호를 다시 확인해 주세요.</span>
+                    </div>
+                  </div>
+                </dd>  
+              </dl>
+            </div>
+            
+          </section>
+        </div>
+      </main>
+      <footer class="ui-footer">
+        <div class="ui-inner">
+          <div class="corp-area">
+            <h2 class="logo">
+              <img
+                src="../../images/web/logo-kotra-dark.svg"
+                alt="Kotra Trade-Investment Promtion Agency"
+              />
+            </h2>
+            <div class="corp-group">
+              <address class="address">
+                13, Heolleung-ro, Seocho-gu, Seoul, Korea (Postal Code: 06792)
+                F. +82-2-3460-7951 / E. buykorea@kotra.or.kr
+              </address>
+              <p class="copyright">
+                Copyright ⓒ 2023 KOTRA & buyKOREA All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- [공통]팝업 -->
+    <!-- [S]dialog-full -->
+    <div class="bk-dialog has-btmBtn dialog-full" id="dialog-full"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom // 하단에 버튼이 있는 경우 has-btmBtn 클래스 추가-->
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">팝업 타이틀-full</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-sticky btn-primary btn-full">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// [E]dialog-full -->
+    <!-- [S]dialog-full2 떨어진 버튼 -->
+    <div class="bk-dialog dialog-full2" id="dialog-full2"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom // 하단에 버튼이 있는 경우 has-btmBtn 클래스 추가-->
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">팝업 타이틀-full</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br></div>
+          </div>
+          <div class="dialog-footer">
+            <div class="footer-center">
+              <button type="button" class="bk-btn btn-brand btn-outline btn-modal btn-half" role="dialogCloseBtn">취소</button>
+              <button type="button" class="bk-btn btn-primary btn-modal btn-half">견적서 발송</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// [E]dialog-full2 떨어진 버튼-->
+    <!-- [S]dialog-full3 하단좌우 버튼 -->
+    <div class="bk-dialog has-btmBtn dialog-full" id="dialog-full3"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom // 하단에 버튼이 있는 경우 has-btmBtn 클래스 추가-->
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">팝업 타이틀-full(하단버튼2)</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br></div>
+            <div class="dialog-footer">
+              <div class="footer-center">
+                <button type="button" class="bk-btn btn-light-gray btn-sticky btn-half" role="dialogCloseBtn">취소</button>
+                <button type="button" class="bk-btn btn-primary btn-sticky btn-half">견적서 발송</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// [E]dialog-full3 하단좌우 버튼-->
+    <!-- [S]dialog-modal -->
+    <div class="bk-dialog dim dialog-modal" id="dialog-modal"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">붙어있는 버튼 타이틀</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>내용 들어감<br>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// [E]dialog-modal -->
+    <!-- [S]alert -->
+    <div class="bk-dialog dim alert" id="alert"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>Popup Message</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// [E]alert -->
+    <!--// [공통]팝업 -->
+    <script src="../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../js/common/lib/flatpickr/flatpickr.min.js"></script><!--// 달력 -->
+    <script src="../../js/common/lib/l10n/ko.js"></script><!--// 언어 설정 -->
+    <!-- 툴팁 설정 -->
+    <script src="../../js/common/lib/popper/popper.min.js"></script>
+    <script src="../../js/common/lib/tippy/tippy-bundle.js"></script>
+    <!--// 툴팁 설정 -->
+    <script src="../../js/common/lib/swiper/swiper-bundle.min.js"></script><!--// 스와이퍼 -->
+    <script src="../../js/mobile/ui_common.js"></script>
+    <script>
+      const datepicker = document.getElementById('datepicker');
+      const datepicker2 = document.getElementById('datepicker2');
+      const startDateInput = document.getElementById('startDate');
+      const endDateInput = document.getElementById('endDate');
+
+      
+      function handleDateChange(selectedDates, dateStr, instance) {
+        console.log('선택된 날짜:', dateStr);
+      }
+    
+      flatpickr(datepicker, {
+        dateFormat: 'Y-m-d H:i', // 날짜 및 시간 형식 설정 (예: 2023-09-12 15:30)
+        enableTime: true,        // 시간 선택 활성화
+        time_24hr: true,         // 24시간 형식 사용
+        minDate: 'today',        // 오늘 이전 날짜 선택 비활성화
+        maxDate: '2023-12-31',   // 특정 날짜까지 선택 가능
+        defaultDate: 'today',    // 초기 날짜 설정 (현재 날짜와 시간)
+        disable: ['2023-09-15', '2023-09-20'], // 특정 날짜 비활성화
+        locale: 'ko',            // 한국어로 지역화
+        onOpen: function(selectedDates, dateStr, instance) {
+          // 위젯이 열릴 때 실행할 코드
+        },
+        onClose: function(selectedDates, dateStr, instance) {
+          // 위젯이 닫힐 때 실행할 코드
+        },
+        onChange: function(selectedDates, dateStr, instance) {
+          // 날짜가 변경될 때 실행할 코드
+        },
+        disableMobile: true,      // 모바일 기기에서 위젯 비활성화
+        altInput: true,           // 추가 입력란 활성화
+        altFormat: 'F j, Y H:i', // 추가 입력란의 날짜 및 시간 형식
+      });
+    
+      flatpickr(datepicker2, {
+        dateFormat: 'Y-m-d', // 날짜 형식 설정 (예: 2023-09-12)
+        enableTime: false,   // 시간 선택 비활성화
+        minDate: 'today',    // 오늘 이전 날짜 선택 비활성화
+        defaultDate: new Date() // 초기 날짜 설정 (현재 날짜로 설정)
+    
+      });
+      
+      flatpickr(startDateInput, {
+        dateFormat: 'Y-m-d',
+        enableTime: false,
+        minDate: 'today',
+        defaultDate: 'today',
+        locale: 'ko',
+        onChange: handleDateChange, // 날짜 선택 이벤트 핸들러 등록
+      });
+    
+      flatpickr(endDateInput, {
+        dateFormat: 'Y-m-d',
+        enableTime: false,
+        minDate: 'today',
+        defaultDate: 'today',
+        locale: 'ko',
+        onChange: handleDateChange, // 날짜 선택 이벤트 핸들러 등록
+      });
+      
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',//vertical
+        //loop: true,
+        spaceBetween: 10,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+        return direction;
+      }
+      
+      tippy('[component="tooltip"]', {
+        backdrop:false,
+        arrow: false,
+				placement: 'right', // top, right, bottom, left
+				delay: null, //ms
+				//distance: 15, //px or string
+				maxWidth: 350, //px or string
+			
+				// leave these as they are
+				followCursor: false,
+				allowHTML: true,
+        theme: 'bk-tooltip',
+				ignoreAttributes: true,
+        content(reference) {
+          const title = reference.getAttribute('title');
+          reference.removeAttribute('title');
+          return title;
+        },
+        trigger: 'click',// 기본값:"mouseenter focus", 사용가능 값:"mouseenter", "focus", "focusin", "click", "manual"
+      });
+    </script>
+  </body>
+</html>
