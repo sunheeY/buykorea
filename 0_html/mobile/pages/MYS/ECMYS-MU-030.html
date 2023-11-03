@@ -26,8 +26,7 @@
     </div>
     <!--// [E]바로가기 -->
     <!-- [S]ui-wrap -->
-    <!-- [d] 메세지입력화면 ui-message 클래스 추가 -->
-    <div class="ui-wrap ui-message">
+    <div class="ui-wrap">
       <!-- [S]header -->
       <header id="header" class="ui-header">
         <div class="header-area">
@@ -37,7 +36,7 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>메세지관리</span>
+                  <span>리뷰관리</span>
                 </h1>
             </div>
             <div class="my-util">
@@ -124,96 +123,183 @@
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
-            <section class="cp-mms-wrap">
-              <div class="cp-mms-top">
-                <div class="cp-mms-sender">
-                  <strong>Buyer ID</strong>
-                  <span>(Buyer Company Name)</span>
+            <div class="cp-search search-topType cp-wide-type">
+              <form>
+                <div class="search-inner">
+                  <div class="search-row">
+                    <div class="date-group has-dates">
+                      <div class="bk-textfield is-readonly">
+                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                        <div class="bk-control">
+                          <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                          <div class="control-field">
+                            <input type="text" class="iText iDatepicker" id="startDate" placeholder="시작 날짜" readonly="" title="시작 날짜">
+                          </div>
+                          <div class="bk-valid">에러 메시지</div>
+                          <!--// [D]성공:success,에러:error -->
+                        </div>
+                      </div>
+                      <div class="dash">~</div>
+                      <div class="bk-textfield is-readonly">
+                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                        <div class="bk-control">
+                          <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                          <div class="control-field">
+                            <input type="text" class="iText iDatepicker" id="endDate" placeholder="종료 날짜" readonly="" title="종료 날짜">
+                          </div>
+                          <div class="bk-valid">에러 메시지</div>
+                          <!--// [D]성공:success,에러:error -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-group cp-select-auto">
+                     
+                      <div class="bk-select">
+                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                        <label for="label-v01">노출여부</label>
+                        <div class="bk-control">
+                          <select class="" id="label-v01" title="label텍스트값" style="color: rgb(153, 153, 153);">
+                            <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                            <option value="1">전체</option>
+                          </select>
+                          <div class="bk-valid success">에러 메시지</div>
+                          <!--// [D]성공:success,에러:error -->
+                        </div>
+                      </div>
+                      <div class="bk-select">
+                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                        <label for="label-v02">신고여부</label>
+                        <div class="bk-control">
+                          <select class="" id="label-v02" title="label텍스트값" style="color: rgb(153, 153, 153);">
+                            <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                            <option value="1">전체</option>
+                          </select>
+                          <div class="bk-valid success">에러 메시지</div>
+                          <!--// [D]성공:success,에러:error -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-group">
+                      <div class="bk-select">
+                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                        <div class="bk-control">
+                          <select class="" id="" title="label텍스트값" style="color: rgb(153, 153, 153);">
+                            <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                            <option value="1">전체</option>
+                          </select>
+                          <div class="bk-valid success">에러 메시지</div>
+                          <!--// [D]성공:success,에러:error -->
+                        </div>
+                      </div>
+                      <div class="bk-textfield wide textfield-search is-required">
+                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                        <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" name="" value="" placeholder="검색어를 입력해주십시오." class="iText" id="" required=""><!--// [D]focus,disabled,required,readonly -->
+                            <div class="control-btns append-btns">
+                              <button type="button" class="bk-icon-only icon-text-clear">
+                                <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
+                              </button>
+                            </div>
+                            <div class="control-icon append-icon">
+                              <button type="button" class="bk-icon-only icon-search">
+                                <i class="bk-icon bk-icon-searchPrimary">검색</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="bk-mms-btns">
-                  <button type="button" class="bk-btn bk-btn-intbl">지원요청</button>
-                  <button type="button" class="bk-btn bk-btn-intbl-p">나가기</button>
-                </div>
-              </div>
+              </form>
+            </div>
 
-              <div class="cp-mms-body">
-                <div class="bk-mms-list">
-                  <!-- [d] 메세지박스 세트 내 메세지 bk-mine 클래스 추가 -->
-                  <div class="bk-mms-box">
-                    <p class="bk-userid">Hong</p>
-                    <div class="bk-balloon-wrap">
-                      <div class="bk-ball-in">
-                        一个漂亮的女孩正在吃着苹果，头发飘逸地看着窗外。
-                      </div>
-                      <span class="bk-time">09:26</span>
-                    </div>
+            <div class="bk-tbl-toolbar bk-seller-item">
+              <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
+            </div>
+
+            <ul class="cp-list-wrap bk-review-list">
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <div class="bk-thumb-link">
+                    <a href="#">
+                      <p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name name Product name</p>
+                    </a>
                   </div>
-                  <!--// [d] 메세지박스 세트 -->
-
-                  <div class="bk-mms-box bk-mine">
-                    <p class="bk-userid">Gildong</p>
-                    <div class="bk-balloon-wrap">
-                      <div class="bk-ball-in">
-                        적당한 길이의 텍스트
-                      </div>
-                      <span class="bk-time">09:26</span>
-                    </div>
-                    
-                    
-                  </div>
-
-                  <div class="bk-mms-dateline">2023.12.31</div>
-
-                  <div class="bk-mms-box bk-mine">
-                    <p class="bk-userid">Gildong</p>
-                    <div class="bk-balloon-wrap">
-                      <div class="bk-ball-in">
-                        응
-                      </div>
-                      <span class="bk-time">09:26</span>
-                    </div>
-                  </div>
-
-                  <div class="bk-mms-box">
-                    <p class="bk-userid">Hong</p>
-                    <div class="bk-balloon-wrap">
-                      <div class="bk-ball-in">
-                        셀러가 작성한 메시지가 노출되며, 발송한 메시지는 수정/삭제 불가능합니다.
-                      </div>
-                      <span class="bk-time">09:26</span>
-                    </div>
-                  </div>
-
-                  <div class="bk-mms-box bk-mine">
-                    <p class="bk-userid">Gildong</p>
-                    <div class="bk-balloon-wrap">
-                      <div class="bk-ball-in">
-                        New jerseys are very good quality, would buy again. The quality is good of the retro jersey but the color is not the same from the picture. color is a little off.
-                      </div>
-                      <span class="bk-time">09:26</span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="cp-mms-bot">
-                <div class="bk-textfield">
-                  <div class="bk-control">
-                    <div class="control-field">
-                      <input type="text" value="" placeholder="메시지를 입력하세요" class="iText">
-                      <div class="control-icon append-icon">
-                        <button type="button" class="bk-icon-only" onclick="alert('send')">
-                          <i class="bk-icon bk-icon-send">보내기</i>
-                        </button>
-                      </div>
-                    </div>
+                  <div class="bk-review-area">
+                    <!-- [d] 별점 5: bk-rate50, 4: bk-rate40, 3: bk-rate30, 2: bk-rate20, 1: bk-rate10, 0: bk-rate00 클래스명 변경합니다 -->
+                    <!-- [d] 별점 0.5 존재시 클래스 추가 or 스크립트 적용 요청바랍니다 -->
+                    <span class="bk-review-rate bk-rate50"><em>5점</em></span>
+                    <p class="bk-review-txt">New jerseys are very good quality, would buy again. The quality is good of the retro jersey but the color is not the same from the picture</p>
+                    <span class="bk-write-id">a*****z</span>
+                    <span class="bk-write-date">2023.08.08</span>
                   </div>
                 </div>
-              </div>
-            </section>
-            
-           
+                <div class="bk-list-condition">
+                  <dl class="bk-list-prdinfo">
+                    <dt>노출여부</dt>
+                    <dd>Y</dd>
+                  </dl>
+                  <button type="button" class="bk-btn bk-btn-intbl">
+                    <span class="text">신고</span> 
+                  </button>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <div class="bk-thumb-link">
+                    <a href="#">
+                      <p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name name Product name</p>
+                    </a>
+                  </div>
+                  <div class="bk-review-area">
+                    <span class="bk-review-rate bk-rate30"><em>3점</em></span>
+                    <p class="bk-review-txt">New jerseys are very good quality, would buy again. The quality is good of the retro jersey but the color is not the same from the picture</p>
+                    <span class="bk-write-id">a*****z</span>
+                    <span class="bk-write-date">2023.08.08</span>
+                  </div>
+                </div>
+                <div class="bk-list-condition">
+                  <dl class="bk-list-prdinfo">
+                    <dt>노출여부</dt>
+                    <dd>Y</dd>
+                  </dl>
+                  <!-- [d] 반려 : bk-return, 제출 : bk-just-info 클래스 추가 -->
+                  <button type="button" class="bk-btn bk-btn-intbl bk-return">
+                    <span class="text">반려</span> 
+                  </button>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <div class="bk-thumb-link">
+                    <a href="#">
+                      <p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name name Product name</p>
+                    </a>
+                  </div>
+                  <div class="bk-review-area">
+                    <span class="bk-review-rate bk-rate10"><em>1점</em></span>
+                    <p class="bk-review-txt">New jerseys are very good quality, would buy again. The quality is good of the retro jersey but the color is not the same from the picture</p>
+                    <span class="bk-write-id">a*****z</span>
+                    <span class="bk-write-date">2023.08.08</span>
+                  </div>
+                </div>
+                <div class="bk-list-condition">
+                  <dl class="bk-list-prdinfo">
+                    <dt>노출여부</dt>
+                    <dd>Y</dd>
+                  </dl>
+                  <!-- [d] 반려 : bk-return, 제출 : bk-just-info 클래스 추가 -->
+                  <button type="button" class="bk-btn bk-btn-intbl bk-just-info" disabled>
+                    <span class="text">제출</span> 
+                  </button>
+                </div>
+              </li>
+            </ul>
 
           </div>
         </div>
@@ -358,12 +444,14 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
-
+    
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        
+      });
     </script>
   </body>
 </html>
