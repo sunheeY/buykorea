@@ -2926,6 +2926,8 @@
         </div>
       </div>
     </div>
+
+    <div class="flatpicker-dimd dim"></div>
     <!--// [E]alert -->
     <!--// [공통]팝업 -->
     <script src="../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
@@ -2962,17 +2964,29 @@
         dhtml2 += '<button type="button" class="bk-btn btn-primary btn-sticky btn-half">확인</button>';
         dhtml2 += '</div>';
         dhtml2 += '</div>';
+
+
+        var dhtml3 = '<button type="button" class="bk-btn btn-sub btn-text btn-underline-small"><span class="text">오늘</span></button>';
+
         var flatDiv = $('.flatpickr-calendar');
+        var flatMonthDiv = $('.flatpickr-current-month');
 
         if((flatDiv).hasClass('open')){
         
           flatDiv.prepend(dhtml);
           flatDiv.append(dhtml2);
+          $(".flatpicker-dimd").addClass('is-active');
+          flatMonthDiv.prepend(dhtml3);
 
         }else{
           flatDiv.find('.dialog-header').remove();
           flatDiv.find('.dialog-footer').remove();
+          $(".flatpicker-dimd").removeClass('is-active');
+          flatMonthDiv.find('.bk-btn').remove();
         }      
+
+        $('.flatpickr-monthDropdown-months').attr("disabled",true);
+        $('.cur-year').attr("disabled",true);
         
       }
 
@@ -2990,6 +3004,7 @@
         inline: false,  
         onOpen: addDiv, // 바텀레이어추가
         onClose: addDiv, // 바텀레이어삭제
+        
         /*onOpen: function(selectedDates, dateStr, instance) {
           // 위젯이 열릴 때 실행할 코드
         },
