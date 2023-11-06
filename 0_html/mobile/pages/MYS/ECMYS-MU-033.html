@@ -36,13 +36,13 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>배송관리</span>
+                  <span>나의 관심</span>
                 </h1>
             </div>
             <div class="my-util">
-              <button type="button" class="bk-icon-only icon-search">
+              <!-- <button type="button" class="bk-icon-only icon-search">
                 <i class="bk-icon bk-icon-searchBlack">검색</i>
-              </button>
+              </button> -->
               <div class="cp-search search-top" style="display: none">
                 <div class="search-area">
                   <div class="bk-select select-search">
@@ -123,131 +123,28 @@
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
-            <div class="cp-search search-topType cp-wide-type">
-              <form>
-                <div class="search-inner">
-                  <div class="search-row">
-                    <div class="date-group has-dates">
-                      <div class="bk-textfield is-readonly">
-                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
-                        <div class="bk-control">
-                          <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
-                          <div class="control-field">
-                            <input type="text" class="iText iDatepicker" id="startDate" placeholder="시작 날짜" readonly="" title="시작 날짜">
-                          </div>
-                          <div class="bk-valid">에러 메시지</div>
-                          <!--// [D]성공:success,에러:error -->
-                        </div>
-                      </div>
-                      <div class="dash">~</div>
-                      <div class="bk-textfield is-readonly">
-                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
-                        <div class="bk-control">
-                          <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
-                          <div class="control-field">
-                            <input type="text" class="iText iDatepicker" id="endDate" placeholder="종료 날짜" readonly="" title="종료 날짜">
-                          </div>
-                          <div class="bk-valid">에러 메시지</div>
-                          <!--// [D]성공:success,에러:error -->
-                        </div>
-                      </div>
-                    </div>
-                    <div class="search-group">
-                      <div class="bk-select">
-                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
-                        <div class="bk-control">
-                          <select class="" id="" title="label텍스트값">
-                            <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
-                            <option value="1">전체</option>
-                            <option value="2">option2</option>
-                            <option value="3" disabled="">option3</option>
-                            <option value="4">option4</option>
-                          </select>
-                          <div class="bk-valid success">에러 메시지</div>
-                          <!--// [D]성공:success,에러:error -->
-                        </div>
-                      </div>
-                      <div class="bk-textfield wide textfield-search is-required">
-                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                        <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" name="" value="" placeholder="검색어를 입력해주십시오." class="iText" id="" required=""><!--// [D]focus,disabled,required,readonly -->
-                            <div class="control-btns append-btns">
-                              <button type="button" class="bk-icon-only icon-text-clear">
-                                <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
-                              </button>
-                            </div>
-                            <div class="control-icon append-icon">
-                              <button type="button" class="bk-icon-only icon-search">
-                                <i class="bk-icon bk-icon-searchPrimary">검색</i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div class="bk-tab tab-type-sub-line">
+              <div class="tab-menu-wrap">
+                <ul class="list-menu">
+                  <li><button type="button" class="tab-item active"><span>인콰이어리</span></button></li>
+                  <li><button type="button" class="tab-item"><span>카테고리</span></button></li>
+                </ul>
+              </div>
+              <div class="tab-container-wrap bk-sellermy-tabin">
+                <div class="tab-container active">
+                  <ul class="bk-tbl-ul bk-tbl-ul-type2">
+                    <li>
+                      모든 인콰이어리는 <b>인콰이어리 만료일까지만 열람이 가능</b>합니다. 
+                    </li>
+                  </ul>
+                  
                 </div>
-              </form>
-            </div>
-
-            <div class="bk-tbl-toolbar bk-seller-item">
-              <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
-              <div class="toolbar-right">
-                <div class="bk-select select-align">
-                  <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
-                  <div class="bk-control">
-                    <select class="" title="정렬">
-                      <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
-                      <option value="1">전체</option>
-                    </select>
-                  </div>
+                <div class="tab-container">
+                  <span>Menu02</span>
                 </div>
               </div>
             </div>
-
-            <ul class="cp-list-wrap cp-list-type2"> 
-              <li class="bk-list-unit">
-                <div class="bk-list-detail">
-                  <span>송장번호 : <em>0000000</em></span>
-                  <span>주문번호 : <em>ord051023-000012</em></span>
-                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
-                  <ul class="bk-list-option">
-                    <li>바이어명(바이어ID)/회사명 : Person</li>
-                    <li>name(abcdefg@gmail.com) / Company name</li>
-                  </ul>
-                </div>
-                <div class="bk-list-condition">
-                  <span>EMS</span>
-                  <span>2023.01.05 10:05:11</span>
-                </div>
-              </li>
-              <li class="bk-list-unit">
-                <div class="bk-list-detail">
-                  <span>송장번호 : <em>0000000</em></span>
-                  <span>주문번호 : <em>ord051023-000012</em></span>
-                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
-                  <ul class="bk-list-option">
-                    <li>바이어명(바이어ID)/회사명 : Person</li>
-                    <li>name(abcdefg@gmail.com) / Company name</li>
-                  </ul>
-                </div>
-                <div class="bk-list-condition">
-                  <span>기타수단</span>
-                  <span>2023.01.05 10:05:11</span>
-                </div>
-              </li>
-            </ul>
-
-            <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
-              <span class="deco-icon prepend-icon">
-                <i class="bk-icon bk-icon-plus">more</i>
-              </span>
-              <span class="text">더보기</span>
-            </button>
+          
 
           </div>
         </div>
@@ -392,12 +289,14 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
-
+    
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        
+      });
     </script>
   </body>
 </html>

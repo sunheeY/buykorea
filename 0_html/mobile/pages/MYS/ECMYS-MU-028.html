@@ -202,9 +202,12 @@
               </li>
             </ul>
 
-            <div class="cp-info-block">
+            <div class="cp-info-block cp-mms-btns">
               <button type="button" class="bk-btn btn-full btn-mms-del">
                 <span class="text">삭제</span>
+              </button>
+              <button type="button" class="bk-btn btn-full btn-mms-cxl">
+                <span class="text">취소</span>
               </button>
             </div>
 
@@ -362,7 +365,11 @@
         if($('.cp-mms-list').length > 0) {
           $('.btn-mms-del').click(function() {
             $('.cp-mms-list').addClass('cp-mms-del');
-          })
+            $('.cp-mms-btns .btn-mms-cxl').show();
+          });
+          $('.btn-mms-cxl').click(function() {
+            $(this).hide().parents().siblings().removeClass('cp-mms-del');
+          });
         }
       });
     </script>
