@@ -647,9 +647,9 @@ a.btn-text .text {text-decoration: underline;}
 /* [컴퍼넌트] */
 /* [플러그인]달력 */
 .bk-textfield.is-readonly .iText.iDatepicker {padding-right: 42px; background-color: #fff; background-image: url(../../images/web/icon-calendar.svg); background-position: calc(100% - 12px) calc(100% - 10px); background-repeat: no-repeat;}
-.flatpickr-calendar {background: transparent; opacity: 0; display: none; text-align: center; visibility: hidden; padding: 0; -webkit-animation: none; animation: none; direction: ltr; border: 0; font-size: 14px; line-height: 24px; border-radius: 5px; position: static; -webkit-box-sizing: border-box; box-sizing: border-box; -ms-touch-action: manipulation; touch-action: manipulation; background: #fff;  }
+.flatpickr-calendar {background: transparent; opacity: 0; display: none; width:100vw; text-align: center; visibility: hidden; padding: 0; -webkit-animation: none; animation: none; direction: ltr; border: 0; font-size: 14px; line-height: 24px; border-radius: 5px; position: static; -webkit-box-sizing: border-box; box-sizing: border-box; -ms-touch-action: manipulation; touch-action: manipulation; background: #fff;  }
 .flatpickr-calendar.open,
-.flatpickr-calendar.inline {opacity: 1; max-height: 640px; visibility: visible; position:fixed; bottom:0 !important; left:0 !important; top:unset !important}
+.flatpickr-calendar.inline {opacity: 1; max-height: 640px; visibility: visible; position:fixed; bottom:0 !important; left:0 !important; top:unset !important; right:unset !important}
 .flatpickr-calendar.open {display: inline-block; margin-top: 0; z-index: 99999;}
 .flatpickr-calendar.animate.open {-webkit-animation: fpFadeInUp 300ms cubic-bezier(0.23, 1, 0.32, 1); animation: fpFadeInUp 300ms cubic-bezier(0.23, 1, 0.32, 1);}
 .flatpickr-calendar.inline {display: block; position: relative; top: 2px;}
@@ -813,7 +813,7 @@ span.flatpickr-weekday {cursor: default; font-size: 90%; background: transparent
 .flatpickr-weekwrapper .flatpickr-weekday {float: none; width: 100%; line-height: 28px;}
 .flatpickr-weekwrapper span.flatpickr-day,
 .flatpickr-weekwrapper span.flatpickr-day:hover {display: block; width: 100%; max-width: none; color: rgba(57, 57, 57, 0.3); background: transparent; cursor: default; border: none;}
-.flatpickr-innerContainer {display: block; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-sizing: border-box; box-sizing: border-box; overflow: hidden;}
+.flatpickr-innerContainer {display: flex; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-sizing: border-box; box-sizing: border-box; overflow: hidden; text-align: center; justify-content: center;}
 .flatpickr-rContainer {display: inline-block; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box;}
 .flatpickr-time {text-align: center; outline: 0; display: block; height: 0; line-height: 40px; max-height: 40px; -webkit-box-sizing: border-box; box-sizing: border-box; overflow: hidden; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
 .flatpickr-time:after {content: ""; display: table; clear: both;}
@@ -838,8 +838,8 @@ span.flatpickr-weekday {cursor: default; font-size: 90%; background: transparent
 @-webkit-keyframes fpFadeInDown {from {  opacity: 0;   -webkit-transform: translate3d(0, -20px, 0);   transform: translate3d(0, -20px, 0); } to {  opacity: 1;   -webkit-transform: translate3d(0, 0, 0);   transform: translate3d(0, 0, 0); }}
 @keyframes fpFadeInDown {from {  opacity: 0;   -webkit-transform: translate3d(0, -20px, 0);   transform: translate3d(0, -20px, 0); } to {  opacity: 1;   -webkit-transform: translate3d(0, 0, 0);   transform: translate3d(0, 0, 0); }}
 
-@-webkit-keyframes fpFadeInUp {from {  opacity: 0;   -webkit-transform: translate3d(0, -20px, 0);   transform: translate3d(0, -20px, 0); }  to {  opacity: 1;  -webkit-transform: translate3d(0, 0, 0);   transform: translate3d(0, 0, 0);}}
-@keyframes fpFadeInUp {from {  opacity: 0;   -webkit-transform: translate3d(0, -20px, 0);   transform: translate3d(0, -20px, 0);}  to {  opacity: 1;  -webkit-transform: translate3d(0, 0, 0);   transform: translate3d(0, 0, 0);}}
+@-webkit-keyframes fpFadeInUp {from {  opacity: 0;   -webkit-transform: translate3d(0, 20px, 0);   transform: translate3d(0, 20px, 0); }  to {  opacity: 1;  -webkit-transform: translate3d(0, 0, 0);   transform: translate3d(0, 0, 0);}}
+@keyframes fpFadeInUp {from {  opacity: 0;   -webkit-transform: translate3d(0, 20px, 0);   transform: translate3d(0, 20px, 0);}  to {  opacity: 1;  -webkit-transform: translate3d(0, 0, 0);   transform: translate3d(0, 0, 0);}}
 
 /* [컴퍼넌트]타이틀 기본 */
 /* 데이터 없음 */
