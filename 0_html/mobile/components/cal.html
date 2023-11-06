@@ -2937,6 +2937,42 @@
     <!--// 툴팁 설정 -->
     <script src="../../js/common/lib/swiper/swiper-bundle.min.js"></script><!--// 스와이퍼 -->
     <script src="../../js/mobile/ui_common.js"></script>
+
+    <style>
+      .flatpickr-current-month {display: flex; flex-direction: row-reverse; align-items: center; justify-content: center; position: static; width: 100%;}
+      .numInputWrapper {position: static;}
+      .numInputWrapper span {right: unset; opacity: 1; top: 50%; transform: translateY(-50%); border: 0;}
+      .numInputWrapper span.arrowDown,
+      .numInputWrapper span.arrowUp {top: 50%; width: 24px; height: 24px; padding: 0}
+      .numInputWrapper span.arrowDown {left: 0;}
+      .numInputWrapper span.arrowUp {right: 0;}
+      .numInputWrapper span.arrowDown:after,
+      .numInputWrapper span.arrowUp:after {content: ''; border: 0; top: 0; width: 24px; height: 24px;  background: url(../../images/mobile/24x24_icon_arrow.svg)}
+      .numInputWrapper span.arrowDown:after {transform: rotate(180deg);}
+      .flatpickr-months {position: relative;}
+      .flatpickr-months .flatpickr-prev-month,
+      .flatpickr-months .flatpickr-next-month {width: 24px; height: 24px; box-sizing: border-box; top: 50%; transform: translateY(-50%); padding: 3px 0;}
+      .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
+      .flatpickr-months .flatpickr-next-month.flatpickr-prev-month {left: 10%;}
+      .flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
+      .flatpickr-months .flatpickr-next-month.flatpickr-next-month {right: 10%;}
+
+      .flatpickr-current-month {padding: 0;}
+      .flatpickr-current-month .numInputWrapper {display: flex; flex-direction: row-reverse; align-items: baseline; width: 50px;}
+      .flatpickr-current-month .numInputWrapper::before {content: ''; display: block; width: 2px; height: 2px; background-color: #000;}
+      .flatpickr-current-month input.cur-year {padding: 0}
+      .dayContainer,
+      .flatpickr-days {min-width: 360px; width: 100%; max-width: 100%;}
+      .flatpickr-day {width: calc(100% / 7); max-width: calc(100% / 7); flex-basis: calc(100% / 7); font-size: 1.7rem; line-height: 1.41176; letter-spacing: -.34px; padding: 6px 9px 6px 8px;}
+
+      .flatpickr-day.today,
+      .flatpickr-day.selected {background: none; border: 0; position: relative;}
+      .flatpickr-day.today {color: #000;}
+      .flatpickr-day.selected::after,
+      .flatpickr-day.today::after {content: ''; display: block; width: 36px; height: 36px;  border-radius: 50%; position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: -1;}
+      .flatpickr-day.selected::after {background: #0175E4; }
+      .flatpickr-day.today::after {background: #f0f0f0; }
+    </style>
     <script>
       const datepicker = document.getElementById('datepicker');
       const datepicker2 = document.getElementById('datepicker2');
@@ -2949,11 +2985,11 @@
       }
     
       flatpickr(datepicker, {
-        dateFormat: 'Y-m-d H:i', // 날짜 및 시간 형식 설정 (예: 2023-09-12 15:30)
-        enableTime: true,        // 시간 선택 활성화
+        dateFormat: 'Y-m-d', // 날짜 및 시간 형식 설정 (예: 2023-09-12 15:30)
+        enableTime: false,        // 시간 선택 활성화
         time_24hr: true,         // 24시간 형식 사용
-        minDate: 'today',        // 오늘 이전 날짜 선택 비활성화
-        maxDate: '2023-12-31',   // 특정 날짜까지 선택 가능
+        // minDate: 'today',        // 오늘 이전 날짜 선택 비활성화
+        // maxDate: '2023-12-31',   // 특정 날짜까지 선택 가능
         defaultDate: 'today',    // 초기 날짜 설정 (현재 날짜와 시간)
         disable: ['2023-09-15', '2023-09-20'], // 특정 날짜 비활성화
         locale: 'ko',            // 한국어로 지역화
@@ -2970,6 +3006,7 @@
         disableMobile: true,      // 모바일 기기에서 위젯 비활성화
         altInput: true,           // 추가 입력란 활성화
         altFormat: 'F j, Y H:i', // 추가 입력란의 날짜 및 시간 형식
+        todayBtn: true
       });
     
       flatpickr(datepicker2, {
