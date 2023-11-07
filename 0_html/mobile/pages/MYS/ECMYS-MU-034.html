@@ -36,13 +36,13 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>견적 관리</span>
+                  <span>나의 관심</span>
                 </h1>
             </div>
             <div class="my-util">
-              <button type="button" class="bk-icon-only icon-search">
+              <!-- <button type="button" class="bk-icon-only icon-search">
                 <i class="bk-icon bk-icon-searchBlack">검색</i>
-              </button>
+              </button> -->
               <div class="cp-search search-top" style="display: none">
                 <div class="search-area">
                   <div class="bk-select select-search">
@@ -122,8 +122,124 @@
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
-            
-            <a href="#" onclick="dialogOpen('#dialog-full-pop-3')">주문서 상세</a>
+
+            <div class="bk-tab tab-type-sub-line">
+              <div class="tab-menu-wrap">
+                <ul class="list-menu">
+                  <li><button type="button" class="tab-item "><span>인콰이어리</span></button></li>
+                  <li><button type="button" class="tab-item active"><span>카테고리</span></button></li>
+                </ul>
+              </div>
+              <div class="tab-container-wrap bk-sellermy-tabin">
+                <div class="tab-container ">
+                  <ul class="bk-tbl-ul bk-tbl-ul-type2">
+                    <li>
+                      모든 인콰이어리는 <b>인콰이어리 만료일까지만 열람이 가능</b>합니다. 
+                    </li>
+                  </ul>
+
+                  <div class="bk-tbl-toolbar">
+                    <div class="bk-checkbox checkbox-item">
+                        <input type="checkbox" name="checkbox" class="iCheckbox" id="checkbox">
+                        <label for="checkbox"><span class="text">전체선택</span></label>
+                        <button type="button" class="bk-icon-only bk-btn-trash">delete</button>
+                    </div>
+                  </div>
+
+                  <ul class="cp-list-wrap">
+                    <li class="bk-list-unit">
+											<div class="bk-list-detail">
+												<div class="bk-checkbox checkbox-item">
+													<input type="checkbox" name="checkbox01" class="iCheckbox" id="checkbox01">
+													<label for="checkbox01">
+														<p class="bk-list-tit bk-lineclamp-1">INQYYYYMMDD00001_OPN001</p>
+														<ul class="bk-list-option">
+															<li>Buyer Company (Buyer ID)</li>
+															<li><strong>Category</strong>3Depth Category</li>
+															<li><strong>접수일</strong>YYYY.MM.DD</li>
+														</ul>
+													</label>
+												</div>
+											</div>
+                    </li>
+                    <li class="bk-list-unit">
+											<div class="bk-list-detail">
+												<div class="bk-checkbox checkbox-item">
+													<input type="checkbox" name="checkbox01" class="iCheckbox" id="checkbox02">
+													<label for="checkbox02">
+														<p class="bk-list-tit bk-lineclamp-1">INQYYYYMMDD00001_OPN001</p>
+														<ul class="bk-list-option">
+															<li>Buyer Company (Buyer ID)</li>
+															<li><strong>Category</strong>3Depth Category</li>
+															<li><strong>접수일</strong>YYYY.MM.DD</li>
+														</ul>
+													</label>
+												</div>
+											</div>
+                    </li>
+                  </ul>
+                  
+									<button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+										<span class="deco-icon prepend-icon">
+											<i class="bk-icon bk-icon-plus">more</i>
+										</span>
+										<span class="text">더보기</span>
+									</button>
+
+                </div>
+								<div class="tab-container active">
+                  <div class="bk-tbl-toolbar">
+                    <div class="bk-checkbox checkbox-item">
+                        <input type="checkbox" name="checkbox" class="iCheckbox" id="checkbox">
+                        <label for="checkbox"><span class="text">전체선택</span></label>
+                        <button type="button" class="bk-icon-only bk-btn-trash">delete</button>
+                    </div>
+                  </div>
+
+                  <ul class="cp-list-wrap">
+                    <li class="bk-list-unit">
+											<button type="button" class="bk-btn btn-brand btn-text">
+												<span class="deco-icon extra-icon">
+													<i class="bk-icon bk-icon-image-list-delete">20*20지우기</i>
+												</span>
+											</button>
+											<div class="bk-list-detail">
+												<div class="bk-checkbox checkbox-item">
+													<input type="checkbox" name="checkbox01" class="iCheckbox" id="checkbox01">
+													<label for="checkbox01">
+														Apparel & textiles > Apparel Fabric > Cotton Fabric > Blended Cotton Fabric
+													</label>
+												</div>
+											</div>
+                    </li>
+                    <li class="bk-list-unit">
+											<button type="button" class="bk-btn btn-brand btn-text">
+												<span class="deco-icon extra-icon">
+													<i class="bk-icon bk-icon-image-list-delete">20*20지우기</i>
+												</span>
+											</button>
+											<div class="bk-list-detail">
+												<div class="bk-checkbox checkbox-item">
+													<input type="checkbox" name="checkbox01" class="iCheckbox" id="checkbox02">
+													<label for="checkbox02">
+														Apparel & textiles > Apparel Fabric > Cotton Fabric > Blended Cotton Fabric
+													</label>
+												</div>
+											</div>
+                    </li>
+                  </ul>
+                  
+									<button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+										<span class="deco-icon prepend-icon">
+											<i class="bk-icon bk-icon-plus">more</i>
+										</span>
+										<span class="text">더보기</span>
+									</button>
+									
+                </div>
+              </div>
+            </div>
+          
 
           </div>
         </div>
@@ -268,257 +384,14 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
-    <!-- [s] 주문서 상세 -->
-    <div class="bk-dialog dialog-full2" id="dialog-full-pop-3">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">견적서상세</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <section class="cp-info-block">
-              <div class="bk-title">
-                <h2 class="bk-title-lv2">Quotation</h2>
-              </div>
-              <div class="bk-tbl">
-                <table class="tbl tbl-default">
-                  <caption>견적서상세</caption>
-                  <colgroup>
-                    <col style="width: 30vw">
-                    <col>
-                  </colgroup>
-                    <tbody><tr>
-                      <th scope="col">회사명</th>
-                      <td>Company Name</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">인콰이어리번호</th>
-                      <td>I0000000</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">발송일</th>
-                      <td>2023.01.01 10:05</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">열람일</th>
-                      <td>2023.01.01 10:05</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-            
-            <section class="cp-info-block">
-              <div class="bk-accordion accordion-type-line"><!--// [D]기본:single, 다중:multi -->
-                <ul class="list-accordion">
-                  <li class="acc-item">
-                    <div class="acc-header">
-                      <div class="acc-inner">
-                        <div class="left-area">셀러정보</div>
-                        <div class="right-area">
-                          <button type="button" class="bk-icon-only link">
-                            <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="acc-container">
-                      <div class="acc-inner bk-in-table">
-                        <div class="bk-tbl">
-                          <table class="tbl tbl-default">
-                            <caption>셀러정보</caption>
-                            <colgroup>
-                              <col style="width: 30vw">
-                              <col>
-                            </colgroup>
-                            <tbody>
-                              <tr>
-                                <th scope="col">회사명</th>
-                                <td>Company Name</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">이메일</th>
-                                <td>qweasd@gamil.com</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">담당자명</th>
-                                <td>Hong Gil Dong</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">휴대폰번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">전화번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">팩스번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">주소</th>
-                                <td>4312 Wood Road New York, NY 10031</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="acc-item">
-                    <div class="acc-header">
-                      <div class="acc-inner">
-                        <div class="left-area">바이어정보</div>
-                        <div class="right-area">
-                          <button type="button" class="bk-icon-only link">
-                            <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="acc-container">
-                      <div class="acc-inner bk-in-table">
-                        <div class="bk-tbl">
-                          <table class="tbl tbl-default">
-                            <caption>바이어정보</caption>
-                            <colgroup>
-                              <col style="width: 30vw">
-                              <col>
-                            </colgroup>
-                            <tbody>
-                              <tr>
-                                <th scope="col">회사명</th>
-                                <td>Company Name</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">이메일</th>
-                                <td>qweasd@gamil.com</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">담당자명</th>
-                                <td>Hong Gil Dong</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">휴대폰번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">전화번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">팩스번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">주소</th>
-                                <td>4312 Wood Road New York, NY 10031</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            
-            <section class="cp-info-block">
-              <div class="bk-title">
-                <strong class="title">상품정보</strong>
-              </div>
-  
-              <div class="bk-tbl">
-                <table class="tbl tbl-default">
-                  <caption>상품정보</caption>
-                  <colgroup>
-                    <col style="width: 30vw">
-                    <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th scope="col">상품명</th>
-                      <td>지중해 파란꽃게</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">상품상세정보</th>
-                      <td>냉동되어 있는 상태로 배송 가능</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">수량</th>
-                      <td class="bk-align-num">1,000</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">상품금액(USD)</th>
-                      <td class="bk-align-num">300</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">상품금액(USD)</th>
-                      <td class="bk-align-num">270</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-            
-            <section class="cp-info-block">
-              <div class="bk-title">
-                <strong class="title">기타정보</strong>
-              </div>
-              <div class="bk-textarea wide"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
-                <div class="bk-control">
-                  <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
-                  <div class="control-field">
-                    <textarea name="" rows="7" cols="50" placeholder="Sample" class="iTextarea" title="label텍스트값" readonly>
-  1. 항공 또는 선박으로 배송이 가능합니다.
-  2. 냉장되어 있는 상품도 있으며, 냉장된 상품은 가격이 더 비쌉니다.
-  3. 파란꽃게 마리당 최소무게는 1KG입니다.
-                    </textarea><!--// [D]focus,disabled,required,readonly -->
-                    <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
-                  </div>
-                  
-                  <div class="bk-valid">에러 메시지</div>
-                  <!--// [D]성공:success,에러:error -->
-                </div>
-              </div>
-            </section>
-            
-
-            <div class="cp-infobox-gray">
-              <strong><img src="../../../images/mobile/logo_dark_2.svg" alt="buy KOREA"></strong>
-              <p>buyKOREA는 우리나라 기업들이 해외바이어를 대상으로 상품을 홍보하고 온라인으로 연결될 수 있도록 하는 수출지원 플랫폼입니다.</p>
-            </div>
-          </div>
-
-          <div class="dialog-footer">
-            <div class="footer-center"> 
-              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">목록</button>
-              <button type="button" class="bk-btn btn-primary btn-outline btn-half">메세지</button>
-              <button type="button" class="bk-btn btn-primary btn-full">견적서 재작성</button>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <!-- //[e] 주문서 상세 -->
-
+    
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        
+      });
     </script>
   </body>
 </html>

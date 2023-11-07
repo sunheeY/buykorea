@@ -26,7 +26,8 @@
     </div>
     <!--// [E]바로가기 -->
     <!-- [S]ui-wrap -->
-    <div class="ui-wrap">
+    <!-- [d] 메세지입력화면 ui-message 클래스 추가 -->
+    <div class="ui-wrap ui-message">
       <!-- [S]header -->
       <header id="header" class="ui-header">
         <div class="header-area">
@@ -36,13 +37,13 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>견적 관리</span>
+                  <span>메세지관리</span>
                 </h1>
             </div>
             <div class="my-util">
-              <button type="button" class="bk-icon-only icon-search">
+              <!-- <button type="button" class="bk-icon-only icon-search">
                 <i class="bk-icon bk-icon-searchBlack">검색</i>
-              </button>
+              </button> -->
               <div class="cp-search search-top" style="display: none">
                 <div class="search-area">
                   <div class="bk-select select-search">
@@ -122,8 +123,97 @@
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
+
+            <section class="cp-mms-wrap">
+              <div class="cp-mms-top">
+                <div class="cp-mms-sender">
+                  <strong>Buyer ID</strong>
+                  <span>(Buyer Company Name)</span>
+                </div>
+                <div class="bk-mms-btns">
+                  <button type="button" class="bk-btn bk-btn-intbl">지원요청</button>
+                  <button type="button" class="bk-btn bk-btn-intbl-p">나가기</button>
+                </div>
+              </div>
+
+              <div class="cp-mms-body">
+                <div class="bk-mms-list">
+                  <!-- [d] 메세지박스 세트 내 메세지 bk-mine 클래스 추가 -->
+                  <div class="bk-mms-box">
+                    <p class="bk-userid">Hong</p>
+                    <div class="bk-balloon-wrap">
+                      <div class="bk-ball-in">
+                        一个漂亮的女孩正在吃着苹果，头发飘逸地看着窗外。
+                      </div>
+                      <span class="bk-time">09:26</span>
+                    </div>
+                  </div>
+                  <!--// [d] 메세지박스 세트 -->
+
+                  <div class="bk-mms-box bk-mine">
+                    <p class="bk-userid">Gildong</p>
+                    <div class="bk-balloon-wrap">
+                      <div class="bk-ball-in">
+                        적당한 길이의 텍스트
+                      </div>
+                      <span class="bk-time">09:26</span>
+                    </div>
+                    
+                    
+                  </div>
+
+                  <div class="bk-mms-dateline">2023.12.31</div>
+
+                  <div class="bk-mms-box bk-mine">
+                    <p class="bk-userid">Gildong</p>
+                    <div class="bk-balloon-wrap">
+                      <div class="bk-ball-in">
+                        응
+                      </div>
+                      <span class="bk-time">09:26</span>
+                    </div>
+                  </div>
+
+                  <div class="bk-mms-box">
+                    <p class="bk-userid">Hong</p>
+                    <div class="bk-balloon-wrap">
+                      <div class="bk-ball-in">
+                        셀러가 작성한 메시지가 노출되며, 발송한 메시지는 수정/삭제 불가능합니다.
+                      </div>
+                      <span class="bk-time">09:26</span>
+                    </div>
+                  </div>
+
+                  <div class="bk-mms-box bk-mine">
+                    <p class="bk-userid">Gildong</p>
+                    <div class="bk-balloon-wrap">
+                      <div class="bk-ball-in">
+                        New jerseys are very good quality, would buy again. The quality is good of the retro jersey but the color is not the same from the picture. color is a little off.
+                      </div>
+                      <span class="bk-time">09:26</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="cp-mms-bot">
+                <div class="bk-textfield">
+                  <div class="bk-control">
+                    <div class="control-field">
+                      <input type="text" value="" placeholder="메시지를 입력하세요" class="iText">
+                      <div class="control-icon append-icon">
+                        <button type="button" class="bk-icon-only" onclick="alert('send')">
+                          <i class="bk-icon bk-icon-send">보내기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
             
-            <a href="#" onclick="dialogOpen('#dialog-full-pop-3')">주문서 상세</a>
+           
 
           </div>
         </div>
@@ -268,251 +358,6 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
-    <!-- [s] 주문서 상세 -->
-    <div class="bk-dialog dialog-full2" id="dialog-full-pop-3">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">견적서상세</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <section class="cp-info-block">
-              <div class="bk-title">
-                <h2 class="bk-title-lv2">Quotation</h2>
-              </div>
-              <div class="bk-tbl">
-                <table class="tbl tbl-default">
-                  <caption>견적서상세</caption>
-                  <colgroup>
-                    <col style="width: 30vw">
-                    <col>
-                  </colgroup>
-                    <tbody><tr>
-                      <th scope="col">회사명</th>
-                      <td>Company Name</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">인콰이어리번호</th>
-                      <td>I0000000</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">발송일</th>
-                      <td>2023.01.01 10:05</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">열람일</th>
-                      <td>2023.01.01 10:05</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-            
-            <section class="cp-info-block">
-              <div class="bk-accordion accordion-type-line"><!--// [D]기본:single, 다중:multi -->
-                <ul class="list-accordion">
-                  <li class="acc-item">
-                    <div class="acc-header">
-                      <div class="acc-inner">
-                        <div class="left-area">셀러정보</div>
-                        <div class="right-area">
-                          <button type="button" class="bk-icon-only link">
-                            <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="acc-container">
-                      <div class="acc-inner bk-in-table">
-                        <div class="bk-tbl">
-                          <table class="tbl tbl-default">
-                            <caption>셀러정보</caption>
-                            <colgroup>
-                              <col style="width: 30vw">
-                              <col>
-                            </colgroup>
-                            <tbody>
-                              <tr>
-                                <th scope="col">회사명</th>
-                                <td>Company Name</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">이메일</th>
-                                <td>qweasd@gamil.com</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">담당자명</th>
-                                <td>Hong Gil Dong</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">휴대폰번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">전화번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">팩스번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">주소</th>
-                                <td>4312 Wood Road New York, NY 10031</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="acc-item">
-                    <div class="acc-header">
-                      <div class="acc-inner">
-                        <div class="left-area">바이어정보</div>
-                        <div class="right-area">
-                          <button type="button" class="bk-icon-only link">
-                            <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="acc-container">
-                      <div class="acc-inner bk-in-table">
-                        <div class="bk-tbl">
-                          <table class="tbl tbl-default">
-                            <caption>바이어정보</caption>
-                            <colgroup>
-                              <col style="width: 30vw">
-                              <col>
-                            </colgroup>
-                            <tbody>
-                              <tr>
-                                <th scope="col">회사명</th>
-                                <td>Company Name</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">이메일</th>
-                                <td>qweasd@gamil.com</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">담당자명</th>
-                                <td>Hong Gil Dong</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">휴대폰번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">전화번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">팩스번호</th>
-                                <td>+82-212345678</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">주소</th>
-                                <td>4312 Wood Road New York, NY 10031</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            
-            <section class="cp-info-block">
-              <div class="bk-title">
-                <strong class="title">상품정보</strong>
-              </div>
-  
-              <div class="bk-tbl">
-                <table class="tbl tbl-default">
-                  <caption>상품정보</caption>
-                  <colgroup>
-                    <col style="width: 30vw">
-                    <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th scope="col">상품명</th>
-                      <td>지중해 파란꽃게</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">상품상세정보</th>
-                      <td>냉동되어 있는 상태로 배송 가능</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">수량</th>
-                      <td class="bk-align-num">1,000</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">상품금액(USD)</th>
-                      <td class="bk-align-num">300</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">상품금액(USD)</th>
-                      <td class="bk-align-num">270</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-            
-            <section class="cp-info-block">
-              <div class="bk-title">
-                <strong class="title">기타정보</strong>
-              </div>
-              <div class="bk-textarea wide"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
-                <div class="bk-control">
-                  <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
-                  <div class="control-field">
-                    <textarea name="" rows="7" cols="50" placeholder="Sample" class="iTextarea" title="label텍스트값" readonly>
-  1. 항공 또는 선박으로 배송이 가능합니다.
-  2. 냉장되어 있는 상품도 있으며, 냉장된 상품은 가격이 더 비쌉니다.
-  3. 파란꽃게 마리당 최소무게는 1KG입니다.
-                    </textarea><!--// [D]focus,disabled,required,readonly -->
-                    <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
-                  </div>
-                  
-                  <div class="bk-valid">에러 메시지</div>
-                  <!--// [D]성공:success,에러:error -->
-                </div>
-              </div>
-            </section>
-            
-
-            <div class="cp-infobox-gray">
-              <strong><img src="../../../images/mobile/logo_dark_2.svg" alt="buy KOREA"></strong>
-              <p>buyKOREA는 우리나라 기업들이 해외바이어를 대상으로 상품을 홍보하고 온라인으로 연결될 수 있도록 하는 수출지원 플랫폼입니다.</p>
-            </div>
-          </div>
-
-          <div class="dialog-footer">
-            <div class="footer-center"> 
-              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">목록</button>
-              <button type="button" class="bk-btn btn-primary btn-outline btn-half">메세지</button>
-              <button type="button" class="bk-btn btn-primary btn-full">견적서 재작성</button>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <!-- //[e] 주문서 상세 -->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
