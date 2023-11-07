@@ -2941,17 +2941,6 @@
     <script src="../../js/mobile/ui_common.js"></script>
 
     <script>
-      const datepicker = document.getElementById('datepicker');
-      const datepicker2 = document.getElementById('datepicker2');
-      const startDateInput = document.getElementById('startDate');
-      const endDateInput = document.getElementById('endDate');
-
-      
-      function handleDateChange(selectedDates, dateStr, instance) {
-        console.log('선택된 날짜:', dateStr);
-      }
-
-
       function addDiv(){
 
         var dhtml = '<div class="dialog-header">';
@@ -2960,7 +2949,7 @@
         dhtml += '<div class="header-right"><button type="button" class="bk-icon-only bk-btn-cal-close"><i class="bk-icon bk-icon-dialog-close">닫기</i></button></div>';
         dhtml += '</div>';
 
-		    var dhtml2 = '<div class="dialog-footer">';
+        var dhtml2 = '<div class="dialog-footer">';
         dhtml2 += '<div class="footer-center">';
         dhtml2 += '<button type="button" class="bk-btn btn-light-gray btn-sticky btn-half bk-btn-cal-close" >취소</button>';
         dhtml2 += '<button type="button" class="bk-btn btn-primary btn-sticky btn-half">확인</button>';
@@ -2968,13 +2957,13 @@
         dhtml2 += '</div>';
 
 
-        var dhtml3 = '<button type="button" class="bk-btn btn-sub btn-text btn-underline-small"><span class="text">오늘</span></button>';
+        var dhtml3 = '<button type="button" class="bk-btn btn-sub btn-text btn-underline-small btn-select-today"><span class="text">오늘</span></button>';
 
         var flatDiv = $('.flatpickr-calendar');
         var flatMonthDiv = $('.flatpickr-current-month');
 
         if((flatDiv).hasClass('open')){
-        
+
           flatDiv.prepend(dhtml);
           flatDiv.append(dhtml2);
           $(".flatpicker-dimd").addClass('is-active');
@@ -2989,82 +2978,52 @@
 
         $('.flatpickr-monthDropdown-months').attr("disabled",true);
         $('.cur-year').attr("disabled",true);
-        
-      }     
 
-      /* 달력버튼 */
+        }     
 
-      /*$(document).on("click",".bk-btn-cal-close",function () {
-        
-        console.log("clear");
-        flatpickr(datepicker).close();
-        
-        $(".flatpicker-dimd").removeClass('is-active');
-        
-      });*/
-    
-      flatpickr(datepicker, {
-        dateFormat: 'Y-m-d', // 날짜 및 시간 형식 설정 (예: 2023-09-12 15:30)
-        enableTime: false,        // 시간 선택 활성화
-        time_24hr: true,         // 24시간 형식 사용
-        // minDate: 'today',        // 오늘 이전 날짜 선택 비활성화
-        // maxDate: '2023-12-31',   // 특정 날짜까지 선택 가능
-        defaultDate: 'today',    // 초기 날짜 설정 (현재 날짜와 시간)
-        disable: ['', ''], // 특정 날짜 비활성화
-        locale: 'ko',            // 한국어로 지역화
-        inline: false,  
-        onOpen: addDiv, // 바텀레이어추가
-        onClose: addDiv, // 바텀레이어삭제
-        
-        /*onOpen: function(selectedDates, dateStr, instance) {
-          // 위젯이 열릴 때 실행할 코드
-        },
-        onClose: function(selectedDates, dateStr, instance) {
-          // 위젯이 닫힐 때 실행할 코드
-        },
-        onChange: function(selectedDates, dateStr, instance) {
-          // 날짜가 변경될 때 실행할 코드
-        },*/
-        disableMobile: true,      // 모바일 기기에서 위젯 비활성화
-        altInput: true,           // 추가 입력란 활성화
-        altFormat: 'F j, Y H:i', // 추가 입력란의 날짜 및 시간 형식
-        todayBtn: true
-      });
-    
-      flatpickr(datepicker2, {
-        dateFormat: 'Y-m-d', // 날짜 형식 설정 (예: 2023-09-12)
-        enableTime: false,   // 시간 선택 비활성화
-        minDate: '2020-01-01',        // 오늘 이전 날짜 선택 비활성화
-        maxDate: '2099-12-31',   // 특정 날짜까지 선택 가능
-        defaultDate: new Date(), // 초기 날짜 설정 (현재 날짜로 설정)
-        locale: 'ko',            // 한국어로 지역화
-        onOpen: addDiv, // 바텀레이어추가
-        onClose: addDiv, // 바텀레이어삭제
-    
-      });
-      
-      flatpickr(startDateInput, {
-        dateFormat: 'Y-m-d',
-        enableTime: false,
-        minDate: 'today',
-        defaultDate: new Date(),
-        locale: 'ko',
-        onChange: handleDateChange, // 날짜 선택 이벤트 핸들러 등록
-        onOpen: addDiv, // 바텀레이어추가
-        onClose: addDiv, // 바텀레이어삭제
-      });
-    
-      flatpickr(endDateInput, {
-        dateFormat: 'Y-m-d',
-        enableTime: false,
-        minDate: 'today',
-        defaultDate: new Date(),
-        locale: 'ko',
-        onChange: handleDateChange, // 날짜 선택 이벤트 핸들러 등록
-        onOpen: addDiv, // 바텀레이어추가
-        onClose: addDiv, // 바텀레이어삭제
-      });
+        //flatpickr 옵션 설정
+        //달력 공통설정 지정해놓음
+        config = {
+          inline:false,
+          dateFormat: 'Y-m-d',
+          enableTime: false,
+          minDate: 'today',
+          defaultDate: new Date(),
+          locale: 'ko',
+          onOpen: addDiv, // 바텀레이어추가
+          onClose: addDiv, // 바텀레이어삭제
+          onReady: function ( dateObj, dateStr, instance ) {
+            $(document).on("click",".bk-btn-cal-close", () => {
+                //'닫기,취소' 클릭
+                datepicker.clear();
+                datepicker2.clear();
+                startDateInput.clear();
+                endDateInput.clear();
+                
+                datepicker.close();
+                datepicker2.close();
+                startDateInput.close();
+                endDateInput.close();
+            });
+            $(document).on("click",".btn-select-today", () => { 
+                //'오늘'클릭
+                datepicker.setDate(new Date);
+                datepicker2.setDate(new Date);
+                startDateInput.setDate(new Date);
+                endDateInput.setDate(new Date);
+            });
+          },
+          onChange: function ( dateObj, dateStr, instance ) {
+          },
+        };
 
+        //flatpickr 생성
+        const datepicker = $('#datepicker').flatpickr(config);
+        const datepicker2 = $('#datepicker2').flatpickr(config);
+        const startDateInput = $('#startDate').flatpickr(config);
+        const endDateInput = $('#endDate').flatpickr(config);
+
+        //flatpickr end
      
       
       const swiper = new Swiper('.swiper', {

@@ -113,7 +113,7 @@
 .cp-list-wrap .bk-list-detail .bk-list-option,
 .cp-list-thumb .bk-thumb-link {-ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / span 2;}
 .cp-list-wrap .bk-list-detail a .bk-list-tit,
-.bk-thumb-link a .bk-list-tit {text-decoration: underline;}
+.bk-thumb-link a .bk-list-tit {/*text-decoration: underline;*/}
 .cp-list-wrap .bk-list-detail span {color: var(--color-sub);}
 .cp-list-wrap .bk-list-detail span em {white-space: nowrap;}
 .cp-list-wrap .bk-list-detail .bk-list-tit {font-size: 1.6rem; margin: 16px 0 8px; color: var(--color-brand)}
