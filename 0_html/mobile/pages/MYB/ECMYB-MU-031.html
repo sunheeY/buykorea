@@ -460,12 +460,64 @@
         <div class="dialog-footer">
           <div class="footer-center">
             <button type="button" class="bk-btn btn-light-gray btn-sticky btn-half" role="dialogCloseBtn">취소</button>
-            <button type="button" class="bk-btn btn-primary btn-sticky btn-half">저장</button>
+            <button type="button" class="bk-btn btn-primary btn-sticky btn-half" onclick="dialogOpen('#dialog-modal-delivery-save')">저장</button>
           </div>
         </div>
       </div>
     </div>
     <!-- //[e] delivery-manage-->
+
+
+    <!-- [s] save delivery-->
+    <div class="bk-dialog dim dialog-modal" id="dialog-modal-delivery-save">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">배송지 삭제</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            등록된 배송지를 삭제하시겠습니까?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert-save-delivery');">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] save delivery-->
+
+
+    <!-- [s] 배송지 저장-->
+    <div class="bk-dialog dim alert" id="alert-save-delivery">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>배송지가 등록되었습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 배송지 저장-->
+
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>

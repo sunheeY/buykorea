@@ -676,7 +676,7 @@
     <!-- //[D]dialog-modal-ok -->
 
     <!-- [S]dialog-modal-write -->
-    <div class="bk-dialog dim dialog-modal dialog-modal-review" id="dialog-review-write"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
+    <div class="bk-dialog dim dialog-modal dialog-modal-review" id="dialog-review-write">
       <div class="dialog-inner">
         <div class="dialog-header">
           <div class="header-left">
@@ -694,11 +694,11 @@
           <div class="dialog-contents">
             <!-- [S] 별점-->
             <fieldset class="bk-rate size-midium">
-              <input type="radio" id="rating_modal5" name="rating" value="5"><label for="rating_modal5"><span class="text ir-su">5점</span></label>
-              <input type="radio" id="rating_modal4" name="rating" value="4"><label for="rating_modal4"><span class="text ir-su">4점</span></label>
+              <input type="radio" id="rating_modal1" name="rating" value="1"><label for="rating_modal1"><span class="text ir-su">5점</span></label>
+              <input type="radio" id="rating_modal2" name="rating" value="2"><label for="rating_modal2"><span class="text ir-su">4점</span></label>
               <input type="radio" id="rating_modal3" name="rating" value="3"><label for="rating_modal3"><span class="text ir-su">3점</span></label>
-              <input type="radio" id="rating_modal2" name="rating" value="2"><label for="rating_modal2"><span class="text ir-su">2점</span></label>
-              <input type="radio" id="rating_modal1" name="rating" value="1"><label for="rating_modal1"><span class="text ir-su">1점</span></label>
+              <input type="radio" id="rating_modal4" name="rating" value="4"><label for="rating_modal4"><span class="text ir-su">2점</span></label>
+              <input type="radio" id="rating_modal5" name="rating" value="5"><label for="rating_modal5"><span class="text ir-su">1점</span></label>
             </fieldset>
             <!-- // [D] 별점-->
             <!-- [S] review textarea-->
@@ -728,7 +728,7 @@
         <div class="dialog-footer">
           <div class="footer-center">
             <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">Cancel</button>
-            <button type="button" class="bk-btn btn-primary btn-modal btn-half">Save</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#dialog-modal-write')">Save</button>
           </div>
         </div>
       </div>
@@ -736,7 +736,7 @@
     <!--// [E]dialog-modal-write -->
 
     <!-- [S]dialog-modal-edit -->
-    <div class="bk-dialog dim dialog-modal dialog-modal-review" id="dialog-review-edit"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
+    <div class="bk-dialog dim dialog-modal dialog-modal-review" id="dialog-review-edit">
       <div class="dialog-inner">
         <div class="dialog-header">
           <div class="header-left">
@@ -788,12 +788,67 @@
         <div class="dialog-footer">
           <div class="footer-center">
             <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">Cancel</button>
-            <button type="button" class="bk-btn btn-primary btn-modal btn-half">Save</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#dialog-modal-write')">Save</button>
           </div>
         </div>
       </div>
     </div>
     <!--// [E]dialog-modal-edit -->
+
+    <!-- [s] write / Editing-->
+    <div class="bk-dialog dim dialog-modal" id="dialog-modal-write">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">Review Editing</h1><!--리뷰작성인 경우 타이틀 명 Review Writing-->
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            리뷰를 수정하시겠습니까?
+            <!--리뷰 작성 시 : 리뷰를 작성하시겠습니까?-->
+            <!--리뷰 수정 시 : 리뷰를 수정하시겠습니까?-->
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert-confirm');">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] write / Editing-->
+
+    <!--[S]comfirm -->
+    <div class="bk-dialog dim alert" id="alert-confirm">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>
+                리뷰 수정 처리 되었습니다.
+                <!--리뷰 작성 저장 시 : 리뷰 작성 처리 되었습니다.-->
+                <!--리뷰 수정 저장 시 : 리뷰 수정 처리 되었습니다.-->
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// [E]comfirm -->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

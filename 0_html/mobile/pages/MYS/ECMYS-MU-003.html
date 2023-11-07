@@ -178,7 +178,7 @@
                         <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
                         <div class="bk-control">
                           <div class="control-field">
-                            <input type="text" name="" value="" placeholder="검색어를 입력해주십시오." class="iText" id="" required=""><!--// [D]focus,disabled,required,readonly -->
+                            <input type="text" name="" value="" placeholder="" class="iText" id="" required="">
                             <div class="control-btns append-btns">
                               <button type="button" class="bk-icon-only icon-text-clear">
                                 <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
@@ -198,6 +198,24 @@
               </form>
             </div>
 
+            <div class="bk-tbl-toolbar">
+              <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
+              <div class="toolbar-right">
+                <div class="bk-select select-align">
+                  <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                  <div class="bk-control">
+                    <select class="" title="정렬">
+                      <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                      <option value="1">전체</option>
+                      <option value="2">임시저장</option>
+                      <option value="3">승인대기</option>
+                      <option value="4">승인완료</option>
+                      <option value="5">승인거절</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
             <ul class="cp-list-wrap cp-list-thumb">
               <li class="bk-list-unit">
                 <div class="bk-list-detail">
@@ -213,13 +231,9 @@
                 </div>
                 <div class="bk-list-condition">
                   <ul class="bk-list-prdinfo">
-                    <li>홍길동</li>
                     <li>임시저장</li>
-                    <li>비노출</li>
+                    <li>D-29</li>
                   </ul>
-                  <button type="button" class="bk-btn bk-btn-intbl">
-                    <span class="text">미리보기</span> 
-                  </button>
                 </div>
               </li>
               <li class="bk-list-unit">
@@ -236,13 +250,9 @@
                 </div>
                 <div class="bk-list-condition">
                   <ul class="bk-list-prdinfo">
-                    <li>홍길동</li>
-                    <li>임시저장</li>
-                    <li>비노출</li>
+                    <li>승인완료</li>
+                    <li>D-29</li>
                   </ul>
-                  <button type="button" class="bk-btn bk-btn-intbl">
-                    <span class="text">미리보기</span> 
-                  </button>
                 </div>
               </li>
               <li class="bk-list-unit">
@@ -259,13 +269,9 @@
                 </div>
                 <div class="bk-list-condition">
                   <ul class="bk-list-prdinfo">
-                    <li>홍길동</li>
                     <li>임시저장</li>
-                    <li>비노출</li>
+                    <li>D-29</li>
                   </ul>
-                  <button type="button" class="bk-btn bk-btn-intbl">
-                    <span class="text">미리보기</span> 
-                  </button>
                 </div>
               </li>
             </ul>
@@ -275,7 +281,7 @@
               </span>
               <span class="text">더보기</span>
             </button>
-            <button type="button" class="bk-btn btn-primary btn-sticky btn-full bk-last-elmt">
+            <button type="button" class="bk-btn btn-primary btn-sticky btn-full bk-last-elmt" onclick="dialogOpen('#dialog-modal-delete-delivery')">
               <span class="text">상품복구</span>
             </button>
 
@@ -422,6 +428,75 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+
+    <!-- [s] 복구경고-->
+    <div class="bk-dialog dim alert" id="alert-re">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>상품 먼저 선택해주세요.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 복구경고-->
+
+    <!-- [s] 복구안내-->
+    <div class="bk-dialog dim dialog-modal" id="dialog-modal-delete-delivery">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">상품복구</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            선택한 상품을 복구하시겠습니까?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert-re-confirm');">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 복구안내-->
+
+    <!-- [s] 복구완료-->
+    <div class="bk-dialog dim alert" id="alert-re-confirm">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>선택한 상품이 복구 완료하였습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 복구완료-->
+
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>

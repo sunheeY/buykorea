@@ -268,6 +268,54 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+
+    <div class="bk-dialog dim dialog-modal" id="dialog-modal"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">결제내역 등록</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            입력된 내용으로 결제내역을 등록하시겠습니까?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert')">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bk-dialog dim alert" id="alert">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>결제내역을 등록했습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- [S]결제내역등록 -->
     <div class="bk-dialog dialog-full2" id="dialog-full-pop">
       <div class="dialog-inner">
         <div class="dialog-header">
@@ -362,20 +410,22 @@
                   </dd>
                 </dl>
               </div>
-            </section>
+            </section>            
 
-            
-
+          </div>
           <div class="dialog-footer">
             <div class="footer-center"> 
               <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">취소</button>
-              <button type="button" class="bk-btn btn-primary btn-half">저장</button>
+              <button type="button" class="bk-btn btn-primary btn-half" onclick="dialogOpen('#dialog-modal')">저장</button>
             </div>
           </div>
         </div>
         
       </div>
     </div>
+    <!--// [E]결제내역등록 -->
+
+    
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

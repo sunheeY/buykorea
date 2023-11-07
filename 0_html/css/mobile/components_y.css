@@ -113,9 +113,12 @@
 .cp-list-wrap .bk-list-detail .bk-list-option,
 .cp-list-thumb .bk-thumb-link {-ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / span 2;}
 .cp-list-wrap .bk-list-detail a .bk-list-tit,
-.bk-thumb-link a .bk-list-tit {text-decoration: underline;}
+.bk-thumb-link a .bk-list-tit {/*text-decoration: underline;*/}
 .cp-list-wrap .bk-list-detail span {color: var(--color-sub);}
-.cp-list-wrap .bk-list-detail span em {white-space: nowrap;}
+.cp-list-wrap .bk-list-detail span:nth-of-type(1) {max-width:96%; }
+.cp-list-wrap .bk-list-detail span em {/*white-space: nowrap;*/display:block}
+.cp-list-wrap .bk-list-detail.no-wrap span {max-width:100%; } /*배송지관리에는 텍스트 줄바꿈이 필요없어서 별도 클래스 추가합니다.: 11-07 김신애*/
+.cp-list-wrap .bk-list-detail.no-wrap span em{white-space: nowrap; display:inline-block } 
 .cp-list-wrap .bk-list-detail .bk-list-tit {font-size: 1.6rem; margin: 16px 0 8px; color: var(--color-brand)}
 .cp-list-wrap .bk-list-condition {display: flex; justify-content: space-between; background-color: var(--color-background); padding: 13px 12px; line-height: 1.57143; color: var(--color-sub); position: relative;}
 .cp-list-wrap .bk-list-condition .bk-btn-intbl {position: absolute; top: 10px; right: 12px;}
@@ -193,8 +196,10 @@
 .tbl-delivery th:not(th:first-child),
 .tbl-delivery td:not(td:first-child) {border-left: 1px solid var(--color-gray)}
 .bk-delivery-time {width: fit-content; margin: 0 auto; text-align: right;}
+.bk-delivery-time p{ color:var(--color-sub)}
 .bk-delivery-info {display: flex; flex-direction: column; align-items: flex-end; text-align: left;}
-.bk-delivery-info .bk-delivery-ico {display: flex; justify-content: flex-end; align-items: center; margin: -9px -12px 8px 0; padding: 3px; font-size: 1rem; line-height: 1.8; color: var(--color-sub); gap: 5px; border: 1px solid var(--color-gray); border-width: 0 0 1px 1px;}
+.bk-delivery-info .bk-delivery-ico {display: flex; justify-content: flex-end; align-items: center; margin: -9px -12px 8px 0; padding: 3px; font-size: 1rem; line-height: 1.8; color: var(--color-sub); gap: 5px; border: 1px solid var(--color-gray); border-width: 0 1px 1px 1px;}
+.bk-delivery-info .bk-delivery-ico span{ display:block; margin-top:4px}
 .bk-delivery-info p:not(.bk-delivery-ico) {width: 100%;}
 
 .tbl td .bk-thumb-link {display: flex; flex-direction: column; row-gap : 8px;}
