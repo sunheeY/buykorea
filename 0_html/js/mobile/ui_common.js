@@ -382,6 +382,8 @@ var dialogClose = function(e) {
 	dialog.removeClass('is-active');
 }
 
+
+
 // Masking
 function toggleMasking() {
   // 마스킹 토글 버튼에 대한 이벤트 리스너 추가
@@ -430,6 +432,8 @@ function license_file_del(){
   $(".file-list .upload-license-name").text("");
   $(".file-list").removeClass('is-active');
 }
+
+
 
 //배송지 리스트 삭제
 $('[role="addressCloseBtn"]').on('click', function(e){

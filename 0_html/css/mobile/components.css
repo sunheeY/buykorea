@@ -648,7 +648,7 @@ a.btn-text .text {text-decoration: underline;}
 /* [컴퍼넌트] */
 /* [플러그인]달력 */
 .bk-textfield.is-readonly .iText.iDatepicker {padding-right: 42px; background-color: #fff; background-image: url(../../images/web/icon-calendar.svg); background-position: calc(100% - 12px) calc(100% - 10px); background-repeat: no-repeat;}
-.flatpickr-calendar {background: transparent; opacity: 0; display: none; width:100%; text-align: center; visibility: hidden; padding: 0; -webkit-animation: none; animation: none; direction: ltr; border: 0; font-size: 17px; line-height: 32px; border-radius: var(--radius-default) var(--radius-default) 0 0; position: static; -webkit-box-sizing: border-box; box-sizing: border-box; -ms-touch-action: manipulation; touch-action: manipulation; background: #fff; padding-top:32px  }
+.flatpickr-calendar {background: transparent; opacity: 0; display: none; width:100%; text-align: center; visibility: hidden; padding: 0; -webkit-animation: none; animation: none; direction: ltr; border: 0; font-size: 17px; line-height: 32px; border-radius: 12px 12px 0 0; position: static; -webkit-box-sizing: border-box; box-sizing: border-box; -ms-touch-action: manipulation; touch-action: manipulation; background: #fff; padding-top:32px  }
 .flatpickr-calendar.open,
 .flatpickr-calendar.inline {opacity: 1; max-height: 100vh; visibility: visible; position:fixed; bottom:0 !important; left:0 !important; top:unset !important; right:unset !important; }
 .flatpickr-calendar.open {display: inline-block; margin-top: 0; z-index: 99999;}

@@ -2951,17 +2951,18 @@
         console.log('선택된 날짜:', dateStr);
       }
 
+
       function addDiv(){
 
         var dhtml = '<div class="dialog-header">';
         dhtml += '<div class="header-left">';
         dhtml += '<div class="bk-title"><h1 class="title">날짜선택</h1></div></div>';
-        dhtml += '<div class="header-right"><button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn"><i class="bk-icon bk-icon-dialog-close">닫기</i></button></div>';
+        dhtml += '<div class="header-right"><button type="button" class="bk-icon-only bk-btn-cal-close"><i class="bk-icon bk-icon-dialog-close">닫기</i></button></div>';
         dhtml += '</div>';
 
 		    var dhtml2 = '<div class="dialog-footer">';
         dhtml2 += '<div class="footer-center">';
-        dhtml2 += '<button type="button" class="bk-btn btn-light-gray btn-sticky btn-half" role="dialogCloseBtn">취소</button>';
+        dhtml2 += '<button type="button" class="bk-btn btn-light-gray btn-sticky btn-half bk-btn-cal-close" >취소</button>';
         dhtml2 += '<button type="button" class="bk-btn btn-primary btn-sticky btn-half">확인</button>';
         dhtml2 += '</div>';
         dhtml2 += '</div>';
@@ -2989,9 +2990,18 @@
         $('.flatpickr-monthDropdown-months').attr("disabled",true);
         $('.cur-year').attr("disabled",true);
         
-      }
+      }     
 
+      /* 달력버튼 */
 
+      /*$(document).on("click",".bk-btn-cal-close",function () {
+        
+        console.log("clear");
+        flatpickr(datepicker).close();
+        
+        $(".flatpicker-dimd").removeClass('is-active');
+        
+      });*/
     
       flatpickr(datepicker, {
         dateFormat: 'Y-m-d', // 날짜 및 시간 형식 설정 (예: 2023-09-12 15:30)
@@ -3055,6 +3065,7 @@
         onClose: addDiv, // 바텀레이어삭제
       });
 
+     
       
       const swiper = new Swiper('.swiper', {
         // Optional parameters
