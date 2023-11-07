@@ -129,10 +129,7 @@
                   <div class="search-row">
                     <div class="date-group has-dates">
                       <div class="bk-textfield is-readonly">
-                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
                         <div class="bk-control">
-                          <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
                           <div class="control-field">
                             <input type="text" class="iText iDatepicker" id="startDate" placeholder="시작 날짜" readonly="" title="시작 날짜">
                           </div>
@@ -142,10 +139,7 @@
                       </div>
                       <div class="dash">~</div>
                       <div class="bk-textfield is-readonly">
-                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
                         <div class="bk-control">
-                          <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
                           <div class="control-field">
                             <input type="text" class="iText iDatepicker" id="endDate" placeholder="종료 날짜" readonly="" title="종료 날짜">
                           </div>
@@ -160,9 +154,10 @@
                         <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
                         <label for="label-v01">노출여부</label>
                         <div class="bk-control">
-                          <select class="" id="label-v01" title="label텍스트값" style="color: rgb(153, 153, 153);">
-                            <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                          <select class="" id="label-v01" title="노출여부">
                             <option value="1">전체</option>
+                            <option value="2">Y</option>
+                            <option value="3">N</option>
                           </select>
                           <div class="bk-valid success">에러 메시지</div>
                           <!--// [D]성공:success,에러:error -->
@@ -172,9 +167,11 @@
                         <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
                         <label for="label-v02">신고여부</label>
                         <div class="bk-control">
-                          <select class="" id="label-v02" title="label텍스트값" style="color: rgb(153, 153, 153);">
-                            <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                          <select class="" id="label-v02" title="신고여부">
                             <option value="1">전체</option>
+                            <option value="2">접수</option>
+                            <option value="3">승인</option>
+                            <option value="4">반려</option>
                           </select>
                           <div class="bk-valid success">에러 메시지</div>
                           <!--// [D]성공:success,에러:error -->
@@ -185,12 +182,9 @@
                       <div class="bk-select">
                         <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
                         <div class="bk-control">
-                          <select class="" id="" title="label텍스트값" style="color: rgb(153, 153, 153);">
-                            <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                          <select class="" id="" title="label텍스트값">
                             <option value="1">전체</option>
                           </select>
-                          <div class="bk-valid success">에러 메시지</div>
-                          <!--// [D]성공:success,에러:error -->
                         </div>
                       </div>
                       <div class="bk-textfield wide textfield-search is-required">
