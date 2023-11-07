@@ -125,6 +125,7 @@
             <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-modal-delete-delivery')">배송지 삭제확인</button>           
             <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-delete-delivery')">배송지삭제</button>           
             <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-count')">배송지등록50개</button>            
+            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-delivery')">배송지등록 유효성</button>            
           </div>
         </div>
         <!-- [S]Top버튼 -->
@@ -297,7 +298,7 @@
         </div>
       </div>
     </div>
-    <!-- //[e] write / Editing-->
+    <!-- //[e] delete delivery-->
 
 
     <!-- [s] 배송지 삭제-->
@@ -318,7 +319,7 @@
       </div>
     </div>
     <!-- //[e] 배송지 삭제-->
-    
+
     <!-- [s] 배송지 카운트-->
     <div class="bk-dialog dim alert" id="alert-count">
       <div class="dialog-inner">
@@ -338,6 +339,32 @@
       </div>
     </div>
     <!-- //[e] 배송지 카운트-->
+
+    <!-- [s] 배송지등록 유효성 알림-->
+    <div class="bk-dialog dim alert" id="alert-delivery">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>배송지명을 입력해주세요.</p><!--배송지명 빈칸일 경우 [중복확인] 선택-->
+              <!--<p>배송지명이 중복되었습니다. 다른 배송지명을 입력해주세요.</p>--><!--배송지명 중복일 경우 [중복확인] 선택-->
+              <!--<p>배송지명 [중복확인] 을 해주세요.</p>--><!--배송지명 [중복확인] 을 하지 않고 [저장] 버튼 선택-->
+              <!--<p>담당자명을 입력해주세요.</p>--><!--담당자명을 입력하지 않고 [저장] 버튼 선택-->
+              <!--<p>휴대폰번호를 입력해주세요.</p>--><!--휴대폰번호를 입력하지 않고 [저장] 버튼 선택-->
+              <!--<p>주소(Street) 를 입력해주세요.</p>--><!--주소(Street) 를 입력하지 않고 [저장] 버튼 선택-->
+              <!--<p>주소(City/State) 를 입력해주세요.</p>--><!--주소(City/State) 를 입력하지 않고 [저장] 버튼 선택-->
+              <!--<p>주소(Zip/Postal) 를 입력해주세요.</p>--><!--주소(Zip/Postal) 를 입력하지 않고 [저장] 버튼 선택-->
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 배송지등록 유효성 알림-->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
