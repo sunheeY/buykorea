@@ -269,6 +269,7 @@
 .bk-switch {}
 .bk-switch label {display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer;}
 .bk-switch [type="checkbox"] {appearance: none; position: relative; /* border: max(2px, 0.1em) solid gray; border-radius: 1.25em; */ background-color: #ddd; width: 40px; height: 12px; border-radius: 9px;}
+.bk-switch [type="checkbox"] ~ .text{ display:none}
 .bk-switch [type="checkbox"] ~ .text.off,
 .bk-switch [type="checkbox"]:checked ~ .text.on {display: inline-block;}
 .bk-switch [type="checkbox"] ~ .text.on,
@@ -281,6 +282,24 @@
 .bk-switch [type="checkbox"]:checked::before {background-color: #0175e4; left: calc(100% - 18px);}
 .bk-switch [type="checkbox"]:focus-visible {}
 .bk-switch [type="checkbox"]:enabled:hover {}
+
+.bk-switch-r {}
+.bk-switch-r label {display: inline-flex; align-items: center; gap: 12px; cursor: pointer;}
+.bk-switch-r [type="checkbox"] {appearance: none; position: relative; /* border: max(2px, 0.1em) solid gray; border-radius: 1.25em; */ background-color: #ddd; width: 40px; height: 12px; border-radius: 9px;}
+.bk-switch-r [type="checkbox"] ~ .text{ display:none}
+.bk-switch-r [type="checkbox"] ~ .text.off,
+.bk-switch-r [type="checkbox"]:checked ~ .text.on {display: inline-block;}
+.bk-switch-r [type="checkbox"] ~ .text.on,
+.bk-switch-r [type="checkbox"]:checked ~ .text.off {display: none;}
+.bk-switch-r [type="checkbox"]::before {content: ""; position: absolute; top: -5px; left: calc(100% - 18px);; width: 22px; height: 22px; border-radius: 50%; transform: scale(1); background-color: #F7F7F8; box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.1); transition: left 250ms linear;}
+.bk-switch-r [type="checkbox"]:disabled {border-color: lightgray; opacity: 0.7; cursor: not-allowed;}
+.bk-switch-r [type="checkbox"]:disabled:before {background-color: lightgray;}
+.bk-switch-r [type="checkbox"]:disabled + span {opacity: 0.7; cursor: not-allowed;}
+.bk-switch-r [type="checkbox"]:checked {background-color: #94c4f2; border-color: #94c4f2;}
+.bk-switch-r [type="checkbox"]:checked::before {background-color: #0175e4; left:0px }
+.bk-switch-r [type="checkbox"]:focus-visible {}
+.bk-switch-r [type="checkbox"]:enabled:hover {}
+
 /* 별점 */
 .bk-rate {display: inline-flex; position: relative; flex-direction: row-reverse;}
 .bk-rate > input {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px; opacity: 0;}
@@ -1316,7 +1335,7 @@ body.overflow{overflow-y:hidden;}
 .bk-review-list .top-area{padding:12px 0;  display:flex; }
 .bk-review-list .thumb{width:56px; height:56px; overflow:hidden; border-radius: var(--radius-default); border:1px solid var(--color-light-gray); display:flex; flex-shrink: 0;}
 .bk-review-list .thumb img{width:100%; object-fit: cover;}
-.bk-review-list p{font-size:16px; /*text-decoration: underline;*/ line-height:1.5; margin-left:12px;}
+.bk-review-list p{font-size:16px; text-decoration: underline; line-height:1.5; margin-left:12px;}
 .bk-review-list .bottom-area{background:var(--color-background); padding:0 10px 0 12px;  display:flex; justify-content: space-between; align-items: center; width:100%; min-height:48px; box-sizing: border-box;}
 .bk-accordion.accordion-type-title-link .acc-container {}
 .bk-accordion.accordion-type-title-link .acc-container .acc-inner {padding: 20px 0 0 0;}

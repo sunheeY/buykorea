@@ -624,7 +624,7 @@ function logoFileDelete(){
 
 
 //select 박스 색상 변경
-$(document).ready(function() {
+$(document).ready(function(e) {
   $('select').css('color','#999');
   $('select').change(function() {
      var current = $('select').val();
