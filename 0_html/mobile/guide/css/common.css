@@ -124,6 +124,10 @@ a:hover {
   color: #258dec;
 }
 
+.write_n {
+  background:#fafafa;
+}
+
 /* layout */
 #wrap {
   position: relative;

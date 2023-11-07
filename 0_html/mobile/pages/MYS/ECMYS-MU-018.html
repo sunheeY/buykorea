@@ -320,7 +320,7 @@
             <section class="cp-info-block">
               <div class="bk-accordion accordion-type-line"><!--// [D]기본:single, 다중:multi -->
                 <ul class="list-accordion">
-                  <li class="acc-item">
+                  <li class="acc-item is-active">
                     <div class="acc-header">
                       <div class="acc-inner">
                         <div class="left-area">셀러정보</div>
@@ -375,7 +375,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="acc-item">
+                  <li class="acc-item is-active">
                     <div class="acc-header">
                       <div class="acc-inner">
                         <div class="left-area">바이어정보</div>
@@ -553,7 +553,7 @@
             <div class="footer-center"> 
               <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">목록</button>
               <button type="button" class="bk-btn btn-primary btn-outline btn-half">메세지</button>
-              <button type="button" class="bk-btn btn-primary btn-full">인보이스 작성</button>
+              <button type="button" class="bk-btn btn-primary btn-full" onclick="dialogOpen('#dialog-modal-invoice')">인보이스 작성</button>
             </div>
           </div>
         </div>
@@ -561,6 +561,36 @@
       </div>
     </div>
     <!-- //[e] 주문서 상세 -->
+
+    <!-- [S] 인보이스 메세지 -->
+    <div class="bk-dialog dim dialog-modal" id="dialog-modal-invoice">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">견적서 발송</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            입력된 내용으로 견적서를 발송하시겠습니까?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert')">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[E] 인보이스 메세지 -->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

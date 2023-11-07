@@ -9,7 +9,7 @@
     />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>buyKOREA for Seller</title>
+    <title>buyKOREA for Buyers</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="../../../css/mobile/common.css" />
     <noscript></noscript>
@@ -36,9 +36,9 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>결제관리</span>
+                  <span>Buyer Sign in</span>
                 </h1>
-            </div> 
+            </div>
             <div class="my-util">
               <button type="button" class="bk-icon-only icon-search">
                 <i class="bk-icon bk-icon-searchBlack">검색</i>
@@ -118,13 +118,11 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-mypage"><!--// [D]회원 class추가 -->
+      <main id="container" class="ui-container ui-member"><!--// [D]회원 class추가 -->
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
-          <div class="ui-contents" id="contents">
-            
-            <a href="#" onclick="dialogOpen('#dialog-full-pop-3')">결제내역 상세</a>
-
+          <div class="ui-contents" id="contents">                    
+            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-invoice')">인보이스 유효성</button>            
           </div>
         </div>
         <!-- [S]Top버튼 -->
@@ -268,213 +266,18 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
-    <!-- [s] 결제내역 상세 -->
-    <div class="bk-dialog dialog-full2" id="dialog-full-pop-3">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">결제내역 상세</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <section class="cp-info-block">
-              <div class="bk-tbl">
-                <table class="tbl tbl-default">
-                  <caption>결제내역 상세</caption>
-                  <colgroup>
-                    <col style="width: 30vw">
-                    <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th scope="col">결제번호</th>
-                      <td>pay051023-000012</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">결제일시</th>
-                      <td>2023.01.01 10:05:11</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">결제수단</th>
-                      <td>VISA</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">배송방식 및 운임종류</th>
-                      <td>EMS(FOB)</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">인보이스번호</th>
-                      <td>I0000000</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">인콰이어리 번호</th>
-                      <td>inq051023-000002</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
 
-            <section class="cp-info-block">
-              <div class="bk-title">
-                <strong class="title">상품정보</strong>
-              </div>
-  
-              <div class="bk-tbl">
-                <table class="tbl tbl-default">
-                  <caption>상품정보</caption>
-                  <colgroup>
-                    <col style="width: 30vw">
-                    <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th scope="col">상품명</th>
-                      <td>지중해 파란꽃게</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">상품상세정보</th>
-                      <td>냉동되어 있는 상태로 배송 가능</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">수량</th>
-                      <td class="bk-align-num">1,000</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">상품금액(USD)</th>
-                      <td class="bk-align-num">300</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">견적금액(USD)</th>
-                      <td class="bk-align-num">270</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">배송비(USD)</th>
-                      <td class="bk-align-num">900</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">기타비(USD)</th>
-                      <td class="bk-align-num">1,500</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">기타비 상세내용</th>
-                      <td>각종 수수료 비용 및 환율변동에 따른 비용 추가</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">총 견적금액(USD)</th>
-                      <td class="bk-align-num bk-txt-final">11,270</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-            
-            <section class="cp-info-block">
-              <div class="bk-title">
-                <strong class="title">바이어정보(배송지 정보)</strong>
-              </div>
-              <div class="bk-tbl">
-                <table class="tbl tbl-default">
-                  <caption>바이어정보(배송지 정보)</caption>
-                  <colgroup>
-                    <col style="width: 30vw">
-                    <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th scope="col">회사명</th>
-                      <td>Company Name</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">이메일</th>
-                      <td>qweasd@gamil.com</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">담당자명</th>
-                      <td>Hong Gil Dong</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">휴대폰번호</th>
-                      <td>+82-212345678</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">전화번호</th>
-                      <td>+82-212345678</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">팩스번호</th>
-                      <td>+82-212345678</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">국가</th>
-                      <td>US(UNITED STATE)</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">주소</th>
-                      <td>4312 Wood Road New York, NY 10031</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
 
-          </div>
-
-          <div class="dialog-footer">
-            <div class="footer-center"> 
-              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">목록</button>
-              <button type="button" class="bk-btn btn-brand btn-outline btn-half" onclick="dialogOpen('#dialog-modal-cancel')">결제취소요청 반려</button>
-              <button type="button" class="bk-btn btn-primary btn-full" onclick="dialogOpen('#dialog-modal-cancel2')">결제취소요청 승인</button>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <!-- //[e] 결제내역 상세 -->
-
-    <div class="bk-dialog dim dialog-modal" id="dialog-modal-cancel">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">결제취소요청 반려</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            결제취소요청을 반려할 경우,<br>상태값은 결제취소반려로 변경이 됩니다.<br><br>결제취소요청을 반려하시겠습니까?
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
-            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert')">확인</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bk-dialog dim alert" id="alert">
+    <!-- [s] 인보이스 발송 유효성 알림-->
+    <div class="bk-dialog dim alert" id="alert-invoice">
       <div class="dialog-inner">
         <div class="dialog-container">
           <div class="dialog-contents">
             <div class="message">
-              <p>결제취소요청이 반려되었습니다.</p>
+              <p>견적금액을 입력해주세요.</p><!--견적금액을 입력하지 않고 [인보이스 발송] 버튼 선택-->
+              <!--<p>배송비를 입력해주세요.</p>--><!--배송비를 입력하지 않고 [인보이스 발송] 버튼 선택-->
+              <!--<p>기타비를 입력해주세요.</p>--><!--기타비를 입력하지 않고 [인보이스 발송] 버튼 선택-->
+              <!--<p>배송예정기간을 입력해주세요.</p>--><!--배송예정기간을 입력하지 않고 [인보이스 발송] 버튼 선택-->
             </div>
           </div>
         </div>
@@ -485,51 +288,7 @@
         </div>
       </div>
     </div>
-
-    <div class="bk-dialog dim dialog-modal" id="dialog-modal-cancel2">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">결제취소요청 승인</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            결제취소요청을 승인할 경우,<br>상태값은 결제취소승인으로 변경이 됩니다.<br>단, 실제 결제취소는<br>KOPS 사이트에서 취소하거나<br>바이어와 협의된 방식으로<br>결제대금을 지급해야 합니다.<br><br>결제취소요청을 승인하시겠습니까?
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
-            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert2')">확인</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bk-dialog dim alert" id="alert2">
-      <div class="dialog-inner">
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="message">
-              <p>결제취소요청이 승인되었습니다.</p>
-            </div>
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- //[e] 인보이스 발송 알림-->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

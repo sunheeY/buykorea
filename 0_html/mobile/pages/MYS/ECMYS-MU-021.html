@@ -268,6 +268,8 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+
+    <!-- [s] 인보이스작성-->
     <div class="bk-dialog dialog-full2" id="dialog-full-pop">
       <div class="dialog-inner">
         <div class="dialog-header">
@@ -536,6 +538,8 @@
                       <div class="bk-control">
                         <select class="" id="" title="결제유효기간">
                           <option value="1">2 weeks</option>
+                          <option value="2">4 weeks</option>
+                          <option value="3">8 weeks</option>
                         </select>
                       </div>
                     </div>
@@ -563,6 +567,19 @@
                       <div class="bk-control">
                         <select class="" id="" title="배송방식">
                           <option value="1">EMS</option>
+                          <option value="2">FedEx</option>
+                          <option value="3">China</option>
+                          <option value="4">US Post</option>
+                          <option value="5">Canada Post</option>
+                          <option value="6">Royal Mail</option>
+                          <option value="7">Deutsche Post</option>
+                          <option value="8">Aliexpress</option>
+                          <option value="9">UP</option>
+                          <option value="10">Shein</option>
+                          <option value="11">>Pitney Bowes</option>
+                          <option value="12">eBay</option>
+                          <option value="13">>Amazon</option>
+                          <option value="14">기타방식</option>
                         </select>
                       </div>
                     </div>
@@ -591,6 +608,17 @@
                       <div class="bk-control">
                         <select class="" id="" title="운임종류">
                           <option value="1">선택</option>
+                          <option value="2">EXW</option>
+                          <option value="3">FCA</option>
+                          <option value="4">FAS</option>
+                          <option value="5">FOB</option>
+                          <option value="6">CFR</option>
+                          <option value="7">CIF</option>
+                          <option value="8">CPT</option>
+                          <option value="9">CIP</option>
+                          <option value="10">DAP</option>
+                          <option value="11">DPU</option>
+                          <option value="12">DDP</option>
                         </select>
                       </div>
                     </div>
@@ -689,7 +717,52 @@
         </div>
       </div>
     </div>
-    <!-- //[e] 견적서 등록/수정-->
+    <!-- //[e] 인보이스작성-->
+
+    <div class="bk-dialog dim dialog-modal" id="dialog-modal">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">인보이스 작성</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            입력된 내용으로 인보이스를 발송하시겠습니까?
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert')">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bk-dialog dim alert" id="alert">
+      <div class="dialog-inner">
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="message">
+              <p>인보이스를 발송하였습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

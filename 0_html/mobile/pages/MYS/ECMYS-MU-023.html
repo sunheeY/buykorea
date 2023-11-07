@@ -161,9 +161,11 @@
                           <select class="" id="" title="label텍스트값">
                             <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
                             <option value="1">전체</option>
-                            <option value="2">option2</option>
-                            <option value="3" disabled="">option3</option>
-                            <option value="4">option4</option>
+                            <option value="2">주문번호</option>
+                            <option value="3">상품명</option>
+                            <option value="4">바이어명</option>
+                            <option value="5">바이어ID</option>
+                            <option value="6">회사명</option>
                           </select>
                           <div class="bk-valid success">에러 메시지</div>
                           <!--// [D]성공:success,에러:error -->
@@ -174,7 +176,7 @@
                         <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
                         <div class="bk-control">
                           <div class="control-field">
-                            <input type="text" name="" value="" placeholder="검색어를 입력해주십시오." class="iText" id="" required=""><!--// [D]focus,disabled,required,readonly -->
+                            <input type="text" name="" value="" placeholder="" class="iText" id="" required="">
                             <div class="control-btns append-btns">
                               <button type="button" class="bk-icon-only icon-text-clear">
                                 <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
@@ -203,6 +205,10 @@
                     <select class="" title="정렬">
                       <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
                       <option value="1">전체</option>
+                      <option value="2">결제완료</option>
+                      <option value="3">결제취소요청</option>
+                      <option value="4">결제취소승인</option>
+                      <option value="5">결제취소반려</option>
                     </select>
                   </div>
                 </div>
@@ -214,7 +220,7 @@
                 <div class="bk-list-detail">
                   <span>결제번호 : <em>pay051023-000012</em></span>
                   <span>2023.01.05 10:05:11</span>
-                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
+                  <a href="ECMYS-MU-025.html"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
                   <ul class="bk-list-option">
                     <li>주문금액($) : 100.00</li>
                     <li>바이어/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
@@ -231,7 +237,7 @@
                 <div class="bk-list-detail">
                   <span>결제번호 : <em>pay051023-000012</em></span>
                   <span>2023.01.05 10:05:11</span>
-                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
+                  <a href="ECMYS-MU-025.html"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
                   <ul class="bk-list-option">
                     <li>주문금액($) : 100.00</li>
                     <li>바이어/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
@@ -239,7 +245,41 @@
                 </div>
                 <div class="bk-list-condition">
                   <span class="bk-txt-red">결제취소반려(UnionPay)</span>
+                  <button type="button" class="bk-btn bk-btn-intbl" onclick="dialogOpen('#dialog-delivery-num')">
+                    <span class="text">송장등록</span> 
+                  </button>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>결제번호 : <em>pay051023-000012</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <a href="ECMYS-MU-025.html"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
+                  <ul class="bk-list-option">
+                    <li>주문금액($) : 100.00</li>
+                    <li>바이어/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>결제승인(기타방식 결제수단 표시)</span>
                   <button type="button" class="bk-btn bk-btn-intbl">
+                    <span class="text">송장수정</span> 
+                  </button>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>결제번호 : <em>pay051023-000012</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <a href="ECMYS-MU-025.html"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
+                  <ul class="bk-list-option">
+                    <li>주문금액($) : 100.00</li>
+                    <li>바이어/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>결제완료(Alipay)</span>
+                  <button type="button" class="bk-btn bk-btn-intbl" onclick="dialogOpen('#dialog-delivery-num')">
                     <span class="text">송장등록</span> 
                   </button>
                 </div>
@@ -396,6 +436,75 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+
+    <!-- [s] 송장번호 등록 -->
+    <div class="bk-dialog has-btmBtn dialog-full" id="dialog-delivery-num">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">송장번호 등록</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <section class="cp-info-block">
+              <div class="bk-guide-area">
+                <p>* 최대 10개까지 등록이 가능합니다.</p>
+                <button type="button" class="bk-btn bk-btn-intbl" id="bk-add-invoicenum">
+                  <span class="text">송장번호 추가</span> 
+                </button>
+              </div>
+              <div class="cp-invoicenum-wrap">
+                <div class="bk-input-list">
+                  <button type="button" class="bk-btn">
+                      <i class="bk-icon bk-icon-list-delete">삭제</i>
+                  </button>
+                  <dl>
+                    <dt>배송방식</dt>
+                    <dd>
+                      <div class="bk-select">
+                        <div class="bk-control">
+                          <select class="" id="" title="배송방식">
+                            <option value="1">EMS</option>
+                          </select>
+                        </div>
+                      </div>
+                    </dd>
+                    <dt>송장번호</dt>
+                    <dd>
+                      <div class="bk-textfield">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" class="iText" title="송장번호">
+                          </div>
+                        </div>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+          
+        </div>
+        <div class="dialog-footer">
+          <div class="footer-center">
+            <button type="button" class="bk-btn btn-light-gray btn-sticky btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-sticky btn-half">저장</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 송장번호 등록 -->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
