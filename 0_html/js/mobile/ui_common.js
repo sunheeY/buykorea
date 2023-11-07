@@ -635,3 +635,89 @@ $(document).ready(function(e) {
      }
   }); 
 });
+
+
+/* 달력 */
+function addDiv(){
+
+  var dhtml = '<div class="dialog-header">';
+  dhtml += '<div class="header-left">';
+  dhtml += '<div class="bk-title"><h1 class="title">날짜선택</h1></div></div>';
+  dhtml += '<div class="header-right"><button type="button" class="bk-icon-only bk-btn-cal-close"><i class="bk-icon bk-icon-dialog-close">닫기</i></button></div>';
+  dhtml += '</div>';
+
+  var dhtml2 = '<div class="dialog-footer">';
+  dhtml2 += '<div class="footer-center">';
+  dhtml2 += '<button type="button" class="bk-btn btn-light-gray btn-sticky btn-half bk-btn-cal-close" >취소</button>';
+  dhtml2 += '<button type="button" class="bk-btn btn-primary btn-sticky btn-half">확인</button>';
+  dhtml2 += '</div>';
+  dhtml2 += '</div>';
+
+
+  var dhtml3 = '<button type="button" class="bk-btn btn-sub btn-text btn-underline-small btn-select-today"><span class="text">오늘</span></button>';
+
+  var flatDiv = $('.flatpickr-calendar');
+  var flatMonthDiv = $('.flatpickr-current-month');
+
+  if((flatDiv).hasClass('open')){
+
+    flatDiv.prepend(dhtml);
+    flatDiv.append(dhtml2);
+    $(".flatpicker-dimd").addClass('is-active');
+    flatMonthDiv.prepend(dhtml3);
+
+  }else{
+    flatDiv.find('.dialog-header').remove();
+    flatDiv.find('.dialog-footer').remove();
+    $(".flatpicker-dimd").removeClass('is-active');
+    flatMonthDiv.find('.bk-btn').remove();
+  }      
+
+  $('.flatpickr-monthDropdown-months').attr("disabled",true);
+  $('.cur-year').attr("disabled",true);
+
+  }     
+
+  //flatpickr 옵션 설정
+  //달력 공통설정 지정해놓음
+  config = {
+    inline:false,
+    dateFormat: 'Y-m-d',
+    enableTime: false,
+    minDate: '2000-01-01',
+    defaultDate: new Date(),
+    locale: 'ko',
+    onOpen: addDiv, // 바텀레이어추가
+    onClose: addDiv, // 바텀레이어삭제
+    onReady: function ( dateObj, dateStr, instance ) {
+      $(document).on("click",".bk-btn-cal-close", () => {
+          //'닫기,취소' 클릭
+          datepicker.clear();
+          datepicker2.clear();
+          startDateInput.clear();
+          endDateInput.clear();
+          
+          datepicker.close();
+          datepicker2.close();
+          startDateInput.close();
+          endDateInput.close();
+      });
+      $(document).on("click",".btn-select-today", () => { 
+          //'오늘'클릭
+          datepicker.setDate(new Date);
+          datepicker2.setDate(new Date);
+          startDateInput.setDate(new Date);
+          endDateInput.setDate(new Date);
+      });
+    },
+    onChange: function ( dateObj, dateStr, instance ) {
+    },
+  };
+
+  //flatpickr 생성
+  const datepicker = $('#datepicker').flatpickr(config);
+  const datepicker2 = $('#datepicker2').flatpickr(config);
+  const startDateInput = $('#startDate').flatpickr(config);
+  const endDateInput = $('#endDate').flatpickr(config);
+
+  //flatpickr end
