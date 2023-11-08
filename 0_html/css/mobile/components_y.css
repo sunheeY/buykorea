@@ -336,14 +336,17 @@
 .cp-prd-sort .btn-filter::before {background-image: url(../../images/mobile/icon-sort-filter.svg);}
 
 .cp-prd-list {display: flex; flex-wrap: wrap;}
-.bk-prd-unit {width: 50%; box-sizing: border-box; border: 1px solid var(--color-gray); border-width: 0; padding: 24px 0;}
+.bk-prd-unit {width: 50%; box-sizing: border-box; border-bottom: 1px solid var(--color-gray); padding: 24px 0;}
 .bk-prd-unit:nth-child(odd) {padding-right: calc(15px / 2);}
 .bk-prd-unit:nth-child(even) {padding-left: calc(15px / 2);}
 
-.bk-prd-unit:nth-child(4n) {border-width: 1px 0; }
-.bk-prd-unit:nth-child(4n-1) {border-width: 1px 0; }
-.bk-prd-unit:first-child,
-.bk-prd-unit:last-child:not(:nth-child(odd)) {border: 0;}
+/* .bk-prd-unit:nth-child(1) {border-width: 1px 0; }
+.bk-prd-unit:nth-child(4n-1) {border-width: 1px 0; } */
+/* .bk-prd-unit:first-child, */
+/* .bk-prd-unit:nth-last-child(even):first-child, */
+.bk-prd-unit:last-child {border: 0;}
+/* .bk-prd-unit:last-child {border: 0;} */
+
 .ui-prd .bk-btn-more {border-top: 1px solid var(--color-gray); margin: 0; padding-top: 24px;}
 .bk-prd-unit .bk-thumb-link {position: relative; display: block;}
 .bk-prd-unit .bk-thumb-link .thumb {width: unset; height: unset; position: relative; padding-bottom: 100%; overflow: hidden;}
