@@ -340,6 +340,7 @@ var $checkCount = $(".checkbox-wrap");
 
 var $checkHeadCnt = $checkCount.find("input[type='checkbox']").length;
 
+console.log($checkHeadCnt);
 /* 전체선택 */
 $checkHead.click(function(){
     var $bodyPutCk = $checkHead.is(":checked");
@@ -365,6 +366,65 @@ $checkBody.click(function(){
   }
 
 });
+
+
+//체크박스제어
+$("[id^='check-']").on('change', function(){
+  $this_checkbox = $(this);
+  var id_name = $this_checkbox.attr('id');
+  var checked = $('[id="'+id_name+'"]').is(":checked");
+
+  $("[id^='"+id_name+"']").prop('checked', checked );
+  checkbox_checked(id_name, checked);
+});
+
+function checkbox_checked(id_name, checked){
+  if(id_name.indexOf('-') == -1) return;
+
+  var parent_id_name = id_name.substr(0, id_name.lastIndexOf('-') );
+  var friend_id = id_name.substr(0, (id_name.lastIndexOf('-') + 1) );
+  
+  if(checked){
+     var i=0;
+     var node = $('input:checkbox:regex(id,'+ friend_id + '[0-9]$)');
+     if(node.length == node.filter(":checked").length)
+        $('#' + parent_id_name ).prop('checked', true );
+  }else{
+     $("[id^='"+id_name+"']").each(function(index, item){
+        var parent_id_name = id_name.substr(0, id_name.lastIndexOf('-'));
+        
+        child_checked = $(this).is(':checked');
+        if(!child_checked && parent_id_name != 'check'){
+           $('#'+parent_id_name).prop('checked', child_checked );
+           return false;
+        }
+     });
+  }
+  checkbox_checked(parent_id_name, checked);
+}
+
+// 클래스명에 숫자가 들어간것 select
+jQuery.expr[':'].regex = function(elem, index, match){
+  var matchParams = match[3].split(','),
+  validLabels = /^(data|css):/,
+  attr = {
+        method: matchParams[0].match(validLabels) ?
+                       matchParams[0].split(':')[0] : 'attr',
+           property: matchParams.shift().replace(validLabels,'')
+  },
+  regexFlags = 'ig',
+  regex = new RegExp(matchParams.join('').replace(/^\s+|\s+$/g,''), regexFlags);
+  return regex.test(jQuery(elem)[attr.method](attr.property));
+}
+
+//빈값체크
+function fx_empty(value){
+  if(value == null || value == "" || value == "undefined" || value == undefined)
+     return true;
+
+  return false;
+}
+//체크박스제어
 
 // 레이어 팝업
 var dialogOpen = function(e) {
