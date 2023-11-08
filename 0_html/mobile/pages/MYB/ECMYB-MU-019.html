@@ -307,16 +307,16 @@
                       <td>VISA</td>
                     </tr>
                     <tr>
+                      <th scope="col">승인번호</th>
+                      <td>123456789</td>
+                    </tr>
+                    <tr>
                       <th scope="col">배송방식 및 운임종류</th>
                       <td>EMS(FOB)</td>
                     </tr>
                     <tr>
-                      <th scope="col">인보이스번호</th>
-                      <td>I0000000</td>
-                    </tr>
-                    <tr>
                       <th scope="col">인콰이어리 번호</th>
-                      <td>inq051023-000002</td>
+                      <td>0000000</td>
                     </tr>
                   </tbody>
                 </table>
@@ -394,12 +394,12 @@
                       <td>Company Name</td>
                     </tr>
                     <tr>
-                      <th scope="col">이메일</th>
-                      <td>qweasd@gamil.com</td>
-                    </tr>
-                    <tr>
                       <th scope="col">담당자명</th>
                       <td>Hong Gil Dong</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">이메일</th>
+                      <td>qweasd@gamil.com</td>
                     </tr>
                     <tr>
                       <th scope="col">휴대폰번호</th>
@@ -431,8 +431,7 @@
           <div class="dialog-footer">
             <div class="footer-center"> 
               <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">목록</button>
-              <button type="button" class="bk-btn btn-brand btn-outline btn-half" onclick="dialogOpen('#dialog-modal-cancel')">결제취소요청 반려</button>
-              <button type="button" class="bk-btn btn-primary btn-full" onclick="dialogOpen('#dialog-modal-cancel2')">결제취소요청 승인</button>
+              <button type="button" class="bk-btn btn-primary btn-half" >결제취소 요청</button>
             </div>
           </div>
         </div>
@@ -440,96 +439,6 @@
       </div>
     </div>
     <!-- //[e] 결제내역 상세 -->
-
-    <div class="bk-dialog dim dialog-modal" id="dialog-modal-cancel">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">결제취소요청 반려</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            결제취소요청을 반려할 경우,<br>상태값은 결제취소반려로 변경이 됩니다.<br><br>결제취소요청을 반려하시겠습니까?
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
-            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert')">확인</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bk-dialog dim alert" id="alert">
-      <div class="dialog-inner">
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="message">
-              <p>결제취소요청이 반려되었습니다.</p>
-            </div>
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bk-dialog dim dialog-modal" id="dialog-modal-cancel2">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">결제취소요청 승인</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            결제취소요청을 승인할 경우,<br>상태값은 결제취소승인으로 변경이 됩니다.<br>단, 실제 결제취소는<br>KOPS 사이트에서 취소하거나<br>바이어와 협의된 방식으로<br>결제대금을 지급해야 합니다.<br><br>결제취소요청을 승인하시겠습니까?
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
-            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert2')">확인</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bk-dialog dim alert" id="alert2">
-      <div class="dialog-inner">
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="message">
-              <p>결제취소요청이 승인되었습니다.</p>
-            </div>
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
