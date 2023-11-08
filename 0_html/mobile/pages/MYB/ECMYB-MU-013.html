@@ -378,7 +378,7 @@
                 </div>
                 <ul class="bk-tbl-ul bk-tbl-ul-type2">
                   <li>
-                    견적에 관련된 추가 내용(거래조건, 배송조건 등)이 있을 경우 작성하세요.
+                    주문에 관련된 추가 내용(거래조건, 배송조건 등)이 있을 경우 작성하세요.
                   </li>
                 </ul>
                 <div class="bk-textarea wide bk-has-byte"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
@@ -400,11 +400,9 @@
                 </div>
               </section>
             </div>
-            <div class="dialog-footer">
-              <div class="footer-center">
-                <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">취소</button>
-                <button type="button" class="bk-btn btn-primary btn-half"  onclick="dialogOpen('#dialog-modal');">견적서 발송</button>
-              </div>
+            <div class="bk-btn-group bk-tMg-middle2">
+              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">취소</button>
+              <button type="button" class="bk-btn btn-primary btn-half">주문서 발송</button>
             </div>
 
           </div>
@@ -548,101 +546,6 @@
       <!--// [E]footer -->
     </div>
     <!--// [E]ui-wrap -->
-
-    <!-- [S]팝업 -->
-
-    <div class="bk-dialog dim dialog-modal" id="dialog-modal"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">견적서 발송</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            입력된 내용으로 견적서를 발송하시겠습니까?
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">취소</button>
-            <button type="button" class="bk-btn btn-primary btn-modal btn-half" onclick="dialogOpen('#alert')">확인</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bk-dialog dim alert" id="alert"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
-      <div class="dialog-inner">
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="message">
-              <p>견적서를 발송하였습니다.</p>
-            </div>
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- [s] 출고지 목록 -->
-    <div class="bk-dialog dialog-full2" id="dialog-full-pop-2">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">출고지 목록</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <!-- [S] Form-->
-            <div class="bk-tbl">
-              <ul class="cp-list-wrap bk-list-type2">
-                <li class="bk-list-unit">
-                  <strong>서울 출고지</strong>
-                  <p>4312 Wood Road New York, NY 10031</p>
-                  <button type="button" class="bk-btn bk-btn-icon btn-text" onclick="dialogOpen('#dialog-full-pop-2');">
-                    <span class="text">선택</span>
-                    <span class="deco-icon append-icon">
-                      <i class="bk-icon bk-icon-detail bk-icon-detail-black">detail</i>
-                    </span>
-                  </button>
-                </li>
-                <li class="bk-list-unit">
-                  <strong>서울 출고지</strong>
-                  <p>4312 Wood Road New York, NY 10031</p>
-                  <button type="button" class="bk-btn bk-btn-icon btn-text" onclick="dialogOpen('#dialog-full-pop-2');">
-                    <span class="text">선택</span>
-                    <span class="deco-icon append-icon">
-                      <i class="bk-icon bk-icon-detail bk-icon-detail-black">detail</i>
-                    </span>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        </div>
-    </div>
-    <!-- [e] 출고지 목록 -->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
