@@ -513,8 +513,8 @@
               </div>
               <ul class="bk-tbl-ul bk-tbl-ul-type2">
                 <li>
-                  기타방식으로 선택할 경우, 바이어와 오프라인으로 소통하여 배송방식을 진행해야 합니다. <br>
-                  결제가 완료된 경우에도, 송장등록을 하실 수 없습니다.
+                  기타방식으로 선택할 경우, 바이어와 오프라인으로 소통하여 결제를 진행해야 합니다.<br>
+                  결제가 완료되었을 경우, 결제관리 메뉴에서 결제내역을 추가해 주시면 됩니다.
                 </li>
               </ul>
               <div class="bk-input-list">
@@ -565,7 +565,7 @@
                   <dd>
                     <div class="bk-select">
                       <div class="bk-control">
-                        <select class="" id="" title="배송방식">
+                        <select class="" id="tempid-dlvy-type" title="배송방식">
                           <option value="1">EMS</option>
                           <option value="2">FedEx</option>
                           <option value="3">China</option>
@@ -603,7 +603,8 @@
                     </div>
                   </dd>
                   <dt>운임종류</dt>
-                  <dd>
+                  <!-- [d] 배송방식이 '기타'일 경우 bk-select-dlvy에 slct-etc 클래스 추가합니다; 하단 스크립트는 동작의 이해를 위함입니다. 실제 아이디 등을 적용하시기 바랍니다. -->
+                  <dd class="bk-select-dlvy">
                     <div class="bk-select">
                       <div class="bk-control">
                         <select class="" id="" title="운임종류">
@@ -620,6 +621,13 @@
                           <option value="11">DPU</option>
                           <option value="12">DDP</option>
                         </select>
+                      </div>
+                    </div>
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" value="" class="iText bk-align-num" title="기타비(USD)">
+                        </div>
                       </div>
                     </div>
                   </dd>
@@ -768,7 +776,13 @@
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        $('#tempid-dlvy-type').change(function() {
+          if ($('#tempid-dlvy-type').val() == 14) {
+            $('.bk-select-dlvy').addClass('slct-etc');
+          } else $('.bk-select-dlvy').removeClass('slct-etc');
+        })
+      });
     </script>
   </body>
 </html>
