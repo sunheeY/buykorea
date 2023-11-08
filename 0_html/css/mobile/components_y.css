@@ -220,6 +220,11 @@
 
 .bk-textarea.is-readonly .iTextarea {background-color: #fff;}
 
+/* 인보이스 작성 */
+.bk-select-dlvy.slct-etc .bk-select,
+.bk-select-dlvy .bk-textfield {display: none;}
+.bk-select-dlvy.slct-etc .bk-textfield {display: inline-flex;}
+
 /* 회색박스 */
 * + .cp-infobox-gray {margin-top: 40px;}
 .cp-infobox-gray {background: var(--color-background2); padding: 24px 20px; border-radius: calc(var(--radius-default) * 2);}
