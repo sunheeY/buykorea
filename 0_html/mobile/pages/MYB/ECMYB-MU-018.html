@@ -9,7 +9,7 @@
     />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>buyKOREA for Buyers</title>
+    <title>buyKOREA for Seller</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="../../../css/mobile/common.css" />
     <noscript></noscript>
@@ -36,7 +36,7 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>Buyer Sign in</span>
+                  <span>결제관리</span>
                 </h1>
             </div>
             <div class="my-util">
@@ -118,11 +118,167 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-member ui-seller"><!--// [D]회원 class추가 -->
+      <main id="container" class="ui-container ui-mypage ui-buyer"><!--// [D]회원 class추가 -->
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
-          <div class="ui-contents" id="contents">                    
-            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-invoice')">인보이스 유효성</button>            
+          <div class="ui-contents" id="contents">
+
+            <div class="cp-search search-topType cp-wide-type">
+              <form>
+                <div class="search-inner">
+                  <div class="search-row">
+                    <div class="date-group has-dates">
+                      <div class="bk-textfield is-readonly">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" class="iText iDatepicker" id="startDate" placeholder="YYYY.MM.DD" readonly="" title="시작 날짜">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dash">~</div>
+                      <div class="bk-textfield is-readonly">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" class="iText iDatepicker" id="endDate" placeholder="YYYY.MM.DD" readonly="" title="종료 날짜">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-group">
+                      <div class="bk-select">
+                        <div class="bk-control">
+                          <select class="" id="" title="label텍스트값">
+                            <option value="1">전체</option>
+                            <option value="2">주문번호</option>
+                            <option value="3">상품명</option>
+                            <option value="4">셀러명</option>
+                            <option value="5">셀러ID</option>
+                            <option value="6">회사명</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="bk-textfield wide textfield-search is-required">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" name="" value="" placeholder="" class="iText" id="" required="">
+                            <div class="control-btns append-btns">
+                              <button type="button" class="bk-icon-only icon-text-clear">
+                                <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
+                              </button>
+                            </div>
+                            <div class="control-icon append-icon">
+                              <button type="button" class="bk-icon-only icon-search">
+                                <i class="bk-icon bk-icon-searchPrimary">검색</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="bk-tbl-toolbar bk-seller-item">
+              <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
+              <div class="toolbar-right">
+                <div class="bk-select select-align">
+                  <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                  <div class="bk-control">
+                    <select class="" title="정렬">
+                      <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                      <option value="1">전체</option>
+                      <option value="2">결제완료</option>
+                      <option value="3">결제취소요청</option>
+                      <option value="4">결제취소승인</option>
+                      <option value="5">결제취소반려</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="cp-list-wrap">
+              <li class="bk-list-unit">
+                <a href="ECMYS-MU-025.html" class="bk-list-detail">
+                  <span>결제번호 : <em>pay051023-000012</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p>
+                  <ul class="bk-list-option">
+                    <li>결제금액(USD) : 100.00</li>
+                    <li>셀러명(셀러ID)/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </a>
+                <div class="bk-list-condition">
+                  <span>결제완료</span>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <a href="ECMYS-MU-025.html" class="bk-list-detail">
+                  <span>결제번호 : <em>pay051023-000012</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p>
+                  <ul class="bk-list-option">
+                    <li>결제금액(USD) : 100.00</li>
+                    <li>셀러명(셀러ID)/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </a>
+                <div class="bk-list-condition">
+                  <span class="bk-txt-red">결제완료(결제취소반려)</span>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <a href="ECMYS-MU-025.html" class="bk-list-detail">
+                  <span>결제번호 : <em>pay051023-000012</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p>
+                  <ul class="bk-list-option">
+                    <li>결제금액(USD) : 100.00</li>
+                    <li>셀러명(셀러ID)/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </a>
+                <div class="bk-list-condition">
+                  <span class="bk-txt-red">결제취소승인(VISA)</span>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <a href="ECMYS-MU-025.html" class="bk-list-detail">
+                  <span>결제번호 : <em>pay051023-000012</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p>
+                  <ul class="bk-list-option">
+                    <li>결제금액(USD) : 100.00</li>
+                    <li>셀러명(셀러ID)/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </a>
+                <div class="bk-list-condition">
+                  <span>결제완료(결제취소요청)</span>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <a href="ECMYS-MU-025.html" class="bk-list-detail">
+                  <span>결제번호 : <em>pay051023-000012</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p>
+                  <ul class="bk-list-option">
+                    <li>결제금액(USD) : 100.00</li>
+                    <li>셀러명(셀러ID)/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </a>
+                <div class="bk-list-condition">
+                  <span>결제완료(결제취소승인)</span>
+                </div>
+              </li>
+            </ul>
+
+            <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+              <span class="deco-icon prepend-icon">
+                <i class="bk-icon bk-icon-plus">more</i>
+              </span>
+              <span class="text">더보기</span>
+            </button>
+
           </div>
         </div>
         <!-- [S]Top버튼 -->
@@ -267,28 +423,74 @@
 
     <!-- [S]팝업 -->
 
-
-    <!-- [s] 인보이스 발송 유효성 알림-->
-    <div class="bk-dialog dim alert" id="alert-invoice">
+    <!-- [s] 송장번호 등록 -->
+    <div class="bk-dialog has-btmBtn dialog-full" id="dialog-delivery-num">
       <div class="dialog-inner">
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="message">
-              <p>견적금액을 입력해주세요.</p><!--견적금액을 입력하지 않고 [인보이스 발송] 버튼 선택-->
-              <!--<p>배송비를 입력해주세요.</p>--><!--배송비를 입력하지 않고 [인보이스 발송] 버튼 선택-->
-              <!--<p>기타비를 입력해주세요.</p>--><!--기타비를 입력하지 않고 [인보이스 발송] 버튼 선택-->
-              <!--<p>배송예정기간을 입력해주세요.</p>--><!--배송예정기간을 입력하지 않고 [인보이스 발송] 버튼 선택-->
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">송장번호 등록</h1>
             </div>
           </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <section class="cp-info-block">
+              <div class="bk-guide-area">
+                <p>* 최대 10개까지 등록이 가능합니다.</p>
+                <button type="button" class="bk-btn bk-btn-intbl" id="bk-add-invoicenum">
+                  <span class="text">송장번호 추가</span> 
+                </button>
+              </div>
+              <div class="cp-invoicenum-wrap">
+                <div class="bk-input-list">
+                  <button type="button" class="bk-btn">
+                      <i class="bk-icon bk-icon-list-delete">삭제</i>
+                  </button>
+                  <dl>
+                    <dt>배송방식</dt>
+                    <dd>
+                      <div class="bk-select">
+                        <div class="bk-control">
+                          <select class="" id="" title="배송방식">
+                            <option value="1">EMS</option>
+                          </select>
+                        </div>
+                      </div>
+                    </dd>
+                    <dt>송장번호</dt>
+                    <dd>
+                      <div class="bk-textfield">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" class="iText" title="송장번호">
+                          </div>
+                        </div>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+          
         </div>
         <div class="dialog-footer">
           <div class="footer-center">
-            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
+            <button type="button" class="bk-btn btn-light-gray btn-sticky btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-sticky btn-half">저장</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- //[e] 인보이스 발송 알림-->
+    <!-- //[e] 송장번호 등록 -->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

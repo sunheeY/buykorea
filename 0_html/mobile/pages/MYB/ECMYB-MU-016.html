@@ -36,7 +36,7 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>배송관리</span>
+                  <span>인보이스 관리</span>
                 </h1>
             </div>
             <div class="my-util">
@@ -46,10 +46,8 @@
               <div class="cp-search search-top" style="display: none">
                 <div class="search-area">
                   <div class="bk-select select-search">
-                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
                     <div class="bk-control">
                       <select class="" id="" title="검색 메뉴 선택">
-                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
                         <option data-display="Select">ALL</option>
                         <option value="1">Product Name</option>
                         <option value="2">Company Name</option>
@@ -58,8 +56,6 @@
                     </div>
                   </div>
                   <div class="bk-textfield wide textfield-search">
-                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
                     <div class="bk-control">
                       <div class="control-field">
                         <input
@@ -146,6 +142,7 @@
                     </div>
                     <div class="search-group">
                       <div class="bk-select">
+                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
                         <div class="bk-control">
                           <select class="" id="" title="label텍스트값">
                             <option value="1">전체</option>
@@ -187,57 +184,76 @@
                   <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
                   <div class="bk-control">
                     <select class="" title="정렬">
-                      <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
                       <option value="1">전체</option>
-                      <option value="2">EMS</option>
-                      <option value="3">FedEx</option>
-                      <option value="4">China</option>
-                      <option value="5">US Post</option>
-                      <option value="6">Canada Post</option>
-                      <option value="7">Royal Mail</option>
-                      <option value="8">Deutsche Post</option>
-                      <option value="9">Aliexpress</option>
-                      <option value="10">UPS</option>
-                      <option value="11">Shein</option>
-                      <option value="12">Pitney Bowes</option>
-                      <option value="13">eBay</option>
-                      <option value="14">Amazon</option>
-                      <option value="15">기타방식</option>
+                      <option value="2">열람</option>
+                      <option value="3">미열람</option>
+                      <option value="4">결제완료</option>
+                      <option value="5">기간초과</option>
                     </select>
                   </div>
                 </div>
               </div>
             </div>
 
-            <ul class="cp-list-wrap cp-list-type2"> 
+            <ul class="cp-list-wrap">
               <li class="bk-list-unit">
-                <div class="bk-list-detail no-wrap">
-                  <span>송장번호 : <em>0000000</em></span>
-                  <span>주문번호 : <em>ord051023-000012</em></span>
-                  <a href="ECMYS-MU-027.html"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
-                  <ul class="bk-list-option">
-                    <li>셀러명(셀러ID)/회사명 : Person</li>
-                    <li>name(abcdefg@gmail.com) / Company name</li>
-                  </ul>
-                </div>
-                <div class="bk-list-condition">
-                  <span>EMS</span>
+                <a href="#" class="bk-list-detail">
+                  <span>인보이스번호 : <em>ord051023-000012</em></span>
                   <span>2023.01.05 10:05:11</span>
+                  <p class="bk-list-tit bk-lineclamp-1 btn-underline">Product name Product name Product name Product name</p>
+                  <ul class="bk-list-option">
+                    <li>총 주문금액($) : 100.00</li>
+                    <li>셀러명(셀러ID) / 회사명 : Person name
+                      (abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </a>
+                <div class="bk-list-condition">
+                  <span>미열람(~2023.12.31)</span>
                 </div>
               </li>
               <li class="bk-list-unit">
-                <div class="bk-list-detail no-wrap">
-                  <span>송장번호 : <em>0000000</em></span>
-                  <span>주문번호 : <em>ord051023-000012</em></span>
-                  <a href="ECMYS-MU-027.html"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
-                  <ul class="bk-list-option">
-                    <li>셀러명(셀러ID)/회사명 : Person</li>
-                    <li>name(abcdefg@gmail.com) / Company name</li>
-                  </ul>
-                </div>
-                <div class="bk-list-condition">
-                  <span>기타수단</span>
+                <a href="#"  class="bk-list-detail">
+                  <span>인보이스번호 : <em>ord051023-000012</em></span>
                   <span>2023.01.05 10:05:11</span>
+                  <p class="bk-list-tit bk-lineclamp-1 btn-underline">Product name Product name Product name Product name</p>
+                  <ul class="bk-list-option">
+                    <li>총 주문금액($) : 100.00</li>
+                    <li>셀러명(셀러ID) / 회사명 : Person name
+                      (abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </a>
+                <div class="bk-list-condition">
+                  <span>(~2023.12.31)</span>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <a href="#" class="bk-list-detail">
+                  <span>인보이스번호 : <em>ord051023-000012</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <p class="bk-list-tit bk-lineclamp-1 btn-underline">Product name Product name Product name Product name</p>
+                  <ul class="bk-list-option">
+                    <li>총 주문금액($) : 100.00</li>
+                    <li>셀러명(셀러ID) / 회사명 : Person name
+                      (abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </a>
+                <div class="bk-list-condition">
+                  <span>열람(2023.01.05 10:05:11)</span>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <a href="#" class="bk-list-detail">
+                  <span>인보이스번호 : <em>ord051023-000012</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <p class="bk-list-tit bk-lineclamp-1 btn-underline">Product name Product name Product name Product name</p>
+                  <ul class="bk-list-option">
+                    <li>총 주문금액($) : 100.00</li>
+                    <li>셀러명(셀러ID) / 회사명 : Person name
+                      (abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </a>
+                <div class="bk-list-condition">
+                  <span class="bk-txt-red">기간초과(~2023.12.31)</span>
                 </div>
               </li>
             </ul>
@@ -392,6 +408,116 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+
+    <!-- [S]결제내역등록 -->
+    <div class="bk-dialog dialog-full2" id="dialog-full-pop">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">결제내역 등록</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <section class="cp-info-block">
+              <div class="bk-title">
+                <strong class="title">바이어정보</strong>
+              </div>
+  
+              <div class="bk-tbl">
+                <table class="tbl tbl-default">
+                  <caption>바이어정보</caption>
+                  <colgroup>
+                    <col style="width: 30vw">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="col">인보이스번호</th>
+                      <td>I000000</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">회사명</th>
+                      <td>Company Name</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">담당자명</th>
+                      <td>Hong gil dong</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">이메일</th>
+                      <td>qweasd@gamil.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="cp-info-block">
+              <div class="bk-title">
+                <strong class="title">결제정보</strong>
+              </div>
+              <div class="bk-input-list">
+                <dl>
+                  <dt class="is-required">승인번호</dt>
+                  <dd>
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" value="" class="iText" title="승인번호">
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt class="is-required">결제수단</dt>
+                  <dd>
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" value="" class="iText" title="결제수단">
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt class="is-required">결제일</dt>
+                  <dd>
+                    <div class="bk-textfield is-readonly">
+                      <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                      <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                      <div class="bk-control">
+                        <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                        <div class="control-field">
+                          <input type="text" class="iText iDatepicker flatpickr-input active" readonly="readonly">
+                        </div>
+                        <div class="bk-valid">에러 메시지</div>
+                        <!--// [D]성공:success,에러:error -->
+                      </div>
+                    </div>
+                    <div class="bk-messages"><i class="bk-icon bk-icon-input-messages">정보</i>결제내역은 등록 후에 수정할 수 없습니다.</div>
+                  </dd>
+                </dl>
+              </div>
+            </section>            
+
+            <div class="dialog-footer">
+              <div class="footer-center"> 
+                <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">취소</button>
+                <button type="button" class="bk-btn btn-primary btn-half" onclick="dialogOpen('#dialog-modal')">저장</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!--// [E]결제내역등록 -->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

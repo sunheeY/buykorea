@@ -36,7 +36,7 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>배송관리</span>
+                  <span>주문서 작성</span>
                 </h1>
             </div>
             <div class="my-util">
@@ -123,131 +123,287 @@
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
-            <div class="cp-search search-topType cp-wide-type">
-              <form>
-                <div class="search-inner">
-                  <div class="search-row">
-                    <div class="date-group has-dates">
-                      <div class="bk-textfield is-readonly">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" class="iText iDatepicker" id="startDate" placeholder="YYYY.MM.DD" readonly="" title="시작 날짜">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="dash">~</div>
-                      <div class="bk-textfield is-readonly">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" class="iText iDatepicker" id="endDate" placeholder="YYYY.MM.DD" readonly="" title="종료 날짜">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="search-group">
-                      <div class="bk-select">
-                        <div class="bk-control">
-                          <select class="" id="" title="label텍스트값">
-                            <option value="1">전체</option>
-                            <option value="2">주문번호</option>
-                            <option value="3">상품명</option>
-                            <option value="4">셀러명</option>
-                            <option value="5">셀러ID</option>
-                            <option value="6">회사명</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="bk-textfield wide textfield-search is-required">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" name="" value="" placeholder="" class="iText" id="" required="">
-                            <div class="control-btns append-btns">
-                              <button type="button" class="bk-icon-only icon-text-clear">
-                                <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
-                              </button>
-                            </div>
-                            <div class="control-icon append-icon">
-                              <button type="button" class="bk-icon-only icon-search">
-                                <i class="bk-icon bk-icon-searchPrimary">검색</i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div class="dialog-contents">
+              <!-- [S] Form-->
+              <section class="cp-info-block">
+                <div class="bk-tbl">
+                  <table class="tbl tbl-default">
+                    <caption>견적번호</caption>
+                    <colgroup>
+                    <col style="width:25vw">
+                    <col>
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="col">견적번호</th>
+                        <td>quo051023-000012</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-              </form>
-            </div>
+              </section>
+   
+              <section class="cp-info-block bk-tMg-middle">  
+                <div class="bk-accordion accordion-type-line"><!--// [D]기본:single, 다중:multi -->
+                  <ul class="list-accordion">
+                    <li class="acc-item">
+                      <div class="acc-header">
+                        <div class="acc-inner">
+                          <div class="left-area">셀러정보</div>
+                          <div class="right-area">
+                            <button type="button" class="bk-icon-only link">
+                              <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="acc-container">
+                        <div class="acc-inner bk-in-table">
+                          <div class="bk-tbl">
+                            <table class="tbl tbl-default">
+                              <caption>셀러정보</caption>
+                              <colgroup>
+                                <col style="width: 30vw">
+                                <col>
+                              </colgroup>
+                              <tbody>
+                                <tr>
+                                  <th scope="col">회사명</th>
+                                  <td>Company Name</td>
+                                </tr>
+                                <tr>
+                                  <th scope="col">이메일</th>
+                                  <td>qweasd@gamil.com</td>
+                                </tr>
+                                <tr>
+                                  <th scope="col">담당자명</th>
+                                  <td>Hong Gil Dong</td>
+                                </tr>
+                                <tr>
+                                  <th scope="col">휴대폰번호</th>
+                                  <td>+82-212345678</td>
+                                </tr>
+                                <tr>
+                                  <th scope="col">전화번호</th>
+                                  <td>+82-212345678</td>
+                                </tr>
+                                <tr>
+                                  <th scope="col">팩스번호</th>
+                                  <td>+82-212345678</td>
+                                </tr>
+                                <tr>
+                                  <th scope="col">주소</th>
+                                  <td>4312 Wood Road New York, NY 10031</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="cp-info-block">
+                <div class="bk-title">
+                  <strong class="title">상품정보</strong>
+                </div>
+                <div class="bk-tbl">
+                  <table class="tbl tbl-default">
+                    <caption>상품정보</caption>
+                    <colgroup>
+                      <col style="width: 30vw">
+                      <col>
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="col">상품명</th>
+                        <td>지중해 파란꽃게</td>
+                      </tr>
+                      <tr>
+                        <th scope="col">상품상세정보</th>
+                        <td>냉동되어 있는 상태로 배송 가능 냉동되어 있는 상태로 배송 가능냉동되어 있는 상태로 배송 가능 냉동되어 있는 상태로 배송 가능</td>
+                      </tr>
+                      <tr>
+                        <th scope="col">수량</th>
+                        <td class="bk-align-num">1,000</td>
+                      </tr>
+                      <tr>
+                        <th scope="col">상품금액(USD)</th>
+                        <td class="bk-align-num">300</td>
+                      </tr>
+                      <tr>
+                        <th scope="col">견적금액(USD)</th>
+                        <td class="bk-align-num">270.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>    
+              </section>
+              
+              <section class="cp-info-block">
+                <div class="bk-title">
+                  <strong class="title">바이어정보(배송지 정보)</strong>
+                </div>
+                <div class="bk-radio-group bk-flex-column-gap-12 add-position bk-tMg-small">
+                  <div class="bk-radio">
+                    <input type="radio" name="radio-01" class="iRadio" id="radio-01-01" required="">
+                    <label for="radio-01-01"><span class="text">최근 배송지</span></label>
+                  </div>
+                  <div class="bk-radio">
+                    <input type="radio" name="radio-01" class="iRadio" id="radio-01-04" required="" checked>
+                    <label for="radio-01-04"><span class="text">신규 배송지</span></label>
+                  </div>
 
-            <div class="bk-tbl-toolbar bk-seller-item">
-              <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
-              <div class="toolbar-right">
-                <div class="bk-select select-align">
-                  <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                  <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall btn-delivery-list">
+                    <span class="text">배송지 목록</span>
+                  </button>
+                </div>
+
+                <div class="bk-tbl bk-tMg-small">
+                  <table class="tbl tbl-default">
+                    <caption>바이어정보</caption>
+                    <colgroup>
+                      <col style="width: 30vw">
+                      <col>
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="col">회사명</th>
+                        <td>Company Name</td>
+                      </tr>
+                      <tr>
+                        <th scope="col">이메일</th>
+                        <td>qweasd@gamil.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>  
+
+                <!--[s]폼-->
+                <div class="bk-input-list">
+                  <dl>
+                    <dt class="is-required">담당자명</dt>
+                    <dd>
+                      <div class="bk-textfield">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" value="" class="iText" title="담당자명">
+                          </div>
+                        </div>
+                      </div>
+                    </dd>
+                    <dt class="is-required">휴대폰번호</dt>
+                    <dd>
+                      <div class="bk-textfield">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="휴대폰번호">
+                          </div>
+                        </div>
+                      </div>
+                    </dd>
+                    <dt>전화번호</dt>
+                    <dd>
+                      <div class="bk-textfield">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="전화번호">
+                          </div>
+                        </div>
+                      </div>
+                    </dd>
+                    <dt>팩스번호</dt>
+                    <dd>
+                      <div class="bk-textfield">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="팩스번호">
+                          </div>
+                        </div>
+                      </div>
+                    </dd>
+                    <dt class="is-required">Address</dt>
+                    <dd>
+                      <dl class="bk-input-list">
+                        <dt>Country</dt>
+                        <dd>
+                          <div class="bk-row-div bk-full">    
+                            <select title="Country">
+                              <option value="Choose">Choose</option>
+                              <option value="option2">US(UNITED STATE)</option>
+                            </select>
+                          </div>
+                        </dd>
+                        <dt>Zip/Postal</dt>
+                        <dd>
+                          <div class="bk-textfield">
+                            <div class="bk-control">
+                              <div class="control-field">
+                                <input type="text" placeholder="Zip/Postal" class="iText" title="Zip/Postal">
+                              </div>
+                            </div>
+                          </div>
+                        </dd>
+                        <dt>City/State</dt>
+                        <dd>
+                          <div class="bk-textfield">
+                            <div class="bk-control">
+                              <div class="control-field">
+                                <input type="text" placeholder="City/State" class="iText" title="City/State">
+                              </div>
+                            </div>
+                          </div>
+                        </dd>
+                        <dt>Street</dt>
+                        <dd>
+                          <div class="bk-textfield">
+                            <div class="bk-control">
+                              <div class="control-field">
+                                <input type="text" placeholder="Street" class="iText" title="Street">
+                              </div>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </dd>
+                  </dl>
+                </div>
+                <!--//[d]폼-->
+              </section>
+
+              <section class="cp-info-block">
+                <div class="bk-title">
+                  <strong class="title">기타정보</strong>
+                </div>
+                <ul class="bk-tbl-ul bk-tbl-ul-type2">
+                  <li>
+                    주문에 관련된 추가 내용(거래조건, 배송조건 등)이 있을 경우 작성하세요.
+                  </li>
+                </ul>
+                <div class="bk-textarea wide bk-has-byte"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
                   <div class="bk-control">
-                    <select class="" title="정렬">
+                    <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                    <div class="control-field">
+                      <textarea name="" rows="4" cols="50" placeholder="Sample" class="iTextarea" title="label텍스트값"></textarea><!--// [D]focus,disabled,required,readonly -->
                       <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
-                      <option value="1">전체</option>
-                      <option value="2">EMS</option>
-                      <option value="3">FedEx</option>
-                      <option value="4">China</option>
-                      <option value="5">US Post</option>
-                      <option value="6">Canada Post</option>
-                      <option value="7">Royal Mail</option>
-                      <option value="8">Deutsche Post</option>
-                      <option value="9">Aliexpress</option>
-                      <option value="10">UPS</option>
-                      <option value="11">Shein</option>
-                      <option value="12">Pitney Bowes</option>
-                      <option value="13">eBay</option>
-                      <option value="14">Amazon</option>
-                      <option value="15">기타방식</option>
-                    </select>
+                      <div class="bk-byte">
+                        <div class="byte-group">
+                          (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="bk-valid">에러 메시지</div>
+                    <!--// [D]성공:success,에러:error -->
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
-
-            <ul class="cp-list-wrap cp-list-type2"> 
-              <li class="bk-list-unit">
-                <div class="bk-list-detail no-wrap">
-                  <span>송장번호 : <em>0000000</em></span>
-                  <span>주문번호 : <em>ord051023-000012</em></span>
-                  <a href="ECMYS-MU-027.html"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
-                  <ul class="bk-list-option">
-                    <li>셀러명(셀러ID)/회사명 : Person</li>
-                    <li>name(abcdefg@gmail.com) / Company name</li>
-                  </ul>
-                </div>
-                <div class="bk-list-condition">
-                  <span>EMS</span>
-                  <span>2023.01.05 10:05:11</span>
-                </div>
-              </li>
-              <li class="bk-list-unit">
-                <div class="bk-list-detail no-wrap">
-                  <span>송장번호 : <em>0000000</em></span>
-                  <span>주문번호 : <em>ord051023-000012</em></span>
-                  <a href="ECMYS-MU-027.html"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
-                  <ul class="bk-list-option">
-                    <li>셀러명(셀러ID)/회사명 : Person</li>
-                    <li>name(abcdefg@gmail.com) / Company name</li>
-                  </ul>
-                </div>
-                <div class="bk-list-condition">
-                  <span>기타수단</span>
-                  <span>2023.01.05 10:05:11</span>
-                </div>
-              </li>
-            </ul>
-
-            <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
-              <span class="deco-icon prepend-icon">
-                <i class="bk-icon bk-icon-plus">more</i>
-              </span>
-              <span class="text">더보기</span>
-            </button>
+            <div class="bk-btn-group bk-tMg-middle2">
+              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">취소</button>
+              <button type="button" class="bk-btn btn-primary btn-half">주문서 발송</button>
+            </div>
 
           </div>
         </div>
@@ -390,8 +546,6 @@
       <!--// [E]footer -->
     </div>
     <!--// [E]ui-wrap -->
-
-    <!-- [S]팝업 -->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>

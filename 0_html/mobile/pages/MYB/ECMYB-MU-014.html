@@ -9,7 +9,7 @@
     />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>buyKOREA for Buyers</title>
+    <title>buyKOREA for Seller</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="../../../css/mobile/common.css" />
     <noscript></noscript>
@@ -36,7 +36,7 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>Buyer Sign in</span>
+                  <span>주문서 작성</span>
                 </h1>
             </div>
             <div class="my-util">
@@ -118,11 +118,16 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-member ui-seller"><!--// [D]회원 class추가 -->
+      <main id="container" class="ui-container ui-mypage ui-buyer"><!--// [D]회원 class추가 -->
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
-          <div class="ui-contents" id="contents">                    
-            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-invoice')">인보이스 유효성</button>            
+          <div class="ui-contents" id="contents">
+            <button type="button" class="bk-btn bk-btn-icon btn-text" onclick="dialogOpen('#dialog-full-pop-2');">
+              <span class="text">배송지 목록</span>
+              <span class="deco-icon append-icon">
+                <i class="bk-icon bk-icon-detail bk-icon-detail-black">detail</i>
+              </span>
+            </button>
           </div>
         </div>
         <!-- [S]Top버튼 -->
@@ -267,28 +272,97 @@
 
     <!-- [S]팝업 -->
 
-
-    <!-- [s] 인보이스 발송 유효성 알림-->
-    <div class="bk-dialog dim alert" id="alert-invoice">
+    <!-- [s] 배송지 목록 -->
+    <div class="bk-dialog dialog-full2" id="dialog-full-pop-2">
       <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">배송지 목록</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
         <div class="dialog-container">
           <div class="dialog-contents">
-            <div class="message">
-              <p>견적금액을 입력해주세요.</p><!--견적금액을 입력하지 않고 [인보이스 발송] 버튼 선택-->
-              <!--<p>배송비를 입력해주세요.</p>--><!--배송비를 입력하지 않고 [인보이스 발송] 버튼 선택-->
-              <!--<p>기타비를 입력해주세요.</p>--><!--기타비를 입력하지 않고 [인보이스 발송] 버튼 선택-->
-              <!--<p>배송예정기간을 입력해주세요.</p>--><!--배송예정기간을 입력하지 않고 [인보이스 발송] 버튼 선택-->
+            <!-- [S] Form-->
+            <div class="bk-tbl">
+              <ul class="cp-list-wrap bk-list-type2">
+                <li class="bk-list-unit">
+                  <strong>Hong Gil Dong(1st company)</strong>
+                  <p>+82-212345678</p>
+                  <p>4312 Wood Road New York, NY 10031</p>
+                  <button type="button" class="bk-btn btn-brand btn-text btn-list-del">
+                    <span class="deco-icon extra-icon">
+                      <i class="bk-icon bk-icon-image-list-delete">20*20지우기</i>
+                    </span>
+                  </button>
+                  <button type="button" class="bk-btn bk-btn-icon btn-text type-buyer">
+                    <span class="text">선택</span>
+                    <span class="deco-icon append-icon">
+                      <i class="bk-icon bk-icon-detail bk-icon-detail-black type-buyer">detail</i>
+                    </span>
+                  </button>
+                </li>
+                <li class="bk-list-unit">
+                  <strong>Hong Gil Dong(1st company)</strong>
+                  <p>+82-212345678</p>
+                  <p>4312 Wood Road New York, NY 10031</p>
+                  <button type="button" class="bk-btn btn-brand btn-text btn-list-del">
+                    <span class="deco-icon extra-icon">
+                      <i class="bk-icon bk-icon-image-list-delete">20*20지우기</i>
+                    </span>
+                  </button>
+                  <button type="button" class="bk-btn bk-btn-icon btn-text type-buyer">
+                    <span class="text">선택</span>
+                    <span class="deco-icon append-icon">
+                      <i class="bk-icon bk-icon-detail bk-icon-detail-black">detail</i>
+                    </span>
+                  </button>
+                </li>
+                <li class="bk-list-unit">
+                  <strong>Hong Gil Dong(1st company)</strong>
+                  <p>+82-212345678</p>
+                  <p>4312 Wood Road New York, NY 10031</p>
+                  <button type="button" class="bk-btn btn-brand btn-text btn-list-del">
+                    <span class="deco-icon extra-icon">
+                      <i class="bk-icon bk-icon-image-list-delete">20*20지우기</i>
+                    </span>
+                  </button>
+                  <button type="button" class="bk-btn bk-btn-icon btn-text type-buyer">
+                    <span class="text">선택</span>
+                    <span class="deco-icon append-icon">
+                      <i class="bk-icon bk-icon-detail bk-icon-detail-black">detail</i>
+                    </span>
+                  </button>
+                </li>
+                <li class="bk-list-unit">
+                  <strong>Hong Gil Dong(1st company)</strong>
+                  <p>+82-212345678</p>
+                  <p>4312 Wood Road New York, NY 10031</p>
+                  <button type="button" class="bk-btn btn-brand btn-text btn-list-del">
+                    <span class="deco-icon extra-icon">
+                      <i class="bk-icon bk-icon-image-list-delete">20*20지우기</i>
+                    </span>
+                  </button>
+                  <button type="button" class="bk-btn bk-btn-icon btn-text type-buyer">
+                    <span class="text">선택</span>
+                    <span class="deco-icon append-icon">
+                      <i class="bk-icon bk-icon-detail bk-icon-detail-black">detail</i>
+                    </span>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
-          </div>
         </div>
-      </div>
     </div>
-    <!-- //[e] 인보이스 발송 알림-->
+    <!-- [e] 배송지 목록 -->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
