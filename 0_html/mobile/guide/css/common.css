@@ -127,6 +127,9 @@ a:hover {
 .write_n {
   background:#fafafa;
 }
+.write_d {
+  background:#999;
+}
 
 /* layout */
 #wrap {
