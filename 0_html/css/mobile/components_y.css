@@ -49,6 +49,7 @@
 .bk-btn-intbl-p {border-color: var(--color-primary); background-color: var(--color-primary); color: var(--color-white)}
 .btn-mms-del,
 .btn-mms-cxl {border-color: var(--color-brand); height: 48px; color: var(--color-brand)}
+.bk-icon-reset {width:24px; height: 24px; background-image: url(../../images/mobile/icon_reload.svg);}
 
 /* 배송지등록 */
 .bk-tbl-list .bk-list-name .bk-list-title {font-size: 1.6rem;}
@@ -344,12 +345,8 @@
 .bk-prd-unit:nth-child(odd) {padding-right: calc(15px / 2);}
 .bk-prd-unit:nth-child(even) {padding-left: calc(15px / 2);}
 
-/* .bk-prd-unit:nth-child(1) {border-width: 1px 0; }
-.bk-prd-unit:nth-child(4n-1) {border-width: 1px 0; } */
-/* .bk-prd-unit:first-child, */
-/* .bk-prd-unit:nth-last-child(even):first-child, */
-.bk-prd-unit:last-child {border: 0;}
-/* .bk-prd-unit:last-child {border: 0;} */
+.bk-prd-unit:nth-child(odd):nth-last-child(2),
+.bk-prd-unit:last-child {border-bottom: 0;}
 
 .ui-prd .bk-btn-more {border-top: 1px solid var(--color-gray); margin: 0; padding-top: 24px;}
 .bk-prd-unit .bk-thumb-link {position: relative; display: block;}
@@ -382,7 +379,28 @@
 .viewtype-list .bk-prd-unit .bk-price {line-height: 1.33333;}
 .viewtype-list .bk-prd-unit .bk-price,
 .viewtype-list .bk-prd-unit .bk-moq {margin-top: 8px;}
+.viewtype-list .bk-prd-unit:nth-last-child(2) {border-bottom: 1px solid #ddd;}
+
 
 /* 필터 */
-.cp-filter-wrap {position: fixed; top: 0; bottom: 0; background: #fff; width: calc(100% - 95px); z-index: 9999; padding: 24px 20px; box-sizing: border-box; transition: .3s;}
+.cp-filter-wrap {position: fixed; top: 0; bottom: 0; background: #fff; width: calc(100% - 95px); z-index: 9999; padding: 24px 0 24px 20px; box-sizing: border-box; }
 .dimed-zone {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 99; background: rgba(0,0,0,.6);}
+.btn-filter-setting {position: absolute; border: 0; font-size: 1.8rem; line-height: 1.44444; font-weight: 500; bottom: 0; right: 0; width: 100%; height: 60px; background: var(--color-primary); color: var(--color-white)}
+.ui-filter-inner {height: calc(100% - 60px - 80px); overflow-y: auto; padding: 0 20px 120px 0;}
+.cp-filter-wrap .header-filter-area {position: relative; padding-bottom: 24px; display: flex; align-items: center; gap: 8px;}
+.cp-filter-wrap .header-filter-area .bk-title {font-size: 1.8rem; line-height: 1.33333; letter-spacing: -.18px;}
+.cp-filter-wrap .header-filter-area .bk-btn-close {position: absolute; right: 20px; top: 0;}
+
+.cp-filter-wrap .bk-accordion .acc-container {border: 0;} 
+.cp-filter-wrap .bk-accordion .acc-container .acc-inner {background: #f3f5f8; padding: 16px 12px;}
+.cp-filter-wrap .bk-accordion .acc-item .acc-header {font-weight: 400;}
+.cp-filter-wrap .bk-accordion .acc-item .acc-header .acc-inner {padding: 16px 0;}
+.cp-filter-wrap .bk-accordion .list-accordion:first-child .acc-item .acc-header .acc-inner {padding-top: 0;}
+.cp-filter-wrap .bk-accordion .bk-textfield {gap: 8px; align-items: center;}
+.cp-filter-wrap .bk-checkbox input[type="checkbox"] + label, 
+.cp-filter-wrap .bk-radio input[type="radio"] + label {align-items: flex-start;}
+.cp-filter-wrap .bk-checkbox, 
+.cp-filter-wrap .bk-radio {gap: 8px; display: -ms-grid; display: grid; -ms-grid-columns: auto auto; grid-template-columns: auto auto;}
+.cp-filter-wrap .flex-column {display: flex; flex-direction: column; gap: 8px;}
+.cp-filter-wrap .bk-checkbox input[type="checkbox"]:checked + label::after {width: 24px; height: 24px; top: 0; transform: unset;}
+.cp-filter-wrap .bk-radio input[type="radio"]:checked + label::after {top: 6px; left: 6px; transform: unset;}
