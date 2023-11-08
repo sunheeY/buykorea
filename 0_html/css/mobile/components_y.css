@@ -310,8 +310,43 @@
 
 .bk-sellermy-tabin .bk-sellermy-tabin {padding: 0 20px}
 .bk-sellermy-tabin .bk-sellermy-tabin .bk-list-unit {padding: 0 20px}
-.bk-sellermy-tabin .bk-list-unit .bk-checkbox input[type="checkbox"] + label {flex-direction: column; align-items: flex-start; padding: 0 43px 0 36px; font-size: 1.6rem; line-height: 1.5; color: var(--color-brand);}
+.bk-sellermy-tabin .bk-list-unit .bk-checkbox input[type="checkbox"] + label {flex-direction: column; align-items: flex-start; padding: 0 43px 0 36px; font-size: 1.6rem; line-height: 1.5; color: var(--color-brand); flex: 1;}
 .bk-sellermy-tabin .bk-list-unit .bk-checkbox input[type="checkbox"] + label:before {position: absolute; top: 0; left: 0;}
 .bk-sellermy-tabin .bk-list-unit .bk-checkbox input[type="checkbox"]:checked + label::after {width: 24px; height: 24px; top: unset; transform: unset;}
 .bk-sellermy-tabin .bk-list-unit .bk-checkbox input[type="checkbox"] + label .bk-list-tit {margin: 0 0 8px;}
 
+
+/* 상품 */
+/* 목록 */
+.cp-prd-sort {display: flex; justify-content: space-between; align-items: center; padding: 9px 12px; border-top: 1px solid #000; border-bottom: 1px solid #ddd; background: #f6f6f6;}
+.cp-prd-sort .bk-prd-count {font-size: 1.6rem;}
+.cp-prd-sort .bk-btn {width: 40px; height: 40px; clip: rect(0, 40px, 40px, 0); overflow: hidden; display: block; font-size: 0; border-color: #ddd}
+.cp-prd-sort .bk-btn::before {content: ''; display: block; width: 38px; height: 38px; background-position: 50% 50%; background-repeat: no-repeat;}
+.cp-prd-sort .btn-view-type::before {background-image: url(../../images/mobile/icon-heart.svg);}
+.cp-prd-sort .btn-filter::before {background-image: url(../../images/mobile/icon-heart.svg);}
+
+
+.cp-prd-list {display: flex;}
+.bk-prd-unit {width: 50%; flex: 1 1 auto; box-sizing: border-box; border-bottom: 1px solid var(--color-gray); padding: 24px 0;}
+.bk-prd-unit:nth-child(odd) {padding-right: calc(15px / 2);}
+.bk-prd-unit:nth-child(even) {padding-left: calc(15px / 2);}
+.bk-prd-unit .bk-thumb-link {position: relative;}
+.bk-prd-unit .bk-thumb-link .thumb {width: unset; height: unset; position: relative; padding-bottom: 100%; overflow: hidden;}
+.bk-prd-unit .bk-thumb-link .thumb::before {content: ''; display: block; width: 100%; height: 100%; top: 0; left: 0; position: absolute;}
+.bk-prd-unit .bk-thumb-link .bk-prd-info {margin-top: 20px; padding-right: 12px;}
+.bk-prd-unit .prd-company-name {display: block; font-size: 1.4rem; color: #767676; line-height: 1.57143;}
+.bk-prd-unit .prd-name {display: block; font-size: 1.6rem; font-weight: 500;}
+.bk-prd-unit .bk-price {display: block; font-size: 1.8rem; font-weight: 700; line-height: 1.22222; margin-top: 12px;}
+.bk-prd-unit .bk-moq {display: block; margin-top: 20px; font-size: 1.4rem; color: #767676; padding: 3px 8px; background: #f4f4f4; width: fit-content;}
+.bk-prd-unit .bk-flag-wrap {position: absolute; top: 8px; left: 8px;}
+.bk-prd-unit .bk-flag-new {display: none; padding: 2px 9px 1px 8px; border-radius: 2px; background-color: var(--color-warning); font-size: 1.3rem; line-height: 1.61538; color: var(--color-white); letter-spacing: -.13px;}
+.bk-prd-unit .bk-flag-new.is-active {display: block;}
+
+.bk-btns-wrap {margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px;}
+.bk-btns-wrap .bk-btn {height: 36px; padding: 0;}
+.bk-btns-wrap .btn-outline {border-color: var(--color-default)}
+.bk-btns-wrap .btn-like {width: 36px; clip: rect(0, 36px, 36px, 0); overflow: hidden; display: block; font-size: 0;}
+.bk-btns-wrap .btn-like::before {content: ''; display: block; width: 34px; height: 34px; background: url(../../images/mobile/icon-heart.svg) 50% 50% no-repeat;}
+.bk-btns-wrap .btn-like.is-active::before {background-image: url(../../images/mobile/icon-heart-on.svg);}
+.bk-btns-wrap .btn-addcart {flex: 1 0 auto;}
+.bk-btns-wrap .btn-inquiry {flex: 1 1 100%; background: var(--color-primary); color: var(--color-white)}
