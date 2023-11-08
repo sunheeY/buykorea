@@ -328,6 +328,14 @@
 .bk-rate.size-midium input:checked ~ .bk-rate label:hover ~ label:before,
 .bk-rate.size-midium label:hover ~ input:checked ~ label:before {background-size:cover;}
 
+.bk-rate-disabled{display: inline-flex; position: relative; column-gap: 4px; }
+.bk-rate-disabled span{ width:20px; height:20px; display:block; background:url(../../images/mobile/rate-blank.svg)}
+.bk-rate-disabled span.on{ background-image: url(../../images/mobile/rate-full.svg) }
+.bk-rate-disabled.rate-1 span:nth-child(1){background-image: url(../../images/mobile/rate-full.svg);}
+.bk-rate-disabled.rate-2 span:nth-child(-n+2){background-image: url(../../images/mobile/rate-full.svg);}
+.bk-rate-disabled.rate-3 span:nth-child(-n+3){background-image: url(../../images/mobile/rate-full.svg);}
+.bk-rate-disabled.rate-4 span:nth-child(-n+4){background-image: url(../../images/mobile/rate-full.svg);}
+.bk-rate-disabled.rate-5 span:nth-child(-n+5){background-image: url(../../images/mobile/rate-full.svg);}
 /* 뱃지 */
 .badge {}
 .badge-state {display: inline-flex; align-items: center; height: var(--size-small); padding: 0 10px; background-color: transparent; border: 1px solid transparent; border-radius: 32px; transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; box-sizing: border-box; font-size: 1.4rem; line-height: 1.5; user-select: none; vertical-align: top; max-width: 100%;}
@@ -1363,6 +1371,8 @@ body.overflow{overflow-y:hidden;}
 /*바이어 - 배송지 목록 선택버튼*/
 .cp-list-wrap.bk-list-type2 .bk-list-unit button.btn-text.type-buyer{ position:absolute; top:unset; right: 0; bottom: 0; padding: 12px 4px;}
 .cp-list-wrap.bk-list-type2 .bk-list-unit p + p{margin-top:2px}
+
+.cp-list-wrap .bk-list-detail.buyer-shipping .bk-list-tit {margin:8px 0}
 
 /*바이어 - 배송지정보*/
 .bk-radio-group .btn-delivery-list{position:absolute; right:0; top:50%; transform: translateY(-50%);}
