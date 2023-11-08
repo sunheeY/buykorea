@@ -1364,6 +1364,8 @@ body.overflow{overflow-y:hidden;}
 .cp-list-wrap.bk-list-type2 .bk-list-unit button.btn-text.type-buyer{ position:absolute; top:unset; right: 0; bottom: 0; padding: 12px 4px;}
 .cp-list-wrap.bk-list-type2 .bk-list-unit p + p{margin-top:2px}
 
+.cp-list-wrap .bk-list-detail.buyer-shipping .bk-list-tit {margin:8px 0}
+
 /*바이어 - 배송지정보*/
 .bk-radio-group .btn-delivery-list{position:absolute; right:0; top:50%; transform: translateY(-50%);}
 .ui-buyer .bk-input-list dd + dt{ margin-top:24px}
