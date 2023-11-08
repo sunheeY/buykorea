@@ -188,7 +188,7 @@
 /*.bk-dialog.dialog-full2 .dialog-inner {max-height: none; transform: unset; position: static;}*/
 .bk-dialog.dialog-full2 .dialog-footer {position: static; bottom: unset; left: unset;}
 .bk-dialog.dialog-full2 .dialog-footer > div.footer-center {padding: 40px 0 52px; flex-wrap: wrap; gap: 8px;}
-.bk-dialog.dialog-full2 .dialog-footer .bk-btn { font-size: 1.6rem; line-height: 1.5; border-radius: var(--radius-default); height: var(--size-large);}
+.bk-dialog.dialog-full2 .dialog-footer .bk-btn { font-size: 1.6rem; line-height: 1.5; border-radius: var(--radius-default); height: var(--size-large); padding: 0;}
 /* .bk-dialog.dialog-full2 .dialog-footer .bk-btn + .bk-btn {margin-left: 8px;} */
 /* .bk-dialog .dialog-contents .bk-tbl + .bk-tbl {margin-top: -28px;} */
 
