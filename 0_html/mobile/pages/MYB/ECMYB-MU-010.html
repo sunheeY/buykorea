@@ -9,7 +9,7 @@
     />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>buyKOREA for Buyers</title>
+    <title>buyKOREA for Seller</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="../../../css/mobile/common.css" />
     <noscript></noscript>
@@ -30,14 +30,14 @@
       <!-- [S]header -->
       <header id="header" class="ui-header">
         <div class="header-area">
-          <div class="ui-inner ui-pager">
+          <div class="ui-inner ui-pager"><!-- //[D] 헤더가 없는 경우, ui-pager class 추가처리 -->
             <div class="ui-left">
-              <h1 class="page-move">
-                <button type="button" class="bk-icon-only">
-                  <i class="bk-icon bk-icon-gnb-prev">이전</i>
-                </button>
-                <span>Favorites</span>
-              </h1>
+                <h1 class="page-move">
+                  <button type="button" class="bk-icon-only">
+                    <i class="bk-icon bk-icon-gnb-prev">이전</i>
+                  </button>
+                  <span>견적 관리</span>
+                </h1>
             </div>
             <div class="my-util">
               <button type="button" class="bk-icon-only icon-search">
@@ -46,7 +46,7 @@
               <div class="cp-search search-top" style="display: none">
                 <div class="search-area">
                   <div class="bk-select select-search">
-                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,lagre-48px,xlagre-60px -->
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
                     <div class="bk-control">
                       <select class="" id="" title="검색 메뉴 선택">
                         <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
@@ -59,7 +59,7 @@
                   </div>
                   <div class="bk-textfield wide textfield-search">
                     <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,lagre-48px,xlagre-60px -->
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
                     <div class="bk-control">
                       <div class="control-field">
                         <input
@@ -118,27 +118,127 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-mypage">
+      <main id="container" class="ui-container ui-mypage"><!--// [D]회원 class추가 -->
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
-        <div class="bk-tab tab-type-sub-line">
-          <div class="tab-menu-wrap">
-            <ul class="list-menu">
-              <li><button type="button" class="tab-item active"><span>Product</span></button></li>
-              <li><button type="button" class="tab-item"><span>Category</span></button></li>
-            </ul>
-          </div>
+        <div class="ui-content-wrap ui-inner">
+          <div class="ui-contents" id="contents">
+            <div class="bk-guide-txt bk-bMg-basic">
+              <span class="text">입력되지 않은 고객님의 정보가 있습니다.</span>
+              <span class="text">해당 정보를 입력하시면 주문서를 작성하실 수 있습니다.</span>
+              <span class="text">회원정보등록 버튼을 클릭하시면 회원정보를 입력할 수 있는 페이지로 이동합니다.</span>
+              <a href="#" class="bk-btn">회원정보등록</a>
+            </div>
+            <div class="cp-search search-topType cp-wide-type">
+              <form>
+                <div class="search-inner">
+                  <div class="search-row">
+                    <div class="date-group has-dates">
+                      <div class="bk-textfield is-readonly">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" class="iText iDatepicker" id="startDate" placeholder="YYYY.MM.DD" readonly="" title="시작 날짜">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dash">~</div>
+                      <div class="bk-textfield is-readonly">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" class="iText iDatepicker" id="endDate" placeholder="YYYY.MM.DD" readonly="" title="종료 날짜">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-group">
+                      <div class="bk-select">
+                        <div class="bk-control">
+                          <select class="" id="" title="label텍스트값">
+                            <option value="1">전체</option>
+                            <option value="2">견적번호</option>
+                            <option value="3">상품명</option>
+                            <option value="4">셀러명</option>
+                            <option value="4">셀러ID</option>
+                            <option value="4">회사명</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="bk-textfield wide textfield-search is-required">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" name="" value="" placeholder="" class="iText" id="" required="">
+                            <div class="control-btns append-btns">
+                              <button type="button" class="bk-icon-only icon-text-clear">
+                                <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
+                              </button>
+                            </div>
+                            <div class="control-icon append-icon">
+                              <button type="button" class="bk-icon-only icon-search">
+                                <i class="bk-icon bk-icon-searchPrimary">검색</i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
 
-          <div class="tab-container-wrap">
-            <div class="tab-container active">
-              
-            111
-              
+            <div class="bk-tbl-toolbar bk-seller-item">
+              <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
+              <div class="toolbar-right">
+                <div class="bk-select select-align">
+                  <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                  <div class="bk-control">
+                    <select class="" title="정렬">
+                      <option value="1">전체</option>
+                      <option value="2">열람</option>
+                      <option value="3">미열람</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="tab-container">
-              
-              122
-              
-            </div>
+
+            <ul class="cp-list-wrap">
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>견적번호 : <em>0000000</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
+                  <ul class="bk-list-option">
+                    <li>견적금액($) : 100.00</li>
+                    <li>바이어/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>미열람</span>
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>견적번호 : <em>0000000</em></span>
+                  <span>2023.01.05 10:05:11</span>
+                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
+                  <ul class="bk-list-option">
+                    <li>견적금액($) : 100.00</li>
+                    <li>바이어/회사명 : Person name<br>(abcdefg@gmail.com) / Company name</li>
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>열람(2023.01.05 10:05:11)</span>
+                </div>
+              </li>
+            </ul>
+
+            <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+              <span class="deco-icon prepend-icon">
+                <i class="bk-icon bk-icon-plus">more</i>
+              </span>
+              <span class="text">더보기</span>
+            </button>
+
           </div>
         </div>
         <!-- [S]Top버튼 -->
@@ -281,125 +381,12 @@
     </div>
     <!--// [E]ui-wrap -->
 
-    <!-- [S]dialog-modal-write -->
-    <div class="bk-dialog dim dialog-modal dialog-modal-review" id="dialog-modal"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">Review Writing</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container align-center">
-          <div class="dialog-contents">
-            <!-- [S] 별점-->
-            <fieldset class="bk-rate size-midium">
-              <input type="radio" id="rating_modal5" name="rating" value="5"><label for="rating_modal5"><span class="text ir-su">5점</span></label>
-              <input type="radio" id="rating_modal4" name="rating" value="4"><label for="rating_modal4"><span class="text ir-su">4점</span></label>
-              <input type="radio" id="rating_modal3" name="rating" value="3"><label for="rating_modal3"><span class="text ir-su">3점</span></label>
-              <input type="radio" id="rating_modal2" name="rating" value="2"><label for="rating_modal2"><span class="text ir-su">2점</span></label>
-              <input type="radio" id="rating_modal1" name="rating" value="1"><label for="rating_modal1"><span class="text ir-su">1점</span></label>
-            </fieldset>
-            <!-- // [D] 별점-->
-            <!-- [S] review textarea-->
-            <div class="bk-textarea wide">
-              <div class="bk-control">
-                <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
-                <div class="control-field" style="height:160px">
-                  <textarea
-                    name=""
-                    rows="4"
-                    cols="50"
-                    placeholder="review"
-                    class="iTextarea"
-                    title="label텍스트값"
-                  /></textarea><!--// [D]focus,disabled,required,readonly -->
-                  <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
-                </div>
-              </div>
-            </div>
-            <!-- // [D] review textarea-->
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">Cancel</button>
-            <button type="button" class="bk-btn btn-primary btn-modal btn-half">Save</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--// [E]dialog-modal-write -->
-
-    <!-- [S]dialog-modal-edit -->
-    <div class="bk-dialog dim dialog-modal dialog-modal-review" id="dialog-modal-edit"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom -->
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">Review Writing</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container align-center">
-          <div class="dialog-contents">
-            <!-- [S] 별점-->
-            <fieldset class="bk-rate size-midium">
-              <input type="radio" id="rating_modal5" name="rating" value="5" checked><label for="rating_modal5"><span class="text ir-su">5점</span></label>
-              <input type="radio" id="rating_modal4" name="rating" value="4" checked><label for="rating_modal4"><span class="text ir-su">4점</span></label>
-              <input type="radio" id="rating_modal3" name="rating" value="3" checked><label for="rating_modal3"><span class="text ir-su">3점</span></label>
-              <input type="radio" id="rating_modal2" name="rating" value="2"><label for="rating_modal2"><span class="text ir-su">2점</span></label>
-              <input type="radio" id="rating_modal1" name="rating" value="1"><label for="rating_modal1"><span class="text ir-su">1점</span></label>
-            </fieldset>
-            <!-- // [D] 별점-->
-            <!-- [S] review textarea-->
-            <div class="bk-textarea wide">
-              <div class="bk-control">
-                <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
-                <div class="control-field" style="height:160px">
-                  <textarea
-                    name=""
-                    rows="4"
-                    cols="50"
-                    placeholder="review"
-                    class="iTextarea"
-                    title="label텍스트값"
-                  />New jerseys are very good quality, would buy again. The quality is good of the retro jersey but the color is not the same from the picture. color is a little off.</textarea><!--// [D]focus,disabled,required,readonly -->
-                  <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
-                </div>
-              </div>
-            </div>
-            <!-- // [D] review textarea-->
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-light-gray btn-modal btn-half" role="dialogCloseBtn">Cancel</button>
-            <button type="button" class="bk-btn btn-primary btn-modal btn-half">Save</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--// [E]dialog-modal-edit -->
-
     <!-- [S]팝업 -->
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
-    <script src="../../../js/common/lib/l10n/ko.js"></script><!--// 언어 설정 -->
-    <script src="../../../js/mobile/ui_common.js"></script>    
+    <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () { });
+      $(document).ready(function () {});
     </script>
   </body>
 </html>
