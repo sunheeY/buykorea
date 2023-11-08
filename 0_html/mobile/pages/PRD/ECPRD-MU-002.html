@@ -44,13 +44,31 @@
 								<a href="#" class="bk-thumb-link">
 									<div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
 									<div class="bk-prd-info">
-										<span class="prd-company-name">RUBELLI CO., LTD.</span>
-										<span class="prd-name">Product name Product name Product</span>
+										<span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.</span>
+										<span class="prd-name bk-lineclamp-2">Product name name Product long loooong long lng</span>
 										<strong class="bk-price">$799.6 Sets</strong>
 										<span class="bk-moq">MOQ : 100 ea</span>
 									</div>
+									<!-- [d] 신규상품일 경우 bk-thumb-link 영역 하단에 아래 영역 추가합니다. -->
 									<div class="bk-flag-wrap">
 										<span class="bk-flag-new">NEW</span>
+									</div>
+									<!-- //[d] 신규상품일 경우 bk-thumb-link 영역 하단에 아래 영역 추가합니다. -->
+								</a>
+								<div class="bk-btns-wrap">
+									<button type="button" class="bk-btn btn-outline btn-like">좋아요</button>
+									<button type="button" class="bk-btn btn-outline btn-addcart">Add to Cart</button>
+									<button type="button" class="bk-btn btn-inquiry">Inquiry </button>
+								</div>
+							</li>
+							<li class="bk-prd-unit">
+								<a href="#" class="bk-thumb-link">
+									<div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+									<div class="bk-prd-info">
+										<span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.</span>
+										<span class="prd-name bk-lineclamp-2">Product name name Product long loooong long lng</span>
+										<strong class="bk-price">$799.6 Sets</strong>
+										<span class="bk-moq">MOQ : 100 ea</span>
 									</div>
 								</a>
 								<div class="bk-btns-wrap">
@@ -63,13 +81,10 @@
 								<a href="#" class="bk-thumb-link">
 									<div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
 									<div class="bk-prd-info">
-										<span class="prd-company-name">RUBELLI CO., LTD.</span>
-										<span class="prd-name">Product name Product name Product</span>
+										<span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.</span>
+										<span class="prd-name bk-lineclamp-2">Product name name Product long loooong long lng</span>
 										<strong class="bk-price">$799.6 Sets</strong>
 										<span class="bk-moq">MOQ : 100 ea</span>
-									</div>
-									<div class="bk-flag-wrap">
-										<span class="bk-flag-new is-active">NEW</span>
 									</div>
 								</a>
 								<div class="bk-btns-wrap">
@@ -79,6 +94,13 @@
 								</div>
 							</li>
 						</ul>
+
+						<button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+              <span class="deco-icon prepend-icon">
+                <i class="bk-icon bk-icon-plus">more</i>
+              </span>
+              <span class="text">더보기</span>
+            </button>
 
           </div>
         </div>
@@ -99,7 +121,18 @@
     <script src="../../../js/mobile/ui_common.js"></script>
     <script src="../../../js/mobile/load_html.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+				if( $('.cp-prd-sort').length > 0) {
+					$('.cp-prd-sort .btn-view-type').click( function() {
+						var viewAdd = $(this).closest('.cp-prd-sort').siblings('.cp-prd-list');
+						viewAdd.toggleClass('viewtype-list');
+						$(this).toggleClass('btn-list');
+					});
+					$('.btn-like').click( function() {
+						$(this).toggleClass('is-active');
+					})
+				}
+			});
     </script>
   </body>
 </html>
