@@ -118,10 +118,6 @@
 .bk-thumb-link a .bk-list-tit {text-decoration: underline;}
 .cp-list-wrap .bk-list-detail > span {color: var(--color-sub); display: block;}
 .cp-list-wrap .bk-list-detail > span + span {margin-top: 4px;}
-.cp-list-wrap .bk-list-detail span:nth-of-type(1) {max-width:96%; }
-/* .cp-list-wrap .bk-list-detail span em {white-space: nowrap;display:block} */
-.cp-list-wrap .bk-list-detail.no-wrap span {max-width:100%; } /*배송지관리에는 텍스트 줄바꿈이 필요없어서 별도 클래스 추가합니다.: 11-07 김신애*/
-.cp-list-wrap .bk-list-detail.no-wrap span em{white-space: nowrap; display:inline-block } 
 .cp-list-wrap .bk-list-detail .bk-list-tit {font-size: 1.6rem; margin: 16px 0 8px; color: var(--color-brand)}
 .cp-list-wrap .bk-list-condition {display: flex; justify-content: space-between; background-color: var(--color-background); padding: 13px 12px; line-height: 1.57143; color: var(--color-sub); position: relative;}
 .cp-list-wrap .bk-list-condition .bk-btn-intbl {position: absolute; top: 10px; right: 12px;}
