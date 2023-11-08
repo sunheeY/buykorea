@@ -1361,3 +1361,4 @@ body.overflow{overflow-y:hidden;}
 
 /*바이어 - 배송지정보*/
 .bk-radio-group .btn-delivery-list{position:absolute; right:0; top:50%; transform: translateY(-50%);}
+.ui-buyer .bk-input-list dd + dt{ margin-top:24px}
