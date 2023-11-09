@@ -26,39 +26,202 @@
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
+						
 
 						<button type="button" class="bk-btn btn-filter">필터</button>
 						
 						<aside class="cp-filter-wrap">
-							<strong class="bk-title">Filter</strong>
-							<button type="button" class="btn-close">닫기</button>
-
-							<dl class="cp-filter-area">
-								<dt>Array</dt>
-								<dd>
-									<div class="bk-radio">
-										<input type="radio" name="filter01" class="iRadio" id="filter01-02">
-										<label for="filter01-02"><span class="text">Featured</span></label>
-									</div>
-									<div class="bk-radio">
-										<input type="radio" name="filter01" class="iRadio" id="filter01-02">
-										<label for="filter01-02"><span class="text">Sales volume</span></label>
-									</div>
-									<div class="bk-radio">
-										<input type="radio" name="filter01" class="iRadio" id="filter01-02">
-										<label for="filter01-02"><span class="text">Price : High to Low</span></label>
-									</div>
-									<div class="bk-radio">
-										<input type="radio" name="filter01" class="iRadio" id="filter01-02">
-										<label for="filter01-02"><span class="text">Price : Low to High</span></label>
-									</div>
-									<div class="bk-radio">
-										<input type="radio" name="filter01" class="iRadio" id="filter01-02">
-										<label for="filter01-02"><span class="text">Newest</span></label>
-									</div>
-								</dd>
+							<div class="header-filter-area">
+								<strong class="bk-title">Filter</strong>
+								<button type="button" class="bk-icon-only bk-btn-reset">
+									<i class="bk-icon bk-icon-reset">설정초기화</i>
+								</button>
+								<button type="button" class="bk-icon-only bk-btn-close">
+									<i class="bk-icon bk-icon-dialog-close">닫기</i>
+								</button>
+							</div>
+							<div class="ui-filter-inner">
+								<div class="bk-accordion">
+									<ul class="list-accordion">
+										<li class="acc-item is-active">
+											<div class="acc-header">
+												<div class="acc-inner">
+													<div class="left-area">Array</div>
+													<div class="right-area">
+														<button type="button" class="bk-icon-only link">
+															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="acc-container">
+												<div class="acc-inner">
+													<div class="bk-radio flex-column">
+														<input type="radio" name="filter01" class="iRadio" id="filter01-01">
+														<label for="filter01-01"><span class="text">Featured</span></label>
+														<input type="radio" name="filter01" class="iRadio" id="filter01-02">
+														<label for="filter01-02"><span class="text">Sales volume</span></label>
+														<input type="radio" name="filter01" class="iRadio" id="filter01-03">
+														<label for="filter01-03"><span class="text">Price : High to Low</span></label>
+														<input type="radio" name="filter01" class="iRadio" id="filter01-04">
+														<label for="filter01-04"><span class="text">Price : Low to High</span></label>
+														<input type="radio" name="filter01" class="iRadio" id="filter01-05">
+														<label for="filter01-05"><span class="text">Newest</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="list-accordion">
+										<li class="acc-item is-active">
+											<div class="acc-header">
+												<div class="acc-inner">
+													<div class="left-area">Price</div>
+													<div class="right-area">
+														<button type="button" class="bk-icon-only link">
+															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="acc-container">
+												<div class="acc-inner">
+													<div class="bk-textfield">
+														<div class="control-field">
+															<input type="text" value="" placeholder="" class="iText" title="부서명">
+														</div>
+														~
+														<div class="control-field">
+															<input type="text" value="" placeholder="" class="iText" title="부서명">
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="list-accordion">
+										<li class="acc-item is-active">
+											<div class="acc-header">
+												<div class="acc-inner">
+													<div class="left-area">Payment</div>
+													<div class="right-area">
+														<button type="button" class="bk-icon-only link">
+															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="acc-container">
+												<div class="acc-inner">
+													<div class="bk-checkbox">
+														<input type="checkbox" name="filter02" class="iCheckbox" id="filter02-01">
+														<label for="filter02-01"><span class="text">Kops</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="list-accordion">
+										<li class="acc-item is-active">
+											<div class="acc-header">
+												<div class="acc-inner">
+													<div class="left-area">Certification</div>
+													<div class="right-area">
+														<button type="button" class="bk-icon-only link">
+															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="acc-container">
+												<div class="acc-inner">
+													<div class="bk-checkbox">
+														<input type="checkbox" name="filter03" class="iCheckbox" id="filter03-01">
+														<label for="filter03-01"><span class="text">국제인증</span></label>
+														<input type="checkbox" name="filter03" class="iCheckbox" id="filter03-02">
+														<label for="filter03-02"><span class="text">FTA</span></label>
+														<input type="checkbox" name="filter03" class="iCheckbox" id="filter03-03">
+														<label for="filter03-03"><span class="text">APTA</span></label>
+														<input type="checkbox" name="filter03" class="iCheckbox" id="filter03-04">
+														<label for="filter03-04"><span class="text">특허</span></label>
+														<input type="checkbox" name="filter03" class="iCheckbox" id="filter03-05">
+														<label for="filter03-05"><span class="text">Trademark Trademark</span></label>
+														<input type="checkbox" name="filter03" class="iCheckbox" id="filter03-06">
+														<label for="filter03-06"><span class="text">HALAL</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="list-accordion">
+										<li class="acc-item is-active">
+											<div class="acc-header">
+												<div class="acc-inner">
+													<div class="left-area">Award</div>
+													<div class="right-area">
+														<button type="button" class="bk-icon-only link">
+															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="acc-container">
+												<div class="acc-inner">
+													<div class="bk-checkbox">
+														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-01">
+														<label for="filter04-01"><span class="text">IF</span></label>
+														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-02">
+														<label for="filter04-02"><span class="text">Reddot</span></label>
+														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-03">
+														<label for="filter04-03"><span class="text">IDEA</span></label>
+														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-04">
+														<label for="filter04-04"><span class="text">GOOD DESIGN</span></label>
+														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-05">
+														<label for="filter04-05"><span class="text">INDEX</span></label>
+														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-06">
+														<label for="filter04-06"><span class="text">AA</span></label>
+														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-07">
+														<label for="filter04-07"><span class="text">WA</span></label>
+														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-08">
+														<label for="filter04-08"><span class="text">iEoo</span></label>
+														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-09">
+														<label for="filter04-09"><span class="text">PIN UP</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="list-accordion">
+										<li class="acc-item is-active">
+											<div class="acc-header">
+												<div class="acc-inner">
+													<div class="left-area">Product Data</div>
+													<div class="right-area">
+														<button type="button" class="bk-icon-only link">
+															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="acc-container">
+												<div class="acc-inner">
+													<div class="bk-checkbox">
+														<input type="checkbox" name="filter05" class="iCheckbox" id="filter05-01">
+														<label for="filter05-01"><span class="text">Manual </span></label>
+														<input type="checkbox" name="filter05" class="iCheckbox" id="filter05-02">
+														<label for="filter05-02"><span class="text">Catalog</span></label>
+														<input type="checkbox" name="filter05" class="iCheckbox" id="filter05-03">
+														<label for="filter05-03"><span class="text">Other</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
 								
-							</dl>
+								<button type="button" class="btn-filter-setting">Search</button>
+							</div>
+							
 						</aside>
 						
 
@@ -88,14 +251,15 @@
 					var filterDim = '<div class="dimed-zone"></div>'
 					filterWrap.css('right', '-' + filterWidth + 'px');
 					$('.btn-filter').click( function() {
-						filterWrap.animate({right: 0}, 200);
+						filterWrap.animate({right: 0}, 400);
 						$('body').prepend(filterDim);
 						$('body').prepend(filterWrap);
-						
+						$('body').css('overflow', 'hidden');
 					});
-					$('.btn-close').click( function() {
-						filterWrap.css('right', '-' + filterWidth + 'px');
+					$('.bk-btn-close').click( function() {
+						filterWrap.animate({right: '-' + filterWidth + 'px'}, 400);
 						$('.dimed-zone').remove();
+						$('body').removeAttr('style');
 					});
 				}
 			});
