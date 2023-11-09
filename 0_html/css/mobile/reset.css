@@ -98,7 +98,7 @@ html {
 }
 body {
   position: relative;
-  min-width: 320px; /*[최소 너비 수정][수정일:20231025 */
+  /*min-width: 375px;*/ /*[최소 너비 수정][수정일:20231025 */
   word-wrap: break-word;
   /*white-space: normal;*/
   word-break: break-all;
