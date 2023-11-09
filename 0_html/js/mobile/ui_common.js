@@ -783,6 +783,7 @@ function addDiv(){
   //flatpickr end
 
   //배송지체크
+
   function setDelivery(e){
     if($('input:radio[id=radio-chcek-last]').is(':checked')){
       $('#chcek-last').show();
