@@ -247,12 +247,12 @@
                 </div>
                 <div class="bk-radio-group bk-flex-column-gap-12 add-position bk-tMg-small">
                   <div class="bk-radio">
-                    <input type="radio" name="radio-01" class="iRadio" id="radio-01-01" required="">
-                    <label for="radio-01-01"><span class="text">최근 배송지</span></label>
+                    <input type="radio" name="radio-01" class="iRadio" id="radio-chcek-last" required="" checked onChange="setDelivery();">
+                    <label for="radio-chcek-last"><span class="text">최근 배송지</span></label>
                   </div>
                   <div class="bk-radio">
-                    <input type="radio" name="radio-01" class="iRadio" id="radio-01-04" required="" checked>
-                    <label for="radio-01-04"><span class="text">신규 배송지</span></label>
+                    <input type="radio" name="radio-01" class="iRadio" id="radio-chcek-new" required="" onchange="setDelivery();">
+                    <label for="radio-chcek-new"><span class="text">신규 배송지</span></label>
                   </div>
 
                   <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall btn-delivery-list">
@@ -260,116 +260,178 @@
                   </button>
                 </div>
 
-                <div class="bk-tbl bk-tMg-small">
-                  <table class="tbl tbl-default">
-                    <caption>바이어정보</caption>
-                    <colgroup>
-                      <col style="width: 30vw">
-                      <col>
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th scope="col">회사명</th>
-                        <td>Company Name</td>
-                      </tr>
-                      <tr>
-                        <th scope="col">이메일</th>
-                        <td>qweasd@gamil.com</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>  
-
-                <!--[s]폼-->
-                <div class="bk-input-list">
-                  <dl>
-                    <dt class="is-required">담당자명</dt>
-                    <dd>
-                      <div class="bk-textfield">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" value="" class="iText" title="담당자명">
-                          </div>
-                        </div>
-                      </div>
-                    </dd>
-                    <dt class="is-required">휴대폰번호</dt>
-                    <dd>
-                      <div class="bk-textfield">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="휴대폰번호">
-                          </div>
-                        </div>
-                      </div>
-                    </dd>
-                    <dt>전화번호</dt>
-                    <dd>
-                      <div class="bk-textfield">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="전화번호">
-                          </div>
-                        </div>
-                      </div>
-                    </dd>
-                    <dt>팩스번호</dt>
-                    <dd>
-                      <div class="bk-textfield">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="팩스번호">
-                          </div>
-                        </div>
-                      </div>
-                    </dd>
-                    <dt class="is-required">Address</dt>
-                    <dd>
-                      <dl class="bk-input-list">
-                        <dt>Country</dt>
-                        <dd>
-                          <div class="bk-row-div bk-full">    
-                            <select title="Country">
-                              <option value="Choose">Choose</option>
-                              <option value="option2">US(UNITED STATE)</option>
-                            </select>
-                          </div>
-                        </dd>
-                        <dt>Zip/Postal</dt>
-                        <dd>
-                          <div class="bk-textfield">
-                            <div class="bk-control">
-                              <div class="control-field">
-                                <input type="text" placeholder="Zip/Postal" class="iText" title="Zip/Postal">
-                              </div>
-                            </div>
-                          </div>
-                        </dd>
-                        <dt>City/State</dt>
-                        <dd>
-                          <div class="bk-textfield">
-                            <div class="bk-control">
-                              <div class="control-field">
-                                <input type="text" placeholder="City/State" class="iText" title="City/State">
-                              </div>
-                            </div>
-                          </div>
-                        </dd>
-                        <dt>Street</dt>
-                        <dd>
-                          <div class="bk-textfield">
-                            <div class="bk-control">
-                              <div class="control-field">
-                                <input type="text" placeholder="Street" class="iText" title="Street">
-                              </div>
-                            </div>
-                          </div>
-                        </dd>
-                      </dl>
-                    </dd>
-                  </dl>
+                <div class="bk-delivery-list-check" id="chcek-last">
+                  <div class="bk-tbl bk-tMg-small">
+                    <table class="tbl tbl-default">
+                      <caption>최근배송지 정보</caption>
+                      <colgroup>
+                        <col style="width: 30vw">
+                        <col>
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="col">회사명</th>
+                          <td>Company Name</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">이메일</th>
+                          <td>qweasd@gamil.com</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">담당자명</th>
+                          <td>Hong Gil Dong</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">휴대폰번호</th>
+                          <td>+82-212345678</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">팩스번호</th>
+                          <td>+82-212345678</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">국가</th>
+                          <td>US(UNITED STATE)</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">주소</th>
+                          <td>4312 Wood Road New York, NY 10031</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> 
                 </div>
-                <!--//[d]폼-->
+
+                <div class="bk-delivery-list-check" id="chcek-new">
+                  <div class="bk-tbl bk-tMg-small">
+                    <table class="tbl tbl-default">
+                      <caption>신규배송지 회사정보</caption>
+                      <colgroup>
+                        <col style="width: 30vw">
+                        <col>
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="col">회사명</th>
+                          <td>Company Name</td>
+                        </tr>
+                        <tr>
+                          <th scope="col">이메일</th>
+                          <td>qweasd@gamil.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>  
+
+                  <!--[s]폼-->
+                  <div class="bk-input-list">
+                    <dl>
+                      <dt class="is-required">배송지명</dt>
+                      <dd>
+                        <div class="bk-textfield bk-with-btn">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input type="text" value="" placeholder="" class="iText" title="배송지명" id="delivery-name"  required="" >
+                            </div>
+                          </div>
+
+                          <div class="bk-control">
+                            <div class="control-field input-full">
+                              <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full"> 
+                                <span class="text">중복체크</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                      <dt class="is-required">담당자명</dt>
+                      <dd>
+                        <div class="bk-textfield">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input type="text" value="" class="iText" title="담당자명">
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                      <dt class="is-required">휴대폰번호</dt>
+                      <dd>
+                        <div class="bk-textfield">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="휴대폰번호">
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                      <dt>전화번호</dt>
+                      <dd>
+                        <div class="bk-textfield">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="전화번호">
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                      <dt>팩스번호</dt>
+                      <dd>
+                        <div class="bk-textfield">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="팩스번호">
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                      <dt class="is-required">Address</dt>
+                      <dd>
+                        <dl class="bk-input-list">
+                          <dt>Country</dt>
+                          <dd>
+                            <div class="bk-row-div bk-full">    
+                              <select title="Country">
+                                <option value="Choose">Choose</option>
+                                <option value="option2">US(UNITED STATE)</option>
+                              </select>
+                            </div>
+                          </dd>
+                          <dt>Zip/Postal</dt>
+                          <dd>
+                            <div class="bk-textfield">
+                              <div class="bk-control">
+                                <div class="control-field">
+                                  <input type="text" placeholder="Zip/Postal" class="iText" title="Zip/Postal">
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                          <dt>City/State</dt>
+                          <dd>
+                            <div class="bk-textfield">
+                              <div class="bk-control">
+                                <div class="control-field">
+                                  <input type="text" placeholder="City/State" class="iText" title="City/State">
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                          <dt>Street</dt>
+                          <dd>
+                            <div class="bk-textfield">
+                              <div class="bk-control">
+                                <div class="control-field">
+                                  <input type="text" placeholder="Street" class="iText" title="Street">
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </dd>
+                    </dl>
+                  </div>
+                  <!--//[d]폼-->
+                </div>
               </section>
 
               <section class="cp-info-block">
