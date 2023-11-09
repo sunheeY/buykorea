@@ -245,7 +245,12 @@
                 <div class="bk-title">
                   <strong class="title">바이어정보(배송지 정보)</strong>
                 </div>
-                <div class="bk-radio-group bk-flex-column-gap-12 add-position bk-tMg-small">
+
+                <button type="button" class="bk-btn btn-brand btn-outline btn-full btn-delivery-list bk-tMg-middle0">
+                  <span class="text">배송지 목록</span>
+                </button>
+
+                <div class="bk-radio-group bk-flex-column-gap-12 add-position bk-tMg-middle0">
                   <div class="bk-radio">
                     <input type="radio" name="radio-01" class="iRadio" id="radio-chcek-last" required="" checked onChange="setDelivery();">
                     <label for="radio-chcek-last"><span class="text">최근 배송지</span></label>
@@ -253,11 +258,7 @@
                   <div class="bk-radio">
                     <input type="radio" name="radio-01" class="iRadio" id="radio-chcek-new" required="" onchange="setDelivery();">
                     <label for="radio-chcek-new"><span class="text">신규 배송지</span></label>
-                  </div>
-
-                  <button type="button" class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall btn-delivery-list">
-                    <span class="text">배송지 목록</span>
-                  </button>
+                  </div>                  
                 </div>
 
                 <div class="bk-delivery-list-check" id="chcek-last">
