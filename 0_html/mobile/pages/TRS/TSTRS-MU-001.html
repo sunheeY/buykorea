@@ -181,16 +181,16 @@
 				}
 
         var trsSwipeBan = new Swiper('.trs-slide-wrap', {
-          slidesPerView: 3,
-          grid: {
-            rows: 2,
-          },
-          spaceBetween: 30,
+          loop: $('.trs-slide-wrap .swiper-slide').length > 1,
+          loopedSlides: 1,
+          speed: 500,
           pagination: {
             el: ".swiper-pagination",
-            clickable: true,
           },
-          slidesPerGroup: 3,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
         })
 
 			});

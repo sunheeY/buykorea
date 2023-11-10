@@ -446,5 +446,12 @@
 .trs-detail-top .bk-sub-title::before {left: 0}
 .trs-detail-top .bk-sub-title::after {right: 0}
 
-
-
+/* 트레이드쇼 - 카테고리 */
+.slt-category .bk-accordion .acc-item .acc-header {position: relative; padding: 15px 0;}
+.slt-category .bk-accordion .acc-item .acc-header .acc-inner {padding: 0;}
+.slt-category .bk-accordion .acc-item .acc-header .right-area {position: absolute; width: 100%; height: 100%;}
+.slt-category .bk-accordion .acc-item .acc-header .link {width: 100%; height: 100%; transform: none;}
+.slt-category .bk-accordion .acc-item .acc-header .link .bk-icon {background: none;}
+.slt-category .bk-accordion .acc-container .acc-inner {background: none; padding: 15px 0 0 30px;}
+.slt-category-third {display: none;}
+.slt-category-second .is-active > .slt-category-third {display: block; transition: 0.5s;}
