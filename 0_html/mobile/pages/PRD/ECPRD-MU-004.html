@@ -56,6 +56,7 @@
 											</div>
 											<div class="acc-container">
 												<div class="acc-inner">
+                          <!-- [d] 기본값 : 두줄 배열 / 한줄 배열일 경우 flex-column 클래스 추가 -->
 													<div class="bk-radio flex-column">
 														<input type="radio" name="filter01" class="iRadio" id="filter01-01">
 														<label for="filter01-01"><span class="text">Featured</span></label>
@@ -73,7 +74,7 @@
 										</li>
 									</ul>
 									<ul class="list-accordion">
-										<li class="acc-item is-active">
+										<li class="acc-item">
 											<div class="acc-header">
 												<div class="acc-inner">
 													<div class="left-area">Price</div>
@@ -100,7 +101,7 @@
 										</li>
 									</ul>
 									<ul class="list-accordion">
-										<li class="acc-item is-active">
+										<li class="acc-item">
 											<div class="acc-header">
 												<div class="acc-inner">
 													<div class="left-area">Payment</div>
@@ -113,7 +114,8 @@
 											</div>
 											<div class="acc-container">
 												<div class="acc-inner">
-													<div class="bk-checkbox">
+                          <!-- [d] 기본값 : 두줄 배열 / 한줄 배열일 경우 flex-column 클래스 추가 -->
+													<div class="bk-checkbox flex-column">
 														<input type="checkbox" name="filter02" class="iCheckbox" id="filter02-01">
 														<label for="filter02-01"><span class="text">Kops</span></label>
 													</div>
@@ -122,7 +124,7 @@
 										</li>
 									</ul>
 									<ul class="list-accordion">
-										<li class="acc-item is-active">
+										<li class="acc-item">
 											<div class="acc-header">
 												<div class="acc-inner">
 													<div class="left-area">Certification</div>
@@ -135,7 +137,8 @@
 											</div>
 											<div class="acc-container">
 												<div class="acc-inner">
-													<div class="bk-checkbox">
+                          <!-- [d] 기본값 : 두줄 배열 / 한줄 배열일 경우 flex-column 클래스 추가 -->
+													<div class="bk-checkbox flex-column">
 														<input type="checkbox" name="filter03" class="iCheckbox" id="filter03-01">
 														<label for="filter03-01"><span class="text">국제인증</span></label>
 														<input type="checkbox" name="filter03" class="iCheckbox" id="filter03-02">
@@ -154,7 +157,7 @@
 										</li>
 									</ul>
 									<ul class="list-accordion">
-										<li class="acc-item is-active">
+										<li class="acc-item">
 											<div class="acc-header">
 												<div class="acc-inner">
 													<div class="left-area">Award</div>
@@ -167,7 +170,8 @@
 											</div>
 											<div class="acc-container">
 												<div class="acc-inner">
-													<div class="bk-checkbox">
+													<!-- [d] 기본값 : 두줄 배열 / 한줄 배열일 경우 flex-column 클래스 추가 -->
+													<div class="bk-checkbox flex-column">
 														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-01">
 														<label for="filter04-01"><span class="text">IF</span></label>
 														<input type="checkbox" name="filter04" class="iCheckbox" id="filter04-02">
@@ -192,7 +196,7 @@
 										</li>
 									</ul>
 									<ul class="list-accordion">
-										<li class="acc-item is-active">
+										<li class="acc-item">
 											<div class="acc-header">
 												<div class="acc-inner">
 													<div class="left-area">Product Data</div>
@@ -205,7 +209,8 @@
 											</div>
 											<div class="acc-container">
 												<div class="acc-inner">
-													<div class="bk-checkbox">
+													<!-- [d] 기본값 : 두줄 배열 / 한줄 배열일 경우 flex-column 클래스 추가 -->
+													<div class="bk-checkbox flex-column">
 														<input type="checkbox" name="filter05" class="iCheckbox" id="filter05-01">
 														<label for="filter05-01"><span class="text">Manual </span></label>
 														<input type="checkbox" name="filter05" class="iCheckbox" id="filter05-02">
@@ -252,8 +257,8 @@
 					filterWrap.css('right', '-' + filterWidth + 'px');
 					$('.btn-filter').click( function() {
 						filterWrap.animate({right: 0}, 400);
-						$('body').prepend(filterDim);
-						$('body').prepend(filterWrap);
+						$('body').append(filterDim);
+						$('body').append(filterWrap);
 						$('body').css('overflow', 'hidden');
 					});
 					$('.bk-btn-close').click( function() {

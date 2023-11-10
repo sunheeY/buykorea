@@ -136,24 +136,24 @@
   margin-top: 8px;
 }
 /* [공통]size */
-.bk-select.xlagre .nice-select,
-.bk-textfield.xlagre .iText,
-.bk-textarea.xlagre .iTextarea {
+.bk-select.xlarge .nice-select,
+.bk-textfield.xlarge .iText,
+.bk-textarea.xlarge .iTextarea {
   font-size: 2rem;
 }
-.bk-select.xlagre label,
-.bk-textfield.xlagre label,
-.bk-textarea.xlagre label {
+.bk-select.xlarge label,
+.bk-textfield.xlarge label,
+.bk-textarea.xlarge label {
   margin: 20px 10px 0 0;
 }
-.bk-select.lagre .nice-select,
-.bk-textfield.lagre .iText,
-.bk-textarea.lagre .iTextarea {
+.bk-select.large .nice-select,
+.bk-textfield.large .iText,
+.bk-textarea.large .iTextarea {
   font-size: 1.8rem;
 }
-.bk-select.lagre label,
-.bk-textfield.lagre label,
-.bk-textarea.lagre label {
+.bk-select.large label,
+.bk-textfield.large label,
+.bk-textarea.large label {
   margin: 14px 10px 0 0;
 }
 .bk-select.small .nice-select,
@@ -177,15 +177,15 @@
   margin: 2px 10px 0 0;
 }
 /* size */
-.bk-select.xlagre .nice-select,
-.bk-textfield.xlagre .iText {
-  height: var(--size-xlagre);
-  line-height: var(--size-xlagre);
+.bk-select.xlarge .nice-select,
+.bk-textfield.xlarge .iText {
+  height: var(--size-xlarge);
+  line-height: var(--size-xlarge);
 }
-.bk-select.lagre .nice-select,
-.bk-textfield.lagre .iText {
-  height: var(--size-lagre);
-  line-height: var(--size-lagre);
+.bk-select.large .nice-select,
+.bk-textfield.large .iText {
+  height: var(--size-large);
+  line-height: var(--size-large);
 }
 .bk-select.small .nice-select,
 .bk-textfield.small .iText {
@@ -374,10 +374,10 @@
 } /* xsmall */
 .bk-checkbox-group.small {
 } /* small */
-.bk-checkbox-group.lagre {
-} /* lagre */
-.bk-checkbox-group.xlagre {
-} /* xlagre */
+.bk-checkbox-group.large {
+} /* large */
+.bk-checkbox-group.xlarge {
+} /* xlarge */
 .bk-checkbox,
 .bk-radio {
   display: inline-flex;
@@ -589,25 +589,25 @@
   padding: 0 16px;
   font-size: var(--font-size-small);
 }
-/* Toggle-lagre */
-.bk-checkbox-group.lagre .bk-toggle-group label,
-.bk-radio-group.lagre .bk-toggle-group label {
-  height: var(--size-lagre);
+/* Toggle-large */
+.bk-checkbox-group.large .bk-toggle-group label,
+.bk-radio-group.large .bk-toggle-group label {
+  height: var(--size-large);
 }
-.bk-checkbox-group.lagre .bk-toggle-group label .text,
-.bk-radio-group.lagre .bk-toggle-group label .text {
+.bk-checkbox-group.large .bk-toggle-group label .text,
+.bk-radio-group.large .bk-toggle-group label .text {
   padding: 0 32px;
-  font-size: var(--font-size-lagre);
+  font-size: var(--font-size-large);
 }
-/* Toggle-xlagre */
-.bk-checkbox-group.xlagre .bk-toggle-group label,
-.bk-radio-group.xlagre .bk-toggle-group label {
-  height: var(--size-xlagre);
+/* Toggle-xlarge */
+.bk-checkbox-group.xlarge .bk-toggle-group label,
+.bk-radio-group.xlarge .bk-toggle-group label {
+  height: var(--size-xlarge);
 }
-.bk-checkbox-group.xlagre .bk-toggle-group label .text,
-.bk-radio-group.xlagre .bk-toggle-group label .text {
+.bk-checkbox-group.xlarge .bk-toggle-group label .text,
+.bk-radio-group.xlarge .bk-toggle-group label .text {
   padding: 0 32px;
-  font-size: var(--font-size-xlagre);
+  font-size: var(--font-size-xlarge);
 }
 /* switch 버튼 */
 .bk-switch {
@@ -878,13 +878,13 @@
   height: var(--size-small);
   font-size: 1.4rem;
 }
-.btn-lagre {
-  height: var(--size-lagre);
+.btn-large {
+  height: var(--size-large);
   padding: 0 32px;
   font-size: 1.8rem;
 }
-.btn-xlagre {
-  height: var(--size-xlagre);
+.btn-xlarge {
+  height: var(--size-xlarge);
   padding: 0 32px;
   font-size: 2rem;
 }
@@ -1055,8 +1055,8 @@ a.btn-text .text {
 .bk-tab.wide .list-menu > li {
   width: var(--wide-full);
 }
-.bk-tab.tab-lagre .tab-item {
-  height: var(--size-lagre);
+.bk-tab.tab-large .tab-item {
+  height: var(--size-large);
   padding: 0 24px;
   font-size: 18px;
 }
@@ -2412,10 +2412,10 @@ span.flatpickr-weekday {
 .bk-dialog.dialog-default .dialog-inner {
   max-width: 680px;
 }
-.bk-dialog.dialog-lagre .dialog-inner {
+.bk-dialog.dialog-large .dialog-inner {
   max-width: 904px;
 }
-.bk-dialog.dialog-xlagre .dialog-inner {
+.bk-dialog.dialog-xlarge .dialog-inner {
   max-width: 1200px;
 }
 .bk-dialog .dialog-header {
