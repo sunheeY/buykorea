@@ -781,3 +781,15 @@ function addDiv(){
   const endDateInput = $('#endDate').flatpickr(config);
 
   //flatpickr end
+
+  //배송지체크
+
+  function setDelivery(e){
+    if($('input:radio[id=radio-chcek-last]').is(':checked')){
+      $('#chcek-last').show();
+      $('#chcek-new').hide();
+    }else if($('input:radio[id=radio-chcek-new]').is(':checked')){
+      $('#chcek-last').hide();
+      $('#chcek-new').show();
+    }
+  }
