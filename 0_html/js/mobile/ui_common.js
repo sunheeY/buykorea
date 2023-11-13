@@ -122,10 +122,6 @@ $.fn.extend({
           var $container = $(this).find('.acc-container');
 
           $link.click(function (e) {
-            // [s] 카테고리 관련 추가 - ysh
-            if( $container.find('.slt-category-third').length > 0) {
-              $('.sub-link').removeClass('is-active').next('.slt-category-third').slideUp('');
-            }
 
             $container.slideToggle('');
             $(this).closest('.acc-item').toggleClass('is-active'); // 토글 클래스 추가
@@ -144,20 +140,6 @@ $.fn.extend({
               }
             }
           });
-          // [s] 카테고리 관련 추가 - ysh
-          if( $container.find('.slt-category-third').length > 0) {
-            $.each($('.sub-link'), function () {
-              var $_this = $(this);
-              var $third = $('.slt-category-third');
-              $_this.click(function () {
-                $_this.toggleClass('is-active').next($third).slideToggle('');
-                if (leaveOpen === false) {
-                  $third.not($_this.next($third)).slideUp('');
-                  $('.sub-link').not($_this).removeClass('is-active'); // 다른 항목에서 클래스 제거
-                }
-              })
-            })
-          };// [e] 카테고리 관련 추가 - ysh
         });
       });
       return this;
@@ -165,7 +147,7 @@ $.fn.extend({
 
     return this.initialize();
   },  
-});
+}); 
 
 // lnb 존재여부 체크
 function addHasLnbClass() {

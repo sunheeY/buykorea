@@ -33,36 +33,66 @@
               <strong class="bk-sub-title">Participating companies</strong>
             </div>
 
-            <div class="trs-slide-wrap swiper-container">
+            <div class="trs-detail-slide-wrap swiper-container">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
-                  <a href="#">1<img src="../../../images/tmp/tmp-logo1.png" alt=""></a>
+                  <input type="radio" name="radio" id="radio-01">
+                  <label for="radio-01" >
+                    <span class="thumb-com"><img src="../../../images/tmp/tmp-logo1.png" alt=""></span>
+                    <span class="name-com">Company Name</span>
+                  </label>
                 </li>
                 <li class="swiper-slide">
-                  <a href="#">2<img src="../../../images/tmp/tmp-logo2.png" alt=""></a>
+                  <input type="radio" name="radio" id="radio-02">
+                  <label for="radio-02" >
+                    <span class="thumb-com"><img src="../../../images/tmp/tmp-logo2.png" alt=""></span>
+                    <span class="name-com">Company Name</span>
+                  </label>
                 </li>
                 <li class="swiper-slide">
-                  <a href="#">3<img src="../../../images/tmp/tmp-logo1.png" alt=""></a>
+                  <input type="radio" name="radio" id="radio-03">
+                  <label for="radio-03" >
+                    <span class="thumb-com"><img src="../../../images/tmp/tmp-logo1.png" alt=""></span>
+                    <span class="name-com">Company Name</span>
+                  </label>
                 </li>
                 <li class="swiper-slide">
-                  <a href="#">4<img src="../../../images/tmp/tmp-logo2.png" alt=""></a>
+                  <input type="radio" name="radio" id="radio-04">
+                  <label for="radio-04" >
+                    <span class="thumb-com"><img src="../../../images/tmp/tmp-logo2.png" alt=""></span>
+                    <span class="name-com">Company Name</span>
+                  </label>
                 </li>
                 <li class="swiper-slide">
-                  <a href="#">5<img src="../../../images/tmp/tmp-logo1.png" alt=""></a>
+                  <input type="radio" name="radio" id="radio-05">
+                  <label for="radio-05" >
+                    <span class="thumb-com"><img src="../../../images/tmp/tmp-logo2.png" alt=""></span>
+                    <span class="name-com">Company Name</span>
+                  </label>
                 </li>
                 <li class="swiper-slide">
-                  <a href="#">6<img src="../../../images/tmp/tmp-logo2.png" alt=""></a>
+                  <input type="radio" name="radio" id="radio-06">
+                  <label for="radio-06" >
+                    <span class="thumb-com"><img src="../../../images/tmp/tmp-logo2.png" alt=""></span>
+                    <span class="name-com">Company Name</span>
+                  </label>
                 </li>
                 <li class="swiper-slide">
-                  <a href="#">7<img src="../../../images/tmp/tmp-logo1.png" alt=""></a>
-                </li>
-                <li class="swiper-slide">
-                  <a href="#">8<img src="../../../images/tmp/tmp-logo2.png" alt=""></a>
+                  <input type="radio" name="radio" id="radio-07">
+                  <label for="radio-07" >
+                    <span class="thumb-com"><img src="../../../images/tmp/tmp-logo2.png" alt=""></span>
+                    <span class="name-com">Company Name</span>
+                  </label>
                 </li>
               </ul>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-wing-wrap">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+              </div>
+              
             </div>
-
+            
             <section class="trs-cont-wrap">
               <div class="bk-textfield">
                 <div class="bk-control">
@@ -225,9 +255,11 @@
     <!-- [S]팝업 -->
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
-    <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script> -->
     <script src="../../../js/mobile/ui_common.js"></script>
     <script src="../../../js/mobile/load_html.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
     <script>
       $(document).ready(function () {
 				if( $('.cp-prd-sort').length > 0) {
@@ -241,17 +273,20 @@
 					})
 				}
 
-        var trsSwipeBan = new Swiper('.trs-slide-wrap', {
-          // loop: $('.trs-slide-wrap .swiper-slide').length > 1,
-          // loopedSlides: 1,
-					// speed: 500,
-          spaceBetween: 15,
-          preventClicks: true,
-          a11y: false,
-          observer: true,
-		    	observeParents: true,
-          slidesPerView: 6,
+        var trsSwipeBan = new Swiper('.trs-detail-slide-wrap', {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          slidesPerColumn: 2,
+          spaceBetween: 10,
+          slidesPerColumnFill: 'row',
+          centeredSlides: false,
+          loop: false,
+          navigation: {
+            nextEl: ".trs-detail-slide-wrap .swiper-button-next",
+            prevEl: ".trs-detail-slide-wrap .swiper-button-prev",
+          },
         })
+        
 
 			});
     </script>

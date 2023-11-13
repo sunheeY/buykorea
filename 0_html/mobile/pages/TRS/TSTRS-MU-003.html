@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../../css/mobile/common.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+
+    <!-- [S]ui-wrap -->
+    <div class="ui-wrap">
+      <!-- [S]header -->
+      <header id="header" class="ui-header">
+        <h1>Baby &amp; Toddler</h1>
+      </header>
+      <!--// [E]header -->
+      <!-- [S]container -->
+      <main id="container" class="ui-container ui-prd"><!--// [D]회원 class추가 -->
+        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
+        <div class="ui-content-wrap ui-inner">
+          <div class="ui-contents" id="contents">
+						
+
+						<button type="button" class="bk-btn btn-filter">필터</button>
+						
+						<aside class="cp-filter-wrap">
+							<div class="header-filter-area">
+								<strong class="bk-title">Filter</strong>
+								<button type="button" class="bk-icon-only bk-btn-reset">
+									<i class="bk-icon bk-icon-reset">설정초기화</i>
+								</button>
+								<button type="button" class="bk-icon-only bk-btn-close">
+									<i class="bk-icon bk-icon-dialog-close">닫기</i>
+								</button>
+							</div>
+							<div class="ui-filter-inner">
+								<div class="bk-accordion">
+									<ul class="list-accordion">
+										<li class="acc-item is-active">
+											<div class="acc-header">
+												<div class="acc-inner">
+													<div class="left-area">Array</div>
+													<div class="right-area">
+														<button type="button" class="bk-icon-only link">
+															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="acc-container">
+												<div class="acc-inner">
+                          <!-- [d] 기본값 : 두줄 배열 / 한줄 배열일 경우 flex-column 클래스 추가 -->
+													<div class="bk-radio flex-column">
+														<input type="radio" name="filter01" class="iRadio" id="filter01-01">
+														<label for="filter01-01"><span class="text">Featured</span></label>
+														<input type="radio" name="filter01" class="iRadio" id="filter01-02">
+														<label for="filter01-02"><span class="text">Sales volume</span></label>
+														<input type="radio" name="filter01" class="iRadio" id="filter01-03">
+														<label for="filter01-03"><span class="text">Price : High to Low</span></label>
+														<input type="radio" name="filter01" class="iRadio" id="filter01-04">
+														<label for="filter01-04"><span class="text">Price : Low to High</span></label>
+														<input type="radio" name="filter01" class="iRadio" id="filter01-05">
+														<label for="filter01-05"><span class="text">Newest</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="list-accordion">
+										<li class="acc-item">
+											<div class="acc-header">
+												<div class="acc-inner">
+													<div class="left-area">Company name</div>
+													<div class="right-area">
+														<button type="button" class="bk-icon-only link">
+															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="acc-container">
+												<div class="acc-inner">
+													<div class="bk-textfield">
+														<div class="control-field">
+															<input type="text" value="" placeholder="" class="iText" title="부서명">
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="list-accordion">
+										<li class="acc-item bk-date-range">
+											<div class="acc-header">
+												<div class="acc-inner">
+													<div class="left-area">Date Range</div>
+													<div class="right-area">
+														<button type="button" class="bk-icon-only link">
+															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="acc-container">
+												<div class="acc-inner">
+													<div class="bk-textfield is-readonly">
+                            <div class="bk-control">
+                              <div class="control-field">
+                                <input type="text" class="iText iDatepicker flatpickr-input" id="datepicker" placeholder="날짜 및 시간 선택" readonly="readonly">
+                                ~
+                                <input type="text" class="iText iDatepicker flatpickr-input" id="datepicker" placeholder="날짜 및 시간 선택" readonly="readonly">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bk-radio-group type-box"><!--// [D]small,small,default(기본 사이즈로 class 없어도되는 기본),large,xlarge -->
+                            <div class="bk-radio">
+                              <input type="radio" name="radio-03" class="iRadio" id="radio-03-01">
+                              <label for="radio-03-01" ><span class="text">1M</span></label>
+                            </div>
+                            <div class="bk-radio">
+                              <input type="radio" name="radio-03" class="iRadio" id="radio-03-02">
+                              <label for="radio-03-02" ><span class="text">3M</span></label>
+                            </div>
+                            <div class="bk-radio">
+                              <input type="radio" name="radio-03" class="iRadio" id="radio-03-03">
+                              <label for="radio-03-03"><span class="text">6M</span></label>
+                            </div>
+                            <div class="bk-radio">
+                              <input type="radio" name="radio-03" class="iRadio" id="radio-03-04">
+                              <label for="radio-03-04" ><span class="text">12M</span></label>
+                            </div>
+
+                          </div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								
+								<button type="button" class="btn-filter-setting">Search</button>
+							</div>
+							
+						</aside>
+						
+
+          </div>
+        </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">Top</div>
+        <!--// [E]Top버튼 -->
+      </main>
+      <!--// [E]container -->
+      <!-- [S]footer -->
+      <footer id="footer" class="ui-footer"></footer>
+      <!--// [E]footer -->
+    </div>
+    <!--// [E]ui-wrap -->
+
+    <!-- [S]팝업 -->
+    <!--// [E]팝업 -->
+    <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/mobile/ui_common.js"></script>
+    <script src="../../../js/mobile/load_html.js"></script>
+    <script>
+      $(document).ready(function () {
+				if( $('.btn-filter').length > 0) {
+					var filterWrap = $('.cp-filter-wrap');
+					var filterWidth = $(window).width() - 95;
+					var filterDim = '<div class="dimed-zone"></div>'
+					filterWrap.css('right', '-' + filterWidth + 'px');
+					$('.btn-filter').click( function() {
+						filterWrap.animate({right: 0}, 400);
+						$('body').append(filterDim);
+						$('body').append(filterWrap);
+						$('body').css('overflow', 'hidden');
+					});
+					$('.bk-btn-close').click( function() {
+						filterWrap.animate({right: '-' + filterWidth + 'px'}, 400);
+						$('.dimed-zone').remove();
+						$('body').removeAttr('style');
+					});
+				}
+			});
+    </script>
+  </body>
+</html>
