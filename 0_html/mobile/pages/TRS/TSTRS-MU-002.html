@@ -27,81 +27,75 @@
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
-            <button type="button" class="bk-btn btn-filter">필터</button>
+            <button type="button" class="bk-btn btn-filter" onclick="rightMenu('#categorys')">카테고리 / 인더스트리</button>
 
             <!-- [d] 카테고리는 cp-filter-wrap에 slt-category 클래스 추가합니다 -->
-            <aside class="cp-filter-wrap slt-category">
+            <aside class="cp-filter-wrap slt-category" id="categorys">
 
 							<div class="header-filter-area">
-								<strong class="bk-title">Industry</strong>
+								<strong class="bk-title">Category</strong>
 								<button type="button" class="bk-icon-only bk-btn-close">
 									<i class="bk-icon bk-icon-dialog-close">닫기</i>
 								</button>
 							</div>
 
 							<div class="ui-filter-inner">
-								<div class="bk-accordion">
-									<ul class="list-accordion">
-										<li class="acc-item">
-											<div class="acc-header">
-												<div class="acc-inner">
-													<div class="left-area">대분류</div>
-                          <div class="right-area">
-														<button type="button" class="bk-icon-only link">
-															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-														</button>
-													</div>
-												</div>
-											</div>
-											<div class="acc-container">
-												<div class="acc-inner">
-                          <ul class="slt-category-second">
-                            <li class="accitem">
-                              <a href="#" class="sub-link">중분류</a>
-                              <ul class="slt-category-third">
-                                <li><a href="#">소분류</a></li>
-                              </ul>
-                            </li>
-                            <li class="accitem"><a href="#">중분류</a></li>
-                            <li class="accitem"><a href="#">중분류</a></li>
-                            <li class="accitem"><a href="#" class="sub-link">중분류</a>
-                              <ul class="slt-category-third">
-                                <li><a href="#">소분류</a></li>
-                                <li><a href="#">소분류</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                <ul class="cp-category">
 
-										</li>
-										<li class="acc-item">
-											<div class="acc-header">
-												<div class="acc-inner">
-													<div class="left-area">Price</div>
-													<div class="right-area">
-														<button type="button" class="bk-icon-only link">
-															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-														</button>
-													</div>
-												</div>
-											</div>
-											<div class="acc-container">
-												<div class="acc-inner">
-													<div class="bk-textfield">
-														<div class="control-field">
-															<input type="text" value="" placeholder="" class="iText" title="부서명">
-														</div>
-														~
-														<div class="control-field">
-															<input type="text" value="" placeholder="" class="iText" title="부서명">
-														</div>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
+                  <li class="category-depth01">
+                    <a href="#">대분류</a>
+                    <ul class="in-subdepth">
+                      <li class="category-depth02">
+                        <a href="#">중분류</a>
+                        <ul class="in-subdepth">
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                        </ul>
+                      </li>
+                      <li class="category-depth02">
+                        <a href="#">중분류</a>
+                        <ul class="in-subdepth">
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                        </ul>
+                      </li>
+                      <li class="category-depth02">
+                        <a href="#">중분류</a>
+                        <ul class="in-subdepth">
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="category-depth01">
+                    <a href="#">대분류</a>
+                    <ul class="in-subdepth">
+                      <li class="category-depth02">
+                        <a href="#">중분류</a>
+                        <ul class="in-subdepth">
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                        </ul>
+                      </li>
+                      <li class="category-depth02">
+                        <a href="#">중분류</a>
+                        <ul class="in-subdepth">
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                          <li class="category-depth03"><a href="#">소분류</a></li>
+                        </ul>
+                      </li>
+                      <li class="category-depth02">
+                        <a href="#">중분류</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="category-depth01">
+                    <a href="#">대분류</a>
+                  </li>
+                </ul>
 								
 								<button type="button" class="btn-filter-setting">Select Industry</button>
 							</div>
@@ -129,24 +123,29 @@
     <script src="../../../js/mobile/load_html.js"></script>
     <script>
       $(document).ready(function () {
-				if( $('.btn-filter').length > 0) {
-					var filterWrap = $('.cp-filter-wrap');
-					var filterWidth = $(window).width() - 95;
-					var filterDim = '<div class="dimed-zone"></div>'
-					filterWrap.css('right', '-' + filterWidth + 'px');
-					$('.btn-filter').click( function() {
-						filterWrap.animate({right: 0}, 400);
-						$('body').append(filterDim);
-						$('body').append(filterWrap);
-						$('body').css('overflow', 'hidden');
-					});
-					$('.bk-btn-close').click( function() {
-						filterWrap.animate({right: '-' + filterWidth + 'px'}, 400);
-						$('.dimed-zone').remove();
-						$('body').removeAttr('style');
-					});
-				}
+				if ( $('.cp-category').length > 0) {
+          $('[class^=category-depth0] > a').click(function(e) {
+            e.preventDefault();
+            var clickThis =  $(this).parent();
+            clickThis.toggleClass('is-active');
+            $(this).next('.in-subdepth').slideToggle();
+            clickThis.siblings().removeClass('is-active').find('.in-subdepth').slideUp();
+            clickThis.siblings().find('.in-subdepth li').removeClass('is-active');           
+          });
+        }
 			});
+      function rightMenu(id) {
+        var filterWidth = $(window).width() - 95;
+        var filterDim = '<div class="dimed-zone"></div>'
+        $(id).animate({right: 0}, 400).appendTo('body');
+        $('body').append(filterDim);
+        $('body').css('overflow', 'hidden');
+        $(id).find('.bk-btn-close').click( function() {
+          $(id).animate({right: '-' + filterWidth + 'px'}, 400);
+          $('.dimed-zone').remove();
+          $('body').removeAttr('style');
+        });
+      }
     </script>
   </body>
 </html>
