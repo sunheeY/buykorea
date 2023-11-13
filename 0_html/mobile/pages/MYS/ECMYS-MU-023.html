@@ -129,37 +129,25 @@
                   <div class="search-row">
                     <div class="date-group has-dates">
                       <div class="bk-textfield is-readonly">
-                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
                         <div class="bk-control">
-                          <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
                           <div class="control-field">
                             <input type="text" class="iText iDatepicker" id="startDate" placeholder="시작 날짜" readonly="" title="시작 날짜">
                           </div>
-                          <div class="bk-valid">에러 메시지</div>
-                          <!--// [D]성공:success,에러:error -->
                         </div>
                       </div>
                       <div class="dash">~</div>
                       <div class="bk-textfield is-readonly">
-                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
                         <div class="bk-control">
-                          <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
                           <div class="control-field">
                             <input type="text" class="iText iDatepicker" id="endDate" placeholder="종료 날짜" readonly="" title="종료 날짜">
                           </div>
-                          <div class="bk-valid">에러 메시지</div>
-                          <!--// [D]성공:success,에러:error -->
                         </div>
                       </div>
                     </div>
                     <div class="search-group">
                       <div class="bk-select">
-                        <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
                         <div class="bk-control">
                           <select class="" id="" title="label텍스트값">
-                            <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
                             <option value="1">전체</option>
                             <option value="2">주문번호</option>
                             <option value="3">상품명</option>
@@ -167,13 +155,9 @@
                             <option value="5">바이어ID</option>
                             <option value="6">회사명</option>
                           </select>
-                          <div class="bk-valid success">에러 메시지</div>
-                          <!--// [D]성공:success,에러:error -->
                         </div>
                       </div>
                       <div class="bk-textfield wide textfield-search is-required">
-                        <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                        <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
                         <div class="bk-control">
                           <div class="control-field">
                             <input type="text" name="" value="" placeholder="" class="iText" id="" required="">
@@ -182,15 +166,14 @@
                                 <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
                               </button>
                             </div>
-                            <div class="control-icon append-icon">
-                              <button type="button" class="bk-icon-only icon-search">
-                                <i class="bk-icon bk-icon-searchPrimary">검색</i>
-                              </button>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <!--2023-11-13 검색버튼 수정-->
+                    <button type="button" class="bk-btn btn-primary btn-middle btn-full">
+                      <span class="text">검색</span>
+                    </button>
                   </div>
                 </div>
               </form>
