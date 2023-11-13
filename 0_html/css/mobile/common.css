@@ -163,6 +163,7 @@
 .bk-icon.bk-icon-page-next{width:8px; height:14px; background-image: url(../../images/mobile/icon-page-prev.svg); transform:rotate(180deg);}
 
 .bk-icon.bk-icon-gnb-prev{width:24px; height:24px; background-image: url(../../images/mobile/icon-page-gnb-prev.svg);}/*gnb prev 버튼*/
+.bk-icon.bk-icon-down {width: 16px; height: 16px; background-image: url(../../images/mobile/icon-button-down.svg);} /* 다운로드 */
 
 
 
