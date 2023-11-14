@@ -17,6 +17,8 @@
 .cp-total-price .price {font-weight: 500; line-height: 1.22222;}
 .bk-tbl-toolbar .total {margin-bottom: 4px; display: inline-block;}
 .bk-txt-final {font-size: 1.6rem !important; font-weight: 700; line-height: 1.375;}
+.prd-title-20 {font-size: 2rem; font-weight: 700; line-height: 1.4;}
+.prd-title-24 {font-size: 2.4rem; font-weight: 700; line-height: 1.33333;}
 
 /* 간격 */
 .cp-info-block:not(:first-child) {margin-top: 40px}
@@ -478,17 +480,18 @@
 /* 트레이드쇼 - 카테고리 */
 .slt-category .ui-filter-inner {padding-right: 0;}
 .cp-category .in-subdepth {display: none}
-.category-depth01.is-active > a,
-.category-depth03.is-active > a {color: var(--color-primary)}
+.category-depth01.is-active > a {color: var(--color-primary)}
 [class^=category-depth0].is-active > a {font-weight: 500;}
 [class^=category-depth0] > a {display: block; font-weight: 400; line-height: 1.57143; font-size: 1.6rem;}
 .category-depth01 > a { padding: 15px 0; border-bottom: 1px solid #eaeaea}
-.category-depth02:not(:first-child),
-.category-depth03:not(:first-child) {margin-top: 12px;}
+.in-subdepth li:not(:first-child) {margin-top: 12px;}
 .in-subdepth { padding: 15px 0;}
+
 .category-depth02 {padding-left: 30px;}
+.category-depth03 {padding-right: 20px;}
 .category-depth03 a {padding-left: 10px; font-size: 1.4rem;}
 .in-subdepth li a::before{ content: '-'; display: inline-block; margin-right: 3px;}
+.category-depth03 > .in-subdepth {background: #F6F6F6; padding: 12px; margin: 8px 0 0 0;}
 
 .cp-filter-wrap .bk-date-range .control-field {text-align: center;}
 .bk-radio-group.type-box {gap: 0; margin-bottom:0 !important; }
@@ -566,6 +569,19 @@
 .prd-product-details.view-more .btn-more {position: static;}
 .prd-img-unit img {width: 100%;}
 
+.prd-detail-link {margin-top: 40px}
+.prd-detail-link dd {margin-top: 12px;}
+.prd-detail-link a {width: fit-content; font-size: 1.5rem; line-height: 1.6;}
+.prd-keyword {margin-right: -20px; padding-bottom: 5px;}
+.prd-keyword dd {display: flex; gap: 12px; overflow-x: auto;}
+.prd-keyword a {display: block; border: 1px solid #ddd; padding: 4px 12px; border-radius: 15px;}
+.prd-download a {display: inline-block; border: 1px solid #999; padding: 6px 20px; border-radius: 4px;}
+.prd-download dd {display: inline-flex; gap: 8px; flex-wrap: wrap;}
+
+
+.prd-detail-bot {margin-top: 64px;}
+
+.ui-prd-detail .tab-menu-wrap {position: sticky; top: 0; background: #FFF; z-index: 999;}
 
 /* 상품상세 버튼 */
 .ui-prd-detail .btn-has-icon {display: flex; gap: 8px; height: auto;}
@@ -587,6 +603,7 @@
 .prd-detail-info-bot .prd-info-company .btn-has-icon::before {width: 16px; height: 16px; background-image: url(../../images/mobile/icon-message.svg);}
 .prd-detail-info-bot .prd-info-company .btn-message {font-size: 1.4rem; line-height: 1.57143; border: 1px solid #ddd; padding: 2px 7px; box-sizing: border-box;}
 
+.download-wrap {display: flex; gap: 12px; flex-wrap: wrap;}
 .download-wrap .btn-has-icon {display: inline-flex; gap: 4px; text-decoration: underline; color: #000;}
 .download-wrap .btn-has-icon + .btn-has {margin-left: 12px;}
 .download-wrap .btn-has-icon::before {display: none;}
