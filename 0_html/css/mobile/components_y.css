@@ -446,10 +446,13 @@
 .trs-detail-top .bk-sub-title::before {left: 0}
 .trs-detail-top .bk-sub-title::after {right: 0}
 
-.trs-detail-slide-wrap.swiper-container {width: 100%; min-height: 250px; margin-top: 0;}
-.trs-detail-slide-wrap .swiper-slide { width: calc((100%) / 3); height: calc(100% / 2); display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;}
+/* .trs-detail-slide-wrap.swiper-container {width: 100%; min-height: 250px; margin-top: 0;} */
+/* .trs-detail-slide-wrap .swiper-slide { width: calc((100% - 20px) / 3); height: calc(100% / 2); display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;} */
+.trs-wrap-outer {position: relative; }
+.trs-detail-slide-wrap {overflow: hidden;}
+.trs-detail-slide-wrap .swiper-slide {padding: 10px; box-sizing: border-box; height: calc(100% / 2); display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; flex-wrap: nowrap}
 .trs-detail-slide-wrap input[type=radio] {opacity: 0; position: absolute;}
-.trs-detail-slide-wrap label {display: block; position: relative; }
+.trs-detail-slide-wrap label {display: flex; flex-direction: column; align-items: center; position: relative; }
 .trs-detail-slide-wrap label .thumb-com {display: flex; align-items: center; justify-content: center; border: 2px solid transparent; border-radius: 4px; width: 100px; height: 100px; box-sizing: border-box; padding: 15px  ;}
 .trs-detail-slide-wrap label .thumb-com img {width: 70px; height: 70px;}
 .trs-detail-slide-wrap label.on .thumb-com {border-color: var(--color-primary); position: relative;}
@@ -457,10 +460,12 @@
 .trs-detail-slide-wrap label.on .thumb-com::after {content: ''; position: absolute; background: url(../../images/mobile/icon-ar.svg); width: 34px; height: 23px;}
 .trs-detail-slide-wrap label .name-com {display: block; text-align: center;}
 .trs-detail-slide-wrap label.on .name-com {color: var(--color-primary); display: block;}
+.trs-detail-slide-wrap .swiper-button-next:after,
+.trs-detail-slide-wrap .swiper-button-prev:after {font-size: 22px;}
 
 .swiper-wing-wrap {position: absolute; left: 0; right: 0; top: 50%;}
-.swiper-wing-wrap .swiper-button-prev {left: -10px;}
-.swiper-wing-wrap .swiper-button-next {right: -10px}
+.swiper-wing-wrap .swiper-button-prev {left: -20px;}
+.swiper-wing-wrap .swiper-button-next {right: -20px}
 
 /* 트레이드쇼 - 카테고리 */
 .slt-category .ui-filter-inner {padding-right: 0;}
