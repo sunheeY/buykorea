@@ -28,9 +28,9 @@
           <div class="ui-contents" id="contents">
 						
 
-						<button type="button" class="bk-btn btn-filter">필터</button>
+						<button type="button" class="bk-btn btn-filter" onclick="rightMenu('#filterOpen')">필터</button>
 						
-						<aside class="cp-filter-wrap">
+						<aside class="cp-filter-wrap" id="filterOpen">
 							<div class="header-filter-area">
 								<strong class="bk-title">Filter</strong>
 								<button type="button" class="bk-icon-only bk-btn-reset">
@@ -170,24 +170,20 @@
     <script src="../../../js/mobile/load_html.js"></script>
     <script>
       $(document).ready(function () {
-				if( $('.btn-filter').length > 0) {
-					var filterWrap = $('.cp-filter-wrap');
-					var filterWidth = $(window).width() - 95;
-					var filterDim = '<div class="dimed-zone"></div>'
-					filterWrap.css('right', '-' + filterWidth + 'px');
-					$('.btn-filter').click( function() {
-						filterWrap.animate({right: 0}, 400);
-						$('body').append(filterDim);
-						$('body').append(filterWrap);
-						$('body').css('overflow', 'hidden');
-					});
-					$('.bk-btn-close').click( function() {
-						filterWrap.animate({right: '-' + filterWidth + 'px'}, 400);
-						$('.dimed-zone').remove();
-						$('body').removeAttr('style');
-					});
-				}
+      				
 			});
+      function rightMenu(id) {
+        var filterWidth = $(window).width() - 95;
+        var filterDim = '<div class="dimed-zone"></div>'
+        $(id).animate({right: 0}, 400).appendTo('body');
+        $('body').append(filterDim);
+        $('body').css('overflow', 'hidden');
+        $(id).find('.bk-btn-close').click( function() {
+          $(id).animate({right: '-' + filterWidth + 'px'}, 400);
+          $('.dimed-zone').remove();
+          $('body').removeAttr('style');
+        });
+      }
     </script>
   </body>
 </html>

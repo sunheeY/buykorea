@@ -414,6 +414,9 @@
 .cp-filter-wrap .flex-column {display: flex; flex-direction: column; gap: 8px;}
 .cp-filter-wrap .bk-checkbox input[type="checkbox"]:checked + label::after {width: 24px; height: 24px; top: 0; transform: unset;}
 .cp-filter-wrap .bk-radio input[type="radio"]:checked + label::after {top: 6px; left: 6px; transform: unset;}
+.cp-filter-wrap .bk-accordion .acc-item .acc-header .link {transform: unset; position: absolute; width: 100%; left: 0; right: 0; display: flex; justify-content: flex-end;}
+.cp-filter-wrap .bk-accordion .acc-item .acc-header .link .bk-icon-arrow-accordion {transform: translateY(0) rotate(0);}
+.cp-filter-wrap .bk-accordion .acc-item.is-active .acc-header .link .bk-icon-arrow-accordion {transform: translateY(0) rotate(180deg);}
 
 /* 트레이드쇼 */
 .ui-trs {padding: 0 20px 80px !important}
