@@ -920,6 +920,7 @@ gap:12px; grid-template-columns: repeat(7, 1fr);}
 .cp-search.search-topType {margin-bottom: 24px; padding: 24px 20px; background-color: #f6f6f6; border-radius: 0; box-sizing: border-box; margin-top:-24px}
 .cp-search.search-topType .search-inner .search-row {display: flex; flex-direction: column; align-items: flex-start; justify-content: stretch; flex-wrap:wrap; row-gap:8px;}
 .cp-search.search-topType .search-inner .search-row > div ~ * {/*margin-left: 20px;*/}
+.cp-search.search-topType .search-inner .search-row .bk-select label{ font-size:1.6rem}
 .cp-search.search-topType .dash {width:26px; text-align:center;}
 /* [컴퍼넌트] 100% 검색*/
 .cp-search.search-wideType {position:relative; left:50%; transform:translateX(-50%); background-color:var(--color-background2); width:100vw; box-sizing:border-box; padding:24px 20px;  margin-bottom:24px;  }
