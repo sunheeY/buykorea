@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../../css/mobile/common.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+
+    <!-- [S]ui-wrap -->
+    <div class="ui-wrap">
+      <!-- [S]header -->
+      <header id="header" class="ui-header">
+        <h1>Trade show</h1>
+      </header>
+      <!--// [E]header -->
+      <!-- [S]container -->
+      <main id="container" class="ui-container ui-trs"><!--// [D]회원 class추가 -->
+        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
+        <div class="ui-content-wrap ui-inner">
+          <div class="ui-contents" id="contents">
+
+            <button type="button" class="bk-btn btn-filter" onclick="rightMenu('#categorys')">참가상품 카테고리</button>
+
+            <!-- [d] 카테고리는 cp-filter-wrap에 slt-category 클래스 추가합니다 -->
+            <aside class="cp-filter-wrap slt-category" id="categorys">
+
+							<div class="header-filter-area">
+								<strong class="bk-title">Category</strong>
+								<button type="button" class="bk-icon-only bk-btn-close">
+									<i class="bk-icon bk-icon-dialog-close">닫기</i>
+								</button>
+							</div>
+
+							<div class="ui-filter-inner">
+                <ul class="cp-category">
+
+                  <li class="category-depth01">
+                    <a href="#">대 카테고리 1</a>
+                    <ul class="in-subdepth">
+                      <li class="category-depth02">
+                        <a href="#">중 카테고리 1</a>
+                        <ul class="in-subdepth">
+                          <li class="category-depth03"><a href="#">소 카테고리 1</a></li>
+                          <li class="category-depth03"><a href="#">소 카테고리 2</a></li>
+                          <li class="category-depth03"><a href="#">소 카테고리 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="category-depth02">
+                        <a href="#">중 카테고리 2</a>
+                        <ul class="in-subdepth">
+                          <li class="category-depth03"><a href="#">소 카테고리 1</a></li>
+                          <li class="category-depth03"><a href="#">소 카테고리 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="category-depth02">
+                        <a href="#">중 카테고리 3</a>
+                        <ul class="in-subdepth">
+                          <li class="category-depth03"><a href="#">소 카테고리 1</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="category-depth01">
+                    <a href="#">대 카테고리 2</a>
+                    <ul class="in-subdepth">
+                      <li class="category-depth02">
+                        <a href="#">중 카테고리 1</a>
+                        <ul class="in-subdepth">
+                          <li class="category-depth03"><a href="#">소 카테고리 1</a></li>
+                          <li class="category-depth03"><a href="#">소 카테고리 2</a></li>
+                          <li class="category-depth03"><a href="#">소 카테고리 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="category-depth02">
+                        <a href="#">중 카테고리 2</a>
+                        <ul class="in-subdepth">
+                          <li class="category-depth03"><a href="#">소 카테고리 1</a></li>
+                          <li class="category-depth03"><a href="#">소 카테고리 2</a></li>
+                          <li class="category-depth03"><a href="#">소 카테고리 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="category-depth02">
+                        <a href="#">중 카테고리 3</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="category-depth01">
+                    <a href="#">대 카테고리 3</a>
+                  </li>
+                </ul>
+								
+								<button type="button" class="btn-filter-setting">Select Category</button>
+							</div>
+							
+						</aside>
+
+          </div>
+        </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">Top</div>
+        <!--// [E]Top버튼 -->
+      </main>
+      <!--// [E]container -->
+      <!-- [S]footer -->
+      <footer id="footer" class="ui-footer"></footer>
+      <!--// [E]footer -->
+    </div>
+    <!--// [E]ui-wrap -->
+
+    <!-- [S]팝업 -->
+    <!--// [E]팝업 -->
+    <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
+    <script src="../../../js/mobile/ui_common.js"></script>
+    <script src="../../../js/mobile/load_html.js"></script>
+    <script>
+      $(document).ready(function () {
+				if ( $('.cp-category').length > 0) {
+          $('[class^=category-depth0] > a').click(function(e) {
+            e.preventDefault();
+            var clickThis =  $(this).parent();
+            clickThis.toggleClass('is-active');
+            $(this).next('.in-subdepth').slideToggle();
+            clickThis.siblings().removeClass('is-active').find('.in-subdepth').slideUp();
+            clickThis.siblings().find('.in-subdepth li').removeClass('is-active');           
+          });
+        }
+			});
+      function rightMenu(id) {
+        var filterWidth = $(window).width() - 95;
+        var filterDim = '<div class="dimed-zone"></div>'
+        $(id).animate({right: 0}, 400).appendTo('body');
+        $('body').append(filterDim);
+        $('body').css('overflow', 'hidden');
+        $(id).find('.bk-btn-close').click( function() {
+          $(id).animate({right: '-' + filterWidth + 'px'}, 400);
+          $('.dimed-zone').remove();
+          $('body').removeAttr('style');
+        });
+      }
+    </script>
+  </body>
+</html>
