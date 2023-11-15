@@ -574,30 +574,31 @@
 .prd-detail-link {margin-top: 40px}
 .prd-detail-link dd {margin-top: 12px;}
 .prd-detail-link a {width: fit-content; font-size: 1.5rem; line-height: 1.6;}
-.prd-keyword {margin-right: -20px; padding-bottom: 5px;}
-.prd-keyword dd {display: flex; gap: 12px; overflow-x: auto;}
-.prd-keyword a {display: block; border: 1px solid #ddd; padding: 4px 12px; border-radius: 15px;}
-.prd-download a {display: inline-block; border: 1px solid #999; padding: 6px 20px; border-radius: 4px;}
+.prd-keyword {margin-right: -20px; padding-bottom: 5px; margin-bottom: -5px;}
+.prd-keyword dd {display: flex; gap: 12px; overflow-x: auto; padding: 0 10px 10px 0;}
+.prd-keyword a {display: block; border: 1px solid #ddd; padding: 3px 12px; border-radius: 16px;}
+.prd-download a {display: inline-block; border: 1px solid #999; padding: 5px 20px; border-radius: 4px;}
 .prd-download dd {display: inline-flex; gap: 8px; flex-wrap: wrap;}
 
-.prd-rec-area {margin-top: 64px;}
-.prd-recs {margin-top: 24px }
+.prd-detail-bot {overflow: hidden; margin: 0 -20px}
+.prd-detail-bot .prd-rec-area {margin-top: 64px; padding: 0 20px;}
+.prd-detail-bot .prd-recs {margin-top: 24px }
 .prd-detail-bot .prd-rec-area .bk-prd-unit .prd-company-name {font-size: 1.6rem; color: #666;}
 .prd-detail-bot .prd-rec-area .bk-prd-unit .prd-name {font-size: 1.7rem; line-height: 1.47059; margin-top: 6px;}
-.prd-detail-bot .prd-rec-area .bk-btns-wrap {display: inline-flex; margin-top: 12px; gap: 12px;}
+.prd-detail-bot .prd-rec-area .bk-btns-wrap {display: inline-flex; margin-top: 12px; gap: 15px;}
 .prd-detail-bot .prd-rec-area .bk-btns-wrap .bk-btn {display: block; background: none; border: 0; width: 24px; height: 24px; overflow: hidden; flex: 1 1 auto;}
 .prd-detail-bot .prd-rec-area .bk-btns-wrap .bk-btn::before {content: ''; display: block; width: 24px; height: 24px; background-repeat: no-repeat; background-position: 50% 50%; margin: 0;}
 .prd-detail-bot .prd-rec-area .bk-btns-wrap .btn-inquiry::before {background-image: url(../../images/mobile/icon-sms.svg);}
 .prd-detail-bot .prd-rec-area .bk-btns-wrap .btn-like::before {background-image: url(../../images/mobile/icon-heart-2.svg);}
 .prd-detail-bot .prd-rec-area .bk-btns-wrap .btn-like.is-active::before {background-image: url(../../images/mobile/icon-heart-2.svg);}
 .prd-detail-bot .prd-rec-area .bk-btns-wrap .btn-cart::before {background-image: url(../../images/mobile/icon-cart.svg);}
-.prd-detail-bot .prd-rec-area .bk-btns-wrap li {position: relative; padding-left: 12px;}
+.prd-detail-bot .prd-rec-area .bk-btns-wrap li {position: relative; padding-left: 16px;}
 .prd-detail-bot .prd-rec-area .bk-btns-wrap li:first-child {padding-left: 0;}
-.prd-detail-bot .prd-rec-area .bk-btns-wrap li + li::before {content: ''; display: block; width: 1px; height: 18px; background: #ddd; position: absolute; left: 0; top: 3px;}
+.prd-detail-bot .prd-rec-area .bk-btns-wrap li + li::before {content: ''; display: block; width: 1px; height: 18px; background: #ddd; position: absolute; left: 0; top: 4px;}
 .prd-detail-bot .prd-rec-area .cp-prd-list {flex-wrap: nowrap;}
 .prd-detail-bot .prd-rec-area .bk-prd-unit {padding: 0; border: 0;}
 
-.prd-detail-bot .prd-rec-area.other-prd {background: #F7F8F9; padding: 40px 20px 64px; margin-left: -20px; margin-right: -20px;}
+.prd-detail-bot .prd-rec-area.other-prd {background: #F7F8F9; padding: 40px 20px 64px;}
 
 .ui-prd-detail .tab-menu-wrap {position: sticky; top: 0; background: #FFF; z-index: 999;}
 
