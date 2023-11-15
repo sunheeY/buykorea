@@ -1383,6 +1383,9 @@ body.overflow{overflow-y:hidden;}
 .ui-buyer .bk-input-list dd + dt{ margin-top:24px}
 .bk-delivery-list-check#chcek-new{display:none}
 
+/*리뷰여백*/
+.ui-mypage.ui-buyer .cp-search.search-topType{margin-bottom:24px}
+
 /*바이어 - favorites*/
 .bk-buyer-favorite {padding: 0 20px}
 .bk-buyer-favorite .bk-tbl-toolbar {margin: 24px 0 12px;}
