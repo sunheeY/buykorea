@@ -4,7 +4,7 @@
 .no-gap {gap: 0;}
 .bk-txt-gray {color: var(--color-sub)}
 .bk-txt-red {color: var(--color-warning);}
-.cp-wide-type {margin: 0 -20px; width: calc(100% + 40px);}
+/* .cp-wide-type {margin: 0 -20px; width: calc(100% + 40px);} */
 .bk-align-num {text-align: right !important;}
 [class*=lineclamp] {text-overflow: ellipsis ; display: -webkit-box; -webkit-box-orient: vertical; white-space: normal; overflow: hidden;}
 [class*=lineclamp] a {display: block;}
@@ -39,7 +39,7 @@
 .cp-info-block dd > .bk-input-list {margin-top: -8px; padding-top: 12px;}
 
 /* 마이페이지 간격 재배열 */
-.ui-mypage .cp-search.search-topType {margin-top: inherit; margin-bottom: 0;}
+/* .ui-mypage .cp-search.search-topType {margin-top: inherit; margin-bottom: 0;} */
 .ui-mypage .cp-search.search-topType + .cp-list-wrap,
 .ui-mypage .cp-search.search-topType + .bk-tbl-toolbar {margin-top: 24px;}
 .ui-mypage .cp-search.search-topType + .bk-tbl-toolbar {min-height: 40px;} /* 툴바에서 셀렉트박스가 없을 경우 상단과 간격이 좁아짐 방지 */
@@ -111,7 +111,7 @@
 
 /* 검색영역 */
 .cp-search.cp-wide-type {background-color: var(--color-background2); padding: 24px 20px;}
-.cp-search.search-topType:not(:first-of-type) {margin-top: 0;}
+/* .cp-search.search-topType:not(:first-of-type) {margin-top: 0;} */
 
 /* 목록 */
 .cp-list-wrap {border-top: 1px solid var(--color-brand);}
