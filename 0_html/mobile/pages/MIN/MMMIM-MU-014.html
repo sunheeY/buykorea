@@ -546,10 +546,11 @@
                     </div>
                   </div>
                 </li>
+                <!--관심정보 내용 수정 23.11.15-->
                 <li class="acc-item is-active">
                   <div class="acc-header">
                     <div class="acc-inner">
-                      <div class="left-area weight-m">관심산업 입력 (선택)</div>
+                      <div class="left-area weight-m">관심정보 입력 (선택)</div>
                       <div class="right-area">
                         <button type="button" class="bk-icon-only link">
                           <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
@@ -559,21 +560,22 @@
                   </div>
                   <div class="acc-container">
                     <div class="acc-inner">
-                      <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg12">
-                        <div class="bk-row-div no-gap">
-                          <i class="bk-icon bk-icon-input-messages">정보</i>관심산업은 최대 5개 선택 가능
-                        </div>
-                      </div>     
                       <div class="bk-input-list">
                         <dl>
+                          <dt class="bk-bMg-small">관심산업</dt>
                           <dd>
+                            <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg-tiny">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>관심산업은 최대 5개 선택 가능
+                              </div>
+                            </div>     
                             <div class="bk-row-div bk-full">
                               <button
                                 type="button"
                                 class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall"
                                 onclick="dialogOpen('#dialog-search-interest')"
                               >
-                                <span class="text">Search Interest</span>
+                                <span class="text">관심산업 검색</span>
                               </button>
                             </div>
                             <ul class="bk-tbl-ul">
@@ -596,9 +598,94 @@
                           </dd>
                         </dl>
                       </div>
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt class="bk-bMg-small">관심품목</dt>
+                          <dd>
+                            <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg-tiny">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>주요 상품은 최대 3개까지 등록 가능합니다.
+                              </div>
+                            </div>     
+                            <div class="bk-row-div bk-full">
+                              <button
+                                type="button"
+                                class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall"
+                                onclick="dialogOpen('#dialog-search-interest')"
+                              >
+                                <span class="text">카테고리 검색</span>
+                              </button>
+                            </div>
+                            <ul class="bk-tbl-ul">
+                              <li>
+                                1Depth 영문 (1Depth 국문) > 2Depth 영문 (2Depth 국문) > 3Depth 영문 (3Depth 국문) > 4Depth 영문 (4Depth 국문)
+                                <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                                  <span class="deco-icon extra-icon append-icon">
+                                    <i class="bk-icon bk-icon-trash">delete</i>
+                                  </span>
+                                </button>
+                              </li>
+                              <li>
+                                1Depth 영문 (1Depth 국문) > 2Depth 영문 (2Depth 국문) > 3Depth 영문 (3Depth 국문) > 4Depth 영문 (4Depth 국문)
+                                <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                                  <span class="deco-icon extra-icon append-icon">
+                                    <i class="bk-icon bk-icon-trash">delete</i>
+                                  </span>
+                                </button>
+                              </li>
+                              <li>
+                                1Depth 영문 (1Depth 국문) > 2Depth 영문 (2Depth 국문) > 3Depth 영문 (3Depth 국문) > 4Depth 영문 (4Depth 국문)
+                                <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                                  <span class="deco-icon extra-icon append-icon">
+                                    <i class="bk-icon bk-icon-trash">delete</i>
+                                  </span>
+                                </button>
+                              </li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="bk-input-list">
+                        <dl>
+                          <dt class="bk-bMg-small">관심국가</dt>
+                          <dd>
+                            <div class="bk-messages bk-flex-c bk-tMg-zero bk-bMg-tiny">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>최대 3개국까지 등록 가능합니다.
+                              </div>
+                            </div>     
+                            <!--국가선택 중복 alert : #alert-country-double-->
+                            <div class="bk-select default">
+                              <div class="bk-control">
+                                <select class="" id="select_country1" title="국가를 선택해 주세요.">
+                                  <option value="option1">국가를 선택해 주세요.</option>
+                                  <option value="option2">국가를 선택해 주세요.</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="bk-select default">
+                              <div class="bk-control">
+                                <select class="" id="select_country2" title="국가를 선택해 주세요.">
+                                  <option value="option1">국가를 선택해 주세요.</option>
+                                  <option value="option2">국가를 선택해 주세요.</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="bk-select default">
+                              <div class="bk-control">
+                                <select class="" id="select_country3" title="국가를 선택해 주세요.">
+                                  <option value="option1">국가를 선택해 주세요.</option>
+                                  <option value="option2">국가를 선택해 주세요.</option>
+                                </select>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
                     </div>
                   </div>
                 </li>
+                <!--//관심정보 내용 수정 23.11.15-->
               </ul>
             </div>
             <!-- //[D] list-->
