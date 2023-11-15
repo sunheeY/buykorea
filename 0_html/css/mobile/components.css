@@ -579,6 +579,7 @@ a.btn-text .text {text-decoration: underline;}
 .accordion-type-has-check .acc-item.is-active .acc-header{background:var(--color-white) !important; border-bottom:0;}
 .accordion-type-has-check .acc-item > .acc-container{background:var(--color-background2);  }
 .accordion-type-has-check .acc-item > .acc-container .acc-inner{padding:25px 20px;}
+.accordion-type-has-check.agree_item .acc-item > .acc-container .acc-inner{max-height:24rem; overflow-y:auto; } /*약관 스크롤 추가 */
 .accordion-type-has-check .acc-item > .acc-container  dl{  display:flex; flex-direction: column;   row-gap:8px;   color:var(--color-brand);}
 .accordion-type-has-check .acc-item > .acc-container  dt{font-size:var(--font-size-default); }
 .accordion-type-has-check .acc-item > .acc-container  dd{font-size:var(--font-size-middle);  line-height:1.53;}
