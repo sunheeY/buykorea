@@ -673,7 +673,7 @@ a.btn-text .text {text-decoration: underline;}
 .grid-row {}
 .grid-column {}
 /* [플러그인]스와이퍼 */
-.bk-swiper {width: 600px; height: 300px;}
+/* .bk-swiper {width: 600px; height: 300px;} */
 .swiper-container {overflow: hidden;}
 .swiper-white,
 .swiper-button-prev.swiper-white:after,
@@ -926,12 +926,14 @@ gap:12px; grid-template-columns: repeat(7, 1fr);}
 .cp-search.search-topType .search-inner .search-row .bk-select label{ font-size:1.6rem}
 .cp-search.search-topType .dash {width:26px; text-align:center;}
 /* [컴퍼넌트] 100% 검색*/
-.cp-search.search-wideType {position:relative; left:50%; transform:translateX(-50%); background-color:var(--color-background2); width:100vw; box-sizing:border-box; padding:24px 20px;  margin-bottom:24px;  }
+/* .cp-search.search-wideType {position:relative; left:50%; transform:translateX(-50%); background-color:var(--color-background2); width:100vw; box-sizing:border-box; padding:24px 20px;  margin-bottom:24px;  } */
+.cp-search.search-wideType {position:relative; background-color:var(--color-background2); box-sizing:border-box; padding:24px 20px; margin: 0 -20px 24px;}
 .cp-search.search-wideType .search-group{display:flex; justify-content: space-between; align-items: center; column-gap: 8px;}
 
 
 /* [컴퍼넌트] 100% wrap 검색*/
-.cp-search.search-wideWrapType {position:relative; left:50%; transform:translateX(-50%); background-color:var(--color-background2); width:100vw; box-sizing:border-box; padding:24px 20px;  margin-bottom:24px;  }
+/* .cp-search.search-wideWrapType {position:relative; left:50%; transform:translateX(-50%); background-color:var(--color-background2); width:100vw; box-sizing:border-box; padding:24px 20px;  margin-bottom:24px;  } */
+.cp-search.search-wideWrapType {position:relative; background-color:var(--color-background2); box-sizing:border-box; padding:24px 20px; margin: 0 -20px 24px;}
 .cp-search.search-wideWrapType .search-group{display:flex; justify-content: space-between; align-items: center; gap:12px 8px; flex-wrap:wrap;}
 .cp-search.search-wideWrapType .bk-select{width:calc((100% - 8px) / 2);}
 .cp-search.search-wideWrapType .bk-textfield{width:100%;}
