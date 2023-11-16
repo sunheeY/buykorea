@@ -831,3 +831,15 @@ function addDiv(){
       $('body').removeAttr('style');
     });
   }
+  function rightMenu01(id) {
+    var filterWidth = $(window).width() - 55;
+    var filterDim = '<div class="dimed-zone"></div>'
+    $(id).animate({right: 0}, 400).appendTo('body');
+    $('body').append(filterDim);
+    $('body').css('overflow', 'hidden');
+    $(id).find('.bk-btn-close').click( function() {
+      $(id).animate({right: '-' + filterWidth + 'px'}, 400);
+      $('.dimed-zone').remove();
+      $('body').removeAttr('style');
+    });
+  }
