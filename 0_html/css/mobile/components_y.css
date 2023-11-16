@@ -531,7 +531,8 @@
 .swiper-slide {position: relative; overflow: hidden;}
 .prd-img-area .swiper-slide {padding-bottom: 100%;}
 .swiper-slide::before {content: ''; display: block; width: 100%; height: 100%; top: 0; left: 0; position: absolute;}
-.swiper-slide img {width: 100%; padding-bottom: 100%; object-fit: cover; object-position: center; position: absolute;}
+/* .swiper-slide img {width: 100%; padding-bottom: 100%; object-fit: cover; object-position: center; position: absolute;} */
+.swiper-slide img {width: 100%; object-fit: cover; object-position: center; position: absolute;}
 .prd-img-area [class^=swiper-button-] {width: 64px; height: 64px; background: rgba(0,0,0,.3);}
 .prd-img-area [class^=swiper-button-]:after {font-size: 24px; color: #fff;}
 .prd-img-area .swiper-button-prev {left: 0;}
@@ -539,6 +540,7 @@
 /* .prd-img-area .swiper-button-disabled {opacity: 0;} */
 .prd-img-area .swiper-pagination-bullet {background: rgba(275,275,275,.5); opacity: 1; width: 10px; height: 10px; border-radius: 5px; transition: .2s;}
 .prd-img-area .swiper-pagination-bullet-active {background: #fff; width: 20px;}
+
 
 /* 상품상세 - 스와이퍼영역 */
 .swiper-slide .prd-movie {width: 100%; top: 0; left: 0; position: absolute;}
