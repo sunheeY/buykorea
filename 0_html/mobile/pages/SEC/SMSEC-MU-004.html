@@ -158,6 +158,30 @@
               </form>
             </div>
 
+            <div class="search-slide-wrap swiper-container">
+              <div class="swiper-wrapper">
+                <a href="" class="swiper-slide">
+                  <div class="thumb"><img src="../../../images/tmp/banner.png"></div>
+                  <div class="bk-slide-info">
+                    <h2 class="title">Trade Show Title</h2>
+                    <p class="script">Trade Show Detail Text Tra
+                      de Show Detail Text Trad...</p>
+                    <span class="date">YYYY-MM-DD ~ YYYY-MM-DD</span>
+                  </div>
+                </a>
+                <a href="" class="swiper-slide">
+                    <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                    <div class="bk-slide-info">
+                      <h2 class="title">Trade Show Title</h2>
+                      <p class="script">Trade Show Detail Text Tra
+                        de Show Detail Text Trad...</p>
+                      <span class="date">YYYY-MM-DD ~ YYYY-MM-DD</span>
+                    </div>
+                </a>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
             <div class="cp-prd-sort">
               <div class="bk-prd-count">1,345,678</div>
               <div class="bk-sort-opt">
@@ -559,6 +583,7 @@
     <!-- [S]팝업 -->
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
       $(document).ready(function () {
@@ -575,6 +600,20 @@
 				}
 
       });
+
+      var schSwipeBan = new Swiper('.search-slide-wrap', {
+        loop: $('.search-slide-wrap .swiper-slide').length > 1,
+        loopedSlides: 1,
+        speed: 500,
+        spaceBetween:20,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      })
     </script>
   </body>
 </html>
