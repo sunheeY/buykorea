@@ -118,8 +118,7 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-mypage ui-seller"><!--// [D]회원 class추가 -->
-        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
+      <main id="container" class="ui-container ui-mypage ui-search"><!--// [D]검색 class추가 -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
@@ -127,111 +126,102 @@
               <form>
                 <div class="search-inner">
                   <div class="search-row">
-                    <div class="date-group has-dates">
-                      <div class="bk-textfield is-readonly">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" class="iText iDatepicker" id="startDate" placeholder="시작 날짜" readonly="" title="시작 날짜">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="dash">~</div>
-                      <div class="bk-textfield is-readonly">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" class="iText iDatepicker" id="endDate" placeholder="종료 날짜" readonly="" title="종료 날짜">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     <div class="search-group">
-                      <div class="bk-select">
-                        <div class="bk-control">
-                          <select class="" id="" title="label텍스트값">
-                            <option value="1">전체</option>
-                            <option value="2">견적번호</option>
-                            <option value="3">상품명</option>
-                            <option value="4">바이어명</option>
-                            <option value="4">바이어ID</option>
-                            <option value="4">회사명</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="bk-textfield wide textfield-search is-required">
+                      <div class="bk-textfield has-clear wide textfield-search">
                         <div class="bk-control">
                           <div class="control-field">
-                            <input type="text" name="" value="" placeholder="" class="iText" id="" required="">
-                            <div class="control-btns append-btns">
-                              <button type="button" class="bk-icon-only icon-text-clear">
-                                <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
+                            <input type="text" name="" value="" placeholder="" class="iText" id="검색" >
+                            <div class="control-icon append-icon">
+                              <button type="button" class="bk-icon-only icon-search">
+                                <i class="bk-icon bk-icon-searchPrimary">검색</i>
                               </button>
-                            </div>                            
+                            </div>
                           </div>
+                        </div>
+                        <div class="append-btns">
+                          <button type="button" class="bk-icon-only icon-text-clear">
+                            <i class="bk-icon bk-icon-search-close">텍스트 지우기</i>
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <!--2023-11-13 검색버튼 수정-->
-                    <button type="button" class="bk-btn btn-primary btn-middle btn-full">
-                      <span class="text">검색</span>
-                    </button>
                   </div>
                 </div>
               </form>
             </div>
 
-            <div class="bk-tbl-toolbar bk-seller-item">
-              <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
-              <div class="toolbar-right">
-                <div class="bk-select select-align">
-                  <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
-                  <div class="bk-control">
-                    <select class="" title="정렬">
-                      <option value="1">전체</option>
-                      <option value="2">열람</option>
-                      <option value="3">미열람</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
+            <div class="cp-search-keyword-list">
+              <dl class="recent-keyword is-active">
+                <dt>최근 검색어</dt>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">more</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 1</span>                    
+                  </button>
+                </dd>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">more</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">최근검색어가 들어갈 자리입니다. 최근검...최근검색어가 들어갈 자리입니다. 최근검...최근검색어가 들어갈 자리입니다. 최근검...</span>                    
+                  </button>
+                </dd>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">more</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 3</span>                    
+                  </button>
+                </dd>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">more</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 4</span>                    
+                  </button>
+                </dd>
+              </dl>
+              <dl class="pop-keyword">
+                <dt>인기 검색어</dt>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">more</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 1</span>                    
+                  </button>
+                </dd>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">more</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 2</span>                    
+                  </button>
+                </dd>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">more</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 3</span>                    
+                  </button>
+                </dd>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">more</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 4</span>                    
+                  </button>
+                </dd>
+              </dl>
             </div>
-
-            <ul class="cp-list-wrap">
-              <li class="bk-list-unit">
-                <div class="bk-list-detail">
-                  <span>견적번호 : <em>0000000</em></span>
-                  <span>2023.01.05 10:05:11</span>
-                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
-                  <ul class="bk-list-option">
-                    <li>견적금액($) : 100.00</li>
-                    <li>바이어명(바이어ID) / 회사명</li>
-                  </ul>
-                </div>
-                <div class="bk-list-condition">
-                  <span>미열람</span>
-                </div>
-              </li>
-              <li class="bk-list-unit">
-                <div class="bk-list-detail">
-                  <span>견적번호 : <em>0000000</em></span>
-                  <span>2023.01.05 10:05:11</span>
-                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
-                  <ul class="bk-list-option">
-                    <li>견적금액($) : 100.00</li>
-                    <li>바이어명(바이어ID) / 회사명</li>
-                  </ul>
-                </div>
-                <div class="bk-list-condition">
-                  <span>열람(2023.01.05 10:05:11)</span>
-                </div>
-              </li>
-            </ul>
-
-            <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
-              <span class="deco-icon prepend-icon">
-                <i class="bk-icon bk-icon-plus">more</i>
-              </span>
-              <span class="text">더보기</span>
-            </button>
 
           </div>
         </div>

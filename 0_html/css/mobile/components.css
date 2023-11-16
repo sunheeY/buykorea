@@ -1440,3 +1440,15 @@ body.overflow{overflow-y:hidden;}
 .ui-support .cp-list-preview-wrap .cp-list p{ font-size:1.8rem; font-weight:500; line-height:1.44}
 .ui-support .cp-list-preview-wrap .cp-list .date{ margin-top:4px; color:var(--color-sub); display:block}
 
+/*search - 통합검색*/
+.ui-search .bk-textfield{column-gap: 8px; align-items: center;}
+
+.cp-search-keyword-list{}
+.cp-search-keyword-list dt{ color:var(--color-sub); font-size:1.6rem}
+.cp-search-keyword-list .recent-keyword{ display:none }
+.cp-search-keyword-list dt + dd{ margin-top:24px;}
+.cp-search-keyword-list dd + dd{ margin-top:20px;}
+.cp-search-keyword-list .recent-keyword.is-active { display:block}
+.cp-search-keyword-list .recent-keyword.is-active + .pop-keyword{ margin-top:40px; padding-top:40px; border-top:1px solid var(--color-gray)}
+.cp-search-keyword-list .bk-btn-icon .deco-icon.prepend-icon {margin-right: 12px;}
+.cp-search-keyword-list .bk-btn .text { text-align: left;}
