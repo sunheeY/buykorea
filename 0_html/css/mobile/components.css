@@ -1222,6 +1222,11 @@ body.overflow{overflow-y:hidden;}
 .bk-empty-text .bk-text-field{display:flex; flex-direction:column; justify-content: flex-start; align-items: center; row-gap:8px;}
 .bk-empty-text .bk-text-field h2.title{font-size:24px; color:var(--color-brand); letter-spacing:-0.05rem; text-align:center}
 .bk-empty-text .bk-text-field span.text{font-size:var(--font-size-body); color:var(--color-sub); text-align:center; letter-spacing:-0.05rem;}
+.bk-empty-text .bk-text-field span + span{ margin-top:4px}
+.bk-empty-text .bk-text-field span.has-dot{position:relative; }
+.bk-empty-text .bk-text-field span.has-dot:before{ content:""; width:4px; height:4px; background:var(--color-sub); display:inline-flex;  border-radius: 2px; margin-right:8px; position:relative; top:-4px}
+.bk-empty-text .bk-search-more{ background:var(--color-background2); padding:24px; display:flex; justify-content: center; flex-flow: row wrap; }
+.bk-empty-text .bk-search-more p{ text-align: center; font-size:1.6rem; color:var(--color-brand); letter-spacing:-1px}
 
 .cp-file{display:flex; flex-direction: column; }
 .cp-file [class*=file-]{position:relative; padding-left:9px;   display:none; justify-content: flex-start; align-items: center; margin-top:4px;}
@@ -1444,6 +1449,7 @@ body.overflow{overflow-y:hidden;}
 .ui-search .bk-textfield{column-gap: 8px; align-items: center;}
 .ui-search .bk-empty-text{ padding:16px 0 40px 0}
 .ui-search .bk-empty-text + .cp-search-keyword-list{padding-top:40px; border-top:1px solid var(--color-gray)}
+.ui-search .search-slide-wrap + .cp-prd-sort{ margin-top:32px}
 .ui-seller.ui-search .cp-list-wrap{ border-top:0}
 .ui-seller.ui-search .cp-list-wrap .bk-list-detail{ padding:24px 0; display:flex; flex-flow: row wrap;}
 .ui-seller.ui-search .cp-list-wrap .bk-list-detail *:not(span){ width:100%}
@@ -1457,10 +1463,10 @@ body.overflow{overflow-y:hidden;}
 .cp-filter-wrap.cp-filter-search .bk-checkbox { grid-template-columns: 1fr 1fr;}
 .cp-filter-wrap.cp-filter-search .bk-checkbox .bk-full{ grid-column:1 / span 2;}
 
-.search-keyword { margin-top:12px; color:var(--color-brand); overflow-x:auto; display:flex; justify-self: flex-start; flex-flow:row nowrap; margin-right:-20px}
-.search-keyword button { flex-shrink: 0;}
-.search-keyword button:nth-last-of-type(1) { margin-right:20px}
-.search-keyword button + button{ margin-left:12px}
+.ui-search .search-keyword { margin-top:12px; color:var(--color-brand); overflow-x:auto; display:flex; justify-self: flex-start; flex-flow:row nowrap; margin-right:-20px}
+.ui-search .search-keyword button { flex-shrink: 0;}
+.ui-search .search-keyword button:nth-last-of-type(1) { margin-right:20px}
+.ui-search .search-keyword button + button{ margin-left:12px}
 
 .cp-search-keyword-list{}
 .cp-search-keyword-list dt{ color:var(--color-sub); font-size:1.6rem}
@@ -1471,6 +1477,16 @@ body.overflow{overflow-y:hidden;}
 .cp-search-keyword-list .recent-keyword.is-active + .pop-keyword{ margin-top:40px; padding-top:40px; border-top:1px solid var(--color-gray)}
 .cp-search-keyword-list .bk-btn-icon .deco-icon.prepend-icon {margin-right: 12px;}
 .cp-search-keyword-list .bk-btn .text { text-align: left;}
+
+.search-slide-wrap { position:relative }
+.search-slide-wrap .swiper-pagination{ bottom:0; width:100%; height:8px;}
+.search-slide-wrap .swiper-slide{border:1px solid var(--color-gray); border-radius: var(--radius-default); padding:20px; display:flex; justify-content: flex-start; align-items: center; column-gap: 8px;}
+.search-slide-wrap .swiper-slide .bk-slide-info { display:flex; flex-direction: column; align-items: flex-start;}
+.search-slide-wrap .swiper-slide .bk-slide-info h2.title{ font-size:18px; font-weight:500; color:var(--color-brand)}
+.search-slide-wrap .swiper-slide .bk-slide-info p.script{ font-size:14px; color:var(--color-sub); margin-top:8px}
+.search-slide-wrap .swiper-slide .bk-slide-info span.date{ font-size:13px; color:var(--color-sub); margin-top:12px}
+.search-slide-wrap .swiper-slide .thumb {width: 122px; position: relative; padding-bottom: 100%; overflow: hidden; border-radius: var(--radius-default);}
+.search-slide-wrap .swiper-slide .thumb::after {content: ''; display: block; width: 100%; height: 100%; top: 0; left: 0; position: absolute;}
 
 
 /*공유하기*/
