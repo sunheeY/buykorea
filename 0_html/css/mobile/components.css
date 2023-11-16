@@ -1471,3 +1471,11 @@ body.overflow{overflow-y:hidden;}
 .cp-search-keyword-list .recent-keyword.is-active + .pop-keyword{ margin-top:40px; padding-top:40px; border-top:1px solid var(--color-gray)}
 .cp-search-keyword-list .bk-btn-icon .deco-icon.prepend-icon {margin-right: 12px;}
 .cp-search-keyword-list .bk-btn .text { text-align: left;}
+
+
+/*공유하기*/
+.share-list {display:flex; justify-content: space-between;}
+.bk-btn-share{ width:8rem; height:8rem; border:0; background-repeat: no-repeat; background-position: center; background-size:cover; font-size:0; border-radius: 50%; }
+.bk-btn-share.share-ico-face{ background-image:url(../../images/mobile/share-facebook.svg)}
+.bk-btn-share.share-ico-twt{ background-image:url(../../images/mobile/share-twitter.svg)}
+.bk-btn-share.share-ico-url{ background-image:url(../../images/mobile/share-url.svg)}
