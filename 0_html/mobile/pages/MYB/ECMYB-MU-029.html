@@ -26,7 +26,8 @@
     </div>
     <!--// [E]바로가기 -->
     <!-- [S]ui-wrap -->
-    <div class="ui-wrap">
+    <!-- [d] 메세지입력화면 ui-message 클래스 추가 -->
+    <div class="ui-wrap ui-message">
       <!-- [S]header -->
       <header id="header" class="ui-header">
         <div class="header-area">
@@ -36,13 +37,13 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>타이틀</span>
+                  <span>Messages</span>
                 </h1>
             </div>
             <div class="my-util">
-              <button type="button" class="bk-icon-only icon-search">
+              <!-- <button type="button" class="bk-icon-only icon-search">
                 <i class="bk-icon bk-icon-searchBlack">검색</i>
-              </button>
+              </button> -->
               <div class="cp-search search-top" style="display: none">
                 <div class="search-area">
                   <div class="bk-select select-search">
@@ -118,91 +119,12 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-mypage ui-search"><!--// [D]검색 class추가 -->
+      <main id="container" class="ui-container ui-mypage ui-buyer"><!--// [D]회원 class추가 -->
+        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
-            <div class="cp-search search-topType cp-wide-type">
-              <form>
-                <div class="search-inner">
-                  <div class="search-row">
-                    <div class="search-group">
-                      <div class="bk-textfield has-clear wide textfield-search">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" name="" value="" placeholder="" class="iText" id="검색" >
-                            <div class="control-icon append-icon">
-                              <button type="button" class="bk-icon-only icon-search">
-                                <i class="bk-icon bk-icon-searchPrimary">검색</i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="append-btns">
-                          <button type="button" class="bk-icon-only icon-text-clear">
-                            <i class="bk-icon bk-icon-search-close">텍스트 지우기</i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-            <div class="bk-empty-text">
-              <i class="bk-icon bk-icon-empty">empty</i>  
-              <div class="bk-text-field bk-flex-row-gap-no">
-                <h2 class="title">검색결과가 없습니다.</h2>
-                <span class="text bk-tMg-basic has-dot">검색어를 변경하여 다시 검색해 주세요.</span>
-                <span class="text has-dot">단어의 철자가 정확한지 확인해 보세요.</span>
-                <span class="text has-dot">띄어쓰기 또는 넓은 의미의 단어를 사용해 보세요.</span>
-              </div>
-              <div class="bk-search-more">
-                <p>찾는 상품이 없으시다면 오픈 인콰이어리를 통해 상품을 찾아보세요.</p>
-                <button type="button" class="bk-btn btn-primary btn-outline btn-small bk-tMg-small">
-                  <span class="text">Inquiry</span>
-                </button>
-              </div>
-            </div>
-            
-            <div class="cp-search-keyword-list">
-              <dl class="pop-keyword">
-                <dt>인기 검색어</dt>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 1</span>                    
-                  </button>
-                </dd>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 2</span>                    
-                  </button>
-                </dd>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 3</span>                    
-                  </button>
-                </dd>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 4</span>                    
-                  </button>
-                </dd>
-              </dl>
-            </div>
+            <button type="button" class="bk-btn" onclick="dialogOpen('#dialog-full')">메세지관리</button>
 
           </div>
         </div>
@@ -347,6 +269,119 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+
+    <!-- [d] 메세지 팝업일 경우 bk-message-pop 클래스 추가합니다 -->
+    <div class="bk-message-pop bk-dialog has-btmBtn dialog-full" id="dialog-full"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom // 하단에 버튼이 있는 경우 has-btmBtn 클래스 추가-->
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">메시지관리</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <section class="cp-mms-wrap">
+              <div class="cp-mms-top">
+                <div class="cp-mms-sender">
+                  <strong>Buyer ID</strong>
+                  <span>(Buyer Company Name)</span>
+                </div>
+                <div class="bk-mms-btns">
+                  <button type="button" class="bk-btn bk-btn-intbl">지원요청</button>
+                  <button type="button" class="bk-btn bk-btn-intbl-p">나가기</button>
+                </div>
+              </div>
+        
+              <div class="cp-mms-body">
+                <div class="bk-mms-list">
+                  <!-- [d] 메세지박스 세트 내 메세지 bk-mine 클래스 추가 -->
+                  <div class="bk-mms-box">
+                    <p class="bk-userid">Hong</p>
+                    <div class="bk-balloon-wrap">
+                      <div class="bk-ball-in">
+                        一个漂亮的女孩正在吃着苹果，头发飘逸地看着窗外。
+                      </div>
+                      <span class="bk-time">09:26</span>
+                    </div>
+                  </div>
+                  <!--// [d] 메세지박스 세트 -->
+        
+                  <div class="bk-mms-box bk-mine">
+                    <p class="bk-userid">Gildong</p>
+                    <div class="bk-balloon-wrap">
+                      <div class="bk-ball-in">
+                        적당한 길이의 텍스트
+                      </div>
+                      <span class="bk-time">09:26</span>
+                    </div>
+                    
+                    
+                  </div>
+        
+                  <div class="bk-mms-dateline">2023.12.31</div>
+        
+                  <div class="bk-mms-box bk-mine">
+                    <p class="bk-userid">Gildong</p>
+                    <div class="bk-balloon-wrap">
+                      <div class="bk-ball-in">
+                        응
+                      </div>
+                      <span class="bk-time">09:26</span>
+                    </div>
+                  </div>
+        
+                  <div class="bk-mms-box">
+                    <p class="bk-userid">Hong</p>
+                    <div class="bk-balloon-wrap">
+                      <div class="bk-ball-in">
+                        셀러가 작성한 메시지가 노출되며, 발송한 메시지는 수정/삭제 불가능합니다.
+                      </div>
+                      <span class="bk-time">09:26</span>
+                    </div>
+                  </div>
+        
+                  <div class="bk-mms-box bk-mine">
+                    <p class="bk-userid">Gildong</p>
+                    <div class="bk-balloon-wrap">
+                      <div class="bk-ball-in">
+                        New jerseys are very good quality, would buy again. The quality is good of the retro jersey but the color is not the same from the picture. color is a little off.
+                      </div>
+                      <span class="bk-time">09:26</span>
+                    </div>
+                  </div>
+        
+                </div>
+              </div>
+        
+              <div class="cp-mms-bot">
+                <div class="bk-textfield">
+                  <div class="bk-control">
+                    <div class="control-field">
+                      <input type="text" value="" placeholder="메시지를 입력하세요" class="iText">
+                      <div class="control-icon append-icon">
+                        <button type="button" class="bk-icon-only">
+                          <i class="bk-icon bk-icon-send">보내기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>

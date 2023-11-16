@@ -36,13 +36,13 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>타이틀</span>
+                  <span>Messages</span>
                 </h1>
             </div>
             <div class="my-util">
-              <button type="button" class="bk-icon-only icon-search">
+              <!-- <button type="button" class="bk-icon-only icon-search">
                 <i class="bk-icon bk-icon-searchBlack">검색</i>
-              </button>
+              </button> -->
               <div class="cp-search search-top" style="display: none">
                 <div class="search-area">
                   <div class="bk-select select-search">
@@ -118,91 +118,14 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-mypage ui-search"><!--// [D]검색 class추가 -->
+      <main id="container" class="ui-container ui-mypage ui-buyer"><!--// [D]회원 class추가 -->
+        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
-            <div class="cp-search search-topType cp-wide-type">
-              <form>
-                <div class="search-inner">
-                  <div class="search-row">
-                    <div class="search-group">
-                      <div class="bk-textfield has-clear wide textfield-search">
-                        <div class="bk-control">
-                          <div class="control-field">
-                            <input type="text" name="" value="" placeholder="" class="iText" id="검색" >
-                            <div class="control-icon append-icon">
-                              <button type="button" class="bk-icon-only icon-search">
-                                <i class="bk-icon bk-icon-searchPrimary">검색</i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="append-btns">
-                          <button type="button" class="bk-icon-only icon-text-clear">
-                            <i class="bk-icon bk-icon-search-close">텍스트 지우기</i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-            <div class="bk-empty-text">
-              <i class="bk-icon bk-icon-empty">empty</i>  
-              <div class="bk-text-field bk-flex-row-gap-no">
-                <h2 class="title">검색결과가 없습니다.</h2>
-                <span class="text bk-tMg-basic has-dot">검색어를 변경하여 다시 검색해 주세요.</span>
-                <span class="text has-dot">단어의 철자가 정확한지 확인해 보세요.</span>
-                <span class="text has-dot">띄어쓰기 또는 넓은 의미의 단어를 사용해 보세요.</span>
-              </div>
-              <div class="bk-search-more">
-                <p>찾는 상품이 없으시다면 오픈 인콰이어리를 통해 상품을 찾아보세요.</p>
-                <button type="button" class="bk-btn btn-primary btn-outline btn-small bk-tMg-small">
-                  <span class="text">Inquiry</span>
-                </button>
-              </div>
-            </div>
-            
-            <div class="cp-search-keyword-list">
-              <dl class="pop-keyword">
-                <dt>인기 검색어</dt>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 1</span>                    
-                  </button>
-                </dd>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 2</span>                    
-                  </button>
-                </dd>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 3</span>                    
-                  </button>
-                </dd>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 4</span>                    
-                  </button>
-                </dd>
-              </dl>
-            </div>
+            <a href="#" onclick="dialogOpen('#dialog-full-pop');$('.dialog-container').removeClass('cp-case-02').addClass('cp-case-01')">무역 담당자 지원 요청 - 담당무역관 있는 경우</a>
+            <br><br>
+            <a href="#" onclick="dialogOpen('#dialog-full-pop');$('.dialog-container').removeClass('cp-case-01').addClass('cp-case-02')">무역 담당자 지원 요청 - 담당무역관 없는 경우</a>
 
           </div>
         </div>
@@ -347,11 +270,123 @@
     <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
+    <div class="bk-dialog dialog-full2" id="dialog-full-pop">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">무역 담당자 지원 요청</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <!-- [d] 담당무역관 있는 경우 cp-case-01, 없는 경우 cp-case-02 클래스 추가 -->
+        <div class="dialog-container cp-case-01">
+          <div class="dialog-contents ui-seller">
+            <!-- [S] Form-->
+            <section class="cp-info-block">
+              <div class="bk-guide-txt bk-bMg-basic">
+                <span class="text">아래의 무역 담당자를 선택하시거나, 다른 무역관 담당자를 찾아 선택하실 수 있습니다.</span>
+              </div>
+              
+              <div class="cp-search search-topType cp-wide-type">
+                <form>
+                  <div class="search-inner">
+                    <div class="search-row">
+                      <div class="search-group cp-select-auto">
+                        <div class="bk-select">
+                          <div class="bk-control">
+                            <select class="" id="" title="나라선택">
+                              <option value="11">나라선택</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="bk-select">
+                          <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                          <div class="bk-control">
+                            <select class="" id="" title="무역관선택">
+                              <option value="21"disabled="">무역관 선택</option>
+                              <option value="22">무역관</option>
+                            </select>
+                          </div>
+                        </div>                        
+                      </div>
+                      <!--2023-11-13 검색버튼 수정-->
+                      <button type="button" class="bk-btn btn-primary btn-middle btn-full">
+                        <span class="text">검색</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+
+            <section class="cp-info-block">
+              <div class="bk-tbl-toolbar bk-seller-item">
+                <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
+                <div class="toolbar-right">
+                  <div class="bk-select select-align">
+                    <div class="bk-control">
+                      <select class="" title="정렬">
+                        <option value="31">20</option>
+                        <option value="32">40</option>
+                        <option value="33">60</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bk-tbl-list">
+                <div class="bk-list">
+                  <div class="bk-list-name list-type03">
+                    <strong>그리스 - 아테네 무역관</strong>
+                    <p>담당자명 : 홍길동 (Hong Gil Dong)</p>
+                    <p>담당업무 : 마케팅 총괄</p>
+                    <button type="button" class="bk-btn bk-btn-intbl">
+                      <span class="text">선택</span> 
+                    </button>
+                  </div>
+                </div>
+                <div class="bk-list">
+                  <div class="bk-list-name list-type03">
+                    <strong>그리스 - 아테네 무역관</strong>
+                    <p>담당자명 : 홍길동 (Hong Gil Dong)</p>
+                    <p>담당업무 : 마케팅 총괄</p>
+                    <button type="button" class="bk-btn bk-btn-intbl">
+                      <span class="text">선택</span> 
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+                <span class="deco-icon prepend-icon">
+                  <i class="bk-icon bk-icon-plus">more</i>
+                </span>
+                <span class="text">더보기</span>
+              </button>
+              
+            </section>
+            
+          </div>
+        </div>
+      </div>
+    </div>
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        if($('.cp-mms-list').length > 0) {
+          $('.btn-mms-del').click(function() {
+            $('.cp-mms-list').addClass('cp-mms-del');
+          })
+        }
+      });
     </script>
   </body>
 </html>

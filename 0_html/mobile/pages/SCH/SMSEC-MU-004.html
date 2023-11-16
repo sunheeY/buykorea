@@ -118,7 +118,7 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-mypage ui-search"><!--// [D]검색 class추가 -->
+      <main id="container" class="ui-container ui-mypage ui-seller ui-search"><!--// [D]검색 class추가 -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
@@ -146,63 +146,104 @@
                       </div>
                     </div>
                   </div>
+
+                  <div class="search-keyword">
+                    <button type="button" class="bk-btn bk-btn btn-text btn-sub-small bk-keyword-btn"><span class="text">#연관검색어</span></button>
+                    <button type="button" class="bk-btn bk-btn btn-text btn-sub-small bk-keyword-btn"><span class="text">#연관검색어222</span></button>
+                    <button type="button" class="bk-btn bk-btn btn-text btn-sub-small bk-keyword-btn"><span class="text">#연관검색어222</span></button>
+                    <button type="button" class="bk-btn bk-btn btn-text btn-sub-small bk-keyword-btn"><span class="text">#연관검색어333</span></button>
+                    <button type="button" class="bk-btn bk-btn btn-text btn-sub-small bk-keyword-btn"><span class="text">#연관검색어</span></button>
+                  </div>
                 </div>
               </form>
             </div>
 
-            <div class="bk-empty-text">
-              <i class="bk-icon bk-icon-empty">empty</i>  
-              <div class="bk-text-field bk-flex-row-gap-no">
-                <h2 class="title">검색결과가 없습니다.</h2>
-                <span class="text bk-tMg-basic has-dot">검색어를 변경하여 다시 검색해 주세요.</span>
-                <span class="text has-dot">단어의 철자가 정확한지 확인해 보세요.</span>
-                <span class="text has-dot">띄어쓰기 또는 넓은 의미의 단어를 사용해 보세요.</span>
-              </div>
-              <div class="bk-search-more">
-                <p>찾는 상품이 없으시다면 오픈 인콰이어리를 통해 상품을 찾아보세요.</p>
-                <button type="button" class="bk-btn btn-primary btn-outline btn-small bk-tMg-small">
-                  <span class="text">Inquiry</span>
-                </button>
+            <div class="cp-prd-sort">
+              <div class="bk-prd-count">1,345,678</div>
+              <div class="bk-sort-opt">
+                <div class="bk-select">
+                  <select>
+                    <option>30</option>
+                  </select>
+                </div>
+                <button type="button" class="bk-btn btn-filter" >필터</button>
               </div>
             </div>
-            
-            <div class="cp-search-keyword-list">
-              <dl class="pop-keyword">
-                <dt>인기 검색어</dt>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 1</span>                    
+
+            <ul class="cp-list-wrap ">
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>Lifestyle & Furniture</span>
+                  <span>No.1234567</span>
+                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product  name Product </p></a>
+                  <ul class="bk-list-option">
+                    <li>국가/견적금액($) : 미국/100.00</li>                    
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>발송일 : 2023.01.01</span>
+                  <button type="button" class="bk-btn bk-btn-intbl">
+                    <span class="text">메세지</span> 
                   </button>
-                </dd>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 2</span>                    
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>Lifestyle & Furniture</span>
+                  <span>No.1234567</span>
+                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product  name Product </p></a>
+                  <ul class="bk-list-option">
+                    <li>국가/견적금액($) : 미국/100.00</li>
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>발송일 : 2023.01.01</span>
+                  <button type="button" class="bk-btn bk-btn-intbl">
+                    <span class="text">메세지</span> 
                   </button>
-                </dd>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 3</span>                    
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>Lifestyle & Furniture</span>
+                  <span>No.1234567</span>
+                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product  name Product </p></a>
+                  <ul class="bk-list-option">
+                    <li>국가/견적금액($) : 미국/100.00</li>
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>발송일 : 2023.01.01</span>
+                  <button type="button" class="bk-btn bk-btn-intbl">
+                    <span class="text">메세지</span> 
                   </button>
-                </dd>
-                <dd>
-                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
-                    <span class="deco-icon extra-icon prepend-icon">
-                      <i class="bk-icon bk-icon-keyword">검색</i>
-                    </span>
-                    <span class="text bk-lineclamp-1">인기검색어 4</span>                    
+                </div>
+              </li>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>Lifestyle & Furniture</span>
+                  <span>No.1234567</span>
+                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product  name Product </p></a>
+                  <ul class="bk-list-option">
+                    <li>국가/견적금액($) : 미국/100.00</li>
+                    
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>발송일 : 2023.01.01</span>
+                  <button type="button" class="bk-btn bk-btn-intbl">
+                    <span class="text">메세지</span> 
                   </button>
-                </dd>
-              </dl>
-            </div>
+                </div>
+              </li>
+            </ul>
+
+            <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+              <span class="deco-icon prepend-icon">
+                <i class="bk-icon bk-icon-plus">more</i>
+              </span>
+              <span class="text">더보기</span>
+            </button>
 
           </div>
         </div>
@@ -351,7 +392,20 @@
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+
+				if( $('.cp-prd-sort').length > 0) {
+					$('.cp-prd-sort .btn-view-type').click( function() {
+						var viewAdd = $(this).closest('.cp-prd-sort').siblings('.cp-prd-list');
+						viewAdd.toggleClass('viewtype-list');
+						$(this).toggleClass('btn-list');
+					});
+					$('.btn-like').click( function() {
+						$(this).toggleClass('is-active');
+					})
+				}
+
+      });
     </script>
   </body>
 </html>
