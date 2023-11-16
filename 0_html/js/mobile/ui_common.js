@@ -750,6 +750,7 @@ function addDiv(){
     locale: 'ko',
     onOpen: addDiv, // 바텀레이어추가
     onClose: addDiv, // 바텀레이어삭제
+    disableMobile: "true",
     onReady: function ( dateObj, dateStr, instance ) {
       $(document).on("click",".bk-btn-cal-close", () => {
           //'닫기,취소' 클릭

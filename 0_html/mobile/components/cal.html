@@ -333,54 +333,5 @@
     <script src="../../js/common/lib/swiper/swiper-bundle.min.js"></script><!--// 스와이퍼 -->
     <script src="../../js/mobile/ui_common.js"></script>
 
-    <script>
-           
-      
-      const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',//vertical
-        //loop: true,
-        spaceBetween: 10,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      })
-      function getDirection() {
-        var windowWidth = window.innerWidth;
-        var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-        return direction;
-      }
-      
-      tippy('[component="tooltip"]', {
-        backdrop:false,
-        arrow: false,
-				placement: 'right', // top, right, bottom, left
-				delay: null, //ms
-				//distance: 15, //px or string
-				maxWidth: 350, //px or string
-			
-				// leave these as they are
-				followCursor: false,
-				allowHTML: true,
-        theme: 'bk-tooltip',
-				ignoreAttributes: true,
-        content(reference) {
-          const title = reference.getAttribute('title');
-          reference.removeAttribute('title');
-          return title;
-        },
-        trigger: 'click',// 기본값:"mouseenter focus", 사용가능 값:"mouseenter", "focus", "focusin", "click", "manual"
-      });
-      
-    </script>
   </body>
 </html>
