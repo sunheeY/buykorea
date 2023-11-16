@@ -118,7 +118,7 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-mypage ui-buyer ui-search"><!--// [D]검색 class추가 -->
+      <main id="container" class="ui-container ui-mypage ui-seller ui-search"><!--// [D]검색 class추가 -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
@@ -166,105 +166,74 @@
                     <option>30</option>
                   </select>
                 </div>
-                <button type="button" class="bk-btn btn-view-type">리스트보기</button>
-                <button type="button" class="bk-btn btn-filter" onclick="rightMenu01('#filterOpen')">필터</button>
+                <button type="button" class="bk-btn btn-filter" >필터</button>
               </div>
             </div>
 
-            <ul class="cp-prd-list">
-              <li class="bk-prd-unit">
-                <a href="#" class="bk-thumb-link">
-                  <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
-                  <div class="bk-prd-info">
-                    <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.</span>
-                    <span class="prd-name bk-lineclamp-2">Product name name Product long loooong long lng</span>
-                    <strong class="bk-price">$799.6 Sets</strong>
-                    <span class="bk-moq">MOQ : 100 ea</span>
-                  </div>
-                  <!-- [d] 신규상품일 경우 bk-thumb-link 영역 하단에 아래 영역 추가합니다. -->
-                  <div class="bk-flag-wrap">
-                    <span class="bk-flag-new">NEW</span>
-                  </div>
-                  <!-- //[d] 신규상품일 경우 bk-thumb-link 영역 하단에 아래 영역 추가합니다. -->
-                </a>
-                <div class="bk-btns-wrap">
-                  <button type="button" class="bk-btn btn-outline btn-like">좋아요</button>
-                  <button type="button" class="bk-btn btn-outline btn-addcart">Add to Cart</button>
-                  <button type="button" class="bk-btn btn-inquiry">Inquiry </button>
+            <ul class="cp-list-wrap ">
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>Lifestyle & Furniture</span>
+                  <span>No.1234567</span>
+                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product  name Product </p></a>
+                  <ul class="bk-list-option">
+                    <li>국가/견적금액($) : 미국/100.00</li>                    
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>발송일 : 2023.01.01</span>
+                  <button type="button" class="bk-btn bk-btn-intbl">
+                    <span class="text">메세지</span> 
+                  </button>
                 </div>
               </li>
-              <li class="bk-prd-unit">
-                <a href="#" class="bk-thumb-link">
-                  <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
-                  <div class="bk-prd-info">
-                    <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.</span>
-                    <span class="prd-name bk-lineclamp-2">Product name name Product long loooong long lng</span>
-                    <strong class="bk-price">$799.6 Sets</strong>
-                    <span class="bk-moq">MOQ : 100 ea</span>
-                  </div>
-                </a>
-                <div class="bk-btns-wrap">
-                  <button type="button" class="bk-btn btn-outline btn-like">좋아요</button>
-                  <button type="button" class="bk-btn btn-outline btn-addcart">Add to Cart</button>
-                  <button type="button" class="bk-btn btn-inquiry">Inquiry </button>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>Lifestyle & Furniture</span>
+                  <span>No.1234567</span>
+                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product  name Product </p></a>
+                  <ul class="bk-list-option">
+                    <li>국가/견적금액($) : 미국/100.00</li>
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>발송일 : 2023.01.01</span>
+                  <button type="button" class="bk-btn bk-btn-intbl">
+                    <span class="text">메세지</span> 
+                  </button>
                 </div>
               </li>
-              <li class="bk-prd-unit">
-                <a href="#" class="bk-thumb-link">
-                  <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
-                  <div class="bk-prd-info">
-                    <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.</span>
-                    <span class="prd-name bk-lineclamp-2">Product name name Product long loooong long lng</span>
-                    <strong class="bk-price">$799.6 Sets</strong>
-                    <span class="bk-moq">MOQ : 100 ea</span>
-                  </div>
-                </a>
-                <div class="bk-btns-wrap">
-                  <button type="button" class="bk-btn btn-outline btn-like">좋아요</button>
-                  <button type="button" class="bk-btn btn-outline btn-addcart">Add to Cart</button>
-                  <button type="button" class="bk-btn btn-inquiry">Inquiry </button>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>Lifestyle & Furniture</span>
+                  <span>No.1234567</span>
+                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product  name Product </p></a>
+                  <ul class="bk-list-option">
+                    <li>국가/견적금액($) : 미국/100.00</li>
+                  </ul>
+                </div>
+                <div class="bk-list-condition">
+                  <span>발송일 : 2023.01.01</span>
+                  <button type="button" class="bk-btn bk-btn-intbl">
+                    <span class="text">메세지</span> 
+                  </button>
                 </div>
               </li>
-              <li class="bk-prd-unit">
-                <a href="#" class="bk-thumb-link">
-                  <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
-                  <div class="bk-prd-info">
-                    <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.</span>
-                    <span class="prd-name bk-lineclamp-2">Product name name Product long loooong long lng</span>
-                    <strong class="bk-price">$799.6 Sets</strong>
-                    <span class="bk-moq">MOQ : 100 ea</span>
-                  </div>
-                  <!-- [d] 신규상품일 경우 bk-thumb-link 영역 하단에 아래 영역 추가합니다. -->
-                  <div class="bk-flag-wrap">
-                    <span class="bk-flag-new">NEW</span>
-                  </div>
-                  <!-- //[d] 신규상품일 경우 bk-thumb-link 영역 하단에 아래 영역 추가합니다. -->
-                </a>
-                <div class="bk-btns-wrap">
-                  <button type="button" class="bk-btn btn-outline btn-like">좋아요</button>
-                  <button type="button" class="bk-btn btn-outline btn-addcart">Add to Cart</button>
-                  <button type="button" class="bk-btn btn-inquiry">Inquiry </button>
+              <li class="bk-list-unit">
+                <div class="bk-list-detail">
+                  <span>Lifestyle & Furniture</span>
+                  <span>No.1234567</span>
+                  <a href="#"><p class="bk-list-tit bk-lineclamp-1">Product name Product  name Product </p></a>
+                  <ul class="bk-list-option">
+                    <li>국가/견적금액($) : 미국/100.00</li>
+                    
+                  </ul>
                 </div>
-              </li>
-              <li class="bk-prd-unit">
-                <a href="#" class="bk-thumb-link">
-                  <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
-                  <div class="bk-prd-info">
-                    <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.</span>
-                    <span class="prd-name bk-lineclamp-2">Product name name Product long loooong long lng</span>
-                    <strong class="bk-price">$799.6 Sets</strong>
-                    <span class="bk-moq">MOQ : 100 ea</span>
-                  </div>
-                  <!-- [d] 신규상품일 경우 bk-thumb-link 영역 하단에 아래 영역 추가합니다. -->
-                  <div class="bk-flag-wrap">
-                    <span class="bk-flag-new">NEW</span>
-                  </div>
-                  <!-- //[d] 신규상품일 경우 bk-thumb-link 영역 하단에 아래 영역 추가합니다. -->
-                </a>
-                <div class="bk-btns-wrap">
-                  <button type="button" class="bk-btn btn-outline btn-like">좋아요</button>
-                  <button type="button" class="bk-btn btn-outline btn-addcart">Add to Cart</button>
-                  <button type="button" class="bk-btn btn-inquiry">Inquiry </button>
+                <div class="bk-list-condition">
+                  <span>발송일 : 2023.01.01</span>
+                  <button type="button" class="bk-btn bk-btn-intbl">
+                    <span class="text">메세지</span> 
+                  </button>
                 </div>
               </li>
             </ul>
@@ -275,273 +244,6 @@
               </span>
               <span class="text">더보기</span>
             </button>
-
-            <!--[S] 필터-->
-            <aside class="cp-filter-wrap cp-filter-search" id="filterOpen">
-							<div class="header-filter-area">
-								<strong class="bk-title">Filter</strong>
-								<button type="button" class="bk-icon-only bk-btn-reset">
-									<i class="bk-icon bk-icon-reset">설정초기화</i>
-								</button>
-								<button type="button" class="bk-icon-only bk-btn-close">
-									<i class="bk-icon bk-icon-dialog-close">닫기</i>
-								</button>
-							</div>
-							<div class="ui-filter-inner">
-								<div class="bk-accordion">
-									<ul class="list-accordion">
-										<li class="acc-item is-active">
-											<div class="acc-header">
-												<div class="acc-inner">
-													<div class="left-area">Array</div>
-													<div class="right-area">
-														<button type="button" class="bk-icon-only link">
-															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-														</button>
-													</div>
-												</div>
-											</div>
-											<div class="acc-container">
-												<div class="acc-inner">
-                          <!-- [d] 기본값 : 두줄 배열 / 한줄 배열일 경우 flex-column 클래스 추가 -->
-													<div class="bk-radio flex-column">
-														<input type="radio" name="filter01" class="iRadio" id="filter01-01" checked>
-														<label for="filter01-01"><span class="text">Featured (Default)</span></label>
-														<input type="radio" name="filter01" class="iRadio" id="filter01-02">
-														<label for="filter01-02"><span class="text">Sales volume</span></label>
-														<input type="radio" name="filter01" class="iRadio" id="filter01-03">
-														<label for="filter01-03"><span class="text">Price : High to Low</span></label>
-														<input type="radio" name="filter01" class="iRadio" id="filter01-04">
-														<label for="filter01-04"><span class="text">Price : Low to High</span></label>
-														<input type="radio" name="filter01" class="iRadio" id="filter01-05">
-														<label for="filter01-05"><span class="text">Newest</span></label>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
-									<ul class="list-accordion">
-										<li class="acc-item">
-											<div class="acc-header">
-												<div class="acc-inner">
-													<div class="left-area">Category</div>
-													<div class="right-area">
-														<button type="button" class="bk-icon-only link">
-															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-														</button>
-													</div>
-												</div>
-											</div>
-											<div class="acc-container">
-												<div class="acc-inner">
-                          <!-- [d] 기본값 : 두줄 배열 / 한줄 배열일 경우 flex-column 클래스 추가 -->
-													<div class="bk-radio flex-column">
-														<input type="radio" name="filter11" class="iRadio" id="filter11-01" checked>
-														<label for="filter11-01"><span class="text">Health & Sports</span></label>
-														<input type="radio" name="filter11" class="iRadio" id="filter11-02">
-														<label for="filter11-02"><span class="text">Animal & Pet</span></label>
-														<input type="radio" name="filter11" class="iRadio" id="filter11-03">
-														<label for="filter11-03"><span class="text">Lifestyle & Furniture</span></label>
-														<input type="radio" name="filter11" class="iRadio" id="filter11-04">
-														<label for="filter11-04"><span class="text">IT & SW</span></label>
-														<input type="radio" name="filter11" class="iRadio" id="filter11-05">
-														<label for="filter11-05"><span class="text">Building & Construction</span></label>
-														<input type="radio" name="filter11" class="iRadio" id="filter11-06">
-														<label for="filter11-06"><span class="text">Building & Construction</span></label>
-													</div>
-                          <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more bk-tMg-basic">
-                            <span class="deco-icon prepend-icon">
-                              <i class="bk-icon bk-icon-plus">more</i>
-                            </span>
-                            <span class="text">더보기</span>
-                          </button>
-												</div>
-											</div>
-										</li>
-									</ul>
-                  <ul class="list-accordion">
-										<li class="acc-item">
-											<div class="acc-header">
-												<div class="acc-inner">
-													<div class="left-area">Certification</div>
-													<div class="right-area">
-														<button type="button" class="bk-icon-only link">
-															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-														</button>
-													</div>
-												</div>
-											</div>
-											<div class="acc-container">
-												<div class="acc-inner">
-													<div class="bk-checkbox">
-														<input type="checkbox" name="filter21" class="iCheckbox" id="filter21-01" checked>
-														<label for="filter21-01"><span class="text">국제인증</span></label>
-														<input type="checkbox" name="filter21" class="iCheckbox" id="filter21-02">
-														<label for="filter21-02"><span class="text">FTA</span></label>
-														<input type="checkbox" name="filter21" class="iCheckbox" id="filter21-03">
-														<label for="filter21-03"><span class="text">APTA</span></label>
-														<input type="checkbox" name="filter21" class="iCheckbox" id="filter21-04">
-														<label for="filter21-04"><span class="text">특허</span></label>
-														<input type="checkbox" name="filter21" class="iCheckbox" id="filter21-05">
-														<label for="filter21-05" class="bk-full"><span class="text">Trademark</span></label>
-														<input type="checkbox" name="filter21" class="iCheckbox" id="filter21-06">
-														<label for="filter21-06" class="bk-full"><span class="text">HALAL</span></label>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
-                  <ul class="list-accordion">
-										<li class="acc-item">
-											<div class="acc-header">
-												<div class="acc-inner">
-													<div class="left-area">Award</div>
-													<div class="right-area">
-														<button type="button" class="bk-icon-only link">
-															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-														</button>
-													</div>
-												</div>
-											</div>
-											<div class="acc-container">
-												<div class="acc-inner">
-													<div class="bk-checkbox">
-														<input type="checkbox" name="filter31" class="iCheckbox" id="filter31-01" checked>
-														<label for="filter31-01"><span class="text">IF</span></label>
-														<input type="checkbox" name="filter31" class="iCheckbox" id="filter31-02">
-														<label for="filter31-02"><span class="text">Reddot</span></label>
-														<input type="checkbox" name="filter31" class="iCheckbox" id="filter31-03">
-														<label for="filter31-03"><span class="text">IDEA</span></label>
-														<input type="checkbox" name="filter31" class="iCheckbox" id="filter31-04">
-														<label for="filter31-04"><span class="text">GOOD DESIGN</span></label>
-														<input type="checkbox" name="filter31" class="iCheckbox" id="filter31-05">
-														<label for="filter31-05"><span class="text">AA</span></label>
-														<input type="checkbox" name="filter31" class="iCheckbox" id="filter31-06">
-														<label for="filter31-06"><span class="text">WA</span></label>
-														<input type="checkbox" name="filter31" class="iCheckbox" id="filter31-05">
-														<label for="filter31-05"><span class="text">iEoo</span></label>
-														<input type="checkbox" name="filter31" class="iCheckbox" id="filter31-06">
-														<label for="filter31-06"><span class="text">PIN UP</span></label>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
-									<ul class="list-accordion">
-										<li class="acc-item">
-											<div class="acc-header">
-												<div class="acc-inner">
-													<div class="left-area">Price</div>
-													<div class="right-area">
-														<button type="button" class="bk-icon-only link">
-															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-														</button>
-													</div>
-												</div>
-											</div>
-											<div class="acc-container">
-												<div class="acc-inner">
-                          <div class="bk-row-div">
-                            <div class="bk-textfield">
-                              <div class="control-field">
-                                <input type="text" value="" placeholder="" class="iText" title="min">
-                              </div>
-                            </div>
-                            ~
-                            <div class="bk-textfield">
-                              <div class="control-field">
-                                <input type="text" value="" placeholder="" class="iText" title="min">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-											</div>
-										</li>
-									</ul>
-									<ul class="list-accordion">
-										<li class="acc-item bk-date-range">
-											<div class="acc-header">
-												<div class="acc-inner">
-													<div class="left-area">MOQ</div>
-													<div class="right-area">
-														<button type="button" class="bk-icon-only link">
-															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-														</button>
-													</div>
-												</div>
-											</div>
-											<div class="acc-container">
-												<div class="acc-inner">
-                          <div class="bk-row-div">
-                            <div class="bk-textfield">
-                              <div class="bk-control">
-                                <div class="control-field">
-                                  <input type="text" value="" placeholder="" class="iText" title="MOQ">                                
-                                </div>
-                              </div>
-                            </div> 
-                            <div class="bk-select xsmall">
-                              <div class="bk-control">
-                                <select class="" id="" title="MOQS" >
-                                  <option value="1">단위</option>
-                                </select>
-                              </div>
-                            </div>                         
-                          </div>
-                          <span class="bk-full">~</span>
-                          <div class="bk-row-div">
-                            <div class="bk-textfield">
-                              <div class="bk-control">
-                                <div class="control-field">
-                                  <input type="text" value="" placeholder="" class="iText" title="MOQ">                                
-                                </div>
-                              </div>
-                            </div> 
-                            <div class="bk-select xsmall">
-                              <div class="bk-control">
-                                <select class="" id="" title="MOQS" >
-                                  <option value="1">단위</option>
-                                </select>
-                              </div>
-                            </div>                         
-                          </div>
-												</div>
-											</div>
-										</li>
-									</ul>
-                  <ul class="list-accordion">
-										<li class="acc-item">
-											<div class="acc-header">
-												<div class="acc-inner">
-													<div class="left-area">Product Data</div>
-													<div class="right-area">
-														<button type="button" class="bk-icon-only link">
-															<i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-														</button>
-													</div>
-												</div>
-											</div>
-											<div class="acc-container">
-												<div class="acc-inner">
-													<div class="bk-checkbox">
-														<input type="checkbox" name="filter61" class="iCheckbox" id="filter61-01" checked>
-														<label for="filter61-01"><span class="text">Manual</span></label>
-														<input type="checkbox" name="filter61" class="iCheckbox" id="filter61-02">
-														<label for="filter61-02"><span class="text">Catalog</span></label>
-														<input type="checkbox" name="filter61" class="iCheckbox" id="filter61-03">
-														<label for="filter61-03"><span class="text">Other</span></label>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-								
-								<button type="button" class="btn-filter-setting">Search</button>
-							</div>
-							
-						</aside>
-            <!--//[D] 필터-->
 
           </div>
         </div>
