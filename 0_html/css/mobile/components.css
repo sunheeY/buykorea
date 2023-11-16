@@ -1501,3 +1501,14 @@ body.overflow{overflow-y:hidden;}
 .bk-btn-share.share-ico-face{ background-image:url(../../images/mobile/share-facebook.svg)}
 .bk-btn-share.share-ico-twt{ background-image:url(../../images/mobile/share-twitter.svg)}
 .bk-btn-share.share-ico-url{ background-image:url(../../images/mobile/share-url.svg)}
+
+/*모든카테고리*/
+.bk-all-category {}
+.bk-all-category dt{ background:var(--color-background2); padding:17px 20px; border-radius: var(--radius-default); font-weight:var(--w-m)}
+.bk-all-category dt + dd{ margin-top:24px}
+.bk-all-category dd + dd{ margin-top:20px}
+.bk-all-category dd{ display:flex; justify-content: flex-start; align-items: center; column-gap: 8px; color:var(--color-sub); padding:0 0 0 12px}
+.bk-all-category .bk-btn {display: block; background: none; border: 0; width: 24px; height: 24px; overflow: hidden; padding:0}
+.bk-all-category .bk-btn::before {content: ''; display: block; width: 24px; height: 24px; background-repeat: no-repeat; background-position: 50% 50%; margin: 0;}
+.bk-all-category dd > .btn-like::before {background-image: url(../../images/mobile/icon-heart-gray-24x24.svg);}
+.bk-all-category dd > .btn-like.is-active::before {background-image: url(../../images/mobile/icon-heart-gray-full-24x24.svg);}

@@ -26,9 +26,12 @@
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
-            <button type="button" class="bk-btn btn-outline btn-like">좋아요</button>
+            
 						
-						
+						<dl class="bk-all-category">
+              <dt>Health & Sports</dt>
+              <dd><button type="button" class="bk-btn btn-outline btn-like">좋아요</button><a href="#">Health Care Products</a></dd>
+            </dl>
 
           </div>
         </div>
@@ -50,16 +53,9 @@
     <script src="../../../js/mobile/load_html.js"></script>
     <script>
       $(document).ready(function () {
-				if( $('.cp-prd-sort').length > 0) {
-					$('.cp-prd-sort .btn-view-type').click( function() {
-						var viewAdd = $(this).closest('.cp-prd-sort').siblings('.cp-prd-list');
-						viewAdd.toggleClass('viewtype-list');
-						$(this).toggleClass('btn-list');
-					});
-					$('.btn-like').click( function() {
-						$(this).toggleClass('is-active');
-					})
-				}
+				$('.btn-like').click( function() {
+          $(this).toggleClass('is-active');
+        })
 			});
     </script>
   </body>
