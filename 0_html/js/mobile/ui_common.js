@@ -165,11 +165,20 @@ function addHasLnbClass() {
 // 포커스 이벤트 핸들러
 function focusHandler() {
   $(this).closest('.bk-textfield, .bk-textarea').addClass('is-focus');
+
+  //인기검색어 추가
+  if($('.bk-textfield.textfield-search').hasClass('is-focus')){
+    $('.recent-keyword').addClass('is-active');    
+  }
 }
 
 // 블러 이벤트 핸들러
 function blurHandler() {
   $(this).closest('.bk-textfield, .bk-textarea').removeClass('is-focus');
+
+  //인기검색어 삭제
+  $('.recent-keyword').removeClass('is-active');    
+  
 }
 
 // 입력 요소 상태 업데이트
@@ -794,4 +803,31 @@ function addDiv(){
       $('#chcek-last').hide();
       $('#chcek-new').show();
     }
+  }
+
+
+  //필터
+  $(document).ready(function () {
+    if ( $('.cp-category').length > 0) {
+      $('[class^=category-depth0] > a').click(function(e) {
+        e.preventDefault();
+        var clickThis =  $(this).parent();
+        clickThis.toggleClass('is-active');
+        $(this).next('.in-subdepth').slideToggle();
+        clickThis.siblings().removeClass('is-active').find('.in-subdepth').slideUp();
+        clickThis.siblings().find('.in-subdepth li').removeClass('is-active');           
+      });
+    }
+  });
+  function rightMenu(id) {
+    var filterWidth = $(window).width() - 95;
+    var filterDim = '<div class="dimed-zone"></div>'
+    $(id).animate({right: 0}, 400).appendTo('body');
+    $('body').append(filterDim);
+    $('body').css('overflow', 'hidden');
+    $(id).find('.bk-btn-close').click( function() {
+      $(id).animate({right: '-' + filterWidth + 'px'}, 400);
+      $('.dimed-zone').remove();
+      $('body').removeAttr('style');
+    });
   }

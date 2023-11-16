@@ -141,29 +141,8 @@
     <script src="../../../js/mobile/load_html.js"></script>
     <script>
       $(document).ready(function () {
-				if ( $('.cp-category').length > 0) {
-          $('[class^=category-depth0] > a').click(function(e) {
-            e.preventDefault();
-            var clickThis =  $(this).parent();
-            clickThis.toggleClass('is-active');
-            $(this).next('.in-subdepth').slideToggle();
-            clickThis.siblings().removeClass('is-active').find('.in-subdepth').slideUp();
-            clickThis.siblings().find('.in-subdepth li').removeClass('is-active');           
-          });
-        }
+				
 			});
-      function rightMenu(id) {
-        var filterWidth = $(window).width() - 95;
-        var filterDim = '<div class="dimed-zone"></div>'
-        $(id).animate({right: 0}, 400).appendTo('body');
-        $('body').append(filterDim);
-        $('body').css('overflow', 'hidden');
-        $(id).find('.bk-btn-close').click( function() {
-          $(id).animate({right: '-' + filterWidth + 'px'}, 400);
-          $('.dimed-zone').remove();
-          $('body').removeAttr('style');
-        });
-      }
     </script>
   </body>
 </html>
