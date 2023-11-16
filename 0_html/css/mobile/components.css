@@ -1511,4 +1511,4 @@ body.overflow{overflow-y:hidden;}
 .bk-all-category .bk-btn {display: block; background: none; border: 0; width: 24px; height: 24px; overflow: hidden; padding:0}
 .bk-all-category .bk-btn::before {content: ''; display: block; width: 24px; height: 24px; background-repeat: no-repeat; background-position: 50% 50%; margin: 0;}
 .bk-all-category dd > .btn-like::before {background-image: url(../../images/mobile/icon-heart-gray-24x24.svg);}
-.bk-all-category dd > .btn-like.is-active::before {background-image: url(../../images/mobile/icon-heart-gray-full-24x24.svg);}
+.bk-all-category dd > .btn-like.is-active::before {background-image: url(../../images/mobile/icon-heart-gray-full-24x24.svg) !important;}
