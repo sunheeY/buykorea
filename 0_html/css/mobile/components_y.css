@@ -575,7 +575,9 @@
 
 .prd-info-more {margin-top: 24px; display: -ms-grid; display: grid; -ms-grid-columns: 1fr auto; grid-template-columns: 1fr auto; line-height: 1.57143; gap: 24px;}
 
-.prd-info-payments span + span {margin-left: 12px;}
+.prd-info-awards { display:flex; gap:12px 16px; flex-flow: row wrap;}
+.prd-info-payments { display:flex; gap:12px 16px; flex-flow: row wrap;}
+/*.prd-info-payments span + span {margin-left: 12px;}*/
 .prd-info-shipping {color: #666;}
 .prd-info-shipping strong {color: #000; font-weight: 400;}
 
