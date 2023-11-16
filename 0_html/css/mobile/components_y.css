@@ -434,8 +434,9 @@
 .trs-ban-data .trs-ban-date {margin-top: 8px; color: #92CBFF;}
 
 .trs-slide-wrap {margin-top: 24px; position: relative;}
-.trs-slide-wrap img {width: 100%; border-radius: 4px;}
-/* .type-trs .bk-prd-unit .bk-thumb-link .thumb {padding-bottom: 68.75%} */
+.trs-slide-wrap img {width: 100%; border-radius: 4px; padding-bottom: 0;}
+.trs-slide-wrap .swiper-slide {padding-bottom: 41.5338%}
+.type-trs .bk-prd-unit .bk-thumb-link .thumb {padding-bottom: 68.75%}
 .bk-prd-unit .bk-trs-tit {margin-top: 0; display: -webkit-box;}
 .bk-trs-cont {font-size: 1.6rem; margin-top: 12px;}
 .trs-cont-wrap {margin-top: 40px;}
@@ -530,7 +531,7 @@
 .swiper-slide {position: relative; overflow: hidden;}
 .prd-img-area .swiper-slide {padding-bottom: 100%;}
 .swiper-slide::before {content: ''; display: block; width: 100%; height: 100%; top: 0; left: 0; position: absolute;}
-.swiper-slide img {width: 100%; padding-bottom: 100%;  object-fit: cover; object-position: center; position: absolute;}
+.swiper-slide img {width: 100%; padding-bottom: 100%; object-fit: cover; object-position: center; position: absolute;}
 .prd-img-area [class^=swiper-button-] {width: 64px; height: 64px; background: rgba(0,0,0,.3);}
 .prd-img-area [class^=swiper-button-]:after {font-size: 24px; color: #fff;}
 .prd-img-area .swiper-button-prev {left: 0;}
