@@ -1504,11 +1504,19 @@ body.overflow{overflow-y:hidden;}
 
 /*모든카테고리*/
 .bk-all-category {}
-.bk-all-category dt{ background:var(--color-background2); padding:17px 20px; border-radius: var(--radius-default); font-weight:var(--w-m)}
+.bk-all-category + .bk-all-category{ margin-top:32px}
+.bk-all-category dt{ background:var(--color-background2); padding:17px 20px; border-radius: var(--radius-default); font-weight:500; font-size:1.6rem}
 .bk-all-category dt + dd{ margin-top:24px}
 .bk-all-category dd + dd{ margin-top:20px}
-.bk-all-category dd{ display:flex; justify-content: flex-start; align-items: center; column-gap: 8px; color:var(--color-sub); padding:0 0 0 12px}
+.bk-all-category dd{ display:flex; justify-content: flex-start; align-items: center; column-gap: 8px; color:var(--color-sub); padding:0 0 0 12px; font-size:1.6rem}
 .bk-all-category .bk-btn {display: block; background: none; border: 0; width: 24px; height: 24px; overflow: hidden; padding:0}
 .bk-all-category .bk-btn::before {content: ''; display: block; width: 24px; height: 24px; background-repeat: no-repeat; background-position: 50% 50%; margin: 0;}
 .bk-all-category dd > .btn-like::before {background-image: url(../../images/mobile/icon-heart-gray-24x24.svg);}
 .bk-all-category dd > .btn-like.is-active::before {background-image: url(../../images/mobile/icon-heart-gray-full-24x24.svg) !important;}
+
+.bk-all-category .bk-checkbox input[type="checkbox"] + label {display: inline-flex; align-items: center; position: relative; cursor: pointer; vertical-align: top; }
+.bk-all-category .bk-checkbox input[type="checkbox"] + label:before {display: inline-block; width: 24px; height: 24px; border:0; background:url(../../images/mobile/icon-heart-gray-24x24.svg); border-radius: 0;}
+.bk-all-category .bk-checkbox input[type="checkbox"] + label .text {flex-basis: 0; flex-grow: 1; width:100%; margin-left: 8px; word-break: break-all; white-space: pre-line; font-size:1.6rem; color:var(--color-sub);}
+.bk-all-category .bk-checkbox input[type="checkbox"]:checked + label .text { text-decoration: underline; color:var(--color-brand)}
+.bk-all-category .bk-checkbox input[type="checkbox"]:checked + label:before {border-color: transparent; background-color: transparent}
+.bk-all-category .bk-checkbox input[type="checkbox"]:checked + label::after{position:absolute; top:0; left:0; width: 24px; height: 24px; background-image: url(../../images/mobile/icon-heart-gray-full-24x24.svg); background-size: 24px 24px; transform: translate(0, 0); filter: unset}
