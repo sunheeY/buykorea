@@ -165,11 +165,20 @@ function addHasLnbClass() {
 // 포커스 이벤트 핸들러
 function focusHandler() {
   $(this).closest('.bk-textfield, .bk-textarea').addClass('is-focus');
+
+  //인기검색어 추가
+  if($('.bk-textfield.textfield-search').hasClass('is-focus')){
+    $('.recent-keyword').addClass('is-active');    
+  }
 }
 
 // 블러 이벤트 핸들러
 function blurHandler() {
   $(this).closest('.bk-textfield, .bk-textarea').removeClass('is-focus');
+
+  //인기검색어 삭제
+  $('.recent-keyword').removeClass('is-active');    
+  
 }
 
 // 입력 요소 상태 업데이트

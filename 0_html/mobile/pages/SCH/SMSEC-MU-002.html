@@ -118,31 +118,30 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-mypage ui-seller"><!--// [D]회원 class추가 -->
-        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
+      <main id="container" class="ui-container ui-mypage ui-search"><!--// [D]검색 class추가 -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
-            <div class="cp-search search-wideType">
+            <div class="cp-search search-topType cp-wide-type">
               <form>
                 <div class="search-inner">
                   <div class="search-row">
                     <div class="search-group">
-                      <div class="bk-textfield wide textfield-search is-required">
+                      <div class="bk-textfield has-clear wide textfield-search">
                         <div class="bk-control">
                           <div class="control-field">
-                            <input type="text" name="" value="" placeholder="" class="iText" id="소속기업 선택 입력" required="">
+                            <input type="text" name="" value="" placeholder="" class="iText" id="검색" >
                             <div class="control-icon append-icon">
                               <button type="button" class="bk-icon-only icon-search">
                                 <i class="bk-icon bk-icon-searchPrimary">검색</i>
                               </button>
                             </div>
                           </div>
-                          <div class="control-btns append-btns">
-                            <button type="button" class="bk-icon-only icon-text-clear">
-                              <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
-                            </button>
-                          </div>
+                        </div>
+                        <div class="append-btns">
+                          <button type="button" class="bk-icon-only icon-text-clear">
+                            <i class="bk-icon bk-icon-search-close">텍스트 지우기</i>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -159,7 +158,43 @@
               </div>
             </div>
             
-            ㅁㄹㅇㅁㅇㄻㅇ
+            <div class="cp-search-keyword-list">
+              <dl class="pop-keyword">
+                <dt>인기 검색어</dt>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">검색</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 1</span>                    
+                  </button>
+                </dd>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">검색</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 2</span>                    
+                  </button>
+                </dd>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">검색</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 3</span>                    
+                  </button>
+                </dd>
+                <dd>
+                  <button type="button" class="bk-btn bk-btn-icon btn-brand btn-text">
+                    <span class="deco-icon extra-icon prepend-icon">
+                      <i class="bk-icon bk-icon-keyword">검색</i>
+                    </span>
+                    <span class="text bk-lineclamp-1">인기검색어 4</span>                    
+                  </button>
+                </dd>
+              </dl>
+            </div>
 
           </div>
         </div>

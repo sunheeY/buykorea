@@ -1442,6 +1442,13 @@ body.overflow{overflow-y:hidden;}
 
 /*search - 통합검색*/
 .ui-search .bk-textfield{column-gap: 8px; align-items: center;}
+.ui-search .bk-empty-text{ padding:16px 0 40px 0}
+.ui-search .bk-empty-text + .cp-search-keyword-list{padding-top:40px; border-top:1px solid var(--color-gray)}
+
+.search-keyword { margin-top:12px; color:var(--color-brand); overflow-x:auto; display:flex; justify-self: flex-start; flex-flow:row nowrap; margin-right:-20px}
+.search-keyword button { flex-shrink: 0;}
+.search-keyword button:nth-last-of-type(1) { margin-right:20px}
+.search-keyword button + button{ margin-left:12px}
 
 .cp-search-keyword-list{}
 .cp-search-keyword-list dt{ color:var(--color-sub); font-size:1.6rem}
