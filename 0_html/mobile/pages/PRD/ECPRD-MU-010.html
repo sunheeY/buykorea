@@ -513,7 +513,22 @@
           });
          
         });
-        
+        var prdImages = new Swiper('.prd-img-area', {
+          slidesPerView: 1,
+          threshold: 0,
+          a11y: false,
+		      observer: true,
+          observeParents: true,
+          pagination: {
+            el: ".prd-img-area .swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".prd-img-area .swiper-button-next",
+            prevEl: ".prd-img-area .swiper-button-prev",
+          },
+          preventDefaultSwipe: false,
+          preventLinks: false,
+        });
         var recProduct = new Swiper('.prd-recs', {
           slidesPerView: 1.7,
           spaceBetween: 15,
