@@ -1522,3 +1522,7 @@ body.overflow{overflow-y:hidden;}
 .bk-all-category .bk-checkbox input[type="checkbox"]:checked + label:before {border-color: transparent; background-color: transparent}
 .bk-all-category .bk-checkbox input[type="checkbox"]:checked + label::after{position:absolute; top:0; left:0; width: 24px; height: 24px; background-image: url(../../images/mobile/icon-heart-gray-full-24x24.svg); background-size: 24px 24px; transform: translate(0, 0); filter: unset}
 */
+
+
+/*인콰이어리*/
+.ui-inq{}
