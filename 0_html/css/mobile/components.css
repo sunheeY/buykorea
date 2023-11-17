@@ -1456,7 +1456,7 @@ body.overflow{overflow-y:hidden;}
 .ui-seller.ui-search .cp-list-wrap .bk-list-detail *:not(span){ width:100%}
 .ui-seller.ui-search .cp-list-wrap .bk-list-detail span{ width:50%; display: inline-flex;}
 .ui-seller.ui-search .cp-list-wrap .bk-list-detail span + span{ margin-top:0; justify-content: flex-end;}
-.cp-filter-wrap.cp-filter-search {width: calc(100% - 55px);}
+/*.cp-filter-wrap.cp-filter-search {width: calc(100% - 55px);}*/
 .cp-filter-wrap.cp-filter-search .bk-full{display:flex; justify-content: center;}
 .cp-filter-wrap.cp-filter-search .bk-row-div { align-items: center;}
 .cp-filter-wrap.cp-filter-search .bk-row-div .bk-textfield{ width:60%}
