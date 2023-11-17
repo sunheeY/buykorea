@@ -732,7 +732,7 @@ function addDiv(){
   if((flatDiv).hasClass('open')){
 
     flatDiv.prepend(dhtml);
-    flatDiv.append(dhtml2);
+    //flatDiv.append(dhtml2);
     $(".flatpicker-dimd").addClass('is-active');
     flatMonthDiv.prepend(dhtml3);
 
