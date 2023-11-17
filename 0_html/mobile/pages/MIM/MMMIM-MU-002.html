@@ -286,31 +286,40 @@
                         </dl>
                       </div>
 
+                      <!-- [S]구조변경 2023-11-20-->
                       <div class="bk-input-list">
                         <dl>
                           <dt class="is-required">Interest</dt>
                           <dd>
-                            <!--라디오버튼으로 변경 2023-11-02-->
-                            <fieldset>
-                              <legend>radio</legend>
-                              <div class="bk-radio-group wide">
-                                <div class="bk-radio">
-                                  <input type="radio" name="radio-05" class="iRadio" id="radio-05-01">
-                                  <label for="radio-05-01"><span class="text">Manufacturer</span></label>
-                                </div>
-                                <div class="bk-radio">
-                                  <input type="radio" name="radio-05" class="iRadio" id="radio-05-02">
-                                  <label for="radio-05-02"><span class="text">Distributor</span></label>
-                                </div>
-                                <div class="bk-radio">
-                                  <input type="radio" name="radio-05" class="iRadio" id="radio-05-03">
-                                  <label for="radio-05-03"><span class="text">Manufacturer&Distributor</span></label>
-                                </div>
+                            <div class="bk-row-div bk-full">
+                              <button
+                                type="button"
+                                class="bk-btn btn-default btn-outline btn-xsmall btn-text-xsmall"
+                                onclick="dialogOpen('#dialog-search-category')"
+                              >
+                                <span class="text">Search Category</span>
+                              </button>                              
+                            </div>
+                            <ul class="bk-tbl-ul">
+                              <li>
+                                <span class="text">National General Exhibition</span>
+                                <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                                  <span class="deco-icon extra-icon append-icon">
+                                    <i class="bk-icon bk-icon-trash">delete</i>
+                                  </span>
+                                </button>
+                              </li>
+                            </ul>
+                            <div class="bk-messages bk-flex-c ">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>Interest는 최대 5개까지 등록 가능합니다.
                               </div>
-                            </fieldset>
+                            </div>
                           </dd>
+
                         </dl>
                       </div>
+                      <!-- //[D]구조변경 2023-11-20-->
 
                       <div class="bk-input-list">
                         <dl>
@@ -335,6 +344,13 @@
                                 </button>
                               </li>
                             </ul>
+                            <!--[S]안내문구 추가 2023-11-20-->
+                            <div class="bk-messages bk-flex-c ">
+                              <div class="bk-row-div no-gap">
+                                <i class="bk-icon bk-icon-input-messages">정보</i>Category는 최대 10개까지 등록 가능합니다.
+                              </div>
+                            </div>
+                            <!--//[D]안내문구 추가 2023-11-20-->
                           </dd>
                         </dl>
                       </div>
