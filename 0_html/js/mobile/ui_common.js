@@ -820,7 +820,7 @@ function addDiv(){
     }
   });
   function rightMenu(id) {
-    var filterWidth = $(window).width() - 95;
+    var filterWidth = $(window).width() - 55;
     var filterDim = '<div class="dimed-zone"></div>'
     $(id).animate({right: 0}, 400).appendTo('body');
     $('body').append(filterDim);
@@ -831,6 +831,7 @@ function addDiv(){
       $('body').removeAttr('style');
     });
   }
+  /*
   function rightMenu01(id) {
     var filterWidth = $(window).width() - 55;
     var filterDim = '<div class="dimed-zone"></div>'
@@ -843,3 +844,4 @@ function addDiv(){
       $('body').removeAttr('style');
     });
   }
+  */
