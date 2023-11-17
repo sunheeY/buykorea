@@ -442,7 +442,8 @@
 .btn-sub,
 .btn-text-sub {color: #666 !important;}
 
-.btn-underline{text-decoration:underline;}
+.btn-underline,
+.txt-underline{text-decoration:underline;}
 .btn-sub.btn-underline {text-decoration: underline; color: #000 !important;}
 .btn-sub.btn-underline-small {text-decoration: underline; font-size:14px;}
 .btn-sub-small {font-size:14px;}
@@ -900,11 +901,19 @@ gap:12px; grid-template-columns: repeat(7, 1fr);}
 .bk-no-data .message {font-size: 3.2rem; line-height: 4rem;}
 /* 타이틀 */
 .bk-title {}
+.bk-title.add-pd { padding:0 28px; position:relative}
 .bk-title .title-area {display: flex; justify-content: space-between; align-items: flex-end;}
 .bk-title .title-area .group-left {display: flex; flex-basis: 0; flex-grow: 1;}
 .bk-title .title-group.column {}
 .bk-title.title-sub-top {margin-bottom: 30px;}
 .bk-title.title-sub .title-area {padding-bottom: 10px;}
+
+.bk-title .bk-btn{position:absolute; right:0; bottom:0; width:28px; height:28px; display:block;}
+.bk-title .btn-favorite { width:28px; height:28px; font-size:0; padding:0}
+.bk-title .btn-favorite::before {content: ''; display: block; width: 28px; height: 28px; background-repeat: no-repeat; background-position: 50% 50%; margin: 0; background-size:100% auto}
+.bk-title .btn-favorite::before {background-image: url(../../images/mobile/rate-blank.svg);}
+.bk-title .btn-favorite.is-active::before {background-image: url(../../images/mobile/rate-full.svg) !important;}
+
 /* [컴퍼넌트]검색 기본 */
 .cp-search {display: flex; align-items: center;}
 .cp-search > form {width: 100%;}
