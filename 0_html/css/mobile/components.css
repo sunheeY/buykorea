@@ -1527,3 +1527,9 @@ body.overflow{overflow-y:hidden;}
 /*인콰이어리*/
 .ui-inq{}
 .ui-seller.ui-inq .cp-list-wrap{ border-top:0}
+.bk-detail-option { display:flex; justify-content: flex-start; align-items: center; margin-top:8px}
+.bk-detail-option li{ display:flex; justify-content: flex-start; align-items: center;}
+.bk-detail-option li + li{ padding-left:8px}
+.bk-detail-option li + li:before{ content:""; width:1px; height:14px; background:var(--color-gray); display:flex; margin-right:8px; }
+.bk-detail-option .deco-icon{ width:20px; height:20px; display:inline-flex; margin-right:4px}
+.bk-detail-option .deco-icon .bk-icon { width:100%; height:100%;}
