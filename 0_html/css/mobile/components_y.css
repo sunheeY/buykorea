@@ -399,7 +399,7 @@
 .viewtype-list .bk-prd-unit:nth-last-child(2) {border-bottom: 1px solid #ddd;}
 
 /* 필터 */
-.cp-filter-wrap {position: fixed; top: 0; bottom: 0; right: -100%; background: #fff; width: calc(100% - 95px); z-index: 9999; padding: 24px 0 24px 20px; box-sizing: border-box; }
+.cp-filter-wrap {position: fixed; top: 0; bottom: 0; right: -100%; background: #fff; width: calc(100% - 55px); z-index: 9999; padding: 24px 0 24px 20px; box-sizing: border-box; }
 .dimed-zone {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 99; background: rgba(0,0,0,.6);}
 .btn-filter-setting {position: absolute; border: 0; font-size: 1.8rem; line-height: 1.44444; font-weight: 500; bottom: 0; right: 0; width: 100%; height: 60px; background: var(--color-primary); color: var(--color-white)}
 .ui-filter-inner {height: calc(100% - 60px - 80px); overflow-y: auto; padding: 0 20px 120px 0;}

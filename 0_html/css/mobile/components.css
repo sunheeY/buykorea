@@ -1456,7 +1456,7 @@ body.overflow{overflow-y:hidden;}
 .ui-seller.ui-search .cp-list-wrap .bk-list-detail *:not(span){ width:100%}
 .ui-seller.ui-search .cp-list-wrap .bk-list-detail span{ width:50%; display: inline-flex;}
 .ui-seller.ui-search .cp-list-wrap .bk-list-detail span + span{ margin-top:0; justify-content: flex-end;}
-.cp-filter-wrap.cp-filter-search {width: calc(100% - 55px);}
+/*.cp-filter-wrap.cp-filter-search {width: calc(100% - 55px);}*/
 .cp-filter-wrap.cp-filter-search .bk-full{display:flex; justify-content: center;}
 .cp-filter-wrap.cp-filter-search .bk-row-div { align-items: center;}
 .cp-filter-wrap.cp-filter-search .bk-row-div .bk-textfield{ width:60%}
@@ -1514,10 +1514,15 @@ body.overflow{overflow-y:hidden;}
 .bk-all-category .bk-btn::before {content: ''; display: block; width: 24px; height: 24px; background-repeat: no-repeat; background-position: 50% 50%; margin: 0;}
 .bk-all-category dd > .btn-like::before {background-image: url(../../images/mobile/icon-heart-gray-24x24.svg);}
 .bk-all-category dd > .btn-like.is-active::before {background-image: url(../../images/mobile/icon-heart-gray-full-24x24.svg) !important;}
-
+/*
 .bk-all-category .bk-checkbox input[type="checkbox"] + label {display: inline-flex; align-items: center; position: relative; cursor: pointer; vertical-align: top; }
 .bk-all-category .bk-checkbox input[type="checkbox"] + label:before {display: inline-block; width: 24px; height: 24px; border:0; background:url(../../images/mobile/icon-heart-gray-24x24.svg); border-radius: 0;}
 .bk-all-category .bk-checkbox input[type="checkbox"] + label .text {flex-basis: 0; flex-grow: 1; width:100%; margin-left: 8px; word-break: break-all; white-space: pre-line; font-size:1.6rem; color:var(--color-sub);}
 .bk-all-category .bk-checkbox input[type="checkbox"]:checked + label .text { text-decoration: underline; color:var(--color-brand)}
 .bk-all-category .bk-checkbox input[type="checkbox"]:checked + label:before {border-color: transparent; background-color: transparent}
 .bk-all-category .bk-checkbox input[type="checkbox"]:checked + label::after{position:absolute; top:0; left:0; width: 24px; height: 24px; background-image: url(../../images/mobile/icon-heart-gray-full-24x24.svg); background-size: 24px 24px; transform: translate(0, 0); filter: unset}
+*/
+
+
+/*인콰이어리*/
+.ui-inq{}
