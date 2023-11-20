@@ -35,6 +35,7 @@
 .bk-last-elmt {margin-top: 64px;}
 .bk-tbl-list .bk-list-name.list-type03 strong {font-size: 1.6rem; font-weight: 500;}
 .bk-tbl-list .bk-list-name.list-type03 * + p {margin-top: 4px;}
+.ui-buyer .bk-btn-more + .bk-btn {margin-top: 16px;} /* 더보기 버튼 다음 full 버튼 올 경우 간격 40 맞추기*/
 
 /* 간격 상쇄 */
 .cp-info-block .bk-tbl .tbl {margin-bottom: 0;}
@@ -59,6 +60,11 @@
 .bk-icon-reset {width: 24px; height: 24px; background-image: url(../../images/mobile/icon_reload.svg);}
 .icon-category {width: 25px; height: 24px; background: url(../../images/mobile/icon_category.svg) 0 center no-repeat; display: block;}
 .icon-delete {width: 18px; height: 18px; background: url(../../images/mobile/icon-delete.png) 0 center/ 18px 18px no-repeat; display: block;}
+.btn-has-icon::before {content: ''; display: inline-block; background-position: 50% 50%; background-repeat: no-repeat;}
+.btn-favorite {background: #fff; border-color: #ddd; color: #000; font-size: 1.4rem; line-height: 1.57143; height: auto; padding: 2px 8px;}
+.btn-favorite.btn-has-icon::before {background-image: url(../../images/mobile/rate-blank.svg); width: 18px; height: 18px; margin-right: 4px;}
+.btn-favorite.is-active.btn-has-icon::before {background-image: url(../../images/mobile/rate-full.svg);}
+.btn-favorite span.text {color: #000;}
 
 /* 배송지등록 */
 .bk-tbl-list .bk-list-name .bk-list-title {font-size: 1.6rem;}
@@ -681,3 +687,30 @@
 .prd-thumb-list .swiper-wrapper li:nth-child(8) {margin-right: 0 !important;}
 .prd-thumb-list .swiper-slide {padding-bottom: calc((100% / 8) - 4px); border-radius: 6px;}
 .prd-thumb-list .swiper-slide-thumb-active::before {border: 2px solid var(--color-primary); box-sizing: border-box; border-radius: 6px; z-index: 10;}
+
+/* 인콰이어리 */
+.ui-mypage .bk-tab.tab-type-sub-line .tab-menu-wrap {border-top: 0;}
+.inquiry-list + .inquiry-list {margin-top: 24px;}
+.inquiry-list .bk-list-header {display: block; font-size: 1.6rem; padding: 12px; background-color: #f6f6f6; border-bottom: 1px solid #ddd;}
+.inquiry-list a {text-decoration: underline; color: #000}
+.inquiry-list .bk-list-body {border-bottom: 1px solid #ddd;}
+.inquiry-list .bk-list-body .bk-list-detail {padding: 24px 12px;}
+.inquiry-list .bk-list-detail {display: -ms-grid; display: grid; -ms-grid-columns: 1fr auto; grid-template-columns: 1fr auto;}
+.inquiry-list .bk-list-detail > span {color: #000}
+.inquiry-list .bk-list-detail > span + span {margin: 0; color: #666}
+.inquiry-list .bk-list-detail .bk-thumb-link {-ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / span 2; margin-top: 12px; display: -ms-grid; display: grid; -ms-grid-columns: 1fr auto; grid-template-columns: 1fr auto; align-items: center;}
+.inquiry-list .bk-list-detail .bk-thumb-link .thumb {grid-area: 1/1/3/2; margin-right: 12px;}
+.inquiry-list .bk-list-detail .bk-thumb-link a {display: block; grid-column: unset;}
+.inquiry-list .bk-list-detail .bk-thumb-link .price {grid-column: unset;}
+.inquiry-list .bk-list-detail .bk-thumb-link .bk-list-tit {margin: 0;}
+.inquiry-list .bk-list-detail .bk-thumb-link .bk-list-ctgy {margin-top: 4px;}
+.inquiry-list .bk-list-detail .bk-list-option {color: #666; margin-top: 8px;}
+.inquiry-list .bk-list-detail .bk-list-option::after {content: ''; clear: both;}
+.inquiry-list .bk-list-detail .bk-list-option dt {float: left;}
+.inquiry-list .bk-list-detail .bk-list-option dd::before {content: '|'; display: inline-block; font-size: 1.4rem; color: #ddd; margin-left: 7px; padding-right: 8px;}
+.inquiry-list .bk-list-detail .bk-list-option dd.checked {color: var(--color-primary)}
+.inquiry-list .bk-list-detail .bk-list-option dd.inline-dd {float: left;}
+.inquiry-list .bk-list-detail .bk-list-option dd.inline-dd::after {content: '/'; display: inline-block; font-size: 1.4rem; color: #ddd; margin-left: 3px; padding-right: 4px;}
+.inquiry-list .bk-list-detail .bk-list-option a {display: inline-block; color: inherit}
+.inquiry-list .bk-btn-group {gap: 4px; justify-content: flex-end; padding: 10px 12px; background: #f6f6f6;}
+.open-list .bk-list-detail .bk-thumb-link {display: block;}
