@@ -123,7 +123,7 @@
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
-            <a href="#" onclick="dialogOpen('#dialog-full-pop')">Product Inquiry Registration</a>
+            <a href="#" onclick="dialogOpen('#dialog-full-pop')">Open Inquiry Registration</a>
 
           </div>
         </div>
@@ -269,13 +269,13 @@
 
     <!-- [S]팝업 -->
 
-    <!-- [s]Product Inquiry Registration-->
-    <div class="bk-dialog dialog-full has-btmBtn ui-inq is-active" id="dialog-full-pop"><!--[D]인콰이어리 구분자 추가-->
+    <!-- [s]Open Inquiry Registration-->
+    <div class="bk-dialog dialog-full has-btmBtn ui-inq" id="dialog-full-pop"><!--[D]인콰이어리 구분자 추가-->
       <div class="dialog-inner">
         <div class="dialog-header">
           <div class="header-left">
             <div class="bk-title">
-              <h1 class="title">Product Inquiry Registration</h1>              
+              <h1 class="title">Open Inquiry Registration</h1>              
             </div>
           </div>
           <div class="header-right">
@@ -286,54 +286,6 @@
         </div>
         <div class="dialog-container">
           <div class="dialog-contents">
-            <h1 class="title font-heading-2 bk-bMg12">Product Information</h1>
-            <div class="inquiry-slide-wrap swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <button type="button" class="bk-btn btn-brand btn-text btn-list-delete" role="swiperListCloseBtn">
-                    <span class="deco-icon extra-icon">
-                      <i class="bk-icon bk-icon-swipe-list-delete">28*28지우기</i>
-                    </span>
-                  </button>
-                  <a href="#" class="thumb"><img src="../../../images/tmp/tmp-goods-02.jpg"></a>
-                  <div class="bk-slide-info">
-                    <a href="#" class="script">RUBELLI CO., LTD.</a>
-                    <a href="#" class="title bk-lineclamp-2">Product name Product name ame Product nameame Product name</a>
-                    <strong class="bk-price">$799.6 Sets</strong>
-                    <div class="bk-moq"><span>PID : 1234567</span><span>MOQ : 100 ea</span></div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <button type="button" class="bk-btn btn-brand btn-text btn-list-delete" role="swiperListCloseBtn">
-                    <span class="deco-icon extra-icon">
-                      <i class="bk-icon bk-icon-swipe-list-delete">28*28지우기</i>
-                    </span>
-                  </button>
-                  <a href="#" class="thumb"><img src="../../../images/tmp/tmp-goods-02.jpg"></a>
-                  <div class="bk-slide-info">
-                    <a href="#" class="script">RUBELLI CO., LTD.</a>
-                    <a href="#" class="title bk-lineclamp-2">Product name Product name ame Product nameame Product name</a>
-                    <strong class="bk-price">$799.6 Sets</strong>
-                    <div class="bk-moq"><span>PID : 1234567</span><span>MOQ : 100 ea</span></div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <button type="button" class="bk-btn btn-brand btn-text btn-list-delete" role="swiperListCloseBtn">
-                    <span class="deco-icon extra-icon">
-                      <i class="bk-icon bk-icon-swipe-list-delete">28*28지우기</i>
-                    </span>
-                  </button>
-                  <a href="#" class="thumb"><img src="../../../images/tmp/tmp-goods-02.jpg"></a>
-                  <div class="bk-slide-info">
-                    <a href="#" class="script">RUBELLI CO., LTD.</a>
-                    <a href="#" class="title bk-lineclamp-2">Product name Product name ame Product nameame Product name</a>
-                    <strong class="bk-price">$799.6 Sets</strong>
-                    <div class="bk-moq"><span>PID : 1234567</span><span>MOQ : 100 ea</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
             <h1 class="title font-heading-2 bk-bMg12 has-span">Buyer Information <span class="required">Required</span></h1>
             <div class="bk-input-list">
               <dl>
@@ -418,6 +370,111 @@
                     </div>
                   </div>
 
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="bk-bMg-small is-required">Interest</dt>
+                <dd>   
+                  <div class="bk-textfield bk-with-btn">
+                    <div class="bk-control">
+                      <select class="" id="selectbox-01-01" >
+                        <option value="1">Select</option>
+                      </select>
+                    </div>
+
+                    <div class="bk-control">
+                      <div class="control-field input-full">
+                        <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full"> 
+                          <span class="text">Add</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="bk-tbl-ul font-default">
+                    <li>
+                      Selected Name 1
+                      <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                        <span class="deco-icon extra-icon append-icon">
+                          <i class="bk-icon bk-icon-trash">delete</i>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      Selected Name 2
+                      <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                        <span class="deco-icon extra-icon append-icon">
+                          <i class="bk-icon bk-icon-trash">delete</i>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      Selected Name 3
+                      <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                        <span class="deco-icon extra-icon append-icon">
+                          <i class="bk-icon bk-icon-trash">delete</i>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      Selected Name 4
+                      <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                        <span class="deco-icon extra-icon append-icon">
+                          <i class="bk-icon bk-icon-trash">delete</i>
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="bk-input-list">
+              <dl>
+                <dt class="bk-bMg-small is-required">Category</dt>
+                <dd>   
+                  <div class="bk-row-div bk-full">
+                    <button
+                      type="button"
+                      class="bk-btn btn-primary btn-outline bk-full"
+                    >
+                      <span class="text">Search Category</span>
+                    </button>
+                  </div>
+                  <ul class="bk-tbl-ul font-default">
+                    <li>
+                      Depth1 > Depth2 > Depth3 > Depth4
+                      <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                        <span class="deco-icon extra-icon append-icon">
+                          <i class="bk-icon bk-icon-trash">delete</i>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      Depth1 > Depth2 > Depth3 > Depth4
+                      <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                        <span class="deco-icon extra-icon append-icon">
+                          <i class="bk-icon bk-icon-trash">delete</i>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      Depth1 > Depth2 > Depth3 > Depth4
+                      <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                        <span class="deco-icon extra-icon append-icon">
+                          <i class="bk-icon bk-icon-trash">delete</i>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      Depth1 > Depth2 > Depth3 > Depth4
+                      <button type="button" class="bk-btn btn-margin btn-brand btn-text btn-large" onclick="dialogOpen('#dialog-trash')">
+                        <span class="deco-icon extra-icon append-icon">
+                          <i class="bk-icon bk-icon-trash">delete</i>
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
                 </dd>
               </dl>
             </div>
@@ -600,36 +657,13 @@
         </div>
       </div>
     </div>
-    <!-- //[e] Product Inquiry Registration-->
+    <!-- //[e] Open Inquiry Registration-->
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
-    <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
       $(document).ready(function () {
-
-        var inqSwipeBan = new Swiper('.inquiry-slide-wrap', {
-          loop: $('.inquiry-slide-wrap .swiper-slide').length > 1,
-          watchOverflow: true,
-          loopedSlides: 1,
-          speed: 500,
-          spaceBetween:8,
-          pagination: {
-            el: ".swiper-pagination",
-          },
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-        })
-
-        /*스와이프 리스트 삭제*/
-        /*$('[role="swiperListCloseBtn"]').on('click', function(e){          
-          $(this).closest('.swiper-slide').hide();  
-        });*/
-
-
 
       });
     </script>

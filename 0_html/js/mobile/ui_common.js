@@ -819,6 +819,7 @@ function addDiv(){
       });
     }
   });
+
   function rightMenu(id) {
     var filterWidth = $(window).width() - 55;
     var filterDim = '<div class="dimed-zone"></div>'
