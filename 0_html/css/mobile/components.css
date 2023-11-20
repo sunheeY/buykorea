@@ -631,6 +631,7 @@ a.btn-text .text {text-decoration: underline;}
 
 .bk-tbl-ul.top_mg_01{ margin-top:24px}
 .bk-tbl-ul li{position:relative; padding-left:9px; font-size:14px; color:var(--color-brand);}
+.bk-tbl-ul.font-default li{font-size:var(--font-size-default)}
 .bk-tbl-ul li:before{ content:""; width:3px; height:3px; background:var(--color-brand); display:inline-flex;  position:absolute; left:0; top:10px;}
 .bk-tbl-ul li .bk-tbl-ul-sub{ margin-top:4px;}
 .bk-tbl-ul li .bk-tbl-ul-sub li{padding-left:10px; color:var(--color-sub);}
@@ -1251,6 +1252,7 @@ body.overflow{overflow-y:hidden;}
 
 .cp-file [class*=file-] input.text{font-size:14px; color:var(--color-brand);    border:0; width:auto; max-width:90%; padding:0 0 0 12px; margin:0 4px 0 0; position:relative; background:url("../../images/mobile/icon-file-dot.svg") no-repeat left center;  /*text-overflow: ellipsis;*/}
 .cp-file [class*=file-] .text{font-size:14px; color:var(--color-brand);   border:0; width:auto; max-width:70vw; padding:0 0 0 12px; margin:0 4px 0 0; position:relative; background:url("../../images/mobile/icon-file-dot.svg") no-repeat left 10px;/*  text-overflow: ellipsis;  white-space:nowrap; overflow:hidden*/ word-break: break-all;}
+.cp-file [class*=file-] .size{ color:var(--color-sub); margin-right:8px}
 
 
 .cp-file [class*=file-] .bk-btn{padding:0; display:inline-flex; line-height:20px; height:20px; }
@@ -1596,3 +1598,8 @@ body.overflow{overflow-y:hidden;}
 .cp-inquiry-information .bk-inquiry-info .bk-moq span {display:inline-flex; align-items: center;}
 .cp-inquiry-information .bk-inquiry-info .bk-moq span + span{ margin-left:8px; }
 .cp-inquiry-information .bk-inquiry-info .bk-moq span + span:before{ content:""; width:1px; height:12px; background:var(--color-gray); display:block; margin-right:8px}
+
+
+.ui-inq .cp-file [class*=file-] .text{margin-right:8px; text-decoration:underline}
+.ui-inq .cp-file [class*=file-] .size{ margin-right:8px}
+

@@ -189,3 +189,7 @@
 .bk-flex-column-gap-8   { column-gap: 8px; }
 .bk-flex-column-gap-12  { column-gap: 12px; }
 
+/*큰메뉴 옆에 작은 텍스트 있는 경우*/
+.title.font-heading-2.has-span{ display:flex; justify-content: space-between; align-items:center}
+.title.font-heading-2 span{ font-size:1.6rem; font-weight:400}
+.title.font-heading-2 span.required:before{ content:"*"; color:var(--color-warning); margin-right:4px}
