@@ -1605,7 +1605,6 @@ body.overflow{overflow-y:hidden;}
 
 /*인콰이어리 스와이프*/
 .inquiry-slide-wrap { position:relative; padding-bottom:40px }
-.inquiry-slide-wrap .swiper-pagination{ position:unset; width:100%; height:8px}
 .inquiry-slide-wrap .swiper-slide{border:1px solid var(--color-gray); border-radius: 8px; padding:24px 20px; display:flex; justify-content: flex-start; align-items: flex-start; column-gap: 8px; box-sizing: border-box; position:relative}
 .inquiry-slide-wrap .swiper-slide .bk-slide-info { display:flex; flex-direction: column; align-items: flex-start;}
 .inquiry-slide-wrap .swiper-slide .bk-slide-info h2.title{ font-size:16px; color:var(--color-brand); margin-top:2px}
@@ -1619,9 +1618,11 @@ body.overflow{overflow-y:hidden;}
 .inquiry-slide-wrap .swiper-slide .thumb { width: 58px; position: relative; padding-bottom: 0; overflow: hidden; border-radius: var(--radius-default); display:flex; flex-shrink: 0; border:1px solid var(--color-gray)}
 .inquiry-slide-wrap .swiper-slide .thumb:after {content:""; padding-bottom:100%;}
 .inquiry-slide-wrap .swiper-slide .thumb img{ width: 100%; height:100%; position:absolute; top:0; left:0; object-fit: cover; object-position: center; padding-bottom: 0;}
-.inquiry-slide-wrap .swiper-pagination-bullets.swiper-pagination-horizontal {position: static; display: flex; justify-content: center; margin-top: 20px;}
+.inquiry-slide-wrap .swiper-pagination-bullets.swiper-pagination-horizontal {position: unset; display: flex; justify-content: center; margin-top: 20px;}
 .inquiry-slide-wrap .swiper-pagination-bullet {width: 8px; height: 8px; margin: 0; font-size: 0; line-height: 0; background:#EAEAEA; opacity:1}
 .inquiry-slide-wrap .swiper-pagination-bullet.swiper-pagination-bullet-active {background:var(--color-primary)}
 .inquiry-slide-wrap .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .inquiry-slide-wrap .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {margin: 0 calc(8px/2); display: inline-block;}
+.inquiry-slide-wrap .swiper-pagination{ width:100%; height:8px}
+.inquiry-slide-wrap .swiper-pagination.swiper-pagination-lock {display:none}
 
