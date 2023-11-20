@@ -290,6 +290,11 @@
             <div class="inquiry-slide-wrap swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
+                  <button type="button" class="bk-btn btn-brand btn-text btn-list-delete" role="swiperListCloseBtn">
+                    <span class="deco-icon extra-icon">
+                      <i class="bk-icon bk-icon-swipe-list-delete">28*28지우기</i>
+                    </span>
+                  </button>
                   <a href="#" class="thumb"><img src="../../../images/tmp/tmp-goods-02.jpg"></a>
                   <div class="bk-slide-info">
                     <a href="#" class="script">RUBELLI CO., LTD.</a>
@@ -299,6 +304,25 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
+                  <button type="button" class="bk-btn btn-brand btn-text btn-list-delete" role="swiperListCloseBtn">
+                    <span class="deco-icon extra-icon">
+                      <i class="bk-icon bk-icon-swipe-list-delete">28*28지우기</i>
+                    </span>
+                  </button>
+                  <a href="#" class="thumb"><img src="../../../images/tmp/tmp-goods-02.jpg"></a>
+                  <div class="bk-slide-info">
+                    <a href="#" class="script">RUBELLI CO., LTD.</a>
+                    <a href="#" class="title bk-lineclamp-2">Product name Product name ame Product nameame Product name</a>
+                    <strong class="bk-price">$799.6 Sets</strong>
+                    <div class="bk-moq"><span>PID : 1234567</span><span>MOQ : 100 ea</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <button type="button" class="bk-btn btn-brand btn-text btn-list-delete" role="swiperListCloseBtn">
+                    <span class="deco-icon extra-icon">
+                      <i class="bk-icon bk-icon-swipe-list-delete">28*28지우기</i>
+                    </span>
+                  </button>
                   <a href="#" class="thumb"><img src="../../../images/tmp/tmp-goods-02.jpg"></a>
                   <div class="bk-slide-info">
                     <a href="#" class="script">RUBELLI CO., LTD.</a>
@@ -590,7 +614,7 @@
           watchOverflow: true,
           loopedSlides: 1,
           speed: 500,
-          spaceBetween:20,
+          spaceBetween:8,
           pagination: {
             el: ".swiper-pagination",
           },
@@ -599,6 +623,13 @@
             disableOnInteraction: false,
           },
         })
+
+        /*스와이프 리스트 삭제*/
+        /*$('[role="swiperListCloseBtn"]').on('click', function(e){          
+          $(this).closest('.swiper-slide').hide();  
+        });*/
+
+
 
       });
     </script>
