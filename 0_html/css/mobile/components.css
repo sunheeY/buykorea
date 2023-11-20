@@ -630,7 +630,8 @@ a.btn-text .text {text-decoration: underline;}
 .acc-inner .bk-tbl-ul{width:100% !important; max-width:calc(100vw - 70px); }
 
 .bk-tbl-ul.top_mg_01{ margin-top:24px}
-.bk-tbl-ul li{position:relative; padding-left:9px; font-size:14px; color:var(--color-brand);}
+.bk-tbl-ul li{position:relative; padding-left:9px; font-size:14px; color:var(--color-brand); display:inline-flex; justify-content: flex-start; align-items: center; }
+.bk-tbl-ul li .btn-margin{margin:0 0 0 4px}
 .bk-tbl-ul.font-default li{font-size:var(--font-size-default)}
 .bk-tbl-ul li:before{ content:""; width:3px; height:3px; background:var(--color-brand); display:inline-flex;  position:absolute; left:0; top:10px;}
 .bk-tbl-ul li .bk-tbl-ul-sub{ margin-top:4px;}
