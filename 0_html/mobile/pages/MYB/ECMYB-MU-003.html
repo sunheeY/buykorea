@@ -287,7 +287,29 @@
         <div class="dialog-container">
           <div class="dialog-contents">
             <h1 class="title font-heading-2 bk-bMg12">Product Information</h1>
-            adfadfadf swiper
+            <div class="inquiry-slide-wrap swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="thumb"><img src="../../../images/tmp/tmp-goods-02.jpg"></a>
+                  <div class="bk-slide-info">
+                    <a href="#" class="script">RUBELLI CO., LTD.</a>
+                    <a href="#" class="title bk-lineclamp-2">Product name Product name ame Product nameame Product name</a>
+                    <strong class="bk-price">$799.6 Sets</strong>
+                    <div class="bk-moq"><span>PID : 1234567</span><span>MOQ : 100 ea</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="thumb"><img src="../../../images/tmp/tmp-goods-02.jpg"></a>
+                  <div class="bk-slide-info">
+                    <a href="#" class="script">RUBELLI CO., LTD.</a>
+                    <a href="#" class="title bk-lineclamp-2">Product name Product name ame Product nameame Product name</a>
+                    <strong class="bk-price">$799.6 Sets</strong>
+                    <div class="bk-moq"><span>PID : 1234567</span><span>MOQ : 100 ea</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
             <h1 class="title font-heading-2 bk-bMg12 has-span">Buyer Information <span class="required">Required</span></h1>
             <div class="bk-input-list">
               <dl>
@@ -558,9 +580,24 @@
 
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
       $(document).ready(function () {
+
+        var inqSwipeBan = new Swiper('.inquiry-slide-wrap', {
+          loop: $('.inquiry-slide-wrap .swiper-slide').length > 1,
+          loopedSlides: 1,
+          speed: 500,
+          spaceBetween:20,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+        })
 
       });
     </script>
