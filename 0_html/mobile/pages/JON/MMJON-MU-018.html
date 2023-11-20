@@ -36,7 +36,7 @@
                   <button type="button" class="bk-icon-only">
                     <i class="bk-icon bk-icon-gnb-prev">이전</i>
                   </button>
-                  <span>로그인</span>
+                  <span>buyKOREA 약관동의</span>
                 </h1>
             </div>
             <div class="my-util">
@@ -122,8 +122,140 @@
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
-            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-find-id-check')">아이디찾기 - 실명인증</button><br>
-            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-find-id')">아이디정보</button>
+            <!-- [S] guide-->
+            <div class="bk-guide-txt wide-top-margin">
+                <span class="text">buyKOREA가 개편되면서 필수 및 선택정보에 대한 약관 내용이 변경되었습니다.</span>
+                <span class="text">약관 동의 후 서비스를 이용하실 수 있으며, 선택항목에 대한동의를 거부하시는 경우에도 서비스 이용은 가능합니다.</span>
+              </div>
+            <!-- //[D] guide-->
+            <!-- [S] 약관동의 form-->
+            <div class="bk-accordion accordion-type-line accordion-type-has-check bk-bMg-large checkbox-wrap agree_item"><!--약관 스크롤 클래스 추가 23.11.15-->
+              <ul class="list-accordion">
+                <li class="acc-item all-agree">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">
+                        <div class="bk-checkbox">
+                          <input type="checkbox" name="checkbox-agree-all" class="iCheckbox" id="checkbox-agree-all">
+                          <label for="checkbox-agree-all"><span class="text">약관 전체동의</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="acc-item">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">
+                        <div class="bk-checkbox checkbox-item">
+                          <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-01">
+                          <label for="checkbox-agree-01"><span class="text">[필수] 이용약관 - 2023. 05. 15 적용지침<em class="is-required">필수</em></span></label>
+                        </div>
+                      </div>
+                      <div class="right-area checkbox-item">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner">
+                      <dl>
+                        <dt>Privacy Notice</dt>
+                        <dd>We collects personal information to provide online marketplaces that allow e-commerce including offer, negotiation, contract, paym-
+                          ent between members through the buyKO-REA.​ For more information on how we pro-cess your personal information, please see our Privacy Policy.​</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </li>
+                <li class="acc-item">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">
+                        <div class="bk-checkbox checkbox-item">
+                          <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-02">
+                          <label for="checkbox-agree-02"><span class="text">[필수] 개인정보 수집이용 동의<em class="is-required">필수</em></span></label>
+                        </div>
+                      </div>
+                      <div class="right-area">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner">
+                      <dl>
+                        <dt>Privacy Notice</dt>
+                        <dd>We collects personal information to provide online marketplaces that allow e-commerce including offer, negotiation, contract, paym-
+                          ent between members through the buyKO-REA.​ For more information on how we pro-cess your personal information, please see our Privacy Policy.​</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </li>
+                <li class="acc-item">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">
+                        <div class="bk-checkbox checkbox-item">
+                          <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-03">
+                          <label for="checkbox-agree-03"><span class="text">[선택] 개인정보 마케팅 활용 동의 확인 </span></label>
+                        </div>
+                      </div>
+                      <div class="right-area">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner">
+                      <dl>
+                        <dt>Privacy Notice</dt>
+                        <dd>We collects personal information to provide online marketplaces that allow e-commerce including offer, negotiation, contract, paym-
+                          ent between members through the buyKO-REA.​ For more information on how we pro-cess your personal information, please see our Privacy Policy.​</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </li>
+                <li class="acc-item">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">
+                        <div class="bk-checkbox checkbox-item">
+                          <input type="checkbox" name="checkbox-agree-child" class="iCheckbox" id="checkbox-agree-04">
+                          <label for="checkbox-agree-04"><span class="text">[선택] 개인정보 수집·이용 동의 확인</span></label>
+                        </div>
+                      </div>
+                      <div class="right-area">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner">
+                      <dl>
+                        <dt>Privacy Notice</dt>
+                        <dd>We collects personal information to provide online marketplaces that allow e-commerce including offer, negotiation, contract, paym-
+                          ent between members through the buyKO-REA.​ For more information on how we pro-cess your personal information, please see our Privacy Policy.​</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- //[D] 약관동의 form-->
+
+            <!--[S] 다음버튼-->
+            <button type="button" class="bk-btn btn-primary btn-large btn-full"  onclick="dialogOpen('#alert-registration')">
+              <span class="text">다음</span>
+            </button>
+            <!--//[D] 다음버튼-->
           </div>
         </div>
         <!-- [S]Top버튼 -->
@@ -266,137 +398,25 @@
     </div>
     <!--// [E]ui-wrap -->
 
-    <!-- [S]팝업 -->
-    <!-- [s] find id 실명인증-->
-    <div class="bk-dialog dialog-full" id="dialog-find-id-check">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">buyKOREA 실명인증</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="bk-guide-txt">
-              본인인증 방식을 통하여 실명인증 후 아이디 확인이 가능합니다.
-            </div>
-            <!-- [S] Form-->
-            <div class="bk-myinfo-check">
-              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full" onclick="dialogOpen('#alert-check')">
-                <span class="text">간편인증</span>
-                <span class="text-sub">네이버, 삼성패스, 신한인증서, KB인증, 
-                  토스, 통신사PASS, 페이코 등
-                  간편인증서비스를 제공합니다.</span>
-                <span class="text-sub has-dot">법인 명의는 인증불가</span>
-              </button>
-              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full" onclick="dialogOpen('#dialog-find-id')"><!--회원이 아닌경우 모달연결은 하지 않음-->
-                <span class="text">휴대전화 본인인증</span>
-                <span class="text-sub">본인 명의의 휴대전화 정보를
-                  정확히 입력하여 주시기 바랍니다.</span>
-                <span class="text-sub has-dot">법인 명의는 인증불가</span>
-              </button>
-            </div>                   
-            
-            <!-- //[D] Form-->
+    <!-- [S]팝업 -->    
+   <!-- [s] 완료 alert-->
+   <div class="bk-dialog dim alert" id="alert-registration">
+    <div class="dialog-inner">
+      <div class="dialog-container">
+        <div class="dialog-contents">
+          <div class="message">
+            <p>이용약관 및 개인정보 수집에 대한 동의는 필수입니다.</p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- //[e] find id 실명인증-->
-
-    <!-- [s] 일치 alert-->
-    <div class="bk-dialog dim alert" id="alert-check">
-      <div class="dialog-inner">
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="message">
-              <p>입력한 정보와 일치하는 회원이 없습니다. 다시 확인해 주세요.</p>
-            </div>
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">OK</button>
-          </div>
+      <div class="dialog-footer">
+        <div class="footer-center">
+          <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">확인</button>
         </div>
       </div>
     </div>
-    <!-- //[e] 일치 alert-->
-
-
-    <!-- [s] find id-->
-    <div class="bk-dialog dialog-full" id="dialog-find-id">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">buyKOREA 아이디 조회</h1>
-            </div>
-          </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents">
-            <div class="bk-guide-txt-white">
-              조회하신 회원님의 아이디는 아래와 같습니다.<br>비밀번호가 생각나지 않으시면 비밀번호 재설정을 이용해 주세요.
-            </div>
-            <!-- [S] Form-->
-            <div class="bk-input-list">
-              <dl>
-                <dt>아이디</dt>
-                <dd>
-                  <div class="bk-textfield">
-                    <div class="bk-control">
-                      <div class="control-field">
-                        <input type="text" name="find_id" value="abc******" placeholder="" class="iText" id="find_id" required="" readonly>
-                      </div>
-                    </div>
-                  </div>
-                </dd>
-              </dl>
-            </div>
-            <div class="bk-input-list">
-              <dl>
-                <dt>가입일</dt>
-                <dd>
-                  <div class="bk-textfield">
-                    <div class="bk-control">
-                      <div class="control-field">
-                        <input type="text" name="find_date" value="2023.08.10" placeholder="" class="iText" id="find_date" required="" readonly>
-                      </div>
-                    </div>
-                  </div>
-                </dd>
-              </dl>
-            </div>
-            <!-- //[D] Form-->
-            <!-- [S] 무역투자_text 추가 2023-11-20-->
-            <div class="bk-member-setting">
-              무역투자24(<a href="https://www.kotra.or.kr">www.kotra.or.kr</a>)회원 통합 (2023.5.22~)이후 로그인하지 않은 회원은 <strong>아이디 찾기 및 비밀번호 재설정</strong> 진행 후 바이코리아 서비스를 이용하실 수 있습니다.
-            </div>
-            <!-- //[E] 무역투자_text 추가 2023-11-20-->
-          </div>
-        </div>
-        <div class="dialog-footer">
-          <div class="footer-center">
-            <button type="button" class="bk-btn btn-sticky btn-primary btn-full">확인</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- //[e] find id-->
-
+  </div>
+  <!-- //[e] 완료 alert-->
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
