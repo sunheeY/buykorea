@@ -61,7 +61,7 @@
 .icon-category {width: 25px; height: 24px; background: url(../../images/mobile/icon_category.svg) 0 center no-repeat; display: block;}
 .icon-delete {width: 18px; height: 18px; background: url(../../images/mobile/icon-delete.png) 0 center/ 18px 18px no-repeat; display: block;}
 .btn-has-icon::before {content: ''; display: inline-block; background-position: 50% 50%; background-repeat: no-repeat;}
-.btn-favorite {background: #fff; border-color: #ddd; color: #000; font-size: 1.4rem; line-height: 1.57143; height: auto; padding: 2px 8px;}
+.btn-favorite.btn-has-icon {background: #fff; border-color: #ddd; color: #000; font-size: 1.4rem; line-height: 1.57143; height: auto; padding: 2px 8px;}
 .btn-favorite.btn-has-icon::before {background-image: url(../../images/mobile/rate-blank.svg); width: 18px; height: 18px; margin-right: 4px;}
 .btn-favorite.is-active.btn-has-icon::before {background-image: url(../../images/mobile/rate-full.svg);}
 .btn-favorite span.text {color: #000;}
