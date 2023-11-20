@@ -1411,7 +1411,7 @@ body.overflow{overflow-y:hidden;}
 /* .ui-mypage.ui-buyer .cp-search.search-topType{margin-bottom:24px} */
 
 /*바이어 - favorites*/
-.bk-buyer-favorite {padding: 0 20px}
+/* .bk-buyer-favorite {padding: 0 20px} */
 .bk-buyer-favorite .bk-tbl-toolbar {margin: 24px 0 12px;}
 .bk-buyer-favorite .bk-tbl-toolbar .bk-btn{margin-left:8px}
 .bk-buyer-favorite .bk-tbl-toolbar .bk-btn + .bk-btn{margin-left:4px}
