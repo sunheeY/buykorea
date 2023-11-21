@@ -606,6 +606,7 @@ a.btn-text .text {text-decoration: underline;}
 .accordion-type-has-check .acc-item > .acc-container  dd.noti{ font-weight:700}
 .accordion-type-has-check .acc-item > .acc-container  dd + dt{ margin-top:20px}
 .accordion-type-has-check .acc-item > .acc-container  dd ol a{ text-decoration: underline;}
+.accordion-type-has-check .acc-item > .acc-container  dd td{ background:#fff}
 
 .accordion-type-has-check .acc-item .acc-header .left-area{font-size:var(--font-size-default); line-height:1.5;}
 .accordion-type-has-check .bk-checkbox{margin-right:0;}
