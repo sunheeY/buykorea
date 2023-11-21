@@ -984,8 +984,9 @@ gap:12px; grid-template-columns: repeat(7, 1fr);}
 .cp-search .date-group .bk-textfield {/*min-width: 200px;*/}
 .cp-search.search-topType .search-group {flex-basis: 0; flex-grow: 1;}
 .cp-search.search-topType .search-group .bk-select {width:100%; max-width: 120px; flex-shrink: 0;}
+.cp-search.search-topType .search-group .bk-select.wd70 {max-width: 76px}
 .cp-search.search-topType .search-group .bk-select + .textfield-search {margin-left: 8px;}
-.cp-search.search-topType .search-group .textfield-search .iText {padding-right: 40px;}
+.cp-search.search-topType .search-group .textfield-search .iText {/*padding-right: 40px;*/ padding-right: 12px}
 .cp-search.search-wideWrapType .search-group .textfield-search .bk-icon.bk-icon-searchPrimary,
 .cp-search.search-wideType .search-group .textfield-search .bk-icon.bk-icon-searchPrimary,
 .cp-search.search-topType .search-group .textfield-search .bk-icon.bk-icon-searchPrimary {filter: brightness(0) saturate(100%);}

@@ -101,12 +101,172 @@
       </header>
       <!--// [E]header -->
       <!-- [S]container -->
-      <main id="container" class="ui-container ui-seller ui-inq">
+      <main id="container" class="ui-container ui-mypage ui-buyer">
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
             
-            ECMYB-MU-004
+						<div class="bk-tab tab-type-sub-line">
+              <div class="tab-menu-wrap">
+                <ul class="list-menu">
+                  <li><button type="button" class="tab-item "><span>Product Inquiry</span></button></li>
+                  <li><button type="button" class="tab-item active"><span>Open Inquiry</span></button></li>
+                </ul>
+              </div>
+              <div class="tab-container-wrap">
+                <div class="tab-container">
+                  <a href="ECMYS-MU-004.html">ECMYS-MU-004.html</a>
+                </div>
+                <div class="tab-container active">
+                  <!-- 검색영역 -->
+                  <div class="cp-search search-topType">
+                    <form>
+                      <div class="search-inner">
+                        <div class="search-row">
+                          <div class="date-group has-dates">
+                            <div class="bk-textfield is-readonly">
+                              <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                              <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                              <div class="bk-control">
+                                <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                                <div class="control-field">
+                                  <input type="text" class="iText iDatepicker" id="startDate" placeholder="시작 날짜" readonly="" title="시작 날짜">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="dash">~</div>
+                            <div class="bk-textfield is-readonly">
+                              <div class="bk-control">
+                                <div class="control-field">
+                                  <input type="text" class="iText iDatepicker" id="endDate" placeholder="종료 날짜" readonly="" title="종료 날짜">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="search-group cp-select-auto">
+                     
+                            <div class="bk-select">
+                              <label for="label-v01">Approval Status</label>
+                              <div class="bk-control">
+                                <select class="" id="label-v01" title="Approval Status">
+                                  <option value="1">All</option>
+                                </select>
+                              </div>
+                            </div>                      
+                          </div>
+                          <div class="search-group">
+                            <div class="bk-select wd70">
+                              <div class="bk-control">
+                                <select class="" id="">
+                                  <option value="1">All</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="bk-textfield wide textfield-search is-required">
+                              <div class="bk-control">
+                                <div class="control-field">
+                                  <input type="text" name="" value="" placeholder="Please enter the search word." class="iText" id="" required="">
+                                  <div class="control-btns append-btns">
+                                    <button type="button" class="bk-icon-only icon-text-clear">
+                                      <i class="bk-icon bk-icon-text-clear">텍스트 지우기</i>
+                                    </button>
+                                  </div>                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="button" class="bk-btn btn-primary btn-middle btn-full">
+                            <span class="text">Search</span>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="bk-tbl-toolbar bk-seller-item">
+                    <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
+                    <div class="toolbar-right">
+                      <div class="bk-checkbox">
+                        <input type="checkbox" name="checkbox" class="iCheckbox" id="checkbox">
+                        <label for="checkbox"><span class="text">Favorite</span></label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="cp-list-wrap inquiry-list open-list">
+                    <li class="bk-list-body">
+                      <div class="bk-list-detail">
+                        <span>Inquiry No : <a href="#">inqDDMMYY-000001</a></span>
+                        <span>2023.01.05</span>
+                        <div class="bk-thumb-link">
+                          <p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p>
+                          <p class="bk-list-ctgy">Depth1 &gt; Depth2 &gt; Depth3 &gt; Depth4</p>
+                          <dl class="bk-list-option">
+                            <dt>Publication Period</dt>
+                            <dd>YYYY.MM.DD (D-NNN)</dd>
+                            <dt>Approval Status</dt>
+                            <dd>Approved</dd>
+                            <dt>Read Count</dt>
+                            <dd class="inline-dd">N,NNN</dd>
+                            <dt>Received Count</dt>
+                            <dd><a href="#">N,NNN</a></dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="bk-btn-group">
+                        <button type="button" class="bk-btn btn-favorite btn-has-icon">
+                          <span class="text">Favorite</span>
+                        </button>
+                        <button type="button" class="bk-btn btn-primary btn-xsmall btn-text-xsmall">
+                          <span class="text">Rewrite</span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="bk-list-body">
+                      <div class="bk-list-detail">
+                        <span>Inquiry No : <a href="#">inqDDMMYY-000001</a></span>
+                        <span>2023.01.05</span>
+                        <div class="bk-thumb-link">
+                          <p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p>
+                          <p class="bk-list-ctgy">Depth1 &gt; Depth2 &gt; Depth3 &gt; Depth4</p>
+                          <dl class="bk-list-option">
+                            <dt>Publication Period</dt>
+                            <dd>YYYY.MM.DD (D-NNN)</dd>
+                            <dt>Approval Status</dt>
+                            <dd>Approved</dd>
+                            <dt>Read Count</dt>
+                            <dd class="inline-dd">N,NNN</dd>
+                            <dt>Received Count</dt>
+                            <dd><a href="#">N,NNN</a></dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="bk-btn-group">
+                        <button type="button" class="bk-btn btn-favorite btn-has-icon is-active">
+                          <span class="text">Favorite</span>
+                        </button>
+                        <button type="button" class="bk-btn btn-primary btn-xsmall btn-text-xsmall">
+                          <span class="text">Rewrite</span>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
+                    <span class="deco-icon prepend-icon">
+                      <i class="bk-icon bk-icon-plus">more</i>
+                    </span>
+                    <span class="text">더보기</span>
+                  </button>
+
+                  <button type="button" class="bk-btn btn-primary btn-large btn-full">
+                    <span class="text">Register Inquiry</span>
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
 
           </div>
         </div>
@@ -218,7 +378,7 @@
     
     <script>
       $(document).ready(function () {
-        $('.btn-like').click( function() {
+        $('.btn-favorite').click( function() {
 						$(this).toggleClass('is-active');
 					})
 			});
