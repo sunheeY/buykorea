@@ -35,6 +35,19 @@ function preLoad() {
 
   // lnb 존재여부 체크
   addHasLnbClass();
+
+  //카테고리, 필터
+  if ( $('.cp-category').length > 0) {
+    $('[class^=category-depth0] > a').click(function(e) {
+      e.preventDefault();
+      var clickThis =  $(this).parent();
+      clickThis.toggleClass('is-active');
+      $(this).next('.in-subdepth').slideToggle();
+      clickThis.siblings().removeClass('is-active').find('.in-subdepth').slideUp();
+      clickThis.siblings().find('.in-subdepth li').removeClass('is-active');           
+    });
+  }
+
 }
 
 $.fn.extend({
@@ -146,7 +159,10 @@ $.fn.extend({
     };
 
     return this.initialize();
+    
   },  
+
+  
 }); 
 
 // lnb 존재여부 체크
@@ -748,50 +764,7 @@ function addDiv(){
 
   }     
 
-  //flatpickr 옵션 설정
-  //달력 공통설정 지정해놓음
-  config = {
-    inline:false,
-    dateFormat: 'Y-m-d',
-    enableTime: false,
-    minDate: '2000-01-01',
-    defaultDate: new Date(),
-    locale: 'ko',
-    onOpen: addDiv, // 바텀레이어추가
-    onClose: addDiv, // 바텀레이어삭제
-    disableMobile: "true",
-    onReady: function ( dateObj, dateStr, instance ) {
-      $(document).on("click",".bk-btn-cal-close", () => {
-          //'닫기,취소' 클릭
-          datepicker.clear();
-          datepicker2.clear();
-          startDateInput.clear();
-          endDateInput.clear();
-          
-          datepicker.close();
-          datepicker2.close();
-          startDateInput.close();
-          endDateInput.close();
-      });
-      $(document).on("click",".btn-select-today", () => { 
-          //'오늘'클릭
-          datepicker.setDate(new Date);
-          datepicker2.setDate(new Date);
-          startDateInput.setDate(new Date);
-          endDateInput.setDate(new Date);
-      });
-    },
-    onChange: function ( dateObj, dateStr, instance ) {
-    },
-  };
 
-  //flatpickr 생성
-  const datepicker = $('#datepicker').flatpickr(config);
-  const datepicker2 = $('#datepicker2').flatpickr(config);
-  const startDateInput = $('#startDate').flatpickr(config);
-  const endDateInput = $('#endDate').flatpickr(config);
-
-  //flatpickr end
 
   //배송지체크
 
@@ -805,20 +778,6 @@ function addDiv(){
     }
   }
 
-
-  //필터
-  $(document).ready(function () {
-    if ( $('.cp-category').length > 0) {
-      $('[class^=category-depth0] > a').click(function(e) {
-        e.preventDefault();
-        var clickThis =  $(this).parent();
-        clickThis.toggleClass('is-active');
-        $(this).next('.in-subdepth').slideToggle();
-        clickThis.siblings().removeClass('is-active').find('.in-subdepth').slideUp();
-        clickThis.siblings().find('.in-subdepth li').removeClass('is-active');           
-      });
-    }
-  });
 
   function rightMenu(id) {
     var filterWidth = $(window).width() - 55;

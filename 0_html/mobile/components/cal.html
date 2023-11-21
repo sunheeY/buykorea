@@ -335,5 +335,52 @@
     <script src="../../js/common/lib/swiper/swiper-bundle.min.js"></script><!--// 스와이퍼 -->
     <script src="../../js/mobile/ui_common.js"></script>
 
+    <script>
+        //flatpickr 옵션 설정
+        //달력 공통설정 지정해놓음
+        config = {
+          inline:false,
+          dateFormat: 'Y-m-d',
+          enableTime: false,
+          minDate: '2000-01-01',
+          defaultDate: new Date(),
+          locale: 'ko',
+          onOpen: addDiv, // 바텀레이어추가
+          onClose: addDiv, // 바텀레이어삭제
+          disableMobile: "true",
+          onReady: function ( dateObj, dateStr, instance ) {
+            $(document).on("click",".bk-btn-cal-close", () => {
+                //'닫기,취소' 클릭
+                datepicker.clear();
+                datepicker2.clear();
+                startDateInput.clear();
+                endDateInput.clear();
+                
+                datepicker.close();
+                datepicker2.close();
+                startDateInput.close();
+                endDateInput.close();
+            });
+            $(document).on("click",".btn-select-today", () => { 
+                //'오늘'클릭
+                datepicker.setDate(new Date);
+                datepicker2.setDate(new Date);
+                startDateInput.setDate(new Date);
+                endDateInput.setDate(new Date);
+            });
+          },
+          onChange: function ( dateObj, dateStr, instance ) {
+          },
+        };
+
+        //flatpickr 생성
+        const datepicker = $('#datepicker').flatpickr(config);
+        const datepicker2 = $('#datepicker2').flatpickr(config);
+        const startDateInput = $('#startDate').flatpickr(config);
+        const endDateInput = $('#endDate').flatpickr(config);
+
+        //flatpickr end
+
+    </script>
   </body>
 </html>
