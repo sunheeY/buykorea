@@ -366,7 +366,7 @@ var $checkCount = $(".checkbox-wrap");
 
 var $checkHeadCnt = $checkCount.find("input[type='checkbox']").length;
 
-console.log($checkHeadCnt);
+//console.log($checkHeadCnt);
 /* 전체선택 */
 $checkHead.click(function(){
     var $bodyPutCk = $checkHead.is(":checked");
