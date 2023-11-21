@@ -51,6 +51,7 @@
 /* 검색영역 배열 추가 */
 .cp-search.search-topType .search-group.cp-select-auto {gap: 8px;} 
 .cp-search.search-topType .search-group.cp-select-auto .bk-select {max-width: unset; flex: 1;} 
+.cp-search.search-topType .search-group.cp-select-auto .bk-select.fix label{ width:36%} 
 
 /* 버튼 추가 */
 [class*=bk-btn-intbl] {height: 28px; padding: 3px 8px; font-size: 1.4rem; line-height: 1.57143; border-color: var(--color-gray); background-color: var(--color-white); color: var(--color-brand)}

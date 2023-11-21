@@ -53,6 +53,7 @@
 .header-area .ui-left .page-move .bk-icon-only{margin-right:8px;}
 .header-area .ui-left .page-move span{font-size:18px; color:var(--color-brand); font-weight:600;}
 .header-area .ui-left + .my-util{margin-left:6px}
+.header-area .my-util button:nth-of-type(1):nth-last-of-type(1) i{ margin-right:0 !important}
 .header-area .my-util .list-util {display: flex;}
 .header-area .my-util .list-util > li:not(:first-child) {margin-left: 20px;}
 .header-area .my-util .bk-icon.bk-icon-message,
