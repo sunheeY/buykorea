@@ -590,17 +590,22 @@ a.btn-text .text {text-decoration: underline;}
 .accordion-type-has-check .acc-item > .acc-container  dl + dl{ margin-top:20px}
 .accordion-type-has-check .acc-item > .acc-container  dd{font-size:var(--font-size-middle);  line-height:1.53;}
 .accordion-type-has-check .acc-item > .acc-container  dt{ color:var(--color-primary); line-height:1.5; font-size:var(--font-size-default); }
+.accordion-type-has-check .acc-item > .acc-container  .basic { row-gap:0}
+.accordion-type-has-check .acc-item > .acc-container  .basic dt{ color:var(--color-brand)}
+.accordion-type-has-check .acc-item > .acc-container  .basic dd + dt{ margin-top:8px}
 .accordion-type-has-check .acc-item > .acc-container  dd.num{counter-increment:list-number; padding-left:20px; position:relative; }
 .accordion-type-has-check .acc-item > .acc-container  dd.num:before{content:counter(list-number)"."; display:inline-block; position:absolute; left:0}
 .accordion-type-has-check .acc-item > .acc-container  dd.snum{counter-increment:list-number; padding-left:70px; position:relative; }
 .accordion-type-has-check .acc-item > .acc-container  dd.snum:before{content:counter(list-number)"."; display:inline-block; position:absolute; left:50px}
 .accordion-type-has-check .acc-item > .acc-container  dd[class*=depth]{ display:flex; justify-content: flex-start; align-items: flex-start; }
 .accordion-type-has-check .acc-item > .acc-container  dd[class*=depth] span{ display:inline-block; margin-right:4px}
+.accordion-type-has-check .acc-item > .acc-container  dd.depth0{ padding-left:0}
 .accordion-type-has-check .acc-item > .acc-container  dd.depth1{ padding-left:20px}
 .accordion-type-has-check .acc-item > .acc-container  dd.depth2{ padding-left:30px}
 .accordion-type-has-check .acc-item > .acc-container  dd.warring{ color:var(--color-warning)}
 .accordion-type-has-check .acc-item > .acc-container  dd.noti{ font-weight:700}
 .accordion-type-has-check .acc-item > .acc-container  dd + dt{ margin-top:20px}
+.accordion-type-has-check .acc-item > .acc-container  dd ol a{ text-decoration: underline;}
 
 .accordion-type-has-check .acc-item .acc-header .left-area{font-size:var(--font-size-default); line-height:1.5;}
 .accordion-type-has-check .bk-checkbox{margin-right:0;}
