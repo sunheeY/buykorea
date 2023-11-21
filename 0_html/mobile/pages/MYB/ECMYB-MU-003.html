@@ -610,11 +610,13 @@
       $(document).ready(function () {
 
         var inqSwipeBan = new Swiper('.inquiry-slide-wrap', {
-          loop: $('.inquiry-slide-wrap .swiper-slide').length > 1,
-          watchOverflow: true,
-          loopedSlides: 1,
+          loop: $('.inquiry-slide-wrap .swiper-slide').length > 1,          
           speed: 500,
           spaceBetween:8,
+          loopedSlides: 1,
+          loopAddBlankSlides: false,
+          loopPreventsSliding: true,
+          loopAdditionalSlides:1,
           pagination: {
             el: ".swiper-pagination",
           },
