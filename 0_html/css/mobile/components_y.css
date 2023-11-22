@@ -569,10 +569,16 @@
 .prd-detail-info .prd-pid + a::before {content: ''; display: inline-block; width: 1px; height: 11px; background-color: #ddd; margin-right: 8px;}
 .prd-detail-info .prd-pid + a::after {content: ''; display: inline-block; width: 16px; height: 16px; background: url(../../images/mobile/icon-down.svg) 50% no-repeat; margin-left: 2px;}
 .prd-detail-info .prd-name {display: block; font-size: 22px; font-weight: 500; line-height: 1.36364; margin-top: 10px;}
-.prd-detail-info .prd-price {display: block; font-size: 24px; font-weight: 700; line-height: 1.33333; margin-top: 12px;}
+.prd-detail-info .prd-price {display: flex; align-items: center; gap: 4px; font-size: 24px; font-weight: 700; line-height: 1.33333; margin-top: 12px; position: relative;}
 .prd-detail-info .prd-btn-set {position: absolute; bottom: 0; right: 0; display: flex; justify-content: flex-end; gap: 12px;}
 .ui-prd-detail .prd-btn-order {margin-top: 24px; display: flex; gap: 8px}
 .ui-prd-detail .prd-btn-order.fixed {position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; padding: 20px; background: #fff;}
+
+.tooltip-wrap {background: #333; color: #fff; border-radius: 4px; padding: 16px 48px 16px 16px; top: 40px; left: 0; z-index: 99;}
+.tooltip-wrap .tooltip-inner {display: flex; flex-wrap: wrap; gap: 15px;}
+.bk-price-info-tbl {text-align: center;}
+.bk-price-info-tbl .bk-price-tit {display: block; font-size: 1.4rem; font-weight: 700; line-height: 1.57143;}
+.bk-price-info-tbl .bk-price-data {display: block; font-size: 2rem; font-weight: 700; line-height: 1.4;}
 
 .prd-detail-info-bot {margin-top: 24px;}
 .prd-detail-info-bot .prd-info-company {display: flex; justify-content: space-between; align-items: center;}
@@ -639,6 +645,9 @@
 .ui-prd-detail .btn-icon::before {content: ''; display: block; width: 24px; height: 24px; background-position: 0 0; background-repeat: no-repeat;}
 .ui-prd-detail .btn-share::before {background-image: url(../../images/mobile/ico-24-share.svg);}
 .ui-prd-detail .btn-like::before {background-image: url(../../images/mobile/icon-heart-2.svg);}
+.ui-prd-detail .btn-tooltip::before {background-image: url(../../images/mobile/icon-24x24-question.svg);}
+.ui-prd-detail .btn-tooltip-close {width: 20px; height: 20px; position: absolute; top: 12px; right: 12px;}
+.ui-prd-detail .btn-tooltip-close::before {background-image: url(../../images/mobile/icon_20x20-close.svg);}
 
 .ui-prd-detail .prd-btn-order .bk-btn {height: 60px; flex: 1 1 50%;}
 .ui-prd-detail .prd-btn-order .btn-outline {border-color: #000}

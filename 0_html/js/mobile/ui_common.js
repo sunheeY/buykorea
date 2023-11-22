@@ -456,6 +456,39 @@ function fx_empty(value){
 }
 //체크박스제어
 
+// 레이어에 포함된 스와이퍼들은 버튼 클릭으로 활성화 해준다
+// 이미지확대보기
+function prdImgMore() {
+  var prdThumb = new Swiper(".prd-thumb-list", {
+    slidesPerView: 8,
+    spaceBetween: 4,
+    freeMode: false,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    initialSlide: 0,
+    on: {
+      init: function () {
+        this.allowTouchMove = false;
+      }
+    }
+  });
+  var prdImages = new Swiper('.prd-img-area', {
+    threshold: 0,
+    a11y: false,
+    observer: true,
+    observeParents: true,
+    navigation: {
+      nextEl: ".prd-img-area .swiper-button-next",
+      prevEl: ".prd-img-area .swiper-button-prev",
+    },
+    preventDefaultSwipe: false,
+    preventLinks: false,
+    thumbs: {
+      swiper: prdThumb,
+    },
+  });
+}
+//인콰이어리 배너스와이퍼
 function inquerySwiper() {
   $('.inquiry-slide-wrap').each(function(){
     var inqSwipeBan = new Swiper('.inquiry-slide-wrap', {
@@ -480,6 +513,7 @@ var dialogOpen = function(e) {
   // body에 'overflow' 클래스 추가
   $('html,body').addClass('overflow');
   inquerySwiper();
+  prdImgMore();
 	$(e).find('[role="dialogCloseBtn"]').on('click', function(e){
 		$(this).closest('.bk-dialog').removeClass('is-active');
     // body에서 'overflow-hidden' 클래스 제거
