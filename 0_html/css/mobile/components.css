@@ -771,9 +771,9 @@ a.btn-text .text {text-decoration: underline;}
 .flatpickr-months .flatpickr-prev-month i,
 .flatpickr-months .flatpickr-next-month i {position: relative;}
 .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
-.flatpickr-months .flatpickr-next-month.flatpickr-prev-month {left: calc(50% - 80px); } 
+.flatpickr-months .flatpickr-next-month.flatpickr-prev-month {left: calc(50% - 100px); } 
 .flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
-.flatpickr-months .flatpickr-next-month.flatpickr-next-month {right: calc(50% - 80px); } 
+.flatpickr-months .flatpickr-next-month.flatpickr-next-month {right: calc(50% - 100px); } 
 .flatpickr-months .flatpickr-prev-month:hover,
 .flatpickr-months .flatpickr-next-month:hover {color: #959ea9;}
 .flatpickr-months .flatpickr-prev-month:hover svg,
@@ -793,9 +793,9 @@ a.btn-text .text {text-decoration: underline;}
 .numInputWrapper span:hover {}
 .numInputWrapper span:active {background: rgba(0, 0, 0, 0.2);}
 .numInputWrapper span:after {display: block; content: ""; position: absolute;}
-.numInputWrapper span.arrowUp {top: 0; width: 24px; height: 24px; padding: 0; right: calc(50% - 106px); transform:translateY(0)}
+.numInputWrapper span.arrowUp {top: 0; width: 24px; height: 24px; padding: 0; right: calc(50% - 126px); transform:translateY(0)}
 .numInputWrapper span.arrowUp:after {content: ''; border: 0; top: 0; width: 24px; height: 24px;  background: url(../../images/mobile/24x24_icon_arrow.svg)}
-.numInputWrapper span.arrowDown {top: 0; width: 24px; height: 24px; padding: 0; left: calc(50% - 106px); transform:translateY(0)}
+.numInputWrapper span.arrowDown {top: 0; width: 24px; height: 24px; padding: 0; left: calc(50% - 126px); transform:translateY(0)}
 .numInputWrapper span.arrowDown:after {content: ''; border: 0; top: 0; width: 24px; height: 24px;  background: url(../../images/mobile/24x24_icon_arrow.svg); transform: rotate(180deg);}
 .numInputWrapper span svg {width: inherit; height: auto;}
 .numInputWrapper span svg path {fill: rgba(0, 0, 0, 0.5);}
