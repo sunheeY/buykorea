@@ -769,3 +769,25 @@ $(document).ready(function(e) {
     });
   }
   */
+
+  function scrollCall() {
+    var lastScrollTop = $(window).scrollTop();
+    $(window).scroll(function() {
+      var st = $(this).scrollTop();
+      var hideHeight = $('.header-comm').outerHeight() + 1;  
+
+      if (st <= 1 || st < lastScrollTop) {
+        $('.ui-header').css('transform', 'translateY(0)');
+        // console.log('위로');
+      } else {
+        $('.ui-header').css('transform', 'translateY(-' + hideHeight + 'px)');
+        // console.log('아래로');
+      }
+      lastScrollTop = st;
+    });
+  }
+
+  $(document).ready(function () {
+    scrollCall();
+    $(window).scroll(scrollCall)
+  });

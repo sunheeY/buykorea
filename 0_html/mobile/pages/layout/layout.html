@@ -243,34 +243,7 @@
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {
-        scrollCall();
-        $(window).scroll(scrollCall)
-          
-      });
-      function scrollCall() {
-        var lastScrollTop = $(window).scrollTop();
-        $(window).scroll(function() {
-          var st = $(this).scrollTop();
-          var hideHeight = $('.header-comm').outerHeight() + 1;  
-
-          if (st <= 1 || st < lastScrollTop) {
-            $('.ui-header').css('transform', 'translateY(0)');
-            // console.log('위로');
-          } else {
-            $('.ui-header').css('transform', 'translateY(-' + hideHeight + 'px)');
-            // console.log('아래로');
-          }
-          lastScrollTop = st;
-        });
-      }
-      function openGnb() {
-        var filterDim = '<div class="dimed-zone"></div>';
-        $('#gnb').animate({right: 0}, 400).appendTo('body');
-        $('body').append(filterDim);
-        // $('.header-area > .header-comm').append(filterDim);
-        $('body').css('overflow', 'hidden');
-      }
+      $(document).ready(function () {});
     </script>
   </body>
 </html>

@@ -30,22 +30,33 @@
       <!-- [S]header -->
       <header id="header" class="ui-header">
         <div class="header-area">
-          <div class="ui-inner ui-pager"><!-- //[D] 헤더가 없는 경우, ui-pager class 추가처리 -->
+          <div class="header-comm">
             <div class="ui-left">
-                <h1 class="page-move">
-                  <button type="button" class="bk-icon-only">
-                    <i class="bk-icon bk-icon-gnb-prev">이전</i>
-                  </button>
-                  <span>Baby &amp; Toddler</span>
-                </h1>
+              <h1 class="logo">
+                <a href="#">Buy Korea</a>
+              </h1>
             </div>
             <div class="my-util">
-              <!--[S]좋아요 추가-->
-              <button type="button" class="bk-icon-only">
-                <i class="bk-icon bk-icon-like">좋아요</i>
+              <button type="button" class="bk-icon-only icon-search">
+                <i class="bk-icon bk-icon-searchBlack">검색</i>
               </button>
-              <!--//[S]좋아요 추가-->
+              <button type="button" class="bk-icon-only icon-cart">
+                <i class="bk-icon bk-icon-cart">장바구니</i>
+                <em class="alert-info">99+</em>
+              </button>
+
+              <button type="button" class="bk-icon-only icon-gnb-menu">
+                <i class="bk-icon bk-icon-gnb-menu">메뉴</i>
+              </button>
+
             </div>
+          </div>
+          <div class="header-cont">
+            <button type="button" class="bk-icon-only">
+              <i class="bk-icon bk-icon-gnb-prev">이전</i>
+              </button>
+            <h2 class="cont-title">Baby &amp; Toddler</h2>
+            <button type="button" class="btn-like">좋아요</button>
           </div>
         </div>
       </header>
@@ -426,6 +437,6 @@
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
-    
+
   </body>
 </html>
