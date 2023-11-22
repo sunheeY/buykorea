@@ -378,6 +378,8 @@
 .bk-btn.btn-block {display: block; width: 100%;}
 .bk-btn.btn-margin {margin:0 auto}
 .bk-btn[disabled] {opacity: 0.6;}
+
+.bk-btn-group.btn-empty .bk-btn[disabled]{opacity:0}
 /* 버튼 타입 */
 
 .btn-fix-90{width:90px}

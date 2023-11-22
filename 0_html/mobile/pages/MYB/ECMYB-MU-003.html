@@ -56,7 +56,6 @@
               <i class="bk-icon bk-icon-gnb-prev">이전</i>
               </button>
             <h2 class="cont-title">Open Inquiry Details</h2>
-            <button type="button" class="btn-like">좋아요</button>
           </div>
         </div>
       </header>
@@ -214,7 +213,7 @@
     <!-- [S]팝업 -->
 
     <!-- [s]Product Inquiry Registration-->
-    <div class="bk-dialog dialog-full has-btmBtn ui-inq is-active" id="dialog-full-pop"><!--[D]인콰이어리 구분자 추가-->
+    <div class="bk-dialog dialog-full has-btmBtn ui-inq " id="dialog-full-pop"><!--[D]인콰이어리 구분자 추가-->
       <div class="dialog-inner">
         <div class="dialog-header">
           <div class="header-left">
@@ -551,15 +550,17 @@
           pagination: {
             el: ".swiper-pagination",
           },
-          autoplay: {
+          /*autoplay: {
             delay: 1000,
             disableOnInteraction: false,
+
           },
           // on: {
           //   slideChange: function() {
           //     var lastIdx = this.slides.length - 1;
           //     if(this.realIndex == this.slides.length - 1) {
           //       $('.swiper-slide').eq(lastIdx).clone().appendTo('.swiper-wrapper');
+
 
           //       $('.swiper-slide').eq(lastIdx).removeClass('swiper-slide-next').removeAttr();
           //       console.log(this.realIndex)
