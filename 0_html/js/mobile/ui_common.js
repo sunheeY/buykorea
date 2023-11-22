@@ -35,6 +35,24 @@ function preLoad() {
 
   // lnb 존재여부 체크
   addHasLnbClass();
+
+  //카테고리, 필터
+  if ( $('.cp-category').length > 0) {
+    $('[class^=category-depth0] > a').click(function(e) {
+      e.preventDefault();
+      var clickThis =  $(this).parent();
+      clickThis.toggleClass('is-active');
+      $(this).next('.in-subdepth').slideToggle();
+      clickThis.siblings().removeClass('is-active').find('.in-subdepth').slideUp();
+      clickThis.siblings().find('.in-subdepth li').removeClass('is-active');           
+    });
+  }
+
+  // 좋아요
+  $('.btn-like').click( function() {
+    $(this).toggleClass('is-active');
+  })
+
 }
 
 $.fn.extend({
@@ -146,7 +164,10 @@ $.fn.extend({
     };
 
     return this.initialize();
+    
   },  
+
+  
 }); 
 
 // lnb 존재여부 체크
@@ -806,28 +827,14 @@ function addDiv(){
   }
 
 
-  //필터
-  $(document).ready(function () {
-    if ( $('.cp-category').length > 0) {
-      $('[class^=category-depth0] > a').click(function(e) {
-        e.preventDefault();
-        var clickThis =  $(this).parent();
-        clickThis.toggleClass('is-active');
-        $(this).next('.in-subdepth').slideToggle();
-        clickThis.siblings().removeClass('is-active').find('.in-subdepth').slideUp();
-        clickThis.siblings().find('.in-subdepth li').removeClass('is-active');           
-      });
-    }
-  });
-
   function rightMenu(id) {
-    var filterWidth = $(window).width() - 55;
+    // var filterWidth = $(window).width() - 55;
     var filterDim = '<div class="dimed-zone"></div>'
     $(id).animate({right: 0}, 400).appendTo('body');
     $('body').append(filterDim);
     $('body').css('overflow', 'hidden');
     $(id).find('.bk-btn-close').click( function() {
-      $(id).animate({right: '-' + filterWidth + 'px'}, 400);
+      $(id).animate({right: '-100%'}, 400);
       $('.dimed-zone').remove();
       $('body').removeAttr('style');
     });
