@@ -538,17 +538,16 @@
     <script>
       $(document).ready(function () {
 
+
+        
         var inqSwipeBan = new Swiper('.inquiry-slide-wrap', {
+          observer: true,
+          observerParents: true,
           loop: $('.inquiry-slide-wrap .swiper-slide').length > 1,          
           speed: 500,
           spaceBetween:8,
-          slidesPerView: 1.0035,
-          // loopedSlides: 1,
-          // loopAddBlankSlides: false,
-          // loopPreventsSliding: true,
-          // loopAdditionalSlides:1,
-          observer: true,	
-          observeParents: true,	
+          slidesPerView: 1.0035,      
+          watchOverFlow: true,
           pagination: {
             el: ".swiper-pagination",
           },
@@ -575,7 +574,6 @@
         /*$('[role="swiperListCloseBtn"]').on('click', function(e){          
           $(this).closest('.swiper-slide').hide();  
         });*/
-
       
 
       });
