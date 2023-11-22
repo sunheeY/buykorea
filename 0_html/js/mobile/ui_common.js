@@ -48,6 +48,10 @@ function preLoad() {
     });
   }
 
+  // 좋아요
+  $('.btn-like').click( function() {
+    $(this).toggleClass('is-active');
+  })
 }
 
 $.fn.extend({
@@ -740,13 +744,13 @@ $(document).ready(function(e) {
 
 
   function rightMenu(id) {
-    var filterWidth = $(window).width() - 55;
+    // var filterWidth = $(window).width() - 55;
     var filterDim = '<div class="dimed-zone"></div>'
     $(id).animate({right: 0}, 400).appendTo('body');
     $('body').append(filterDim);
     $('body').css('overflow', 'hidden');
     $(id).find('.bk-btn-close').click( function() {
-      $(id).animate({right: '-' + filterWidth + 'px'}, 400);
+      $(id).animate({right: '-100%'}, 400);
       $('.dimed-zone').remove();
       $('body').removeAttr('style');
     });
