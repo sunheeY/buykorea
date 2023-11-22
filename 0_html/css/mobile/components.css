@@ -1657,3 +1657,6 @@ body.overflow{overflow-y:hidden;}
 .inquiry-slide-wrap .swiper-pagination{ width:100%; height:8px}
 .inquiry-slide-wrap .swiper-pagination.swiper-pagination-lock {display:none}
 
+
+/*메인*/
+[class|='bk-main'] + [class|='bk-main']{ margin-top:64px}
