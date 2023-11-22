@@ -1635,7 +1635,7 @@ body.overflow{overflow:hidden; z-index: -1;}
 .ui-inq .cp-file [class*=file-] .size{ margin-right:8px}
 
 /*인콰이어리 스와이프*/
-.inquiry-slide-wrap { position:relative; padding-bottom:40px; width:100%;}
+.inquiry-slide-wrap { position:relative; padding-bottom:40px; overflow:visible; width:100%; }
 .inquiry-slide-wrap .swiper-slide{border:1px solid var(--color-gray); border-radius: 8px; padding:24px 20px; display:flex; justify-content: flex-start; align-items: flex-start; column-gap: 8px; box-sizing: border-box; position:relative}
 .inquiry-slide-wrap .swiper-slide .bk-btn.btn-list-delete{ position:absolute; right:10px; top:10px; z-index:2000}
 .inquiry-slide-wrap .swiper-slide .bk-slide-info { display:flex; flex-direction: column; align-items: flex-start;}
@@ -1658,3 +1658,6 @@ body.overflow{overflow:hidden; z-index: -1;}
 .inquiry-slide-wrap .swiper-pagination{ width:100%; height:8px}
 .inquiry-slide-wrap .swiper-pagination.swiper-pagination-lock {display:none}
 
+
+/*메인*/
+[class|='bk-main'] + [class|='bk-main']{ margin-top:64px}

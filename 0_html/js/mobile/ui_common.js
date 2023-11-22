@@ -485,6 +485,7 @@ var dialogOpen = function(e) {
     // body에서 'overflow-hidden' 클래스 제거
     $('html,body').removeClass('overflow');
 	});
+
 }
 var dialogClose = function(e) {
 	var dialog = $(e);
