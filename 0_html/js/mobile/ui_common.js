@@ -456,11 +456,30 @@ function fx_empty(value){
 }
 //체크박스제어
 
+function inquerySwiper() {
+  $('.inquiry-slide-wrap').each(function(){
+    var inqSwipeBan = new Swiper('.inquiry-slide-wrap', {
+      loop: $('.inquiry-slide-wrap .swiper-slide').length > 1,
+      spaceBetween:8,
+      slidesPerView: 1.0035,
+      threshold: 0,
+      preventClicks: false,
+      a11y: false,
+      observer: true, observeParents: true,
+      resistanceRatio: 0,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    
+    });
+  })
+}
 // 레이어 팝업
 var dialogOpen = function(e) {
 	$(e).addClass('is-active');
   // body에 'overflow' 클래스 추가
   $('html,body').addClass('overflow');
+  inquerySwiper();
 	$(e).find('[role="dialogCloseBtn"]').on('click', function(e){
 		$(this).closest('.bk-dialog').removeClass('is-active');
     // body에서 'overflow-hidden' 클래스 제거
