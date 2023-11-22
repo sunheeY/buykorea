@@ -547,6 +547,8 @@
           // loopAddBlankSlides: false,
           // loopPreventsSliding: true,
           // loopAdditionalSlides:1,
+          observer: true,	
+          observeParents: true,	
           pagination: {
             el: ".swiper-pagination",
           },
@@ -554,7 +556,7 @@
             delay: 1000,
             disableOnInteraction: false,
 
-          },
+          },*/
           // on: {
           //   slideChange: function() {
           //     var lastIdx = this.slides.length - 1;
@@ -567,14 +569,14 @@
           //     }
           //   }
           // }
-        })
-
+        
+        });    
         /*스와이프 리스트 삭제*/
         /*$('[role="swiperListCloseBtn"]').on('click', function(e){          
           $(this).closest('.swiper-slide').hide();  
         });*/
 
-
+      
 
       });
     </script>
