@@ -543,10 +543,11 @@
           loop: $('.inquiry-slide-wrap .swiper-slide').length > 1,          
           speed: 500,
           spaceBetween:8,
-          loopedSlides: 1,
-          loopAddBlankSlides: false,
-          loopPreventsSliding: true,
-          loopAdditionalSlides:1,
+          slidesPerView: 1.0035,
+          // loopedSlides: 1,
+          // loopAddBlankSlides: false,
+          // loopPreventsSliding: true,
+          // loopAdditionalSlides:1,
           pagination: {
             el: ".swiper-pagination",
           },
@@ -554,17 +555,17 @@
             delay: 1000,
             disableOnInteraction: false,
           },
-          on: {
-            slideChange: function() {
-              var lastIdx = this.slides.length - 1;
-              if(this.realIndex == this.slides.length - 1) {
-                $('.swiper-slide').eq(lastIdx).clone().appendTo('.swiper-wrapper');
+          // on: {
+          //   slideChange: function() {
+          //     var lastIdx = this.slides.length - 1;
+          //     if(this.realIndex == this.slides.length - 1) {
+          //       $('.swiper-slide').eq(lastIdx).clone().appendTo('.swiper-wrapper');
 
-                $('.swiper-slide').eq(lastIdx).removeClass('swiper-slide-next').removeAttr();
-                console.log(this.realIndex)
-              }
-            }
-          }
+          //       $('.swiper-slide').eq(lastIdx).removeClass('swiper-slide-next').removeAttr();
+          //       console.log(this.realIndex)
+          //     }
+          //   }
+          // }
         })
 
         /*스와이프 리스트 삭제*/
