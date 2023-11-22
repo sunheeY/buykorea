@@ -771,9 +771,9 @@ a.btn-text .text {text-decoration: underline;}
 .flatpickr-months .flatpickr-prev-month i,
 .flatpickr-months .flatpickr-next-month i {position: relative;}
 .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
-.flatpickr-months .flatpickr-next-month.flatpickr-prev-month {left: calc(50% - 80px); } 
+.flatpickr-months .flatpickr-next-month.flatpickr-prev-month {left: calc(50% - 100px); } 
 .flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
-.flatpickr-months .flatpickr-next-month.flatpickr-next-month {right: calc(50% - 80px); } 
+.flatpickr-months .flatpickr-next-month.flatpickr-next-month {right: calc(50% - 100px); } 
 .flatpickr-months .flatpickr-prev-month:hover,
 .flatpickr-months .flatpickr-next-month:hover {color: #959ea9;}
 .flatpickr-months .flatpickr-prev-month:hover svg,
@@ -793,9 +793,9 @@ a.btn-text .text {text-decoration: underline;}
 .numInputWrapper span:hover {}
 .numInputWrapper span:active {background: rgba(0, 0, 0, 0.2);}
 .numInputWrapper span:after {display: block; content: ""; position: absolute;}
-.numInputWrapper span.arrowUp {top: 0; width: 24px; height: 24px; padding: 0; right: calc(50% - 106px); transform:translateY(0)}
+.numInputWrapper span.arrowUp {top: 0; width: 24px; height: 24px; padding: 0; right: calc(50% - 126px); transform:translateY(0)}
 .numInputWrapper span.arrowUp:after {content: ''; border: 0; top: 0; width: 24px; height: 24px;  background: url(../../images/mobile/24x24_icon_arrow.svg)}
-.numInputWrapper span.arrowDown {top: 0; width: 24px; height: 24px; padding: 0; left: calc(50% - 106px); transform:translateY(0)}
+.numInputWrapper span.arrowDown {top: 0; width: 24px; height: 24px; padding: 0; left: calc(50% - 126px); transform:translateY(0)}
 .numInputWrapper span.arrowDown:after {content: ''; border: 0; top: 0; width: 24px; height: 24px;  background: url(../../images/mobile/24x24_icon_arrow.svg); transform: rotate(180deg);}
 .numInputWrapper span svg {width: inherit; height: auto;}
 .numInputWrapper span svg path {fill: rgba(0, 0, 0, 0.5);}
@@ -987,6 +987,7 @@ gap:12px; grid-template-columns: repeat(7, 1fr);}
 .cp-search .date-group .bk-textfield {/*min-width: 200px;*/}
 .cp-search.search-topType .search-group {flex-basis: 0; flex-grow: 1;}
 .cp-search.search-topType .search-group .bk-select {width:100%; max-width: 120px; flex-shrink: 0;}
+.cp-search.search-topType .search-group .bk-select.wd100 {max-width:100%}
 .cp-search.search-topType .search-group .bk-select.wd70 {max-width: 76px}
 .cp-search.search-topType .search-group .bk-select.wd90 {max-width: 94px}
 .cp-search.search-topType .search-group .bk-select + .textfield-search {margin-left: 8px;}
@@ -1622,7 +1623,7 @@ body.overflow{overflow:hidden; z-index: -1;}
 .cp-inquiry-information .thumb:after {content:""; padding-bottom:100%;}
 .cp-inquiry-information .thumb img{ width: 100%; height:100%; position:absolute; top:0; left:0; object-fit: cover; object-position: center; padding-bottom: 0;}
 .cp-inquiry-information .bk-inquiry-info { display:flex; flex-direction: column; align-items: flex-start;}
-.cp-inquiry-information .bk-inquiry-info p.script{ font-size:14px; color:#767676}
+.cp-inquiry-information .bk-inquiry-info p.script{ font-size:14px; color:#767676; word-break: break-all;}
 .cp-inquiry-information .bk-inquiry-info h2.title{ font-size:1.6rem; color:var(--color-brand); margin-top:2px}
 .cp-inquiry-information .bk-inquiry-info .bk-price {display: block; font-size: 1.8rem; font-weight: 700; line-height: 1.33; margin-top: 4px;}
 .cp-inquiry-information .bk-inquiry-info .bk-moq {display: flex; justify-content: flex-start; align-items: center; margin-top: 8px; font-size: 1.4rem; color: var(--color-sub); padding: 3px 8px; background: #f4f4f4; width: fit-content; flex-wrap: wrap;}
