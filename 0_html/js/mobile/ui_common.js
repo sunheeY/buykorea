@@ -463,7 +463,7 @@ function inquerySwiper() {
       spaceBetween:8,
       slidesPerView: 1.0035,
       threshold: 0,
-      preventClicks: false,
+      preventClicks: true,
       a11y: false,
       observer: true, observeParents: true,
       resistanceRatio: 0,
@@ -485,7 +485,6 @@ var dialogOpen = function(e) {
     // body에서 'overflow-hidden' 클래스 제거
     $('html,body').removeClass('overflow');
 	});
-
 }
 var dialogClose = function(e) {
 	var dialog = $(e);
