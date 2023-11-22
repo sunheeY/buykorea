@@ -5,17 +5,19 @@
   font-display: swap; 
   src: url('../../fonts/NotoSansKR-Light.woff2') format('woff2'),
   url('../../fonts/NotoSansKR-Light.woff') format('woff'), 
-  url('../../fonts/NotoSansKR-Light.otf') format('truetype'); 
-  unicode-range: 'U+AC00-D7A3'; 
+  url('../../fonts/NotoSansKR-Light.otf') format('opentype'),
+  url('../../fonts/NotoSansKR-Light.ttf') format('truetype'); 
+  unicode-range: 'U+1100-11FF'; 
 } 
 @font-face { 
   font-family: 'Noto Sans KR'; 
   font-weight: 400; 
   font-display: swap; 
-  src: url('../../fonts/NotoSansKR-Regular.woff2'),
-  format('woff2') url('../../fonts/NotoSansKR-Regular.woff') format('woff'),
-  url('../../fonts/NotoSansKR-Regular.otf') format('truetype'); 
-  unicode-range: 'U+AC00-D7A3'; 
+  src: url('../../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+  url('../../fonts/NotoSansKR-Regular.woff') format('woff'),
+  url('../../fonts/NotoSansKR-Regular.otf') format('opentype'),
+  url('../../fonts/NotoSansKR-Regular.ttf') format('truetype'); 
+  unicode-range: 'U+1100-11FF'; 
 } 
 @font-face { 
   font-family: 'Noto Sans KR'; 
@@ -23,8 +25,9 @@
   font-display: swap; 
   src: url('../../fonts/NotoSansKR-Medium.woff2') format('woff2'),
   url('../../fonts/NotoSansKR-Medium.woff') format('woff'),
-  url('../../fonts/NotoSansKR-Medium.otf') format('truetype'); 
-  unicode-range: 'U+AC00-D7A3'; 
+  url('../../fonts/NotoSansKR-Medium.otf') format('opentype'),
+  url('../../fonts/NotoSansKR-Medium.ttf') format('truetype'); 
+  unicode-range: 'U+1100-11FF'; 
 } 
 @font-face { 
   font-family: 'Noto Sans KR'; 
@@ -32,8 +35,9 @@
   font-display: swap; 
   src: url('../../fonts/NotoSansKR-Bold.woff2') format('woff2'),
   url('../../fonts/NotoSansKR-Bold.woff') format('woff'),
-  url('../../fonts/NotoSansKR-Bold.otf') format('truetype'); 
-  unicode-range: 'U+AC00-D7A3'; 
+  url('../../fonts/NotoSansKR-Bold.otf') format('opentype'),
+  url('../../fonts/NotoSansKR-Bold.ttf') format('truetype'); 
+  unicode-range: 'U+1100-11FF'; 
 } 
 @font-face { 
   font-family: 'Noto Sans KR'; 
@@ -41,9 +45,10 @@
   font-display: swap; 
   src: url('../../fonts/NotoSansKR-Black.woff2') format('woff2'),
   url('../../fonts/NotoSansKR-Black.woff') format('woff'),
-  url('../../fonts/NotoSansKR-Black.otf') format('truetype'); 
-  unicode-range: 'U+AC00-D7A3'; 
-} 
+  url('../../fonts/NotoSansKR-Black.otf') format('opentype'),
+  url('../../fonts/NotoSansKR-Black.ttf') format('truetype'); 
+  unicode-range: 'U+1100-11FF'; 
+}   
   
 
 @font-face {
@@ -51,8 +56,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
-  src: url("../../fonts/Roboto-Light.eot");
-  src: url("../../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+  src: url("../../fonts/Roboto-Light.ttf") format("truetype"),
     url("../../fonts/Roboto-Light.woff") format("woff");
 }
 @font-face {
@@ -60,8 +64,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/Roboto-Regular.eot");
-  src: url("../../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+  src: url("../../fonts/Roboto-Regular.ttf") format("truetype"),
     url("../../fonts/Roboto-Regular.woff") format("woff");
 }
 @font-face {
@@ -69,8 +72,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("../../fonts/Roboto-Medium.eot");
-  src: url("../../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+  src: url("../../fonts/Roboto-Medium.ttf") format("truetype"),
     url("../../fonts/Roboto-Medium.woff") format("woff");
 }
 @font-face {
@@ -78,8 +80,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("../../fonts/Roboto-Bold.eot");
-  src: url("../../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+  src: url("../../fonts/Roboto-Bold.ttf") format("truetype"),
     url("../../fonts/Roboto-Bold.woff") format("woff");
 }
 @font-face {
@@ -87,8 +88,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: url("../../fonts/Roboto-Black.eot");
-  src: url("../../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"),
+  src: url("../../fonts/Roboto-Black.ttf") format("truetype"),
     url("../../fonts/Roboto-Black.woff") format("woff");
 }
 
@@ -111,7 +111,7 @@ body {
   scroll-behavior: smooth;
   -webkit-text-size-adjust:none;
 }
-*:focus {outline: 0 !important;}
+/* *:focus {outline: 0 !important;} */
 
 /* 여백 초기화 */
 body,
