@@ -536,49 +536,9 @@
     <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {
-
-        var inqSwipeBan = new Swiper('.inquiry-slide-wrap', {
-          loop: $('.inquiry-slide-wrap .swiper-slide').length > 1,          
-          speed: 500,
-          spaceBetween:8,
-          slidesPerView: 1.0035,
-          // loopedSlides: 1,
-          // loopAddBlankSlides: false,
-          // loopPreventsSliding: true,
-          // loopAdditionalSlides:1,
-          observer: true,	
-          observeParents: true,	
-          pagination: {
-            el: ".swiper-pagination",
-          },
-          /*autoplay: {
-            delay: 1000,
-            disableOnInteraction: false,
-
-          },*/
-          // on: {
-          //   slideChange: function() {
-          //     var lastIdx = this.slides.length - 1;
-          //     if(this.realIndex == this.slides.length - 1) {
-          //       $('.swiper-slide').eq(lastIdx).clone().appendTo('.swiper-wrapper');
-
-
-          //       $('.swiper-slide').eq(lastIdx).removeClass('swiper-slide-next').removeAttr();
-          //       console.log(this.realIndex)
-          //     }
-          //   }
-          // }
-        
-        });    
-        /*스와이프 리스트 삭제*/
-        /*$('[role="swiperListCloseBtn"]').on('click', function(e){          
-          $(this).closest('.swiper-slide').hide();  
-        });*/
 
       
-
-      });
+      
     </script>
   </body>
 </html>
