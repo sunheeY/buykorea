@@ -713,8 +713,8 @@ function logoFileDelete(){
 }
 
 
-//select 박스 색상 변경
-$(document).ready(function(e) {
+//select 박스 색상 변경 스크립트 삭제 2023-11-22 beaude
+/*$(document).ready(function(e) {
   $('select').css('color','#999');
   $('select').change(function() {
      var current = $('select').val();
@@ -724,7 +724,7 @@ $(document).ready(function(e) {
          $('select').css('color','#999');
      }
   }); 
-});
+});*/
 
 
 
