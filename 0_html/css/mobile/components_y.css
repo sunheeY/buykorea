@@ -510,7 +510,7 @@
 .bk-radio-group.type-box {gap: 0; margin-bottom:0 !important; }
 .bk-radio-group.type-box .bk-radio { gap: 0; display: block; flex:1; height:32px; display:flex; }
 .bk-radio-group.type-box .bk-radio:nth-child(1)  input[type="radio"] + label { border-radius: var(--radius-default) 0 0 var(--radius-default);}
-.bk-radio-group.type-box .bk-radio:nth-child(4)  input[type="radio"] + label { border-radius: 0 var(--radius-default) var(--radius-default) 0;}
+.bk-radio-group.type-box .bk-radio:nth-last-of-type(1)  input[type="radio"] + label { border-radius: 0 var(--radius-default) var(--radius-default) 0;}
 .bk-radio-group.type-box .bk-radio ~ .bk-radio { margin-left: -1px;}
 .bk-radio-group.type-box .bk-radio input[type="radio"]:checked + label::after,
 .bk-radio-group.type-box .bk-radio input[type="radio"] + label::before {display: none; opacity: 0;}
@@ -520,9 +520,7 @@
 .bk-radio-group.type-box .bk-radio input[type="radio"] + label.on .text{ color:var(--color-primary)}
 .bk-radio-group.type-box .bk-radio input[type="radio"] + label .text {margin:0; font-size:1.4rem; text-align: center;}
 
-.bk-radio-group.type-box .bk-radio:nth-child(1) input[type="radio"]:checked + label,
-.bk-radio-group.type-box .bk-radio:nth-child(2) input[type="radio"]:checked + label,
-.bk-radio-group.type-box .bk-radio:nth-child(3) input[type="radio"]:checked + label {z-index:3;}
+.bk-radio-group.type-box .bk-radio:not(:nth-last-of-type(1)) input[type="radio"]:checked + label {z-index:3;}
 
 .cp-filter-wrap .bk-date-range .bk-toggle-group {width: 100%; margin-top: 8px; height: 32px;}
 .cp-filter-wrap .bk-date-range .bk-toggle-group label {height: 32px; align-items: center; }
