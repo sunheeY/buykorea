@@ -342,7 +342,7 @@
 
         var dhtml = '<div class="dialog-header">';
         dhtml += '<div class="header-left">';
-        dhtml += '<div class="bk-title"><h1 class="title">날짜선택</h1></div></div>';
+        dhtml += '<div class="bk-title"><h1 class="title">Select Date</h1></div></div>'; //날짜 텍스트 변경 2023-11-22
         dhtml += '<div class="header-right"><button type="button" class="bk-icon-only bk-btn-cal-close"><i class="bk-icon bk-icon-dialog-close">닫기</i></button></div>';
         dhtml += '</div>';
 
@@ -354,7 +354,7 @@
         dhtml2 += '</div>';
 
 
-        var dhtml3 = '<button type="button" class="bk-btn btn-sub btn-text btn-underline-small btn-select-today"><span class="text">오늘</span></button>';
+        var dhtml3 = '<button type="button" class="bk-btn btn-sub btn-text btn-underline-small btn-select-today"><span class="text">TODAY</span></button>'; //날짜 문구 변경 2023-11-22
 
         var flatDiv = $('.flatpickr-calendar');
         var flatMonthDiv = $('.flatpickr-current-month');
@@ -385,7 +385,7 @@
           enableTime: false,
           minDate: '2000-01-01',
           defaultDate: new Date(),
-          locale: 'ko',
+          locale: 'ko', 
           onOpen: addDiv, // 바텀레이어추가
           onClose: addDiv, // 바텀레이어삭제
           disableMobile: "true",
