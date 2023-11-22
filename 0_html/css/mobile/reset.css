@@ -263,7 +263,7 @@ dt,
 dd {
   word-wrap: break-word;
   white-space: normal;
-  word-break: keep-all; /* 단어기준:keep-all , 글자기준:break-all */
+  word-break: break-all; /* 단어기준:keep-all , 글자기준:break-all */
 }
 u,
 .underline {

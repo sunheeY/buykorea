@@ -1625,10 +1625,10 @@ body.overflow{overflow:hidden; z-index: -1;}
 .cp-inquiry-information .bk-inquiry-info p.script{ font-size:14px; color:#767676}
 .cp-inquiry-information .bk-inquiry-info h2.title{ font-size:1.6rem; color:var(--color-brand); margin-top:2px}
 .cp-inquiry-information .bk-inquiry-info .bk-price {display: block; font-size: 1.8rem; font-weight: 700; line-height: 1.33; margin-top: 4px;}
-.cp-inquiry-information .bk-inquiry-info .bk-moq {display: flex; justify-content: flex-start; align-items: center; margin-top: 8px; font-size: 1.4rem; color: var(--color-sub); padding: 3px 8px; background: #f4f4f4; width: fit-content;}
+.cp-inquiry-information .bk-inquiry-info .bk-moq {display: flex; justify-content: flex-start; align-items: center; margin-top: 8px; font-size: 1.4rem; color: var(--color-sub); padding: 3px 8px; background: #f4f4f4; width: fit-content; flex-wrap: wrap;}
 .cp-inquiry-information .bk-inquiry-info .bk-moq span {display:inline-flex; align-items: center;}
-.cp-inquiry-information .bk-inquiry-info .bk-moq span + span{ margin-left:8px; }
-.cp-inquiry-information .bk-inquiry-info .bk-moq span + span:before{ content:""; width:1px; height:12px; background:var(--color-gray); display:block; margin-right:8px}
+.cp-inquiry-information .bk-inquiry-info .bk-moq span:nth-child(1){ margin-right:8px; }
+.cp-inquiry-information .bk-inquiry-info .bk-moq span:nth-child(1):after{ content:""; width:1px; height:12px; background:var(--color-gray); display:block; margin-left:8px}
 
 
 .ui-inq .cp-file [class*=file-] .text{margin-right:8px; text-decoration:underline}
