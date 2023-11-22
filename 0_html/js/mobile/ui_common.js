@@ -49,7 +49,7 @@ function preLoad() {
   }
 
   // 좋아요
-  $('.btn-like').click( function() {
+  $('.btn-like, .bk-icon-like').click( function() {
     $(this).toggleClass('is-active');
   })
 }

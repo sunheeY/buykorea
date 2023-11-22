@@ -1593,8 +1593,8 @@ body.overflow{overflow-y:hidden;}
 .cp-list-wrap.inq-list .bk-list-condition .bk-btn + .bk-btn{ margin-left:4px}
 .cp-list-wrap.inq-list .bk-list-condition .btn-like { width:28px; height:28px; border:1px solid var(--color-gray); background-color:#fff; font-size:0; padding:0}
 .cp-list-wrap.inq-list .bk-list-condition .btn-like::before {content: ''; display: block; width: 24px; height: 24px; background-repeat: no-repeat; background-position: 50% 50%; margin: 0;}
-.cp-list-wrap.inq-list .bk-list-condition .btn-like::before {background-image: url(../../images/mobile/icon-heart-gray-24x24.svg);}
-.cp-list-wrap.inq-list .bk-list-condition .btn-like.is-active::before {background-image: url(../../images/mobile/icon-heart-gray-full-24x24.svg) !important;}
+.cp-list-wrap.inq-list .bk-list-condition .btn-like::before {background-image: url(../../images/mobile/icon-inq-heart-20x20.svg);}
+.cp-list-wrap.inq-list .bk-list-condition .btn-like.is-active::before {background-image: url(../../images/mobile/icon-inq-heart-20x20-full.svg) !important;}
 
 .cp_list-header-title{ display:flex; justify-content: space-between; column-gap: 12px; align-items: flex-end; font-size:20px; font-weight:500}
 .cp_list-header-title .btn-like { width:28px; height:28px; font-size:0; padding:0}
