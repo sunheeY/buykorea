@@ -354,7 +354,7 @@
         dhtml2 += '</div>';
 
 
-        //var dhtml3 = '<button type="button" class="bk-btn btn-sub btn-text btn-underline-small btn-select-today"><span class="text">TODAY</span></button>'; //날짜 버튼 삭제 2023-11-22
+        var dhtml3 = '<button type="button" class="bk-btn btn-sub btn-text btn-underline-small btn-select-today"><span class="text">TODAY</span></button>'; //날짜 문구변경 2023-11-22
 
         var flatDiv = $('.flatpickr-calendar');
         var flatMonthDiv = $('.flatpickr-current-month');
@@ -364,7 +364,7 @@
           flatDiv.prepend(dhtml);
           //flatDiv.append(dhtml2);
           $(".flatpicker-dimd").addClass('is-active');
-          //flatMonthDiv.prepend(dhtml3); //날짜 버튼 삭제 2023-11-22
+          flatMonthDiv.prepend(dhtml3); 
 
         }else{
           flatDiv.find('.dialog-header').remove();
