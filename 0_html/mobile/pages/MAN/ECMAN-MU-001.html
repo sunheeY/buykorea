@@ -90,7 +90,7 @@
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
-            <section class="bk-main-banner">
+            <section class="type-main-swipe bk-main-banner">
               <div class="banner-slide-wrap swiper-container">
                 <div class="swiper-wrapper">
                   <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide.png"></a>
@@ -1203,7 +1203,27 @@
             </section>
 
             <section class="type-main-swipe bk-main-event">
-              event swiper
+              <div class="event-slide-wrap swiper-container">                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../images/tmp/buyer-main-slide2.png"></a>
+                </div>
+              </div>
+              <div class="bk-control-wrap">
+                <button class="slide-btn slide-auto-start">play</button>
+                <button class="slide-btn slide-auto-stop">palse</button>
+                <div class="swiper-pagination"></div>
+              </div>
             </section>
 
             <section class="type-main-list bk-main-category">
@@ -1288,7 +1308,6 @@
                             <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
                             <strong class="bk-tit bk-lineclamp-2">Product name Product name Productt name Productt name Productt name Product </strong>
                             <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
-                            <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
                           </div>
                           <!-- [d] bk-flag-new : 신상품 -->
                           <div class="bk-flag-wrap">
@@ -1446,7 +1465,6 @@
                             <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
                             <strong class="bk-tit bk-lineclamp-2">Prod333333333333 name Product name Productt name Productt name Productt name Product </strong>
                             <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
-                            <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
                           </div>
                           <!-- [d] bk-flag-new : 신상품 -->
                           <div class="bk-flag-wrap">
@@ -1460,7 +1478,6 @@
                             <span class="prd-company-name bk-lineclamp-1">RUBELLI CO.,</span>
                             <strong class="bk-tit bk-lineclamp-2">Product nam3333333333333e Product name Productt name Productt name Productt name Product </strong>
                             <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
-                            <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
                           </div>
                           <!-- [d] bk-flag-new : 신상품 -->
                           <div class="bk-flag-wrap">
@@ -1475,7 +1492,6 @@
                             <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
                             <strong class="bk-tit bk-lineclamp-2">P333333333333333 name Product name Productt name Productt name Productt name Product </strong>
                             <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
-                            <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
                           </div>
                           <!-- [d] bk-flag-new : 신상품 -->
                           <div class="bk-flag-wrap">
@@ -1503,7 +1519,6 @@
                             <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
                             <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
                             <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
-                            <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
                           </div>
                           <!-- [d] bk-flag-new : 신상품 -->
                           <div class="bk-flag-wrap">
@@ -1829,12 +1844,42 @@
               disableOnInteraction: false
             },
         });
-        $(".slide-auto-start").on("click", function() {
+        $(".bk-main-banner .slide-auto-start").on("click", function() {
           main_banner_slide.autoplay.start();
         });
 
-        $(".slide-auto-stop").on("click", function() {
+        $(".bk-main-banner .slide-auto-stop").on("click", function() {
           main_banner_slide.autoplay.stop();
+        });
+
+        //메인중간 스와이퍼
+        var main_event_slide = new Swiper('.event-slide-wrap', {
+            loop: $('.event-slide-wrap .swiper-slide').length > 1,
+            spaceBetween:20,
+            speed:1000,
+            slidesPerView:1,
+            threshold: 0,
+            preventClicks: true,
+            observer: true, observeParents: true,
+            resistanceRatio: 0,
+            pagination: {
+              el: ".bk-main-event .swiper-pagination",
+            }, 
+            navigation: {
+              nextEl: '.event-slide-wrap .swiper-button-next',
+              prevEl: '.event-slide-wrap .swiper-button-prev',
+            },      
+            autoplay:{
+              delay:2000,
+              disableOnInteraction: false
+            },
+        });
+        $(".bk-main-event .slide-auto-start").on("click", function() {
+          main_event_slide.autoplay.start();
+        });
+
+        $(".bk-main-event .slide-auto-stop").on("click", function() {
+          main_event_slide.autoplay.stop();
         });
 
       });
