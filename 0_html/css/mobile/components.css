@@ -1766,3 +1766,29 @@ body.overflow{overflow:hidden; z-index: -1;}
 .bk-main-event .swiper-button-prev:after,
 .bk-main-event .swiper-button-next:after{ display:none}
 
+/*메인 셀러*/
+.bk-main-summary { background:var(--color-background2); margin:-24px -20px 0 -20px; padding:40px 20px }
+.bk-main-summary h2.title{ font-size:24px }
+.bk-main-summary h2.title strong{ font-weight:500 }
+.bk-main-summary .bk-summary{ border:1px solid var(--color-gray); background:var(--color-white); border-radius: 8px; display:flex; justify-content: space-between; align-items: center; }
+.bk-main-summary .bk-summary:nth-of-type(1){ margin-top:18px }
+.bk-main-summary .bk-summary + .bk-summary{ margin-top:8px}
+
+.bk-main-summary .bk-summary.message{ padding:20px 24px; }
+.bk-main-summary .bk-summary.message span{ font-size:1.6rem; line-height:1.5; display:block; }
+.bk-main-summary .bk-summary.message span + span{ display:flex; justify-content: flex-end; align-items: center; column-gap: 4px; }
+.bk-main-summary .bk-summary.message span + span strong{ color:var(--color-primary); font-size:20px; font-weight:500; margin-top:-3px }
+
+.bk-main-summary .bk-summary.order-dashboard { padding:24px 0; }
+.bk-main-summary .bk-summary.order-dashboard ul { display:flex; justify-content: space-between; align-items: center; width:100% }
+.bk-main-summary .bk-summary.order-dashboard ul li{ display:flex; flex-direction: column; align-items: center; justify-content: stretch; row-gap: 6px; flex:1; position: relative;}
+.bk-main-summary .bk-summary.order-dashboard ul li + li:before{ content:""; width:1px; height:100%; background:var(--color-gray); display:block; position:absolute; left:0; top:0;}
+.bk-main-summary .bk-summary.order-dashboard ul li span{ font-size:1.6rem }
+.bk-main-summary .bk-summary.order-dashboard ul li strong{ color:var(--color-primary); font-size:24px; font-weight:500 }
+.bk-main-summary .bk-summary.order-dashboard.grid3 ul li{ width:calc(100% / 3)}
+.bk-main-summary .bk-summary.order-dashboard.grid2 ul li{ width:calc(100% / 2)}
+
+.type-main-inquiry,
+.bk-main-trade { margin-top:40px}
+.type-main-inquiry .title,
+.bk-main-trade .title{ font-size:20px; font-weight:500; display:flex; align-items: center; position:relative}
