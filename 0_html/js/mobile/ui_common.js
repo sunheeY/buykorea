@@ -37,16 +37,40 @@ function preLoad() {
   addHasLnbClass();
 
   //카테고리, 필터
-  if ( $('.cp-category').length > 0) {
-    $('[class^=category-depth0] > a').click(function(e) {
-      e.preventDefault();
-      var clickThis =  $(this).parent();
-      clickThis.toggleClass('is-active');
-      $(this).next('.in-subdepth').slideToggle();
-      clickThis.siblings().removeClass('is-active').find('.in-subdepth').slideUp();
-      clickThis.siblings().find('.in-subdepth li').removeClass('is-active');           
-    });
+  $('.cp-category [class^=category-depth0] > a').click(function(e) {
+    e.preventDefault();
+    var clickThis =  $(this).parent();
+    clickThis.toggleClass('is-active');
+    $(this).next('.in-subdepth').slideToggle();
+    clickThis.siblings().removeClass('is-active').find('.in-subdepth').slideUp();
+    clickThis.siblings().find('[class^=category-depth0]').removeClass('is-active');
+    
+    if($(this).closest('[class^=category-depth0].is-active').length === 0) {
+      $(this).closest('[class^=category-depth0]').find('ul, li').removeClass('is-active').removeAttr('style');
+    }
+
+    if (clickThis.closest('.nav-ctgy-list').length > 0) {
+      clickThis.siblings().slideToggle();
+      $('[class^=category-depth0] > a').each(function() {
+        if ($(this).next('.in-subdepth > .is-active').length === 0) {
+          $(this).next('.in-subdepth > li').removeAttr('style');
+        } 
+      });
+      noSubdepth();
+    }
+  });
+
+  function noSubdepth() {
+    $('[class^=category-depth0] > a').each(function() {
+      if ($(this).next('.in-subdepth').length === 0) {
+        $(this).parent().addClass('no-subdepth');
+        // e.stopPropagation();
+        $(this).off('click');
+        return;
+      }
+    })
   }
+  if ($('.nav-menu-list').length > 0) { noSubdepth()}
 
   // 좋아요
   $('.btn-like, .bk-icon-like').click( function() {
@@ -459,34 +483,36 @@ function fx_empty(value){
 // 레이어에 포함된 스와이퍼들은 버튼 클릭으로 활성화 해준다
 // 이미지확대보기
 function prdImgMore() {
-  var prdThumb = new Swiper(".prd-thumb-list", {
-    slidesPerView: 8,
-    spaceBetween: 4,
-    freeMode: false,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    initialSlide: 0,
-    on: {
-      init: function () {
-        this.allowTouchMove = false;
+  $('.prd-thumb-list').each(function(){
+    var prdThumb = new Swiper(".prd-thumb-list", {
+      slidesPerView: 8,
+      spaceBetween: 4,
+      freeMode: false,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      initialSlide: 0,
+      on: {
+        init: function () {
+          this.allowTouchMove = false;
+        }
       }
-    }
-  });
-  var prdImages = new Swiper('.prd-img-area', {
-    threshold: 0,
-    a11y: false,
-    observer: true,
-    observeParents: true,
-    navigation: {
-      nextEl: ".prd-img-area .swiper-button-next",
-      prevEl: ".prd-img-area .swiper-button-prev",
-    },
-    preventDefaultSwipe: false,
-    preventLinks: false,
-    thumbs: {
-      swiper: prdThumb,
-    },
-  });
+    });
+    var prdImages = new Swiper('.prd-img-area', {
+      threshold: 0,
+      a11y: false,
+      observer: true,
+      observeParents: true,
+      navigation: {
+        nextEl: ".prd-img-area .swiper-button-next",
+        prevEl: ".prd-img-area .swiper-button-prev",
+      },
+      preventDefaultSwipe: false,
+      preventLinks: false,
+      thumbs: {
+        swiper: prdThumb,
+      },
+    });
+  })
 }
 //인콰이어리 배너스와이퍼
 function inquerySwiper() {
@@ -825,16 +851,45 @@ function logoFileDelete(){
 
   function scrollCall() {
     var lastScrollTop = $(window).scrollTop();
+    var headerHeight = $('.header-comm').outerHeight();
+    var contHeadHeight = $('.header-cont').outerHeight();
+
+    if (lastScrollTop > 0) {$('.ui-header').css('position', 'static');}
+    else if (lastScrollTop >= headerHeight) {$('.header-cont').addClass('bk-sticky').css('top', 0);}
+
+    $('#container .tab-type-sub-line').each(function() {
+      if (lastScrollTop >= headerHeight + contHeadHeight) { 
+        if (!$('.ui-header').hasClass('bk-sticky')) {
+          $('#container .tab-type-sub-line .tab-menu-wrap').addClass('bk-sticky').css('top', contHeadHeight);
+        } else {
+          $('#container .tab-type-sub-line .tab-menu-wrap').addClass('bk-sticky').css('top', headerHeight + contHeadHeight);
+        }
+      } else if (lastScrollTop >= contHeadHeight) {
+        $('#container .tab-type-sub-line .tab-menu-wrap').addClass('bk-sticky').css('top', contHeadHeight);
+      }
+    })
+
     $(window).scroll(function() {
       var st = $(this).scrollTop();
-      var hideHeight = $('.header-comm').outerHeight() + 1;  
-
       if (st <= 1 || st < lastScrollTop) {
-        $('.ui-header').css('transform', 'translateY(0)');
         // console.log('위로');
+        $('.ui-header').css('position', 'sticky').css('top', 0);
+        $('.header-cont').css('top', headerHeight);
       } else {
-        $('.ui-header').css('transform', 'translateY(-' + hideHeight + 'px)');
         // console.log('아래로');
+        $('.ui-header').css('position', 'static');
+        if(st >= headerHeight) {
+          $('.header-cont').addClass('bk-sticky').css('top', 0);
+        }
+      };
+      if ($('#container .tab-type-sub-line').length > 0) {
+        if (st <= 1 || st < lastScrollTop) { 
+          $('#container .tab-type-sub-line .tab-menu-wrap').addClass('bk-sticky').css('top', headerHeight + contHeadHeight);
+        } else {
+          if (st >= headerHeight + contHeadHeight) {
+            $('#container .tab-type-sub-line .tab-menu-wrap').addClass('bk-sticky').css('top', contHeadHeight);
+          }
+        }
       }
       lastScrollTop = st;
     });
