@@ -208,7 +208,7 @@
     <div class="bk-dialog main-dialog dim is-active" id="dialog-main">
       <div class="dialog-inner">
         <div class="dialog-container">
-          <div class="type-main-swipe main-notice dialog-contents">
+          <div class="type-main-swipe dialog-contents">
             <div class="bk-control-wrap">
               <button class="slide-btn slide-auto-start">play</button>
               <button class="slide-btn slide-auto-stop">palse</button>
@@ -255,7 +255,7 @@
             observer: true, observeParents: true,
             resistanceRatio: 0,
             pagination: {
-              el: ".main-notice .swiper-pagination",
+              el: ".main-dialog .swiper-pagination",
               clickable: true,
             },       
             autoplay:{
@@ -263,16 +263,16 @@
               disableOnInteraction: false
             },
         });
-        $(".main-notice .slide-auto-start").on("click", function() {
+        $(".main-dialog .slide-auto-start").on("click", function() {
           main_dialog_slide.autoplay.start();
           $(this).hide();
-          $(".main-notice .slide-auto-stop").show();
+          $(".main-dialog .slide-auto-stop").show();
         });
 
-        $(".main-notice .slide-auto-stop").on("click", function() {
+        $(".main-dialog .slide-auto-stop").on("click", function() {
           main_dialog_slide.autoplay.stop();
           $(this).hide();
-          $(".main-notice .slide-auto-start").show();
+          $(".main-dialog .slide-auto-start").show();
         });
 
 
