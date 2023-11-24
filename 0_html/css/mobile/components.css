@@ -1045,7 +1045,7 @@ body.overflow{overflow:hidden; z-index: -1;}
 .bk-dialog .dialog-container {padding: 0 20px 80px 20px; max-height: 100%; height:auto; overflow-y: auto; overflow-x:hidden; box-sizing: border-box;}
 
 /*full*/
-.bk-dialog.has-btmBtn .dialog-container {padding-bottom:100px;}
+.bk-dialog.has-btmBtn .dialog-container {padding-bottom:124px;}
 
 /*modal11*/
 .bk-dialog.dialog-modal .dialog-container {padding:0 24px 0 24px; max-height:calc(100vh - 216px); margin-bottom:32px}
