@@ -635,7 +635,7 @@
          var main_closing_inq = new Swiper('.close-inq-slide-wrap', {
             loop: $('.close-inq-slide-wrap .swiper-slide').length > 1,
             direction:'vertical',
-            spaceBetween:24,
+            spaceBetween:0,
             slidesPerView: 5,
             loopFillGroupWithBlank: false,
             loopedSlides: 0,
@@ -654,6 +654,9 @@
             },*/
         });
 
+        var swiper_height = $('.close-inq-slide-wrap .swiper-slide').height();
+        console.log(swiper_height);
+ 
         //트레이드쇼
         var main_trade_inq = new Swiper('.trade-inq-slide-wrap', {
             loop: $('.trade-inq-slide-wrap .swiper-slide').length > 1,
