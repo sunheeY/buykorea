@@ -638,7 +638,6 @@
             spaceBetween:0,
             slidesPerView: 5,
             slidesPerGroup: 1,
-            loopFillGroupWithBlank: true,
             threshold: 0,
             preventClicks: true,
             observer: true, observeParents: true,
@@ -647,6 +646,20 @@
               nextEl: '.bk-main-close-inq .swiper-button-next',
               prevEl: '.bk-main-close-inq .swiper-button-prev',
             },      
+            on: {
+              init: function (swiper) {
+                const slider = document.querySelector(".favorite-inq-slide-wrap");
+                const currentSlide = swiper.slides[swiper.activeIndex];
+                const currentSlideItem = currentSlide.children[0];
+                slider.style.height = currentSlideItem.clientHeight + "px";
+              },
+              slideChange: function (swiper) {
+                const slider = document.querySelector(".favorite-inq-slide-wrap");
+                const currentSlide = swiper.slides[swiper.activeIndex];
+                const currentSlideItem = currentSlide.children[0];
+                slider.style.height = currentSlideItem.clientHeight + "px";
+              },
+            }
             
             /*autoplay:{
               delay:2000,
