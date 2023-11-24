@@ -81,13 +81,6 @@
 
             </div>
           </div>
-          <div class="header-cont">
-            <button type="button" class="bk-icon-only">
-              <i class="bk-icon bk-icon-gnb-prev">이전</i>
-              </button>
-            <h2 class="cont-title">Title</h2>
-            <button type="button" class="btn-like">좋아요</button>
-          </div>
         </div>
       </header>
       <!--// [E]header -->
@@ -97,27 +90,370 @@
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
             <section class="bk-main-summary">
-              안녕 홍길동
+              <h2 class="title">안녕하세요, <strong>홍길동님</strong></h2>
+              <div class="bk-summary message">
+                <span>안 읽은 메시지</span>
+                <span class="count"><strong>100</strong>개</span>
+              </div>
+
+              <div class="bk-summary order-dashboard grid3">
+                <ul>
+                  <li>
+                    <span>견적</span>
+                    <strong>100</strong>
+                  </li>
+                  <li>
+                    <span>주문</span>
+                    <strong>100</strong>
+                  </li>
+                  <li>
+                    <span>인보이스</span>
+                    <strong>100</strong>
+                  </li>
+              </div>
+
+              <div class="bk-summary order-dashboard grid2">
+                <ul>
+                  <li>
+                    <span>결제</span>
+                    <strong>100</strong>
+                  </li>
+                  <li>
+                    <span>배송</span>
+                    <strong>100</strong>
+                  </li>
+              </div>
             </section>
 
-            <section class="bk-main-favorite-inq">
-              관심 인콰이어리
-
+            <section class="type-main-inquiry bk-main-favorite-inq">
+              <div class="title">
+                관심 인콰이어리
+                <div class="swiper-button-wrap">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>              
+              <div class="favorite-inq-slide-wrap swiper-container"> 
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide">
+                    <strong class="bk-tit bk-lineclamp-2">Contents Title Contents Title Contents Title Contents Title Contents Title Contents Title Contents Title Contents Title</strong>
+                    <ul class="bk-list-option">
+                      <li><span>국가 :</span><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                      <li><span>신청기간 :</span>2023.01.01 ~ 2023.12.31</li>
+                      <li><span>카테고리 :</span>3Depth Category</li>
+                    </ul>
+                    <ul class="bk-detail-option">
+                      <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                      <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                    </ul>
+                    <!-- [d] bk-flag-sns : SNS -->
+                    <div class="bk-flag-wrap">
+                      <span class="bk-flag-sns">SNS</span>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <strong class="bk-tit bk-lineclamp-2">Contents22222Contents Title Contents Title Contents Title Contents Title Contents Title Contents Title Contents Title</strong>
+                    <ul class="bk-list-option">
+                      <li><span>국가 :</span><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                      <li><span>신청기간 :</span>2023.01.01 ~ 2023.12.31</li>
+                      <li><span>카테고리 :</span>3Depth Category</li>
+                    </ul>
+                    <ul class="bk-detail-option">
+                      <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                      <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                    </ul>
+                    <!-- [d] bk-flag-sns : SNS -->
+                    <div class="bk-flag-wrap">
+                      <span class="bk-flag-sns">SNS</span>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <strong class="bk-tit bk-lineclamp-2">Conten33333333333333333333333tle Contents Title Contents Title Contents Title</strong>
+                    <ul class="bk-list-option">
+                      <li><span>국가 :</span><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                      <li><span>신청기간 :</span>2023.01.01 ~ 2023.12.31</li>
+                      <li><span>카테고리 :</span>3Depth Category</li>
+                    </ul>
+                    <ul class="bk-detail-option">
+                      <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                      <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                    </ul>
+                    <!-- [d] bk-flag-sns : SNS -->
+                    <div class="bk-flag-wrap">
+                      <span class="bk-flag-sns">SNS</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </section>
             
-            <section class="bk-main-tab-inq">
-              일반과 SNS
+            <section class="type-main-inquiry bk-main-tab-inq">
+              <div class="bk-tab bk-tabs-wrap">
+                <div class="tab-menu-wrap">
+                  <ul class="list-menu">
+                    <li>
+                      <button type="button" class="tab-item active">일반 인콰이어리</button>
+                    </li>
+                    <li>
+                      <button type="button" class="tab-item">SNS 인콰이어리</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-container-wrap">
+                  <div class="tab-container active">
+                    <ul class="cp-prd-list">
+                      <li class="bk-prd-unit">
+                        <a href="#" class="bk-thumb-link">
+                          <strong class="bk-tit bk-lineclamp-2">Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                          <ul class="bk-list-option">
+                            <li><span>국가 :</span><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                            <li><span>신청기간 :</span>2023.01.01 ~ 2023.12.31</li>
+                            <li><span>카테고리 :</span>3Depth Category</li>
+                          </ul>
+                          <ul class="bk-detail-option">
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                          </ul>
+                        </a>  
+                      </li>
+                      <li class="bk-prd-unit">
+                        <a href="#" class="bk-thumb-link">
+                          <strong class="bk-tit bk-lineclamp-2">Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                          <ul class="bk-list-option">
+                            <li><span>국가 :</span><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                            <li><span>신청기간 :</span>2023.01.01 ~ 2023.12.31</li>
+                            <li><span>카테고리 :</span>3Depth Category</li>
+                          </ul>
+                          <ul class="bk-detail-option">
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                          </ul>
+                        </a>  
+                      </li>
+                      <li class="bk-prd-unit">
+                        <a href="#" class="bk-thumb-link">
+                          <strong class="bk-tit bk-lineclamp-2">Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                          <ul class="bk-list-option">
+                            <li><span>국가 :</span><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                            <li><span>신청기간 :</span>2023.01.01 ~ 2023.12.31</li>
+                            <li><span>카테고리 :</span>3Depth Category</li>
+                          </ul>
+                          <ul class="bk-detail-option">
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                          </ul>
+                        </a>  
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-container">
+                    <ul class="cp-prd-list">
+                      <li class="bk-prd-unit">
+                        <a href="#" class="bk-thumb-link">
+                          <strong class="bk-tit bk-lineclamp-2">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                          <ul class="bk-list-option">
+                            <li><span>국가 :</span><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                            <li><span>신청기간 :</span>2023.01.01 ~ 2023.12.31</li>
+                            <li><span>카테고리 :</span>3Depth Category</li>
+                          </ul>
+                          <ul class="bk-detail-option">
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                          </ul>
+                        </a>  
+                      </li>
+                      <li class="bk-prd-unit">
+                        <a href="#" class="bk-thumb-link">
+                          <strong class="bk-tit bk-lineclamp-2">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                          <ul class="bk-list-option">
+                            <li><span>국가 :</span><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                            <li><span>신청기간 :</span>2023.01.01 ~ 2023.12.31</li>
+                            <li><span>카테고리 :</span>3Depth Category</li>
+                          </ul>
+                          <ul class="bk-detail-option">
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                          </ul>
+                        </a>  
+                      </li>
+                      <li class="bk-prd-unit">
+                        <a href="#" class="bk-thumb-link">
+                          <strong class="bk-tit bk-lineclamp-2">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                          <ul class="bk-list-option">
+                            <li><span>국가 :</span><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                            <li><span>신청기간 :</span>2023.01.01 ~ 2023.12.31</li>
+                            <li><span>카테고리 :</span>3Depth Category</li>
+                          </ul>
+                          <ul class="bk-detail-option">
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                            <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                          </ul>
+                        </a>  
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="type-main-inquiry bk-main-close-inq">
+              <div class="title">
+                마감 예정인콰이어리
+                <div class="swiper-button-wrap">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="close-inq-slide-wrap swiper-container"> 
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide">
+                    <div class="dday day-off">오늘마감</div>
+                    <div class="bk-prd-info">
+                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                      <ul class="bk-list-option">
+                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                        <li><span>카테고리 :</span>3Depth Category</li>
+                      </ul>
+                      <ul class="bk-detail-option">
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                      </ul>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="dday">D-1</div>
+                    <div class="bk-prd-info">
+                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                      <ul class="bk-list-option">
+                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                        <li><span>카테고리 :</span>3Depth Category</li>
+                      </ul>
+                      <ul class="bk-detail-option">
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                      </ul>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="dday">D-1</div>
+                    <div class="bk-prd-info">
+                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                      <ul class="bk-list-option">
+                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                        <li><span>카테고리 :</span>3Depth Category</li>
+                      </ul>
+                      <ul class="bk-detail-option">
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                      </ul>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="dday">D-1</div>
+                    <div class="bk-prd-info">
+                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                      <ul class="bk-list-option">
+                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                        <li><span>카테고리 :</span>3Depth Category</li>
+                      </ul>
+                      <ul class="bk-detail-option">
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                      </ul>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="dday">D-2</div>
+                    <div class="bk-prd-info">
+                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                      <ul class="bk-list-option">
+                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                        <li><span>카테고리 :</span>3Depth Category</li>
+                      </ul>
+                      <ul class="bk-detail-option">
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                      </ul>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="dday">D-3</div>
+                    <div class="bk-prd-info">
+                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                      <ul class="bk-list-option">
+                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                        <li><span>카테고리 :</span>3Depth Category</li>
+                      </ul>
+                      <ul class="bk-detail-option">
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                      </ul>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="dday">D-1</div>
+                    <div class="bk-prd-info">
+                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                      <ul class="bk-list-option">
+                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                        <li><span>카테고리 :</span>3Depth Category</li>
+                      </ul>
+                      <ul class="bk-detail-option">
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                      </ul>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="dday">D-2</div>
+                    <div class="bk-prd-info">
+                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                      <ul class="bk-list-option">
+                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                        <li><span>카테고리 :</span>3Depth Category</li>
+                      </ul>
+                      <ul class="bk-detail-option">
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
 
             </section>
 
-            <section class="bk-main-close-inq">
-              마감 예정인콰이어리 
-
-            </section>
-
-            <section class="bk-main-trade">
-              트레이드쇼
-
+            <section class="type-main-inquiry bk-main-trade">
+              <div class="title">
+                트레이드쇼
+                <div class="swiper-button-wrap">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+              <div class="trade-inq-slide-wrap swiper-container"> 
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide bk-thumb-link">
+                    <div class="thumb"><img src="../../../images/tmp/image-trade.png"></div>
+                    <div class="bk-prd-info">
+                      <strong class="bk-tit bk-lineclamp-1">Trade Show Title Trade Show Title Trade Show Title Trade Trade Show Title Trade Show Title Trade Show Title Trade </strong>
+                      <span class="bk-script bk-lineclamp-2">Trade Show Detail Text Trade  Show  Detail Text Trade Shrade Show Detail Text Trade  Show  Detail Text Trade Shrade Show Detail Text Trade  Show  Detail Text Trade Shrade Show Detail Text Trade  Show  Detail Text Trade Shrade Show Detail Text Trade  Show  Detail Text Trade Show </span>
+                      <span class="bk-date">2023.10.13</span>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide bk-thumb-link">
+                    <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                    <div class="bk-prd-info">
+                      <strong class="bk-tit bk-lineclamp-1">Trade Show Title Trade Show Title Trade Show Title Trade Trade Show Title Trade Show Title Trade Show Title Trade </strong>
+                      <span class="bk-script bk-lineclamp-2">Trade Show Detail Text Trade  Show  Detail Text Trade Show </span>
+                      <span class="bk-date">2023.10.13</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </section>
           </div>
         </div>
@@ -264,9 +600,88 @@
     <!-- [S]팝업 -->
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+
+        //관심인콰이어리
+        var main_favorite_inq = new Swiper('.favorite-inq-slide-wrap', {
+            loop: $('.favorite-inq-slide-wrap .swiper-slide').length > 1,
+            spaceBetween:20,
+            speed:1000,
+            slidesPerView:1,
+            threshold: 0,
+            preventClicks: true,
+            watchOverflow: false,
+            observer: true, observeParents: true,
+            resistanceRatio: 0,
+            pagination: {
+              el: ".bk-main-favorite-inq .swiper-pagination",
+              type: 'fraction',
+            }, 
+            navigation: {
+              nextEl: '.bk-main-favorite-inq .swiper-button-next',
+              prevEl: '.bk-main-favorite-inq .swiper-button-prev',
+            },      
+            /*
+            autoplay:{
+              delay:2000,
+              disableOnInteraction: false
+            },*/
+        });
+
+         //마감예정 인콰이어리
+         var main_closing_inq = new Swiper('.close-inq-slide-wrap', {
+            loop: $('.favorite-inq-slide-wrap .swiper-slide').length > 1,
+            direction:'vertical',
+            spaceBetween:0,
+            slidesPerView: 5,
+            slidesPerGroup: 1,
+            loopFillGroupWithBlank: true,
+            threshold: 0,
+            preventClicks: true,
+            observer: true, observeParents: true,
+            resistanceRatio: 0,
+            navigation: {
+              nextEl: '.bk-main-close-inq .swiper-button-next',
+              prevEl: '.bk-main-close-inq .swiper-button-prev',
+            },      
+            
+            /*autoplay:{
+              delay:2000,
+              disableOnInteraction: false
+            },*/
+        });
+
+        //트레이드쇼
+        var main_trade_inq = new Swiper('.trade-inq-slide-wrap', {
+            loop: $('.trade-inq-slide-wrap .swiper-slide').length > 1,
+            spaceBetween:24,
+            speed:1000,
+            slidesPerView:1.33,
+            threshold: 0,
+            preventClicks: true,
+            watchOverflow: false,
+            observer: true, observeParents: true,
+            resistanceRatio: 0,
+            pagination: {
+              el: ".bk-main-trade .swiper-pagination",
+              type: 'fraction',
+            }, 
+            navigation: {
+              nextEl: '.bk-main-trade .swiper-button-next',
+              prevEl: '.bk-main-trade .swiper-button-prev',
+            },      
+            /*
+            autoplay:{
+              delay:2000,
+              disableOnInteraction: false
+            },*/
+        });
+
+       
+      });
     </script>
   </body>
 </html>
