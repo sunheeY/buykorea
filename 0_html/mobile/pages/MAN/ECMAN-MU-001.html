@@ -1846,10 +1846,14 @@
         });
         $(".bk-main-banner .slide-auto-start").on("click", function() {
           main_banner_slide.autoplay.start();
+          $(this).hide();
+          $(".bk-main-banner .slide-auto-stop").show();
         });
 
         $(".bk-main-banner .slide-auto-stop").on("click", function() {
           main_banner_slide.autoplay.stop();
+          $(this).hide();
+          $(".bk-main-banner .slide-auto-start").show();
         });
 
         //메인중간 스와이퍼
@@ -1876,10 +1880,14 @@
         });
         $(".bk-main-event .slide-auto-start").on("click", function() {
           main_event_slide.autoplay.start();
+          $(this).hide();
+          $(".bk-main-event .slide-auto-stop").show();
         });
 
         $(".bk-main-event .slide-auto-stop").on("click", function() {
           main_event_slide.autoplay.stop();
+          $(this).hide();
+          $(".bk-main-event .slide-auto-start").show();
         });
 
       });
