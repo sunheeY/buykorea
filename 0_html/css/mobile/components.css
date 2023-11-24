@@ -1791,4 +1791,24 @@ body.overflow{overflow:hidden; z-index: -1;}
 .type-main-inquiry,
 .bk-main-trade { margin-top:40px}
 .type-main-inquiry .title,
-.bk-main-trade .title{ font-size:20px; font-weight:500; display:flex; align-items: center; position:relative}
+.bk-main-trade .title{ font-size:20px; font-weight:500; display:flex; justify-content:space-between; align-items: center; position:relative}
+
+.ui-main-seller .swiper-button-wrap{ position:relative; display:flex; justify-content: space-between; }
+.ui-main-seller .swiper-button-prev,
+.ui-main-seller .swiper-button-next{ position:static; width:24px; height:24px; display:block; background:url(../../images/mobile/24x24_icon_arrow_cal.svg) no-repeat center / cover; margin-top:0}
+
+.ui-main-seller .swiper-button-prev{ transform:rotate(180deg)}
+.ui-main-seller .swiper-button-next{ }
+
+.ui-main-seller .bk-main-close-inq .swiper-button-prev{ transform:rotate(90deg)}
+.ui-main-seller .bk-main-close-inq .swiper-button-next{ transform:rotate(-90deg) }
+
+.ui-main-seller .swiper-button-prev:after,
+.ui-main-seller .swiper-button-next:after{ display:none}
+
+.bk-main-tab-inq .bk-tab{ width:100%; overflow-y:auto;}
+.bk-main-tab-inq .bk-tab .tab-item{ border:0; font-size:2rem; width:unset; height:unset; padding:0; color:var(--color-default); text-align:left;}
+.bk-main-tab-inq .bk-tab li{ position:relative; }
+.bk-main-tab-inq .bk-tab li + li{ margin-left:12px; padding-left:12px }
+.bk-main-tab-inq .bk-tab li + li:before{ content:""; width:1px; height:20px; background:#D9D9D9; display:flex; position:absolute; left:0; top:6px; }
+.bk-main-tab-inq .bk-tab .tab-item.active{ font-weight:500; color:var(--color-brand)}
