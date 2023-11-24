@@ -1859,9 +1859,11 @@ body.overflow{overflow:hidden; z-index: -1;}
 .bk-main-close-inq .close-inq-slide-wrap{ position:relative; margin-top:12px; overflow:hidden; }
 .bk-main-close-inq .close-inq-slide-wrap:before{ content:''; width:100%; height:1px; background:var(--color-brand); display:block; position:absolute; top:0; left:0; z-index:10 }
 
-.bk-main-close-inq .swiper-slide{ border-bottom:1px solid var(--color-gray); border-radius: 0; box-sizing: border-box; padding:24px 0; position:relative; height:100% !important; display:flex; align-items: stretch; justify-content: flex-start; column-gap: 18px;}
+.bk-main-close-inq .close-inq-slide-wrap{ height:100%; max-height:670px}
+.bk-main-close-inq .swiper-wrapper{ overflow:hidden}
+.bk-main-close-inq .swiper-slide{ border-bottom:1px solid var(--color-gray); border-radius: 0; box-sizing: border-box; padding:0 0 24px 0; position:relative; height:auto !important; display:flex; align-items: stretch; justify-content: flex-start; column-gap: 18px; overflow:hidden}
 .bk-main-close-inq .swiper-slide:before{ display:none}
-.bk-main-close-inq .dday{ display:block; border-radius: var(--radius-default); background:var(--color-background2); padding:18px 12px; width:100%; max-width:58px; color:var(--color-primary); font-size:1.6rem; font-weight:500; box-sizing: border-box; line-height:1.5; display:flex; align-items: center; justify-content: center;}
+.bk-main-close-inq .dday{ display:block; border-radius: var(--radius-default); background:var(--color-background2); padding:18px 12px; width:100%; max-width:58px; color:var(--color-primary); font-size:1.6rem; font-weight:500; box-sizing: border-box; line-height:1.5; display:flex; align-items: center; justify-content: center; text-align: center;}
 .bk-main-close-inq .bk-list-option,
 .bk-main-close-inq .bk-detail-option{ margin-top:8px}
 .bk-main-close-inq .bk-list-option { flex-direction:row; flex-wrap:wrap}
@@ -1871,7 +1873,7 @@ body.overflow{overflow:hidden; z-index: -1;}
 .bk-main-close-inq .bk-detail-option li{ font-size:1.3rem}
 
 /*셀러 트레이드 쇼*/
-.ui-main-seller .trade-inq-slide-wrap { margin-top:12px}
+.ui-main-seller .trade-inq-slide-wrap { margin-top:12px; }
 .ui-main-seller .bk-main-trade .bk-thumb-link .thumb {width: 100%; height: unset; overflow: hidden; position: relative; border-radius: 8px; border: 1px solid var(--color-gray); padding-bottom:70.96%}
 .ui-main-seller .bk-main-trade .bk-thumb-link .bk-prd-info {margin-top:24px}
 .ui-main-seller .bk-main-trade .bk-thumb-link .bk-script { margin-top:16px; color:var(--color-sub); line-height:1.5; font-size:1.6rem; font-weight:500}
