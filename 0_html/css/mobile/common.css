@@ -6,6 +6,7 @@
 @import url(./swiper-bundle.css); /* 컴퍼넌트-스와이퍼 */
 @import url(./components.css); /* 컴퍼넌트 */
 @import url(./components_y.css); /* 컴퍼넌트2 */
+@import url(./flags.css); /* 국기 */
 
 #skip {position: relative; z-index: 3000;}
 #skip a {position: absolute; top: -30px; left: 0; width: 138px; border: 1px solid #4ec53d; background: #333; text-align: center;}
@@ -101,24 +102,25 @@
 .ui-footer .corp-area {flex-direction: column; }
 .ui-footer .site-group {position: relative; padding-bottom: 30px;}
 .ui-footer .site-group::after {position: absolute; right: -20px; bottom: 0; left: -20px; height: 1px; background-color: #595959; content: "";}
-.ui-footer .corp-group {padding-top: 30px; color: #767676; font-size: 13px; line-height: 1.61; margin-bottom:30px;}
-.ui-footer .corp-group address {margin-bottom:16px;}
-.ui-footer .list-corp {color: #fff; font-size: 12px; letter-spacing:-0.045rem;  }
+.ui-footer .corp-group {padding-top: 30px; color: #767676; font-size: 13px; line-height: 1.61;}
+/* .ui-footer .corp-group address {margin-bottom:16px;} */
+.ui-footer .list-corp {color: #fff; font-size: 12px; letter-spacing:-0.024rem;  }
 .ui-footer .list-corp > li {position: relative;}
 .ui-footer .list-corp > li + li {margin-left: 16px;}
 .ui-footer .list-corp .policy {color: var(--color-primary);}
-.ui-footer .corp-group .copyright {font-size: 12px; line-height: 1.5;}
+.ui-footer .corp-group .copyright {font-size: 12px; line-height: 1.5; margin-top: 15px;}
+.ui-footer .list-corp .bk-txt-red {font-weight: 500;}
 
 .ui-footer .inquiry_area {display: flex; flex-direction: column;  }
 .ui-footer .inquiry_area .inquiry-area dt{color:#767676; margin-bottom:8px; font-size:13px; line-height:1.61;  }
 .ui-footer .list-inquiry{display:flex; flex-flow:row wrap; color: #fff; font-size: 12px; font-weight:500; gap:8px 20px;}
-.ui-footer .aside_area {display: flex; justify-content: space-between; align-items: center; padding-top: 30px;}
+.ui-footer .aside_area {display: flex; justify-content: space-between; align-items: center; padding-top: 30px; gap: 50px;}
 .ui-footer .sns-area,
-.ui-footer .sns-area .list-sns {display: flex; align-items: center;}
+.ui-footer .sns-area .list-sns {display: flex; align-items: center; position: absolute; top: 0; right: 0;}
 .ui-footer .sns-area .list-sns > li ~ * {margin-left: 16px;}
-.ui-footer .family-area {margin-left: 25px; width:100%;}
+.ui-footer .family-area {width:100%;}
 .ui-footer .family-area .family-group {position: relative;}
-.ui-footer .family-area .bk-btn {width:100%; justify-content: space-between; padding:0; color:#fff; font-size:13px;}
+.ui-footer .family-area .bk-btn {width:100%; justify-content: space-between; height: auto; padding: 6px 12px 5px; color:#fff; font-size:13px; background: rgba(255,255,255,.05);}
 
 /* [공통] class */
 /* [공통]아이콘 */

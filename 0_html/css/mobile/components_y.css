@@ -764,3 +764,8 @@
 .inquiry-list .bk-list-detail .bk-list-option a {display: inline-block; color: inherit}
 .inquiry-list .bk-btn-group {gap: 4px; justify-content: flex-end; padding: 10px 12px; background: #f6f6f6;}
 .open-list .bk-list-detail .bk-thumb-link {display: block;}
+
+/* 쿠키 */
+.cp-cookie-layer {background: #F3F5F8; border: 1px solid #ddd; padding: 24px 20px 64px; font-size: 1.4rem; line-height: 1.57143; color: #000; top: unset; height: auto;}
+.cp-cookie-layer a {text-decoration: underline;}
+.cp-cookie-layer button[role="dialogCloseBtn"] {position: absolute; bottom: 26px; right: 20px;}

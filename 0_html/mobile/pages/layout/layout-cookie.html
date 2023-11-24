@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA for Buyers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../../css/mobile/common.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+    <!-- [S]바로가기 -->
+    <div id="skip">
+      <a href="#contents"><span>본문내용 바로가기</span></a>
+      <a href="#gnb"><span>주메뉴 바로가기</span></a>
+      <a href="#lnb"><span>서브메뉴 바로가기</span></a>
+      <a href="#header"><span>해더 바로가기</span></a>
+      <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!--// [E]바로가기 -->
+    <!-- [S]ui-wrap -->
+    <div class="ui-wrap">
+      <!-- [S]header -->
+      <header id="header" class="ui-header">
+        <div class="header-area">
+          header
+          
+        </div>
+      </header>
+      <!--// [E]header -->
+
+      <!-- [S]container -->
+      <!-- [s] cont header 디자인변경으로 영역 추가 -->
+      <section class="header-cont">
+        title
+      </section>
+      <!-- [e] cont header 디자인변경으로 영역 추가 -->
+
+      <main id="container" class="ui-container ui-mypage">
+        <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
+
+        <div class="ui-content-wrap ui-inner">
+          <div class="ui-contents" id="contents">
+            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-cookie')">쿠키</button>
+          </div>
+
+          
+        </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">Top</div>
+        <!--// [E]Top버튼 -->
+      </main>
+      <!--// [E]container -->
+      <!-- [S]footer -->
+      <footer id="footer" class="ui-footer">
+        <div class="ui-inner">
+          footer
+        </div>
+      </footer>
+      <!--// [E]footer -->
+    </div>
+    <!--// [E]ui-wrap -->
+
+    <!-- [S]팝업 -->
+    <div class="bk-dialog cp-cookie-layer" id="dialog-cookie">
+      We collect and use cookies. A cookie is a small piece of data that a website stores on the visitor’s computer or mobile device.<br>
+      We use functional cookies to make sure our website works well and secure. For more information about cookies, please read our <a href="#">Privacy Policy</a>.
+      <button type="button" class="bk-btn bk-btn-intbl" role="dialogCloseBtn">
+        <span class="text">Close</span>
+       </button>
+    </div>
+    <!--// [E]팝업 -->
+    <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/mobile/ui_common.js"></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </body>
+</html>
