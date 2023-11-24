@@ -1664,15 +1664,15 @@
               <ul class="cp-board-list">
                 <li>
                   <a href="#" class="bk-title bk-lineclamp-2">Notice Title Notice Title Notice Title Notice Title Notice Title Notice Title Notice Title Notice TitleNotice Title Notice TitleNotice Title Notice Title</a>
-                  <span class="bk-date">YYYY-MM-DD ~ YYYY-MM-DD</span>
+                  <span class="bk-date">YYYY-MM-DD</span>
                 </li>
                 <li>
                   <a href="#" class="bk-title bk-lineclamp-2">Notice Title2 Notice Title2 Notice Title2 Notice Title2 Notice Title2 Notice Title2 Notice Title2 Notice Title2 Notice Title2</a>
-                  <span class="bk-date">YYYY-MM-DD ~ YYYY-MM-DD</span>
+                  <span class="bk-date">YYYY-MM-DD</span>
                 </li>
                 <li>
                   <a href="#" class="bk-title bk-lineclamp-2">Notice Title3 Notice Title3 Notice Title3 Notice Title3 Notice Title3</a>
-                  <span class="bk-date">YYYY-MM-DD ~ YYYY-MM-DD</span>
+                  <span class="bk-date">YYYY-MM-DD</span>
                 </li>
               </ul>
             </section>
@@ -1838,6 +1838,7 @@
             resistanceRatio: 0,
             pagination: {
               el: ".bk-main-banner .swiper-pagination",
+              clickable: true,
             },       
             autoplay:{
               delay:2000,
@@ -1846,10 +1847,14 @@
         });
         $(".bk-main-banner .slide-auto-start").on("click", function() {
           main_banner_slide.autoplay.start();
+          $(this).hide();
+          $(".bk-main-banner .slide-auto-stop").show();
         });
 
         $(".bk-main-banner .slide-auto-stop").on("click", function() {
           main_banner_slide.autoplay.stop();
+          $(this).hide();
+          $(".bk-main-banner .slide-auto-start").show();
         });
 
         //메인중간 스와이퍼
@@ -1864,6 +1869,7 @@
             resistanceRatio: 0,
             pagination: {
               el: ".bk-main-event .swiper-pagination",
+              clickable: true,
             }, 
             navigation: {
               nextEl: '.event-slide-wrap .swiper-button-next',
@@ -1876,10 +1882,14 @@
         });
         $(".bk-main-event .slide-auto-start").on("click", function() {
           main_event_slide.autoplay.start();
+          $(this).hide();
+          $(".bk-main-event .slide-auto-stop").show();
         });
 
         $(".bk-main-event .slide-auto-stop").on("click", function() {
           main_event_slide.autoplay.stop();
+          $(this).hide();
+          $(".bk-main-event .slide-auto-start").show();
         });
 
       });

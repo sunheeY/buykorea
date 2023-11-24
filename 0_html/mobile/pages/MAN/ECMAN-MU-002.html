@@ -80,8 +80,11 @@
               </nav>
 
             </div>
-      </section>
-      <!-- [e] cont header 디자인변경으로 영역 추가 -->
+          </div>
+        </div>
+      </header>
+      <!--// [E]header -->
+      <!-- [S]container -->
       <main id="container" class="ui-container ui-main ui-main-seller"><!--[D] 메인 클래스 추가-->
 
         <div class="ui-content-wrap ui-inner">
@@ -90,35 +93,33 @@
               <h2 class="title">안녕하세요, <strong>홍길동님</strong></h2>
               <div class="bk-summary message">
                 <span>안 읽은 메시지</span>
-                <span class="count"><strong>100</strong>개</span>
+                <a href="#" class="count"><strong>100</strong>개</a>
               </div>
 
               <div class="bk-summary order-dashboard grid3">
-                <ul>
-                  <li>
-                    <span>견적</span>
-                    <strong>100</strong>
-                  </li>
-                  <li>
-                    <span>주문</span>
-                    <strong>100</strong>
-                  </li>
-                  <li>
-                    <span>인보이스</span>
-                    <strong>100</strong>
-                  </li>
+                <a href="#">
+                  <span>견적</span>
+                  <strong>100</strong>
+                </a>
+                <a href="#">
+                  <span>주문</span>
+                  <strong>100</strong>
+                </a>
+                <a href="#">
+                  <span>인보이스</span>
+                  <strong>100</strong>
+                </a>
               </div>
 
               <div class="bk-summary order-dashboard grid2">
-                <ul>
-                  <li>
-                    <span>결제</span>
-                    <strong>100</strong>
-                  </li>
-                  <li>
-                    <span>배송</span>
-                    <strong>100</strong>
-                  </li>
+                <a href="#">
+                  <span>결제</span>
+                  <strong>100</strong>
+                </a>
+                <a href="#">
+                  <span>배송</span>
+                  <strong>100</strong>
+                </a>
               </div>
             </section>
 
@@ -303,65 +304,155 @@
                 </div>
               </div>
 
+              <!--5개씩 slide 하나에 리스트 출력-->
               <div class="close-inq-slide-wrap swiper-container"> 
                 <div class="swiper-wrapper">
-                  <a href="#" class="swiper-slide">
-                    <div class="dday day-off">오늘마감</div>
-                    <div class="bk-prd-info">
-                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
-                      <ul class="bk-list-option">
-                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
-                        <li><span>카테고리 :</span>3Depth Category</li>
-                      </ul>
-                      <ul class="bk-detail-option">
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide">
-                    <div class="dday">D-1</div>
-                    <div class="bk-prd-info">
-                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
-                      <ul class="bk-list-option">
-                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
-                        <li><span>카테고리 :</span>3Depth Category</li>
-                      </ul>
-                      <ul class="bk-detail-option">
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide">
-                    <div class="dday">D-1</div>
-                    <div class="bk-prd-info">
-                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
-                      <ul class="bk-list-option">
-                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
-                        <li><span>카테고리 :</span>3Depth Category</li>
-                      </ul>
-                      <ul class="bk-detail-option">
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide">
-                    <div class="dday">D-1</div>
-                    <div class="bk-prd-info">
-                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
-                      <ul class="bk-list-option">
-                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
-                        <li><span>카테고리 :</span>3Depth Category</li>
-                      </ul>
-                      <ul class="bk-detail-option">
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="dday day-off">오늘마감</div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                        <ul class="bk-list-option">
+                          <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                          <li><span>카테고리 :</span>3Depth Category</li>
+                        </ul>
+                        <ul class="bk-detail-option">
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dday">D-1</div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                        <ul class="bk-list-option">
+                          <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                          <li><span>카테고리 :</span>3Depth Category</li>
+                        </ul>
+                        <ul class="bk-detail-option">
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dday">D-1</div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                        <ul class="bk-list-option">
+                          <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                          <li><span>카테고리 :</span>3Depth Category</li>
+                        </ul>
+                        <ul class="bk-detail-option">
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dday">D-1</div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                        <ul class="bk-list-option">
+                          <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                          <li><span>카테고리 :</span>3Depth Category</li>
+                        </ul>
+                        <ul class="bk-detail-option">
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dday">D-2</div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                        <ul class="bk-list-option">
+                          <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                          <li><span>카테고리 :</span>3Depth Category</li>
+                        </ul>
+                        <ul class="bk-detail-option">
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="dday">D-3</div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                        <ul class="bk-list-option">
+                          <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                          <li><span>카테고리 :</span>3Depth Category</li>
+                        </ul>
+                        <ul class="bk-detail-option">
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dday day-off">오늘마감</div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                        <ul class="bk-list-option">
+                          <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                          <li><span>카테고리 :</span>3Depth Category</li>
+                        </ul>
+                        <ul class="bk-detail-option">
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dday">D-1</div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                        <ul class="bk-list-option">
+                          <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                          <li><span>카테고리 :</span>3Depth Category</li>
+                        </ul>
+                        <ul class="bk-detail-option">
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dday">D-1</div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                        <ul class="bk-list-option">
+                          <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                          <li><span>카테고리 :</span>3Depth Category</li>
+                        </ul>
+                        <ul class="bk-detail-option">
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dday">D-1</div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
+                        <ul class="bk-list-option">
+                          <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
+                          <li><span>카테고리 :</span>3Depth Category</li>
+                        </ul>
+                        <ul class="bk-detail-option">
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
+                          <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
                     <div class="dday">D-2</div>
                     <div class="bk-prd-info">
                       <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
@@ -374,49 +465,8 @@
                         <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
                       </ul>
                     </div>
-                  </a>
-                  <a href="#" class="swiper-slide">
-                    <div class="dday">D-3</div>
-                    <div class="bk-prd-info">
-                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
-                      <ul class="bk-list-option">
-                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
-                        <li><span>카테고리 :</span>3Depth Category</li>
-                      </ul>
-                      <ul class="bk-detail-option">
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide">
-                    <div class="dday">D-1</div>
-                    <div class="bk-prd-info">
-                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
-                      <ul class="bk-list-option">
-                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
-                        <li><span>카테고리 :</span>3Depth Category</li>
-                      </ul>
-                      <ul class="bk-detail-option">
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide">
-                    <div class="dday">D-2</div>
-                    <div class="bk-prd-info">
-                      <strong class="bk-tit bk-lineclamp-1">SNS Contents Title Contents Title Contents TitleContents Title Contents Title Contents TitleContents Title Contents Title Contents Title</strong>
-                      <ul class="bk-list-option">
-                        <li><i><img src="../../../images/tmp/tmp-france.png"></i>프랑스</li>
-                        <li><span>카테고리 :</span>3Depth Category</li>
-                      </ul>
-                      <ul class="bk-detail-option">
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-message"></i></span>1,000</li>
-                        <li><span class="deco-icon"><i class="bk-icon bk-icon-like"></i></span>1,000</li>
-                      </ul>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -437,16 +487,14 @@
                     <div class="thumb"><img src="../../../images/tmp/image-trade.png"></div>
                     <div class="bk-prd-info">
                       <strong class="bk-tit bk-lineclamp-1">Trade Show Title Trade Show Title Trade Show Title Trade Trade Show Title Trade Show Title Trade Show Title Trade </strong>
-                      <span class="bk-script bk-lineclamp-2">Trade Show Detail Text Trade  Show  Detail Text Trade Shrade Show Detail Text Trade  Show  Detail Text Trade Shrade Show Detail Text Trade  Show  Detail Text Trade Shrade Show Detail Text Trade  Show  Detail Text Trade Shrade Show Detail Text Trade  Show  Detail Text Trade Show </span>
-                      <span class="bk-date">2023.10.13</span>
+                      <span class="bk-date">YYYY-MM-DD ~ YYYY-MM-DD</span>
                     </div>
                   </a>
                   <a href="#" class="swiper-slide bk-thumb-link">
                     <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
                     <div class="bk-prd-info">
                       <strong class="bk-tit bk-lineclamp-1">Trade Show Title Trade Show Title Trade Show Title Trade Trade Show Title Trade Show Title Trade Show Title Trade </strong>
-                      <span class="bk-script bk-lineclamp-2">Trade Show Detail Text Trade  Show  Detail Text Trade Show </span>
-                      <span class="bk-date">2023.10.13</span>
+                      <span class="bk-date">YYYY-MM-DD ~ YYYY-MM-DD</span>
                     </div>
                   </a>
                 </div>
@@ -628,13 +676,14 @@
             },*/
         });
 
-         //마감예정 인콰이어리
+        //마감예정 인콰이어리
          var main_closing_inq = new Swiper('.close-inq-slide-wrap', {
-            loop: $('.favorite-inq-slide-wrap .swiper-slide').length > 1,
-            direction:'vertical',
-            spaceBetween:24,
-            slidesPerView: 5,
-            slidesPerGroup: 1,
+            loop: $('.close-inq-slide-wrap .swiper-slide').length > 1,
+            spaceBetween:20,
+            slidesPerView: 1,
+            //slidesPerColumn: 1,
+            //slidesPerGroup: 5,
+            //loopFillGroupBlank: false,
             threshold: 0,
             preventClicks: true,
             observer: true, observeParents: true,
@@ -642,21 +691,7 @@
             navigation: {
               nextEl: '.bk-main-close-inq .swiper-button-next',
               prevEl: '.bk-main-close-inq .swiper-button-prev',
-            },      
-            on: {
-              init: function (swiper) {
-                const slider = document.querySelector(".favorite-inq-slide-wrap");
-                const currentSlide = swiper.slides[swiper.activeIndex];
-                const currentSlideItem = currentSlide.children[0];
-                slider.style.height = currentSlideItem.clientHeight + "px";
-              },
-              slideChange: function (swiper) {
-                const slider = document.querySelector(".favorite-inq-slide-wrap");
-                const currentSlide = swiper.slides[swiper.activeIndex];
-                const currentSlideItem = currentSlide.children[0];
-                slider.style.height = currentSlideItem.clientHeight + "px";
-              },
-            }
+            },   
             
             /*autoplay:{
               delay:2000,
