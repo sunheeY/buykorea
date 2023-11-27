@@ -1937,7 +1937,7 @@ body.overflow{overflow:hidden; z-index: -1;}
 .bk-related .related-slide-wrap{ margin-top:12px}
 .bk-related .swiper-slide{border:1px solid var(--color-gray); border-radius: 8px; padding:20px 24px; box-sizing: border-box;}
 .bk-related .related-slide-wrap.slide-buyer .swiper-slide{border:0 solid var(--color-gray); border-radius: 0; padding:8px 0 0 0}
-.bk-related .swiper-slide .bk-tit{ font-size:18px; font-weight:500}
+.bk-related .swiper-slide .bk-tit{ font-size:18px; font-weight:500; text-decoration: underline;}
 .bk-related .swiper-slide .bk-category{ font-size:16px; margin-top:8px }
 
 .bk-related .swiper-slide.bk-thumb-link{ display:flex; justify-content: flex-start; column-gap:12px;}
