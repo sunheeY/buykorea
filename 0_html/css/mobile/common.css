@@ -192,6 +192,7 @@
 .bk-icon.bk-icon-toggle-more {width: 12px; height: 12px; background-image: url(../../images/mobile/icon-arrow-down-black.svg);} /* toggle-more */
 .bk-icon.bk-icon-toggle-more.is-active {transform:rotate(180deg);  } /* toggle-more */
 .bk-icon.bk-icon-keyword {width: 30px; height: 30px; background-image: url(../../images/mobile/icon-keyword-30x30.svg);} /* search-keyword */
+.bk-icon.bk-btn-trash {width: 20px; height: 21px; background: url(../../images/mobile/btn_delete.svg); text-indent: -9999px; overflow: hidden; margin-left: 6px;}
 
 .acc-item .bk-icon.bk-icon-arrow-accordion {width: 20px; height: 20px; background-image: url(../../images/mobile/icon-arrow-accordion.svg);} /* toggle-more */
 .acc-item.is-active .bk-icon.bk-icon-arrow-accordion {transform:rotate(0deg);  } /* toggle-more */

@@ -917,3 +917,35 @@ function logoFileDelete(){
       return false;
     });
   });
+
+//최근리스트 삭제
+var recentCount = 0;
+$('[role="recentCloseBtn"]').on('click', function(e){
+   var recentList = $(this).parents('.bk-recent-ul').find('dd').length;
+   if(recentCount == 0){
+      recentCount = recentList;
+   }
+  
+   if( recentList > 1){
+      if( recentCount == 1){
+         $(this).closest('.bk-recent-ul').hide();  
+      }
+      $(this).parents('dd').hide();  
+      recentCount--;   
+   }
+
+   if( recentList == recentCount && recentList == 1){
+      $(this).closest('.bk-recent-ul').hide();  
+      recentCount = 0;
+   }
+});
+
+
+//전체삭제
+/*$('[role="alltCloseBtn"]').on('click', function(e){
+   $("dl[class^='bk-recent-ul']").each(function() {
+      $(this).hide();
+      $('.bk-recent-toolbar').hide();
+   });
+});*/
+

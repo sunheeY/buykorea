@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA for Buyers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../../css/mobile/common.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+    <!-- [S]바로가기 -->
+    <div id="skip">
+      <a href="#contents"><span>본문내용 바로가기</span></a>
+      <a href="#gnb"><span>주메뉴 바로가기</span></a>
+      <a href="#lnb"><span>서브메뉴 바로가기</span></a>
+      <a href="#header"><span>해더 바로가기</span></a>
+      <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!--// [E]바로가기 -->
+    <!-- [S]ui-wrap -->
+    <div class="ui-wrap">
+      <!-- [S]header -->
+      <header id="header" class="ui-header">
+        <div class="header-area">
+          <div class="header-comm">
+            <div class="ui-left">
+              <h1 class="logo">
+                <a href="#">Buy Korea</a>
+              </h1>
+            </div>
+            <div class="my-util">
+              <button type="button" class="bk-icon-only icon-search">
+                <i class="bk-icon bk-icon-searchBlack">검색</i>
+              </button>
+              <button type="button" class="bk-icon-only icon-cart">
+                <i class="bk-icon bk-icon-cart">장바구니</i>
+                <em class="alert-info">99+</em>
+              </button>
+
+              <button type="button" class="bk-icon-only icon-gnb-menu">
+                <i class="bk-icon bk-icon-gnb-menu">메뉴</i>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--// [E]header -->
+
+      <!-- [S]container -->
+      <!-- [s] cont header 디자인변경으로 영역 추가 -->
+      <section class="header-cont">
+        <button type="button" class="bk-icon-only">
+          <i class="bk-icon bk-icon-gnb-prev">이전</i>
+          </button>
+            <h2 class="cont-title">최근 본 인콰이어리</h2>
+            <button type="button" class="btn-like">좋아요</button>
+      </section>
+      <!-- [e] cont header 디자인변경으로 영역 추가 -->
+      <main id="container" class="ui-container">
+        <div class="ui-content-wrap ui-inner">
+          <div class="ui-contents" id="contents">
+            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-modal')">최근 본 인콰이어리</button>
+          </div>
+        </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">Top</div>
+        <!--// [E]Top버튼 -->
+      </main>
+      <!--// [E]container -->
+      <!-- [S]footer -->
+      <footer id="footer" class="ui-footer">
+        <div class="ui-inner">
+          <div class="corp-area">
+            <div class="site-group">
+              <h2 class="logo">
+                <img
+                  src="../../../images/mobile/logo-kotra-dark.svg"
+                  alt="Kotra Trade-Investment Promtion Agency"
+                />
+              </h2>
+              <ul class="list-corp">
+                <li><a href="#none">About Terms</a></li>
+                <li><a href="#none">Terms of Use</a></li>
+                <li><a href="#none">Special Terms</a></li>
+                <li><a href="#none">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="corp-group">
+              <address class="address">
+                13, Heolleung-ro, Seocho-gu, Seoul, Korea<br>(Postal Code: 06792)<br>
+                F. +82-2-3460-7951 / E. buykorea@kotra.or.kr
+              </address>
+              <p class="copyright">
+                Copyright ⓒ 2023 KOTRA & buyKOREA All rights reserved.
+              </p>
+            </div>
+          </div>
+          <div class="inquiry_area">
+            <dl class="inquiry-area">
+              <dt>Inquiry on buy KOREA</dt>
+              <dd>
+                <ul class="list-inquiry">
+                  <li><a href="#none" target="_blank">Business Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Product Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Open Inquiry</a></li>
+                  <li><a href="#none" target="_blank">Non Member Inquiry</a></li>                  
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="aside_area">
+            <dl class="sns-area">
+              <dt class="ir-su">SNS</dt>
+              <dd>
+                <ul class="list-sns">
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-linkedIn">linkedIn</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-facebook">facebook</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-twitter">twitter</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="bk-icon-only" target="_blank">
+                      <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                    </a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <div class="family-area">
+              <div class="family-group">
+                <button
+                  type="button"
+                  class="bk-btn bk-btn-icon"
+                  component="dropdownMenu"
+                >
+                  <span class="text">Family Site</span>
+                  <span class="deco-icon append-icon">
+                    <i class="bk-icon bk-icon-plus-gray">+</i>
+                  </span>
+                </button>
+                <div class="cp-layer layer-dropdown layer-family">
+                  <!--// [D]dim처리시 class="dim", 검정색 dim처리시 class="dim-dark",  흰색 dim처리시 class="dim-light" -->
+                  <div class="layer-inner">
+                    <ul class="list-family">
+                      <li>
+                        <a
+                          href="https://www.kotra.or.kr/english/index.do"
+                          target="_blank"
+                          >KOTRA</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.investkorea.org/ik-en/index.do"
+                          target="_blank"
+                          >Invest Korea</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://www.buykorea.or.kr" target="_blank"
+                          >buyKOREA for Seller</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://contactkorea.kotra.or.kr/en/index.do"
+                          target="_blank"
+                          >Recruiting Center</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://kodits.kotra.or.kr" target="_blank"
+                          >KODITS</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://ombudsman.kotra.or.kr/ob-en/index.do"
+                          target="_blank"
+                          >OMBUDSMAN</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--// [E]footer -->
+    </div>
+    <!--// [E]ui-wrap -->
+
+    <!-- [S]팝업 -->
+
+    <div class="bk-dialog dialog-full" id="dialog-modal">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">최근 본 인콰이어리</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <div class="bk-empty-text">
+              <i class="bk-icon bk-icon-empty">empty</i>  
+              <div class="bk-text-field">
+                <h2 class="title">최근 본<br>인콰이어리가 없습니다.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// [E]팝업 -->
+    <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
+    <script src="../../../js/mobile/ui_common.js"></script>
+    <script>
+      $(document).ready(function () {
+
+        var main_related_slide = new Swiper('.related-slide-wrap', {
+            spaceBetween:20,
+            speed:1000,
+            slidesPerView:1,
+            threshold: 0,
+            preventClicks: true,
+            observer: true, observeParents: true,
+            resistanceRatio: 0,
+            navigation: {
+              nextEl: '.bk-related .swiper-button-next',
+              prevEl: '.bk-related .swiper-button-prev',
+            },      
+        });
+
+      });
+    </script>
+  </body>
+</html>
