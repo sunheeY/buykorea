@@ -537,8 +537,16 @@ a.btn-text .text {text-decoration: underline;}
 
 .bk-tab.tab-type-sub-line .tab-item.active {background: var(--color-primary); color:var(--color-white); font-weight: 700;}
 .bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu > li {flex: 1 0 50%;}
+.bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu.menu-third > li {flex: 1 0 calc(100% / 3);}
+.bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu.menu-third > li button {height: 100%;}
 
 .tab-container .cp-search.search-topType {margin-top: -24px;}
+
+.dialog-container .tab-type-sub-line .tab-menu-wrap {top: 0; border-top: 0;}
+.dialog-container .tab-container .cp-category {margin: -24px -20px}
+.dialog-container .tab-container .cp-category .in-subdepth {padding: 16px 0;}
+.dialog-container .tab-container .category-depth01 > a {padding: 16px 20px;}
+.dialog-container .tab-container .category-depth04 {padding: 0 11px;}
 
 /* 아코디언 */
 .bk-accordion {}
