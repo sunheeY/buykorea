@@ -91,7 +91,16 @@
 /* [Layout]container 영역 */
 .ui-container {display: flex; flex-direction: column; flex: 1 0 auto; max-width: 100%; transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1); position: relative; padding: 24px 20px 80px 20px; box-sizing: border-box;}
 .ui-content-wrap .ui-lnb {min-width: 200px; margin-right: 40px; background-color: #f0f0f0;}
-.ui-setting-btns {z-index: 50; position: fixed; right: 24px; bottom: 200px; display:none; /*우선 가려둚*/}
+.ui-setting-btns {z-index: 50; position: fixed; right: 24px; bottom: 100px; /*우선 가려둚*/}
+.ui-setting-btns [class^=ico-quick0] {display: block; position: relative; margin-top: 12px; width: 64px; height: 64px; overflow: hidden; border-radius: 50%; box-shadow: 0 0 0 1px #ddd, 2px 6px 10px 0px rgba(0,0,0,.3);;}
+.ui-setting-btns [class^=ico-quick0]::before {content: ''; display: block; width: 64px; height: 64px; background-color: #fff; background-position: 50% 50%; background-repeat: no-repeat;}
+.ui-setting-btns .ico-quick01::before {background-image: url(../../images/mobile/ico-quick-1.svg);}
+.ui-setting-btns .ico-quick02::before {background-image: url(../../images/mobile/ico-quick-2.svg);}
+.ui-setting-btns .ico-quick03::before {background-image: url(../../images/mobile/ico-quick-3.svg);}
+.ui-setting-btns .ico-quick04::before {background-image: url(../../images/mobile/ico-quick-4.svg);}
+.ui-setting-btns .ico-quick04 {display: none;}
+.ui-setting-btns [class^=ico-quick0] .alert-info {left: 50%; bottom: 50%;}
+
 /* [Layout]footer 영역 */
 .ui-footer {border-top: 1px solid #ddd;}
 .ui-footer .ui-inner {background-color: #222; color: #767676;}
@@ -116,8 +125,8 @@
 .ui-footer .list-inquiry{display:flex; flex-flow:row wrap; color: #fff; font-size: 12px; font-weight:500; gap:8px 20px;}
 .ui-footer .aside_area {display: flex; justify-content: space-between; align-items: center; padding-top: 30px; gap: 50px;}
 .ui-footer .sns-area,
-.ui-footer .sns-area .list-sns {display: flex; align-items: center; position: absolute; top: 0; right: 0;}
-.ui-footer .sns-area .list-sns > li ~ * {margin-left: 16px;}
+.ui-footer .list-sns {display: flex; align-items: center; position: absolute; top: 0; left: 125px;}
+.ui-footer .list-sns > li ~ * {margin-left: 16px;}
 .ui-footer .family-area {width:100%;}
 .ui-footer .family-area .family-group {position: relative;}
 .ui-footer .family-area .bk-btn {width:100%; justify-content: space-between; height: auto; padding: 6px 12px 5px; color:#fff; font-size:13px; background: rgba(255,255,255,.05);}

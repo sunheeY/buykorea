@@ -3,7 +3,8 @@
 /* 어디든 */
 .no-gap {gap: 0;}
 .bk-txt-gray {color: var(--color-sub)}
-.bk-txt-red {color: var(--color-warning);}
+.bk-txt-red {color: var(--color-warning) !important;}
+/* a:visited.bk-txt-red {color: var(--color-warning) !important;} */
 .bk-align-num {text-align: right !important;}
 [class*=lineclamp] {text-overflow: ellipsis ; display: -webkit-box; -webkit-box-orient: vertical; white-space: normal; overflow: hidden;}
 [class*=lineclamp] a {display: block;}

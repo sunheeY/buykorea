@@ -73,7 +73,7 @@ function preLoad() {
   if ($('.nav-menu-list').length > 0) { noSubdepth()}
 
   // 좋아요
-  $('.btn-like, .bk-icon-like').click( function() {
+  $('.btn-like, .bk-icon-like, .btn-favorite').click( function() {
     $(this).toggleClass('is-active');
   })
 }
@@ -107,6 +107,9 @@ $.fn.extend({
           inactive();
         } else {
           active();
+          if ($this.closest('#footer')) {
+            $this.closest('.family-area').siblings().find('.cp-layer, .bk-btn-icon').removeClass('is-active');
+          }
         }
       });
 
@@ -853,7 +856,17 @@ function logoFileDelete(){
     var lastScrollTop = $(window).scrollTop();
     var headerHeight = $('.header-comm').outerHeight();
     var contHeadHeight = $('.header-cont').outerHeight();
+    var footerHeight = $('footer').offset().top;
 
+    function quickM() {
+      // if(lastScrollTop >= 0 && $(window).height() - 100 <= footerHeight - lastScrollTop ) {
+      if(lastScrollTop >= 0) {
+        $('.ui-setting-btns').show();
+        if(lastScrollTop >= headerHeight) {$('.ui-setting-btns .ico-quick04').css('display','block');}
+        else $('.ui-setting-btns .ico-quick04').css('display','none');
+      } else $('.ui-setting-btns').hide();
+    };
+    quickM();
     if (lastScrollTop > 0) {$('.ui-header').css('position', 'static');}
     else if (lastScrollTop >= headerHeight) {$('.header-cont').addClass('bk-sticky').css('top', 0);}
 
@@ -870,6 +883,7 @@ function logoFileDelete(){
     })
 
     $(window).scroll(function() {
+      quickM();
       var st = $(this).scrollTop();
       if (st <= 1 || st < lastScrollTop) {
         // console.log('위로');
@@ -897,7 +911,11 @@ function logoFileDelete(){
 
   $(document).ready(function () {
     scrollCall();
-    $(window).scroll(scrollCall)
+    $(window).scroll(scrollCall);
+    $('.ui-setting-btns > .ico-quick04').click(function(){
+      $('html').animate({scrollTop:0},400);
+      return false;
+    });
   });
 
 //최근리스트 삭제
@@ -930,3 +948,4 @@ $('[role="recentCloseBtn"]').on('click', function(e){
       $('.bk-recent-toolbar').hide();
    });
 });*/
+
