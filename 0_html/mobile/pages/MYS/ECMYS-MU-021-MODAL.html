@@ -72,9 +72,7 @@
             <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-invoice')">인보이스 유효성</button>            
           </div>
         </div>
-        <!-- [S]Top버튼 -->
-        <div class="ui-setting-btns">Top</div>
-        <!--// [E]Top버튼 -->
+
       </main>
       <!--// [E]container -->
       <!-- [S]footer -->
@@ -88,71 +86,91 @@
                   alt="Kotra Trade-Investment Promtion Agency"
                 />
               </h2>
+              <ul class="list-sns">
+                <li>
+                  <a href="https://www.linkedin.com/company/buykorea-kotra" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-linkedIn">linkedIn</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.Instagram.com/buykorea_kotra/" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                  </a>
+                </li>
+              </ul>
               <ul class="list-corp">
                 <li><a href="#none">About Terms</a></li>
                 <li><a href="#none">Terms of Use</a></li>
-                <li><a href="#none">Special Terms</a></li>
-                <li><a href="#none">Privacy Policy</a></li>
+                <li><a href="#none" class="bk-txt-red">Privacy Policy</a></li>
               </ul>
             </div>
             <div class="corp-group">
               <address class="address">
-                13, Heolleung-ro, Seocho-gu, Seoul, Korea<br>(Postal Code: 06792)<br>
-                F. +82-2-3460-7951 / E. buykorea@kotra.or.kr
+                13, Heolleung-ro, Seocho-gu, Seoul, Korea <br>(Postal Code: 06792)<br>
+                T. 1600-7119 / F. +82-2-3460-7951 
               </address>
+              E. <a href="mailto:buykorea@kotra.or.kr">buykorea@kotra.or.kr</a>
               <p class="copyright">
-                Copyright ⓒ 2023 KOTRA & buyKOREA All rights reserved.
+                &copy; KOTRA &#38; buyKOREA. ALL RIGHTS RESERVED.
               </p>
             </div>
           </div>
-          <div class="inquiry_area">
-            <dl class="inquiry-area">
-              <dt>Inquiry on buy KOREA</dt>
-              <dd>
-                <ul class="list-inquiry">
-                  <li><a href="#none" target="_blank">Business Inquiry</a></li>
-                  <li><a href="#none" target="_blank">Product Inquiry</a></li>
-                  <li><a href="#none" target="_blank">Open Inquiry</a></li>
-                  <li><a href="#none" target="_blank">Non Member Inquiry</a></li>                  
-                </ul>
-              </dd>
-            </dl>
-          </div>
+          
           <div class="aside_area">
-            <dl class="sns-area">
-              <dt class="ir-su">SNS</dt>
-              <dd>
-                <ul class="list-sns">
-                  <li>
-                    <a href="#none" class="bk-icon-only" target="_blank">
-                      <i class="bk-icon bk-icon-sns-linkedIn">linkedIn</i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none" class="bk-icon-only" target="_blank">
-                      <i class="bk-icon bk-icon-sns-facebook">facebook</i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none" class="bk-icon-only" target="_blank">
-                      <i class="bk-icon bk-icon-sns-twitter">twitter</i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none" class="bk-icon-only" target="_blank">
-                      <i class="bk-icon bk-icon-sns-instagram">instagram</i>
-                    </a>
-                  </li>
-                </ul>
-              </dd>
-            </dl>
             <div class="family-area">
               <div class="family-group">
-                <button
-                  type="button"
-                  class="bk-btn bk-btn-icon"
-                  component="dropdownMenu"
-                >
+                <button type="button" class="bk-btn bk-btn-icon" component="dropdownMenu">
+                  <span class="text">English</span>
+                  <span class="deco-icon append-icon">
+                    <i class="bk-icon bk-icon-plus-gray">+</i>
+                  </span>
+                </button>
+                <div class="cp-layer layer-dropdown layer-family">
+                  <div class="layer-inner">
+                    <div class="box_aside">
+                      <div id="google_translate_element" style="display:none;"></div>
+                      <!-- "새 번역 링크 UI" -->
+                      <ul class="translation-links">
+                        <li><a href="javascript:void(0)" class="english" data-lang="en" title="English"><span class="flag en"></span><span>English</span></a></li>
+                        <li><a href="javascript:void(0)" class="japanese" data-lang="zh-CN" title="中文(简体)"><span class="flag zh-CN"></span><span>Chinese</span></a></li>
+                        <li><a href="javascript:void(0)" class="japanese" data-lang="ja" title="日本語"><span class="flag ja"></span><span>Japanese</span></a></li>
+                        <li><a href="javascript:void(0)" class="japanese" data-lang="ru" title="Русский язык"><span class="flag ru"></span><span>Russian</span></a></li>
+                        <li><a href="javascript:void(0)" class="japanese" data-lang="pt" title="Português"><span class="flag pt"></span><span>Portuguese</span></a></li>
+                        <li><a href="javascript:void(0)" class="spanish" data-lang="es" title="español"><span class="flag es"></span><span>Spanish</span></a></li>
+                      </ul>
+                      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                      <script type="text/javascript">
+                          /* 구글 번역 초기화 */
+                          function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'ko',  includedLanguages : 'en,zh-CN,zh-TW,ja,ru,pt,es,fr,ar,tr,vi,de,hi,bn,id', autoDisplay: true}, 'google_translate_element');}
+          
+                          /* 새 UI 선택 클릭 이벤트가 발생하면
+                          감춤 처리한 구글 번역 콤보리스트에
+                          선택한 언어를 적용해 변경 이벤트를 발생시키는 코드  */
+                          document.querySelector('.translation-links').addEventListener('click',function(event) {
+                              let el = event.target;
+                              if(el != null){
+                                  while(el.nodeName == 'FONT' || el.nodeName == 'SPAN'){el = el.parentElement;}//data-lang 속성이 있는 태그 찾기
+                                  const tolang = el.dataset.lang; // 변경할 언어 코드 얻기
+                                  const gtcombo = document.querySelector('.goog-te-combo');
+                                  if (gtcombo == null) {
+                                      alert("Error: Could not find Google translate Combolist.");
+                                      return false;
+                                  }
+                                  gtcombo.value = tolang; // 변경할 언어 적용
+                                  gtcombo.dispatchEvent(new Event('change')); // 변경 이벤트 트리거
+                              }
+                              $(this).closest('.family-group').find('.bk-btn, .cp-layer').removeClass('is-active');
+                              return false;
+                          });
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="family-area">
+              <div class="family-group">
+                <button type="button" class="bk-btn bk-btn-icon" component="dropdownMenu">
                   <span class="text">Family Site</span>
                   <span class="deco-icon append-icon">
                     <i class="bk-icon bk-icon-plus-gray">+</i>
@@ -162,44 +180,11 @@
                   <!--// [D]dim처리시 class="dim", 검정색 dim처리시 class="dim-dark",  흰색 dim처리시 class="dim-light" -->
                   <div class="layer-inner">
                     <ul class="list-family">
-                      <li>
-                        <a
-                          href="https://www.kotra.or.kr/english/index.do"
-                          target="_blank"
-                          >KOTRA</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.investkorea.org/ik-en/index.do"
-                          target="_blank"
-                          >Invest Korea</a
-                        >
-                      </li>
-                      <li>
-                        <a href="http://www.buykorea.or.kr" target="_blank"
-                          >buyKOREA for Seller</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://contactkorea.kotra.or.kr/en/index.do"
-                          target="_blank"
-                          >Recruiting Center</a
-                        >
-                      </li>
-                      <li>
-                        <a href="http://kodits.kotra.or.kr" target="_blank"
-                          >KODITS</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://ombudsman.kotra.or.kr/ob-en/index.do"
-                          target="_blank"
-                          >OMBUDSMAN</a
-                        >
-                      </li>
+                      <li><a href="https://www.kotra.or.kr/english/index.do" target="_blank">KOTRA</a></li>
+                      <li><a href="https://www.investkorea.org/ik-en/index.do" target="_blank">Invest Korea</a></li>
+                      <li><a href="https://contactkorea.kotra.or.kr/en/index.do" target="_blank">Recruiting Center</a></li>
+                      <li><a href="http://kodits.kotra.or.kr" target="_blank">KODITS</a></li>
+                      <li><a href="https://ombudsman.kotra.or.kr/ob-en/index.do" target="_blank">OMBUDSMAN</a></li>
                     </ul>
                   </div>
                 </div>
@@ -207,6 +192,14 @@
             </div>
           </div>
         </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">
+          <a href="#" class="ico-quick01">최근 본 상품</a>
+          <a href="#" class="ico-quick02">메시지</a>
+          <a href="#" class="ico-quick03">오픈 인콰이어리</a>
+          <a href="#" class="ico-quick04">탑 이동</a>
+        </div>
+        <!--// [E]Top버튼 -->
       </footer>
       <!--// [E]footer -->
     </div>
