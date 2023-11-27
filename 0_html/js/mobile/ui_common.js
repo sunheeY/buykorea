@@ -899,3 +899,22 @@ function logoFileDelete(){
     scrollCall();
     $(window).scroll(scrollCall)
   });
+
+
+  //최근리스트 삭제
+  var recentCount = 0;
+$('[role="recentCloseBtn"]').on('click', function(e){
+  
+  var recentList = $(this).parents('.bk-recent-ul').find('dd').length;
+  recentCount = recentList;
+  
+  console.log(recentList);
+  if( recentList > 1){
+    $(this).parents('dd').hide();  
+    recentCount -=1;
+  }
+
+  if( recentList == recentCount || recentList == 1){
+    $(this).closest('.bk-recent-ul').hide();  
+  }
+});
