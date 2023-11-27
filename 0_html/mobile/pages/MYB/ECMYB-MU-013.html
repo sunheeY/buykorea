@@ -70,350 +70,8 @@
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
 
-            <div class="dialog-contents">
-              <!-- [S] Form-->
-              <section class="cp-info-block">
-                <div class="bk-tbl">
-                  <table class="tbl tbl-default">
-                    <caption>견적번호</caption>
-                    <colgroup>
-                    <col style="width:25vw">
-                    <col>
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th scope="col">견적번호</th>
-                        <td>quo051023-000012</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-   
-              <section class="cp-info-block bk-tMg-middle">  
-                <div class="bk-accordion accordion-type-line"><!--// [D]기본:single, 다중:multi -->
-                  <ul class="list-accordion">
-                    <li class="acc-item is-active">
-                      <div class="acc-header">
-                        <div class="acc-inner">
-                          <div class="left-area">셀러정보</div>
-                          <div class="right-area">
-                            <button type="button" class="bk-icon-only link">
-                              <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="acc-container">
-                        <div class="acc-inner bk-in-table">
-                          <div class="bk-tbl">
-                            <table class="tbl tbl-default">
-                              <caption>셀러정보</caption>
-                              <colgroup>
-                                <col style="width: 30vw">
-                                <col>
-                              </colgroup>
-                              <tbody>
-                                <tr>
-                                  <th scope="col">회사명</th>
-                                  <td>Company Name</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">이메일</th>
-                                  <td>qweasd@gamil.com</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">담당자명</th>
-                                  <td>Hong Gil Dong</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">휴대폰번호</th>
-                                  <td>+82-212345678</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">전화번호</th>
-                                  <td>+82-212345678</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">팩스번호</th>
-                                  <td>+82-212345678</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">주소</th>
-                                  <td>4312 Wood Road New York, NY 10031</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-              <section class="cp-info-block">
-                <div class="bk-title">
-                  <strong class="title">상품정보</strong>
-                </div>
-                <div class="bk-tbl">
-                  <table class="tbl tbl-default">
-                    <caption>상품정보</caption>
-                    <colgroup>
-                      <col style="width: 30vw">
-                      <col>
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th scope="col">상품명</th>
-                        <td>지중해 파란꽃게</td>
-                      </tr>
-                      <tr>
-                        <th scope="col">상품상세정보</th>
-                        <td>냉동되어 있는 상태로 배송 가능 냉동되어 있는 상태로 배송 가능냉동되어 있는 상태로 배송 가능 냉동되어 있는 상태로 배송 가능</td>
-                      </tr>
-                      <tr>
-                        <th scope="col">수량</th>
-                        <td class="bk-align-num">1,000</td>
-                      </tr>
-                      <tr>
-                        <th scope="col">상품금액(USD)</th>
-                        <td class="bk-align-num">300</td>
-                      </tr>
-                      <tr>
-                        <th scope="col">견적금액(USD)</th>
-                        <td class="bk-align-num">270.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>    
-              </section>
-              
-              <section class="cp-info-block">
-                <div class="bk-title">
-                  <strong class="title">바이어정보(배송지 정보)</strong>
-                </div>
-
-                <button type="button" class="bk-btn btn-brand btn-outline btn-full btn-delivery-list bk-tMg-middle0">
-                  <span class="text">배송지 목록</span>
-                </button>
-
-                <div class="bk-radio-group bk-flex-column-gap-12 add-position bk-tMg-middle0">
-                  <div class="bk-radio">
-                    <input type="radio" name="radio-01" class="iRadio" id="radio-chcek-last" required="" checked onChange="setDelivery();">
-                    <label for="radio-chcek-last"><span class="text">최근 배송지</span></label>
-                  </div>
-                  <div class="bk-radio">
-                    <input type="radio" name="radio-01" class="iRadio" id="radio-chcek-new" required="" onchange="setDelivery();">
-                    <label for="radio-chcek-new"><span class="text">신규 배송지</span></label>
-                  </div>                  
-                </div>
-
-                <div class="bk-delivery-list-check" id="chcek-last">
-                  <div class="bk-tbl bk-tMg-small">
-                    <table class="tbl tbl-default">
-                      <caption>최근배송지 정보</caption>
-                      <colgroup>
-                        <col style="width: 30vw">
-                        <col>
-                      </colgroup>
-                      <tbody>
-                        <tr>
-                          <th scope="col">회사명</th>
-                          <td>Company Name</td>
-                        </tr>
-                        <tr>
-                          <th scope="col">이메일</th>
-                          <td>qweasd@gamil.com</td>
-                        </tr>
-                        <tr>
-                          <th scope="col">담당자명</th>
-                          <td>Hong Gil Dong</td>
-                        </tr>
-                        <tr>
-                          <th scope="col">휴대폰번호</th>
-                          <td>+82-212345678</td>
-                        </tr>
-                        <tr>
-                          <th scope="col">팩스번호</th>
-                          <td>+82-212345678</td>
-                        </tr>
-                        <tr>
-                          <th scope="col">국가</th>
-                          <td>US(UNITED STATE)</td>
-                        </tr>
-                        <tr>
-                          <th scope="col">주소</th>
-                          <td>4312 Wood Road New York, NY 10031</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> 
-                </div>
-
-                <div class="bk-delivery-list-check" id="chcek-new">
-                  <div class="bk-tbl bk-tMg-small">
-                    <table class="tbl tbl-default">
-                      <caption>신규배송지 회사정보</caption>
-                      <colgroup>
-                        <col style="width: 30vw">
-                        <col>
-                      </colgroup>
-                      <tbody>
-                        <tr>
-                          <th scope="col">회사명</th>
-                          <td>Company Name</td>
-                        </tr>
-                        <tr>
-                          <th scope="col">이메일</th>
-                          <td>qweasd@gamil.com</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>  
-
-                  <!--[s]폼-->
-                  <div class="bk-input-list">
-                    <dl>
-                      <dt class="is-required">배송지명</dt>
-                      <dd>
-                        <div class="bk-textfield bk-with-btn">
-                          <div class="bk-control">
-                            <div class="control-field">
-                              <input type="text" value="" placeholder="" class="iText" title="배송지명" id="delivery-name"  required="" >
-                            </div>
-                          </div>
-
-                          <div class="bk-control">
-                            <div class="control-field input-full">
-                              <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full"> 
-                                <span class="text">중복체크</span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </dd>
-                      <dt class="is-required">담당자명</dt>
-                      <dd>
-                        <div class="bk-textfield">
-                          <div class="bk-control">
-                            <div class="control-field">
-                              <input type="text" value="" class="iText" title="담당자명">
-                            </div>
-                          </div>
-                        </div>
-                      </dd>
-                      <dt class="is-required">휴대폰번호</dt>
-                      <dd>
-                        <div class="bk-textfield">
-                          <div class="bk-control">
-                            <div class="control-field">
-                              <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="휴대폰번호">
-                            </div>
-                          </div>
-                        </div>
-                      </dd>
-                      <dt>전화번호</dt>
-                      <dd>
-                        <div class="bk-textfield">
-                          <div class="bk-control">
-                            <div class="control-field">
-                              <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="전화번호">
-                            </div>
-                          </div>
-                        </div>
-                      </dd>
-                      <dt>팩스번호</dt>
-                      <dd>
-                        <div class="bk-textfield">
-                          <div class="bk-control">
-                            <div class="control-field">
-                              <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="팩스번호">
-                            </div>
-                          </div>
-                        </div>
-                      </dd>
-                      <dt class="is-required">Address</dt>
-                      <dd>
-                        <dl class="bk-input-list">
-                          <dt>Country</dt>
-                          <dd>
-                            <div class="bk-row-div bk-full">    
-                              <select title="Country">
-                                <option value="Choose">Choose</option>
-                                <option value="option2">US(UNITED STATE)</option>
-                              </select>
-                            </div>
-                          </dd>
-                          <dt>Zip/Postal</dt>
-                          <dd>
-                            <div class="bk-textfield">
-                              <div class="bk-control">
-                                <div class="control-field">
-                                  <input type="text" placeholder="Zip/Postal" class="iText" title="Zip/Postal">
-                                </div>
-                              </div>
-                            </div>
-                          </dd>
-                          <dt>City/State</dt>
-                          <dd>
-                            <div class="bk-textfield">
-                              <div class="bk-control">
-                                <div class="control-field">
-                                  <input type="text" placeholder="City/State" class="iText" title="City/State">
-                                </div>
-                              </div>
-                            </div>
-                          </dd>
-                          <dt>Street</dt>
-                          <dd>
-                            <div class="bk-textfield">
-                              <div class="bk-control">
-                                <div class="control-field">
-                                  <input type="text" placeholder="Street" class="iText" title="Street">
-                                </div>
-                              </div>
-                            </div>
-                          </dd>
-                        </dl>
-                      </dd>
-                    </dl>
-                  </div>
-                  <!--//[d]폼-->
-                </div>
-              </section>
-
-              <section class="cp-info-block">
-                <div class="bk-title">
-                  <strong class="title">기타정보</strong>
-                </div>
-                <ul class="bk-tbl-ul bk-tbl-ul-type2">
-                  <li>
-                    주문에 관련된 추가 내용(거래조건, 배송조건 등)이 있을 경우 작성하세요.
-                  </li>
-                </ul>
-                <div class="bk-textarea wide bk-has-byte"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
-                  <div class="bk-control">
-                    <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
-                    <div class="control-field">
-                      <textarea name="" rows="4" cols="50" placeholder="Sample" class="iTextarea" title="label텍스트값"></textarea><!--// [D]focus,disabled,required,readonly -->
-                      <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
-                      <div class="bk-byte">
-                        <div class="byte-group">
-                          (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="bk-valid">에러 메시지</div>
-                    <!--// [D]성공:success,에러:error -->
-                  </div>
-                </div>
-              </section>
-            </div>
-            <div class="bk-btn-group bk-tMg-middle2">
-              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">취소</button>
-              <button type="button" class="bk-btn btn-primary btn-half">주문서 발송</button>
-            </div>
+            <a href="#" onclick="dialogOpen('#dialog-full-pop')">주문서 작성</a>
+            
 
           </div>
         </div>
@@ -550,6 +208,372 @@
     </div>
     <!--// [E]ui-wrap -->
 
+    <!-- [S]팝업 -->
+     <!-- [s] 주문서 작성 -->
+     <div class="bk-dialog dialog-full2" id="dialog-full-pop">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">주문서 작성</h1>
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+           <!-- [S] Form-->
+           <section class="cp-info-block">
+            <div class="bk-tbl">
+              <table class="tbl tbl-default">
+                <caption>견적번호</caption>
+                <colgroup>
+                <col style="width:25vw">
+                <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="col">견적번호</th>
+                    <td>quo051023-000012</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="cp-info-block bk-tMg-middle">  
+            <div class="bk-accordion accordion-type-line"><!--// [D]기본:single, 다중:multi -->
+              <ul class="list-accordion">
+                <li class="acc-item is-active">
+                  <div class="acc-header">
+                    <div class="acc-inner">
+                      <div class="left-area">셀러정보</div>
+                      <div class="right-area">
+                        <button type="button" class="bk-icon-only link">
+                          <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-container">
+                    <div class="acc-inner bk-in-table">
+                      <div class="bk-tbl">
+                        <table class="tbl tbl-default">
+                          <caption>셀러정보</caption>
+                          <colgroup>
+                            <col style="width: 30vw">
+                            <col>
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="col">회사명</th>
+                              <td>Company Name</td>
+                            </tr>
+                            <tr>
+                              <th scope="col">이메일</th>
+                              <td>qweasd@gamil.com</td>
+                            </tr>
+                            <tr>
+                              <th scope="col">담당자명</th>
+                              <td>Hong Gil Dong</td>
+                            </tr>
+                            <tr>
+                              <th scope="col">휴대폰번호</th>
+                              <td>+82-212345678</td>
+                            </tr>
+                            <tr>
+                              <th scope="col">전화번호</th>
+                              <td>+82-212345678</td>
+                            </tr>
+                            <tr>
+                              <th scope="col">팩스번호</th>
+                              <td>+82-212345678</td>
+                            </tr>
+                            <tr>
+                              <th scope="col">주소</th>
+                              <td>4312 Wood Road New York, NY 10031</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="cp-info-block">
+            <div class="bk-title">
+              <strong class="title">상품정보</strong>
+            </div>
+            <div class="bk-tbl">
+              <table class="tbl tbl-default">
+                <caption>상품정보</caption>
+                <colgroup>
+                  <col style="width: 30vw">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="col">상품명</th>
+                    <td>지중해 파란꽃게</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">상품상세정보</th>
+                    <td>냉동되어 있는 상태로 배송 가능 냉동되어 있는 상태로 배송 가능냉동되어 있는 상태로 배송 가능 냉동되어 있는 상태로 배송 가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">수량</th>
+                    <td class="bk-align-num">1,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">상품금액(USD)</th>
+                    <td class="bk-align-num">300</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">견적금액(USD)</th>
+                    <td class="bk-align-num">270.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>    
+          </section>
+          
+          <section class="cp-info-block">
+            <div class="bk-title">
+              <strong class="title">바이어정보(배송지 정보)</strong>
+            </div>
+
+            <button type="button" class="bk-btn btn-brand btn-outline btn-full btn-delivery-list bk-tMg-middle0">
+              <span class="text">배송지 목록</span>
+            </button>
+
+            <div class="bk-radio-group bk-flex-column-gap-12 add-position bk-tMg-middle0">
+              <div class="bk-radio">
+                <input type="radio" name="radio-01" class="iRadio" id="radio-chcek-last" required="" checked onChange="setDelivery();">
+                <label for="radio-chcek-last"><span class="text">최근 배송지</span></label>
+              </div>
+              <div class="bk-radio">
+                <input type="radio" name="radio-01" class="iRadio" id="radio-chcek-new" required="" onchange="setDelivery();">
+                <label for="radio-chcek-new"><span class="text">신규 배송지</span></label>
+              </div>                  
+            </div>
+
+            <div class="bk-delivery-list-check" id="chcek-last">
+              <div class="bk-tbl bk-tMg-small">
+                <table class="tbl tbl-default">
+                  <caption>최근배송지 정보</caption>
+                  <colgroup>
+                    <col style="width: 30vw">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="col">회사명</th>
+                      <td>Company Name</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">이메일</th>
+                      <td>qweasd@gamil.com</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">담당자명</th>
+                      <td>Hong Gil Dong</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">휴대폰번호</th>
+                      <td>+82-212345678</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">팩스번호</th>
+                      <td>+82-212345678</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">국가</th>
+                      <td>US(UNITED STATE)</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">주소</th>
+                      <td>4312 Wood Road New York, NY 10031</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> 
+            </div>
+
+            <div class="bk-delivery-list-check" id="chcek-new">
+              <div class="bk-tbl bk-tMg-small">
+                <table class="tbl tbl-default">
+                  <caption>신규배송지 회사정보</caption>
+                  <colgroup>
+                    <col style="width: 30vw">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="col">회사명</th>
+                      <td>Company Name</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">이메일</th>
+                      <td>qweasd@gamil.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>  
+
+              <!--[s]폼-->
+              <div class="bk-input-list">
+                <dl>
+                  <dt class="is-required">배송지명</dt>
+                  <dd>
+                    <div class="bk-textfield bk-with-btn">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" value="" placeholder="" class="iText" title="배송지명" id="delivery-name"  required="" >
+                        </div>
+                      </div>
+
+                      <div class="bk-control">
+                        <div class="control-field input-full">
+                          <button type="button" class="bk-btn btn-primary btn-outline btn-middle btn-full"> 
+                            <span class="text">중복체크</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt class="is-required">담당자명</dt>
+                  <dd>
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" value="" class="iText" title="담당자명">
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt class="is-required">휴대폰번호</dt>
+                  <dd>
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="휴대폰번호">
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>전화번호</dt>
+                  <dd>
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="전화번호">
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>팩스번호</dt>
+                  <dd>
+                    <div class="bk-textfield">
+                      <div class="bk-control">
+                        <div class="control-field">
+                          <input type="text" placeholder="숫자만 입력해주세요" value="" class="iText" title="팩스번호">
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt class="is-required">Address</dt>
+                  <dd>
+                    <dl class="bk-input-list">
+                      <dt>Country</dt>
+                      <dd>
+                        <div class="bk-row-div bk-full">    
+                          <select title="Country">
+                            <option value="Choose">Choose</option>
+                            <option value="option2">US(UNITED STATE)</option>
+                          </select>
+                        </div>
+                      </dd>
+                      <dt>Zip/Postal</dt>
+                      <dd>
+                        <div class="bk-textfield">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input type="text" placeholder="Zip/Postal" class="iText" title="Zip/Postal">
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                      <dt>City/State</dt>
+                      <dd>
+                        <div class="bk-textfield">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input type="text" placeholder="City/State" class="iText" title="City/State">
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                      <dt>Street</dt>
+                      <dd>
+                        <div class="bk-textfield">
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input type="text" placeholder="Street" class="iText" title="Street">
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </dd>
+                </dl>
+              </div>
+              <!--//[d]폼-->
+            </div>
+          </section>
+
+          <section class="cp-info-block">
+            <div class="bk-title">
+              <strong class="title">기타정보</strong>
+            </div>
+            <ul class="bk-tbl-ul bk-tbl-ul-type2">
+              <li>
+                주문에 관련된 추가 내용(거래조건, 배송조건 등)이 있을 경우 작성하세요.
+              </li>
+            </ul>
+            <div class="bk-textarea wide bk-has-byte"><!-- [D] byte 노출일 경우 bk-has-byte 클래스 추가 -->
+              <div class="bk-control">
+                <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                <div class="control-field">
+                  <textarea name="" rows="4" cols="50" placeholder="Sample" class="iTextarea" title="label텍스트값"></textarea><!--// [D]focus,disabled,required,readonly -->
+                  <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                  <div class="bk-byte">
+                    <div class="byte-group">
+                      (<strong class="byte-current" title="현재 byte">0</strong><span class="bar">/</span><span class="byte-total" title="총 byte">10,000</span>)
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="bk-valid">에러 메시지</div>
+                <!--// [D]성공:success,에러:error -->
+              </div>
+            </div>
+          </section>
+
+          <div class="dialog-footer">
+            <div class="footer-center"> 
+              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">취소</button>
+            <button type="button" class="bk-btn btn-primary btn-half">주문서 발송</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] 주문서 작성 -->
     <!--// [E]팝업 -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
