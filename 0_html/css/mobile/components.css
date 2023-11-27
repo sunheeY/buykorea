@@ -1288,9 +1288,12 @@ body.overflow{overflow:hidden; z-index: -1;}
 
 /*경고*/
 .bk-empty-text{padding:56px 0; display:flex; flex-direction:column; justify-content: flex-start; align-items: center; row-gap:24px;}
-.bk-empty-text .bk-text-field{display:flex; flex-direction:column; justify-content: flex-start; align-items: center; row-gap:8px;}
-.bk-empty-text .bk-text-field h2.title{font-size:24px; color:var(--color-brand); letter-spacing:-0.05rem; text-align:center}
-.bk-empty-text .bk-text-field span.text{font-size:var(--font-size-body); color:var(--color-sub); text-align:center; letter-spacing:-0.05rem;}
+.bk-empty-text .bk-text-field{display:flex; flex-direction:column; justify-content: flex-start; align-items: center; row-gap:8px; letter-spacing:-0.05rem; text-align:center}
+.bk-empty-text .bk-text-field h2.title{font-size:24px; color:var(--color-brand); }
+.bk-empty-text .bk-text-field h2.title_b{font-size:40px; color:var(--color-brand); font-weight:500; }
+.bk-empty-text .bk-text-field p.title{ font-size:24px; color:var(--color-brand); }
+.bk-empty-text .bk-text-field p.text{ font-size:18px; color:var(--color-brand); }
+.bk-empty-text .bk-text-field span.text{font-size:var(--font-size-body); color:var(--color-sub); }
 .bk-empty-text .bk-text-field span + span{ margin-top:4px}
 .bk-empty-text .bk-text-field span.has-dot{position:relative; }
 .bk-empty-text .bk-text-field span.has-dot:before{ content:""; width:4px; height:4px; background:var(--color-sub); display:inline-flex;  border-radius: 2px; margin-right:8px; position:relative; top:-4px}
