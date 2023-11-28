@@ -77,7 +77,7 @@ $(document).ready(function() {
     footerCont += '    <div class="corp-area">';
     footerCont += '    <div class="site-group">';
     footerCont += '      <h2 class="logo">';
-    footerCont += '        <img src="../../../images/mobile/logo-kotra-dark.svg" alt="Kotra Trade-Investment Promtion Agency" />';
+    footerCont += '        <img src="../../../img/mobile/logo-kotra-dark.svg" alt="Kotra Trade-Investment Promtion Agency" />';
     footerCont += '      </h2>';
     footerCont += '      <ul class="list-corp">';
     footerCont += '        <li><a href="#none">About Terms</a></li>';
