@@ -1967,3 +1967,11 @@ body.overflow{overflow:hidden; z-index: -1;}
 
 .bk-related .swiper-button-prev{transform:rotate(-180deg)}
 .bk-related .swiper-button-next{border-left:0}
+
+
+/*약관*/
+.bk-term-title{ font-size:20px; font-weight:700; line-height:1.4}
+.bk-term-dl{margin-top:24px}
+.bk-term-dl dt{ font-size:18px; font-weight:700; line-height:1.44}
+.bk-term-dl dd{ margin-top:8px; line-height:1.5}
+.bk-term-dl dd.has-link{ margin-top:12px; line-height:1.5; color:var(--color-sub); padding:0 12px; display:flex; flex-direction:column; align-items:flex-start; row-gap: 8px;}
