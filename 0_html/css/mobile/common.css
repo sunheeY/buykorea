@@ -236,3 +236,14 @@
 .title.font-heading-2.has-span{ display:flex; justify-content: space-between; align-items:center}
 .title.font-heading-2 span{ font-size:1.6rem; font-weight:400}
 .title.font-heading-2 span.required::before { content:"*"; color:var(--color-warning); margin-right:4px}
+
+/* 로딩 */
+/******* [공통][로딩] *******/
+.ui-loding { z-index: 9999; position: fixed; top: 0; right: 0; bottom: 0; left: 0; text-align: center;}
+.ui-loding::before { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: #000; opacity: 0.6; content: "";}
+.ui-loding .loding-inner { display: flex; flex-direction: column; position: relative; z-index: 2; display: flex; justify-content: center; align-items: center; height: 100%;}
+.ui-loding .loader { width: 58px; height: 58px; border-radius: 50%; background: conic-gradient(#ffff 10%, var(--color-primary)); -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0); animation: loader 1s infinite linear;}
+@keyframes loader { 
+    to {   transform: rotate(1turn); }
+}
+.ui-loding .text { margin-top: 10px; color: #fff; font-weight: 300; font-size: 1.4rem; line-height: 2.6rem;}
