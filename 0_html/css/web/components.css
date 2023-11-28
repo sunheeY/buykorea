@@ -448,7 +448,7 @@
   height: 13px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url(../../images/web/icon-checkbox.svg);
+  background-image: url(../../img/web/icon-checkbox.svg);
   background-size: 14px 13px;
   transform: translateY(45%) translateX(30%);
   filter: brightness(0) invert(1);
@@ -699,20 +699,20 @@
 }
 .bk-rate > label:before {
   display: inline-block;
-  background: url(../../images/web/rate-blank.svg) 0 0 no-repeat;
+  background: url(../../img/web/rate-blank.svg) 0 0 no-repeat;
   cursor: pointer;
   content: "";
 }
 .bk-rate input:checked ~ label:before,
 .bk-rate label:hover:before,
 .bk-rate label:hover ~ label:before {
-  background: url(../../images/web/rate-full.svg) 0 0 no-repeat;
+  background: url(../../img/web/rate-full.svg) 0 0 no-repeat;
 }
 .bk-rate input:checked + .bk-rate label:hover:before,
 .bk-rate input:checked ~ label:hover:before,
 .bk-rate input:checked ~ .bk-rate label:hover ~ label:before,
 .bk-rate label:hover ~ input:checked ~ label:before {
-  background: url(../../images/web/rate-full.svg) 0 0 no-repeat;
+  background: url(../../img/web/rate-full.svg) 0 0 no-repeat;
 }
 /* 뱃지 */
 .badge {
@@ -1381,7 +1381,7 @@ a.btn-text .text {
 .bk-textfield.is-readonly .iText.iDatepicker {
   padding-right: 42px;
   background-color: #fff;
-  background-image: url(../../images/web/icon-calendar.svg);
+  background-image: url(../../img/web/icon-calendar.svg);
   background-position: calc(100% - 12px) calc(100% - 10px);
   background-repeat: no-repeat;
 }
