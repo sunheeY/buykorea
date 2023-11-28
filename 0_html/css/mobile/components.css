@@ -543,10 +543,16 @@ a.btn-text .text {text-decoration: underline;}
 .tab-container .cp-search.search-topType {margin-top: -24px;}
 
 .dialog-container .tab-type-sub-line .tab-menu-wrap {top: 0; border-top: 0;}
-.dialog-container .tab-container .cp-category {margin: -24px -20px}
-.dialog-container .tab-container .cp-category .in-subdepth {padding: 16px 0;}
-.dialog-container .tab-container .category-depth01 > a {padding: 16px 20px;}
-.dialog-container .tab-container .category-depth04 {padding: 0 11px;}
+.cp-category.ctgy-type2 {margin: -24px -20px}
+.cp-category.ctgy-type2 .in-subdepth {padding: 20px 0;}
+.ctgy-type2 .category-depth01 > a {padding: 16px 20px; position: relative;}
+.ctgy-type2 .category-depth01.is-active > a {font-weight: 700;}
+.ctgy-type2 .category-depth01.is-active a::after {transform: rotate(180deg);}
+.ctgy-type2 .category-depth04 {padding: 0 11px;}
+.ctgy-type2 .category-depth02 {padding-left: 20px}
+.ctgy-type2 .category-depth03 a {padding-left: 12px; font-size: 1.6rem;}
+.ctgy-type2 .category-depth03 .in-subdepth {margin-left: 12px; padding: 16px 0;}
+.ctgy-type2 .category-depth03 .in-subdepth li:not(:first-child) {margin-top: 8px;}
 
 /* 아코디언 */
 .bk-accordion {}

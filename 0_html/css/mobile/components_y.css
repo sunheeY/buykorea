@@ -502,9 +502,11 @@
 .nav-ctgy-list [class^=category-depth0].is-active:not(.no-subdepth) > a {background: #F3F5F8; color: var(--color-primary); font-weight: 400;}
 .nav-menu-list .category-depth01 > a::after,
 .nav-ctgy-list [class^=category-depth0] > a::before,
-.nav-ctgy-list [class^=category-depth0] > a::after {content: ''; position: absolute; top: 18px; width: 20px; height: 20px; background: url(../../img/mobile/icon-arrow-20x20-ctgy.svg) 0 0 no-repeat; transition: opacity 0.3s ease;}
+.nav-ctgy-list [class^=category-depth0] > a::after,
+.ctgy-type2 .category-depth01 > a::after {content: ''; position: absolute; top: 18px; width: 20px; height: 20px; background: url(../../img/mobile/icon-arrow-20x20-ctgy.svg) 0 0 no-repeat; transition: opacity 0.3s ease;}
 .nav-menu-list .category-depth01 > a::after,
-.nav-ctgy-list [class^=category-depth0] > a::after {right: 20px;}
+.nav-ctgy-list [class^=category-depth0] > a::after,
+.ctgy-type2 .category-depth01 a::after {right: 20px;}
 .nav-ctgy-list [class^=category-depth0] > a::before {left: 20px; opacity: 0; transform: rotate(180deg);}
 .nav-ctgy-list [class^=category-depth0].is-active > a::before {opacity: 1;}
 .nav-ctgy-list [class^=category-depth0].is-active > a::after {opacity: 0}
