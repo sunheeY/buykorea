@@ -54,13 +54,13 @@
 
       <!-- [S]container -->
       <!-- [s] cont header 디자인변경으로 영역 추가 -->
-      <section class="header-cont">
+      <!-- <section class="header-cont">
         <button type="button" class="bk-icon-only">
           <i class="bk-icon bk-icon-gnb-prev">이전</i>
           </button>
             <h2 class="cont-title">Baby &amp; Toddler</h2>
             <button type="button" class="btn-like">좋아요</button>
-      </section>
+      </section> -->
       <!-- [e] cont header 디자인변경으로 영역 추가 -->
       <main id="container" class="ui-container ui-prd-detail"><!--// [D]회원 class추가 -->
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
@@ -491,62 +491,20 @@
         <!--// [E]Top버튼 -->
       </footer>
       <!--// [E]footer -->
-    </div>
-    <!--// [E]ui-wrap -->
 
     <!-- [S]팝업 -->
     <!--// [E]팝업 -->
+    </div>
+    <!--// [E]ui-wrap -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
       $(document).ready(function () {
-				var prdImages = new Swiper('.prd-img-area', {
-          slidesPerView: 1,
-          threshold: 0,
-          a11y: false,
-		      observer: true,
-          observeParents: true,
-          pagination: {
-            el: ".prd-img-area .swiper-pagination",
-          },
-          navigation: {
-            nextEl: ".prd-img-area .swiper-button-next",
-            prevEl: ".prd-img-area .swiper-button-prev",
-          },
-          preventDefaultSwipe: false,
-          preventLinks: false,
-        });
-
-        var recProduct = new Swiper('.prd-recs', {
-          slidesPerView: 1.7,
-          spaceBetween: 15,
-          threshold: 0,
-          preventClicks: true,
-          a11y: false,
-        });
+				
         
-        if ($('.ui-prd-detail').length > 0) {
-          $('.btn-more').click( function() {
-            $(this).find('.text').text('View Folding');
-            $(this).parent().toggleClass('view-more');
-            if (!$(this).parent().hasClass('view-more')) {
-              $(window).scrollTop($(window).height() + $('.prd-product-details').height());
-              $(this).find('.text').text('View more');
-            };
-        })
-
-          function orderFixed() {
-            var fixedTime = $('.prd-detail-top').height() - $('.prd-detail-info-bot').height();
-            var winScrolltop = $(window).scrollTop();
-            if (winScrolltop > fixedTime + 100 ) {
-              $('.prd-btn-order').addClass('fixed');
-            } else { $('.prd-btn-order').removeClass('fixed'); }
-          }
-          $(window).scroll(orderFixed);
-          orderFixed();
-        }
+        
         
         
 			});
