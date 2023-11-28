@@ -1700,7 +1700,7 @@ body.overflow{overflow:hidden; z-index: -1;}
 
 .type-main-swipe .bk-control-wrap{ display:flex; justify-content: center; column-gap: 12px; align-items: center;}
 .type-main-swipe .slide-btn { width:20px; height:20px; display:inline-flex; text-indent: -99999px; border:0; background-color:transparent; background-repeat: no-repeat; background-size:20px auto; background-position: center;}
-.type-main-swipe .slide-btn.slide-auto-start {background-image:url(../../img/mobile/icon-slide-play.svg); display:none; box-shadow:0 1px 2px rgba(0,0,0,0.1)}
+.type-main-swipe .slide-btn.slide-auto-start {background-image:url(../../img/mobile/icon-slide-play.svg); display:none; }
 .type-main-swipe .slide-btn.slide-auto-stop {background-image:url(../../img/mobile/icon-slide-stop.svg)}
 
 .main-dialog .type-main-swipe .slide-btn.slide-auto-start {background-image:url(../../img/mobile/icon-slide-play-shadow.svg); display:none; }
