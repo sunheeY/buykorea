@@ -1785,6 +1785,7 @@ body.overflow{overflow:hidden; z-index: -1;}
 .type-main-list.bk-main-category .tab-menu-wrap .list-menu .tab-item.active { border:1px solid var(--color-primary); background:var(--color-primary); color:#fff }
 
 
+.type-main-list.bk-main-category .tab-container.active{ display:flex;  }
 .type-main-list.bk-main-category .cp-prd-list{ width:100%; overflow-x:auto; margin-top:20px; display:grid; grid-template-columns: repeat(2, 1fr); gap: 32px 24px;  }
 .type-main-list.bk-main-category .cp-prd-list::-webkit-scrollbar{display:none}
 .type-main-list.bk-main-category .cp-prd-list li{ width:276px}
