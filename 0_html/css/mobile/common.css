@@ -16,7 +16,7 @@
 /* [layout] */
 .ui-wrap {backface-visibility: hidden; display: flex; flex-direction: column; flex: 1 1 auto; max-width: 100%; min-height: 100vh; min-height: 100dvh; position: relative; z-index: 30; box-sizing: border-box;}
 /* .ui-wrap {position: relative;} */
-.ui-header {z-index: 99990; position: sticky; top: 0; transition: top 0.1s;}
+.ui-header {z-index: 100; position: sticky; top: 0; transition: top 0.1s;}
 .ui-header .header-comm,
 .ui-container .ui-inner,
 .ui-footer .ui-inner {width: 100%; min-width:320px; margin: 0 auto; box-sizing: border-box;}
@@ -49,7 +49,7 @@
 
 /* [공통]header */
 /* .header-area .header-comm {display: flex; justify-content: space-between; align-items: flex-start; min-height: 64px; border-bottom:1px solid var(--color-gray);} */
-.header-area .header-comm {display: flex; justify-content: space-between; align-items: flex-start; min-height: 64px; border-bottom:1px solid var(--color-gray); top: 0; background: #fff; z-index: 999; }
+.header-area .header-comm {display: flex; justify-content: space-between; align-items: flex-start; min-height: 64px; border-bottom:1px solid var(--color-gray); top: 0; background: #fff;}
 .header-area .logo a {display: block; width: 96px; height: 20px; overflow: hidden;}
 .header-area .logo a::before {content: ''; display: block; width: 96px; height: 20px; background: url(../../img/mobile/logo_dark.svg) 50% 50% no-repeat;}
 .header-area .ui-left{display:flex; justify-content: flex-start; align-items: flex-start; gap: 8px;}
@@ -66,7 +66,7 @@
 .header-area .my-util .bk-icon.bk-icon-mypage {width: 28px; height: 28px; background-color: transparent; background-position: 0 0; background-repeat: no-repeat;}
 
 /* gnb */
-.ui-gnb {position: fixed; top: 0; bottom: 0; right: -100%; background: #fff; width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; z-index: 9999; }
+.ui-gnb {position: fixed; top: 0; bottom: 0; right: -100%; background: #fff; width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; z-index: 900; }
 .ui-gnb .nav-top-area {position: relative;}
 .ui-gnb .nav-top-area .bk-btn-close {position: absolute; right: 20px; top: 20px;}
 .ui-gnb .nav-top-area .before-login {padding: 18px 52px 18px 20px; display: flex; justify-content: space-between; align-items: center;}
@@ -92,14 +92,14 @@
 .ui-container {display: flex; flex-direction: column; flex: 1 0 auto; max-width: 100%; transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1); position: relative; padding: 24px 20px 80px 20px; box-sizing: border-box;}
 .ui-content-wrap .ui-lnb {min-width: 200px; margin-right: 40px; background-color: #f0f0f0;}
 .ui-setting-btns {z-index: 50; position: fixed; right: 24px; bottom: 100px; /*우선 가려둚*/}
-.ui-setting-btns [class^=ico-quick0] {display: block; position: relative; margin-top: 12px; width: 64px; height: 64px; overflow: hidden; border-radius: 50%; box-shadow: 0 0 0 1px #ddd, 2px 6px 10px 0px rgba(0,0,0,.3);;}
-.ui-setting-btns [class^=ico-quick0]::before {content: ''; display: block; width: 64px; height: 64px; background-color: #fff; background-position: 50% 50%; background-repeat: no-repeat;}
+.ui-setting-btns [class^=ico-quick0] {display: block; position: relative; margin-top: 12px; width: 44px; height: 44px; overflow: hidden; border-radius: 50%; box-shadow: 0 0 0 1px #ddd, 1px 4px 6px 0px rgba(0,0,0,.3);}
+.ui-setting-btns [class^=ico-quick0]::before {content: ''; display: block; width: 44px; height: 44px; background-color: #fff; background-position: 50% 50%; background-repeat: no-repeat;}
 .ui-setting-btns .ico-quick01::before {background-image: url(../../img/mobile/ico-quick-1.svg);}
 .ui-setting-btns .ico-quick02::before {background-image: url(../../img/mobile/ico-quick-2.svg);}
 .ui-setting-btns .ico-quick03::before {background-image: url(../../img/mobile/ico-quick-3.svg);}
 .ui-setting-btns .ico-quick04::before {background-image: url(../../img/mobile/ico-quick-4.svg);}
 .ui-setting-btns .ico-quick04 {display: none;}
-.ui-setting-btns [class^=ico-quick0] .alert-info {left: 50%; bottom: 50%;}
+.ui-setting-btns [class^=ico-quick0] .alert-info {left: 50%; bottom: 50%; width: 18px; height: 18px; line-height: 100%;}
 
 /* [Layout]footer 영역 */
 .ui-footer {border-top: 1px solid #ddd;}
@@ -153,14 +153,14 @@
 .bk-icon.bk-icon-join-complete{width:56px; height:56px; background-image: url(../../img/mobile/join-ok.svg);}/*경고/내용없음*/
 
 /* 컨텐츠 헤더 */
-.header-cont {position: sticky; top: 0; transition: top 0.1s; padding: 15px 24px 14px; box-sizing: border-box; display: flex; align-items: center; border-bottom: 1px solid #ddd; min-width: 320px; background: #fff; z-index: 9999;}
+.header-cont {position: sticky; top: 0; transition: top 0.1s; padding: 15px 24px 14px; box-sizing: border-box; display: flex; align-items: center; border-bottom: 1px solid #ddd; min-width: 320px; background: #fff; z-index: 200;}
 .header-cont .cont-title {font-size: 1.8rem; line-height: 1.44444; font-weight: 500; color: #000;}
 .header-cont .btn-like {display: block; background: none; border: 0; padding: 0; margin: 0; width: 24px; height: 24px; overflow: hidden; position: absolute; top: 16px; right: 20px;}
 .header-cont .btn-like::before {content: ''; display: block; width: 24px; height: 24px; background: url(../../img/mobile/icon-gnb-heart.svg) 50% 50% no-repeat;}
 .header-cont .btn-like.is-active::before {background-image: url(../../img/mobile/icon-heart-2.svg);}
 
 /* 최상단 탭일경우 스티키 */
-.tab-type-sub-line .tab-menu-wrap {position: sticky; transition: top 0.1s; z-index: 999;}
+.tab-type-sub-line .tab-menu-wrap {position: sticky; transition: top 0.1s; z-index: 190;}
 
 /* 아이콘-footer */
 .bk-icon.bk-icon-sns-instagram,

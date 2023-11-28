@@ -9,7 +9,7 @@
     />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>buyKOREA for Seller</title>
+    <title>buyKOREA for Buyers</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="../../../css/mobile/common.css" />
     <noscript></noscript>
@@ -51,27 +51,26 @@
 
             </div>
           </div>
+          
         </div>
       </header>
       <!--// [E]header -->
-
       <!-- [S]container -->
       <!-- [s] cont header 디자인변경으로 영역 추가 -->
       <section class="header-cont">
         <button type="button" class="bk-icon-only">
           <i class="bk-icon bk-icon-gnb-prev">이전</i>
           </button>
-            <h2 class="cont-title">배송관리</h2>
-            <button type="button" class="btn-like">좋아요</button>
+        <h2 class="cont-title">Buyer Sign in</h2>
+        <button type="button" class="btn-like">좋아요</button>
       </section>
       <!-- [e] cont header 디자인변경으로 영역 추가 -->
-      <main id="container" class="ui-container ui-mypage ui-seller"><!--// [D]회원 class추가 -->
+
+      <main id="container" class="ui-container ui-member"><!--// [D]회원 class추가 -->
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
-            
-            <a href="#" onclick="dialogOpen('#dialog-full-pop-3')">배송내역 상세</a>
-
+            <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#alert-del')">삭제/탈퇴회원</button>                     
           </div>
         </div>
 
@@ -204,183 +203,31 @@
         <!--// [E]Top버튼 -->
       </footer>
       <!--// [E]footer -->
-
-    <!-- [S]팝업 -->
-    <!-- [s] 주문서 상세 -->
-    <div class="bk-dialog dialog-full2" id="dialog-full-pop-3">
-      <div class="dialog-inner">
-        <div class="dialog-header">
-          <div class="header-left">
-            <div class="bk-title">
-              <h1 class="title">배송내역 상세</h1>
+          <!-- [S]팝업 -->
+      <!-- [s] 삭제/탈퇴회원-->
+      <div class="bk-dialog dim alert" id="alert-del">
+        <div class="dialog-inner">
+          <div class="dialog-container">
+            <div class="dialog-contents">
+              <div class="message">
+                <p>The login information you have entered is incorrect. Please check your email and password and try again.</p>
+              </div>
             </div>
           </div>
-          <div class="header-right">
-            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-              <i class="bk-icon bk-icon-dialog-close">닫기</i>
-            </button>
-          </div>
-        </div>
-        <div class="dialog-container">
-          <div class="dialog-contents ui-seller">
-            <section class="cp-info-block">
-              <div class="bk-tbl">
-                <table class="tbl tbl-default">
-                  <caption>배송내역 상세</caption>
-                  <colgroup>
-                    <col style="width: 30vw">
-                    <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th scope="col">배송방식</th>
-                      <td>ABID COMPANY</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">송장번호</th>
-                      <td>ABID ABAKAL</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">Tracking number</th>
-                      <td>123456789</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">인콰이어리번호</th>
-                      <td>I0000000</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">주문번호</th>
-                      <td>I0000000</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">인보이스번호</th>
-                      <td>I0000000</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="bk-tbl">
-                <table class="tbl tbl-delivery">
-                  <caption>배송내역 상세</caption>
-                  <colgroup>
-                    <col style="width: 30vw">
-                    <col>
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th scope="row">시간</th>
-                      <th scope="row">상세내용</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="bk-delivery-time">15 9월 2023<p>14:34</p></div>
-                      </td>
-                      <td>
-                        <div class="bk-delivery-info">
-                          <p class="bk-delivery-ico">
-                            <img src="../../../img/mobile/temp-cj.png" alt="">
-                            CJ KOREA EXPRESS
-                          </p>
-                          <p>배송완료. 고객님의 상품이 배송완료
-                          되었습니다.<br>
-                          (담당사원:박원영 010-4082-6897)<br>
-                          <span class="bk-txt-gray">서울강서가양중앙</span>
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="bk-delivery-time">15 9월 2023<p>14:34</p></div>
-                      </td>
-                      <td>
-                        <div class="bk-delivery-info">
-                          <p class="bk-delivery-ico">
-                            <img src="../../../img/mobile/temp-cj.png" alt="">
-                            CJ KOREA EXPRESS
-                          </p>
-                          <p>배송완료. 고객님의 상품이 배송완료
-                          되었습니다.<br>
-                          (담당사원:박원영 010-4082-6897)<br>
-                          <span class="bk-txt-gray">서울강서가양중앙</span>
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="bk-tbl">
-                <table class="tbl tbl-default">
-                  <caption>배송내역 상세</caption>
-                  <colgroup>
-                    <col style="width: 25vw">
-                    <col>
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th scope="col">Tracking number</th>
-                      <td>575064828576</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">Recipient</th>
-                      <td>임**</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">Sender</th>
-                      <td>에**</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">Origin</th>
-                      <td>South Korea</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">Destiantion</th>
-                      <td>China</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">Tracked with couries</th>
-                      <td>Hanjin Express Cainiao CJ Korea Express</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">Delivery Company</th>
-                      <td>CJ</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">Description</th>
-                      <td>Audio Cable</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">Quantity</th>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <th scope="col">Days in transit</th>
-                      <td>4</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-
-          </div>
-
           <div class="dialog-footer">
-            <div class="footer-center"> 
-              <button type="button" class="bk-btn btn-brand btn-outline btn-full" role="dialogCloseBtn">목록</button>
+            <div class="footer-center">
+              <button type="button" class="bk-btn btn-primary btn-modal btn-full" role="dialogCloseBtn">Confirm</button>
             </div>
           </div>
         </div>
-        
       </div>
-    </div>
-    <!-- //[e] 주문서 상세 -->
+      <!-- //[e] 삭제/탈퇴회원-->
 
-    <!--// [E]팝업 -->
+      <!--// [E]팝업 -->
     </div>
     <!--// [E]ui-wrap -->
+
+
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
