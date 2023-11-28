@@ -69,10 +69,10 @@
 .bk-valid {display: none; margin-top: 8px; font-size:15px;}
 /* 유효하지 못한 값,에러 */
 .bk-valid.error,
-.bk-valid.invalid {color:var(--color-warning);}
+.bk-valid.invalid { display:flex; color:var(--color-warning);}
 /* 유효한 값,성공 */
 .bk-valid.success,
-.bk-valid.valid {color:var(--color-primary);}
+.bk-valid.valid { display:flex; color:var(--color-primary);}
 .bk-messages {margin-top: 8px; display:flex; justify-content: flex-start; align-items:flex-start; color:var(--color-sub); font-size:15px; }
 
 .bk-messages.multi i{margin-top:0;}
