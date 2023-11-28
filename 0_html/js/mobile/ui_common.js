@@ -48,7 +48,6 @@ function preLoad() {
     if($(this).closest('[class^=category-depth0].is-active').length === 0) {
       alert('a')
       $(this).closest('[class^=category-depth0]').find('ul, li').removeClass('is-active').removeAttr('style');
-      // $(this).closest('[class^=category-depth0]').find('.bk-radio > label').removeClass('on');
     }
 
     if (clickThis.closest('.nav-ctgy-list').length > 0) {

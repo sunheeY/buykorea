@@ -350,57 +350,6 @@
             <div class="family-area">
               <div class="family-group">
                 <button type="button" class="bk-btn bk-btn-icon" component="dropdownMenu">
-                  <span class="text">English</span>
-                  <span class="deco-icon append-icon">
-                    <i class="bk-icon bk-icon-plus-gray">+</i>
-                  </span>
-                </button>
-                <div class="cp-layer layer-dropdown layer-family">
-                  <div class="layer-inner">
-                    <div class="box_aside">
-                      <div id="google_translate_element" style="display:none;"></div>
-                      <!-- "새 번역 링크 UI" -->
-                      <ul class="translation-links">
-                        <li><a href="javascript:void(0)" class="english" data-lang="en" title="English"><span class="flag en"></span><span>English</span></a></li>
-                        <li><a href="javascript:void(0)" class="japanese" data-lang="zh-CN" title="中文(简体)"><span class="flag zh-CN"></span><span>Chinese</span></a></li>
-                        <li><a href="javascript:void(0)" class="japanese" data-lang="ja" title="日本語"><span class="flag ja"></span><span>Japanese</span></a></li>
-                        <li><a href="javascript:void(0)" class="japanese" data-lang="ru" title="Русский язык"><span class="flag ru"></span><span>Russian</span></a></li>
-                        <li><a href="javascript:void(0)" class="japanese" data-lang="pt" title="Português"><span class="flag pt"></span><span>Portuguese</span></a></li>
-                        <li><a href="javascript:void(0)" class="spanish" data-lang="es" title="español"><span class="flag es"></span><span>Spanish</span></a></li>
-                      </ul>
-                      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                      <script type="text/javascript">
-                          /* 구글 번역 초기화 */
-                          function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'ko',  includedLanguages : 'en,zh-CN,zh-TW,ja,ru,pt,es,fr,ar,tr,vi,de,hi,bn,id', autoDisplay: true}, 'google_translate_element');}
-          
-                          /* 새 UI 선택 클릭 이벤트가 발생하면
-                          감춤 처리한 구글 번역 콤보리스트에
-                          선택한 언어를 적용해 변경 이벤트를 발생시키는 코드  */
-                          document.querySelector('.translation-links').addEventListener('click',function(event) {
-                              let el = event.target;
-                              if(el != null){
-                                  while(el.nodeName == 'FONT' || el.nodeName == 'SPAN'){el = el.parentElement;}//data-lang 속성이 있는 태그 찾기
-                                  const tolang = el.dataset.lang; // 변경할 언어 코드 얻기
-                                  const gtcombo = document.querySelector('.goog-te-combo');
-                                  if (gtcombo == null) {
-                                      alert("Error: Could not find Google translate Combolist.");
-                                      return false;
-                                  }
-                                  gtcombo.value = tolang; // 변경할 언어 적용
-                                  gtcombo.dispatchEvent(new Event('change')); // 변경 이벤트 트리거
-                              }
-                              $(this).closest('.family-group').find('.bk-btn, .cp-layer').removeClass('is-active');
-                              return false;
-                          });
-                      </script>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="family-area">
-              <div class="family-group">
-                <button type="button" class="bk-btn bk-btn-icon" component="dropdownMenu">
                   <span class="text">Family Site</span>
                   <span class="deco-icon append-icon">
                     <i class="bk-icon bk-icon-plus-gray">+</i>
@@ -426,7 +375,6 @@
         <div class="ui-setting-btns">
           <a href="#" class="ico-quick01">최근 본 상품</a>
           <a href="#" class="ico-quick02">메시지</a>
-          <a href="#" class="ico-quick03">오픈 인콰이어리</a>
           <a href="#" class="ico-quick04">탑 이동</a>
         </div>
         <!--// [E]Top버튼 -->

@@ -16,7 +16,7 @@
 /* [layout] */
 .ui-wrap {backface-visibility: hidden; display: flex; flex-direction: column; flex: 1 1 auto; max-width: 100%; min-height: 100vh; min-height: 100dvh; position: relative; z-index: 30; box-sizing: border-box;}
 /* .ui-wrap {position: relative;} */
-.ui-header {z-index: 100; position: sticky; top: 0; transition: top 0.1s;}
+.ui-header {z-index: 300; position: sticky; top: 0; transition: top 0.1s;}
 .ui-header .header-comm,
 .ui-container .ui-inner,
 .ui-footer .ui-inner {width: 100%; min-width:320px; margin: 0 auto; box-sizing: border-box;}
@@ -127,7 +127,7 @@
 .ui-footer .sns-area,
 .ui-footer .list-sns {display: flex; align-items: center; position: absolute; top: 0; left: 125px;}
 .ui-footer .list-sns > li ~ * {margin-left: 16px;}
-.ui-footer .family-area {width:100%;}
+.ui-footer .family-area {flex: 0 0 calc(50% - 25px);}
 .ui-footer .family-area .family-group {position: relative;}
 .ui-footer .family-area .bk-btn {width:100%; justify-content: space-between; height: auto; padding: 6px 12px 5px; color:#fff; font-size:13px; background: rgba(255,255,255,.05);}
 
