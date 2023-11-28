@@ -407,8 +407,8 @@
 .viewtype-list .bk-prd-unit:nth-last-child(2) {border-bottom: 1px solid #ddd;}
 
 /* 필터 */
-.cp-filter-wrap {position: fixed; top: 0; bottom: 0; right: -100%; background: #fff; width: calc(100% - 55px); z-index: 9999; padding: 24px 0 24px 20px; box-sizing: border-box; }
-.dimed-zone {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 99; background: rgba(0,0,0,.6);}
+.cp-filter-wrap {position: fixed; top: 0; bottom: 0; right: -100%; background: #fff; width: calc(100% - 55px); z-index: 900; padding: 24px 0 24px 20px; box-sizing: border-box; }
+.dimed-zone {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 800; background: rgba(0,0,0,.6);}
 .btn-filter-setting {position: absolute; border: 0; font-size: 1.8rem; line-height: 1.44444; font-weight: 500; bottom: 0; right: 0; width: 100%; height: 60px; background: var(--color-primary); color: var(--color-white)}
 .ui-filter-inner {height: calc(100% - 60px - 80px); overflow-y: auto; padding: 0 20px 120px 0;}
 .cp-filter-wrap .header-filter-area {position: relative; padding-bottom: 24px; display: flex; align-items: center; gap: 8px;}
@@ -615,7 +615,7 @@
 .prd-detail-info .prd-price {display: flex; align-items: center; gap: 4px; font-size: 24px; font-weight: 700; line-height: 1.33333; margin-top: 12px; position: relative;}
 .prd-detail-info .prd-btn-set {position: absolute; bottom: 0; right: 0; display: flex; justify-content: flex-end; gap: 12px;}
 .ui-prd-detail .prd-btn-order {margin-top: 24px; display: flex; gap: 8px}
-.ui-prd-detail .prd-btn-order.fixed {position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; padding: 20px; background: #fff;}
+.ui-prd-detail .prd-btn-order.fixed {position: fixed; bottom: 0; left: 0; right: 0; z-index: 51; padding: 15px 20px; background: #fff;}
 
 .tooltip-wrap {background: #333; color: #fff; border-radius: 4px; padding: 16px 48px 16px 16px; top: 40px; left: 0; z-index: 99;}
 .tooltip-wrap .tooltip-inner {display: flex; flex-wrap: wrap; gap: 15px;}
@@ -706,10 +706,10 @@
 .download-wrap .btn-has-icon::after {background-image: url(../../img/mobile/icon-14-question.svg); width: 24px; height: 24px;}
 
 /* 상품상세 탭 */
-.ui-prd-detail .tab-menu-wrap {position: sticky; top: 0; background: #FFF; z-index: 999; margin: 0 -20px; padding: 0 20px;}
+.ui-prd-detail .tab-menu-wrap {position: sticky; top: 0; background: #FFF; z-index: 50; margin: 0 -20px; padding: 0 20px;}
 
 /* 상품상세 회사소개 */
-.ui-prd-detail .tab-type-tag {display: flex; gap: 12px; overflow-x: auto; position: sticky; top: calc(64px); z-index: 999; background: #fff; margin: -24px -20px 20px; padding: 24px 20px 5px;}
+.ui-prd-detail .tab-type-tag {display: flex; gap: 12px; overflow-x: auto; position: sticky; top: calc(64px); z-index: 40; background: #fff; margin: -24px -20px 20px; padding: 24px 20px 5px;}
 .ui-prd-detail .tab-type-tag .tab-item {white-space: nowrap; border-radius: 20px; height: auto; width: auto; font-size: 1.6rem; line-height: 1.75; text-transform: uppercase; color: #666; padding: 5px 15px;}
 .ui-prd-detail .tab-type-tag .tab-item.active {color: var(--color-white); background-color: var(--color-primary); border-color: var(--color-primary)}
 .ui-prd-detail .prd-title-18 {margin-top: 24px;}

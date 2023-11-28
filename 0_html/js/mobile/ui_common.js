@@ -828,8 +828,8 @@ function logoFileDelete(){
   function rightMenu(id) {
     // var filterWidth = $(window).width() - 55;
     var filterDim = '<div class="dimed-zone"></div>'
-    $(id).animate({right: 0}, 400).appendTo('body');
-    $('body').append(filterDim);
+    $(id).animate({right: 0}, 400).appendTo('.ui-wrap');
+    $('.ui-wrap').append(filterDim);
     $('body').css('overflow', 'hidden');
     $(id).find('.bk-btn-close').click( function() {
       $(id).animate({right: '-100%'}, 400);
@@ -917,6 +917,89 @@ function logoFileDelete(){
       return false;
     });
   });
+
+  //상품상세
+  if ($('.ui-prd-detail').length > 0) {
+    var prdImages = new Swiper('.prd-img-area', {
+      slidesPerView: 1,
+      threshold: 0,
+      a11y: false,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: ".prd-img-area .swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".prd-img-area .swiper-button-next",
+        prevEl: ".prd-img-area .swiper-button-prev",
+      },
+      preventDefaultSwipe: false,
+      preventLinks: false,
+    });
+
+    var recProduct = new Swiper('.prd-recs', {
+      slidesPerView: 1.7,
+      spaceBetween: 15,
+      threshold: 0,
+      preventClicks: true,
+      a11y: false,
+    });
+
+    var comImages = new Swiper('.prd-company-img', {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      threshold: 0,
+      preventClicks: true,
+      a11y: false,
+      navigation: {
+        nextEl: ".prd-company-img .swiper-button-next",
+        prevEl: ".prd-company-img .swiper-button-prev",
+      },
+    });
+
+    $('.btn-more').click( function() {
+      $(this).find('.text').text('View Folding');
+      $(this).parent().toggleClass('view-more');
+      if (!$(this).parent().hasClass('view-more')) {
+        $(window).scrollTop($(window).height() + $('.prd-product-details').height());
+        $(this).find('.text').text('View more');
+      };
+    });
+    
+    function orderFixed() {
+      var fixedTime = $('.prd-detail-top').height() - $('.prd-detail-info-bot').height();
+      var winScrolltop = $(window).scrollTop();
+      if (winScrolltop > fixedTime + 100 ) {
+        $('.prd-btn-order').addClass('fixed');
+      } else { $('.prd-btn-order').removeClass('fixed'); }
+    };
+    orderFixed();
+
+    $('.tab-type-tag .tab-item').click(function(){
+      // var ancScroll = $(window).scrollTop();
+      var chkNum = $(this).parent().index() + 1;
+      var ancOffset = $('#move' + chkNum).offset().top - 133;
+      $(this).addClass('active');
+      $(this).parent().siblings().find('.tab-item').removeClass('active');
+      $('html, body').animate({scrollTop : ancOffset}, 400);
+    });
+
+    $(window).scroll(function() {
+      orderFixed();
+      var scrollTop = $(window).scrollTop();
+      $('.tab-container .cp-info-block').each(function() {
+        var ancCntIndex = $(this).index();
+        var ancCntOffset = $(this).offset().top - 150;
+        var ancCntHeight = $(this).height();
+        if (scrollTop >= ancCntOffset && scrollTop < ancCntOffset + ancCntHeight) {
+          $('.tab-type-tag .tab-item').removeClass('active');
+          $('.tab-type-tag li').eq(ancCntIndex - 1).find('.tab-item').addClass('active')
+          .parent().parent().scrollLeft(150 * (ancCntIndex - 1));
+        }
+      });
+     
+    });
+  }
 
 //최근리스트 삭제
 var recentCount = 0;
