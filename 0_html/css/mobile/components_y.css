@@ -772,3 +772,26 @@
 .cp-cookie-layer {background: #F3F5F8; border: 1px solid #ddd; padding: 24px 20px 64px; font-size: 1.4rem; line-height: 1.57143; color: #000; top: unset; height: auto;}
 .cp-cookie-layer a {text-decoration: underline;}
 .cp-cookie-layer button[role="dialogCloseBtn"] {position: absolute; bottom: 26px; right: 20px;}
+
+/* gp opi */
+.ui-gp .opi-topbanner img {width: 100%;}
+.opi-block {margin-top: 64px;}
+.opi-block header h2 {font-size: 2.4rem; font-weight: 700; line-height: 1.33333; text-transform: uppercase;}
+.opi-block header h3 {font-size: 1.6rem; font-weight: 500; line-height: 1.5; margin-top: 12px;}
+.opi-block p {font-size: 1.6rem; color: #666; line-height: 1.5; margin-top: 24px;}
+.opi-block .form-down {margin-top: 32px;}
+.opi-block .form-down td strong {display: block; font-weight: 400;}
+.opi-block .form-down td a[download] {display: flex; color: #666; text-decoration: underline;}
+.opi-block .form-down td a[download]::before {content:''; display: block; flex-shrink: 0; width: 16px; height: 16px; background:url(../../img/mobile/icon-down.svg) 0 0 no-repeat; opacity: .6; margin: 3px 8px 0 0;}
+.opi-block .form-down td strong + a,
+.opi-block .form-down td a + strong {margin-top: 8px;}
+.opi-block .opi-colist {display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px;}
+.opi-block .opi-colist li {flex-shrink: 0; display: block; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; width: calc((100% - 32px)/3); padding: 20px;}
+.opi-block .opi-colist li span {position: relative; display: block; width: 100%; padding-bottom: 100%;}
+.opi-block .opi-colist li img {width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.opi-block .opi-step {margin-top: 24px;}
+.opi-block .opi-step li {display: block; border: 1px solid #ddd; border-radius: 8px; padding: 40px 24px;}
+.opi-block .opi-step li:not(:first-child) {margin-top: 48px; position: relative}
+.opi-block .opi-step li::before {content: ''; display: block; position: absolute; top: -36px; left: 50%; margin-left: -12px; width: 24px; height: 24px; background:url(../../img/mobile/icon-arrow-accordion.svg) 50% 50% no-repeat; ;}
+.opi-block .opi-step li strong {display: block; border-bottom: 1px solid #ddd; font-size: 2rem; font-weight: 700; line-height: 1.4; padding-bottom: 20px;}
+.opi-block .opi-step li p {margin-top: 20px; font-size: 1.6rem; color: #666;}
