@@ -144,6 +144,10 @@ $.fn.extend({
 					var idx = $(this).parents('li').index();
 					$(this).addClass('active').parents('li').siblings().find('.tab-item').removeClass('active');
 					$(this).closest('.tab-menu-wrap').next('.tab-container-wrap').children('.tab-container').eq(idx).show().siblings().hide();
+
+          if( $('.bk-dialog').find('.ctgy-type2').length > 0) {
+            $('.ctgy-type2').find('.bk-radio label, .bk-radio input').removeClass('on').prop("checked", false);
+          }
 				});
 			}
 		});

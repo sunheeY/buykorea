@@ -554,6 +554,13 @@ a.btn-text .text {text-decoration: underline;}
 .ctgy-type2 .category-depth03 .in-subdepth {margin-left: 12px; padding: 16px 0;}
 .ctgy-type2 .category-depth03 .in-subdepth li:not(:first-child) {margin-top: 8px;}
 
+.ctgy-type2 .bk-list-unit {padding: 24px 0;}
+.ctgy-type2 .bk-list-unit .bk-radio input[type="radio"] + label {align-items: flex-start;}
+.ctgy-type2 .bk-list-unit .bk-radio input[type="radio"]:checked + label::after {top: 12px;}
+.ctgy-type2 .bk-list-unit .bk-radio input[type="radio"] + label .text {word-break: break-word;}
+
+.dialog-container .bk-textfield {align-items: center; column-gap: 8px;}
+
 /* 아코디언 */
 .bk-accordion {}
 .bk-accordion.add-pd{padding:0 20px;}
