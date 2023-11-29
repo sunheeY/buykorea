@@ -11,7 +11,7 @@
 #skip {position: relative; z-index: 3000;}
 #skip a {position: absolute; top: -30px; left: 0; width: 138px; border: 1px solid #4ec53d; background: #333; text-align: center;}
 #skip a:active,
-#skip a:focus {top: 0; text-decoration: none; z-index: 1000;}
+#skip a:focus {top: 0; text-decoration: none; z-index: -1000;}
 #skip span {display: inline-block; padding: 2px 6px 0 0; font-size: 13px; line-height: 26px; color: #fff; letter-spacing: -1px; white-space: nowrap;}
 /* [layout] */
 .ui-wrap {backface-visibility: hidden; display: flex; flex-direction: column; flex: 1 1 auto; max-width: 100%; min-height: 100vh; min-height: 100dvh; position: relative; z-index: 30; box-sizing: border-box;}
@@ -247,3 +247,6 @@
     to {   transform: rotate(1turn); }
 }
 .ui-loding .text { margin-top: 10px; color: #fff; font-weight: 300; font-size: 1.4rem; line-height: 2.6rem;}
+
+/* 구글번역기 숨김 */
+.VIpgJd-ZVi9od-ORHb-OEVmcd, .skiptranslate {display: none;}

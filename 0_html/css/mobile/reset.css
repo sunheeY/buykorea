@@ -110,6 +110,7 @@ body {
   font-weight: 400;
   scroll-behavior: smooth;
   -webkit-text-size-adjust:none;
+  top: 0 !important;
 }
 /* *:focus {outline: 0 !important;} */
 
