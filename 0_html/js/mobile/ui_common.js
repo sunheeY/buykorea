@@ -46,7 +46,6 @@ function preLoad() {
     clickThis.siblings().find('[class^=category-depth0]').removeClass('is-active');
     
     if($(this).closest('[class^=category-depth0].is-active').length === 0) {
-      alert('a')
       $(this).closest('[class^=category-depth0]').find('ul, li').removeClass('is-active').removeAttr('style');
     }
 
