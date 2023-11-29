@@ -392,6 +392,8 @@
                                   gtcombo.dispatchEvent(new Event('change')); // 변경 이벤트 트리거
                               }
                               $(this).closest('.family-group').find('.bk-btn, .cp-layer').removeClass('is-active');
+                              $('body, html').removeAttr('style');
+                              $('.skiptranslate').css('opacity', 0);
                               return false;
                           });
                       </script>
