@@ -1979,7 +1979,17 @@ body.overflow{overflow:hidden; z-index: -1;}
 /*소개*/
 .bk-thumb-summary{ width:100%; overflow:hidden; position:relative; padding-bottom:56.25% }
 .bk-thumb-summary:after{ content:""; width:100%; display:block; }
+.bk-thumb-summary video{ width:100%; height:100%; position:absolute}
 .bk-thumb-summary img{ width:100%; position:absolute}
+
+.bk-thumb-seller-summary{ min-height:300px; color: #fff; background: url("../../img/mobile/img-buyk-top.jpg") no-repeat 0 0; background-size:auto 100%;  display: flex; flex-direction: column; justify-self: center; align-items: center;  overflow: hidden; position: relative; padding:90px 0}
+.bk-thumb-seller-summary .title{ font-size: 36px; font-weight:700; display: block;  position: relative;  text-align: center; line-height:1.2}
+.bk-thumb-seller-summary .sub-title{ font-size: 14px; margin-top:18px; }
+.bk-thumb-seller-summary .bk-status-list{ font-size: 14px; margin-top:50px; display:flex; flex-direction:column; align-items: center; row-gap:30px}
+.bk-thumb-seller-summary .bk-status-list li{text-align:center; display:flex; flex-direction:column; line-height:1.2 }
+.bk-thumb-seller-summary .bk-status-list .count{font-size: 50px; display: inline-block;  margin-top: 13px; }
+.bk-thumb-seller-summary .bk-status-list .type{line-height: 20px; font-size:16px}
+
 .bk-about{ margin-top:40px}
 .bk-about .title{ font-size:2rem; font-weight:700; line-height:1.7}
 .bk-about .title em{ color:var(--color-primary)}
@@ -1989,8 +1999,10 @@ body.overflow{overflow:hidden; z-index: -1;}
 
 /*약관*/
 .bk-term-title{ font-size:20px; font-weight:700; line-height:1.4}
+.bk-term-dl + .bk-term-title{margin-top:40px}
 .bk-term-dl{margin-top:24px}
 .bk-term-dl dt{ font-size:18px; font-weight:700; line-height:1.44}
+.bk-term-dl dd.sub-title{ font-weight:700; color:var(--color-sub)}
 .bk-term-dl dd{ margin-top:8px; line-height:1.5; font-size:16px}
 .bk-term-dl dd.num:nth-of-type(1) { margin-top:24px}
 .bk-term-dl dd.num + dd.num { margin-top:0}
@@ -2003,4 +2015,5 @@ body.overflow{overflow:hidden; z-index: -1;}
 .bk-term-dl dd.depth0{ padding-left:0}
 .bk-term-dl dd.depth1{ padding-left:20px}
 .bk-term-dl dd.depth2{ padding-left:30px}
+.bk-term-dl dd.depth3{ padding-left:40px}
 .bk-term-dl dd.has-link{ margin-top:12px; line-height:1.5; color:var(--color-sub); padding:0 12px; display:flex; flex-direction:column; align-items:flex-start; row-gap: 8px;}
