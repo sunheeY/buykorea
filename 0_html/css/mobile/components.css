@@ -538,9 +538,11 @@ a.btn-text .text {text-decoration: underline;}
 .bk-tab.tab-type-sub-line a.tab-link{ display:block; border:0; color:var(--color-default); font-size: 1.6rem; padding: 12px 10px; position:relative; z-index:3; height: auto; line-height: 1.5; box-sizing: border-box; text-align: center; background:#fff}
 
 .bk-tab.tab-type-sub-line .tab-item.active {background: var(--color-primary); color:var(--color-white); font-weight: 700;}
-.bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu > li {flex: 1 0 50%;}
-.bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu.menu-third > li {flex: 1 0 calc(100% / 3);}
-.bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu.menu-third > li button {height: 100%;}
+.bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu > li {flex-grow: 1; width: 100%;}
+.bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu > li button {height: 100%;}
+/* .bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu > li {flex: 1 0 50%;} */
+/* .bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu.menu-third > li {flex: 1 0 calc(100% / 3);} */
+/* .bk-tab.tab-type-sub-line .tab-menu-wrap .list-menu.menu-third > li button {height: 100%;} */
 
 .tab-container .cp-search.search-topType {margin-top: -24px;}
 
