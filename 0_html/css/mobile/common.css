@@ -1,11 +1,9 @@
 @charset "utf-8";
 
 @import url(./reset.css); /* 기본값 */
-@import url(./common_y.css); /* common2 */
 @import url(./variable.css); /* 변수 */
-@import url(./swiper-bundle.css); /* 컴퍼넌트-스와이퍼 */
+@import url(./swiper-bundle.min.css); /* 컴퍼넌트-스와이퍼 */
 @import url(./components.css); /* 컴퍼넌트 */
-@import url(./components_y.css); /* 컴퍼넌트2 */
 @import url(./flags.css); /* 국기 */
 
 #skip {position: relative; z-index: 3000;}
@@ -16,7 +14,7 @@
 /* [layout] */
 .ui-wrap {backface-visibility: hidden; display: flex; flex-direction: column; flex: 1 1 auto; max-width: 100%; min-height: 100vh; min-height: 100dvh; position: relative; z-index: 30; box-sizing: border-box;}
 /* .ui-wrap {position: relative;} */
-.ui-header {z-index: 300; position: sticky; top: 0; transition: top 0.1s;}
+.ui-header {z-index: 300; position: sticky; top: 0; /* transition: top 0.1s; */}
 .ui-header .header-comm,
 .ui-container .ui-inner,
 .ui-footer .ui-inner {width: 100%; min-width:320px; margin: 0 auto; box-sizing: border-box;}
@@ -101,6 +99,10 @@
 .ui-setting-btns .ico-quick04 {display: none;}
 .ui-setting-btns [class^=ico-quick0] .alert-info {left: 50%; bottom: 50%; width: 18px; height: 18px; line-height: 100%;}
 
+/*** merge ***/
+.ui-container.ui-mypage {padding:0 20px 80px 20px;}
+.ui-content-wrap .ui-contents {flex: 1 0 auto; max-width: 100%; /* font-size:0; */}
+
 /* [Layout]footer 영역 */
 .ui-footer {border-top: 1px solid #ddd;}
 .ui-footer .ui-inner {background-color: #222; color: #767676;}
@@ -153,14 +155,14 @@
 .bk-icon.bk-icon-join-complete{width:56px; height:56px; background-image: url(../../img/mobile/join-ok.svg);}/*경고/내용없음*/
 
 /* 컨텐츠 헤더 */
-.header-cont {position: sticky; top: 0; transition: top 0.1s; padding: 15px 24px 14px; box-sizing: border-box; display: flex; align-items: center; border-bottom: 1px solid #ddd; min-width: 320px; background: #fff; z-index: 200;}
+.header-cont {position: sticky; top: 0; /* transition: top 0.1s; */ padding: 15px 24px 14px; box-sizing: border-box; display: flex; align-items: center; border-bottom: 1px solid #ddd; min-width: 320px; background: #fff; z-index: 200;}
 .header-cont .cont-title {font-size: 1.8rem; line-height: 1.44444; font-weight: 500; color: #000;}
 .header-cont .btn-like {display: block; background: none; border: 0; padding: 0; margin: 0; width: 24px; height: 24px; overflow: hidden; position: absolute; top: 16px; right: 20px;}
 .header-cont .btn-like::before {content: ''; display: block; width: 24px; height: 24px; background: url(../../img/mobile/icon-gnb-heart.svg) 50% 50% no-repeat;}
 .header-cont .btn-like.is-active::before {background-image: url(../../img/mobile/icon-heart-2.svg);}
 
 /* 최상단 탭일경우 스티키 */
-.tab-type-sub-line .tab-menu-wrap {position: sticky; transition: top 0.1s; z-index: 190;}
+.tab-type-sub-line .tab-menu-wrap {position: sticky; /* transition: top 0.1s; */ z-index: 190;}
 
 /* 아이콘-footer */
 .bk-icon.bk-icon-sns-instagram,
