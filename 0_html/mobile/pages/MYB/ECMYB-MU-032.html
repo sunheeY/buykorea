@@ -48,40 +48,37 @@
 
             </div>
           </div>
+          
         </div>
       </header>
       <!--// [E]header -->
-
+      
       <!-- [S]container -->
       <!-- [s] cont header 디자인변경으로 영역 추가 -->
       <section class="header-cont">
         <button type="button" class="bk-icon-only">
           <i class="bk-icon bk-icon-gnb-prev">이전</i>
           </button>
-            <h2 class="cont-title">Inquiry</h2>
+        <h2 class="cont-title">Inquiry</h2>
       </section>
       <!-- [e] cont header 디자인변경으로 영역 추가 -->
+
       <main id="container" class="ui-container ui-mypage ui-buyer">
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
-            
 						<div class="bk-tab tab-type-sub-line">
-              <!--탭추가 : SNS Inquriy 2023-12-01-->
               <div class="tab-menu-wrap">
                 <ul class="list-menu">
                   <li><button type="button" class="tab-item"><span>Product Inquiry</span></button></li>
-                  <li><button type="button" class="tab-item"><span>SNS Inquiry</span></button></li>
-                  <li><button type="button" class="tab-item active"><span>Open Inquiry</span></button></li>
+                  <li><button type="button" class="tab-item active"><span>SNS Inquiry</span></button></li>
+                  <li><button type="button" class="tab-item"><span>Open Inquiry</span></button></li>
                   <!-- <li><button type="button" class="tab-item"><span>Business Inquiry</span></button></li> -->
                 </ul>
               </div>
               <div class="tab-container-wrap">
                 <div class="tab-container">
                   <a href="ECMYB-MU-001.html">ECMYB-MU-001.html</a>
-                </div>
-                <div class="tab-container">
-                  <a href="ECMYB-MU-032.html">ECMYB-MU-032.html</a>
                 </div>
                 <div class="tab-container active">
                   <!-- 검색영역 -->
@@ -112,9 +109,9 @@
                           <div class="search-group cp-select-auto">
                      
                             <div class="bk-select">
-                              <label for="label-v01">Approval Status</label>
+                              <label for="label-v01">셀러 확인 여부</label>
                               <div class="bk-control">
-                                <select class="" id="label-v01" title="Approval Status">
+                                <select class="" id="label-v01" title="셀러 확인 여부">
                                   <option value="1">All</option>
                                   <option value="2">Approved</option>
                                   <option value="3">Disapproved</option>
@@ -128,8 +125,9 @@
                                 <select class="" id="">
                                   <option value="1">All</option>
                                   <option value="2">Inquiry No.</option>
-                                  <option value="3">Inquiry Title</option>
-                                  <option value="4">Category</option>
+                                  <option value="3">Seller Company</option>
+                                  <option value="4">Product Name</option>
+                                  <option value="5">PID</option>
                                 </select>
                               </div>
                             </div>
@@ -161,23 +159,21 @@
                     </div>
                   </div>
 
-                  <ul class="cp-list-wrap inquiry-list open-list">
+                  <ul class="cp-list-wrap inquiry-list">
+                    <li class="bk-list-header"><a href="#" class="title-name">Company Name</a></li>
                     <li class="bk-list-body">
                       <div class="bk-list-detail">
                         <span>Inquiry No : <a href="#">inqDDMMYY-000001</a></span>
                         <span>2023.01.05</span>
                         <div class="bk-thumb-link">
-                          <p class="bk-list-tit bk-lineclamp-1">Inquiry Title Inquiry Title Inquiry Title</p>
-                          <p class="bk-list-ctgy">Depth1 &gt; Depth2 &gt; Depth3 &gt; Depth4</p>
+                          <a href="#" target="_blank" class="thumb"><img src="../../../img/tmp/tmp-goods-01.jpg"></a>
+                          <a href="#" target="_blank"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
+                          <p class="price">$100.55 ~ $110 pcs</p>
                           <dl class="bk-list-option">
                             <dt>Publication Period</dt>
                             <dd>YYYY.MM.DD (D-NNN)</dd>
-                            <dt>Approval Status</dt>
-                            <dd>Approved</dd>
-                            <dt>Read Count</dt>
-                            <dd class="inline-dd">N,NNN</dd>
-                            <dt>Received Count</dt>
-                            <dd><a href="#">N,NNN</a></dd>
+                            <dt>셀러 확인 여부</dt>
+                            <dd class="checked">확인</dd><!-- 확인일 경우 checked 클래스 추가합니다 -->
                           </dl>
                         </div>
                       </div>
@@ -188,6 +184,9 @@
                         <button type="button" class="bk-btn btn-primary btn-xsmall btn-text-xsmall">
                           <span class="text">Rewrite</span>
                         </button>
+                        <button type="button" class="bk-btn btn-primary btn-xsmall btn-text-xsmall">
+                          <span class="text">Message to Seller</span>
+                        </button>
                       </div>
                     </li>
                     <li class="bk-list-body">
@@ -195,17 +194,14 @@
                         <span>Inquiry No : <a href="#">inqDDMMYY-000001</a></span>
                         <span>2023.01.05</span>
                         <div class="bk-thumb-link">
-                          <p class="bk-list-tit bk-lineclamp-1">Inquiry Title Inquiry Title Inquiry Title</p>
-                          <p class="bk-list-ctgy">Depth1 &gt; Depth2 &gt; Depth3 &gt; Depth4</p>
+                          <a href="#" target="_blank" class="thumb"><img src="../../../img/tmp/tmp-goods-01.jpg"></a>
+                          <a href="#" target="_blank"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
+                          <p class="price">$100.55 ~ $110 pcs</p>
                           <dl class="bk-list-option">
                             <dt>Publication Period</dt>
                             <dd>YYYY.MM.DD (D-NNN)</dd>
-                            <dt>Approval Status</dt>
-                            <dd>Approved</dd>
-                            <dt>Read Count</dt>
-                            <dd class="inline-dd">N,NNN</dd>
-                            <dt>Received Count</dt>
-                            <dd><a href="#">N,NNN</a></dd>
+                            <dt>셀러 확인 여부</dt>
+                            <dd>미확인</dd><!-- 확인일 경우 checked 클래스 추가합니다 -->
                           </dl>
                         </div>
                       </div>
@@ -216,6 +212,75 @@
                         <button type="button" class="bk-btn btn-primary btn-xsmall btn-text-xsmall">
                           <span class="text">Rewrite</span>
                         </button>
+                        <!--셀러 확인 여부 미확인 시, 버튼 미노출-->
+                        <!--
+                        <button type="button" class="bk-btn btn-primary btn-xsmall btn-text-xsmall">
+                          <span class="text">Message to Seller</span>
+                        </button>
+                        -->
+                      </div>
+                    </li>
+                  </ul>
+
+                  <ul class="cp-list-wrap inquiry-list">
+                    <li class="bk-list-header"><a href="#" class="title-name">Company Name2</a></li>
+                    <li class="bk-list-body">
+                      <div class="bk-list-detail">
+                        <span>Inquiry No : <a href="#">inqDDMMYY-000001</a></span>
+                        <span>2023.01.05</span>
+                        <div class="bk-thumb-link">
+                          <a href="#" target="_blank" class="thumb"><img src="../../../img/tmp/tmp-goods-01.jpg"></a>
+                          <a href="#" target="_blank"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
+                          <p class="price">$100.55 ~ $110 pcs</p>
+                          <dl class="bk-list-option">
+                            <dt>Publication Period</dt>
+                            <dd>YYYY.MM.DD (D-NNN)</dd>
+                            <dt>셀러 확인 여부</dt>
+                            <dd class="checked">확인</dd><!-- 확인일 경우 checked 클래스 추가합니다 -->
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="bk-btn-group">
+                        <button type="button" class="bk-btn btn-favorite btn-has-icon">
+                          <span class="text">Favorite</span>
+                        </button>
+                        <button type="button" class="bk-btn btn-primary btn-xsmall btn-text-xsmall">
+                          <span class="text">Rewrite</span>
+                        </button>
+                        <button type="button" class="bk-btn btn-primary btn-xsmall btn-text-xsmall">
+                          <span class="text">Message to Seller</span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="bk-list-body">
+                      <div class="bk-list-detail">
+                        <span>Inquiry No : <a href="#">inqDDMMYY-000001</a></span>
+                        <span>2023.01.05</span>
+                        <div class="bk-thumb-link">
+                          <a href="#" target="_blank" class="thumb"><img src="../../../img/tmp/tmp-goods-01.jpg"></a>
+                          <a href="#" target="_blank"><p class="bk-list-tit bk-lineclamp-1">Product name Product name Product name Product name</p></a>
+                          <p class="price">$100.55 ~ $110 pcs</p>
+                          <dl class="bk-list-option">
+                            <dt>Publication Period</dt>
+                            <dd>YYYY.MM.DD (D-NNN)</dd>
+                            <dt>셀러 확인 여부</dt>
+                            <dd>미확인</dd><!-- 확인일 경우 checked 클래스 추가합니다 -->
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="bk-btn-group">
+                        <button type="button" class="bk-btn btn-favorite btn-has-icon">
+                          <span class="text">Favorite</span>
+                        </button>
+                        <button type="button" class="bk-btn btn-primary btn-xsmall btn-text-xsmall">
+                          <span class="text">Rewrite</span>
+                        </button>
+                        <!--셀러 확인 여부 미확인 시, 버튼 미노출-->
+                        <!--
+                        <button type="button" class="bk-btn btn-primary btn-xsmall btn-text-xsmall">
+                          <span class="text">Message to Seller</span>
+                        </button>
+                        -->                        
                       </div>
                     </li>
                   </ul>
@@ -227,12 +292,13 @@
                     <span class="text">더보기</span>
                   </button>
 
-                  <button type="button" class="bk-btn btn-primary btn-large btn-full">
-                    <span class="text">Register Inquiry</span>
-                  </button>
-
                 </div>
-
+                <div class="tab-container">
+                  <a href="ECMYB-MU-004.html">ECMYB-MU-004.html</a>
+                </div>
+                <!-- <div class="tab-container">
+                  <a href="ECMYB-MU-007.html">ECMYB-MU-007.html</a>
+                </div> -->
               </div>
             </div>
 
