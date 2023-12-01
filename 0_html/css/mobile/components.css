@@ -660,6 +660,8 @@ a.btn-text .text {text-decoration: underline;}
 .bk-tbl .tbl td:empty {min-height: 45px;}
 .bk-tbl .tbl th {padding-right: 12px; padding-left: 12px; background-color: #f6f6f6; word-break: keep-all; color:var(--color-sub)}
 .bk-tbl .tbl td {padding-right: 12px; padding-left: 12px;}
+.bk-tbl .tbl td.align-m { position:relative}
+.bk-tbl .tbl td.align-m .bk-btn{ vertical-align: middle; margin-left:8px}
 .bk-tbl .tbl thead th {text-align: center;}
 .bk-tbl .tbl tfoot tr.has-bg > * {background-color: #f3f5f8;}
 .bk-tbl .tbl [scope="rowgroup"] {border-right: 1px solid #ddd;}
@@ -1679,6 +1681,9 @@ body.overflow{overflow:hidden; z-index: -1;}
 .cp-inquiry-information .bk-inquiry-info .bk-moq span {display:inline-flex; align-items: center;}
 .cp-inquiry-information .bk-inquiry-info .bk-moq span:nth-child(1){ margin-right:8px; }
 .cp-inquiry-information .bk-inquiry-info .bk-moq span:nth-child(1):after{ content:""; width:1px; height:12px; background:var(--color-gray); display:block; margin-left:8px}
+.cp-inquiry-information .bk-inquiry-info .bk-moq.single {}
+.cp-inquiry-information .bk-inquiry-info .bk-moq.single span:nth-child(1){ margin-right:0 }
+.cp-inquiry-information .bk-inquiry-info .bk-moq.single span:nth-child(1):after{ display:none}
 
 
 .ui-inq .cp-file [class*=file-] .text{margin-right:8px; text-decoration:underline}

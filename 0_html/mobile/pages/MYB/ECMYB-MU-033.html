@@ -3,10 +3,13 @@
   <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>buyKOREA</title>
+    <title>buyKOREA for Seller</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="../../../css/mobile/common.css" />
     <noscript></noscript>
@@ -58,169 +61,15 @@
         <button type="button" class="bk-icon-only">
           <i class="bk-icon bk-icon-gnb-prev">이전</i>
           </button>
-            <h2 class="cont-title">인콰이어리 관리</h2>
+            <h2 class="cont-title">SNS Inquiry Details</h2>
       </section>
       <!-- [e] cont header 디자인변경으로 영역 추가 -->
-      <main id="container" class="ui-container ui-mypage ui-seller">
+      <main id="container" class="ui-container ui-mypage ui-buyer"><!--// [D]회원 class추가 -->
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
         <div class="ui-content-wrap ui-inner">
           <div class="ui-contents" id="contents">
-            
-						<div class="bk-tab tab-type-sub-line">
-              <!--탭추가 : SNS Inquriy 2023-12-01-->
-              <div class="tab-menu-wrap">
-                <ul class="list-menu">
-                  <li><button type="button" class="tab-item "><span>상품 인콰이어리</span></button></li>
-                  <li><button type="button" class="tab-item"><span>SNS 인콰이어리</span></button></li>
-                  <li><button type="button" class="tab-item active"><span>오픈 인콰이어리</span></button></li>
-                </ul>
-              </div>
-              <div class="tab-container-wrap">
-                <div class="tab-container">
-                  <a href="ECMYS-MU-004.html">ECMYS-MU-004.html</a>
-                </div>
-                <div class="tab-container">
-                  <a href="ECMYS-MU-038.html">ECMYS-MU-038.html</a>
-                </div>
-                <div class="tab-container active">
-                  <!-- 검색영역 -->
-                  <div class="cp-search search-topType">
-                    <form>
-                      <div class="search-inner">
-                        <div class="search-row">
-                          <div class="date-group has-dates">
-                            <div class="bk-textfield is-readonly">
-                              <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
-                              <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
-                              <div class="bk-control">
-                                <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
-                                <div class="control-field">
-                                  <input type="text" class="iText iDatepicker" id="startDate" placeholder="시작 날짜" readonly="" title="시작 날짜">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="dash">~</div>
-                            <div class="bk-textfield is-readonly">
-                              <div class="bk-control">
-                                <div class="control-field">
-                                  <input type="text" class="iText iDatepicker" id="endDate" placeholder="종료 날짜" readonly="" title="종료 날짜">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="search-group cp-select-auto">
-                     
-                            <div class="bk-select">
-                              <div class="bk-control">
-                                <select class="" id="label-v01" title="승인 상태">
-                                  <option value="1">승인 상태</option>
-                                  <option value="2">대기중 </option>
-                                  <option value="3">승인</option>
-                                  <option value="4">미승인</option>
-                                </select>
-                              </div>
-                            </div>  
-                            
-                            <div class="bk-select wd70">
-                              <div class="bk-control">
-                                <select class="" id="">
-                                  <option value="1">전체</option>
-                                  <option value="2">인콰이어리 번호</option>
-                                  <option value="3">카테고리</option>
-                                  <option value="4">바이어명</option>
-                                  <option value="5">바이어ID</option>
-                                  <option value="6">바이어 회사명</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="search-group">
-                            <div class="bk-textfield wide textfield-search is-required">
-                              <div class="bk-control">
-                                <div class="control-field">
-                                  <input type="text" name="" value="" placeholder="검색어를 입력해주십시오." class="iText" id="" required="">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <button type="button" class="bk-btn btn-primary btn-middle btn-full">
-                            <span class="text">검색</span>
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
 
-                  <div class="bk-tbl-toolbar bk-seller-item">
-                    <div class="toolbar-left"><span class="total">전체 <strong class="num">1,000</strong>건</span></div>
-                    <div class="toolbar-right">
-                      <div class="bk-checkbox">
-                        <input type="checkbox" name="checkbox" class="iCheckbox" id="checkbox">
-                        <label for="checkbox"><span class="text">즐겨찾기</span></label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <ul class="cp-list-wrap inquiry-list open-list">
-                    <li class="bk-list-body">
-                      <div class="bk-list-detail">
-                        <span>인콰이어리 번호 : <a href="#">inqDDMMYY-000001</a></span>
-                        <span>2023.01.05</span>
-                        <div class="bk-thumb-link">
-                          <p class="bk-list-tit bk-lineclamp-1">Inquiry Title Inquiry Title Inquiry Title</p>
-                          <p class="bk-list-ctgy">Depth1 &gt; Depth2 &gt; Depth3 &gt; Depth4</p>
-                          <dl class="bk-list-option">
-                            <dt>바이어(ID)</dt>
-                            <dd>Person Name (abcdefg@gmail.com)</dd>
-                            <dt>바이어 회사명</dt>
-                            <dd>Company Name</dd>
-                            <dt>게시 기간</dt>
-                            <dd>~YYYY.MM.DD (D-NNN)</dd>
-                          </dl>
-                        </div>
-                      </div>
-                      <div class="bk-btn-group">
-                        <button type="button" class="bk-btn btn-favorite btn-has-icon">
-                          <span class="text">즐겨찾기</span>
-                        </button>
-                      </div>
-                    </li>
-                    <li class="bk-list-body">
-                      <div class="bk-list-detail">
-                        <span>인콰이어리 번호 : <a href="#">inqDDMMYY-000001</a></span>
-                        <span>2023.01.05</span>
-                        <div class="bk-thumb-link">
-                          <p class="bk-list-tit bk-lineclamp-1">Inquiry Title Inquiry Title Inquiry Title</p>
-                          <p class="bk-list-ctgy">Depth1 &gt; Depth2 &gt; Depth3 &gt; Depth4</p>
-                          <dl class="bk-list-option">
-                            <dt>바이어(ID)</dt>
-                            <dd>Person Name (abcdefg@gmail.com)</dd>
-                            <dt>바이어 회사명</dt>
-                            <dd>Company Name</dd>
-                            <dt>게시 기간</dt>
-                            <dd>~YYYY.MM.DD (D-NNN)</dd>
-                          </dl>
-                        </div>
-                      </div>
-                      <div class="bk-btn-group">
-                        <button type="button" class="bk-btn btn-favorite btn-has-icon is-active">
-                          <span class="text">즐겨찾기</span>
-                        </button>
-                      </div>
-                    </li>
-                  </ul>
-
-                  <button type="button" class="bk-btn bk-btn-icon btn-full bk-btn-more">
-                    <span class="deco-icon prepend-icon">
-                      <i class="bk-icon bk-icon-plus">more</i>
-                    </span>
-                    <span class="text">더보기</span>
-                  </button>
-
-                </div>
-
-              </div>
-            </div>
+            <a href="#" onclick="dialogOpen('#dialog-full-pop')">SNS Inquiry Details</a>
 
           </div>
         </div>
@@ -356,18 +205,220 @@
       <!--// [E]footer -->
 
     <!-- [S]팝업 -->
+
+    <!-- [s]SNS Inquiry Details-->
+    <div class="bk-dialog dialog-full2" id="dialog-full-pop">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">SNS Inquiry Details</h1>              
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <section class="cp-info-block">
+              <div class="bk-title  add-pd">
+                <h2 class="bk-title-lv2">Product Inquiry</h2>
+                <button type="button" class="bk-btn btn-favorite">즐겨찾기</button>
+              </div>
+
+              <div class="bk-tbl">
+                <table class="tbl tbl-default">
+                  <caption>Product Inquiry 간략정보</caption>
+                  <colgroup>
+                  <col style="width:25vw">
+                  <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="col">Inquiry No.</th>
+                      <td>inqDDMMYY-000001</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Registration Date</th>
+                      <td>YYYY.MM.DD HH:MM:SS</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Publication Period</th>
+                      <td>~YYYY.MM.DD (D-NNN)</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">셀러 확인 여부</th>
+                      <td class="inq-check">확인</td><!--[D]미확인인 경우, inq-check 클래스 삭제-->
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="cp-info-block">
+              <div class="bk-title">
+                <strong class="title">Product Information</strong>
+              </div>
+              <div class="cp-inquiry-information">
+                <a href="#" class="thumb"><img src="../../../img/tmp/tmp-goods-02.jpg"></a>
+                <div class="bk-inquiry-info">
+                  <p class="script">RUBELLI CO., LTD.</p>
+                  <a href="#" class="title bk-lineclamp-2">Product name Product name ame Product nameame Product name</a>
+                  <strong class="bk-price">$799.6 Sets</strong>
+                  <div class="bk-moq single"><span>MOQ : N,NNN pcs</span></div>
+                </div>
+              </div>
+
+            </section>
+
+            <section class="cp-info-block">
+              <div class="bk-title">
+                <strong class="title">Buyer Information</strong>
+              </div>
+              <div class="bk-tbl">
+                <table class="tbl tbl-default">
+                  <caption>Buyer Information</caption>
+                  <colgroup>
+                    <col style="width: 30vw">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <td>Buyer’s Name</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Email</th>
+                      <td>Buyer’s Name email@email.com</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Company Name</th>
+                      <td>Buyer’s Company</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Country / City</th>
+                      <td>U.S.A / New York</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Category</th>
+                      <td>
+                        <p>depth1 > Depth2 > Depth3 > Depth4</p>
+                        <p>Depth1 > Depth2 > Depth3 > Depth4</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Where to use</th>
+                      <td>Text Text Text Text Text Text Text Text Text Text Text Text </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Current Importing Country</th>
+                      <td>Country Name</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Website</th>
+                      <td><a href="#" class="text-underline">http://www.buykorea.com</a></td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Quantity</th>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Phone Number</th>
+                      <td>
+                        +1-123456789
+                        <div class="bk-messages bk-flex-c bk-flex-row-gap-basic font-small">
+                          <div class="bk-row-div no-gap">
+                            <i class="dot">*</i>Country Code - Area code phone number (e.g. : +82-10-12345678)
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Inquiry Detail</th>
+                      <td>Inquiry Detail Text Inquiry Detail Text Inquiry Detail Text Inquiry Detail Text Inquiry Det
+                        Inquiry Detail Text Inquiry </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Attachments</th>
+                      <td>
+                        <ul class="cp-file-list">
+                          <li><a href="#">file.zip</a><em>10.00MB</em></li>
+                          <li><a href="#">file.zip</a><em>10.00MB</em></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Publication Period</th>
+                      <td>YYYY.MM.DD~YYYY.MM.DD</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="cp-info-block">
+              <div class="bk-title">
+                <strong class="title">KBC Information</strong>
+              </div>
+              <div class="bk-tbl">
+                <table class="tbl tbl-default">
+                  <caption>KBC Information</caption>
+                  <colgroup>
+                    <col style="width: 30vw">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="col">Regional HQ</th>
+                      <td>North America</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">KBC</th>
+                      <td>U.S.A - New York</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">TEL</th>
+                      <td>+1-123-4567890, +1-123-4567890, +1-123-4567890</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Email</th>
+                      <td>contact@email.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+          </div>
+        
+          <div class="dialog-footer">
+            <div class="footer-center">
+              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">List</button>
+              <button type="button" class="bk-btn btn-primary btn-outline btn-half">Message to Seller</button>
+              <button type="button" class="bk-btn btn-primary btn-full">Rewrite Inquiry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //[e] SNS Inquiry Details-->
+
     <!--// [E]팝업 -->
     </div>
     <!--// [E]ui-wrap -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
-    
     <script>
       $(document).ready(function () {
-        $('.btn-favorite, .bk-icon-like').click( function() {
-						$(this).toggleClass('is-active');
+
+        $('.btn-favorite').click( function() {
+          $(this).toggleClass('is-active');
         })
-			});
+
+      });
     </script>
   </body>
 </html>
