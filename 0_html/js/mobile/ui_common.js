@@ -913,6 +913,8 @@ function logoFileDelete(){
       }
     })
 
+    if ($('.tab-type-sub-line').closest('.bk-dialog')) { $('.tab-type-sub-line').removeAttr('style')}
+
     $(window).scroll(function() {
       quickM();
       var st = $(this).scrollTop();
