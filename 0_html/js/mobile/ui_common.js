@@ -72,6 +72,9 @@ function preLoad() {
         $('.ctgy-type2').find('ul, li').removeClass('is-active').removeAttr('style');
       }
     }
+
+
+
   })
   
   function noSubdepth() {
@@ -156,6 +159,17 @@ $.fn.extend({
 					var idx = $(this).parents('li').index();
 					$(this).addClass('active').parents('li').siblings().find('.tab-item').removeClass('active');
 					$(this).closest('.tab-menu-wrap').next('.tab-container-wrap').children('.tab-container').eq(idx).show().siblings().hide();
+
+          //탭 포커스 이동시키기 23-12-01
+          //var _bk_scrollX0 = $(this).parents('.list-menu').width();
+          var _bk_scrollX1 = $(this).parents().width();
+          //var _bk_scrollX2 = $(this).parents().offset().left;
+          //console.log("idx + :" + idx);
+          //console.log(_bk_scrollX0);
+          //console.log(_bk_scrollX1);
+          //console.log(_bk_scrollX2);
+          $(this).parents('.type-main-list .list-menu').scrollLeft(( (( _bk_scrollX1 / 2) * (idx - 1)) + 80));
+
 				});
 			}
 		});
@@ -1048,4 +1062,5 @@ $('[role="recentCloseBtn"]').on('click', function(e){
       $('.bk-recent-toolbar').hide();
    });
 });*/
+
 
