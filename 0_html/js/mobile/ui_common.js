@@ -124,6 +124,9 @@ $.fn.extend({
           if ($this.closest('#footer')) {
             $this.closest('.family-area').siblings().find('.cp-layer, .bk-btn-icon').removeClass('is-active');
           }
+          if ($this.closest('.bk-term-seller-ul')) {
+            $this.closest('li').siblings().find('.cp-layer, .bk-btn-icon').removeClass('is-active');
+          }
         }
       });
 
