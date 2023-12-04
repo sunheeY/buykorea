@@ -60,9 +60,9 @@
       <section class="header-cont">
         <button type="button" class="bk-icon-only">
           <i class="bk-icon bk-icon-gnb-prev">이전</i>
-          </button>
-            <h2 class="cont-title">로그인</h2>
-            <button type="button" class="btn-like">좋아요</button>
+        </button>
+        <h2 class="cont-title">로그인</h2>
+        <button type="button" class="btn-like">좋아요</button>
       </section>
       <!-- [e] cont header 디자인변경으로 영역 추가 -->
       <main id="container" class="ui-container ui-member"><!--// [D]회원 class추가 -->
@@ -71,9 +71,421 @@
           <div class="ui-contents" id="contents">
             <button type="button" class="bk-btn btn-primary" onclick="dialogOpen('#dialog-search-ctgy')">카테고리 팝업
             </button>
+
+            <div class="bk-tab tab-type-sub-line">
+              <div class="tab-menu-wrap">
+                <ul class="list-menu menu-third">
+                  <li><button type="button" class="tab-item active"><span>Direct Selection</span></button></li>
+                  <li><button type="button" class="tab-item"><span>Keyword Search</span></button></li>
+                  <li><button type="button" class="tab-item"><span>Favorite Categories</span></button></li>
+                </ul>
+              </div>
+              <div class="tab-container-wrap">
+                <div class="tab-container active">              
+                  <!-- [S] Form-->
+                  <ul class="cp-category ctgy-type2">
+
+                    <li class="category-depth01">
+                      <a href="#">Depth1</a>
+                      <ul class="in-subdepth">
+                        <li class="category-depth02">
+                          <a href="#">2depth</a>
+                          <ul class="in-subdepth">
+                            <li class="category-depth03">
+                              <a href="#">3depth</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth04">
+                                  <div class="bk-radio">
+                                    <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-1">
+                                    <label for="ctgy-1-1"><span class="text">4depth</span></label>
+                                  </div>
+                                </li>
+                                <li class="category-depth04">
+                                  <div class="bk-radio">
+                                    <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-2">
+                                    <label for="ctgy-1-2"><span class="text">4depth</span></label>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="category-depth03">
+                              <a href="#">3depth</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth04">
+                                  <div class="bk-radio">
+                                    <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-3">
+                                    <label for="ctgy-1-3"><span class="text">4depth</span></label>
+                                  </div>
+                                </li>
+                                <li class="category-depth04">
+                                  <div class="bk-radio">
+                                    <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-4">
+                                    <label for="ctgy-1-4"><span class="text">4depth</span></label>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="category-depth01">
+                      <a href="#">Depth1</a>
+                      <ul class="in-subdepth">
+                        <li class="category-depth02">
+                          <a href="#">2depth</a>
+                          <ul class="in-subdepth">
+                            <li class="category-depth03">
+                              <a href="#">3depth</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth04">
+                                  <div class="bk-radio">
+                                    <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-5">
+                                    <label for="ctgy-1-5"><span class="text">4depth</span></label>
+                                  </div>
+                                </li>
+                                <li class="category-depth04">
+                                  <div class="bk-radio">
+                                    <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-6">
+                                    <label for="ctgy-1-6"><span class="text">4depth</span></label>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <!-- //[D] Form-->
+                </div>
+                <div class="tab-container">
+                  <!-- [s] 검색영역 -->
+                  <div class="cp-search search-topType cp-wide-type">
+                    <form>
+                      <div class="search-inner">
+                        <div class="search-row">
+                          <div class="search-group">
+                            <div class="bk-textfield has-clear wide textfield-search">
+                              <div class="bk-control">
+                                <div class="control-field">
+                                  <input type="text" name="" value="" placeholder="" class="iText" id="검색">
+                                  <div class="control-icon append-icon">
+                                    <button type="button" class="bk-icon-only icon-search">
+                                      <i class="bk-icon bk-icon-searchPrimary">검색</i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="append-btns">
+                                <button type="button" class="bk-icon-only icon-text-clear">
+                                  <i class="bk-icon bk-icon-search-close">텍스트 지우기</i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- [s] 검색영역 -->
+
+                  <ul class="cp-list-wrap ctgy-type2">
+                    <li class="bk-list-unit">
+                      <div class="bk-radio">
+                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-7">
+                        <label for="ctgy-1-7"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                      </div>
+                    </li>
+                    
+                    <li class="bk-list-unit">
+                      <div class="bk-radio">
+                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-8">
+                        <label for="ctgy-1-8"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                      </div>
+                    </li>
+                      <li class="bk-list-unit">
+                      <div class="bk-radio">
+                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-9">
+                        <label for="ctgy-1-9"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                      </div>
+                    </li>
+                      <li class="bk-list-unit">
+                      <div class="bk-radio">
+                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-10">
+                        <label for="ctgy-1-10"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                      </div>
+                    </li>
+                      <li class="bk-list-unit">
+                      <div class="bk-radio">
+                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-11">
+                        <label for="ctgy-1-11"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                      </div>
+                    </li>
+                      
+                  </ul>
+
+                </div>
+                <div class="tab-container">
+                  <ul class="cp-list-wrap ctgy-type2">
+                    <li class="bk-list-unit">
+                      <div class="bk-radio">
+                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-12">
+                        <label for="ctgy-1-12"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                      </div>
+                    </li>
+                    
+                    <li class="bk-list-unit">
+                      <div class="bk-radio">
+                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-13">
+                        <label for="ctgy-1-13"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                      </div>
+                    </li>
+                      <li class="bk-list-unit">
+                      <div class="bk-radio">
+                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-14">
+                        <label for="ctgy-1-14"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                      </div>
+                    </li>
+                      <li class="bk-list-unit">
+                      <div class="bk-radio">
+                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-15">
+                        <label for="ctgy-1-15"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                      </div>
+                    </li>
+                      <li class="bk-list-unit">
+                      <div class="bk-radio">
+                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-16">
+                        <label for="ctgy-1-16"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                      </div>
+                    </li>
+                      
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- 개발 환경 동일화 테스트 이동 -->
+        <div class="bk-dialog has-btmBtn dialog-full" id="dialog-search-ctgy">
+          <div class="dialog-inner">
+            <div class="dialog-header">
+              <div class="header-left">
+                <div class="bk-title">
+                  <h1 class="title">Category Search</h1>
+                </div>  
+              </div>
+              <div class="header-right">
+                <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+                  <i class="bk-icon bk-icon-dialog-close">닫기</i>
+                </button>
+              </div>
+            </div>
+            <div class="dialog-container">
+              <div class="dialog-contents">
+                <div class="bk-tab tab-type-sub-line">
+                  <div class="tab-menu-wrap">
+                    <ul class="list-menu menu-third">
+                      <li><button type="button" class="tab-item active"><span>Direct Selection</span></button></li>
+                      <li><button type="button" class="tab-item"><span>Keyword Search</span></button></li>
+                      <li><button type="button" class="tab-item"><span>Favorite Categories</span></button></li>
+                    </ul>
+                  </div>
+                  <div class="tab-container-wrap">
+                    <div class="tab-container active">              
+                      <!-- [S] Form-->
+                      <ul class="cp-category ctgy-type2">
+
+                        <li class="category-depth01">
+                          <a href="#">Depth1</a>
+                          <ul class="in-subdepth">
+                            <li class="category-depth02">
+                              <a href="#">2depth</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth03">
+                                  <a href="#">3depth</a>
+                                  <ul class="in-subdepth">
+                                    <li class="category-depth04">
+                                      <div class="bk-radio">
+                                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-1">
+                                        <label for="ctgy-1-1"><span class="text">4depth</span></label>
+                                      </div>
+                                    </li>
+                                    <li class="category-depth04">
+                                      <div class="bk-radio">
+                                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-2">
+                                        <label for="ctgy-1-2"><span class="text">4depth</span></label>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="category-depth03">
+                                  <a href="#">3depth</a>
+                                  <ul class="in-subdepth">
+                                    <li class="category-depth04">
+                                      <div class="bk-radio">
+                                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-3">
+                                        <label for="ctgy-1-3"><span class="text">4depth</span></label>
+                                      </div>
+                                    </li>
+                                    <li class="category-depth04">
+                                      <div class="bk-radio">
+                                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-4">
+                                        <label for="ctgy-1-4"><span class="text">4depth</span></label>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="category-depth01">
+                          <a href="#">Depth1</a>
+                          <ul class="in-subdepth">
+                            <li class="category-depth02">
+                              <a href="#">2depth</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth03">
+                                  <a href="#">3depth</a>
+                                  <ul class="in-subdepth">
+                                    <li class="category-depth04">
+                                      <div class="bk-radio">
+                                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-5">
+                                        <label for="ctgy-1-5"><span class="text">4depth</span></label>
+                                      </div>
+                                    </li>
+                                    <li class="category-depth04">
+                                      <div class="bk-radio">
+                                        <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-6">
+                                        <label for="ctgy-1-6"><span class="text">4depth</span></label>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <!-- //[D] Form-->
+                    </div>
+                    <div class="tab-container">
+                      <!-- [s] 검색영역 -->
+                      <div class="cp-search search-topType cp-wide-type">
+                        <form>
+                          <div class="search-inner">
+                            <div class="search-row">
+                              <div class="search-group">
+                                <div class="bk-textfield has-clear wide textfield-search">
+                                  <div class="bk-control">
+                                    <div class="control-field">
+                                      <input type="text" name="" value="" placeholder="" class="iText" id="검색">
+                                      <div class="control-icon append-icon">
+                                        <button type="button" class="bk-icon-only icon-search">
+                                          <i class="bk-icon bk-icon-searchPrimary">검색</i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="append-btns">
+                                    <button type="button" class="bk-icon-only icon-text-clear">
+                                      <i class="bk-icon bk-icon-search-close">텍스트 지우기</i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- [s] 검색영역 -->
+
+                      <ul class="cp-list-wrap ctgy-type2">
+                        <li class="bk-list-unit">
+                          <div class="bk-radio">
+                            <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-7">
+                            <label for="ctgy-1-7"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                          </div>
+                        </li>
+                        
+                        <li class="bk-list-unit">
+                          <div class="bk-radio">
+                            <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-8">
+                            <label for="ctgy-1-8"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                          </div>
+                        </li>
+                          <li class="bk-list-unit">
+                          <div class="bk-radio">
+                            <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-9">
+                            <label for="ctgy-1-9"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                          </div>
+                        </li>
+                          <li class="bk-list-unit">
+                          <div class="bk-radio">
+                            <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-10">
+                            <label for="ctgy-1-10"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                          </div>
+                        </li>
+                          <li class="bk-list-unit">
+                          <div class="bk-radio">
+                            <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-11">
+                            <label for="ctgy-1-11"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                          </div>
+                        </li>
+                          
+                      </ul>
+
+                    </div>
+                    <div class="tab-container">
+                      <ul class="cp-list-wrap ctgy-type2">
+                        <li class="bk-list-unit">
+                          <div class="bk-radio">
+                            <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-12">
+                            <label for="ctgy-1-12"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                          </div>
+                        </li>
+                        
+                        <li class="bk-list-unit">
+                          <div class="bk-radio">
+                            <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-13">
+                            <label for="ctgy-1-13"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                          </div>
+                        </li>
+                          <li class="bk-list-unit">
+                          <div class="bk-radio">
+                            <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-14">
+                            <label for="ctgy-1-14"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                          </div>
+                        </li>
+                          <li class="bk-list-unit">
+                          <div class="bk-radio">
+                            <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-15">
+                            <label for="ctgy-1-15"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                          </div>
+                        </li>
+                          <li class="bk-list-unit">
+                          <div class="bk-radio">
+                            <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-16">
+                            <label for="ctgy-1-16"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
+                          </div>
+                        </li>
+                          
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="dialog-footer">
+              <div class="footer-center">
+                <button type="button" class="bk-btn btn-sticky btn-primary btn-full">Apply Selected Category</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <!--// [E]container -->
       <!-- [S]footer -->
@@ -206,224 +618,7 @@
 
     <!-- [S]팝업 -->
       <!-- [s] search-interest-->
-      <div class="bk-dialog has-btmBtn dialog-full" id="dialog-search-ctgy">
-        <div class="dialog-inner">
-          <div class="dialog-header">
-            <div class="header-left">
-              <div class="bk-title">
-                <h1 class="title">Category Search</h1>
-              </div>  
-            </div>
-            <div class="header-right">
-              <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
-                <i class="bk-icon bk-icon-dialog-close">닫기</i>
-              </button>
-            </div>
-          </div>
-          <div class="dialog-container">
-            <div class="dialog-contents">
-              <div class="bk-tab tab-type-sub-line">
-                <div class="tab-menu-wrap">
-                  <ul class="list-menu menu-third">
-                    <li><button type="button" class="tab-item active"><span>Direct Selection</span></button></li>
-                    <li><button type="button" class="tab-item"><span>Keyword Search</span></button></li>
-                    <li><button type="button" class="tab-item"><span>Favorite Categories</span></button></li>
-                  </ul>
-                </div>
-                <div class="tab-container-wrap">
-                  <div class="tab-container active">              
-                    <!-- [S] Form-->
-                    <ul class="cp-category ctgy-type2">
       
-                      <li class="category-depth01">
-                        <a href="#">Depth1</a>
-                        <ul class="in-subdepth">
-                          <li class="category-depth02">
-                            <a href="#">2depth</a>
-                            <ul class="in-subdepth">
-                              <li class="category-depth03">
-                                <a href="#">3depth</a>
-                                <ul class="in-subdepth">
-                                  <li class="category-depth04">
-                                    <div class="bk-radio">
-                                      <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-1">
-                                      <label for="ctgy-1-1"><span class="text">4depth</span></label>
-                                    </div>
-                                  </li>
-                                  <li class="category-depth04">
-                                    <div class="bk-radio">
-                                      <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-2">
-                                      <label for="ctgy-1-2"><span class="text">4depth</span></label>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li class="category-depth03">
-                                <a href="#">3depth</a>
-                                <ul class="in-subdepth">
-                                  <li class="category-depth04">
-                                    <div class="bk-radio">
-                                      <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-3">
-                                      <label for="ctgy-1-3"><span class="text">4depth</span></label>
-                                    </div>
-                                  </li>
-                                  <li class="category-depth04">
-                                    <div class="bk-radio">
-                                      <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-4">
-                                      <label for="ctgy-1-4"><span class="text">4depth</span></label>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="category-depth01">
-                        <a href="#">Depth1</a>
-                        <ul class="in-subdepth">
-                          <li class="category-depth02">
-                            <a href="#">2depth</a>
-                            <ul class="in-subdepth">
-                              <li class="category-depth03">
-                                <a href="#">3depth</a>
-                                <ul class="in-subdepth">
-                                  <li class="category-depth04">
-                                    <div class="bk-radio">
-                                      <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-5">
-                                      <label for="ctgy-1-5"><span class="text">4depth</span></label>
-                                    </div>
-                                  </li>
-                                  <li class="category-depth04">
-                                    <div class="bk-radio">
-                                      <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-6">
-                                      <label for="ctgy-1-6"><span class="text">4depth</span></label>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <!-- //[D] Form-->
-                  </div>
-                  <div class="tab-container">
-                    <!-- [s] 검색영역 -->
-                    <div class="cp-search search-topType cp-wide-type">
-                      <form>
-                        <div class="search-inner">
-                          <div class="search-row">
-                            <div class="search-group">
-                              <div class="bk-textfield has-clear wide textfield-search">
-                                <div class="bk-control">
-                                  <div class="control-field">
-                                    <input type="text" name="" value="" placeholder="" class="iText" id="검색">
-                                    <div class="control-icon append-icon">
-                                      <button type="button" class="bk-icon-only icon-search">
-                                        <i class="bk-icon bk-icon-searchPrimary">검색</i>
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="append-btns">
-                                  <button type="button" class="bk-icon-only icon-text-clear">
-                                    <i class="bk-icon bk-icon-search-close">텍스트 지우기</i>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <!-- [s] 검색영역 -->
-
-                    <ul class="cp-list-wrap ctgy-type2">
-                      <li class="bk-list-unit">
-                        <div class="bk-radio">
-                          <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-7">
-                          <label for="ctgy-1-7"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
-                        </div>
-                      </li>
-                      
-                      <li class="bk-list-unit">
-                        <div class="bk-radio">
-                          <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-8">
-                          <label for="ctgy-1-8"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
-                        </div>
-                      </li>
-                        <li class="bk-list-unit">
-                        <div class="bk-radio">
-                          <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-9">
-                          <label for="ctgy-1-9"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
-                        </div>
-                      </li>
-                        <li class="bk-list-unit">
-                        <div class="bk-radio">
-                          <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-10">
-                          <label for="ctgy-1-10"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
-                        </div>
-                      </li>
-                        <li class="bk-list-unit">
-                        <div class="bk-radio">
-                          <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-11">
-                          <label for="ctgy-1-11"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
-                        </div>
-                      </li>
-                        
-                    </ul>
-
-                  </div>
-                  <div class="tab-container">
-                    <ul class="cp-list-wrap ctgy-type2">
-                      <li class="bk-list-unit">
-                        <div class="bk-radio">
-                          <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-12">
-                          <label for="ctgy-1-12"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
-                        </div>
-                      </li>
-                      
-                      <li class="bk-list-unit">
-                        <div class="bk-radio">
-                          <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-13">
-                          <label for="ctgy-1-13"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
-                        </div>
-                      </li>
-                        <li class="bk-list-unit">
-                        <div class="bk-radio">
-                          <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-14">
-                          <label for="ctgy-1-14"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
-                        </div>
-                      </li>
-                        <li class="bk-list-unit">
-                        <div class="bk-radio">
-                          <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-15">
-                          <label for="ctgy-1-15"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
-                        </div>
-                      </li>
-                        <li class="bk-list-unit">
-                        <div class="bk-radio">
-                          <input type="radio" name="ctgy-1" class="iRadio" id="ctgy-1-16">
-                          <label for="ctgy-1-16"><span class="text">Apparel &amp; textiles &gt; Apparel Fabric &gt; Cotton Fabric &gt; Blended Cotton Fabric</span></label>
-                        </div>
-                      </li>
-                        
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="dialog-footer">
-            <div class="footer-center">
-              <button type="button" class="bk-btn btn-sticky btn-primary btn-full">Apply Selected Category</button>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- //[e] search-interest-->
 
     <!--// [E]팝업 -->

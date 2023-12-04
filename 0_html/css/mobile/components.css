@@ -2152,8 +2152,11 @@ body.overflow{overflow:hidden; z-index: -1;}
 .prd-title-22 {font-size: 2.2rem; line-height: 1.45455;}
 .prd-title-24 {font-size: 2.4rem; line-height: 1.33333;}
 .prd-txt-dft {font-size: 1.6rem; font-weight: 400; line-height: 1.5;}
+.ui-about .ui-contents > .tab-type-sub-line,
 .wide-top-margin {margin-top: -24px;}
+.ui-about .ui-contents > .tab-type-sub-line .tab-menu-wrap,
 .wide-top-margin.bk-tab.tab-type-sub-line .tab-menu-wrap {border-top: 0;}
+
 
 /* 간격 */
 .cp-info-block:not(:first-of-type) {margin-top: 40px}
