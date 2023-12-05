@@ -952,6 +952,26 @@ function logoFileDelete(){
     });
   });
 
+  // 해외 무역관 정보
+  if ($('.block-dtr-wrap').length > 0) {
+    var dtrMap  = new Swiper('.dtr-top-area', {
+      slidesPerView: 1.4,
+      spaceBetween: 24,
+      threshold: 0,
+      a11y: false,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: ".dtr-top-area .swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".dtr-top-area .swiper-button-next",
+        prevEl: ".dtr-top-area .swiper-button-prev",
+      },
+    });
+  }
+
   //상품상세
   if ($('.ui-prd-detail').length > 0) {
     var prdImages = new Swiper('.prd-img-area', {
