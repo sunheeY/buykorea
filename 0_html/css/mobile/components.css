@@ -2477,8 +2477,8 @@ body.overflow{overflow:hidden; z-index: -1;}
 /* 탭 이너 */
 .bk-sellermy-tabin {padding: 0 20px}
 .bk-sellermy-tabin .bk-tbl-toolbar {margin: 24px 0 12px;}
-.bk-sellermy-tabin .bk-tbl-ul-type2 li {font-size: 1.6rem; line-height: 1.5;}
-.bk-sellermy-tabin .bk-tbl-ul-type2 li b {font-weight: 700; line-height: 1.5; color: var(--color-primary)}
+.bk-sellermy-tabin .bk-tbl-ul-type2 li {font-size: 1.6rem; line-height: 1.5; display:flex; flex-flow: row wrap;}
+.bk-sellermy-tabin .bk-tbl-ul-type2 li b {font-weight: 700; line-height: 1.5; color: var(--color-primary); }
 .bk-sellermy-tabin .bk-btn-trash {width: 20px; height: 21px; background: url(../../img/mobile/btn_delete.svg); text-indent: -9999px; overflow: hidden; margin-left: 6px;}
 .bk-sellermy-tabin .cp-list-wrap .bk-list-detail {padding: 12px 0;}
 .bk-sellermy-tabin .cp-list-wrap .bk-list-unit {position: relative;}
