@@ -118,7 +118,7 @@
                       <span class="name-com">Company Name</span>
                     </label>
                   </li>
-                  <!-- <li class="swiper-slide">
+                  <li class="swiper-slide">
                     <input type="radio" name="radio" id="radio-06">
                     <label for="radio-06" >
                       <span class="thumb-com"><img src="../../../img/tmp/tmp-logo2.png" alt=""></span>
@@ -131,7 +131,7 @@
                       <span class="thumb-com"><img src="../../../img/tmp/tmp-logo2.png" alt=""></span>
                       <span class="name-com">Company Name</span>
                     </label>
-                  </li> -->
+                  </li>
                 </ul>
                 <div class="swiper-wing-wrap">
                   <div class="swiper-button-next"></div>
@@ -428,10 +428,12 @@
     <!--// [E]ui-wrap -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
+    <script src="../../../js/common/lib/swiper/6.8.4.swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script> -->
+    
     <script src="../../../js/mobile/ui_common.js"></script>
     
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
-    <!-- <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script> -->
     <script>
       $(document).ready(function () {
 				if( $('.cp-prd-sort').length > 0) {
@@ -447,15 +449,18 @@
           slidesPerView: 3,
           slidesPerGroup: 3,
           slidesPerColumn: 2,
-          // spaceBetween: 10,
           slidesPerColumnFill: 'row',
-          centeredSlides: false,
-          loop: false,
           navigation: {
             nextEl: ".trs-detail-slide-wrap .swiper-button-next",
             prevEl: ".trs-detail-slide-wrap .swiper-button-prev",
           },
-        })
+          observer: true,
+          observeParents: true,
+        });
+
+        if((trsSwipeBan.slides.length <= 6)) {
+          $('.trs-detail-slide-wrap .swiper-wing-wrap').css('opacity',0)
+        }
         
 
 			});
