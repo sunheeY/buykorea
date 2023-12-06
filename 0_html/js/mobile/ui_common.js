@@ -952,6 +952,53 @@ function logoFileDelete(){
     });
   });
 
+  // 트레이드쇼
+  if( $('.cp-prd-sort').length > 0) {
+    $('.cp-prd-sort .btn-view-type').click( function() {
+      var viewAdd = $(this).closest('.cp-prd-sort').siblings('.cp-prd-list');
+      viewAdd.toggleClass('viewtype-list');
+      $(this).toggleClass('btn-list');
+    });
+    
+  }
+
+  var trsSwipeBan = new Swiper('.trs-detail-slide-wrap', {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    slidesPerColumn: 2,
+    slidesPerColumnFill: 'row',
+    navigation: {
+      nextEl: ".trs-detail-slide-wrap .swiper-button-next",
+      prevEl: ".trs-detail-slide-wrap .swiper-button-prev",
+    },
+    observer: true,
+    observeParents: true,
+  });
+
+  if((trsSwipeBan.slides.length <= 6)) {
+    $('.trs-detail-slide-wrap .swiper-wing-wrap').css('opacity',0)
+  }
+  
+  // 해외 무역관 정보
+  if ($('.block-dtr-wrap').length > 0) {
+    var dtrMap  = new Swiper('.dtr-top-area', {
+      slidesPerView: 1.4,
+      spaceBetween: 24,
+      threshold: 0,
+      a11y: false,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: ".dtr-top-area .swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".dtr-top-area .swiper-button-next",
+        prevEl: ".dtr-top-area .swiper-button-prev",
+      },
+    });
+  }
+
   //상품상세
   if ($('.ui-prd-detail').length > 0) {
     var prdImages = new Swiper('.prd-img-area', {
