@@ -1919,13 +1919,14 @@ body.overflow{overflow:hidden; z-index: -1;}
 .type-main-inquiry .bk-flag-sns {background-color: #01C9E4}
 
 /*sns 인콰이어리*/
-.bk-main-tab-inq .tab-container-wrap { margin-top:12px }
-.bk-main-tab-inq .cp-prd-list { display:flex; width:100%; overflow-x:auto; flex-wrap:nowrap }
+.bk-main-tab-inq .tab-container-wrap { margin-top:12px; }
+
+.bk-main-tab-inq .cp-prd-list { display:flex; width:100%; overflow-x:auto; flex-wrap:nowrap; }
 .bk-main-tab-inq .cp-prd-list::-webkit-scrollbar { display:none }
-.bk-main-tab-inq .cp-prd-list li { width:250px; }
 .bk-main-tab-inq .cp-prd-list li + li{ padding-left:0;}
 .bk-main-tab-inq .cp-prd-list li + li:before{ display:none}
 .bk-main-tab-inq .cp-prd-list .bk-prd-unit{ border:1px solid var(--color-gray); border-radius: 8px; box-sizing: border-box; padding:32px 24px 32px 32px; position:relative; }
+.bk-main-tab-inq .cp-prd-list .bk-prd-unit { width:250px; }
 .bk-main-tab-inq .bk-list-option li + li{ padding-left:0 ; margin-left:0}
 .bk-main-tab-inq .bk-list-option li + li:before{ display:none }
 .bk-main-tab-inq .bk-list-option li:nth-child(n+2){ flex-wrap:wrap}
