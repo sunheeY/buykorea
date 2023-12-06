@@ -100,7 +100,7 @@
 .ui-setting-btns [class^=ico-quick0] .alert-info {left: 50%; bottom: 50%; width: 18px; height: 18px; line-height: 100%;}
 
 /*** merge ***/
-.ui-container.ui-mypage {padding:0 20px 80px 20px;}
+/* .ui-container.ui-mypage {padding:0 20px 80px 20px;} */
 .ui-content-wrap .ui-contents {flex: 1 0 auto; max-width: 100%; /* font-size:0; */}
 
 /* [Layout]footer 영역 */

@@ -2167,7 +2167,9 @@ body.overflow{overflow:hidden; z-index: -1;}
 .prd-title-22 {font-size: 2.2rem; line-height: 1.45455;}
 .prd-title-24 {font-size: 2.4rem; line-height: 1.33333;}
 .prd-txt-dft {font-size: 1.6rem; font-weight: 400; line-height: 1.5;}
-.ui-contents > .tab-type-sub-line,
+.ui-contents > .tab-type-sub-line:first-child,
+.ui-contents > .bk-guide-txt:first-child,
+.ui-contents > .cp-search.search-topType:first-child,
 .wide-top-margin {margin-top: -24px;}
 .ui-contents > .tab-type-sub-line .tab-menu-wrap,
 .ui-about .ui-contents > .tab-type-sub-line .tab-menu-wrap,
