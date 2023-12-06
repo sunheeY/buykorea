@@ -2169,6 +2169,7 @@ body.overflow{overflow:hidden; z-index: -1;}
 .prd-txt-dft {font-size: 1.6rem; font-weight: 400; line-height: 1.5;}
 .ui-contents > .tab-type-sub-line,
 .wide-top-margin {margin-top: -24px;}
+.ui-contents > .tab-type-sub-line .tab-menu-wrap,
 .ui-about .ui-contents > .tab-type-sub-line .tab-menu-wrap,
 .wide-top-margin.bk-tab.tab-type-sub-line .tab-menu-wrap {border-top: 0;}
 

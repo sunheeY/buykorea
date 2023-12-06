@@ -125,13 +125,13 @@
                       <span class="name-com">Company Name</span>
                     </label>
                   </li>
-                  <li class="swiper-slide">
+                  <!-- <li class="swiper-slide">
                     <input type="radio" name="radio" id="radio-07">
                     <label for="radio-07" >
                       <span class="thumb-com"><img src="../../../img/tmp/tmp-logo2.png" alt=""></span>
                       <span class="name-com">Company Name</span>
                     </label>
-                  </li>
+                  </li> -->
                 </ul>
                 <div class="swiper-wing-wrap">
                   <div class="swiper-button-next"></div>
@@ -429,39 +429,12 @@
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
     <script src="../../../js/common/lib/swiper/6.8.4.swiper-bundle.min.js"></script>
-    <!-- <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script> -->
-    
+
     <script src="../../../js/mobile/ui_common.js"></script>
     
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
     <script>
       $(document).ready(function () {
-				if( $('.cp-prd-sort').length > 0) {
-					$('.cp-prd-sort .btn-view-type').click( function() {
-						var viewAdd = $(this).closest('.cp-prd-sort').siblings('.cp-prd-list');
-						viewAdd.toggleClass('viewtype-list');
-						$(this).toggleClass('btn-list');
-					});
-					
-				}
-
-        var trsSwipeBan = new Swiper('.trs-detail-slide-wrap', {
-          slidesPerView: 3,
-          slidesPerGroup: 3,
-          slidesPerColumn: 2,
-          slidesPerColumnFill: 'row',
-          navigation: {
-            nextEl: ".trs-detail-slide-wrap .swiper-button-next",
-            prevEl: ".trs-detail-slide-wrap .swiper-button-prev",
-          },
-          observer: true,
-          observeParents: true,
-        });
-
-        if((trsSwipeBan.slides.length <= 6)) {
-          $('.trs-detail-slide-wrap .swiper-wing-wrap').css('opacity',0)
-        }
-        
 
 			});
     </script>
