@@ -1753,6 +1753,7 @@ body.overflow{overflow:hidden; z-index: -1;}
 .type-main-list .bk-prd-unit:nth-child(odd),
 .type-main-list .bk-prd-unit:nth-child(even) {padding-left: 0; padding-right:0}
 
+
 .type-main-list.bk-main-trade .cp-prd-list{ column-gap: 24px; }
 .type-main-list.bk-main-trade .bk-prd-unit { width: 240px; }
 .type-main-list.bk-main-trade .bk-prd-unit .bk-thumb-link .thumb{ border-radius: 8px; /*padding-bottom:83.333%*/ padding-bottom:70%} /*배율조정 2023-11-30*/
@@ -1869,8 +1870,10 @@ body.overflow{overflow:hidden; z-index: -1;}
 .bk-main-summary .bk-summary.order-dashboard span{ font-size:1.6rem }
 .bk-main-summary .bk-summary.order-dashboard strong{ color:var(--color-primary); font-size:24px; font-weight:500 }
 
-.type-main-inquiry { margin-top:40px}
+.type-main-inquiry { margin-top:40px; }
 .type-main-inquiry .title{ font-size:20px; font-weight:500; display:flex; justify-content:space-between; align-items: center; position:relative}
+.type-main-inquiry.bk-main-trade { margin-right:-20px; margin-left:-20px; }
+.type-main-inquiry.bk-main-trade .title{ padding:0 20px}
 
 .ui-main-seller .swiper-pagination{ position:static; margin:0 12px; font-size:1.7rem; font-weight:400; color:var(--color-default) }
 .ui-main-seller .swiper-pagination.swiper-pagination-fraction{width:unset}
@@ -1889,19 +1892,22 @@ body.overflow{overflow:hidden; z-index: -1;}
 .ui-main-seller .swiper-button-prev:after,
 .ui-main-seller .swiper-button-next:after{ display:none}
 
-.bk-main-tab-inq .bk-tab{ width:100%; overflow-x:auto;}
+.bk-main-tab-inq .bk-tab{ width:100%; overflow-x:auto; }
 .bk-main-tab-inq .bk-tab::-webkit-scrollbar{ display:none }
 .bk-main-tab-inq .bk-tab .tab-item{ border:0; font-size:2rem; width:unset; height:unset; padding:0; color:var(--color-default); text-align:left;}
 .bk-main-tab-inq .bk-tab li{ position:relative; }
 .bk-main-tab-inq .bk-tab li + li{ margin-left:12px; padding-left:12px }
 .bk-main-tab-inq .bk-tab li + li:before{ content:""; width:1px; height:20px; background:#D9D9D9; display:flex; position:absolute; left:0; top:6px; }
+.bk-main-tab-inq .bk-tab .tab-menu-wrap{ padding-left:20px}
 .bk-main-tab-inq .bk-tab .tab-item.active{ font-weight:500; color:var(--color-brand)}
 
 .favorite-inq-slide-wrap { margin-top:12px}
 .favorite-inq-slide-wrap .swiper-slide{ border:1px solid var(--color-gray); border-radius: 8px; box-sizing: border-box; padding:32px; position:relative}
 .favorite-inq-slide-wrap .swiper-slide:before{ display:none}
 
+
 .type-main-inquiry .bk-tit{ font-size:1.8rem; line-height:1.44}
+.type-main-inquiry .bk-tit.bk-lineclamp-2{ height:50px;}
 .type-main-inquiry .bk-list-option{ display:flex; flex-direction:column; row-gap:12px; margin-top:40px }
 .type-main-inquiry .bk-list-option li{ font-size:1.6rem; display:flex; align-items: center; word-break: break-all;}
 .type-main-inquiry .bk-list-option li i{ display:inline-flex; width:20px; height:20px; margin-right:8px; background: url(../../img/mobile/no-img-flag.svg) 50% no-repeat;}
@@ -1918,12 +1924,18 @@ body.overflow{overflow:hidden; z-index: -1;}
 .type-main-inquiry .bk-flag-sns {background-color: #01C9E4}
 
 /*sns 인콰이어리*/
-.bk-main-tab-inq .tab-container-wrap { margin-top:12px }
-.bk-main-tab-inq .cp-prd-list { display:flex; width:100%; overflow-x:auto; flex-wrap:nowrap }
+.type-main-inquiry.bk-main-tab-inq { margin-right:-20px; margin-left:-20px}
+
+
+.bk-main-tab-inq .tab-container-wrap { margin-top:12px; }
+
+.bk-main-tab-inq .cp-prd-list { display:flex; width:100%; overflow-x:auto; flex-wrap:nowrap; padding-left:20px; box-sizing: border-box;}
 .bk-main-tab-inq .cp-prd-list::-webkit-scrollbar { display:none }
 .bk-main-tab-inq .cp-prd-list li + li{ padding-left:0;}
 .bk-main-tab-inq .cp-prd-list li + li:before{ display:none}
-.bk-main-tab-inq .cp-prd-list .bk-prd-unit{ border:1px solid var(--color-gray); border-radius: 8px; box-sizing: border-box; padding:32px 24px 32px 32px; position:relative; width: 250px; flex-shrink: 0;}
+.bk-main-tab-inq .cp-prd-list .bk-prd-unit{ border:1px solid var(--color-gray); border-radius: 8px; box-sizing: border-box; padding:32px 24px 32px 32px; position:relative; }
+.bk-main-tab-inq .cp-prd-list .bk-prd-unit { width: 250px; flex-shrink: 0;; }
+.bk-main-tab-inq .cp-prd-list .bk-prd-unit:last-child{ margin-right:20px}
 .bk-main-tab-inq .bk-list-option li + li{ padding-left:0 ; margin-left:0}
 .bk-main-tab-inq .bk-list-option li + li:before{ display:none }
 .bk-main-tab-inq .bk-list-option li:nth-child(n+2){ flex-wrap:wrap}
@@ -1947,7 +1959,7 @@ body.overflow{overflow:hidden; z-index: -1;}
 .bk-main-close-inq .bk-detail-option li{ font-size:1.3rem}
 
 /*셀러 트레이드 쇼*/
-.ui-main-seller .trade-inq-slide-wrap { margin-top:12px; }
+.ui-main-seller .trade-inq-slide-wrap { margin-top:12px; padding-left:20px}
 .ui-main-seller .bk-main-trade .bk-thumb-link .thumb {width: 100%; height: unset; overflow: hidden; position: relative; border-radius: 8px; border: 1px solid var(--color-gray); /*padding-bottom:70.96%*/ padding-bottom:70%} /*배율조정 2023-11-30*/
 .ui-main-seller .bk-main-trade .bk-thumb-link .thumb img {object-position: left top; height:auto; min-height:100%;}
 .ui-main-seller .bk-main-trade .bk-thumb-link .bk-prd-info {margin-top:24px}
