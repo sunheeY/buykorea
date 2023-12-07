@@ -78,7 +78,7 @@ function preLoad() {
   })
   
   function noSubdepth() {
-    $('[class^=category-depth0] > a').each(function() {
+    $('[class^=category-depth0] > a').not('.slt-category [class^=category-depth0] > a').each(function() {
       if ($(this).next('.in-subdepth').length === 0) {
         $(this).parent().addClass('no-subdepth');
         // e.stopPropagation();
@@ -585,8 +585,6 @@ var dialogClose = function(e) {
 	dialog.removeClass('is-active');
 }
 
-
-
 // Masking
 function toggleMasking() {
   // 마스킹 토글 버튼에 대한 이벤트 리스너 추가
@@ -608,7 +606,6 @@ function toggleMasking() {
   });
 }
 
-
 // 기업노출
 function companyOpen(id) {
   //var dialog = $(e);
@@ -629,14 +626,11 @@ $("#license-file").on('change',function(){
   $(".file-list").addClass('is-active');
 });
 
-
 function license_file_del(){
 	//$(".file-list .upload-license-name").val("");
   $(".file-list .upload-license-name").text("");
   $(".file-list").removeClass('is-active');
 }
-
-
 
 //배송지 리스트 삭제
 $('[role="addressCloseBtn"]').on('click', function(e){
@@ -662,7 +656,6 @@ $('[role="productionPlus"]').on('click', function(e){
   dhtml += '</ul>';
   dhtml += '</div>';    
 
-
   $(this).siblings('.cp-company-img-list-group').append(dhtml);
   productNumber++;
 });
@@ -671,7 +664,6 @@ $('[role="productionPlus"]').on('click', function(e){
 function cpListDelete(e){ 
 	$(e).closest('.cp-company-img-list').remove();
 }
-
 
 //기업사진 위아래이동
 $(function() {
@@ -695,7 +687,6 @@ $(function() {
      up_down_control();
   });
 });
-
 
 //기업사진 리스트 추가
 var plusNumber = 1;
@@ -721,7 +712,6 @@ $('[role="photoListPlus"]').on('click', function(e){
  up_down_control();
  plusNumber++;
 });
-
 
 //위 아래 화살표 컨트롤
 function up_down_control(){
@@ -766,7 +756,6 @@ function list_plus_img(event,plusCnt) {
   
 }
 
-
 //기업사진 리스트 삭제
 function photoListdelete(e){ 
   $(e).closest('div[id=bk-list-id]').remove();
@@ -775,10 +764,7 @@ function photoListdelete(e){
   if(plusNumber == 0){
      plusNumber = 1;
   }
-
 }
-
-
 
 //로고
 $(document).ready(function() {
@@ -825,7 +811,6 @@ function logoFileDelete(){
   $(".file-logo-list").removeClass('is-active');
 }
 
-
 //select 박스 색상 변경 스크립트 삭제 2023-11-22 beaude
 /*$(document).ready(function(e) {
   $('select').css('color','#999');
@@ -839,10 +824,6 @@ function logoFileDelete(){
   }); 
 });*/
 
-
-
-
-
   //배송지체크
 
   function setDelivery(e){
@@ -854,7 +835,6 @@ function logoFileDelete(){
       $('#chcek-new').show();
     }
   }
-
 
   function rightMenu(id) {
     // var filterWidth = $(window).width() - 55;
@@ -891,7 +871,6 @@ function logoFileDelete(){
     var contTabWrap = $('#container .tab-type-sub-line .tab-menu-wrap').not('#container .bk-dialog .tab-type-sub-line .tab-menu-wrap');
 
     function quickM() {
-      // if(lastScrollTop >= 0 && $(window).height() - 100 <= footerHeight - lastScrollTop ) {
       if(lastScrollTop >= 0) {
         $('.ui-setting-btns').show();
         if(lastScrollTop >= headerHeight) {$('.ui-setting-btns .ico-quick04').css('display','block');}
@@ -899,37 +878,40 @@ function logoFileDelete(){
       } else $('.ui-setting-btns').hide();
     };
     quickM();
-    if (lastScrollTop > 0) {$('.ui-header').css('position', 'static');}
-    else if (lastScrollTop >= headerHeight) {$('.header-cont').addClass('bk-sticky').css('top', 0);}
+
+    if (lastScrollTop >= headerHeight) {
+      $('.ui-header').removeClass('bk-sticky').removeAttr('style');
+      $('.header-cont').addClass('bk-sticky').css('top', 0);
+    }
 
     $('#container .tab-type-sub-line').each(function() {
-      if (lastScrollTop >= headerHeight + contHeadHeight) { 
-        if (!$('.ui-header').hasClass('bk-sticky')) {
+      if (lastScrollTop >= contHeadHeight) { 
           contTabWrap.addClass('bk-sticky').css('top', contHeadHeight);
-        } else {
-          contTabWrap.addClass('bk-sticky').css('top', headerHeight + contHeadHeight);
-        }
-      } else if (lastScrollTop >= contHeadHeight) {
-        contTabWrap.addClass('bk-sticky').css('top', contHeadHeight);
+      } else { 
+        contTabWrap.removeClass('bk-sticky');
       }
     })
 
     if ($('.tab-type-sub-line').closest('.bk-dialog')) { $('.tab-type-sub-line').removeAttr('style')}
+    // console.log(lastScrollTop, headerHeight, contHeadHeight);
 
     $(window).scroll(function() {
       quickM();
+          
       var st = $(this).scrollTop();
-      if (st <= 1 || st < lastScrollTop) {
-        // console.log('위로');
-        $('.ui-header').css('position', 'sticky').css('top', 0);
-        $('.header-cont').css('top', headerHeight);
-      } else {
+
+      if (st >= lastScrollTop) {
         // console.log('아래로');
-        $('.ui-header').css('position', 'static');
+        $('.ui-header').removeClass('bk-sticky').removeAttr('style');
         if(st >= headerHeight) {
-          $('.header-cont').addClass('bk-sticky').css('top', 0);
+          $('.header-cont').css('top', 0);
         }
+      } else {
+        // console.log('위로');
+        $('.ui-header').addClass('bk-sticky').css({position: 'sticky', top: 0});
+        $('.header-cont').removeClass('bk-sticky').css('top', headerHeight);
       };
+
       if ($('#container .tab-type-sub-line').length > 0) {
         if (st <= 1 || st < lastScrollTop) { 
           contTabWrap.removeClass('bk-sticky').css('top', headerHeight + contHeadHeight);
@@ -938,7 +920,8 @@ function logoFileDelete(){
             contTabWrap.addClass('bk-sticky').css('top', contHeadHeight);
           }
         }
-      }
+      };
+      // console.log(st,headerHeight );
       lastScrollTop = st;
     });
   }
@@ -961,24 +944,25 @@ function logoFileDelete(){
     });
     
   }
-
-  var trsSwipeBan = new Swiper('.trs-detail-slide-wrap', {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    slidesPerColumn: 2,
-    slidesPerColumnFill: 'row',
-    navigation: {
-      nextEl: ".trs-detail-slide-wrap .swiper-button-next",
-      prevEl: ".trs-detail-slide-wrap .swiper-button-prev",
-    },
-    observer: true,
-    observeParents: true,
-  });
-
-  if((trsSwipeBan.slides.length <= 6)) {
-    $('.trs-detail-slide-wrap .swiper-wing-wrap').css('opacity',0)
-  }
+  if( $('.trs-detail-slide-wrap').length > 0) {
+    var trsSwipeBan = new Swiper('.trs-detail-slide-wrap', {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      slidesPerColumn: 2,
+      slidesPerColumnFill: 'row',
+      navigation: {
+        nextEl: ".trs-detail-slide-wrap .swiper-button-next",
+        prevEl: ".trs-detail-slide-wrap .swiper-button-prev",
+      },
+      observer: true,
+      observeParents: true,
+    });
   
+    if((trsSwipeBan.slides.length <= 6)) {
+      $('.trs-detail-slide-wrap .swiper-wing-wrap').css('opacity',0)
+    }
+  }
+
   // 해외 무역관 정보
   if ($('.block-dtr-wrap').length > 0) {
     var dtrMap  = new Swiper('.dtr-top-area', {
@@ -1018,14 +1002,6 @@ function logoFileDelete(){
       preventLinks: false,
     });
 
-    var recProduct = new Swiper('.prd-recs', {
-      slidesPerView: 1.7,
-      spaceBetween: 15,
-      threshold: 0,
-      preventClicks: true,
-      a11y: false,
-    });
-
     var comImages = new Swiper('.prd-company-img', {
       slidesPerView: 'auto',
       spaceBetween: 12,
@@ -1037,6 +1013,21 @@ function logoFileDelete(){
         prevEl: ".prd-company-img .swiper-button-prev",
       },
     });
+
+    $('.prd-recs').each(function() {
+      var thisIndexNum = $(this).parents('.prd-rec-area').index();
+      console.log(thisIndexNum);
+      $(this).addClass('prd-recs-' + thisIndexNum);
+
+      var recProductOpt = {
+        slidesPerView: 1.7,
+        spaceBetween: 15,
+        threshold: 0,
+        preventClicks: true,
+        a11y: false,
+      }
+      var recProduct = new Swiper('.prd-recs-' + thisIndexNum, recProductOpt);
+    })
 
     $('.btn-more').click( function() {
       $(this).find('.text').text('View Folding');
@@ -1078,7 +1069,14 @@ function logoFileDelete(){
           .parent().parent().scrollLeft(150 * (ancCntIndex - 1));
         }
       });
-     
+      
+      var headerHeight = $('.header-comm').outerHeight();
+      var contHeadHeight = $('.header-cont').outerHeight();
+
+      $('.ui-prd-detail .tab-menu-wrap').css('top', contHeadHeight);
+      if ($('.ui-header').hasClass('bk-sticky')) {
+        $('.ui-prd-detail .tab-menu-wrap').css('top', headerHeight + contHeadHeight);
+      }
     });
   }
 
