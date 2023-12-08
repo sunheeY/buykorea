@@ -278,7 +278,36 @@
     
     <script>
       $(document).ready(function () {
-        
+        $('.prd-thumb-list').each(function(){
+          var prdThumb = new Swiper(".prd-thumb-list", {
+            slidesPerView: 8,
+            spaceBetween: 4,
+            freeMode: false,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            initialSlide: 0,
+            on: {
+              init: function () {
+                this.allowTouchMove = false;
+              }
+            }
+          });
+          var prdImages = new Swiper('.prd-img-area', {
+            threshold: 0,
+            a11y: false,
+            observer: true,
+            observeParents: true,
+            navigation: {
+              nextEl: ".prd-img-area .swiper-button-next",
+              prevEl: ".prd-img-area .swiper-button-prev",
+            },
+            preventDefaultSwipe: false,
+            preventLinks: false,
+            thumbs: {
+              swiper: prdThumb,
+            },
+          });
+        })
 			});
     </script>
   </body>

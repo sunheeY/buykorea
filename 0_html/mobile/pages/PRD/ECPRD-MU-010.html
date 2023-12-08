@@ -54,13 +54,13 @@
 
       <!-- [S]container -->
       <!-- [s] cont header 디자인변경으로 영역 추가 -->
-      <!-- <section class="header-cont">
+      <section class="header-cont">
         <button type="button" class="bk-icon-only">
           <i class="bk-icon bk-icon-gnb-prev">이전</i>
           </button>
             <h2 class="cont-title">Baby &amp; Toddler</h2>
-            <button type="button" class="btn-like">좋아요</button>
-      </section> -->
+            <!-- <button type="button" class="btn-like">좋아요</button> -->
+      </section>
       <!-- [e] cont header 디자인변경으로 영역 추가 -->
       <main id="container" class="ui-container ui-prd-detail"><!--// [D]회원 class추가 -->
         <!--// [D]디자인 반영을 위한 추가 class - 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
@@ -72,7 +72,8 @@
               <div class="prd-img-area swiper-container">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <div class="prd-movie"><iframe src="https://www.youtube.com/embed/nMHuozJdTE0?si=Fit7KUGtI4m-1zEF&amp;controls=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
+                    <!-- [2023.12.08] iframe src에 &amp;enablejsapi=1 추가합니다 -->
+                    <div class="prd-movie"><iframe src="https://www.youtube.com/embed/nMHuozJdTE0?si=Fit7KUGtI4m-1zEF&amp;controls=0&amp;enablejsapi=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
                   </li>
                   <li class="swiper-slide"><img src="../../../img/tmp/image-1.png" alt=""></li>
                   <li class="swiper-slide"><img src="../../../img/tmp/image-2.png" alt=""></li>
@@ -664,7 +665,51 @@
     
     <script>
       $(document).ready(function () {
-				
+				 //상단 스와이프영역
+         var prdImages = new Swiper('.prd-img-area', {
+          slidesPerView: 1,
+          threshold: 0,
+          a11y: false,
+          observer: true,
+          observeParents: true,
+          pagination: {
+            el: ".prd-img-area .swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".prd-img-area .swiper-button-next",
+            prevEl: ".prd-img-area .swiper-button-prev",
+          },
+          preventDefaultSwipe: false,
+          preventLinks: false,
+          on: {
+            slideChange: function () {prdYTplayer();}
+          }
+        });
+        // 스와이프 넘어갈 경우 동영상 일시정지
+        function prdYTplayer() {
+          $('.swiper-slide').each(function () {
+            var youtubePlayer = $(this).find('iframe').get(0);
+            if (youtubePlayer) {
+              youtubePlayer.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+            }
+          })
+        }
+        // 하단 관련상픔 스와이프 영역
+        $('.prd-recs').each(function() {
+          var thisIndexNum = $(this).parents('.prd-rec-area').index();
+          console.log(thisIndexNum);
+          $(this).addClass('prd-recs-' + thisIndexNum);
+
+          var recProductOpt = {
+            slidesPerView: 1.7,
+            spaceBetween: 15,
+            threshold: 0,
+            preventClicks: true,
+            a11y: false,
+          }
+          var recProduct = new Swiper('.prd-recs-' + thisIndexNum, recProductOpt);
+        })
+
 			});
     </script>
   </body>

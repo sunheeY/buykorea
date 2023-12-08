@@ -42,9 +42,202 @@
                 <em class="alert-info">99+</em>
               </button>
 
-              <button type="button" class="bk-icon-only icon-gnb-menu">
+              <button type="button" class="bk-icon-only icon-gnb-menu" onclick="rightMenu('#gnb')">
                 <i class="bk-icon bk-icon-gnb-menu">메뉴</i>
               </button>
+
+              <nav id="gnb" class="ui-gnb">
+                <div class="nav-top-area">
+                  <!-- 로그인 전 -->
+                  <div class="before-login" style="display: none;">
+                    <a href="#" class="go-login">Please Sign In</a>
+                    <a href="#" class="go-login-seller">판매자센터</a>
+                  </div>
+
+                  <!-- 로그인 후 -->
+                  <div class="after-login">
+                    <div class="gnb-welcome" style="display: none;">
+                      <span class="flag-mine flag-buyer">Buyer</span>
+                      <p>Hello, <em>Buyer Kim</em></p>
+                    </div>
+                    <div class="gnb-welcome" style="display: none;">
+                      <span class="flag-mine flag-seller-staff">기업소속</span>
+                      <p><em>김셀러</em>님, 안녕하세요.</p>
+                    </div>
+                    <div class="gnb-welcome" style="display: none;">
+                      <span class="flag-mine flag-seller-ceo">기업대표</span>
+                      <p><em>김셀러</em>님, 안녕하세요.</p>
+                    </div>
+                    <div class="gnb-welcome">
+                      <span class="flag-mine flag-seller-free">소속없음</span>
+                      <p><em>김셀러</em>님, 안녕하세요.</p>
+                    </div>
+
+                    <a href="#" class="go-login-seller">판매자센터 바로가기</a>
+                  </div>
+
+                  <button type="button" class="bk-icon-only bk-btn-close">
+                    <i class="bk-icon bk-icon-dialog-close">닫기</i>
+                  </button>
+                </div>
+
+                <div class="nav-cont">
+                  <div class="bk-tab tab-type-sub-line">
+                    <div class="tab-menu-wrap">
+                      <ul class="list-menu">
+                        <li><button type="button" class="tab-item active"><span>Categories</span></button></li>
+                        <li><button type="button" class="tab-item "><span>Menu</span></button></li>
+                      </ul>
+                    </div>
+                    <div class="tab-container-wrap ">
+                      <div class="tab-container active">
+                        <a href="#" class="go-category-all">View All Categories</a>
+                        <div class="nav-ctgy-list">
+                          <ul class="cp-category">
+          
+                            <li class="category-depth01">
+                              <a href="#">Depth1 Depth1 Depth1 Depth1 Depth1 Depth1 Depth1</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth02">
+                                  <a href="#">Depth2</a>
+                                  <ul class="in-subdepth">
+                                    <li class="category-depth03">
+                                      <a href="#">Depth3</a>
+                                      <ul class="in-subdepth">
+                                        <li class="category-depth04"><a href="http://www.naver.com">Depth4</a></li>
+                                        <li class="category-depth04"><a href="#">Depth4</a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="category-depth03">
+                                      <a href="#">Depth3</a>
+                                      <ul class="in-subdepth">
+                                        <li class="category-depth04"><a href="#">Depth4</a></li>
+                                        <li class="category-depth04"><a href="#">Depth4</a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="category-depth03"><a href="#">Depth3</a></li>
+                                  </ul>
+                                </li>
+                                <li class="category-depth02">
+                                  <a href="#">Depth2</a>
+                                  <ul class="in-subdepth">
+                                    <li class="category-depth03"><a href="#">Depth3</a></li>
+                                    <li class="category-depth03"><a href="#">Depth3</a></li>
+                                  </ul>
+                                </li>
+                                <li class="category-depth02">
+                                  <a href="#">Depth2</a>
+                                  <ul class="in-subdepth">
+                                    <li class="category-depth03">
+                                      <a href="#">Depth3</a>
+                                      <ul class="in-subdepth">
+                                        <li class="category-depth04"><a href="#">Depth4</a></li>
+                                        <li class="category-depth04"><a href="#">Depth4</a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="category-depth01">
+                              <a href="#">Depth1</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth02">
+                                  <a href="#">Depth2</a>
+                                  <ul class="in-subdepth">
+                                    <li class="category-depth03"><a href="#">Depth3</a></li>
+                                    <li class="category-depth03"><a href="#">Depth3</a></li>
+                                    <li class="category-depth03"><a href="#">Depth3</a></li>
+                                  </ul>
+                                </li>
+                                <li class="category-depth02">
+                                  <a href="#">Depth2</a>
+                                  <ul class="in-subdepth">
+                                    <li class="category-depth03"><a href="#">Depth3</a></li>
+                                    <li class="category-depth03"><a href="#">Depth3</a></li>
+                                    <li class="category-depth03"><a href="#">Depth3</a></li>
+                                  </ul>
+                                </li>
+                                <li class="category-depth02">
+                                  <a href="#">Depth2</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="category-depth01">
+                              <a href="#">Depth1</a>
+                            </li>
+                            <li class="category-depth01">
+                              <a href="#">Depth1</a>
+                            </li>
+                            <li class="category-depth01">
+                              <a href="#">Depth1</a>
+                            </li>
+                            <li class="category-depth01">
+                              <a href="#">Depth1</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth02">
+                                  <a href="#go-anywhere">Depth2</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                        </div>
+                      </div>
+                      <div class="tab-container ">
+                        <div class="nav-menu-list">
+                          <ul class="cp-category">
+                            <li class="category-depth01">
+                              <a href="#">My Page</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth02"><a href="http://www.naver.com">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                              </ul>
+                            </li>
+                            <li class="category-depth01">
+                              <a href="#">Trade Shows</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                              </ul>
+                            </li>
+                            <li class="category-depth01">
+                              <a href="#">KOTRA Business Center</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                              </ul>
+                            </li>
+                            <li class="category-depth01">
+                              <a href="#">Global Partnership</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                                <li class="category-depth02"><a href="#">Depth2</a></li>
+                              </ul>
+                            </li>
+                            <li class="category-depth01">
+                              <a href="#">GP Open Innovation</a>
+                            </li>
+                            <li class="category-depth01">
+                              <a href="#">Support</a>
+                            </li>
+                          </ul>
+                          
+                          <button type="button" class="btn-logout">Log out</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
 
             </div>
           </div>
@@ -95,13 +288,103 @@
               </div>
 
               <div class="cp-title-mid">
-                <button type="button" class="bk-icon-only icon-category">
+                <button type="button" class="bk-icon-only icon-category" onclick="rightMenu('#categorys')">
                   <i class="bk-icon">카테고리</i>
                 </button>
                 <!-- [d] 검색어 입력 후 키워드는 em에 자리 잡아주세요 -->
                 <strong class="bk-mid-title"><!--검색전-->All Industry<!--검색후 --><!--Search results for--> <em class="search-keyword">“search word”</em></strong>
               </div>
 
+              <!-- [d] 카테고리는 cp-filter-wrap에 slt-category 클래스 추가합니다 -->
+              <aside class="cp-filter-wrap slt-category" id="categorys">
+
+                <div class="header-filter-area">
+                  <strong class="bk-title">Industry</strong>
+                  <button type="button" class="bk-icon-only bk-btn-close">
+                    <i class="bk-icon bk-icon-dialog-close">닫기</i>
+                  </button>
+                </div>
+
+                <div class="ui-filter-inner">
+                  <ul class="cp-category">
+
+                    <li class="category-depth01">
+                      <a href="#">대분류</a>
+                      <ul class="in-subdepth">
+                        <li class="category-depth02">
+                          <a href="#">중분류</a>
+                          <ul class="in-subdepth">
+                            <li class="category-depth03">
+                              <a href="#">소분류</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth04"><a href="#">작은소분류</a></li>
+                                <li class="category-depth04"><a href="#">작은소분류</a></li>
+                              </ul>
+                            </li>
+                            <li class="category-depth03">
+                              <a href="#">소분류</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth04"><a href="#">작은소분류</a></li>
+                                <li class="category-depth04"><a href="#">작은소분류</a></li>
+                              </ul>
+                            </li>
+                            <li class="category-depth03"><a href="#">소분류</a></li>
+                          </ul>
+                        </li>
+                        <li class="category-depth02">
+                          <a href="#">중분류</a>
+                          <ul class="in-subdepth">
+                            <li class="category-depth03"><a href="#">소분류</a></li>
+                            <li class="category-depth03"><a href="#">소분류</a></li>
+                          </ul>
+                        </li>
+                        <li class="category-depth02">
+                          <a href="#">중분류</a>
+                          <ul class="in-subdepth">
+                            <li class="category-depth03">
+                              <a href="#">소분류</a>
+                              <ul class="in-subdepth">
+                                <li class="category-depth04"><a href="#">작은소분류</a></li>
+                                <li class="category-depth04"><a href="#">작은소분류</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="category-depth01">
+                      <a href="#">대분류</a>
+                      <ul class="in-subdepth">
+                        <li class="category-depth02">
+                          <a href="#">중분류</a>
+                          <ul class="in-subdepth">
+                            <li class="category-depth03"><a href="#">소분류</a></li>
+                            <li class="category-depth03"><a href="#">소분류</a></li>
+                            <li class="category-depth03"><a href="#">소분류</a></li>
+                          </ul>
+                        </li>
+                        <li class="category-depth02">
+                          <a href="#">중분류</a>
+                          <ul class="in-subdepth">
+                            <li class="category-depth03"><a href="#">소분류</a></li>
+                            <li class="category-depth03"><a href="#">소분류</a></li>
+                            <li class="category-depth03"><a href="#">소분류</a></li>
+                          </ul>
+                        </li>
+                        <li class="category-depth02">
+                          <a href="#">중분류</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="category-depth01">
+                      <a href="#">대분류</a>
+                    </li>
+                  </ul>
+                  
+                  <button type="button" class="btn-filter-setting">Select Industry</button>
+                </div>
+                
+              </aside>
               <div class="cp-prd-sort">
                 <div class="bk-prd-count">1,345,678</div>
                 <div class="bk-sort-opt">
@@ -114,7 +397,134 @@
                     </select>
                   </div>
                   <button type="button" class="bk-btn btn-view-type">리스트보기</button>
-                  <button type="button" class="bk-btn btn-filter">필터</button>
+                  <button type="button" class="bk-btn btn-filter" onclick="rightMenu('#filterOpen')">필터</button>
+
+                  <aside class="cp-filter-wrap" id="filterOpen">
+                    <div class="header-filter-area">
+                      <strong class="bk-title">Filter</strong>
+                      <button type="button" class="bk-icon-only bk-btn-reset">
+                        <i class="bk-icon bk-icon-reset">설정초기화</i>
+                      </button>
+                      <button type="button" class="bk-icon-only bk-btn-close">
+                        <i class="bk-icon bk-icon-dialog-close">닫기</i>
+                      </button>
+                    </div>
+                    <div class="ui-filter-inner">
+                      <div class="bk-accordion">
+                        <ul class="list-accordion">
+                          <li class="acc-item is-active">
+                            <div class="acc-header">
+                              <div class="acc-inner">
+                                <div class="left-area">Array</div>
+                                <div class="right-area">
+                                  <button type="button" class="bk-icon-only link">
+                                    <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="acc-container">
+                              <div class="acc-inner">
+                                <!-- [d] 기본값 : 두줄 배열 / 한줄 배열일 경우 flex-column 클래스 추가 -->
+                                <div class="bk-radio flex-column">
+                                  <input type="radio" name="filter01" class="iRadio" id="filter01-01" checked>
+                                  <label for="filter01-01"><span class="text">Featured</span></label><!--텍스트 수정 2023-11-22-->
+                                  <input type="radio" name="filter01" class="iRadio" id="filter01-02">
+                                  <label for="filter01-02"><span class="text">Newest</span></label>
+                                  <input type="radio" name="filter01" class="iRadio" id="filter01-03">
+                                  <label for="filter01-03"><span class="text">Start date</span></label>
+                                  <input type="radio" name="filter01" class="iRadio" id="filter01-04">
+                                  <label for="filter01-04"><span class="text">End date</span></label>
+                                  <input type="radio" name="filter01" class="iRadio" id="filter01-05">
+                                  <label for="filter01-05"><span class="text">A to Z</span></label>
+                                  <input type="radio" name="filter01" class="iRadio" id="filter01-06">
+                                  <label for="filter01-06"><span class="text">Z to A</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="list-accordion">
+                          <li class="acc-item">
+                            <div class="acc-header">
+                              <div class="acc-inner">
+                                <div class="left-area">Company name</div>
+                                <div class="right-area">
+                                  <button type="button" class="bk-icon-only link">
+                                    <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="acc-container">
+                              <div class="acc-inner">
+                                <div class="bk-textfield">
+                                  <div class="control-field">
+                                    <input type="text" value="" placeholder="" class="iText" title="부서명">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="list-accordion">
+                          <li class="acc-item bk-date-range">
+                            <div class="acc-header">
+                              <div class="acc-inner">
+                                <div class="left-area">Date Range</div>
+                                <div class="right-area">
+                                  <button type="button" class="bk-icon-only link">
+                                    <i class="bk-icon bk-icon-arrow-accordion">열기/닫기</i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="acc-container">
+                              <div class="acc-inner">
+                                <div class="bk-textfield is-readonly">
+                                  <div class="bk-control">
+                                    <div class="control-field">
+                                      <input type="text" class="iText iDatepicker flatpickr-input" id="datepicker" placeholder="날짜 및 시간 선택" readonly="readonly">
+                                      ~
+                                      <input type="text" class="iText iDatepicker flatpickr-input" id="datepicker" placeholder="날짜 및 시간 선택" readonly="readonly">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="bk-radio-group type-box bk-tMg-basic"><!--// [D]small,small,default(기본 사이즈로 class 없어도되는 기본),large,xlarge -->
+                                  <!--all 추가 2023-11-22-->
+                                  <div class="bk-radio">
+                                    <input type="radio" name="radio-03" class="iRadio" id="radio-03-00">
+                                    <label for="radio-03-00" ><span class="text">All</span></label>
+                                  </div>
+                                  <!--//all 추가 2023-11-22-->
+                                  <div class="bk-radio">
+                                    <input type="radio" name="radio-03" class="iRadio" id="radio-03-01">
+                                    <label for="radio-03-01" ><span class="text">1M</span></label>
+                                  </div>
+                                  <div class="bk-radio">
+                                    <input type="radio" name="radio-03" class="iRadio" id="radio-03-02">
+                                    <label for="radio-03-02" ><span class="text">3M</span></label>
+                                  </div>
+                                  <div class="bk-radio">
+                                    <input type="radio" name="radio-03" class="iRadio" id="radio-03-03">
+                                    <label for="radio-03-03"><span class="text">6M</span></label>
+                                  </div>
+                                  <div class="bk-radio">
+                                    <input type="radio" name="radio-03" class="iRadio" id="radio-03-04">
+                                    <label for="radio-03-04" ><span class="text">12M</span></label>
+                                  </div>
+      
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                      <button type="button" class="btn-filter-setting">Search</button>
+                    </div>
+                    
+                  </aside>
                 </div>
               </div>
 
@@ -343,6 +753,7 @@
     
     <script>
       $(document).ready(function () {
+        // 트레이드 상단 배너 영역 스와이퍼
         var trsSwipeBan = new Swiper('.trs-slide-wrap', {
           loop: $('.trs-slide-wrap .swiper-slide').length > 1,
           loopedSlides: 1,
@@ -356,6 +767,11 @@
           },
         })
 
+        $('.cp-filter-wrap .bk-btn-reset').click( function() {
+          $('.ui-filter-inner .bk-radio input').prop("checked", false).next().removeClass('on');
+          $('.ui-filter-inner .bk-radio:first-of-type > input:first-of-type').prop("checked", true).next().addClass('on');
+          $('.ui-filter-inner .control-field input[type=text]').val('');
+        })
 			});
     </script>
   </body>
