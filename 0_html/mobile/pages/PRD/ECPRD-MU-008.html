@@ -68,7 +68,7 @@
           <div class="ui-contents" id="contents">
 
             확대 이미지 : 
-            <button type="button" class="bk-btn btn-has-icon btn-view-img" onclick="dialogOpen('#dialog-full')">확대 이미지 보기</button>
+            <button type="button" class="bk-btn btn-has-icon btn-view-img" onclick="dialogOpen('#dv-imgZoom-popup')">확대 이미지 보기</button>
 
           </div>
         </div>
@@ -89,8 +89,13 @@
               <ul class="list-sns">
                 <!-- [2023.12.07] sns 추가 및 순서 변경 -->
                 <li>
-                  <a href="https://www.Instagram.com/buykorea_kotra/" class="bk-icon-only" target="_blank">
-                    <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                  <a href="https://www.facebook.com/globalkotra" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-facebook">facebook</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/KOTRA_2013" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-x">twitter</i>
                   </a>
                 </li>
                 <li>
@@ -99,13 +104,8 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/globalkotra" class="bk-icon-only" target="_blank">
-                    <i class="bk-icon bk-icon-sns-facebook">facebook</i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/KOTRA_2013" class="bk-icon-only" target="_blank">
-                    <i class="bk-icon bk-icon-sns-x">twitter</i>
+                  <a href="https://www.Instagram.com/buykorea_kotra/" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-instagram">instagram</i>
                   </a>
                 </li>
               </ul>
@@ -215,7 +215,7 @@
       <!--// [E]footer -->
 
     <!-- [S]팝업 -->
-    <div class="bk-dialog has-btmBtn dialog-full" id="dialog-full"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom // 하단에 버튼이 있는 경우 has-btmBtn 클래스 추가-->
+    <div class="bk-dialog has-btmBtn dialog-full" id="dv-imgZoom-popup"><!--// [D]dim 있을 경우:dim,사이즈:dialog-full,dialog-modal,dialog-bottom // 하단에 버튼이 있는 경우 has-btmBtn 클래스 추가-->
       <div class="dialog-inner">
         <div class="dialog-header">
           <div class="header-left">
@@ -307,8 +307,40 @@
               swiper: prdThumb,
             },
           });
+        });
+
+        // 확대이미지 타이틀 숨기기
+        $('.btn-view-img').click(function() {
+          if($('#dv-imgZoom-popup.is-active .dialog-contents').height() > $(window).height()) {
+            console.log($('#dv-imgZoom-popup .dialog-contents').height(), $(window).height());
+            $('#dv-imgZoom-popup').addClass('zoomPop');
+            $('#dv-imgZoom-popup.bk-dialog.has-btmBtn .dialog-container').css('padding-bottom','0');
+          } else {
+            return false;
+          }
         })
+        function zoomPop() {
+          var lastScrollTop = $('.dialog-container').scrollTop();
+          $('.zoomPop .dialog-header').show();
+
+          $('.dialog-container').scroll(function() {
+            var st = $(this).scrollTop();
+            console.log(st, lastScrollTop);
+            if (st >= lastScrollTop) {
+              $('.zoomPop .dialog-header').hide();
+            } else if (st == 0) {
+              $('.zoomPop .dialog-header').show();
+            } else {$('.zoomPop .dialog-header').show();}
+          })
+        }
+        zoomPop();
+        $('.dialog-container').scroll(zoomPop);
+        $('.dialog-container').resize(zoomPop);
 			});
+      
+      
+     
+      
     </script>
   </body>
 </html>

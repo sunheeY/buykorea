@@ -572,8 +572,13 @@
               <ul class="list-sns">
                 <!-- [2023.12.07] sns 추가 및 순서 변경 -->
                 <li>
-                  <a href="https://www.Instagram.com/buykorea_kotra/" class="bk-icon-only" target="_blank">
-                    <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                  <a href="https://www.facebook.com/globalkotra" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-facebook">facebook</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/KOTRA_2013" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-x">twitter</i>
                   </a>
                 </li>
                 <li>
@@ -582,13 +587,8 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/globalkotra" class="bk-icon-only" target="_blank">
-                    <i class="bk-icon bk-icon-sns-facebook">facebook</i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/KOTRA_2013" class="bk-icon-only" target="_blank">
-                    <i class="bk-icon bk-icon-sns-x">twitter</i>
+                  <a href="https://www.Instagram.com/buykorea_kotra/" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-instagram">instagram</i>
                   </a>
                 </li>
               </ul>
@@ -704,7 +704,17 @@
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        // 장바구니 삭제버튼 개별 노출
+        $('.cp-list-wrap .bk-checkbox input[type=checkbox], .cp-list-wrap .bk-checkbox label').click(function () {
+          var eachDel = $(this).closest('.cp-list-wrap').next('.bk-btn-group');
+          if($(this).is(':checked')) {
+            eachDel.show();
+          } else {
+            eachDel.hide();
+          }
+        })
+      });
     </script>
   </body>
 </html>

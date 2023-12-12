@@ -101,7 +101,7 @@ body {
   /*min-width: 375px;*/ /*[최소 너비 수정][수정일:20231025 */
   word-wrap: break-word;
   /*white-space: normal;*/
-  word-break: break-all;
+  /* word-break: break-all; */
   font-size: 1.4rem;
   color: #000;
   font-family: "Roboto", "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;
