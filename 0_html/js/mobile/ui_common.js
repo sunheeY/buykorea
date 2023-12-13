@@ -155,7 +155,7 @@ $.fn.extend({
 				$thisBtn.on('click', function(e){
 					var idx = $(this).parents('li').index();
 					$(this).addClass('active').parents('li').siblings().find('.tab-item').removeClass('active');
-					$(this).closest('.tab-menu-wrap').next('.tab-container-wrap').children('.tab-container').eq(idx).show().siblings().hide();
+					$(this).closest('.tab-menu-wrap').next('.tab-container-wrap').children('.tab-container').eq(idx).show().addClass('active').siblings().hide().removeClass('active');
 
           //탭 포커스 이동시키기 23-12-01
           //var _bk_scrollX0 = $(this).parents('.list-menu').width();
@@ -814,14 +814,16 @@ function scrollCall() {
 
   if (lastScrollTop >= headerHeight) {
     $('.ui-header').removeClass('bk-sticky').removeAttr('style');
-    $('.header-cont').addClass('bk-sticky').css('top', 0);
+    $('.header-cont').addClass('bk-sticky').css({'top': 0, 'position': 'sticky'});
+  } else {
+    $('.header-cont, .ui-header').css({'top': 'unset', 'position': 'static'});
   }
 
   $('#container .tab-type-sub-line').each(function() {
     if (lastScrollTop >= contHeadHeight) { 
         contTabWrap.addClass('bk-sticky').css('top', contHeadHeight);
     } else { 
-      contTabWrap.removeClass('bk-sticky');
+      contTabWrap.removeClass('bk-sticky').removeAttr('style');
     }
   })
 
@@ -842,11 +844,17 @@ function scrollCall() {
       // console.log('위로');
       $('.ui-header').addClass('bk-sticky').css({position: 'sticky', top: 0});
       $('.header-cont').removeClass('bk-sticky').css('top', headerHeight);
+      if (st <= contHeadHeight) {
+        $('.header-cont, .ui-header').removeAttr('style');
+      }
     };
 
     if ($('#container .tab-type-sub-line').length > 0) {
-      if (st <= 1 || st < lastScrollTop) { 
+      if (st < lastScrollTop) { 
         contTabWrap.removeClass('bk-sticky').css('top', headerHeight + contHeadHeight);
+        if (st <= contHeadHeight) {
+          contTabWrap.removeAttr('style');
+        }
       } else {
         if (st >= headerHeight + contHeadHeight) {
           contTabWrap.addClass('bk-sticky').css('top', contHeadHeight);
