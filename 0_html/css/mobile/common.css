@@ -15,7 +15,7 @@
 .ui-wrap {backface-visibility: hidden; display: flex; flex-direction: column; flex: 1 1 auto; max-width: 100%; min-height: 100vh; min-height: 100dvh; position: relative; z-index: 30; box-sizing: border-box;}
 /* .ui-wrap {position: relative;} */
 /* .ui-header {z-index: 300; position: sticky; top: 0;} */
-.ui-header {z-index: 300; transition: top 0.2s;}
+.ui-header {z-index: 300; transition: top 0.2s; position: sticky;}
 .ui-header .header-comm,
 .ui-container .ui-inner,
 /* .ui-footer .ui-inner {width: 100%; min-width:320px; margin: 0 auto; box-sizing: border-box;} */

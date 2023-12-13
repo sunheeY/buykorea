@@ -409,14 +409,76 @@
             <div class="footer-center">
               <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">List</button>
               <button type="button" class="bk-btn btn-primary btn-outline btn-half">Message to Seller</button>
-              <button type="button" class="bk-btn btn-primary btn-full">Rewrite Inquiry</button>
+              <button type="button" class="bk-btn btn-primary btn-full" onclick="dialogOpen('#test')">Rewrite Inquiry</button>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- //[e] Product Inquiry Details-->
+    <div class="bk-dialog dialog-full2" id="test">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <div class="header-left">
+            <div class="bk-title">
+              <h1 class="title">Product Inquiry Details</h1>              
+            </div>
+          </div>
+          <div class="header-right">
+            <button type="button" class="bk-icon-only bk-btn-close" role="dialogCloseBtn">
+              <i class="bk-icon bk-icon-dialog-close">닫기</i>
+            </button>
+          </div>
+        </div>
+        <div class="dialog-container">
+          <div class="dialog-contents">
+            <section class="cp-info-block">
+              <div class="bk-title  add-pd">
+                <h2 class="bk-title-lv2">Product Inquiry</h2>
+                <button type="button" class="bk-btn btn-favorite">즐겨찾기</button>
+              </div>
 
+              <div class="bk-tbl">
+                <table class="tbl tbl-default">
+                  <caption>Product Inquiry 간략정보</caption>
+                  <colgroup>
+                  <col style="width:25vw">
+                  <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="col">Inquiry No.</th>
+                      <td>inqDDMMYY-000001</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Registration Date</th>
+                      <td>YYYY.MM.DD HH:MM:SS</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Publication Period</th>
+                      <td>~YYYY.MM.DD (D-NNN)</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">셀러 확인 여부</th>
+                      <td class="inq-check">확인</td><!--[D]미확인인 경우, inq-check 클래스 삭제-->
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+          </div>
+        
+          <div class="dialog-footer">
+            <div class="footer-center">
+              <button type="button" class="bk-btn btn-brand btn-outline btn-half" role="dialogCloseBtn">List</button>
+              <button type="button" class="bk-btn btn-primary btn-outline btn-half">Message to Seller</button>
+              <button type="button" class="bk-btn btn-primary btn-full">Rewrite Inquiry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--// [E]팝업 -->
     </div>
     <!--// [E]ui-wrap -->

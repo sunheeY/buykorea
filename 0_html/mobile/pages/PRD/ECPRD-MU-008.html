@@ -311,36 +311,22 @@
         });
 
         // 확대이미지 타이틀 숨기기
-        // $('.btn-view-img').click(function() {
-        //   if($('#dv-imgZoom-popup.is-active .dialog-contents').height() > $(window).height()) {
-        //     // console.log($('#dv-imgZoom-popup .dialog-contents').height(), $(window).height());
-        //     $('#dv-imgZoom-popup').addClass('zoomPop');
-        //     $('#dv-imgZoom-popup.bk-dialog.has-btmBtn .dialog-container').css('padding-bottom','0');
-        //   } else {
-        //     return false;
-        //   }
-        // })
         function zoomPop() {
           var lastScrollTop = $('.dialog-container').scrollTop();
           $('.zoomPop .dialog-header').show();
 
           $('.dialog-container').scroll(function() {
             var st = $(this).scrollTop();
-            console.log(st, $('.bk-dialog .dialog-header').outerHeight());
-            if (st >= lastScrollTop && st >= $('.bk-dialog .dialog-header').outerHeight()) {
-              $('.zoomPop .dialog-header').hide();
-              // console.log('in');
-            } /* else if (st == 0) {
+            $('.zoomPop .dialog-header').hide();
+            if ( st <= $('.bk-dialog .dialog-header').outerHeight()) {
               $('.zoomPop .dialog-header').show();
-            } */ else {$('.zoomPop .dialog-header').show();}
+            }
           });
 
           if($('#dv-imgZoom-popup.is-active .dialog-contents').height() > $(window).height()) {
             $('#dv-imgZoom-popup').addClass('zoomPop');
-            // $('#dv-imgZoom-popup.bk-dialog.has-btmBtn .dialog-container').css('padding-bottom','0');
           } else {
             $('#dv-imgZoom-popup').removeClass('zoomPop');
-            // $('#dv-imgZoom-popup.bk-dialog.has-btmBtn .dialog-container').removeAttr('style')
           }
         }
         zoomPop();

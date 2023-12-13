@@ -538,7 +538,10 @@ var dialogOpen = function(e) {
 	$(e).find('[role="dialogCloseBtn"]').on('click', function(e){
 		$(this).closest('.bk-dialog').removeClass('is-active');
     // body에서 'overflow-hidden' 클래스 제거
-    $('html,body').removeClass('overflow');
+    // $('html,body').removeClass('overflow');
+    if(!$(this).closest('.bk-dialog').siblings('.bk-dialog').hasClass('is-active')) {
+      $('html,body').removeClass('overflow');
+    } else {return false}
 	});
 }
 var dialogClose = function(e) {
@@ -816,14 +819,15 @@ function scrollCall() {
     $('.ui-header').removeClass('bk-sticky').removeAttr('style');
     $('.header-cont').addClass('bk-sticky').css({'top': 0, 'position': 'sticky'});
   } else {
-    $('.header-cont, .ui-header').css({'top': 'unset', 'position': 'static'});
+    $('.ui-header').css({'top': 'unset', 'position': 'static'});
+    // $('.header-cont, .ui-header').css({'top': 'unset', 'position': 'static'});
   }
 
   $('#container .tab-type-sub-line').each(function() {
     if (lastScrollTop >= contHeadHeight) { 
         contTabWrap.addClass('bk-sticky').css('top', contHeadHeight);
     } else { 
-      contTabWrap.removeClass('bk-sticky').removeAttr('style');
+      // contTabWrap.removeClass('bk-sticky').removeAttr('style');
     }
   })
 
@@ -836,7 +840,7 @@ function scrollCall() {
     var st = $(this).scrollTop();
     if (st >= lastScrollTop) {
       // console.log('아래로');
-      $('.ui-header').removeClass('bk-sticky').removeAttr('style');
+      $('.ui-header, .header-cont').removeClass('bk-sticky').removeAttr('style');
       if(st >= headerHeight) {
         $('.header-cont').css('top', 0);
       }
@@ -844,19 +848,17 @@ function scrollCall() {
       // console.log('위로');
       $('.ui-header').addClass('bk-sticky').css({position: 'sticky', top: 0});
       $('.header-cont').removeClass('bk-sticky').css('top', headerHeight);
-      if (st <= contHeadHeight) {
-        $('.header-cont, .ui-header').removeAttr('style');
-      }
     };
 
     if ($('#container .tab-type-sub-line').length > 0) {
       if (st < lastScrollTop) { 
         contTabWrap.removeClass('bk-sticky').css('top', headerHeight + contHeadHeight);
         if (st <= contHeadHeight) {
-          contTabWrap.removeAttr('style');
+          // contTabWrap.removeAttr('style');
         }
       } else {
-        if (st >= headerHeight + contHeadHeight) {
+        contTabWrap.removeAttr('style');
+        if (st >= headerHeight) {
           contTabWrap.addClass('bk-sticky').css('top', contHeadHeight);
         }
       }
