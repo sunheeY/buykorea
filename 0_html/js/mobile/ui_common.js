@@ -840,7 +840,7 @@ function scrollCall() {
     var st = $(this).scrollTop();
     if (st >= lastScrollTop) {
       // console.log('아래로');
-      $('.ui-header, .header-cont').removeClass('bk-sticky').removeAttr('style');
+      $('.ui-header, .header-cont').not(':hidden').removeClass('bk-sticky').removeAttr('style');
       if(st >= headerHeight) {
         $('.header-cont').css('top', 0);
       }

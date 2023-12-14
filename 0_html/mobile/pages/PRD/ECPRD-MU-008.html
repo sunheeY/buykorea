@@ -312,26 +312,15 @@
 
         // 확대이미지 타이틀 숨기기
         function zoomPop() {
-          var lastScrollTop = $('.dialog-container').scrollTop();
-          $('.zoomPop .dialog-header').show();
-
-          $('.dialog-container').scroll(function() {
-            var st = $(this).scrollTop();
-            $('.zoomPop .dialog-header').hide();
-            if ( st <= $('.bk-dialog .dialog-header').outerHeight()) {
-              $('.zoomPop .dialog-header').show();
-            }
-          });
-
-          if($('#dv-imgZoom-popup.is-active .dialog-contents').height() > $(window).height()) {
-            $('#dv-imgZoom-popup').addClass('zoomPop');
-          } else {
+          $('#dv-imgZoom-popup').addClass('zoomPop');
+          if($('#dv-imgZoom-popup .dialog-contents').height() < $(window).height()) {
             $('#dv-imgZoom-popup').removeClass('zoomPop');
-          }
-        }
+          } 
+          console.log($('#dv-imgZoom-popup .dialog-contents').height() , $(window).height())
+        };
         zoomPop();
-        $('.dialog-container').scroll(zoomPop);
-        $('.dialog-container').resize(zoomPop);
+        $(this).scroll(zoomPop);
+        $(window).resize(zoomPop);
 			});
       
       
