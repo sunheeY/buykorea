@@ -509,25 +509,26 @@
     </div>
     <!--// [E]ui-wrap -->
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
 
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
       $(document).ready(function () {
 				
         //상단 스와이프영역
-        var prdImages = new Swiper('.prd-img-area', {
+        // [2023.12.14] 확대보기 레이어와 스와이프영역 클래스명 동일하여 관련 수정 --- s
+        var prdImagesM = new Swiper('.prd-detail-top .prd-img-area', {
           slidesPerView: 1,
           threshold: 0,
           a11y: false,
           observer: true,
           observeParents: true,
           pagination: {
-            el: ".prd-img-area .swiper-pagination",
+            el: ".prd-detail-top .prd-img-area .swiper-pagination",
           },
           navigation: {
-            nextEl: ".prd-img-area .swiper-button-next",
-            prevEl: ".prd-img-area .swiper-button-prev",
+            nextEl: ".prd-detail-top .prd-img-area .swiper-button-next",
+            prevEl: ".prd-detail-top .prd-img-area .swiper-button-prev",
           },
           preventDefaultSwipe: false,
           preventLinks: false,
@@ -535,6 +536,8 @@
             slideChange: function () {prdYTplayer();}
           }
         });
+        // [2023.12.14] 확대보기 레이어와 스와이프영역 클래스명 동일하여 관련 수정 --- e
+
         // 스와이프 넘어갈 경우 동영상 일시정지
         function prdYTplayer() {
           $('.swiper-slide').each(function () {

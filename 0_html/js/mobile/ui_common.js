@@ -921,4 +921,11 @@ $(document).ready(function () {
       },
     });
   }
+
+  function realHeight() {
+    var myHeight = window.innerHeight - $(document).height();
+    $('body').css('margin-bottom', myHeight + 'px');
+  }
+  realHeight();
+  $(window).resize(realHeight);
 });

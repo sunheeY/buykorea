@@ -111,6 +111,7 @@ body {
   scroll-behavior: smooth;
   -webkit-text-size-adjust:none;
   top: 0 !important;
+  margin-bottom: env(safe-area-inset-bottom);
 }
 /* *:focus {outline: 0 !important;} */
 
