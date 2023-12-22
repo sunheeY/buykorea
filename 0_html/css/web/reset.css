@@ -1,65 +1,32 @@
-/* font */
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../../fonts/Roboto-Light.eot");
-  src: url("../../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/Roboto-Light.woff") format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/Roboto-Regular.eot");
-  src: url("../../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/Roboto-Regular.woff") format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../../fonts/Roboto-Medium.eot");
-  src: url("../../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/Roboto-Medium.woff") format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../../fonts/Roboto-Bold.eot");
-  src: url("../../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/Roboto-Bold.woff") format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../../fonts/Roboto-Black.eot");
-  src: url("../../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/Roboto-Black.woff") format("woff");
-}
-
 html {
   font-size: 62.5%;
 }
 body {
   position: relative;
+  top: 0 !important;
   min-width: 1480px;
   word-wrap: break-word;
   /*white-space: normal;*/
   word-break: break-all;
-  font-size: 1.4rem;
-  color: #111;
-  font-family: "Roboto", "Apple SD Gothic Neo", "Noto Sans KR", "Nanum Gothic",
-    "SpoqaL", sans-serif;
+  font-size: var(--font-size-default);
+  color: #000;
+  font-family: "-apple-system", "Roboto", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Nanum Gothic", "SpoqaL", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+}
+/* 언어 코드:ko,zh- CN,zh-TW,ja */
+html[lang="ko"] body,
+html[lang="zh- CN"] body,
+html[lang="zh-TW"] body,
+html[lang="ja"] body {
+}
+/* 언어 코드:en,ru,pt,es */
+html[lang="en"] body,
+html[lang="ru"] body,
+html[lang="pt"] body,
+html[lang="es"] body {
+  font-size: var(--font-long-size-default);
 }
 /* 여백 초기화 */
 body,
@@ -99,7 +66,7 @@ audio,
 object,
 embed,
 iframe {
-  max-width: 100%;
+  max-width: var(--wide-full);
   height: auto;
 } /* 반응형 */
 img,
@@ -123,7 +90,7 @@ address {
 hr,
 legend,
 caption {
-  display: none;
+  display: var(--d-none);
   position: static;
   left: -9999px;
   height: 0;
@@ -142,7 +109,7 @@ input[type="password"],
 textarea,
 .iText,
 select {
-  color: #000;
+  color: var(--color-black);
   box-sizing: border-box;
   vertical-align: middle;
 }
@@ -164,14 +131,14 @@ input[type="file"] {
 }
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
+  display: var(--d-none);
   -webkit-appearance: none;
 }
 select {
   -webkit-appearance: none;
 }
 select::-ms-expand {
-  display: none;
+  display: var(--d-none);
 }
 input::placeholder,
 input::-webkit-input-placeholder,
@@ -197,7 +164,7 @@ dd {
 }
 u,
 .underline {
-  text-decoration: underline !important;
+  text-decoration: var(--text-underline) !important;
 }
 table th {
   font-weight: normal;
@@ -235,6 +202,33 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1.4rem;
-  font-weight: normal;
+  font-size: var(--font-size-default);
+  font-weight: 500;
+}
+/* 언어 코드:en,ru,pt,es */
+html[lang="en"] h1,
+html[lang="ru"] h1,
+html[lang="pt"] h1,
+html[lang="es"] h1,
+html[lang="en"] h2,
+html[lang="ru"] h2,
+html[lang="pt"] h2,
+html[lang="es"] h2,
+html[lang="en"] h3,
+html[lang="ru"] h3,
+html[lang="pt"] h3,
+html[lang="es"] h3,
+html[lang="en"] h4,
+html[lang="ru"] h4,
+html[lang="pt"] h4,
+html[lang="es"] h4,
+html[lang="en"] h5,
+html[lang="ru"] h5,
+html[lang="pt"] h5,
+html[lang="es"] h5,
+html[lang="en"] h6,
+html[lang="ru"] h6,
+html[lang="pt"] h6,
+html[lang="es"] h6 {
+  font-size: var(--font-long-size-default);
 }

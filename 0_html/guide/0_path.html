@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width" name="viewport" />
+    <title>buy korea 고도화 가이드</title>
+    <link type="text/css" rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <h1 class="logo">
+          <a href="guide.html"><img src="img/logo.png" alt="buy korea" /></a>
+        </h1>
+        <nav class="gnb-menu">
+          <dl>
+            <dt>가이드 메뉴</dt>
+            <dd class="active"><a href="0_path.html">현황판</a></dd>
+            <dd><a href="pc-path.html">PC HTML</a></dd>
+            <dd><a href="mo-path.html">MO HTML</a></dd>
+
+          </dl>
+        </nav>
+      </header>
+      <style>
+        .status {padding: 40px 24px}
+        .status h3 {margin-top: 20px;}
+        .status .discription {background: #f3f3f3; color: #666; font-size: 12px; padding: 10px; margin: 10px 0 0;}
+        .status dl {margin: 12px 12px 0; font-size: 12px;}
+        .status dl dt {font-weight: 700; display: block; margin: 10px 0 5px; color: #000}
+        .status dl dd:not(:first-child) {margin-top: 5px; }
+        .status dl dd a,
+        .status dl dd.pc-link,
+        .status dl dd.link {cursor: pointer; width: fit-content; text-decoration: underline;}
+        .status dl dd {color: #555}
+        .status dl dd strong {display: block; color: #222}
+      </style>
+      <script src="../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+
+      <script>
+        $(document).ready(function () {
+          $('.link').click(function() {
+            var pathLink = '../mobile/pages' + $(this).text();
+            window.open(pathLink);
+          });
+          $('.pc-link').click(function() {
+            var pathLink = '../web/pages' + $(this).text();
+            window.open(pathLink);
+          });
+          $('.status > h3').click(function() {
+            $(this).next('dl').toggle();
+          });
+        });
+      </script>
+      <section class="status">
+        <h2>데일리 수정 및 신규 등</h2>
+        <p class="discription">
+          - 날짜를 클릭하면 내용을 숨길 수 있습니다.<br>
+          - <a href="#container">HTML 현황 테이블</a>에 추가되는 리스트는 업데이트 될 예정이지만 비고란의 내용은 데일리 리스트로 대체합니다.
+        </p>
+        <h3>2023.12.22</h3>
+        <dl>
+          <dt>pc/mo - 아이디찾기/비밀번호 재설정 수정/추가 및 약관동의 수정/추가</dt>
+          <dd>
+            <strong>[PC]</strong>
+            - ctrl + F = "비밀번호 재설정 - step 추가" , "아이디찾기"<br>
+            - [20231222] 주석으로 찾아주세요<br>
+            - 라디오 관련 js는 파일 하단에 있습니다.
+          </dd>
+          <dd class="pc-link">/AUT/MMAUT-PU-001.html</dd>
+          <dd class="pc-link">/JON/MMJON-PU-017.html</dd>
+          <dd> 
+            <strong>[MO]</strong>
+            - [20231222] 주석으로 찾아주세요<br>
+            - 라디오 관련 js는 파일 하단에 있습니다.
+          </dd>
+          <dd class="link">/MIM/MMMIM-MU-010.html</dd>
+          <dd class="link">/AUT/MMAUT-MU-012.html</dd>
+          <dd class="link">/JON/MMJON-MU-018.html</dd>
+          <dt>업로드 리스트</dt>
+          <dd>
+            <strong>webapp/web/pages</strong>
+            - /AUT/MMAUT-PU-001.html (수정 및 팝업 추가)<br>
+            - /JON/MMJON-PU-017.html (신규)
+            <strong>webapp/mobile/pages</strong>
+            - /MIM/MMMIM-MU-010.html (수정)<br>
+            - /JON/MMJON-MU-018.html (수정)<br>
+            - /AUT/MMAUT-MU-012.html (신규)
+            <strong>webapp/css/web</strong>
+            - common.css<br>
+            - components.css
+            <strong>webapp/css/mobile</strong>
+            - components.css
+          </dd>
+        </dl>
+        <h3>2023.12.21</h3>
+        <dl style="display: none;">
+          <dt>mo - 메인페이지 팝업 수정</dt>
+          <dd class="link">/MAN/ECMAN-MU-004.html</dd>
+          <dd>
+            - components.css를 엎어주세요
+          </dd>
+          <dt>pc - hs code 검색 링크표기</dt>
+          <dd>
+            - .dialog-pq-hscode .tbl-data td.dv-hs-code {text-decoration: underline;}
+          </dd>
+          <dt>mo/pc - 검색영역 삭제버튼</dt>
+          <dd class="pc-link">/layout/layout.html</dd>
+          <dd class="link">/SEC/SMSEC-MU-001.html</dd>
+          <dd>
+            - 인풋박스에 포터스 들어가면 삭제버튼 생기는 구조<br>
+            - 삭제버튼이 검색버튼 앞에 존재해야 나옴
+          </dd>
+          <dt>mo - 전체카테고리</dt>
+          <dd class="link">/PRD/ECPRD-MU-001.html</dd>
+          <dd>
+            - 텍스트 길어질경우 하트 영역 침범. css로 처리
+          </dd>
+          <dt>mo - 상품목록</dt>
+          <dd class="link">/PRD/ECPRD-MU-002.html</dd>
+          <dd>
+            - 리스트타입/카드타입 아이콘 변경 요청. css로 처리
+          </dd>
+        </dl>
+        <h3>2023.12.19</h3>
+        <dl style="display: none;">
+          <dt>pc - 아코디언 하단에 셀렉트박스 올 경우 해결방법</dt>
+          <dd class="pc-link">/MIM/MMMIM-PU-014.html</dd>
+          <dd>
+            - 아코디언 안에 셀렉트박스가 하단에 붙어 셀렉트박스 레이어가 눌릴 경우 'acc-container > acc-inner'에 in-select 클래스를 추가
+          </dd>
+          <dt>pc - 상품상세</dt>
+          <dd><a href="../web/prd-pdf/ECPRD-PU-004_pdf.html" target="_blank">/prd-pdf/ECPRD-PU-004_pdf.html</a></dd>
+          <dd>
+            - 상품상세영역 한 폴더에 묶어놓음
+          </dd>
+          <dt>pc - 배송내역 상세</dt>
+          <dd class="pc-link">/COM/popup.html</dd>
+          <dd>
+            - 하단 영역 테이블 추가 작업 (ctrl + '배송내역 상세')
+          </dd>
+          <dt>pc - 로고 이미지 변경 및 태그 수정 (75개 파일)</dt>
+          <dd>
+            - png 이미지를 svg 이미지로 변경<br>
+            - img/web/logo-dark.svg<br>
+            - 'img src="../../../img/web/logo_dark.png" alt="buykorea" /' => 'img src="../../../img/web/logo-dark.svg" alt="buykorea" width="166px" /'
+          </dd>
+          <dt>pc - 프린트</dt>
+          <dd>- 견적서 프린트하기 누를 경우 우측의 실선(스크롤바로 추측됨) 나오지 않게 css</dd>
+          <dt>mo/pc - 개인정보 처리방침 시행 시작일 수정</dt>
+          <dd class="pc-link">/FTS/ECFTS-PU-003.html</dd>
+          <dd class="link">/FTS/ECFTS-MU-003.html</dd>
+          <dd>- 20231219 주석 확인 바랍니다</dd>
+          <dt>mo - 배송내역 상세</dt>
+          <dd class="link">/MYS/ECMYS-MU-027.html</dd>
+          <dd>
+            - 마지막 테이블 '발송일시' 셀 삭제
+          </dd>
+          <dt>mo - 팝업 하단 버튼</dt>
+          <dd>reset.css 업로드 부탁드려요</dd>
+        </dl>
+        <h3>2023.12.13</h3>
+        <dl style="display: none">
+          <dt>상품상세</dt>
+          <dd class="link">/PRD/ECPRD-MU-008.html</dd>
+          <dd>
+            - 이미지 확대보기 가로모드 수정
+          </dd>
+          <dt>트레이드쇼</dt>
+          <dd class="link">/TRS/TSTRS-MU-004.html</dd>
+          <dd>
+            - 배너영역 이미지 사이즈 높이값 고정 : 피씨 배너와 동일하게 사용하고 height 고정, width 100%. 이미지 비율 깨지는 부분 동의 후 작업.
+          </dd>
+          <dt>디자인검수 적용</dt>
+          <dd>
+            - 리스트 간격, 스와이프 재생/일시정지 버튼 변경, 폰트 사이즈 등 수정
+          </dd>
+          <dt>css</dt>
+          <dd>
+            - /css/mobile/common.css <br>
+            - /css/mobile/components.css 
+          </dd>
+          <dt>js</dt>
+          <dd>
+            - /js/mobile/ui_common.js
+          </dd>
+          <dt>img</dt>
+          <dd>
+            - /img/mobile/icon-slide-play.svg<br>
+            - /img/mobile/icon-slide-stop.svg<br>
+            - /img/mobile/sns-insta.svg<br>
+            - /img/mobile/sns-link.svg<br>
+            - /img/mobile/sns-x.svg<br>
+            - /img/mobile/sns-face.svg
+          </dd>
+          <dt>Check</dt>
+          <dd>
+            - 모바일 메인 스크롤 영역 버튼 삽입 후 좌우 이동 or 스와이프로 변경
+          </dd>
+        </dl>
+        <h3>2023.12.12</h3>
+        <dl style="display: none;">
+          <dt>메인 - 바이어</dt>
+          <dd class="link">/MAN/ECMAN-MU-001.html</dd>
+          <dd>
+            - POPULAR CATEGORIES 3줄로 뿌려주기 수정 (css, js)
+          </dd>
+          <dt>삭제상품</dt>
+          <dd class="link">/MYS/ECMYS-MU-003.html</dd>
+          <dd>
+            - 띄어쓰기 수정 [2023.12.12] 주석 참조
+          </dd>
+          <dt>상품상세</dt>
+          <dd class="link">/PRD/ECPRD-MU-008.html</dd>
+          <dd>
+            - 이미지 확대보기 가로모드 수정
+          </dd>
+          <dt>상품목록</dt>
+          <dd class="link">/PRD/ECPRD-MU-002.html</dd>
+          <dd class="link">/PRD/ECPRD-MU-005.html</dd>
+          <dd class="link">/SEC/SMSEC-MU-003.html</dd>
+          <dd class="link">/TRS/TSTRS-MU-001.html</dd>
+          <dd class="link">/TRS/TSTRS-MU-004.html</dd>
+          <dd>
+            - 폰트 사이즈 및 여백 수정
+          </dd>
+          <dt>css</dt>
+          <dd>
+            - /css/mobile/common.css <br>
+            - /css/mobile/components.css 
+          </dd>
+          <dt>js</dt>
+          <dd>
+            - /js/mobile/ui_common.js
+          </dd>
+          <dt>img</dt>
+          <dd>
+            - /img/mobile/logo_dark_1c.svg (모바일 상단 로고 교체됨)
+          </dd>
+          <dt>Check</dt>
+          <dd>
+            - 스티키 수정 중<br>
+            - 팝업 하단 버튼 짤림<br>
+            - 팝업 두개 일 경우 body에 overflow 해제되지 않게
+          </dd>
+        </dl>
+        <h3>2023.12.11</h3>
+        <dl style="display: none">
+          <dt>장바구니</dt>
+          <dd class="link">/CAT/ECCAT-MU-001.html</dd>
+          <dd>
+            - 회사별로 노출되는 삭제 버튼의 기본값을 숨기고 체크하면 나올 수 있게 수정 (해당 페이지 바닥 영역에 js 추가)<br>
+          </dd>
+          <dt>상품상세</dt>
+          <dd class="link">/PRD/ECPRD-MU-005.html</dd>
+          <dd>
+            - 상품상세 이미지 사이즈 강제로 잡아줌 width: 100%; height: auto;
+          </dd>
+          <dd class="link">/PRD/ECPRD-MU-008.html</dd>
+          <dd>
+            - 이미지 확대보기에서 컨텐츠 높이가 윈도우 높이보다 클 경우 스크롤 다운시 상단 타이틀 숨김/ 올라갈 경우 타이틀 노출 수정  (해당 페이지 바닥 영역에 js 추가)
+          </dd>
+          <dd class="link">/PRD/ECPRD-MU-010.html</dd>
+          <dd>
+            - 상품상세 회사소개탭 내 앵커 영역 탭 숨김.
+          </dd>
+          <dt>트레이드쇼</dt>
+          <dd class="link">/TRS/TSTRS-MU-001.html</dd>
+          <dd>
+            - 리스트 정렬 토클 및 스와이프 영역 해당 바닥 페이지로 이동 -> ui_common.js 에는 주석처리 함
+          </dd>
+          <dt>푸터 - SNS 수정</dt>
+          <dd class="link">/layout/layout.html</dd>
+          <dd>
+            - 이미지 변경 및 아이콘 순서 변경
+          </dd>
+          <dt>css</dt>
+          <dd>
+            - /css/mobile/common.css <br>
+            - /css/mobile/components.css 
+          </dd>
+          <dt>js</dt>
+          <dd>
+            - /js/mobile/ui_common.js
+          </dd>
+          <dt>img</dt>
+          <dd>
+            - /img/mobile/sns-insta.svg<br>
+            - /img/mobile/sns-link.svg<br>
+            - /img/mobile/sns-face.svg<br>
+            - /img/mobile/sns-x.svg<br>
+          </dd>
+        </dl>
+        <h3>2023.12.08</h3>
+        <dl style="display: none;">
+          <dt>상품상세</dt>
+          <dd class="link">/PRD/ECPRD-MU-005.html</dd>
+          <dd class="link">/PRD/ECPRD-MU-008.html</dd>
+          <dd class="link">/PRD/ECPRD-MU-010.html</dd>
+          <dd>
+            - 동영상 플레이 가능하게 iframe에 z-index 살려줌 <br>
+            - 상세이미지 확대보기의 active 클래스 누락 수정<br>
+            - 상세페이지 내 탭 스티키 위치 수정 및 회사소개 탭 내 스티이 위치 조정<br>
+            - 상세와 관련한 js를 해당 페이지 하단으로 옮김
+          </dd>
+          <dt>트레이드쇼</dt>
+          <dd class="link">/PRD/ECPRD-MU-001.html</dd>
+          <dd class="link">/PRD/ECPRD-MU-004.html</dd>
+          <dd>
+            - 스와이프 영역 비활성 버튼 숨김처리 적용<br>
+            - 필터 클릭시 바닥 움직임 필터 영역 스크롤 확인
+          </dd>
+          <dt>메인 - 셀러</dt>
+          <dd class="link">/MAN/ECMAN-MU-002.html</dd>
+          <dd>
+            - 관심 인콰이어리 박스 사이즈 고정
+          </dd>
+          <dt>로그인 - 바이어</dt>
+          <dd class="link">/MIM/MMMIM-MU-001.html</dd>
+          <dd>
+            -  소셜 로그인 아이콘 정렬 수정
+          </dd>
+          <dt>기타</dt>
+          <dd>
+            - 한줄 말줄임일 경우 break-all 추가함<br>
+            - min-width 잡아둔 영역 해제
+          </dd>
+        </dl>
+        <h3>2023.12.07</h3>
+        <dl style="display: none;">
+          <dt>상품상세</dt>
+          <dd class="link">/PRD/ECPRD-MU-005.html</dd>
+          <dd>
+            - 타이틀 영역 추가하여 스티키 위치 수정 <br>
+            - 키워드 두줄처리 안되게 수정 <br>
+            - 하단 관련상품의 스와이퍼 중복으로 이상호출 수정<br>
+          </dd>
+          <dt>메인 - 바이어</dt>
+          <dd class="link">/MAN/ECMAN-MU-001.html</dd>
+          <dd>
+            - 상품 영역 타이틀 사이즈 및 간격 수정 
+          </dd>
+          <dt>메인 - 셀러</dt>
+          <dd class="link">/MAN/ECMAN-MU-002.html</dd>
+          <dd>
+            - 최근인콰이어리 박스 사이즈 고정
+          </dd>
+          <dt>트레이드쇼</dt>
+          <dd class="link">/TRS/TSTRS-MU-001.html</dd>
+          <dd class="link">/TRS/TSTRS-MU-002.html</dd>
+          <dd>
+            - 카테고리 오픈 시 nav 메뉴와 충돌되는 부분 수정<br>
+            - 리스트 타입일 경우 이미지 비율 수정<br>
+            - 트레이드쇼 상품 이미지 비율 원복
+          </dd>
+          <dt>푸터 - SNS 추가</dt>
+          <dd class="link">/layout/layout.html</dd>
+          <dt>css</dt>
+          <dd>
+            - /css/mobile/common.css <br>
+            - /css/mobile/components.css 
+          </dd>
+          <dt>js</dt>
+          <dd>
+            - /js/mobile/ui_common.js
+          </dd>
+          <dt>img</dt>
+          <dd>
+            - /img/mobile/sns-insta.svg<br>
+            - /img/mobile/sns-link.svg<br>
+            - /img/mobile/sns-face.svg<br>
+            - /img/mobile/sns-x.svg<br>
+          </dd>
+        </dl>
+        <h3>2023.12.05</h3>
+        <dl style="display: none;">
+          <dt>트레이드쇼</dt>
+          <dd class="link">/TRS/TSTRS-MU-004.html</dd>
+          <dd>
+            - 회사 로고 없음 이미지 추가/css도 함께<br>
+            - 스와이퍼 영역 6개 이하 날개 생기지 않게
+          </dd>
+          <dt>셀러-메인</dt>
+          <dd class="link">/MAN/ECMAN-MU-001.html</dd>
+          <dd>
+            - 스와이퍼영역 여백 삭제
+          </dd>
+          <dt>바이어-메인</dt>
+          <dd class="link">/MAN/ECMAN-MU-002.html</dd>
+          <dd>
+            - 국기없음 이미지 추가/css도 함께
+          </dd>
+          <dt>무역관</dt>
+          <dd class="link">/KBC/GOKBC-MU-001.html</dd>
+          <dd>
+            - 신규 추가
+          </dd>
+          <dt>개인정보처리방침</dt>
+          <dd class="link">FTS/ECFTS-MU-003.html</dd>
+          <dd>
+            - text 삭제 : 2023.06.15 ~ 2023.10.23 적용지침
+          </dd>
+          <dt>css</dt>
+          <dd>
+            - /css/mobile/common.css <br>
+            - /css/mobile/components.css 
+          </dd>
+          <dt>js</dt>
+          <dd>
+            - /js/mobile/ui_common.js <br>
+            - /js/common/lib/swiper/6.8.4.swiper-bundle.min.js
+          </dd>
+          <dt>img</dt>
+          <dd>
+          - /img/mobile/dtr-map-01-on.svg<br>
+          - /img/mobile/dtr-map-02-on.svg<br>
+          - /img/mobile/dtr-map-03-on.svg<br>
+          - /img/mobile/dtr-map-04-on.svg<br>
+          - /img/mobile/dtr-map-05-on.svg<br>
+          - /img/mobile/dtr-map-06-on.svg<br>
+          - /img/mobile/dtr-map-07-on.svg<br>
+          - /img/mobile/dtr-map-08-on.svg<br>
+          - /img/mobile/dtr-map-09-on.svg<br>
+          - /img/mobile/dtr-map-10-on.svg<br>
+          - /img/mobile/no-img-flag.svg<br>
+          - /img/mobile/no-img-ci.svg<br>
+          - /img/mobile/icon-sort-list.svg<br>
+          - /img/mobile/icon-sort-filter.svg<br>
+          - /img/mobile/icon-sort-img.svg
+          </dd>
+        </dl>
+      </section>
+      <hr>
+      
+    </div>
+  </body>
+</html>

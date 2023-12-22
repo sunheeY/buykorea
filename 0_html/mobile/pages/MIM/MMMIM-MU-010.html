@@ -90,13 +90,8 @@
               <ul class="list-sns">
                 <!-- [2023.12.07] sns 추가 및 순서 변경 -->
                 <li>
-                  <a href="https://www.facebook.com/globalkotra" class="bk-icon-only" target="_blank">
-                    <i class="bk-icon bk-icon-sns-facebook">facebook</i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/KOTRA_2013" class="bk-icon-only" target="_blank">
-                    <i class="bk-icon bk-icon-sns-x">twitter</i>
+                  <a href="https://www.Instagram.com/buykorea_kotra/" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-instagram">instagram</i>
                   </a>
                 </li>
                 <li>
@@ -105,8 +100,13 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.Instagram.com/buykorea_kotra/" class="bk-icon-only" target="_blank">
-                    <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                  <a href="https://www.facebook.com/globalkotra" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-facebook">facebook</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/KOTRA_2013" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-x">twitter</i>
                   </a>
                 </li>
               </ul>
@@ -222,7 +222,8 @@
         <div class="dialog-header">
           <div class="header-left">
             <div class="bk-title">
-              <h1 class="title">buyKOREA 실명인증</h1>
+              <!-- [20231222] 수정 : 타이틀 -->
+              <h1 class="title">buyKOREA 아이디 찾기</h1>
             </div>
           </div>
           <div class="header-right">
@@ -234,23 +235,94 @@
         <div class="dialog-container">
           <div class="dialog-contents">
             <div class="bk-guide-txt">
-              본인인증 방식을 통하여 실명인증 후 아이디 확인이 가능합니다.
+              <!-- [20231222] 수정 : 텍스트 -->
+              <span class="text">아이디를 찾기 위해 본인확인 방법을 선택해 주세요. (법인 명의는 인증불가)</span>
+              <span class="text">무역투자24에서 가입하신 회원은 이메일 주소로 인증을 선택해주세요.</span>
             </div>
             <!-- [S] Form-->
             <div class="bk-myinfo-check">
-              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full" onclick="dialogOpen('#alert-check')">
+              <!-- [20231222] 수정 : 기존 링크 연결에서 옵션 선택 후 아이디 찾기로 바뀜 [s] -->
+              <!-- <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full" onclick="dialogOpen('#alert-check')">
                 <span class="text">간편인증</span>
                 <span class="text-sub">네이버, 삼성패스, 신한인증서, KB인증, 
                   토스, 통신사PASS, 페이코 등
                   간편인증서비스를 제공합니다.</span>
                 <span class="text-sub has-dot">법인 명의는 인증불가</span>
               </button>
-              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full" onclick="dialogOpen('#dialog-find-id')"><!--회원이 아닌경우 모달연결은 하지 않음-->
+              <button type="button" class="bk-btn btn-primary btn-outline btn-no-radius btn-full" onclick="dialogOpen('#dialog-find-id')">회원이 아닌경우 모달연결은 하지 않음
                 <span class="text">휴대전화 본인인증</span>
                 <span class="text-sub">본인 명의의 휴대전화 정보를
                   정확히 입력하여 주시기 바랍니다.</span>
                 <span class="text-sub has-dot">법인 명의는 인증불가</span>
-              </button>
+              </button> -->
+              <div class="bk-nameAuth-01">
+                <div class="bk-radio">
+                  <input type="radio" name="radio-findid" class="iRadio" id="radio-findid-01" checked="">
+                  <label for="radio-findid-01" class="on"><span class="text">간편인증</span></label>
+                </div>
+                <div class="bk-desc-box">
+                  <span class="text-sub">PASS 인증, 삼성패스 인증, 카카오톡 인증 등 간편인증 서비스를 제공합니다.</span>
+                  <button type="button" class="bk-btn btn-primary btn-outline btn-full">간편인증</button>
+                </div>
+              </div>
+              
+              <div class="bk-nameAuth-02">
+                <div class="bk-radio">
+                  <input type="radio" name="radio-findid" class="iRadio" id="radio-findid-02">
+                  <label for="radio-findid-02"><span class="text">휴대전화 인증</span></label>
+                </div>
+                <div class="bk-desc-box">
+                  <span class="text-sub">본인 명의의 휴대전화 정보를 정확히 입력하여 주시기 바랍니다.</span>
+                  <button type="button" class="bk-btn btn-outline btn-full" disabled>휴대전화 인증</button>
+                </div>
+              </div>
+
+              <div class="bk-nameAuth-03">
+                <div class="bk-radio">
+                  <input type="radio" name="radio-findid" class="iRadio" id="radio-findid-03">
+                  <label for="radio-findid-03"><span class="text">회원정보에 등록한 이메일 주소</span></label>
+                </div>
+                <div class="bk-desc-box no-border">
+                  <span class="text-sub">회원정보에 입력한 이메일 주소와 같아야 아이디 확인이 가능합니다.</span>
+                  <div class="bk-emailfield">
+                    <div class="bk-row-div bk-email-row bk-full">
+                      <div class="bk-textfield is-required">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" name="resetpw_m" value="" placeholder="Email" class="iText" id="resetpw_m" disabled>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="bk-text">@</span>
+                    </div>
+                    <div class="bk-row-div bk-grid-half bk-full">
+                      <div class="bk-textfield is-required">
+                        <div class="bk-control">
+                          <div class="control-field">
+                            <input type="text" name="resetpw_m_name" value="gmail.com" placeholder="" class="iText" id="resetpw_m_name" disabled>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bk-select default">
+                        <div class="bk-control">
+                          <select class="" id="" title="mail address" disabled>
+                            <option value="Choose">Choose</option>
+                            <option value="option2">naver.com</option>
+                            <option value="option3">hanmail.net</option>
+                            <option value="option4">daum.net</option>
+                            <option value="option5">gmail.com</option>
+                            <option value="option6">nate.com</option>
+                            <option value="option7">직접입력</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="bk-btn btn-outline btn-full" disabled>이메일 발송</button>
+                </div>
+              </div>
+
+              <!-- [e] -->
             </div>                   
             
             <!-- //[D] Form-->
@@ -308,7 +380,7 @@
                   <div class="bk-textfield">
                     <div class="bk-control">
                       <div class="control-field">
-                        <input type="text" name="find_id" value="abc******" placeholder="" class="iText" id="find_id" required="" readonly>
+                        <input type="text" name="find_id" value="abc******" placeholder="" class="iText" id="find_id" readonly>
                       </div>
                     </div>
                   </div>
@@ -322,7 +394,7 @@
                   <div class="bk-textfield">
                     <div class="bk-control">
                       <div class="control-field">
-                        <input type="text" name="find_date" value="2023.08.10" placeholder="" class="iText" id="find_date" required="" readonly>
+                        <input type="text" name="find_date" value="2023.08.10" placeholder="" class="iText" id="find_date" readonly>
                       </div>
                     </div>
                   </div>
@@ -352,7 +424,25 @@
     <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        $('.bk-myinfo-check .bk-radio input').change(function() {
+          var itemWrap = $('[class^=bk-nameAuth-]');
+          var thisWrap = $(this).closest('[class^=bk-nameAuth-]');
+          var findItem = '.bk-textfield, .bk-select, .bk-btn, .iText, .bk-select select';
+          var findBtn = thisWrap.find('.bk-btn');
+          var textWrap = thisWrap.find('.bk-textfield, .bk-select');
+
+          itemWrap.find(findItem).removeClass('btn-primary').prop('disabled', 'disabled');
+          $('[class^=bk-nameAuth-] .bk-textfield, .bk-select').addClass('is-disabled');
+
+          if($(this).prop('checked')) {
+            findBtn.addClass('btn-primary');
+            textWrap.removeClass('is-disabled');
+            thisWrap.find(findItem).removeAttr('disabled');
+          }
+        })
+        
+      });
     </script>
   </body>
 </html>

@@ -1,0 +1,2719 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width" name="viewport" />
+    <title>buy korea 고도화 가이드</title>
+    <link type="text/css" rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <h1 class="logo">
+          <a href="guide.html"><img src="img/logo.png" alt="buy korea" /></a>
+        </h1>
+        <nav class="gnb-menu">
+          <dl>
+            <dt>가이드 메뉴</dt>
+            <dd><a href="0_path.html">현황판</a></dd>
+            <dd class="active"><a href="pc-path.html">PC HTML</a></dd>
+            <dd><a href="mo-path.html">MO HTML</a></dd>
+
+          </dl>
+        </nav>
+      </header>
+      <style>
+        .status {padding: 40px 24px}
+        .status h3 {margin-top: 20px;}
+        .status .discription {background: #f3f3f3; color: #666; font-size: 12px; padding: 10px; margin: 10px 0 0;}
+        .status dl {margin: 12px 12px 0; font-size: 12px;}
+        .status dl dt {font-weight: 700; display: block; margin: 10px 0 5px}
+        .status dl dd:not(:first-child) {margin-top: 5px; }
+        .status dl dd.link {cursor: pointer; width: fit-content; text-decoration: underline;}
+      </style>
+      <script src="../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+
+      <script>
+        $(document).ready(function () {
+          $('.link').click(function() {
+            var pathLink = '../pages' + $(this).text();
+            window.open(pathLink);
+          });
+          $('.status > h3').click(function() {
+            $(this).next('dl').toggle();
+          });
+        });
+      </script>
+      <section id="container">
+        <nav class="sub-menu">
+          <dl>
+            <dt>HTML 바로가기 메뉴 :</dt>
+            <dd><a href="#mo-menu01">공통</a></dd>
+            <dd><a href="#mo-menu02">Main (Buyer)</a></dd>
+            <dd><a href="#mo-menu02-01">Main (Seller)</a></dd>
+            <dd><a href="#mo-menu03">Categories</a></dd>
+            <dd><a href="#mo-menu05">Trade Shows</a></dd>
+            <dd><a href="#mo-menu06-01">Global Partnership (Buyer)</a></dd>
+            <dd><a href="#mo-menu06">Global Partnership (Seller)</a></dd>
+            <dd><a href="#mo-menu07">GP Open Innovation</a></dd>
+            <dd><a href="#mo-menu08">Support (Buyer)</a></dd>
+            <dd><a href="#mo-menu09">Support (Seller)</a></dd>
+            <dd><a href="#mo-menu11">통합검색 (Buuer / Seller)</a></dd>
+            <dd><a href="#mo-menu12">장바구니</a></dd>
+            <dd><a href="#mo-menu13">로그인 (Buyer)</a></dd>
+            <dd><a href="#mo-menu14">로그인 (Seller)</a></dd>
+            <dd><a href="#mo-menu04">Inquiry  (Seller)</a></dd>
+            <dd><a href="#mo-menu15">회원가입 (Buyer)</a></dd>
+            <dd><a href="#mo-menu16">회원가입 (Seller)</a></dd>
+            <dd><a href="#mo-menu17">My Page (Buyer)</a></dd>
+            <dd><a href="#mo-menu18">My Page (Seller)</a></dd>
+            <dd><a href="#mo-menu19">Footer</a></dd>
+            <dd><a href="#mo-menu20">ETC</a></dd>
+            <dd><a href="#mo-menu21">지역본부/무역관</a></dd>
+          </dl>
+        </nav>
+        <div class="tbl-wrap">
+          <table class="tbl-path">
+            <caption>
+              <span class="tit">PC - HTML 현황 테이블</span
+              ><span class="desc"
+                >표시:진행중(<span class="point">△</span>) / 완료(<span
+                  class="point"
+                  >●</span
+                >)</span
+              >
+            </caption>
+            <colgroup>
+              <col style="width: 10%" />
+              <col style="width: 10%" />
+              <col style="width: 10%" />
+              <col style="width: 10%" />
+              <col style="width: 10%" />
+              <col style="width: 15%" />
+              <col style="width: 5%" />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>1depth</th>
+                <th>2depth</th>
+                <th>3depth</th>
+                <th>4depth</th>
+                <th>5depth</th>
+                <th>파일명(화면ID)</th>
+                <th>진행</th>
+                <th>비고</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="pc-menu01">
+                <td><strong>공통</strong><br />(../web/pages/layout/)</td>
+                <td>레이아웃</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/layout/layout.html" target="_blank"
+                    >layout.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  공통 헤더/푸터/검색/퀵메뉴/lnb/쿠키 알림<br />
+                  [20231122][언어선택]개발 요청 언어 변경 스타일
+                  추가(https://www.eeum.com/post/85)<br />
+                  [20231127]lnb 디자인 반영으로 class 위치 변경(ul->li)<br />
+                  [20231127]gnb 전체 카테고리 바로가기 메뉴 추가<br />
+                  [20231212]footer sns 순서 변경<br />
+                  <span class="point">[20231214]푸터 Copyright 변경</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>컴퍼넌트</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../components/components.html" target="_blank"
+                    >components.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>팝업</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>로딩중</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/ETC/ECETC-PU-006.html" target="_blank"
+                    >ECETC-PU-006.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일:20231113]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>ERROR</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/ETC/ECETC-PU-006.html" target="_blank"
+                    >ECETC-PU-006.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일:20231113]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>메일 템플릿</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../email/email.html" target="_blank">email.html</a>
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일:20231113]</td>
+              </tr>
+              <!-- *** 바이어/셀러 *** -->
+              <!-- Trade Shows -->
+              <tr id="pc-menu02">
+                <td><strong>바이어/셀러</strong></td>
+                <td><strong>Trade Shows</strong><br />(../web/pages/TRS)</td>
+                <td>List</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/TRS/TSTRS-PU-001.html" target="_blank"
+                    >TSTRS-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231103]<br />
+                  [20231122]Date Range 필터 옵션 추가(ALL)<br />
+                  [20231206][기획 요청]lnb 메뉴 2depth로 반영<br />
+                  [20231207]lang="en"반영
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Details</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/TRS/TSTRS-PU-002.html" target="_blank"
+                    >TSTRS-PU-002.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231103]<br />
+                  [20231122]상단 이미지 영역 BO 입력으로 수정<br />
+                  [20231204]상단 로고 정렬 변경 및 좌우 버튼 위치수정,disabled
+                  상태 버튼 안보이게 처리<br />
+                  [20231206][기획 요청]lnb 메뉴 2depth로 반영<br />
+                  [20231207]lang="en"반영<br />
+                  <span class="point"
+                    >[20231213][감리]회사명 2줄->1줄 변경</span
+                  >
+                </td>
+              </tr>
+              <!--// Trade Shows -->
+              <!-- Global Partnership -->
+              <tr>
+                <td></td>
+                <td><strong>해외 무역관 정보</strong><br />(../web/pages/KBC)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/KBC/GOKBC-PU-001.html" target="_blank"
+                    >GOKBC-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일:20231205]추가</td>
+              </tr>
+              <!-- Global Partnership -->
+              <tr>
+                <td></td>
+                <td><strong>Global Partnership</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="#non"
+                    >GPGLP-PU-001.html(GPGLP-PU-001~GPGLP-PU-007)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">x</span></td>
+                <td>외부작업</td>
+              </tr>
+              <!-- Global Partnership -->
+              <!-- Search -->
+              <tr>
+                <td></td>
+                <td><strong>Search(통합검색)</strong><br />(../web/pages/SEC)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/SEC/SMSEC-PU-001.html" target="_blank"
+                    >SMSEC-PU-001.html(SMSEC-PU-001~SMSEC-PU-003)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.7:20231103]<br />
+                  [20231103]검색결과 없음 기획 변경<br />
+                  [20231116]정렬 옵션:Featured 추가<br />
+                  [20231207]lang="en"반영<br />
+                  <span class="point"
+                    >[20231213][감리]회사명 2줄->1줄 변경</span
+                  >
+                </td>
+              </tr>
+              <!--// Search -->
+              <!-- Util -->
+              <tr>
+                <td></td>
+                <td><strong>ETC</strong><br />(../web/pages/ETC)</td>
+                <td>Quick Menu</td>
+                <td>[팝업]Recently Product/Messages/Open Inquiry</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/layout/layout.html" target="_blank"
+                    >layout.html(ECETC-PU-003)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231109]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Loading spinners</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/ETC/ECETC-PU-006.html" target="_blank"
+                    >ECETC-PU-006.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일:20231113]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Error</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/ETC/ECETC-PU-006.html" target="_blank"
+                    >ECETC-PU-006.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일:20231113]</td>
+              </tr>
+              <!--// Util -->
+              <!--// *** 바이어/셀러 *** -->
+
+              <!-- *** 바이어 *** -->
+              <tr>
+                <td><strong>바이어</strong></td>
+                <td><strong>Main</strong><br />(../web/pages/MAN)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MAN/ECMAN-PU-002.html" target="_blank"
+                    >ECMAN-PU-002.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일0.9:20231113]<br />
+                  [20231128]기획 요청 데이터 최대값 반영<br />
+                  [20231207]lang="en"반영<br />
+                  [20231212]기획 요청 상품 관련 사이즈 및 스타일 변경<br />
+                  <span class="point"
+                    >[20231213][감리]회사명 2줄-&gt;1줄 변경, swiper 옵션
+                    추가</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>메인 팝업</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MAN/ECMAN-PU-003.html" target="_blank"
+                    >ECMAN-PU-003.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일0.9:20231122]</td>
+              </tr>
+              <!-- Categories -->
+              <tr>
+                <td></td>
+                <td><strong>Categories</strong><br />(../web/pages/PRD)</td>
+                <td>All Categories</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/PRD/ECPRD-PU-001.html" target="_blank"
+                    >ECPRD-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일0.9:20231116]<br />
+                  [20231120]상위 depth 링크 추가<br />
+                  [20231207]lang="en"반영
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Produdct List</td>
+                <td>Thumbnail Type</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/PRD/ECPRD-PU-002.html" target="_blank"
+                    >ECPRD-PU-002.html(ECPRD-PU-002:Thumbnail
+                    Type,ECPRD-PU-003:List Type)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231103]<br />
+                  [기획:PC퍼블검수_231107]상품 hover시 버튼 삭제<br />
+                  [20231207]lang="en"반영<br />
+                  <span class="point"
+                    >[20231213][감리]회사명 2줄-&gt;1줄 변경</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>List Type</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/PRD/ECPRD-PU-002.html" target="_blank"
+                    >ECPRD-PU-003.html(ECPRD-PU-002:Thumbnail
+                    Type,ECPRD-PU-003:List Type)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231103]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Product Details</td>
+                <td>Product Details/Company Information/Review</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/PRD/ECPRD-PU-004.html" target="_blank"
+                    >ECPRD-PU-004.html(ECPRD-PU-004~ECPRD-PU-010)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231109]<br />
+                  [팝업]Share,Trademark,Expanded Image<br />
+                  [20231117]Award 이미지 추가<br />
+                  [20231207]lang="en"반영<br />
+                  <span class="point"
+                    >[20231213][감리]회사명 2줄-&gt;1줄 변경</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Product Details PDF 화면</td>
+                <td></td>
+                <td>
+                  <a href="../web/prd-pdf/ECPRD-PU-004_pdf.html" target="_blank"
+                    >/prd-pdf/ECPRD-PU-004_pdf.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [20231219]<br>
+                  css/img/font 한 폴더에 몰아 넣음
+                </td>
+              </tr>
+              <!--// Categories -->
+              <!-- GP Open Innovation -->
+              <tr>
+                <td></td>
+                <td><strong>GP Open Innovation</strong><br />(../web/pages/OPI)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/OPI/GPOPI-PU-001.html" target="_blank"
+                    >GPOPI-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일:20231123]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <!--// GP Open Innovation -->
+              <!-- Support -->
+              <tr>
+                <td></td>
+                <td><strong>Support</strong><br />(../web/pages/SPB)</td>
+                <td>Notice</td>
+                <td>List</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/SPB/ECSPB-PU-001.html" target="_blank"
+                    >ECSPB-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.7:20231103]<br />
+                  [기획:PC퍼블검수_231107]공통 링크
+                  스타일(class="text-link"):20231107<br />
+                  [기획:검색 영역 수정 요청_20231110]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Details</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/SPB/ECSPB-PU-002.html" target="_blank"
+                    >ECSPB-PU-002.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.7:20231103]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <!--// Support -->
+              <!-- Cart -->
+              <tr>
+                <td></td>
+                <td><strong>Cart</strong><br />(../web/pages/CAT)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/CAT/ECCAT-PU-001.html" target="_blank"
+                    >ECCAT-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.7:20231103]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <!--// Cart -->
+              <!-- Sign In -->
+              <tr>
+                <td></td>
+                <td><strong>Sign In</strong><br />(../web/pages/AUT)</td>
+                <td>[팝업]일반/간편로그인</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMAUT-PU-001)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>[팝업]비밀번호 재설정</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMAUT-PU-002)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <!--// Sign In -->
+              <!-- Sign Up -->
+              <tr>
+                <td></td>
+                <td><strong>Sign Up</strong><br />(../web/pages/JON)</td>
+                <td>[팝업]약관동의</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMJON-PU-001)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231026]<br />
+                  [20231121]내용 추가
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>[팝업]가입정보 입력</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMJON-PU-002)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>[팝업]바이어 이용약관 동의(바이어 SNS회원가입 이용약관)</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMJON-PU-005)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.82:20231124]</td>
+              </tr>
+              <!--// Sign Up -->
+              <!-- My Page (Buyer) -->
+              <tr>
+                <td></td>
+                <td><strong>My Page</strong><br />(../web/pages/MYB)</td>
+                <td>Inquiry</td>
+                <td>Product Inquiry</td>
+                <td>List</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-001.html" target="_blank"
+                    >ECMYB-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81_1215:20231114]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Details</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-002)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81_1215:20231116]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Writing</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-003)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81_1215:20231116]<br />
+                  [20231205]누락 타이틀 추가,상품 2개로 변경
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>SNS Inquiry</td>
+                <td>List</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-035.html" target="_blank"
+                    >ECMYB-PU-035.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.83_1215:20231130]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Details</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-036)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.83_1215:20231130]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Open Inquiry</td>
+                <td>List</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-004.html" target="_blank"
+                    >ECMYB-PU-004.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81_1215:20231114]<br />
+                  [20231127]'Register Inquiry' 누락 버튼 추가<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Details</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-005)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81_1215:20231116]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Writing</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-006)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81_1215:20231116]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Business Inquiry</td>
+                <td>List</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-007.html" target="_blank"
+                    >ECMYB-PU-007.html</a
+                  >
+                </td>
+                <td class="alingC">x</td>
+                <td>[2차]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Details</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-008.html" target="_blank"
+                    >ECMYB-PU-008.html</a
+                  >
+                </td>
+                <td class="alingC">x</td>
+                <td>[2차]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Writing</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-009.html" target="_blank"
+                    >ECMYB-PU-009.html</a
+                  >
+                </td>
+                <td class="alingC">x</td>
+                <td>[2차]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Price Quote</td>
+                <td>List</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-010.html" target="_blank"
+                    >ECMYB-PU-010.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:검색 영역 수정 요청_20231110]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Details</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-011)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Print</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/COM/ECMYB-PU-012.html" target="_blank"
+                    >ECMYB-PU-012.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Order</td>
+                <td>List</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-013.html" target="_blank"
+                    >ECMYB-PU-013.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:검색 영역 수정 요청_20231110]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Writing/Editing</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-014)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Shipping List</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-015)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Details</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-016)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Print</td>
+                <td></td>
+                <td>ECMYB-PU-017.html</td>
+                <td class="alingC">
+                  <span class="point">x</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Invoice</td>
+                <td>List</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-018.html" target="_blank"
+                    >ECMYB-PU-018.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:검색 영역 수정 요청_20231110]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Details</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-019)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Print</td>
+                <td></td>
+                <td>ECMYB-PU-020.html</td>
+                <td class="alingC">
+                  <span class="point">x</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Payment</td>
+                <td>List</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-021.html" target="_blank"
+                    >ECMYB-PU-021.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:검색 영역 수정 요청_20231110]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Details</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-022)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Print</td>
+                <td></td>
+                <td>ECMYB-PU-023.html</td>
+                <td class="alingC">
+                  <span class="point">x</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Shipment</td>
+                <td>List</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-024.html" target="_blank"
+                    >ECMYB-PU-024.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:검색 영역 수정 요청_20231110]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Details</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-025)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Messages</td>
+                <td>List</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-026.html" target="_blank"
+                    >ECMYB-PU-026.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  ECMYS-PU-042.html ui 동일<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]무역 담당자 지원 요청</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-027)</a
+                  >
+                </td>
+                <td class="alingC">x</td>
+                <td>ECMYS-PU-043.html ui 동일</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>My Activity</td>
+                <td>Favorites</td>
+                <td>Product Favorites</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-031.html" target="_blank"
+                    >ECMYB-PU-031.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:PC퍼블검수_231107]공통 링크,
+                  스타일(class="text-link"):20231107<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Category Favorites</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-032.html" target="_blank"
+                    >ECMYB-PU-032.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:PC퍼블검수_231107]공통 링크,
+                  스타일(class="text-link"):20231107<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Reviews</td>
+                <td>Available Reviews</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-028.html" target="_blank"
+                    >ECMYB-PU-028.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:PC퍼블검수_231107]공통 링크
+                  스타일(class="text-link"):20231107<br />
+                  [기획:검색 영역 수정 요청_20231110]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Registered Reviews</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-029.html" target="_blank"
+                    >ECMYB-PU-029.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:검색 영역 수정 요청_20231110]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Writing/Editing</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-030)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>My Event</td>
+                <td>List</td>
+                <td></td>
+                <td>
+                  <a href="#none" target="_blank">미정.html</a>
+                </td>
+                <td class="alingC"><span class="point">x</span></td>
+                <td>[2차]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Details</td>
+                <td></td>
+                <td>
+                  <a href="#none" target="_blank">미정.html</a>
+                </td>
+                <td class="alingC"><span class="point">x</span></td>
+                <td>[2차]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>My GP</td>
+                <td>GP 회원 정보 관리</td>
+                <td></td>
+                <td>
+                  <a href="#none" target="_blank">미정.html</a>
+                </td>
+                <td class="alingC"><span class="point">x</span></td>
+                <td>[2차]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>GP 인콰이어리 관리</td>
+                <td></td>
+                <td>
+                  <a href="#none" target="_blank">미정.html</a>
+                </td>
+                <td class="alingC"><span class="point">x</span></td>
+                <td>[2차]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>My Info</td>
+                <td>Change Information</td>
+                <td>회원 확인</td>
+                <td>
+                  <a href="../web/pages/MIM/MMMIM-PU-001.html" target="_blank"
+                    >MMMIM-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231026]<br />
+                  [공통]회원 (Buyer) > 정보수정 > 회원 확인<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>정보 수정</td>
+                <td>
+                  <a href="../web/pages/MIM/MMMIM-PU-002.html" target="_blank"
+                    >MMMIM-PU-002.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231026]<br />
+                  [공통]회원 (Buyer) > 정보수정 > 정보수정<br />
+                  <span class="point">[20231207]lang="en"반영</span><br />
+                  <span class="point"
+                    >[20231207]No. of Employees,Annual Sales (1,000 USD)
+                    셀렉트박스 오류 태그 수정</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Shipping Address</td>
+                <td>List</td>
+                <td>
+                  <a href="../web/pages/MYB/ECMYB-PU-033.html" target="_blank"
+                    >ECMYB-PU-033.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Writing/Editing</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYB-PU-034)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Delete Account</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMJON-PU-004)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <!--// My Page (Buyer) -->
+              <!-- Footer (Buyer) -->
+              <tr>
+                <td></td>
+                <td><strong>Footer</strong><br />(../web/pages/FTB)</td>
+                <td>About buyKOREA</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/FTB/ECFTB-PU-001.html" target="_blank"
+                    >ECFTB-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231116]<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Terms of Use</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/FTB/ECFTB-PU-002.html" target="_blank"
+                    >ECFTB-PU-002.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일:20231117]-as-is<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Privacy Policy</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/FTB/ECFTB-PU-003.html" target="_blank"
+                    >ECFTB-PU-003.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일:20231117]-as-is<br />
+                  <span class="point">[20231207]lang="en"반영</span>
+                </td>
+              </tr>
+              <!--// Footer (Buyer) -->
+              <!--// *** 바이어 *** -->
+              <!-- *** 셀러 *** -->
+              <tr id="pc-menu03">
+                <td><strong>셀러</strong></td>
+                <td><strong>Main</strong><br />(../web/pages/MAN)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MAN/ECMAN-PU-001.html" target="_blank"
+                    >ECMAN-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.82:20231116]<br />
+                  [20231120]데이터 없음 추가<br />
+                  [20231129]최근 인콰이어리 타이틀 변경,트레이드쇼 이미지 기존
+                  3개 4개로 변경<br />
+                  <span class="point"
+                    >[20231204]상단 견적,주문,인보이스,결제,배송 링크 삭제</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>메인 팝업</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MAN/ECMAN-PU-004.html" target="_blank"
+                    >ECMAN-PU-004.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일:20231122]</td>
+              </tr>
+              <!-- Inquiry -->
+              <tr>
+                <td></td>
+                <td><strong>Inquiry</strong><br />(../web/pages/INQ)</td>
+                <td>전체 카테고리</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/INQ/ECINQ-PU-001.html" target="_blank"
+                    >ECPRD-PU-001.html(ECINQ-PU-001)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>ECPRD-PU-001.html ui 동일</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>목록</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/INQ/ECINQ-PU-002.html" target="_blank"
+                    >ECINQ-PU-002.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231113]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Messages</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECINQ-PU-003)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>상세</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/INQ/ECINQ-PU-004.html" target="_blank"
+                    >ECINQ-PU-004.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231114]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]Messages</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECINQ-PU-005)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+              </tr>
+              <!--// Inquiry -->
+              <!-- * My Page * -->
+              <!-- 상품 관리 -->
+              <tr>
+                <td></td>
+                <td><strong>My Page</strong><br />(../web/pages/MYS)</td>
+                <td>상품 관리</td>
+                <td>목록</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-001.html" target="_blank"
+                    >ECMYS-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:PC퍼블검수_231107]공통 링크
+                  스타일(class="text-link"),툴팁:20231107<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]상품 이관</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-002)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]일괄 이관</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-003)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>상세/수정</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-004.html" target="_blank"
+                    >ECMYS-PU-004.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point"
+                    >[기획:PC퍼블검수_231108]페이지 누락 추가</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>등록</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-005.html" target="_blank"
+                    >ECMYS-PU-005.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:PC퍼블검수_231107]생산 능력-단위 삭제<br />
+                  <span class="point"
+                    >[20231127]부가정보 영역 파일명 리스트
+                    class변경(변경전:cp-draggable-변경후:cp-file)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]KOPS 결제 소개</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-006)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]등록 상품 검색</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-007)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:검색 영역 수정 요청_20231110]<br />
+                  [20231117]버튼 누락 추가<br />
+                  <span class="point"
+                    >[20231207]이미지 없을 때 기본 이미지 추가</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  [팝업]카테고리 검색-직접 선택 / 단어 검색 / 즐겨찾기 카테고리
+                </td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-008~ECMYS-PU-010)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업] HS Code 검색</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-011)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:PC퍼블검수_231107]공통 링크
+                  스타일(class="text-link"):20231107<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>상품 등록 완료</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-012.html" target="_blank"
+                    >ECMYS-PU-012.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point"
+                    >[기획:PC퍼블검수_231107]아이콘 변경:20231107</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>삭제한 상품</td>
+                <td>목록</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-013.html" target="_blank"
+                    >ECMYS-PU-013.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <!--// 상품 관리 -->
+              <!-- 거래 관리 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>거래 관리</td>
+                <td>거래 관리</td>
+                <td>목록</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-023.html" target="_blank"
+                    >ECMYS-PU-023.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]등록/수정</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-024)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]출고지 목록</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-025)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]상세</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-026)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]프린트</td>
+                <td>
+                  <a href="#none" target="_blank">ECMYS-PU-027.html</a>
+                </td>
+                <td class="alingC">
+                  <span class="point">x</span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>주문관리</td>
+                <td>목록</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-028.html" target="_blank"
+                    >ECMYS-PU-028.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]상세</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-029)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]프린트</td>
+                <td>
+                  <a href="#none" target="_blank">ECMYS-PU-030.html</a>
+                </td>
+                <td class="alingC">
+                  <span class="point">x</span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>인보이스 관리</td>
+                <td>목록</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-031.html" target="_blank"
+                    >ECMYS-PU-031.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]결제내역 등록</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-032)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]인보이스 작성</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-033)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]상세</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-034)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]프린트</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-034.html" target="_blank"
+                    >ECMYS-PU-034.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">x</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>결제관리</td>
+                <td>목록</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-036.html" target="_blank"
+                    >ECMYS-PU-036.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  [기획:검색 영역 수정 요청_20231110]<br />
+                  <span class="point"
+                    >[기획v0.85:20231204]필드명,버튼명 변경</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]송장등록/수정</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-037)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]상세</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-038)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]프린트</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-039)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">x</span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>배송 관리</td>
+                <td>목록</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-040.html" target="_blank"
+                    >ECMYS-PU-040.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]상세</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-041)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <!-- 거래 관리 -->
+              <!-- 나의 활동 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>나의 활동</td>
+                <td>메시지 관리</td>
+                <td>목록</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-042.html" target="_blank"
+                    >ECMYS-PU-042.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br /><span class="point"
+                    >[20231030]기획 추가-메시지 내역 없음</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]무역 담당자 지원 요청</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-043)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <!--// 나의 활동 -->
+              <!-- 인콰이어리 관리 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>인콰이어리 관리</td>
+                <td>상품 인콰이어리</td>
+                <td>목록</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-014.html" target="_blank"
+                    >ECMYS-PU-014.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]상세</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-015)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>SNS 인콰이어리</td>
+                <td>목록</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-051.html" target="_blank"
+                    >ECMYS-PU-051.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.83:20231130]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]상세</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-052)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>오픈 인콰이어리</td>
+                <td>목록</td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-017.html" target="_blank"
+                    >ECMYS-PU-017.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231017]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]상세</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-018)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>비즈니스 인콰이어리</td>
+                <td>목록</td>
+                <td>
+                  <a href="#none" target="_blank">ECMYS-PU-020.html</a>
+                </td>
+                <td class="alingC">x</td>
+                <td>[2차]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]상세</td>
+                <td>
+                  <a href="#none" target="_blank">ECMYS-PU-021.html</a>
+                </td>
+                <td class="alingC">x</td>
+                <td>[2차]</td>
+              </tr>
+              <!--// 인콰이어리 관리 -->
+              <!-- 나의 관심 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>나의 관심</td>
+                <td>인콰이어리</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-047.html" target="_blank"
+                    >ECMYS-PU-047.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point">[기획:v0.88]컬럼 변경:20231107</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>카테고리</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-048.html" target="_blank"
+                    >ECMYS-PU-048.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <!--// 나의 관심 -->
+              <!-- 리뷰관리 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>리뷰관리</td>
+                <td>목록</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-044.html" target="_blank"
+                    >ECMYS-PU-044.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231016]<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]신고</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-045)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]반려 사유</td>
+                <td>
+                  <a href="../web/pages/COM/popup.html" target="_blank"
+                    >popup.html(ECMYS-PU-046)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <!--// 리뷰관리 -->
+              <!-- 정보수정 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>정보수정</td>
+                <td>회원확인</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MIM/MMMIM-PU-013.html" target="_blank"
+                    >MMMIM-PU-013.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>정보수정</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MIM/MMMIM-PU-014.html" target="_blank"
+                    >MMMIM-PU-014.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231026]<br />
+                  <span class="point">[기획:v0.71]항목 세분화:20231107</span>
+                </td>
+              </tr>
+              <!--// 정보수정 -->
+              <!-- 회원 확인서 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>회원 확인서</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MIM/MMMIM-PU-012.html" target="_blank"
+                    >MMMIM-PU-012.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <!--// 회원 확인서 -->
+              <!-- 기업 정보수정 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>기업 정보수정</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MIM/MMMIM-PU-015.html" target="_blank"
+                    >MMMIM-PU-015.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231026]<br />
+                  <span class="point">[기획:v0.71]항목 세분화:20231107</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]사업자등록번호 변경</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMMIM-PU-016)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <!--// 기업 정보수정 -->
+              <!-- 소속 직원관리 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>소속 직원관리</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MIM/MMMIM-PU-017.html" target="_blank"
+                    >MMMIM-PU-017.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231026]<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]직원 상태 변경</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMMIM-PU-018)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <!--// 소속 직원관리 -->
+              <!-- 기업 배송지 관리 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>기업 배송지 관리</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MIM/MMMIM-PU-019.html" target="_blank"
+                    >MMMIM-PU-019.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>[팝업]배송지 관리</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMMIM-PU-020)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <!--// 기업 배송지 관리 -->
+              <!-- 결제정보 관리 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>결제정보 관리</td>
+                <td>등록/수정</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-049.html" target="_blank"
+                    >ECMYS-PU-049.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <!--// 결제정보 관리 -->
+              <!-- 배송정보 관리 -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td>배송정보 관리</td>
+                <td>등록/수정</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/MYS/ECMYS-PU-050.html" target="_blank"
+                    >ECMYS-PU-050.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231016]</td>
+              </tr>
+              <!--// 배송정보 관리 -->
+              <!--// My Page (Seller) -->
+              <!-- Support (Seller) -->
+              <tr>
+                <td></td>
+                <td><strong>고객지원</strong><br />(../web/pages/SPS)</td>
+                <td>공지사항</td>
+                <td>목록</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/SPS/ECSPS-PU-001.html" target="_blank"
+                    >ECSPS-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>ECSPB-PU-001.html ui 동일</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>상세</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/SPS/ECSPS-PU-002.html" target="_blank"
+                    >ECSPS-PU-002.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>ECSPB-PU-002.html ui 동일</td>
+              </tr>
+              <!--// Support (Seller) -->
+              <!-- 로그인 (Seller) -->
+              <tr>
+                <td></td>
+                <td>
+                  <strong>로그인 (Seller)</strong
+                  ><br />(../web/pages/AUT,../web/pages/MIM)
+                </td>
+                <td>로그인</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-010.html" target="_blank"
+                    >MMAUT-PU-010.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231026]<br />
+                  <span class="point"
+                    >[20231120]설명 추가로 ui변경(class="login-seller"추가,
+                    ui_common.js파일 추가)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>[팝업]비밀번호 재설정</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMAUT-PU-011)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>[팝업]아이디 찾기</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMMIM-PU-010)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>[팝업]아이디 조회 결과</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMMIM-PU-011)</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  [최초작성일v0.81:20231026]<br />
+                  <span class="point">[20231120]설명 추가</span>
+                </td>
+              </tr>
+              <!--// 로그인 (Seller) -->
+              <!-- 회원가입 (Seller) -->
+              <tr>
+                <td></td>
+                <td><strong>회원가입 (Seller)</strong><br />(../web/pages/JON)</td>
+                <td>회원가입</td>
+                <td>약관동의</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/JON/MMJON-PU-010.html" target="_blank"
+                    >MMJON-PU-010.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231026]<br />
+                  <span class="point">[20231120]내용 추가 완료</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>실명인증</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/JON/MMJON-PU-011.html" target="_blank"
+                    >MMJON-PU-011.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>가입정보 입력</td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/JON/MMJON-PU-012.html" target="_blank"
+                    >MMJON-PU-012.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>[팝업]소속기업 검색</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMJON-PU-013)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>
+                  [최초작성일v0.81:20231026]<br />
+                  <span class="point">[기획:검색 영역 수정 요청_20231110]</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>[팝업]기업 등록</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/AUT/MMAUT-PU-001.html" target="_blank"
+                    >popup.html(MMJON-PU-014)</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>가입완료</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/JON/MMJON-PU-015.html" target="_blank"
+                    >MMJON-PU-015.html</a
+                  >
+                </td>
+                <td class="alingC">
+                  <span class="point">●</span>
+                </td>
+                <td>[최초작성일v0.81:20231026]</td>
+              </tr>
+              <!--// 회원가입 (Seller) -->
+              <!-- Footer (Seller) -->
+              <tr>
+                <td></td>
+                <td><strong>Footer (Seller)</strong><br />(../web/pages/FTS)</td>
+                <td>바이코리아란?</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/FTS/ECFTS-PU-001.html" target="_blank"
+                    >ECFTS-PU-001.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>
+                  ECFTB-PU-001.html ui 동일<br />
+                  [최초작성일:20231122]-as-is
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>이용약관</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="#none" target="_blank">ECFTS-PU-002.html</a>
+                </td>
+                <td class="alingC"><span class="point">x</span></td>
+                <td>
+                  ECFTB-PU-001.html ui 동일<br />
+                  /JON/MMJON-PU-010.html 내용 동일<br />
+                  [최초작성일:20231122]<br />
+                  외부 링크
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>개인정보처리방침</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="../web/pages/FTS/ECFTS-PU-003.html" target="_blank"
+                    >ECFTS-PU-003.html</a
+                  >
+                </td>
+                <td class="alingC"><span class="point">●</span></td>
+                <td>ECFTB-PU-003.html동일</td>
+              </tr>
+              <!--// Footer (Seller) -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

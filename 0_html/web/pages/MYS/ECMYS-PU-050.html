@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA for Buyers</title>
+    <link rel="stylesheet" href="../../../css/web/import.css" />
+    <link rel="stylesheet" href="../../../css/web/common.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+    <!-- [S]바로가기 -->
+    <div id="skip">
+      <a href="#contents"><span>본문내용 바로가기</span></a>
+      <a href="#gnb"><span>주메뉴 바로가기</span></a>
+      <a href="#lnb"><span>서브메뉴 바로가기</span></a>
+      <a href="#header"><span>해더 바로가기</span></a>
+      <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!--// [E]바로가기 -->
+    <!-- [S]ui-wrap -->
+    <div class="ui-wrap">
+      <!-- [S]header -->
+      <header id="header" class="ui-header">
+        <div class="header-top-area">
+          <div class="ui-inner">
+            <div class="ui-left">
+              <h2 class="logo logo-kotra">
+                <img src="../../../img/web/logo-kotra-light.svg" alt="kotra" />
+              </h2>
+              <button
+                type="button"
+                class="bk-icon-only bk-icon-only-drop"
+                component="dropdownMenu"
+              >
+                <i class="bk-icon bk-icon-arrow-down-white">레이어 열기/닫기</i>
+              </button>
+              <div class="cp-layer layer-dropdown layer-kotra-family">
+                <!--// [D]dim처리시 class="dim", 검정색 dim처리시 class="dim-dark",  흰색 dim처리시 class="dim-light" -->
+                <div class="layer-inner">
+                  <div class="layer-body">
+                    <ul>
+                      <li>
+                        <a
+                          class="family-bk"
+                          href="/bk/kotraSsoUrl.do"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_01.png"
+                            alt="buyKOREA"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="family-kp"
+                          href="https://www.kotra.or.kr/index.do"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_02.png"
+                            alt="KOTRA 무역투자24"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="family-dream"
+                          href="https://dream.kotra.or.kr/index.jsp"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_03.png"
+                            alt="해외경제정보드림"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="family-bigdata"
+                          href="https://www.kotra.or.kr/bigdata/main"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_04.png"
+                            alt="빅데이터서비스"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="family-gep"
+                          href="https://www.gep.or.kr/gept/ovrss/main/mainPage.do"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_05.png"
+                            alt="GEP 글로벌전시플랫폼"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="family-gw"
+                          href="https://prapp.globalwindow.org/"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_06.png"
+                            alt="경제외교 활용포털"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="family-contact"
+                          href="https://contactkorea.kotra.or.kr/index.do"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_07.png"
+                            alt="해외전문인력유치센터"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="family-kd"
+                          href="https://www.kotra.or.kr/kodits/main"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_08.png"
+                            alt="방산물자교역지원센터"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="family-iv"
+                          href="https://www.investkorea.org/ik-kr/index.do"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_09.png"
+                            alt="인베스트코리아"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="family-ob"
+                          href="https://ombudsman.kotra.or.kr/ob-en/index.do"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_10.png"
+                            alt="옴부즈만"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="family-ev"
+                          href="https://www.exportvoucher.com/"
+                          title="새 창 열림"
+                          target="_blank"
+                        >
+                          <img
+                            src="../../../img/web/more_site_11.png"
+                            alt="수출지원기반활용사업"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button
+                    type="button"
+                    class="bk-icon-only"
+                    role="dropdownCloseBtn"
+                  >
+                    <i class="bk-icon bk-icon-dialog-close">닫기</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="ui-util">
+              <ul class="list-util">
+                <!-- [S]로그인 이후 상태 -->
+                <li>
+                  <div class="util-login">
+                    <span class="badge badge-user"
+                      ><span class="text">기업소속</span></span
+                    >
+                    <span class="login-user">
+                      <strong>김셀러</strong>님, 안녕하세요.
+                    </span>
+                    <button type="button" class="bk-btn btn-text btn-logout">
+                      로그아웃
+                    </button>
+                  </div>
+                </li>
+                <!--// [E]로그인 이후 상태 -->
+                <!-- [S]로그인 전 -->
+                <li>
+                  <button type="button" class="bk-btn btn-text btn-login">
+                    Sign in
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="bk-btn btn-text">Sign up</button>
+                </li>
+                <!--// [E]로그인 전 -->
+              </ul>
+              <div class="language">
+                <div class="bk-select select-language" style="display: none">
+                  <div class="bk-control">
+                    <select class="nation right" title="언어 선택">
+                      <option data-display="Select">English</option>
+                      <option value="1">Korea</option>
+                      <option value="2">bbbbbbbbbbbbbbbbbbbb</option>
+                      <option value="3" disabled>A disabled option</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="nation">
+                  <button
+                    type="button"
+                    class="bk-btn bk-btn-icon btn-xsmall"
+                    component="dropdownMenu"
+                  >
+                    <span class="phoca-box text">
+                      <span class="phoca-title">English</span>
+                    </span>
+                    <span class="deco-icon append-icon">
+                      <i class="bk-icon bk-icon-open">레이어 열기/닫기</i>
+                    </span>
+                  </button>
+                  <div class="cp-layer layer-dropdown layer-language">
+                    <!--// [D]dim처리시 class="dim", 검정색 dim처리시 class="dim-dark",  흰색 dim처리시 class="dim-light" -->
+                    <div class="layer-inner">
+                      <ul class="list-language">
+                        <li>
+                          <a href="#none">
+                            <span class="phoca-box">
+                              <span class="phoca-flagbox">
+                                <span class="phoca-flag us"></span>
+                              </span>
+                              <span class="phoca-title">English</span>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#none">
+                            <span class="phoca-box">
+                              <span class="phoca-flagbox">
+                                <span class="phoca-flag cn"></span>
+                              </span>
+                              <span class="phoca-title">Chinese</span>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#none">
+                            <span class="phoca-box">
+                              <span class="phoca-flagbox">
+                                <span class="phoca-flag jp"></span>
+                              </span>
+                              <span class="phoca-title">Japanese</span>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#none">
+                            <span class="phoca-box">
+                              <span class="phoca-flagbox">
+                                <span class="phoca-flag ru"></span>
+                              </span>
+                              <span class="phoca-title">Russian</span>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#none">
+                            <span class="phoca-box">
+                              <span class="phoca-flagbox">
+                                <span class="phoca-flag pt"></span>
+                              </span>
+                              <span class="phoca-title">Portuguese</span>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#none">
+                            <span class="phoca-box">
+                              <span class="phoca-flagbox">
+                                <span class="phoca-flag kr"></span>
+                              </span>
+                              <span class="phoca-title">Korean</span>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sell-center">
+                <button type="button" class="bk-btn btn-primary btn-xsmall">
+                  <span class="text">판매자센터 바로가기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-area">
+          <div class="ui-inner">
+            <div class="ui-left">
+              <h1 class="logo logo-buykorea">
+                <a href="#none">
+                  <img src="../../../img/web/logo-dark.svg" alt="buykorea" width="166px" />
+                </a>
+              </h1>
+            </div>
+            <div class="cp-search search-top">
+              <form name="" id="">
+                <div class="search-area">
+                  <div class="bk-select select-search">
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                    <div class="bk-control">
+                      <select class="" id="" title="검색 메뉴 선택">
+                        <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                        <option data-display="Select">ALL</option>
+                        <option value="1">Product Name</option>
+                        <option value="2">Company Name</option>
+                        <option value="3">Keyword</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bk-textfield wide textfield-search">
+                    <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                    <!--// [D]사이즈:xsmall-20px,small-32px,default-40px,large-48px,xlarge-60px -->
+                    <div class="bk-control">
+                      <div class="control-field">
+                        <input
+                          type="text"
+                          name=""
+                          value=""
+                          placeholder="I'm looking for..."
+                          class="iText"
+                          id=""
+                          required
+                        /><!--// [D]focus,disabled,required,readonly -->
+                        <div class="control-icon append-icon">
+                          <button
+                            type="button"
+                            class="bk-icon-only icon-search"
+                          >
+                            <i class="bk-icon bk-icon-searchPrimary">검색</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="my-util">
+              <ul class="list-util">
+                <li>
+                  <a href="#none" class="bk-icon-only">
+                    <i class="bk-icon bk-icon-message">메시지</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none" class="bk-icon-only">
+                    <i class="bk-icon bk-icon-shopingcart">카트</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none" class="bk-icon-only">
+                    <i class="bk-icon bk-icon-mypage">마이페이지</i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav id="gnb" class="ui-gnb">
+          <div class="ui-inner">
+            <div class="all-menu">
+              <button
+                type="button"
+                class="bk-btn-icon btn-text bk-btn-allCategories"
+              >
+                <i class="bk-icon bk-icon-allCategories">마이페이지</i>
+                <span class="txt">Categories</span>
+              </button>
+            </div>
+            <div class="gnb-menu">
+              <ul class="list-menu">
+                <li><a href="#none">Products</a></li>
+                <li><a href="#none">Companies</a></li>
+                <li><a href="#none">Shows</a></li>
+                <li><a href="#none">Global Offices</a></li>
+                <li><a href="#none">Inquiries</a></li>
+                <li><a href="#none">Global Partnership</a></li>
+                <li><a href="#none">Help</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--// [E]header -->
+      <!-- [S]container -->
+      <main id="container" class="ui-container ui-mypage">
+        <!--// [D]디자인 반영을 위한 추가 class - 서브 lnb가 있을 경우:has-lnb(ui_common.js파일에서 생성), 메인:ui-main,서브 기본:ui-default,상세:ui-detail,상세:ui-mypage.. -->
+        <!-- [S]breadcrumbs -->
+        <div class="ui-breadcrumbs">
+          <div class="ui-inner">
+            <ol class="list-location">
+              <li>
+                <a href="#none" class="bk-icon-only icon-home">
+                  <i class="bk-icon bk-icon-home">HOME</i>
+                </a>
+              </li>
+              <li><a href="#none">MY PAGE</a></li>
+              <li class="current"><a href="#none">배송정보 관리</a></li>
+            </ol>
+          </div>
+        </div>
+        <!--// [E]breadcrumbs -->
+        <div class="ui-content-wrap ui-inner">
+          <!-- [S]lnb -->
+          <div class="ui-lnb" id="lnb">
+            <div class="lnb-inner">
+              <div class="lnb-header">
+                <div class="bk-title">
+                  <div class="title-area">
+                    <div class="group-left">
+                      <h2 class="title font-heading-2">MY PAGE</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lnb-body tree-menu">
+                <ul class="list-menu">
+                  <li class="has-submenu">
+                    <!--// [D]하위 depth를 가지고 있을 경우:class="has-submenu" -->
+                    <a href="#none" target="_top">Inquiry</a>
+                    <ul class="menu-depth2">
+                      <li>
+                        <a href="#none">Inquiry-1</a>
+                      </li>
+                      <li class="has-submenu">
+                        <a href="#none">Inquiry-2</a>
+                        <ul class="menu-depth3 has-submenu">
+                          <li>
+                            <a href="#none">Inquiry-2-1</a>
+                          </li>
+                          <li>
+                            <a href="#none">Inquiry-2-2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has-submenu">
+                        <a href="#none">Inquiry-3</a>
+                        <ul class="menu-depth3">
+                          <li>
+                            <a href="#none">Inquiry-3-1</a>
+                          </li>
+                          <li>
+                            <a href="#none">Inquiry-3-2</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a href="#none">견적서</a>
+                    <ul class="menu-depth2">
+                      <li>
+                        <a href="#none">견적서-2-1</a>
+                      </li>
+                      <li>
+                        <a href="#none">견적서-2-2</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a href="#none">Order</a>
+                    <ul class="menu-depth2">
+                      <li>
+                        <a href="#none">Payment</a>
+                      </li>
+                      <li>
+                        <a href="#none">Shipment</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#none">My Favorite</a></li>
+                  <li><a href="#none">Notification</a></li>
+                  <li><a href="#none">1:1 Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--// [E]lnb -->
+          <div class="ui-contents" id="contents">
+            <!-- [S]상단 타이틀 -->
+            <div class="grid-wrap column bk-title title-sub-top">
+              <div class="grid-row">
+                <div class="title-area">
+                  <div class="group-left">
+                    <h1 class="title font-heading-1">배송정보 관리</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--// [E]상단 타이틀 -->
+            <section class="section-group">
+              <!--// [D]컨텐츠들의 그룹 묶음 -->
+              <!-- [S]타이틀 -->
+              <div class="grid-wrap column bk-title">
+                <div class="grid-row">
+                  <div class="title-area">
+                    <div class="group-left">
+                      <h2 class="title font-heading-2">배송정보</h2>
+                    </div>
+                    <div class="group-right"></div>
+                  </div>
+                </div>
+                <div class="grid-row explain-area">
+                  <div class="grid-column">
+                    <div class="bk-explain">
+                      <ul class="desc-type">
+                        <li>
+                          * 보유 배송수단 선택항목별로 입력값이 달라집니다.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="grid-column flex-basis-auto"></div>
+                </div>
+              </div>
+              <!--// [E]타이틀 -->
+
+              <!-- [S]테이블-배송정보 -->
+              <div class="bk-tbl">
+                <table class="tbl tbl-edit">
+                  <caption>
+                    배송정보
+                  </caption>
+                  <colgroup>
+                    <col style="width: 20%" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">보유 배송수단</th>
+                      <td>
+                        <div class="bk-radio-group">
+                          <div class="bk-radio">
+                            <input
+                              type="radio"
+                              name="payment"
+                              class="iRadio"
+                              id="payment-01-01"
+                              checked
+                            />
+                            <label for="payment-01-01"
+                              ><span class="text">EMS</span></label
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        우체국ID
+                        <span class="bk-required"
+                          ><strong class="ir-su">필수</strong></span
+                        >
+                      </th>
+                      <td>
+                        <div class="bk-textfield wide">
+                          <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 유효성 검사 후 error인 경우 class="is-error" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                          <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input
+                                type="text"
+                                name=""
+                                value=""
+                                placeholder="ID를 입력해주세요."
+                                class="iText"
+                                title="우체국ID"
+                                required
+                              /><!--// [D]focus,disabled,required,readonly -->
+                              <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                            </div>
+                            <div class="bk-valid">에러 메시지</div>
+                            <!--// [D]성공:success,에러:error -->
+                            <div class="bk-messages">
+                              <p class="font-note">
+                                인터넷 우체국 가입 ID 입니다.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        고객번호
+                        <span class="bk-required"
+                          ><strong class="ir-su">필수</strong></span
+                        >
+                      </th>
+                      <td>
+                        <div class="bk-textfield wide">
+                          <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 유효성 검사 후 error인 경우 class="is-error" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                          <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input
+                                type="text"
+                                name=""
+                                value=""
+                                placeholder="고객번호를 입력해주세요."
+                                class="iText"
+                                title="고객번호"
+                                required
+                              /><!--// [D]focus,disabled,required,readonly -->
+                              <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                            </div>
+                            <div class="bk-valid">에러 메시지</div>
+                            <!--// [D]성공:success,에러:error -->
+                            <div class="bk-messages">
+                              <p class="font-note">
+                                0으로 시작하는 10자리 입니다.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        Pick UP 우체국
+                        <span class="bk-required"
+                          ><strong class="ir-su">필수</strong></span
+                        >
+                      </th>
+                      <td>
+                        <div class="bk-textfield wide">
+                          <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 유효성 검사 후 error인 경우 class="is-error" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                          <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                          <div class="bk-control">
+                            <div class="control-field">
+                              <input
+                                type="text"
+                                name=""
+                                value=""
+                                placeholder="계약 우체국을 입력해주세요."
+                                class="iText"
+                                title="Pick UP 우체국"
+                                required
+                              /><!--// [D]focus,disabled,required,readonly -->
+                              <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
+                            </div>
+                            <div class="bk-valid">에러 메시지</div>
+                            <!--// [D]성공:success,에러:error -->
+                            <div class="bk-messages">
+                              <p class="font-note">계약 우체국명 입니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        EMS 계약일자
+                        <span class="bk-required"
+                          ><strong class="ir-su">필수</strong></span
+                        >
+                      </th>
+                      <td>
+                        <div class="bk-textfield">
+                          <!--// [D]상태 class="is-focus,is-disabled,is-required,is-readonly" / 유효성 검사 후 error인 경우 class="is-error" / 텍스트 clear버튼 필요시 class="has-clear" / 검색 버튼 필요시 class="has-search" / 아이콘 class="prepend-icon(아이콘-앞),append-icon(아이콘-뒤)" -->
+                          <!--// [D]사이즈:xsmall,small,default,large,xlarge -->
+                          <div class="bk-control">
+                            <!--// [D]임의로 넓이를 조정할 경우 예시 style="width: 600px" -->
+                            <div class="control-field">
+                              <input
+                                type="text"
+                                class="iText iDatepicker"
+                                id="datepicker2"
+                                placeholder="날짜 선택 (YYYY.MM.DD)"
+                                readonly
+                                title="EMS 계약일자"
+                              />
+                            </div>
+                            <div class="bk-valid">에러 메시지</div>
+                            <!--// [D]성공:success,에러:error -->
+                            <div class="bk-messages">
+                              <p class="font-note">
+                                EMS 계약일자입니다.(예 : 20231013)
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--// [E]테이블-배송정보 -->
+              <div class="cp-btns-area">
+                <div class="btns-area-left"></div>
+                <div class="btns-area-center">
+                  <button type="button" class="bk-btn btn-primary btn-large">
+                    <span class="text">저장</span>
+                  </button>
+                </div>
+                <div class="btns-area-right"></div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">Top</div>
+        <!--// [E]Top버튼 -->
+      </main>
+      <!--// [E]container -->
+      <!-- [S]footer -->
+      <footer id="footer" class="ui-footer">
+        <div class="ui-inner">
+          <div class="corp-area">
+            <h2 class="logo">
+              <img
+                src="../../../img/web/logo-kotra-dark.svg"
+                alt="Kotra Trade-Investment Promtion Agency"
+              />
+            </h2>
+            <div class="corp-group">
+              <ul class="list-corp">
+                <li><a href="../FTS/ECFTS-PU-001.html">buyKOREA란?</a></li>
+                <li><a href="../FTS/ECFTS-PU-002.html">이용약관</a></li>
+                <li>
+                  <a href="../FTS/ECFTS-PU-003.html" class="policy"
+                    >개인정보처리방침</a
+                  >
+                </li>
+              </ul>
+              <address class="address">
+                (06792) 서울시 서초구 헌릉로 13 / F. +82-2-3460-7951 / E.
+                <a href="mailto:buykorea@kotra.or.kr" target="_top"
+                  >buykorea@kotra.or.kr</a
+                >
+              </address>
+              <p class="copyright">
+                Copyright ⓒ 2023 KOTRA & buyKOREA All rights reserved.
+              </p>
+            </div>
+          </div>
+          <div class="aside_area">
+            <dl class="sns-area">
+              <dt class="ir-su">SNS</dt>
+              <dd>
+                <ul class="list-sns">
+                  <li>
+                    <a
+                      href="#none"
+                      class="bk-icon-only"
+                      target="_blank"
+                      onclick="fninstagram()"
+                    >
+                      <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#none"
+                      class="bk-icon-only"
+                      target="_blank"
+                      onclick="fnlinkedin()"
+                    >
+                      <i class="bk-icon bk-icon-sns-linkedIn">linkedIn</i>
+                    </a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <div class="etc-area">
+              <button
+                type="button"
+                class="bk-btn btn-default btn-outline btn-small"
+              >
+                <span class="text">판매자센터 바로가기</span>
+              </button>
+            </div>
+            <div class="family-area">
+              <div class="family-group">
+                <button
+                  type="button"
+                  class="bk-btn bk-btn-icon btn-light-gray btn-small"
+                  component="dropdownMenu"
+                >
+                  <span class="text">Family Site</span>
+                  <span class="deco-icon append-icon">
+                    <i class="bk-icon bk-icon-plus-gray">+</i>
+                  </span>
+                </button>
+                <div class="cp-layer layer-dropdown layer-family">
+                  <!--// [D]dim처리시 class="dim", 검정색 dim처리시 class="dim-dark",  흰색 dim처리시 class="dim-light" -->
+                  <div class="layer-inner">
+                    <ul class="list-family">
+                      <li>
+                        <a
+                          href="https://dream.kotra.or.kr/dream/kotraSsoProc.do?ssoToken="
+                          target="_blank"
+                          >해외경제정보드림(ID)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.gep.or.kr/kotraSsoProc.do?ssoToken="
+                          target="_blank"
+                          >글로벌전시포탈(GEP)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.investkorea.org/ik-kr/kotraSsoProc.do?ssoToken="
+                          target="_blank"
+                          >인베스트코리아(IK)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://president.globalwindow.org/kotraSsoProc.do?ssoToken="
+                          target="_blank"
+                          >경제외교활용포털(PG)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://contactkorea.kotra.or.kr/index.do"
+                          target="_blank"
+                          >해외전문인력유치센터(CK)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://kodits.kotra.or.kr/kotraSsoProc.do?ssoToken="
+                          target="_blank"
+                          >방산물자교역지원센터(KD)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://ombudsman.kotra.or.kr/ob-kr/kotraSsoProc.do?ssoToken="
+                          target="_blank"
+                          >외투기업옴부즈만</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.kotra.or.kr/kotraSsoProc.do?ssoToken="
+                          target="_blank"
+                          >코트라홈페이지(무역투자24)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.kotra.or.kr/bigdata"
+                          target="_blank"
+                          >코트라홈페이지(빅데이터)</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://exportvoucher.com" target="_blank"
+                          >수출지원기반활용사업</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--// [E]footer -->
+    </div>
+    <!--// [E]ui-wrap -->
+
+    <!-- [S]팝업 -->
+    <!--// [E]팝업 -->
+    <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/common/lib/flatpickr/flatpickr.min.js"></script>
+    <!--// 달력 -->
+    <script src="../../../js/common/lib/l10n/ko.js"></script>
+    <!--// 언어 설정 -->
+    <script src="../../../js/web/ui_common.js"></script>
+    <script>
+      const datepicker2 = document.getElementById("datepicker2");
+      flatpickr(datepicker2, {
+        dateFormat: "Y-m-d", // 날짜 형식 설정 (예: 2023-09-12)
+        enableTime: false, // 시간 선택 비활성화
+        minDate: "today", // 오늘 이전 날짜 선택 비활성화
+        defaultDate: new Date(), // 초기 날짜 설정 (현재 날짜로 설정)
+      });
+    </script>
+  </body>
+</html>

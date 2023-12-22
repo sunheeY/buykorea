@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@import url("reset.css?ver=20231212"); /* 기본값 */
+@import url("variable.css?ver=20231212"); /* 변수 */
+@import url("../common/phoca-flags.css"); /* 구글 달력 */
+@import url("../common/swiper-bundle.min.css"); /* 컴퍼넌트-스와이퍼 */
+@import url("tippy.css?ver=20231212"); /* 컴퍼넌트-툴팁 */
+@import url("components.css?ver=20231212"); /* 컴퍼넌트 */
+
+/* font */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../fonts/Roboto-Light.eot");
+  src: url("../../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Roboto-Light.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Roboto-Regular.eot");
+  src: url("../../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Roboto-Regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/Roboto-Medium.eot");
+  src: url("../../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Roboto-Medium.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/Roboto-Bold.eot");
+  src: url("../../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Roboto-Bold.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../fonts/Roboto-Black.eot");
+  src: url("../../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Roboto-Black.woff") format("woff");
+}

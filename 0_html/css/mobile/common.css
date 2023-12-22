@@ -216,6 +216,8 @@
 .bk-icon.bk-icon-down {width: 16px; height: 16px; background-image: url(../../img/mobile/icon-button-down.svg);} /* 다운로드 */
 .bk-icon.bk-icon-search-close {width: 24px; height: 24px; background-image: url(../../img/mobile/icon-dialog-close.svg);} /* 삭제 */
 
+.icon-text-clear .bk-icon.bk-icon-search-close {width: 18px; height: 18px; background-image: url(../../img/mobile/icon-text-clear.svg);} /* 삭제 */
+
 .my-util .icon-cart {position: relative;}
 .my-util .icon-cart .alert-info {top: -8px; right: -12px; }
 .alert-info {position: absolute; display: block; font-size: 1.1rem; color: #fff; background: #FD6243; width: 24px; height: 24px; border-radius: 50%; line-height: 1.72727; text-align: center; padding: 3px 0 2px; box-sizing: border-box;}

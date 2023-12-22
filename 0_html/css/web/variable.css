@@ -1,5 +1,9 @@
 :root {
+  /* [공통]색상 */
+  --color-black: #000;
   --color-white: #fff;
+  --color-body2: #555;
+  --color-body: #666;
   --color-light-gray: #eee;
   --color-light-gray-hover: var(--color-default);
   --color-primary: #0175e4;
@@ -15,16 +19,18 @@
   --color-input-disabled: #f0f0f0;
   --color-line: #bbb;
   --color-gray: #ddd;
+  --color-bd-line: #ddd;
   --color-delivery: #320d9c;
   --color-delivery2: #0d949c;
   --color-delivery3: #770d9c;
-
+  --color-btn-secondary: #54585a;
+  /* [공통]display */
   --d-none: none;
   --d-inline-block: inline-block;
   --d-block: block;
   --d-inline-flex: inline-flex;
   --d-flex: flex;
-
+  /* [공통]flex */
   --flex-row: row;
   --flex-row-reverse: row-reverse;
   --flex-column: column;
@@ -37,27 +43,103 @@
   --flex-content-between: space-between;
   --flex-content-around: space-around;
   --flex-content-stretch: stretch;
-
+  /* [공통]radius */
   --radius-default: 4px;
-
-  --size-xsmall: 20px;
-  --size-small: 32px;
-  --size-default: 40px;
-  --size-large: 48px;
-  --size-xlarge: 60px;
+  /* [공통]사이즈-버튼/form */
+  --size-xsmall: 24px;
+  --size-small: 30px;
+  --size-default: 38px;
+  --size-large: 46px;
+  --size-xlarge: 56px;
   --wide-full: 100%;
-
-  --font-size-xsmall: 12px;
-  --font-size-small: 14px;
-  --font-size-default: 16px;
-  --font-size-body: 18px;
-  --font-size-title3: 20px;
-  --font-size-title2: 32px;
-  --font-size-title1: 40px;
-
+  /* 국문,중문 */
+  /* [공통]사이즈-font */
+  /* 기본 */
+  --font-size-xxsmall: 1.1rem;
+  --font-size-xsmall: 1.2rem;
+  --font-size-small: 1.3rem;
+  --font-size-default: 1.4rem;
+  --font-size-default2: 1.5rem;
+  --font-size-body: 1.6rem;
+  --font-size-body2: 1.8rem;
+  --font-size-title3: 2rem;
+  --font-size-title2-2: 2.8rem;
+  --font-size-title2: 3.2rem;
+  --font-size-title1: 4rem;
+  --font-size-ly-detail-title: 4.8rem;
+  /* 스와이퍼 */
+  --font-size-swiper-button: 2rem;
+  --font-size-swiper-pagination-button: 1.4rem;
+  --font-size-swiper-pagination: 1.7rem;
+  /* 상품 */
+  --font-size-goods-title-sub: 2.2rem;
+  --font-size-xlarge-goods-name: 1.7rem;
+  --font-size-goods-price: 2.4rem;
+  /* [공통]사이즈-line-height */
+  /* 기본 */
+  --font-line-height-goods-title-sub: 3rem;
+  --font-line-height-xlarge-goods-name: 2.5rem;
+  --font-line-height-goods-price: 3.2rem;
+  --font-line-height-xsmall: 1.8rem;
+  --font-line-height-small: 2.1rem;
+  --font-line-height-default: 2.2rem;
+  --font-line-height-default2: 2.3rem;
+  --font-line-height-body: 2.4rem;
+  --font-line-height-body2: 2.6rem;
+  --font-line-height-title3: 2.8rem;
+  --font-line-height-title2-2: 3.6rem;
+  --font-line-height-title2: 4rem;
+  --font-line-height-title1: 4.8rem;
+  --font-line-height-ly-detail-title: 5.6rem;
+  /* 상품 */
+  --font-line-height-goods-title-sub: 2.2rem;
+  --font-line-height-xlarge-goods-name: 1.7rem;
+  --font-line-height-goods-price: 2.4rem;
+  /* 영문,일문,러사이어,포루투칼,스페인,프랑스,아랍어,터키,베트남,독일,힌디어,방글라데시,인도네시아 */
+  /* [공통]사이즈-font */
+  --font-long-size-xsmall: 1.1rem;
+  --font-long-size-small: 1.2rem;
+  --font-long-size-default: 1.3rem;
+  --font-long-size-default2: 1.4rem;
+  --font-long-size-body: 1.5rem;
+  --font-long-size-body2: 1.6rem;
+  --font-long-size-title3: 1.8rem;
+  --font-long-size-title2: 2.4rem;
+  --font-long-size-title1: 2.8rem;
+  /* 상품 */
+  --font-long-size-goods-title-sub: 2.2rem;
+  --font-long-size-xlarge-goods-name: 1.7rem;
+  --font-long-size-goods-price: 2.4rem;
+  /* [공통]사이즈-line-height */
+  --font-long-line-height-xsmall: 1.8rem;
+  --font-long-line-height-small: 2rem;
+  --font-long-line-height-default: 2.2rem;
+  --font-long-line-height-default2: 2.3rem;
+  --font-long-line-height-body: 2.4rem;
+  --font-long-line-height-body2: 2.6rem;
+  --font-long-line-height-title3: 2.8rem;
+  --font-long-line-height-title2: 3rem;
+  --font-long-line-height-title1: 3.8rem;
+  /* [공통]텍스트 스타일 */
   --text-underline: underline;
+  /* [공통]이미지-상품 */
+  --img-size-xsmall: 56px; /* 리스트-테이블 */
+  --img-size-xsmall2: 80px; /* [레이어]최근 본 상품 */
+  --img-size-small: 120px;
+  --img-size-small2: 104px;
+  --img-size-default: 144px; /* 리스트-상품등록 */
+  --img-size-large: 200px; /* [팝업]등록상품 검색 */
+  --img-size-xlarge: 256px; /* 기본 리스트(col5) */
+  /* [공통]이미지-전시관 */
+  --ad-size-default-w: 200px; /* 광고(전시관) */
+  --ad-size-default-h: 142px; /* 광고(전시관) */
+  --ad-size-large-w: 325px; /* 메인-TRADE SHOWS */
+  --ad-size-large-h: 232px; /* 메인-TRADE SHOWS */
+  --ad-size-xlarge-w: 360px; /* 전시관 리스트-TRADE SHOWS */
+  --ad-size-xlarge-h: 256px; /* 전시관 리스트-TRADE SHOWS */
+  --ad-size-xxlarge-w: 434px; /* 메인 */
+  --ad-size-xxlarge-h: 308px; /* 메인 */
 }
-
 /* [공통] class */
 /* ir */
 .ir-pm {
@@ -84,15 +166,48 @@
   text-indent: -9999px;
 } /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
 .hidden {
-  display: var(--d-none);
+  display: var(--d-none) !important;
 }
 .text-underline {
   text-decoration: var(--text-underline);
 }
-.text-link,
 .text-link:hover {
   text-decoration: var(--text-underline);
 }
-.data-warning {
+.data-warning,
+.text-warning {
   color: var(--color-warning);
+}
+.text-important,
+.text-important:hover {
+  color: var(--color-primary);
+}
+.text-state {
+  display: inline-block;
+}
+.text-state.text-state-register .text,
+.text-state.text-state-approval .text {
+  color: var(--color-primary);
+}
+.text-state.text-state-return .text,
+.text-state.text-state-return:hover .text {
+  color: var(--color-warning) !important;
+}
+/* 방향 */
+html[dir="ltr"] {
+}
+html[dir="rtl"] {
+}
+/* 언어 코드 */
+/* 언어 코드:ko,zh- CN,zh-TW,ja */
+html[lang="ko"] body,
+html[lang="zh- CN"] body,
+html[lang="zh-TW"] body,
+html[lang="ja"] body {
+}
+/* 언어 코드:en,ru,pt,es */
+html[lang="en"] body,
+html[lang="ru"] body,
+html[lang="pt"] body,
+html[lang="es"] body {
 }
