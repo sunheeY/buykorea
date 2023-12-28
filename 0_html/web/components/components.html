@@ -794,14 +794,15 @@
                       <div class="bk-messages">기본 메시지</div>
                     </div>
                   </div>
-                  <div class="bk-select">
+                  <!-- [D] 사이즈를 데이터 길이에 맞게 받으려면 bk-autoWidth 클래스를 추가합니다 -->
+                  <div class="bk-select bk-autoWidth">
                     <!--// [D]사이즈:xsmall,small,default,large,xlarge / 유효성 검사 후 error인 경우 class="is-error" -->
                     <label for="selectbox-01-03">default</label>
                     <div class="bk-control">
                       <select class="" id="selectbox-01-03">
                         <!--// [D]디자인상 label이 없는 타입일 경우 select에 title값으로 label텍스트값으로 처리 -->
                         <option value="1">option1</option>
-                        <option value="2">option2</option>
+                        <option value="2">option2option2option2option2option2option2</option>
                         <option value="3" disabled>option3</option>
                         <option value="4">option4</option>
                       </select>
@@ -9357,6 +9358,13 @@ flatpickr(endDateInput, {
       // 아코디언 초기화
       $(".bk-accordion.single").accordion({ type: "single" });
       $(".bk-accordion.multi").accordion({ type: "multiple", leaveOpen: true });
+
+      // 셀렉트박스 사이즈 데이터 길이 반응
+      $('.bk-autoWidth').each(function() {
+        var selWidth = $(this).find('select').width();
+        $(this).find('.bk-control').css('width', selWidth + 12 + 30 + 'px')
+      })
+
     </script>
   </body>
 </html>

@@ -4311,12 +4311,16 @@ html[lang="ja"] .ui-main-seller .section-inquiry .swiper-inquiry-deadline .tag {
   flex-wrap: var(--flex-nowrap);
   font-size: var(--font-size-body);
   line-height: var(--font-line-height-body);
+  word-break: break-all;
 }
 .ui-tradeOfficial .section-tradeOfficial .item-map-info ~ .item-map-info {
   margin-top: 8px;
 }
+.ui-tradeOfficial .section-tradeOfficial .item-map-info dt,
+.ui-tradeOfficial .section-tradeOfficial .item-map-info dd {word-break: break-all;}
 .ui-tradeOfficial .section-tradeOfficial .item-map-info > dt {
   margin-right: 10px;
+  flex-shrink: 0;
 }
 .ui-tradeOfficial .section-tradeOfficial .item-map-info > dt::after {
   content: ":";

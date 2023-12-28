@@ -157,15 +157,18 @@ $.fn.extend({
 					$(this).addClass('active').parents('li').siblings().find('.tab-item').removeClass('active');
 					$(this).closest('.tab-menu-wrap').next('.tab-container-wrap').children('.tab-container').eq(idx).show().addClass('active').siblings().hide().removeClass('active');
 
-          //탭 포커스 이동시키기 23-12-01
-          //var _bk_scrollX0 = $(this).parents('.list-menu').width();
-          var _bk_scrollX1 = $(this).parents().width();
-          //var _bk_scrollX2 = $(this).parents().offset().left;
-          //console.log("idx + :" + idx);
-          //console.log(_bk_scrollX0);
-          //console.log(_bk_scrollX1);
-          //console.log(_bk_scrollX2);
-          $(this).parents('.type-main-list .list-menu').scrollLeft(( (( _bk_scrollX1 / 2) * (idx - 1)) + 80));
+          var thisParent = $(this).parent();
+          var thisWidth = thisParent.width();
+          var siblingWidth = thisParent.siblings().outerWidth();
+          var myWidth = $(window).width() - 20; // 왼쪽 여백 20
+          var listWrap = $(this).parents('.type-main-list .list-menu');
+          var lengthCalc = Math.floor((myWidth - thisWidth) / siblingWidth) + 1; // 클릭값 포함
+          // var scrollCalc = (siblingWidth*idx) - (siblingWidth/lengthCalc);
+          var scrollCalc = (siblingWidth*idx) - ((myWidth - thisWidth - 20)/2); // 오른쪽 여백 20 카운트
+        
+          if (myWidth <= thisWidth) {listWrap.animate({scrollLeft: siblingWidth * idx});}
+          else if (idx <= lengthCalc - 2) {listWrap.animate({scrollLeft: 0});}
+          else {listWrap.animate({scrollLeft: scrollCalc});}
 
 				});
 			}
@@ -902,25 +905,25 @@ $(document).ready(function () {
     return false;
   });
 
-  // 해외 무역관 정보
-  if ($('.block-dtr-wrap').length > 0) {
-    var dtrMap  = new Swiper('.dtr-top-area', {
-      slidesPerView: 1.4,
-      spaceBetween: 24,
-      threshold: 0,
-      a11y: false,
-      observer: true,
-      observeParents: true,
-      pagination: {
-        el: ".dtr-top-area .swiper-pagination",
-        type: "fraction",
-      },
-      navigation: {
-        nextEl: ".dtr-top-area .swiper-button-next",
-        prevEl: ".dtr-top-area .swiper-button-prev",
-      },
-    });
-  }
+  // 해외 무역관 정보 - 해당페이지로 이동
+  // if ($('.block-dtr-wrap').length > 0) {
+  //   var dtrMap  = new Swiper('.dtr-top-area', {
+  //     slidesPerView: 1.4,
+  //     spaceBetween: 24,
+  //     threshold: 0,
+  //     a11y: false,
+  //     observer: true,
+  //     observeParents: true,
+  //     pagination: {
+  //       el: ".dtr-top-area .swiper-pagination",
+  //       type: "fraction",
+  //     },
+  //     navigation: {
+  //       nextEl: ".dtr-top-area .swiper-button-next",
+  //       prevEl: ".dtr-top-area .swiper-button-prev",
+  //     },
+  //   });
+  // }
 
   function realHeight() {
     var myHeight = window.innerHeight - $(document).height();

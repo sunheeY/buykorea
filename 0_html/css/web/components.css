@@ -143,6 +143,11 @@
   line-height: var(--size-default);
   white-space: nowrap;
 }
+.bk-autoWidth .bk-control > select {
+  word-wrap: normal;
+  word-break: keep-all;
+  font-size: 1.6rem;
+}
 .bk-textfield.textfield-masking .iText {
   padding-right: 44px;
 }
@@ -2197,6 +2202,7 @@ html[lang="es"] .bk-tbl .tbl.tbl-edit td {
 .bk-tbl .bk-delivery-time p {color: #666;}
 .bk-tbl .bk-delivery-info {text-align: left; position: relative;}
 .bk-tbl .bk-delivery-info .bk-delivery-ico {position: absolute; right: 0; top: 0; border: 1px solid #ddd; border-width: 0 1px 1px; color: #666; font-size: 10px; line-height: 1.8; padding: 2px 7px;}
+.bk-tbl .bk-delivery-info .bk-delivery-ico img {display: none;}
 
 .data-group.column {
   display: var(--d-flex);

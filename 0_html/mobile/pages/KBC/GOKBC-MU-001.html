@@ -402,7 +402,24 @@
 
     <script src="../../../js/mobile/ui_common.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        var dtrMap  = new Swiper('.dtr-top-area', {
+          slidesPerView: 1.4,
+          spaceBetween: 24,
+          threshold: 0,
+          a11y: false,
+          observer: true,
+          observeParents: true,
+          pagination: {
+            el: ".dtr-top-area .swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".dtr-top-area .swiper-button-next",
+            prevEl: ".dtr-top-area .swiper-button-prev",
+          },
+        });
+      });
     </script>
   </body>
 </html>
