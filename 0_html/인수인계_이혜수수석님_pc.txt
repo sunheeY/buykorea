@@ -1,0 +1,45 @@
+인수인계
+
+1. 모든 작업 파일 리스트
+: 해당 파일 '비고'컬럼  대략의 히스토리 참조
+1-1. 경로: /bk-fo-pub/webapp/web/guide/path.html
+
+2. 컴퍼넌트
+: 사이트에서 사용중인 컴퍼넌트
+2-1. 경로: /bk-fo-pub/webapp/web/components/components.html
+
+3. 공통 레이아웃
+: 공통 레이아웃
+3-1. 경로: /bk-fo-pub/webapp/web/pages/layout/layout.html
+3-2. 바이어/셀러는 header만 구분(바이어,셀러 공통:class="ui-header", 셀러:class="header-seller" 추가)
+3-3. 컨테이너 영역 기본 class="ui-container", lnb를 가지고 있을 경우 common.js파일에서 class="has-lnb" 추가됨
+      lnb가 없는 레이아웃의 경우 해당 영역을 없애거나 해당 class="ui-lnb"를 제거해야 넓이 문제가 없음 
+      lnb영역은 레이아웃에 있는 기본 타입 외 트레이드쇼,카테고리의 카테고리+필터 타입 같은 영역에 있음
+3-4. 해더 영역 스크롤 내릴 시 검색 영역이 우측 아이콘 영역에 아이콘을 넣어뒀으나 기획되지 않아 class="util-search"를 css로 안보이게 처리해둠
+3-5. 전체 카테고리 class="menu-depth"기본 display:none이었으나 개발에서 핸들링 하기로 해서 삭제()
+3-6. 푸터 영역 주석 확인하면 셀러,바이어 상태별 내용들이 들어가있음
+
+4. 다국어
+4-1. html[lang="en"],html[lang="ru"],html[lang="pt"],html[lang="es"],html[lang="ja"]만 처리해둠(일본어는 상황에 따라 다르게 처리됨)
+      추가된 언어에 대해서는 추후 대응 결정
+4-2. 다국어는 기본 한국어 기준 1px씩 폰트 사이즈만 작아짐, line-height는 간격 이슈가 있을 수 있어 
+
+5. 메인,상세
+5-1. 경로: /bk-fo-pub/webapp/web/pages/MAN/ECMAN-PU-002.html,/bk-fo-pub/webapp/web/pages/PRD/ECPRD-PU-004.html
+5-2. 스와이퍼 loop시 페이징이 맞지 않는 문제 발생할 수 있음(라이브러리가 slide 하나를 하나의 페이지로 만드는 구조)
+      슬라이더에 5개를 보여주고 싶을 경우 5개가 아닌 다른 개수가 오면 페이징이랑 맞지 않음(li하나에 상품 하나를 넣는 구조라 초기 개발이 말한 li하나에 상품 1개의 구조를 맞춰 여려개를 한번에 돌리기위해 어쩔수 없음)
+      일부 상품이 여러번 보여질 수 있음(.bk-swiper .swiper-slide-blank{display: none}를 제거하면 페이징과 상품 돌아가는 개수를 맞출 수 있으나 없는 상품 개수만큼의 공백 생김,loopAddBlankSlides: true)
+
+6. 트레이드쇼
+6-1. as-is 이미지가 비율 문제가 있어 이미지에 타이틀 영역 숨김 요청 처리되어있음 
+
+7. 이메일
+7-1. 경로: /bk-fo-pub/webapp/web/email/email.html
+7-2. PC기준으로 작업되어 개발 전달했으나, 개발에서 모바일 대응해야한다고 해서 퍼블에서 email-mo.html로 %로 테이블 임의 작업해서 넘김(아웃룩 등 테스트 안된 상태라 문제가 생길수 있다고 개발에 전달)
+
+8. 프린트
+8-1. 경로: /bk-fo-pub/webapp/web/pages/COM/ECMYB-PU-012.html
+8-2. 레이어 팝업으로 프린트 할 경우 샘플
+
+
+
