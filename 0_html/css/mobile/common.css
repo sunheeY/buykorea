@@ -129,11 +129,11 @@
 .ui-footer .inquiry_area {display: flex; flex-direction: column;}
 .ui-footer .inquiry_area .inquiry-area dt{color:#767676; margin-bottom:8px; font-size:13px; line-height:1.61;  }
 .ui-footer .list-inquiry{display:flex; flex-flow:row wrap; color: #fff; font-size: 12px; font-weight:500; gap:8px 20px;}
-.ui-footer .aside_area {display: flex; justify-content: space-between; align-items: center; padding-top: 30px; gap: 50px;}
+.ui-footer .aside_area {display: flex; justify-content: space-between; align-items: center; padding-top: 30px; gap: 30px;}
 .ui-footer .sns-area,
 .ui-footer .list-sns {display: flex; align-items: center; position: absolute; top: 0; left: 125px;}
 .ui-footer .list-sns > li ~ * {margin-left: 12px;}
-.ui-footer .family-area {flex: 0 0 calc(50% - 25px);}
+.ui-footer .family-area {flex: 0 0 calc(50% - 15px);}
 .ui-footer .family-area .family-group {position: relative;}
 .ui-footer .family-area .bk-btn {width:100%; justify-content: space-between; height: auto; padding: 6px 12px 5px; color:#fff; font-size:13px; background: rgba(255,255,255,.05);}
 
@@ -258,6 +258,6 @@
 
 /* 구글번역기 */
 .list-language {list-style: none; display: flex; flex-direction: column-reverse;}
-.list-language li {display: block; padding: 4px 0; box-sizing: border-box; font-size: 1.2rem; line-height: 1.2;}
+.list-language li {display: block; padding: 4px 0; box-sizing: border-box; font-size: 1.3rem; line-height: 1.2;}
 .list-language li a {color: #000;}
 .VIpgJd-ZVi9od-ORHb-OEVmcd, .skiptranslate {display: none !important;}

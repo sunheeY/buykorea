@@ -58,6 +58,68 @@
           - 날짜를 클릭하면 내용을 숨길 수 있습니다.<br>
           - <a href="#container">HTML 현황 테이블</a>에 추가되는 리스트는 업데이트 될 예정이지만 비고란의 내용은 데일리 리스트로 대체합니다.
         </p>
+        <h3>2023.12.28</h3>
+        <dl>
+          <dt>pc 상품상세 pdf 변환용 html</dt>
+          <dd><a href="../web/prd-pdf/ECPRD-PU-004_pdf_2.html" target="_blank">/web/prd-pdf/ECPRD-PU-004_pdf_2.html</a></dd>
+          <dt>pc 셀렉트박스 수정 - 데이터값만큼 늘어나게</dt>
+          <dd><a href="../web/components/components.html" target="_blank">/web/components/components.html</a></dd>
+          <dd>
+            - 3. Form > 3.1. Selectbox<br>
+            - 'bk-select' 레벨에 'bk-autoWidth' 클래스 추가 후 하단 스크립트를 해당 페이지에 적용합니다<br>
+            <code>
+              $('.bk-autoWidth').each(function() {
+                var selWidth = $(this).find('select').width();
+                $(this).find('.bk-control').css('width', selWidth + 12 + 30 + 'px')
+              })
+            </code>
+          </dd>
+          <dt>pc 배송내역 상세</dt>
+          <dd class="pc-link">/COM/popup.html</dd>
+          <dd>
+            - 택배사 이미지 로고 삭제 요청 - css에서 display: none 처리 (ctrl + F '배송내역 상세')
+          </dd>
+          <dt>mo 메인</dt>
+          <dd class="link">/MAN/ECMAN-MU-001.html</dd>
+          <dd>
+            - 스크롤 영역을 스와이프로 수정<br>
+            - 탭 영역 클릭 이동 수정
+          </dd>
+          <dt>mo 푸터</dt>
+          <dd class="link">/layout/layout.html</dd>
+          <dd>
+            - 구글 언어선택 영역 폰트 사이즈 키움
+          </dd>
+          <dt>mo 해외무역관</dt>
+          <dd class="link">/KBC/GOKBC-MU-001.html</dd>
+          <dd>
+            - ui-common.js 에 스와이프 영역 해당 페이지로 이동
+          </dd>
+          <dt>pc 해외무역관</dt>
+          <dd class="pc-link">/KBC/GOKBC-PU-001.html</dd>
+          <dd>
+            - 지도 하단 영역 텍스트 길이에 따라 사이즈 변동 -> 동일하게 맞춤
+          </dd>
+          <dt>업로드 리스트</dt>
+          <dd>
+            <strong>webapp/web</strong>
+            - /prd-pdf/ECPRD-PU-004_pdf_2.html (신규)<br>
+            - /components/components.html (수정)
+            <strong>webapp/mobile/pages</strong>
+            - /MAN/ECMAN-MU-001.html (수정)<br>
+            - /KBC/GOKBC-MU-001.html (수정)
+            <strong>webapp/css/web</strong>
+            - components.css
+            <strong>webapp/css/mobile</strong>
+            - common.css<br>
+            - components.css<br>
+            - reset.css
+            <strong>webapp/js/mobile</strong>
+            - ui_common.js
+            <strong>webapp/img/mobile</strong>
+            - icon-swiper-arr.svg
+          </dd>
+        </dl>
         <h3>2023.12.22</h3>
         <dl style="display: none;">
           <dt>pc/mo - 아이디찾기/비밀번호 재설정 수정/추가 및 약관동의 수정/추가</dt>
