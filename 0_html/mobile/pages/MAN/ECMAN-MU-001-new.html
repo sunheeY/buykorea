@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--// [D]다국어 - [국문]-ko/[영문]-en/[중국어]-zh/[중국어 간체]zh-CN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>buyKOREA for Buyers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../../../css/mobile/common.css" />
+    <noscript></noscript>
+    <script async src=""></script>
+  </head>
+  <body>
+    <!-- [S]바로가기 -->
+    <div id="skip">
+      <a href="#contents"><span>본문내용 바로가기</span></a>
+      <a href="#gnb"><span>주메뉴 바로가기</span></a>
+      <a href="#lnb"><span>서브메뉴 바로가기</span></a>
+      <a href="#header"><span>해더 바로가기</span></a>
+      <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!--// [E]바로가기 -->
+    <!-- [S]ui-wrap -->
+    <div class="ui-wrap">
+      <!-- [S]header -->
+      <header id="header" class="ui-header">
+        <div class="header-area">
+          <div class="header-comm">
+            <div class="ui-left">
+              <h1 class="logo">
+                <a href="#">Buy Korea</a>
+              </h1>
+            </div>
+            <div class="my-util">
+              <button type="button" class="bk-icon-only icon-search">
+                <i class="bk-icon bk-icon-searchBlack">검색</i>
+              </button>
+              <button type="button" class="bk-icon-only icon-cart">
+                <i class="bk-icon bk-icon-cart">장바구니</i>
+                <em class="alert-info">99+</em>
+              </button>
+
+              <button type="button" class="bk-icon-only icon-gnb-menu" onclick="rightMenu('#gnb')">
+                <i class="bk-icon bk-icon-gnb-menu">메뉴</i>
+              </button>
+
+              <nav id="gnb" class="ui-gnb">
+                <div class="nav-top-area">
+                  <div class="before-login">
+                    <a href="#" class="go-login">Please Sign In</a>
+                    <a href="#" class="go-login-seller">판매자센터</a>
+                  </div>                
+                  <button type="button" class="bk-icon-only bk-btn-close">
+                    <i class="bk-icon bk-icon-dialog-close">닫기</i>
+                  </button>
+                </div>
+                <div class="nav-cont">
+                  <div class="bk-tab tab-type-sub-line">
+                    <div class="tab-menu-wrap">
+                      <ul class="list-menu">
+                        <li><button type="button" class="tab-item active"><span>Categories</span></button></li>
+                        <li><button type="button" class="tab-item"><span>Menu</span></button></li>
+                      </ul>
+                    </div>
+                    <div class="tab-container-wrap">
+                      <div class="tab-container active">
+                        <span>Menu01</span>
+                      </div>
+                      <div class="tab-container">
+                        <span>Menu02</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+            </div>
+          </div>          
+        </div>
+      </header>
+      <!--// [E]header -->
+      <!-- [S]container -->
+      <main id="container" class="ui-container ui-main ui-main-buyer"><!--[D] 메인 클래스 추가-->
+
+        <div class="ui-content-wrap ui-inner">
+          <div class="ui-contents" id="contents">
+
+            <section class="type-main-swipe bk-main-banner">
+              <div class="banner-slide-wrap swiper-container">
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide"><img src="../../../img/tmp/buyer-main-slide.png"></a>
+                  <a href="#" class="swiper-slide"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></a>
+                </div>
+              </div>
+              <div class="bk-control-wrap">
+                <button class="slide-btn slide-auto-start">play</button>
+                <button class="slide-btn slide-auto-stop">palse</button>
+                <div class="swiper-pagination"></div>
+              </div>
+            </section>
+
+            <!-- S : [20231226] 스크롤 -> 스와이퍼로 교체 수정 : 이하 섹션 별 상품 영역 공통적용 -->
+            <!-- [스와이프 상품영역 공통 적용]
+            swiper-container 에 해당하는 태그가 한번 감싸는 용도로 추가되고,
+            main-swiper-ctrl-btns(좌우버튼) 에 해당하는 태그 영역이 추가되며,
+            cp-prd-list 에는 swiper-wrapper 클래스가 추가되고,
+            bk-prd-unit 에는 swiper-slide 클래스가 추가된다. -->
+            <section class="type-main-list  main-new-swiper bk-main-pick">
+              <div class="title">TOP PICKS Long Title Very Very Longlong Title</div>
+              <!-- [20231226] swiper-container 태그 추가 -->
+              <div class="swiper-container">
+                <!-- [20231226] main-swiper-ctrl-btns 태그 추가 -->
+                <div class="main-swiper-ctrl-btns">
+                  <button type="button" class="swiper-button-prev"></button>
+                  <button type="button" class="swiper-button-next"></button>                  
+                </div>
+                <!-- [20231226] cp-prd-list 에 swiper-wrapper 클래스가 추가 -->
+                <ul class="cp-prd-list swiper-wrapper">
+                  <!-- [20231226] bk-prd-unit 에 swiper-slide 클래스가 추가 -->
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                        <span class="bk-flag-new">NEW</span>
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                        <span class="bk-flag-new">NEW</span>
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                        <span class="bk-flag-new">NEW</span>
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Product2424242424 name Product name Product </strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                </ul>
+              <!-- E : 주석 끝. 이하 주석 없음. -->
+              </div>
+
+            </section>
+            
+            <section class="type-main-list  main-new-swiper bk-main-new">
+              <div class="title">NEW ARRIVALS</div>
+              <div class="swiper-container">
+                <div class="main-swiper-ctrl-btns">
+                  <button type="button" class="swiper-button-prev">앞으로</button>
+                  <button type="button" class="swiper-button-next">뒤로</button>
+                </div>
+                <ul class="cp-prd-list swiper-wrapper">
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">1</strong>
+                        <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                        <span class="bk-flag-new">NEW</span>
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">2</strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                        <span class="bk-flag-new">NEW</span>
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">3</strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                        <span class="bk-flag-new">NEW</span>
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">4</strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">5</strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">6</strong>
+                        <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">7</strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">8</strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">9</strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">10</strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">11</strong>
+                        <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">12</strong>
+                        <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                      </div>
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- [20231226] TAKE A LOOK TOGETHER 와 같은 구조 -->
+            <section class="type-main-list  main-new-swiper bk-main-looking">
+              <div class="title">ARE YOU LOOKING FOR THIS?</div>
+              <div class="bk-tab bk-tabs-wrap">
+                <div class="tab-menu-wrap">
+                  <ul class="list-menu">
+                    <li class="swiper-slide bk-prd-unit">
+                      <button type="button" class="tab-item active">
+                        <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                        <div class="bk-prd-info">
+                          <strong class="bk-tit bk-lineclamp-1">Product name Product name Productt name Productt name Productt name Product </strong>
+                          <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        </div>
+                          <div class="bk-flag-wrap">
+                          <span class="bk-flag-new">NEW</span>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="bk-prd-unit">
+                      <button type="button" class="tab-item">
+                        <div class="thumb"><img src="../../../img/tmp/image-thisone.png"></div>
+                        <div class="bk-prd-info">
+                          <strong class="bk-tit bk-lineclamp-1">Product name Product name Productt name Productt name Productt name Product </strong>
+                          <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        </div>
+                        <!-- [d] bk-flag-new : 신상품 -->
+                        <div class="bk-flag-wrap">
+                          <span class="bk-flag-new">NEW</span>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="bk-prd-unit">
+                      <button type="button" class="tab-item">
+                        <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                        <div class="bk-prd-info">
+                          <strong class="bk-tit bk-lineclamp-1">Product name Product name Productt name Productt name Productt name Product </strong>
+                          <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        </div>
+                        <!-- [d] bk-flag-new : 신상품 -->
+                        <div class="bk-flag-wrap">
+                          <span class="bk-flag-new">NEW</span>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="bk-prd-unit">
+                      <button type="button" class="tab-item">
+                        <div class="thumb"><img src="../../../img/tmp/image-thisone.png"></div>
+                        <div class="bk-prd-info">
+                          <strong class="bk-tit bk-lineclamp-1">Product name Product name Productt name Productt name Productt name Product </strong>
+                          <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        </div>
+                        <!-- [d] bk-flag-new : 신상품 -->
+                        <div class="bk-flag-wrap">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="bk-prd-unit">
+                      <button type="button" class="tab-item">
+                        <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                        <div class="bk-prd-info">
+                          <strong class="bk-tit bk-lineclamp-1">Product name Product name Productt name Productt name Productt name Product </strong>
+                          <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        </div>
+                        <!-- [d] bk-flag-new : 신상품 -->
+                        <div class="bk-flag-wrap">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="bk-prd-unit">
+                      <button type="button" class="tab-item">
+                        <div class="thumb"><img src="../../../img/tmp/image-thisone.png"></div>
+                        <div class="bk-prd-info">
+                          <strong class="bk-tit bk-lineclamp-1">Product name Product name Productt name Productt name Productt name Product </strong>
+                          <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        </div>
+                        <!-- [d] bk-flag-new : 신상품 -->
+                        <div class="bk-flag-wrap">
+                          <span class="bk-flag-new">NEW</span>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="bk-prd-unit">
+                      <button type="button" class="tab-item">
+                        <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                        <div class="bk-prd-info">
+                          <strong class="bk-tit bk-lineclamp-1">Product name Product name Productt name Productt name Productt name Product </strong>
+                          <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        </div>
+                        <!-- [d] bk-flag-new : 신상품 -->
+                        <div class="bk-flag-wrap">
+                          <span class="bk-flag-new">NEW</span>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="bk-prd-unit">
+                      <button type="button" class="tab-item">
+                        <div class="thumb"><img src="../../../img/tmp/image-thisone.png"></div>
+                        <div class="bk-prd-info">
+                          <strong class="bk-tit bk-lineclamp-1">Product name Product name Productt name Productt name Productt name Product </strong>
+                          <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        </div>
+                        <!-- [d] bk-flag-new : 신상품 -->
+                        <div class="bk-flag-wrap">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="bk-prd-unit">
+                      <button type="button" class="tab-item">
+                        <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                        <div class="bk-prd-info">
+                          <strong class="bk-tit bk-lineclamp-1">9999999999999Product name Product name Productt name Productt name Productt name Product </strong>
+                          <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        </div>
+                        <!-- [d] bk-flag-new : 신상품 -->
+                        <div class="bk-flag-wrap">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="bk-prd-unit">
+                      <button type="button" class="tab-item">
+                        <div class="thumb"><img src="../../../img/tmp/image-thisone.png"></div>
+                        <div class="bk-prd-info">
+                          <strong class="bk-tit bk-lineclamp-1">1010101010 Productt name Product </strong>
+                          <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        </div>
+                        <!-- [d] bk-flag-new : 신상품 -->
+                        <div class="bk-flag-wrap">
+                        </div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-container-wrap">
+                  <div class="tab-container active">
+                    <div class="swiper-container">
+                      <div class="main-swiper-ctrl-btns">
+                        <button type="button" class="swiper-button-prev">앞으로</button>
+                        <button type="button" class="swiper-button-next">뒤로</button>
+                      </div>
+                      <ul class="cp-prd-list swiper-wrapper">
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">1</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">2</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">3</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">4</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">5</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">6</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">7</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">8</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">9</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">10</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">11</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">12</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-container">
+                    <div class="swiper-container">
+                      <div class="main-swiper-ctrl-btns">
+                        <button type="button" class="swiper-button-prev">앞으로</button>
+                        <button type="button" class="swiper-button-next">뒤로</button>
+                      </div>
+                      <ul class="cp-prd-list swiper-wrapper">
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">1</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">2</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">3</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">4</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">5</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">6</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">7</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">8</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">9</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">10</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">11</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">12</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-container">
+                    리스트 3
+                  </div>
+                  <div class="tab-container">
+                    리스트 4
+                  </div>
+                  <div class="tab-container">
+                    리스트 5
+                  </div>
+                  <div class="tab-container">
+                    리스트 6
+                  </div>
+                  <div class="tab-container">
+                    리스트 7
+                  </div>
+                  <div class="tab-container">
+                    리스트 8
+                  </div>
+                  <div class="tab-container">
+                    리스트 9
+                  </div>
+                  <div class="tab-container">
+                    리스트 10
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="type-main-list  main-new-swiper bk-main-now">
+              <div class="title">TRENDING NOW</div>
+              <div class="swiper-container">
+                <div class="main-swiper-ctrl-btns">
+                  <button type="button" class="swiper-button-prev">앞으로</button>
+                  <button type="button" class="swiper-button-next">뒤로</button>
+                </div>
+                <ul class="cp-prd-list swiper-wrapper">
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="../../../img/tmp/image-thisone.png"></div>
+                      <div class="bk-prd-info">
+                        <span class="prd-company-name bk-lineclamp-1">RUBELLI CO.,</span>
+                        <strong class="bk-tit bk-lineclamp-2">1Product name Product name Productt name Productt name Productt name Product </strong>
+                        <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                        <span class="bk-flag-new">NEW</span>
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                        <strong class="bk-tit bk-lineclamp-2">2Product name Product name Productt name Productt name Productt name Product </strong>
+                        <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Productt name Productt name Productt name Product </strong>
+                        <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Productt name Productt name Productt name Product </strong>
+                        <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Productt name Productt name Productt name Product </strong>
+                        <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Productt name Productt name Productt name Product </strong>
+                        <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Productt name Productt name Productt name Product </strong>
+                        <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <span class="prd-company-name bk-lineclamp-1">8RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Productt name Productt name Productt name Product </strong>
+                        <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <span class="prd-company-name bk-lineclamp-1">RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                        <strong class="bk-tit bk-lineclamp-2">Product name Product name Productt name Productt name Productt name Product </strong>
+                        <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                        <span class="bk-moq"><span class="bk-lineclamp-1">MOQ : 100 ea</span></span>
+                      </div>
+                      <!-- [d] bk-flag-new : 신상품 -->
+                      <div class="bk-flag-wrap">
+                      </div>
+                    </a>  
+                  </li>
+                  
+                </ul>
+              </div>
+            </section>
+
+            <section class="type-main-list  main-new-swiper bk-main-keywords">
+              <div class="title">HOT KEYWORDS</div>
+              <div class="bk-tab bk-tabs-wrap">
+                <div class="tab-menu-wrap">
+                  <ul class="list-menu">
+                    <li>
+                      <button type="button" class="tab-item active">#instaHOT</button>
+                    </li>
+                    <li>
+                      <button type="button" class="tab-item">#Korea Food</button>
+                    </li>
+                    <li>
+                      <button type="button" class="tab-item">#Vacation</button>
+                    </li>
+                    <li>
+                      <button type="button" class="tab-item">#Vacation2</button>
+                    </li>
+                    <li>
+                      <button type="button" class="tab-item">#Vacation5</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-container-wrap">
+                  <div class="tab-container active">
+                    <div class="swiper-container">
+                      <div class="main-swiper-ctrl-btns">
+                        <button type="button" class="swiper-button-prev">앞으로</button>
+                        <button type="button" class="swiper-button-next">뒤로</button>
+                      </div>
+                      <ul class="cp-prd-list swiper-wrapper">
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">1</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">2</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">3</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">4</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">5</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">6</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">7</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">8</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">9</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">10</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">11</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">12</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-container">
+                    <div class="swiper-container">
+                      <div class="main-swiper-ctrl-btns">
+                        <button type="button" class="swiper-button-prev">앞으로</button>
+                        <button type="button" class="swiper-button-next">뒤로</button>
+                      </div>
+                      <ul class="cp-prd-list swiper-wrapper">
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">1</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">2</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">3</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">4</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">5</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">6</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">7</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">8</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">9</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">10</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">11</strong>
+                              <span class="bk-price bk-lineclamp-2">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <strong class="bk-tit bk-lineclamp-2">12</strong>
+                              <span class="bk-price  bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-container">
+                    리스트 3
+                  </div>
+                  <div class="tab-container">
+                    리스트 4
+                  </div>
+                  <div class="tab-container">
+                    리스트 5
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="type-main-swipe bk-main-event">
+              <div class="event-slide-wrap swiper-container">                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide"><img src="../../../img/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../img/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../img/tmp/buyer-main-slide2.png"></a>
+                  <a href="#" class="swiper-slide"><img src="../../../img/tmp/buyer-main-slide2.png"></a>
+                </div>
+              </div>
+              <div class="bk-control-wrap">
+                <button class="slide-btn slide-auto-start">play</button>
+                <button class="slide-btn slide-auto-stop">palse</button>
+                <div class="swiper-pagination"></div>
+              </div>
+            </section>
+
+            <section class="type-main-list  main-new-swiper bk-main-category">
+              <div class="title">POPULAR CATEGORIES</div>
+              <div class="bk-tab bk-tabs-wrap">
+                <div class="tab-menu-wrap">
+                  <ul class="list-menu">
+                    <li>
+                      <button type="button" class="tab-item active">Apparel & Textiles</button>
+                    </li>
+                    <li>
+                      <button type="button" class="tab-item">Baby & Toddler</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-container-wrap">
+                  <div class="tab-container active">
+                    <!-- <div class="bk-prd-inner"> --><!-- [20231226] 삭제 -->
+                    <div class="swiper-container">
+                      <div class="main-swiper-ctrl-btns">
+                        <button type="button" class="swiper-button-prev">앞으로</button>
+                        <button type="button" class="swiper-button-next">뒤로</button>
+                      </div>
+                      <ul class="cp-prd-list swiper-wrapper">
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="../../../img/tmp/image-thisone.png"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">1 RUBELLI CO.,</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">2 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">3 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">4 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">5 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>                      
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">6 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">7 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">8 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">9 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">10 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- </div> --><!-- [20231226] 삭제 -->
+                  </div>
+                  <div class="tab-container">
+                    <!-- <div class="bk-prd-inner"> --><!-- [20231226] 삭제 -->
+                    <div class="swiper-container">
+                      <div class="main-swiper-ctrl-btns">
+                        <button type="button" class="swiper-button-prev">앞으로</button>
+                        <button type="button" class="swiper-button-next">뒤로</button>
+                      </div>
+                      <ul class="cp-prd-list swiper-wrapper">
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="../../../img/tmp/image-thisone.png"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">1 RUBELLI CO.,</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                              <span class="bk-flag-new">NEW</span>
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">2 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">3 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">4 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">5 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>                      
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">6 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">7 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">8 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                        <li class="swiper-slide bk-prd-unit">
+                          <a href="#" class="bk-thumb-link">
+                            <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                            <div class="bk-prd-info">
+                              <span class="prd-company-name bk-lineclamp-1">9 RUBELLI CO., LTD.RUBELLI CO., LTDRUBELLI CO., LTD</span>
+                              <strong class="bk-tit bk-lineclamp-2">Product22222222222222222222222 name Product name Productt name Productt name Productt name Product </strong>
+                              <span class="bk-price bk-lineclamp-1">$100.55~$110 pcs</span>
+                            </div>
+                            <div class="bk-flag-wrap">
+                            </div>
+                          </a>  
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- </div> --><!-- [20231226] 삭제 -->
+                  </div>                  
+                </div>
+              </div>
+            </section>
+
+            <section class="type-main-list  main-new-swiper bk-main-trade">
+              <div class="title">TRADE SHOWS<a href="#" class="link">링크</a></div>
+              <div class="swiper-container">
+                <div class="main-swiper-ctrl-btns">
+                  <button type="button" class="swiper-button-prev">앞으로</button>
+                  <button type="button" class="swiper-button-next">뒤로</button>
+                </div>
+                <ul class="cp-prd-list swiper-wrapper">
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="../../../img/tmp/image-trade.png"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Trade Show Title Trade Show Title Trade Show Title Trade Trade Show Title Trade Show Title Trade Show Title Trade </strong>
+                        <span class="bk-date">YYYY-MM-DD ~ YYYY-MM-DD</span>
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="../../../img/tmp/image-trade.png"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Trade Show Title Trade 222222222222 Trade Show Title Trade 222222222222Trade Show Title Trade 222222222222</strong>
+                        <span class="bk-date">YYYY-MM-DD ~ YYYY-MM-DD</span>
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ink-landscape-advertising-ad-background-backgroundfreshhand-paintedlandscape-paintingmountain-image_61834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Trade Show Title Trade Show Title Trade Show Title Trade Trade Show Title Trade Show Title Trade Show Title Trade </strong>
+                        <span class="bk-date">YYYY-MM-DD ~ YYYY-MM-DD</span>
+                      </div>
+                    </a>  
+                  </li>
+                  <li class="swiper-slide bk-prd-unit">
+                    <a href="#" class="bk-thumb-link">
+                      <div class="thumb"><img src="https://img.freepik.com/free-photo/vertical-shot-of-mountains-covered-in-greenery-perfect-for-mobile_181624-26834.jpg"></div>
+                      <div class="bk-prd-info">
+                        <strong class="bk-tit bk-lineclamp-2">Trade Show Title Trade Show Title Trade Show Title Trade Trade Show Title Trade Show Title Trade Show Title Trade</strong>
+                        <span class="bk-date">YYYY-MM-DD ~ YYYY-MM-DD</span>
+                      </div>
+                    </a>  
+                  </li>
+                  
+                </ul>
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+      </main>
+      <!--// [E]container -->
+      <!-- [S]footer -->
+      <footer id="footer" class="ui-footer">
+        <div class="ui-inner">
+          <div class="corp-area">
+            <div class="site-group">
+              <h2 class="logo">
+                <img
+                  src="../../../img/mobile/logo-kotra-dark.svg"
+                  alt="Kotra Trade-Investment Promtion Agency"
+                />
+              </h2>
+              <ul class="list-sns">
+                <!-- [2023.12.07] sns 추가 및 순서 변경 -->
+                <li>
+                  <a href="https://www.facebook.com/globalkotra" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-facebook">facebook</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/KOTRA_2013" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-x">twitter</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/buykorea-kotra" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-linkedIn">linkedIn</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.Instagram.com/buykorea_kotra/" class="bk-icon-only" target="_blank">
+                    <i class="bk-icon bk-icon-sns-instagram">instagram</i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="list-corp">
+                <li><a href="#none">About Terms</a></li>
+                <li><a href="#none">Terms of Use</a></li>
+                <li><a href="#none" class="bk-txt-red">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="corp-group">
+              <address class="address">
+                13, Heolleung-ro, Seocho-gu, Seoul, Korea <br>(Postal Code: 06792)<br>
+                T. 1600-7119 / F. +82-2-3460-7951 
+              </address>
+              E. <a href="mailto:buykorea@kotra.or.kr">buykorea@kotra.or.kr</a>
+              <p class="copyright">
+                &copy; KOTRA &#38; buyKOREA. ALL RIGHTS RESERVED.
+              </p>
+            </div>
+          </div>
+          
+          <div class="aside_area">
+            <div class="family-area">
+              <div class="family-group">
+                <button type="button" class="bk-btn bk-btn-icon" component="dropdownMenu">
+                  <span class="text">English</span>
+                  <span class="deco-icon append-icon">
+                    <i class="bk-icon bk-icon-plus-gray">+</i>
+                  </span>
+                </button>
+                <div class="cp-layer layer-dropdown layer-family">
+                  <div class="layer-inner">
+                    <div class="box_aside">
+                      <div id="google_translate_element" style="display:none;"></div>
+                      <!-- "새 번역 링크 UI" -->
+                      <ul class="translation-links">
+                        <li><a href="javascript:void(0)" class="english" data-lang="en" title="English"><span class="flag en"></span><span>English</span></a></li>
+                        <li><a href="javascript:void(0)" class="japanese" data-lang="zh-CN" title="中文(简体)"><span class="flag zh-CN"></span><span>Chinese</span></a></li>
+                        <li><a href="javascript:void(0)" class="japanese" data-lang="ja" title="日本語"><span class="flag ja"></span><span>Japanese</span></a></li>
+                        <li><a href="javascript:void(0)" class="japanese" data-lang="ru" title="Русский язык"><span class="flag ru"></span><span>Russian</span></a></li>
+                        <li><a href="javascript:void(0)" class="japanese" data-lang="pt" title="Português"><span class="flag pt"></span><span>Portuguese</span></a></li>
+                        <li><a href="javascript:void(0)" class="spanish" data-lang="es" title="español"><span class="flag es"></span><span>Spanish</span></a></li>
+                      </ul>
+                      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                      <script type="text/javascript">
+                          /* 구글 번역 초기화 */
+                          function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'ko',  includedLanguages : 'en,zh-CN,zh-TW,ja,ru,pt,es,fr,ar,tr,vi,de,hi,bn,id', autoDisplay: true}, 'google_translate_element');}
+          
+                          /* 새 UI 선택 클릭 이벤트가 발생하면
+                          감춤 처리한 구글 번역 콤보리스트에
+                          선택한 언어를 적용해 변경 이벤트를 발생시키는 코드  */
+                          document.querySelector('.translation-links').addEventListener('click',function(event) {
+                              let el = event.target;
+                              if(el != null){
+                                  while(el.nodeName == 'FONT' || el.nodeName == 'SPAN'){el = el.parentElement;}//data-lang 속성이 있는 태그 찾기
+                                  const tolang = el.dataset.lang; // 변경할 언어 코드 얻기
+                                  const gtcombo = document.querySelector('.goog-te-combo');
+                                  if (gtcombo == null) {
+                                      alert("Error: Could not find Google translate Combolist.");
+                                      return false;
+                                  }
+                                  gtcombo.value = tolang; // 변경할 언어 적용
+                                  gtcombo.dispatchEvent(new Event('change')); // 변경 이벤트 트리거
+                              }
+                              $(this).closest('.family-group').find('.bk-btn, .cp-layer').removeClass('is-active');
+                              return false;
+                          });
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="family-area">
+              <div class="family-group">
+                <button type="button" class="bk-btn bk-btn-icon" component="dropdownMenu">
+                  <span class="text">Family Site</span>
+                  <span class="deco-icon append-icon">
+                    <i class="bk-icon bk-icon-plus-gray">+</i>
+                  </span>
+                </button>
+                <div class="cp-layer layer-dropdown layer-family">
+                  <!--// [D]dim처리시 class="dim", 검정색 dim처리시 class="dim-dark",  흰색 dim처리시 class="dim-light" -->
+                  <div class="layer-inner">
+                    <ul class="list-family">
+                      <li><a href="https://www.kotra.or.kr/english/index.do" target="_blank">KOTRA</a></li>
+                      <li><a href="https://www.investkorea.org/ik-en/index.do" target="_blank">Invest Korea</a></li>
+                      <li><a href="https://contactkorea.kotra.or.kr/en/index.do" target="_blank">Recruiting Center</a></li>
+                      <li><a href="http://kodits.kotra.or.kr" target="_blank">KODITS</a></li>
+                      <li><a href="https://ombudsman.kotra.or.kr/ob-en/index.do" target="_blank">OMBUDSMAN</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- [S]Top버튼 -->
+        <div class="ui-setting-btns">
+          <a href="#" class="ico-quick01">최근 본 상품</a>
+          <a href="#" class="ico-quick02">메시지</a>
+          <a href="#" class="ico-quick03">오픈 인콰이어리</a>
+          <a href="#" class="ico-quick04">탑 이동</a>
+        </div>
+        <!--// [E]Top버튼 -->
+      </footer>
+      <!--// [E]footer -->
+
+    <!-- [S]팝업 -->
+    <!--// [E]팝업 -->
+    </div>
+    <!--// [E]ui-wrap -->
+    <script src="../../../js/common/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/common/lib/swiper/swiper-bundle.min.js"></script>
+    <script src="../../../js/mobile/ui_common.js"></script>
+    <script>
+      $(document).ready(function () {
+
+        //메인상단 스와이퍼
+        var main_banner_slide = new Swiper('.banner-slide-wrap', {
+            loop: $('.banner-slide-wrap .swiper-slide').length > 1,
+            // spaceBetween:20, 2023.12.05 여백 삭제 요청
+            speed:1000,
+            slidesPerView:1,
+            threshold: 0,
+            preventClicks: true,
+            observer: true, observeParents: true,
+            resistanceRatio: 0,
+            pagination: {
+              el: ".bk-main-banner .swiper-pagination",
+              clickable: true,
+            },       
+            autoplay:{
+              delay:2000,
+              disableOnInteraction: false
+            },
+        });
+        $(".bk-main-banner .slide-auto-start").on("click", function() {
+          main_banner_slide.autoplay.start();
+          $(this).hide();
+          $(".bk-main-banner .slide-auto-stop").show();
+        });
+
+        $(".bk-main-banner .slide-auto-stop").on("click", function() {
+          main_banner_slide.autoplay.stop();
+          $(this).hide();
+          $(".bk-main-banner .slide-auto-start").show();
+        });
+
+        //메인중간 스와이퍼
+        var main_event_slide = new Swiper('.event-slide-wrap', {
+            loop: $('.event-slide-wrap .swiper-slide').length > 1,
+            // spaceBetween:20, 2023.12.05 여백 삭제 요청
+            speed:1000,
+            slidesPerView:1,
+            threshold: 0,
+            preventClicks: true,
+            observer: true, observeParents: true,
+            resistanceRatio: 0,
+            pagination: {
+              el: ".bk-main-event .swiper-pagination",
+              clickable: true,
+            }, 
+            navigation: {
+              nextEl: '.event-slide-wrap .swiper-button-next',
+              prevEl: '.event-slide-wrap .swiper-button-prev',
+            },      
+            autoplay:{
+              delay:2000,
+              disableOnInteraction: false
+            },
+        });
+        $(".bk-main-event .slide-auto-start").on("click", function() {
+          main_event_slide.autoplay.start();
+          $(this).hide();
+          $(".bk-main-event .slide-auto-stop").show();
+        });
+
+        $(".bk-main-event .slide-auto-stop").on("click", function() {
+          main_event_slide.autoplay.stop();
+          $(this).hide();
+          $(".bk-main-event .slide-auto-start").show();
+        });
+
+        // 20231226 추가 좌우 스크롤 스와이퍼
+        function mymainCtrlSwiper() {
+
+          $('section.type-main-list').each(function(index) {
+            var myWidthswiper = $(window).width();
+
+            $(this).find('.swiper-container').addClass('mswiper'+ index);
+
+            if($('.swiper-container').hasClass('mswiper' + index) && !$(this).hasClass('bk-main-category')) {
+              var mainListWrap = $(this).find('.mswiper'+ index + ' .cp-prd-list');
+              var nextPrdUswiper = mainListWrap.find('.bk-prd-unit');
+              // var slideWidth = nextPrdUswiper.width();
+              var slideWidth = 165;
+              if ($(this).hasClass('bk-main-trade')) {var slideWidth = 240;}
+              var nextPrdLswiper = Math.floor(myWidthswiper / slideWidth); // 이동갯수
+              var prdPerView = (myWidthswiper / slideWidth); // 슬라이드 보여주는 갯수
+
+              var mScrollOpt = {
+                slidesPerView: prdPerView,
+                slidesPerGroup: nextPrdLswiper,
+                slidesPerGroupAuto: true,
+                // spaceBetween: 20,
+                cssMode: true,
+                // threshold: 0,
+                observer: true, observeParents: true,
+                resizeObserver: true,
+                navigation: {
+                  nextEl: '.mswiper'+ index + ' .swiper-button-next',
+                  prevEl: '.mswiper'+ index + ' .swiper-button-prev',
+                },
+              };
+              var mainScrollSwiper = new Swiper('.mswiper'+ index, mScrollOpt);
+
+              if($(this).find('.tab-container-wrap').length > 0) {
+                $('.tab-container-wrap .tab-container').each(function() {
+                  var tabItemIdx = $(this).index();
+                  $(this).find('.swiper-container').addClass('tab-item-' + tabItemIdx);
+
+                  var mainScrollSwiper = new Swiper('.mswiper'+ index +'.tab-item-' + tabItemIdx, mScrollOpt);
+
+                })
+              }
+            }
+            
+            if ($(this).hasClass('bk-main-category')) {
+              $(this).find('.swiper-container').addClass('grid-list');
+              
+              var slideWidth = 300;
+              var prdPerView =  (myWidthswiper / slideWidth);
+              var mGridOpt = {
+                slidesPerView: prdPerView,
+                grid: {
+                  rows: 3,
+                },
+                // spaceBetween: 20,
+                cssMode: true,
+                threshold: 0,
+                observer: true, observeParents: true,
+                resizeObserver: true,
+                navigation: {
+                  nextEl: '.grid-list .main-swiper-ctrl-btns .swiper-button-next',
+                  prevEl: '.grid-list .main-swiper-ctrl-btns .swiper-button-prev',
+                },
+              }
+              var mainGridSwiper = new Swiper('.grid-list', mGridOpt);
+
+              if($(this).find('.tab-container-wrap').length > 0) {
+                $('.tab-container-wrap .tab-container').each(function() {
+                  var tabItemIdx = $(this).index();
+                  $(this).find('.swiper-container').addClass('tab-item-' + tabItemIdx);
+
+                  var mainGridSwiper = new Swiper('.grid-list.tab-item-' + tabItemIdx, mGridOpt);
+
+                })
+              }
+            }
+
+            
+            
+          });
+
+        }
+        mymainCtrlSwiper();
+        $(window).resize(mymainCtrlSwiper);
+
+        // $('.type-main-list .tab-item').click(function() {
+        //   mymainCtrlSwiper();
+        // })
+
+      });
+    </script>
+  </body>
+</html>
