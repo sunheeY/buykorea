@@ -3138,3 +3138,9 @@ div.cp-info-block,
 .ui-main-seller .bk-main-trade .bk-thumb-link .bk-prd-info,
 .type-trs .bk-prd-unit .bk-thumb-link .bk-prd-info  {height: auto;}
 /* .type-trs .bk-prd-unit .bk-trs-tit.bk-lineclamp-2 {height: auto;} */
+
+/* 최근인콰이어리 스크롤 영역 */
+.bk-full-height {flex: 1 0 auto;}
+.bk-full-height .dialog-contents  {display: flex; flex-direction: column; height: 100%; margin: 0 -20px;}
+.bk-full-height .bk-full-top {flex: 1 0 auto; max-height: calc(100% - 243px); overflow-y: auto; padding: 0 20px 40px;}
+.bk-full-height .bk-related {margin: 0; padding: 24px 20px;}
